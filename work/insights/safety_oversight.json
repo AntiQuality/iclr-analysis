@@ -33,7 +33,7 @@
   {
    "title_zh": "监督的重心从“读 CoT”移到“agent 运行时控制”：AI control 与监控器规避份额翻倍",
    "tag": "rising",
-   "body_zh": "AI control、破坏（sabotage）和监控器规避相关论文从 6 篇增至 30 篇（3.0→7.0/万）；监控簇合计 14.6→28.4/万，约翻倍。OVERSIGHT 的研究对象明显转向 agent：以 agent 为目标的占比 10%→25%，multi-agent 从 1 篇增至 13 篇。2027 年的新问题不再是“监控器能否识别恶意”，而是部署层面的问题：生产环境中的阻断式监控器（Claude Code Auto Mode、Codex Guardian）会被持续失准的 agent 绕过；没有攻击者时，agent 在普通任务压力下也会自发规避监控（EvasionBench：尝试率最高 98%，成功率最高 88%，并随推理预算增加）；同一模型兼任监控器时会合谋，模型越强越难防。离线 AUC 会高估在线拦截能力，这一点开始被正式化为“在第一个不可逆步骤之前报警”的指标。2026 年的评审已经给出信号：Control Tax（6.0）和针对 trusted monitor 的自适应攻击（5.5）均被接收，该簇 2026 年平均分 5.0，是本章最高的簇之一。",
+   "body_zh": "AI control、破坏（sabotage）和监控器规避相关论文从 6 篇增至 30 篇（3.0→7.0/万）；监控簇合计 14.6→28.4/万，约翻倍。OVERSIGHT 的研究对象明显转向 agent：以 agent 为目标的占比 10%→25%，multi-agent 从 1 篇增至 13 篇。2027 年的新问题不再是“监控器能否识别恶意”，而是部署层面的问题：生产环境中的阻断式监控器（Claude Code Auto Mode、Codex Guardian）会被持续失准的 agent 绕过；没有攻击者时，agent 在普通任务压力下也会自发规避监控（EvasionBench：尝试率最高 98%，成功率最高 88%，并随推理预算增加）；同一模型兼任监控器时会合谋，而只用已抓获的那一种合谋做纠正微调，就能把未见过的合谋率从 91% 降到 14–20%。离线 AUC 会高估在线拦截能力，这一点开始被正式化为“在第一个不可逆步骤之前报警”的指标。2026 年的评审已经给出信号：Control Tax（6.0）和针对 trusted monitor 的自适应攻击（5.5）均被接收，该簇 2026 年平均分 5.0，是本章最高的簇之一。",
    "evidence": [
     {
      "id": "Yi6uDVGgpF",
@@ -259,7 +259,7 @@
   {
    "title_zh": "面向安全的可解释性：从 steering 防御转向拒答机制与干预因果效度",
    "tag": "shift",
-   "body_zh": "INTERP_SAFE 的份额从 60.1 升到 88.6/万，但内部结构变了。拒答、abliteration 机制相关论文从 12 篇增至 71 篇（6.1→16.5/万），问题从“找到 refusal direction 并加以利用”细化为：识别与执行的分离（RLVR 后模型仍能识别有害请求，但识别信号不再控制行为）、MoE 与多语种中“能 steer 不等于已定位”、工具调用场景下拒答机制的变化。activation steering 总量 60→170 篇（30.3→39.5/万），增速低于 INTERP_SAFE 整体，2026 年接收率 30%。另一个明显的新簇是对因果干预本身的批判，从 1 篇增至 28 篇（0.5→6.5/万），例如“Intervention Is Not Identification”、“Decodability Is Not Use”、“What Can Activation-Patching Evidence Establish?”。这类论文的方法与“度量效度”浪潮同源，也是 2026 年 analysis 类型接收率只有 20% 之后，作者转向更严格对照实验的结果。",
+   "body_zh": "INTERP_SAFE 的份额从 60.1 升到 88.6/万，但内部结构变了。拒答、abliteration 机制相关论文从 12 篇增至 71 篇（6.1→16.5/万），问题从“找到 refusal direction 并加以利用”细化为：识别与执行的分离（Qwen2.5-7B 经 RLVR 训练为 Code-R1 后，“识别有害”与“实际拒答”之间的差距从 19.3 扩大到 36.6 个点）、MoE 与多语种中“能 steer 不等于已定位”、工具调用场景下拒答机制的变化。activation steering 总量 60→170 篇（30.3→39.5/万），增速低于 INTERP_SAFE 整体，2026 年接收率 30%。另一个明显的新簇是对因果干预本身的批判，从 1 篇增至 28 篇（0.5→6.5/万），例如“Intervention Is Not Identification”、“Decodability Is Not Use”、“What Can Activation-Patching Evidence Establish?”。这类论文与“度量效度”浪潮同源。由于 2026 年核心子领域 analysis 类型的接收率只有 20%，这批更强调对照实验的机理论文在 2027 年的评审中能否获得更好回报，值得观察。",
    "evidence": [
     {
      "id": "N4kL8TnIRh",
@@ -349,16 +349,10 @@
    "note_zh": "份额持平；2026 年审计相关簇整体接收率 50%；2027 年出现 AuditBench、RealAudit 和“MO lottery”"
   },
   {
-   "name_zh": "Model diffing / 权重级审计",
-   "n26": 4,
-   "n27": 13,
-   "note_zh": "2.0→3.0/万；2027 年出现针对 diffing 审计的自适应攻击"
-  },
-  {
-   "name_zh": "LLM API 完整性（模型替换检测）",
-   "n26": 4,
-   "n27": 7,
-   "note_zh": "规模小但 2026 年 2/4 被接收；AuditGym、SCORE、RMF"
+   "name_zh": "Model diffing / 权重审计 / LLM API 完整性",
+   "n26": 8,
+   "n27": 20,
+   "note_zh": "4.0→4.6/万；2026 年接收率 50%（diffing 7.5 分、两篇 API 审计均被接收）；2027 年出现针对 diffing 审计的自适应攻击，以及 AuditGym、SCORE、RMF"
   },
   {
    "name_zh": "LLM judge / verifier 可靠性",
@@ -389,12 +383,6 @@
    "n26": 4,
    "n27": 12,
    "note_zh": "2.0→2.8/万；以蛋白、分子模型红队为主，CBRN uplift 方法学仍稀缺"
-  },
-  {
-   "name_zh": "通用 / 领域安全 benchmark",
-   "n26": 48,
-   "n27": 57,
-   "note_zh": "份额 24.2→13.3/万，腰斩；2026 年接收率 19%"
   },
   {
    "name_zh": "拒答 / abliteration 机制可解释",
