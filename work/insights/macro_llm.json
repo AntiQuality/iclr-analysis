@@ -58,9 +58,9 @@
    ]
   },
   {
-   "title_zh": "OPSD：同一模型 + 特权信息 = 免费教师",
+   "title_zh": "OPSD 与 OPD 的“问题清单”：特权自教师、崩溃、跨 tokenizer、多教师",
    "tag": "rising",
-   "body_zh": "OPD 论文中 42% 属于自蒸馏/特权信息路线（OPSD）：教师就是学生本身，只是在 prompt 中额外看到参考解、执行反馈、环境状态或 rubric，再把这种“带答案的分布”蒸回不带特权的学生。“privileged information/teacher”提及率从 6.1 升到 60.2/万篇，“自蒸馏”概念从 0.30% 升到 1.31%（2026 年少数相关论文接收率 0.433，高于基线）。2027 年的变体已高度细分：无监督 OPSD、后验教师、终止感知、预算感知、多模态/视频/语音 OPSD，以及用于多轮 agent 的“特权表征”自蒸馏。它解决的是 RLVR 在“全错组”上没有梯度的问题——教师能看到答案，就能给失败轨迹逐 token 的纠错方向。",
+   "body_zh": "OPD 论文中 42% 走自蒸馏/特权信息路线（OPSD）：教师就是学生本身，只是在 prompt 中额外看到参考解、执行反馈或环境状态，再把这种“看过答案的分布”蒸回学生（privileged information 提及率 6.1→60.2/万篇），从而给 RLVR 中全错组的失败轨迹提供逐 token 的纠错方向。一年之内这条线已进入“修 OPD”阶段：24.1% 的论文讨论 collapse/失败/不稳定，9.3% 做多教师，2.1% 做跨 tokenizer 蒸馏（让 Qwen3 学生向异族教师学习）；OPD 还外溢到多模态（24.6%）、agent（agentic OPD 0→37.2/万篇）和 block diffusion 语言模型。需要注意，2026 年 OPD 没有被接收的先例，且 OPD/OPSD 两簇约 52–53% 的稿件被标记为模板化写作；剔除这些稿件后 OPD 提及率仍有 181.9/万篇，说明趋势本身成立，但大量“X-OPD”增量工作的接收前景存疑。",
    "evidence": [
     {
      "id": "lxGrzU1x9c",
@@ -73,36 +73,9 @@
      "title": "On-Policy Self-Distillation without Any Supervision"
     },
     {
-     "id": "frQZP31oP9",
-     "year": 2027,
-     "title": "Learning Posterior Teachers for On-Policy Self-Distillation"
-    },
-    {
-     "id": "WSy6pV4b1m",
-     "year": 2027,
-     "title": "From Self-Distillation to Self-Practice: Privileged Information for Multi-Turn Agents"
-    }
-   ]
-  },
-  {
-   "title_zh": "OPD 一年内长出自己的“问题清单”：崩溃、跨 tokenizer、多教师、教师-验证器冲突",
-   "tag": "watch",
-   "body_zh": "OPD 文献已从“提出 OPD”进入“修 OPD”阶段：24.1% 的 OPD 论文讨论 collapse/失败/不稳定，9.3% 做多教师 OPD，2.1% 处理跨 tokenizer 蒸馏（让 Qwen3 学生向异族教师学习，例如按字节前缀做边缘化），另有 Flash-OPD、Top-k 截断等降低教师打分成本的工作。OPD 也迅速外溢：24.6% 涉及多模态，22.7% 涉及 agent（“agentic OPD”0→37.2/万篇），还有 block diffusion 语言模型、扩散视觉生成、语音对话上的 OPD。需要警惕的是，2026 年 OPD 尚无任何被接收的先例，且 OPD/OPSD 两簇中约 52–53% 的 2027 稿件被风格检测标记为模板化写作；剔除这些稿件后 OPD 提及率仍有 181.9/万篇，趋势本身是真的，但大量“X-OPD”增量工作的命中率存疑。",
-   "evidence": [
-    {
      "id": "Mm5OLOPLT0",
      "year": 2027,
      "title": "Cross-Tokenizer On-Policy Distillation via Byte-Prefix Marginalization"
-    },
-    {
-     "id": "k0EOlJSJVH",
-     "year": 2027,
-     "title": "Breaking the Tokenizer Barrier: On-Policy Distillation across Model Families"
-    },
-    {
-     "id": "q5NpkqNLNY",
-     "year": 2027,
-     "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation"
     },
     {
      "id": "ZnAAI3cg7p",
@@ -437,7 +410,7 @@
   "DSA 式稀疏注意力的“索引器 + top-k”工程化：融合 indexer-topk kernel（LiteTopK）、线性 indexing（LISA）、可认证 indexing（DoSA），“indexer”从 0 到 30 篇。",
   "面向混合线性注意力的推理系统：HybriKV（混合模型 KV 淘汰）、DASC（衰减感知状态压缩）、Xtra-MTP（混合模型上的并行验证）、LatentPort（递归记忆跨模型迁移）。",
   "Muon 走出预训练：When Does Muon Help Agentic RL、Muon 微调的优化器失配；MLA 缓存的可量化性开始受训练配方影响（When Cleaner Caches Break）。",
-  "实验台标准化：Qwen3-8B/Qwen3-4B 是后训练默认规模，Qwen3-30B-A3B 是 MoE 实验台，Qwen3.5 在 2027 年首次出现即达 122.3/万篇；评测从 AIME/MATH-500 转向 SWE-bench、τ-bench 与 BrowseComp。"
+  "实验台标准化：Qwen3-8B/Qwen3-4B 是后训练默认规模，Qwen3-30B-A3B 是 MoE 实验台，Qwen3.5 在 2027 年首次出现即达 122.3/万篇；评测从 AIME（1.30%→0.56%）/MATH-500 转向 SWE-bench（0.19%→0.63%）、τ-bench 与 OSWorld。"
  ],
  "watchlist_zh": [
   "OPD 能否通过审稿：2026 年无任何 OPD 接收先例，2027 年 907 篇投稿中约一半写作模板化；预计“X-OPD”增量工作大量被拒，关于 OPD 崩溃、教师质量与可蒸馏性的分析性工作更可能胜出。",

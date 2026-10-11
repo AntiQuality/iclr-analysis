@@ -1,0 +1,2032 @@
+{
+ "markers": [
+  {
+   "term": "evidence",
+   "r25": 0.0219,
+   "r26": 0.0369,
+   "r27": 0.1752,
+   "z_26to27": 59.7,
+   "z_25to26": 7.4,
+   "weight": 1.556,
+   "area_kl": 0.077
+  },
+  {
+   "term": "same",
+   "r25": 0.0665,
+   "r26": 0.0557,
+   "r27": 0.2418,
+   "z_26to27": 53.0,
+   "z_25to26": -4.6,
+   "weight": 1.468,
+   "area_kl": 0.009
+  },
+  {
+   "term": "fixed",
+   "r25": 0.029,
+   "r26": 0.0462,
+   "r27": 0.2021,
+   "z_26to27": 47.9,
+   "z_25to26": 6.7,
+   "weight": 1.476,
+   "area_kl": 0.018
+  },
+  {
+   "term": "every",
+   "r25": 0.0136,
+   "r26": 0.0138,
+   "r27": 0.1564,
+   "z_26to27": 46.7,
+   "z_25to26": -1.4,
+   "weight": 2.428,
+   "area_kl": 0.037
+  },
+  {
+   "term": "one",
+   "r25": 0.105,
+   "r26": 0.0734,
+   "r27": 0.1996,
+   "z_26to27": 46.4,
+   "z_25to26": -9.7,
+   "weight": 1.0,
+   "area_kl": 0.021
+  },
+  {
+   "term": "points",
+   "r25": 0.0385,
+   "r26": 0.0355,
+   "r27": 0.1386,
+   "z_26to27": 42.2,
+   "z_25to26": -3.5,
+   "weight": 1.361,
+   "area_kl": 0.073
+  },
+  {
+   "term": "shared",
+   "r25": 0.0214,
+   "r26": 0.0365,
+   "r27": 0.1471,
+   "z_26to27": 40.2,
+   "z_25to26": 7.5,
+   "weight": 1.393,
+   "area_kl": 0.022
+  },
+  {
+   "term": "frozen",
+   "r25": 0.0075,
+   "r26": 0.0135,
+   "r27": 0.1131,
+   "z_26to27": 38.6,
+   "z_25to26": 3.6,
+   "weight": 2.122,
+   "area_kl": 0.062
+  },
+  {
+   "term": "whether",
+   "r25": 0.041,
+   "r26": 0.0444,
+   "r27": 0.1487,
+   "z_26to27": 37.9,
+   "z_25to26": 1.6,
+   "weight": 1.208,
+   "area_kl": 0.085
+  },
+  {
+   "term": "no",
+   "r25": 0.0451,
+   "r26": 0.0513,
+   "r27": 0.1513,
+   "z_26to27": 37.6,
+   "z_25to26": 3.0,
+   "weight": 1.081,
+   "area_kl": 0.02
+  },
+  {
+   "term": "changes",
+   "r25": 0.0284,
+   "r26": 0.0278,
+   "r27": 0.1215,
+   "z_26to27": 37.3,
+   "z_25to26": -1.4,
+   "weight": 1.476,
+   "area_kl": 0.022
+  },
+  {
+   "term": "does",
+   "r25": 0.0452,
+   "r26": 0.03,
+   "r27": 0.1325,
+   "z_26to27": 37.3,
+   "z_25to26": -6.9,
+   "weight": 1.486,
+   "area_kl": 0.032
+  },
+  {
+   "term": "so",
+   "r25": 0.0302,
+   "r26": 0.0217,
+   "r27": 0.1139,
+   "z_26to27": 36.9,
+   "z_25to26": -4.9,
+   "weight": 1.66,
+   "area_kl": 0.01
+  },
+  {
+   "term": "what",
+   "r25": 0.0224,
+   "r26": 0.0224,
+   "r27": 0.1025,
+   "z_26to27": 35.9,
+   "z_25to26": -0.6,
+   "weight": 1.522,
+   "area_kl": 0.05
+  },
+  {
+   "term": "from to",
+   "r25": 0.0169,
+   "r26": 0.0201,
+   "r27": 0.0941,
+   "z_26to27": 35.2,
+   "z_25to26": 1.6,
+   "weight": 1.541,
+   "area_kl": 0.055
+  },
+  {
+   "term": "support",
+   "r25": 0.035,
+   "r26": 0.0534,
+   "r27": 0.1458,
+   "z_26to27": 35.0,
+   "z_25to26": 7.3,
+   "weight": 1.003,
+   "area_kl": 0.012
+  },
+  {
+   "term": "before",
+   "r25": 0.0212,
+   "r26": 0.0255,
+   "r27": 0.1104,
+   "z_26to27": 33.7,
+   "z_25to26": 2.4,
+   "weight": 1.465,
+   "area_kl": 0.024
+  },
+  {
+   "term": "four",
+   "r25": 0.0351,
+   "r26": 0.0445,
+   "r27": 0.1343,
+   "z_26to27": 33.6,
+   "z_25to26": 3.8,
+   "weight": 1.105,
+   "area_kl": 0.04
+  },
+  {
+   "term": "matched",
+   "r25": 0.0026,
+   "r26": 0.0055,
+   "r27": 0.0992,
+   "z_26to27": 33.3,
+   "z_25to26": 1.5,
+   "weight": 2.897,
+   "area_kl": 0.021
+  },
+  {
+   "term": "controlled",
+   "r25": 0.0139,
+   "r26": 0.0255,
+   "r27": 0.1144,
+   "z_26to27": 33.3,
+   "z_25to26": 6.4,
+   "weight": 1.501,
+   "area_kl": 0.025
+  },
+  {
+   "term": "evaluated",
+   "r25": 0.0268,
+   "r26": 0.0296,
+   "r27": 0.1175,
+   "z_26to27": 33.3,
+   "z_25to26": 1.2,
+   "weight": 1.377,
+   "area_kl": 0.029
+  },
+  {
+   "term": "uses",
+   "r25": 0.0413,
+   "r26": 0.0433,
+   "r27": 0.1365,
+   "z_26to27": 32.5,
+   "z_25to26": 0.6,
+   "weight": 1.147,
+   "area_kl": 0.028
+  },
+  {
+   "term": "alone",
+   "r25": 0.0089,
+   "r26": 0.0146,
+   "r27": 0.0969,
+   "z_26to27": 32.4,
+   "z_25to26": 3.3,
+   "weight": 1.888,
+   "area_kl": 0.012
+  },
+  {
+   "term": "after",
+   "r25": 0.0399,
+   "r26": 0.0332,
+   "r27": 0.1118,
+   "z_26to27": 31.0,
+   "z_25to26": -2.8,
+   "weight": 1.213,
+   "area_kl": 0.021
+  },
+  {
+   "term": "rather than",
+   "r25": 0.0306,
+   "r26": 0.0565,
+   "r27": 0.1433,
+   "z_26to27": 30.7,
+   "z_25to26": 10.2,
+   "weight": 0.93,
+   "area_kl": 0.009
+  },
+  {
+   "term": "change",
+   "r25": 0.0162,
+   "r26": 0.0146,
+   "r27": 0.077,
+   "z_26to27": 30.6,
+   "z_25to26": -0.8,
+   "weight": 1.658,
+   "area_kl": 0.032
+  },
+  {
+   "term": "therefore",
+   "r25": 0.0322,
+   "r26": 0.0234,
+   "r27": 0.1006,
+   "z_26to27": 29.9,
+   "z_25to26": -4.4,
+   "weight": 1.458,
+   "area_kl": 0.009
+  },
+  {
+   "term": "the resulting",
+   "r25": 0.0164,
+   "r26": 0.0221,
+   "r27": 0.0967,
+   "z_26to27": 29.7,
+   "z_25to26": 2.9,
+   "weight": 1.475,
+   "area_kl": 0.016
+  },
+  {
+   "term": "a fixed",
+   "r25": 0.0129,
+   "r26": 0.0175,
+   "r27": 0.0861,
+   "z_26to27": 29.4,
+   "z_25to26": 2.4,
+   "weight": 1.591,
+   "area_kl": 0.028
+  },
+  {
+   "term": "whose",
+   "r25": 0.0147,
+   "r26": 0.0203,
+   "r27": 0.086,
+   "z_26to27": 29.0,
+   "z_25to26": 3.2,
+   "weight": 1.443,
+   "area_kl": 0.025
+  },
+  {
+   "term": "strongest",
+   "r25": 0.0026,
+   "r26": 0.0092,
+   "r27": 0.0754,
+   "z_26to27": 28.8,
+   "z_25to26": 5.2,
+   "weight": 2.103,
+   "area_kl": 0.056
+  },
+  {
+   "term": "these results",
+   "r25": 0.0188,
+   "r26": 0.058,
+   "r27": 0.1511,
+   "z_26to27": 28.8,
+   "z_25to26": 14.7,
+   "weight": 0.957,
+   "area_kl": 0.022
+  },
+  {
+   "term": "five",
+   "r25": 0.0211,
+   "r26": 0.0299,
+   "r27": 0.0947,
+   "z_26to27": 28.3,
+   "z_25to26": 4.5,
+   "weight": 1.151,
+   "area_kl": 0.06
+  },
+  {
+   "term": "own",
+   "r25": 0.0123,
+   "r26": 0.0169,
+   "r27": 0.0733,
+   "z_26to27": 28.2,
+   "z_25to26": 3.3,
+   "weight": 1.469,
+   "area_kl": 0.063
+  },
+  {
+   "term": "relative",
+   "r25": 0.0246,
+   "r26": 0.0431,
+   "r27": 0.1157,
+   "z_26to27": 28.2,
+   "z_25to26": 8.2,
+   "weight": 0.987,
+   "area_kl": 0.023
+  },
+  {
+   "term": "must",
+   "r25": 0.0212,
+   "r26": 0.0274,
+   "r27": 0.0943,
+   "z_26to27": 28.1,
+   "z_25to26": 2.9,
+   "weight": 1.237,
+   "area_kl": 0.028
+  },
+  {
+   "term": "separate",
+   "r25": 0.0133,
+   "r26": 0.0177,
+   "r27": 0.081,
+   "z_26to27": 28.0,
+   "z_25to26": 2.3,
+   "weight": 1.519,
+   "area_kl": 0.012
+  },
+  {
+   "term": "requires",
+   "r25": 0.0603,
+   "r26": 0.0745,
+   "r27": 0.1597,
+   "z_26to27": 27.2,
+   "z_25to26": 4.9,
+   "weight": 0.762,
+   "area_kl": 0.023
+  },
+  {
+   "term": "should",
+   "r25": 0.0242,
+   "r26": 0.0219,
+   "r27": 0.0778,
+   "z_26to27": 26.9,
+   "z_25to26": -1.3,
+   "weight": 1.269,
+   "area_kl": 0.022
+  },
+  {
+   "term": "together",
+   "r25": 0.0175,
+   "r26": 0.0372,
+   "r27": 0.108,
+   "z_26to27": 26.8,
+   "z_25to26": 9.2,
+   "weight": 1.065,
+   "area_kl": 0.018
+  }
+ ],
+ "falling_markers": [
+  {
+   "term": "novel",
+   "r25": 0.3664,
+   "r26": 0.287,
+   "r27": 0.0483,
+   "z_26to27": -73.9,
+   "z_25to26": -11.4,
+   "weight": -1.781,
+   "area_kl": 0.043
+  },
+  {
+   "term": "a novel",
+   "r25": 0.3188,
+   "r26": 0.2476,
+   "r27": 0.0324,
+   "z_26to27": -69.7,
+   "z_25to26": -9.9,
+   "weight": -2.034,
+   "area_kl": 0.046
+  },
+  {
+   "term": "approach",
+   "r25": 0.342,
+   "r26": 0.2669,
+   "r27": 0.0798,
+   "z_26to27": -63.5,
+   "z_25to26": -15.4,
+   "weight": -1.207,
+   "area_kl": 0.035
+  },
+  {
+   "term": "significantly",
+   "r25": 0.2078,
+   "r26": 0.1662,
+   "r27": 0.0329,
+   "z_26to27": -53.1,
+   "z_25to26": -7.5,
+   "weight": -1.62,
+   "area_kl": 0.02
+  },
+  {
+   "term": "significant",
+   "r25": 0.2143,
+   "r26": 0.1508,
+   "r27": 0.0263,
+   "z_26to27": -52.4,
+   "z_25to26": -12.4,
+   "weight": -1.747,
+   "area_kl": 0.026
+  },
+  {
+   "term": "demonstrate",
+   "r25": 0.4105,
+   "r26": 0.3923,
+   "r27": 0.1883,
+   "z_26to27": -48.9,
+   "z_25to26": -0.8,
+   "weight": -0.734,
+   "area_kl": 0.069
+  },
+  {
+   "term": "demonstrate that",
+   "r25": 0.233,
+   "r26": 0.2647,
+   "r27": 0.1,
+   "z_26to27": -48.9,
+   "z_25to26": 7.1,
+   "weight": -0.974,
+   "area_kl": 0.073
+  },
+  {
+   "term": "in this",
+   "r25": 0.4138,
+   "r26": 0.293,
+   "r27": 0.1219,
+   "z_26to27": -48.6,
+   "z_25to26": -16.5,
+   "weight": -0.877,
+   "area_kl": 0.018
+  },
+  {
+   "term": "our approach",
+   "r25": 0.1417,
+   "r26": 0.1253,
+   "r27": 0.0206,
+   "z_26to27": -48.4,
+   "z_25to26": -4.1,
+   "weight": -1.803,
+   "area_kl": 0.095
+  },
+  {
+   "term": "critical",
+   "r25": 0.087,
+   "r26": 0.1445,
+   "r27": 0.0378,
+   "z_26to27": -45.2,
+   "z_25to26": 15.7,
+   "weight": -1.341,
+   "area_kl": 0.025
+  },
+  {
+   "term": "due to",
+   "r25": 0.1648,
+   "r26": 0.1274,
+   "r27": 0.0277,
+   "z_26to27": -45.1,
+   "z_25to26": -7.8,
+   "weight": -1.525,
+   "area_kl": 0.052
+  },
+  {
+   "term": "propose a",
+   "r25": 0.2347,
+   "r26": 0.1715,
+   "r27": 0.0563,
+   "z_26to27": -44.4,
+   "z_25to26": -10.9,
+   "weight": -1.114,
+   "area_kl": 0.045
+  },
+  {
+   "term": "have",
+   "r25": 0.3494,
+   "r26": 0.263,
+   "r27": 0.1258,
+   "z_26to27": -44.2,
+   "z_25to26": -15.9,
+   "weight": -0.737,
+   "area_kl": 0.01
+  },
+  {
+   "term": "complex",
+   "r25": 0.1479,
+   "r26": 0.161,
+   "r27": 0.0586,
+   "z_26to27": -43.9,
+   "z_25to26": 3.1,
+   "weight": -1.011,
+   "area_kl": 0.053
+  },
+  {
+   "term": "this work",
+   "r25": 0.1887,
+   "r26": 0.1757,
+   "r27": 0.0587,
+   "z_26to27": -43.8,
+   "z_25to26": -0.9,
+   "weight": -1.096,
+   "area_kl": 0.021
+  },
+  {
+   "term": "challenges",
+   "r25": 0.1587,
+   "r26": 0.1374,
+   "r27": 0.0396,
+   "z_26to27": -43.5,
+   "z_25to26": -4.4,
+   "weight": -1.245,
+   "area_kl": 0.061
+  },
+  {
+   "term": "various",
+   "r25": 0.2459,
+   "r26": 0.0999,
+   "r27": 0.0178,
+   "z_26to27": -43.3,
+   "z_25to26": -31.8,
+   "weight": -1.724,
+   "area_kl": 0.048
+  },
+  {
+   "term": "work",
+   "r25": 0.266,
+   "r26": 0.2627,
+   "r27": 0.1177,
+   "z_26to27": -43.3,
+   "z_25to26": 1.3,
+   "weight": -0.803,
+   "area_kl": 0.022
+  },
+  {
+   "term": "e",
+   "r25": 0.1492,
+   "r26": 0.14,
+   "r27": 0.0488,
+   "z_26to27": -43.2,
+   "z_25to26": -2.0,
+   "weight": -1.054,
+   "area_kl": 0.012
+  },
+  {
+   "term": "compared to",
+   "r25": 0.1383,
+   "r26": 0.1018,
+   "r27": 0.0184,
+   "z_26to27": -42.6,
+   "z_25to26": -9.0,
+   "weight": -1.71,
+   "area_kl": 0.072
+  },
+  {
+   "term": "such as",
+   "r25": 0.2487,
+   "r26": 0.2279,
+   "r27": 0.1048,
+   "z_26to27": -42.2,
+   "z_25to26": -3.7,
+   "weight": -0.777,
+   "area_kl": 0.007
+  },
+  {
+   "term": "our method",
+   "r25": 0.1589,
+   "r26": 0.1341,
+   "r27": 0.0411,
+   "z_26to27": -42.0,
+   "z_25to26": -7.8,
+   "weight": -1.182,
+   "area_kl": 0.098
+  },
+  {
+   "term": "e g",
+   "r25": 0.089,
+   "r26": 0.094,
+   "r27": 0.0228,
+   "z_26to27": -41.5,
+   "z_25to26": 2.1,
+   "weight": -1.415,
+   "area_kl": 0.032
+  },
+  {
+   "term": "diverse",
+   "r25": 0.1469,
+   "r26": 0.1992,
+   "r27": 0.0854,
+   "z_26to27": -41.2,
+   "z_25to26": 12.2,
+   "weight": -0.847,
+   "area_kl": 0.055
+  },
+  {
+   "term": "this paper",
+   "r25": 0.3028,
+   "r26": 0.1776,
+   "r27": 0.0657,
+   "z_26to27": -40.8,
+   "z_25to26": -20.4,
+   "weight": -0.994,
+   "area_kl": 0.031
+  }
+ ],
+ "title_templates": [
+  {
+   "template": "question title (contains ?)",
+   "r25": 0.0279,
+   "r26": 0.0285,
+   "r27": 0.0537
+  },
+  {
+   "template": "When does/do/is/are/can ...",
+   "r25": 0.0006,
+   "r26": 0.0011,
+   "r27": 0.0086
+  },
+  {
+   "template": "starts with When/What",
+   "r25": 0.0045,
+   "r26": 0.0076,
+   "r27": 0.0327
+  },
+  {
+   "template": "X Is/Are Not Y",
+   "r25": 0.0007,
+   "r26": 0.0017,
+   "r27": 0.0114
+  },
+  {
+   "template": "contains 'Not' (contrastive)",
+   "r25": 0.0043,
+   "r26": 0.0071,
+   "r27": 0.0274
+  },
+  {
+   "template": "Beyond ...",
+   "r25": 0.0094,
+   "r26": 0.0168,
+   "r27": 0.0288
+  },
+  {
+   "template": "audit/auditing",
+   "r25": 0.0015,
+   "r26": 0.0023,
+   "r27": 0.0144
+  },
+  {
+   "template": "evidence",
+   "r25": 0.0006,
+   "r26": 0.003,
+   "r27": 0.0294
+  },
+  {
+   "template": "X Hides/Fails/Breaks/Matters/Collapses",
+   "r25": 0.007,
+   "r26": 0.0092,
+   "r27": 0.0157
+  },
+  {
+   "template": "preserve/preserving",
+   "r25": 0.0049,
+   "r26": 0.007,
+   "r27": 0.0124
+  },
+  {
+   "template": "under ...",
+   "r25": 0.0117,
+   "r26": 0.0144,
+   "r27": 0.0267
+  },
+  {
+   "template": "ALL-CAPS title",
+   "r25": 0.0134,
+   "r26": 0.0113,
+   "r27": 0.0229
+  },
+  {
+   "template": "Towards ...",
+   "r25": 0.0167,
+   "r26": 0.0136,
+   "r27": 0.0053
+  }
+ ],
+ "score_hist": {
+  "bins": [
+   0.0,
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0,
+   11.0,
+   12.0,
+   13.0,
+   14.0,
+   15.0,
+   16.0,
+   17.0,
+   18.0,
+   19.0,
+   20.0,
+   21.0,
+   22.0,
+   23.0,
+   24.0,
+   25.0,
+   26.0,
+   27.0,
+   28.0,
+   29.0,
+   30.0
+  ],
+  "2025": [
+   0.45596,
+   0.25668,
+   0.14762,
+   0.06751,
+   0.03804,
+   0.02005,
+   0.00874,
+   0.00283,
+   0.00129,
+   0.00069,
+   0.00043,
+   0.0,
+   0.00017,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "2026": [
+   0.40655,
+   0.24852,
+   0.16302,
+   0.08081,
+   0.04845,
+   0.0264,
+   0.01469,
+   0.00585,
+   0.00308,
+   0.00131,
+   0.00076,
+   0.00025,
+   0.00025,
+   5e-05,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "2027": [
+   0.07495,
+   0.07914,
+   0.09023,
+   0.08035,
+   0.08046,
+   0.08249,
+   0.07558,
+   0.06884,
+   0.06205,
+   0.05719,
+   0.05052,
+   0.04117,
+   0.03408,
+   0.03155,
+   0.0239,
+   0.01925,
+   0.01469,
+   0.01032,
+   0.00772,
+   0.00593,
+   0.00351,
+   0.00228,
+   0.00142,
+   0.00093,
+   0.00074,
+   0.00026,
+   0.00016,
+   0.00014,
+   5e-05,
+   9e-05
+  ]
+ },
+ "score_quantiles": {
+  "2025": {
+   "0.1": 0.0,
+   "0.25": 0.0,
+   "0.5": 1.15,
+   "0.75": 2.32,
+   "0.9": 3.6,
+   "0.99": 6.54
+  },
+  "2026": {
+   "0.1": 0.0,
+   "0.25": 0.0,
+   "0.5": 1.24,
+   "0.75": 2.53,
+   "0.9": 4.02,
+   "0.99": 7.18
+  },
+  "2027": {
+   "0.1": 1.27,
+   "0.25": 3.07,
+   "0.5": 6.16,
+   "0.75": 9.97,
+   "0.9": 13.69,
+   "0.99": 19.93
+  }
+ },
+ "threshold": 7.181,
+ "share_above_threshold": {
+  "2025": 0.004455106237148732,
+  "2026": 0.010043910563771262,
+  "2027": 0.423569618487434
+ },
+ "share_above_2026_quantiles": {
+  "0.5": {
+   "2025": 0.4554489376285127,
+   "2026": 0.49931862918285974,
+   "2027": 0.9005649454815986
+  },
+  "0.9": {
+   "2025": 0.0710246744345442,
+   "2026": 0.10003533033866653,
+   "2027": 0.6741217771371446
+  },
+  "0.99": {
+   "2025": 0.004455106237148732,
+   "2026": 0.010043910563771262,
+   "2027": 0.423569618487434
+  },
+  "0.999": {
+   "2025": 0.0005997258396161755,
+   "2026": 0.001009438247615202,
+   "2027": 0.2405319322065422
+  }
+ },
+ "share_above_threshold_length_stratified": {
+  "2025": 0.004626456477039068,
+  "2026": 0.010144854388532782,
+  "2027": 0.4124566991374701
+ },
+ "share_above_threshold_split_half": {
+  "2025": 0.0054879094494940835,
+  "2026": 0.01009387301907742,
+  "2027": 0.44161516658147854
+ },
+ "split_half_marker_overlap": 39,
+ "marker_dispersion_index": {
+  "2025": 1.213371679495459,
+  "2026": 1.2869713618072318,
+  "2027": 2.0434286797702836
+ },
+ "score_length_corr": {
+  "2025": 0.28576831123897595,
+  "2026": 0.27659354565670535,
+  "2027": 0.4755569567684375
+ },
+ "legacy_marker_any_share": {
+  "2025": 0.985,
+  "2026": 0.96,
+  "2027": 0.619
+ },
+ "by_area": [
+  {
+   "area": "interpretability and explainable AI",
+   "share27": 0.5678,
+   "share26": 0.0127,
+   "n27": 1807
+  },
+  {
+   "area": "transfer learning, meta learning, and lifelong learning",
+   "share27": 0.5098,
+   "share26": 0.0105,
+   "n27": 1179
+  },
+  {
+   "area": "foundation or frontier models, including LLMs",
+   "share27": 0.5052,
+   "share26": 0.0159,
+   "n27": 6766
+  },
+  {
+   "area": "infrastructure, software libraries, hardware, systems, etc.",
+   "share27": 0.483,
+   "share26": 0.0112,
+   "n27": 706
+  },
+  {
+   "area": "datasets and benchmarks",
+   "share27": 0.479,
+   "share26": 0.01,
+   "n27": 3192
+  },
+  {
+   "area": "neurosymbolic & hybrid AI systems (physics-informed, logic & formal reasoning, etc.)",
+   "share27": 0.4402,
+   "share26": 0.0088,
+   "n27": 577
+  },
+  {
+   "area": "learning on time series and dynamical systems",
+   "share27": 0.435,
+   "share26": 0.0107,
+   "n27": 1154
+  },
+  {
+   "area": "alignment, fairness, safety, privacy, and societal considerations",
+   "share27": 0.4219,
+   "share26": 0.0106,
+   "n27": 3271
+  },
+  {
+   "area": "learning theory",
+   "share27": 0.4198,
+   "share26": 0.0116,
+   "n27": 1384
+  },
+  {
+   "area": "unsupervised, self-supervised, semi-supervised, and supervised representation learning",
+   "share27": 0.417,
+   "share26": 0.0095,
+   "n27": 2175
+  },
+  {
+   "area": "applications to robotics, autonomy, planning",
+   "share27": 0.4164,
+   "share26": 0.0067,
+   "n27": 2279
+  },
+  {
+   "area": "reinforcement learning",
+   "share27": 0.411,
+   "share26": 0.0085,
+   "n27": 2399
+  },
+  {
+   "area": "applications to physical sciences (physics, chemistry, biology, etc.)",
+   "share27": 0.3882,
+   "share26": 0.0012,
+   "n27": 1994
+  },
+  {
+   "area": "probabilistic methods (Bayesian methods, variational inference, sampling, UQ, etc.)",
+   "share27": 0.3819,
+   "share26": 0.0132,
+   "n27": 885
+  },
+  {
+   "area": "applications to neuroscience & cognitive science",
+   "share27": 0.3752,
+   "share26": 0.0131,
+   "n27": 725
+  },
+  {
+   "area": "other topics in machine learning (i.e., none of the above)",
+   "share27": 0.3725,
+   "share26": 0.0146,
+   "n27": 1157
+  },
+  {
+   "area": "applications to computer vision, audio, language, and other modalities",
+   "share27": 0.3626,
+   "share26": 0.0074,
+   "n27": 5530
+  },
+  {
+   "area": "causal reasoning",
+   "share27": 0.3511,
+   "share26": 0.0051,
+   "n27": 356
+  },
+  {
+   "area": "learning on graphs and other geometries & topologies",
+   "share27": 0.3403,
+   "share26": 0.0037,
+   "n27": 958
+  },
+  {
+   "area": "generative models",
+   "share27": 0.3314,
+   "share26": 0.0095,
+   "n27": 2909
+  },
+  {
+   "area": "optimization",
+   "share27": 0.3168,
+   "share26": 0.0081,
+   "n27": 1610
+  }
+ ],
+ "by_theme": [
+  {
+   "theme": "eval",
+   "n27": 2020,
+   "share27": 0.6163,
+   "mean_score": 9.558
+  },
+  {
+   "theme": "interp",
+   "n27": 1692,
+   "share27": 0.5739,
+   "mean_score": 8.568
+  },
+  {
+   "theme": "agents",
+   "n27": 4970,
+   "share27": 0.5298,
+   "mean_score": 8.147
+  },
+  {
+   "theme": "llm_post",
+   "n27": 4029,
+   "share27": 0.4597,
+   "mean_score": 7.294
+  },
+  {
+   "theme": "mm",
+   "n27": 2581,
+   "share27": 0.4409,
+   "mean_score": 7.084
+  },
+  {
+   "theme": "llm_core",
+   "n27": 3123,
+   "share27": 0.4336,
+   "mean_score": 7.048
+  },
+  {
+   "theme": "embodied",
+   "n27": 2704,
+   "share27": 0.4131,
+   "mean_score": 6.849
+  },
+  {
+   "theme": "safety",
+   "n27": 2930,
+   "share27": 0.4119,
+   "mean_score": 6.791
+  },
+  {
+   "theme": "systems",
+   "n27": 630,
+   "share27": 0.4032,
+   "mean_score": 6.542
+  },
+  {
+   "theme": "repr",
+   "n27": 2798,
+   "share27": 0.3931,
+   "mean_score": 6.58
+  },
+  {
+   "theme": "science",
+   "n27": 2799,
+   "share27": 0.3837,
+   "mean_score": 6.508
+  },
+  {
+   "theme": "apps",
+   "n27": 401,
+   "share27": 0.3766,
+   "mean_score": 6.605
+  },
+  {
+   "theme": "struct",
+   "n27": 2801,
+   "share27": 0.3624,
+   "mean_score": 6.25
+  },
+  {
+   "theme": "theory",
+   "n27": 2274,
+   "share27": 0.3619,
+   "mean_score": 6.049
+  },
+  {
+   "theme": "vision",
+   "n27": 2164,
+   "share27": 0.3226,
+   "mean_score": 5.655
+  },
+  {
+   "theme": "rl",
+   "n27": 1523,
+   "share27": 0.3145,
+   "mean_score": 5.565
+  },
+  {
+   "theme": "gen",
+   "n27": 3574,
+   "share27": 0.31,
+   "mean_score": 5.575
+  }
+ ],
+ "named_clusters": [
+  {
+   "cluster": 137,
+   "name_en": "Audit-style boilerplate abstracts",
+   "n25": 0,
+   "n26": 0,
+   "n27": 561,
+   "share27": 0.877,
+   "mean_score": 12.36
+  },
+  {
+   "cluster": 70,
+   "name_en": "Benchmark validity and evaluation audits",
+   "n25": 1,
+   "n26": 1,
+   "n27": 367,
+   "share27": 0.929,
+   "mean_score": 14.25
+  },
+  {
+   "cluster": 83,
+   "name_en": "Representation geometry diagnostics (stylistic)",
+   "n25": 2,
+   "n26": 7,
+   "n27": 248,
+   "share27": 0.681,
+   "mean_score": 10.0
+  },
+  {
+   "cluster": 15,
+   "name_en": "Formulaic gradient-analysis papers (artefact)",
+   "n25": 1,
+   "n26": 6,
+   "n27": 267,
+   "share27": 0.689,
+   "mean_score": 9.75
+  },
+  {
+   "cluster": 33,
+   "name_en": "Sample complexity & minimax bounds",
+   "n25": 6,
+   "n26": 16,
+   "n27": 348,
+   "share27": 0.583,
+   "mean_score": 8.22
+  },
+  {
+   "cluster": 196,
+   "name_en": "Tool-agent runtime governance",
+   "n25": 0,
+   "n26": 1,
+   "n27": 337,
+   "share27": 0.852,
+   "mean_score": 11.62
+  }
+ ],
+ "top_clusters_by_share": [
+  {
+   "cluster": 70,
+   "name_en": "Benchmark validity and evaluation audits",
+   "n26": 1,
+   "n27": 367,
+   "share27": 0.929
+  },
+  {
+   "cluster": 137,
+   "name_en": "Audit-style boilerplate abstracts",
+   "n26": 0,
+   "n27": 561,
+   "share27": 0.877
+  },
+  {
+   "cluster": 252,
+   "name_en": "RAG evidence selection and sufficiency",
+   "n26": 1,
+   "n27": 130,
+   "share27": 0.877
+  },
+  {
+   "cluster": 196,
+   "name_en": "Tool-agent runtime governance",
+   "n26": 1,
+   "n27": 337,
+   "share27": 0.852
+  },
+  {
+   "cluster": 263,
+   "name_en": "Causal interventions in mechanistic interpretability",
+   "n26": 5,
+   "n27": 268,
+   "share27": 0.799
+  },
+  {
+   "cluster": 223,
+   "name_en": "Test-time training and fast weights",
+   "n26": 7,
+   "n27": 142,
+   "share27": 0.711
+  },
+  {
+   "cluster": 15,
+   "name_en": "Formulaic gradient-analysis papers (artefact)",
+   "n26": 6,
+   "n27": 267,
+   "share27": 0.689
+  },
+  {
+   "cluster": 165,
+   "name_en": "Multi-agent LLM risks and failures",
+   "n26": 10,
+   "n27": 190,
+   "share27": 0.684
+  },
+  {
+   "cluster": 83,
+   "name_en": "Representation geometry diagnostics (stylistic)",
+   "n26": 7,
+   "n27": 248,
+   "share27": 0.681
+  },
+  {
+   "cluster": 56,
+   "name_en": "LLM agent memory systems",
+   "n26": 15,
+   "n27": 276,
+   "share27": 0.663
+  },
+  {
+   "cluster": 92,
+   "name_en": "Recursive self-improvement agents",
+   "n26": 2,
+   "n27": 161,
+   "share27": 0.652
+  },
+  {
+   "cluster": 180,
+   "name_en": "Conformal risk control certification",
+   "n26": 14,
+   "n27": 120,
+   "share27": 0.65
+  },
+  {
+   "cluster": 5,
+   "name_en": "Looped / recurrent-depth transformers",
+   "n26": 14,
+   "n27": 150,
+   "share27": 0.64
+  },
+  {
+   "cluster": 44,
+   "name_en": "Domain VQA benchmarks",
+   "n26": 103,
+   "n27": 186,
+   "share27": 0.64
+  },
+  {
+   "cluster": 278,
+   "name_en": "Compositional generalization",
+   "n26": 39,
+   "n27": 88,
+   "share27": 0.625
+  }
+ ],
+ "new_cluster_concentration": {
+  "n_new_clusters": 15,
+  "share_of_2027_in_new_clusters": 0.09313463371538837,
+  "share_of_high_2027_in_new_clusters": 0.15467369229924804,
+  "high_rate_in_new_clusters": 0.7034448327508737,
+  "high_rate_elsewhere": 0.39482656959007356
+ },
+ "signals_by_group": {
+  "2025": {
+   "n": 11672,
+   "abs_words": 187.9634,
+   "n_sent": 8.1466,
+   "words_per_sent": 23.5106,
+   "n_numerals": 1.3959,
+   "has_percent": 0.1801,
+   "has_we": 0.9722,
+   "n_kw": 3.7259,
+   "title_words": 9.1279,
+   "has_colon_title": 0.4951,
+   "allcaps_title": 0.0134,
+   "formulaic_title": 0.0138,
+   "has_tldr": 0.0,
+   "legacy_any": 0.9852,
+   "desk_rejected": 0.006,
+   "withdrawn": 0.256,
+   "abs_words_median": 185.0,
+   "submission_number_median": null
+  },
+  "2026": {
+   "n": 19813,
+   "abs_words": 184.5115,
+   "n_sent": 7.8966,
+   "words_per_sent": 23.8098,
+   "n_numerals": 1.7181,
+   "has_percent": 0.234,
+   "has_we": 0.9788,
+   "n_kw": 3.7681,
+   "title_words": 9.3439,
+   "has_colon_title": 0.5944,
+   "allcaps_title": 0.0113,
+   "formulaic_title": 0.0229,
+   "has_tldr": 0.0,
+   "legacy_any": 0.9599,
+   "desk_rejected": 0.0457,
+   "withdrawn": 0.2573,
+   "abs_words_median": 182.0,
+   "submission_number_median": null
+  },
+  "2027 high": {
+   "n": 18219,
+   "abs_words": 223.116,
+   "n_sent": 9.622,
+   "words_per_sent": 23.8189,
+   "n_numerals": 5.2753,
+   "has_percent": 0.5007,
+   "has_we": 0.9759,
+   "n_kw": 4.9289,
+   "title_words": 9.7267,
+   "has_colon_title": 0.6867,
+   "allcaps_title": 0.0329,
+   "formulaic_title": 0.1506,
+   "has_tldr": 0.6059,
+   "legacy_any": 0.4624,
+   "desk_rejected": 0.0105,
+   "withdrawn": 0.0052,
+   "abs_words_median": 216.0,
+   "submission_number_median": 32733.0
+  },
+  "2027 low (<=2026 median)": {
+   "n": 4277,
+   "abs_words": 173.2158,
+   "n_sent": 7.5684,
+   "words_per_sent": 23.3536,
+   "n_numerals": 1.4557,
+   "has_percent": 0.1786,
+   "has_we": 0.9766,
+   "n_kw": 3.7924,
+   "title_words": 9.3079,
+   "has_colon_title": 0.6058,
+   "allcaps_title": 0.0108,
+   "formulaic_title": 0.0245,
+   "has_tldr": 0.4973,
+   "legacy_any": 0.8649,
+   "desk_rejected": 0.0082,
+   "withdrawn": 0.0063,
+   "abs_words_median": 173.0,
+   "submission_number_median": 27465.0
+  },
+  "2027 mid": {
+   "n": 20517,
+   "abs_words": 191.5736,
+   "n_sent": 8.4105,
+   "words_per_sent": 23.3005,
+   "n_numerals": 2.5502,
+   "has_percent": 0.295,
+   "has_we": 0.9858,
+   "n_kw": 4.1092,
+   "title_words": 9.3448,
+   "has_colon_title": 0.648,
+   "allcaps_title": 0.0166,
+   "formulaic_title": 0.0593,
+   "has_tldr": 0.5256,
+   "legacy_any": 0.7078,
+   "desk_rejected": 0.0094,
+   "withdrawn": 0.0046,
+   "abs_words_median": 189.0,
+   "submission_number_median": 29331.0
+  },
+  "2027 all": {
+   "n": 43013,
+   "abs_words": 203.1086,
+   "n_sent": 8.8399,
+   "words_per_sent": 23.5254,
+   "n_numerals": 3.5956,
+   "has_percent": 0.3705,
+   "has_we": 0.9807,
+   "n_kw": 4.4249,
+   "title_words": 9.5029,
+   "has_colon_title": 0.6602,
+   "allcaps_title": 0.0229,
+   "formulaic_title": 0.0945,
+   "has_tldr": 0.5568,
+   "legacy_any": 0.6195,
+   "desk_rejected": 0.0097,
+   "withdrawn": 0.005,
+   "abs_words_median": 198.0,
+   "submission_number_median": 30493.0
+  }
+ },
+ "formulaic_title_by_2027_score_decile": [
+  0.0246,
+  0.0381,
+  0.0472,
+  0.0602,
+  0.0728,
+  0.0888,
+  0.1046,
+  0.1335,
+  0.1583,
+  0.2169
+ ],
+ "high_share_by_2027_submission_number_decile": [
+  0.3914,
+  0.3904,
+  0.3973,
+  0.3906,
+  0.3898,
+  0.4148,
+  0.435,
+  0.4357,
+  0.4645,
+  0.526
+ ],
+ "status_by_2027_score_decile": {
+  "0": {
+   "desk": 0.0081,
+   "wd": 0.0063,
+   "mean_score": 0.455
+  },
+  "1": {
+   "desk": 0.0107,
+   "wd": 0.0042,
+   "mean_score": 1.8915
+  },
+  "2": {
+   "desk": 0.007,
+   "wd": 0.0035,
+   "mean_score": 3.1123
+  },
+  "3": {
+   "desk": 0.0098,
+   "wd": 0.0044,
+   "mean_score": 4.3093
+  },
+  "4": {
+   "desk": 0.0102,
+   "wd": 0.0053,
+   "mean_score": 5.5283
+  },
+  "5": {
+   "desk": 0.0084,
+   "wd": 0.0056,
+   "mean_score": 6.8271
+  },
+  "6": {
+   "desk": 0.0102,
+   "wd": 0.0049,
+   "mean_score": 8.2869
+  },
+  "7": {
+   "desk": 0.0095,
+   "wd": 0.0042,
+   "mean_score": 9.9955
+  },
+  "8": {
+   "desk": 0.0126,
+   "wd": 0.0051,
+   "mean_score": 12.2442
+  },
+  "9": {
+   "desk": 0.0109,
+   "wd": 0.0067,
+   "mean_score": 16.5589
+  }
+ },
+ "near_duplicates": {
+  "2025": {
+   "n": 11672,
+   "cos>0.6": {
+    "pairs": 8,
+    "share_with_dup": 0.0012851267991775188,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.0012908777969018934
+   },
+   "cos>0.7": {
+    "pairs": 5,
+    "share_with_dup": 0.0008567511994516792,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.0008605851979345956
+   },
+   "cos>0.8": {
+    "pairs": 3,
+    "share_with_dup": 0.0005140507196710075,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.0005163511187607573
+   }
+  },
+  "2026": {
+   "n": 19813,
+   "cos>0.6": {
+    "pairs": 6,
+    "share_with_dup": 0.0006056629485691213,
+    "share_with_dup_high": 0.005025125628140704,
+    "share_with_dup_nonhigh": 0.0005608239012949934
+   },
+   "cos>0.7": {
+    "pairs": 2,
+    "share_with_dup": 0.00020188764952304043,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.00020393596410727031
+   },
+   "cos>0.8": {
+    "pairs": 2,
+    "share_with_dup": 0.00020188764952304043,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.00020393596410727031
+   }
+  },
+  "2027": {
+   "n": 43013,
+   "cos>0.6": {
+    "pairs": 13,
+    "share_with_dup": 0.0006044684165252365,
+    "share_with_dup_high": 0.00021955101816784674,
+    "share_with_dup_nonhigh": 0.0008873114463176575
+   },
+   "cos>0.7": {
+    "pairs": 9,
+    "share_with_dup": 0.00041847813451747145,
+    "share_with_dup_high": 0.00021955101816784674,
+    "share_with_dup_nonhigh": 0.000564652738565782
+   },
+   "cos>0.8": {
+    "pairs": 9,
+    "share_with_dup": 0.00041847813451747145,
+    "share_with_dup_high": 0.00021955101816784674,
+    "share_with_dup_nonhigh": 0.000564652738565782
+   }
+  },
+  "2027_sub": {
+   "n": 19813,
+   "cos>0.6": {
+    "pairs": 4,
+    "share_with_dup": 0.00040377529904608086,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.0006989951944080385
+   },
+   "cos>0.7": {
+    "pairs": 2,
+    "share_with_dup": 0.00020188764952304043,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.00034949759720401925
+   },
+   "cos>0.8": {
+    "pairs": 2,
+    "share_with_dup": 0.00020188764952304043,
+    "share_with_dup_high": 0.0,
+    "share_with_dup_nonhigh": 0.00034949759720401925
+   }
+  }
+ },
+ "near_dup_2027_status_mix": {
+  "active": 18
+ },
+ "acceptance_2026_by_score_decile": {
+  "0": {
+   "mean_score": 0.0,
+   "accept": 0.2714,
+   "withdrawn": 0.2704,
+   "desk": 0.0414
+  },
+  "1": {
+   "mean_score": 0.0,
+   "accept": 0.2574,
+   "withdrawn": 0.2892,
+   "desk": 0.0414
+  },
+  "2": {
+   "mean_score": 0.0,
+   "accept": 0.2569,
+   "withdrawn": 0.2802,
+   "desk": 0.0469
+  },
+  "3": {
+   "mean_score": 0.6682,
+   "accept": 0.2716,
+   "withdrawn": 0.262,
+   "desk": 0.0459
+  },
+  "4": {
+   "mean_score": 1.1097,
+   "accept": 0.2644,
+   "withdrawn": 0.2553,
+   "desk": 0.0474
+  },
+  "5": {
+   "mean_score": 1.4377,
+   "accept": 0.2716,
+   "withdrawn": 0.2443,
+   "desk": 0.0434
+  },
+  "6": {
+   "mean_score": 1.9069,
+   "accept": 0.2711,
+   "withdrawn": 0.2529,
+   "desk": 0.048
+  },
+  "7": {
+   "mean_score": 2.559,
+   "accept": 0.2716,
+   "withdrawn": 0.2438,
+   "desk": 0.0434
+  },
+  "8": {
+   "mean_score": 3.3925,
+   "accept": 0.2827,
+   "withdrawn": 0.2438,
+   "desk": 0.05
+  },
+  "9": {
+   "mean_score": 5.449,
+   "accept": 0.2856,
+   "withdrawn": 0.2306,
+   "desk": 0.0489
+  }
+ },
+ "acceptance_2026_high_vs_rest": {
+  "high": 0.32160804020100503,
+  "rest": 0.26990924849597225,
+  "n_high": 199,
+  "high_nonwithdrawn": 0.46715328467153283,
+  "rest_nonwithdrawn": 0.3871581102822875
+ },
+ "acceptance_2026_logit": {
+  "beta_score_per_sd": -0.006321230983846417,
+  "se": 0.018294766656044913,
+  "odds_ratio_per_sd": 0.9936987059659214,
+  "n": 13811,
+  "controls": "log abstract length + primary-area fixed effects; desk-rejected/withdrawn excluded"
+ },
+ "acceptance_2026_logit_legacy_index": {
+  "beta_per_sd": 0.03864341621390467,
+  "se": 0.01818041415006463
+ },
+ "rating_2026": {
+  "spearman_rho": -0.002382545855530973,
+  "p": 0.7795609536342681,
+  "n": 13803,
+  "ols_rating_per_sd_score": -0.019349328609004568,
+  "se": 0.009732154878531431,
+  "mean_rating_high": 4.598296836982969,
+  "mean_rating_rest": 4.521447213452921,
+  "n_high": 137,
+  "by_decile": [
+   4.549,
+   4.527,
+   4.496,
+   4.551,
+   4.506,
+   4.508,
+   4.531,
+   4.529,
+   4.489,
+   4.536
+  ],
+  "controls": "OLS: log abstract length + primary-area FE; withdrawn/desk-rejected excluded"
+ },
+ "unfiltered_top_rising": [
+  {
+   "term": "evidence",
+   "r26": 0.0369,
+   "r27": 0.1752,
+   "z": 59.7
+  },
+  {
+   "term": "the",
+   "r26": 0.9769,
+   "r27": 0.9878,
+   "z": 57.0
+  },
+  {
+   "term": "at",
+   "r26": 0.2763,
+   "r27": 0.449,
+   "z": 56.2
+  },
+  {
+   "term": "same",
+   "r26": 0.0557,
+   "r27": 0.2418,
+   "z": 53.0
+  },
+  {
+   "term": "the same",
+   "r26": 0.0536,
+   "r27": 0.2393,
+   "z": 52.9
+  },
+  {
+   "term": "fixed",
+   "r26": 0.0462,
+   "r27": 0.2021,
+   "z": 47.9
+  },
+  {
+   "term": "under",
+   "r26": 0.1955,
+   "r27": 0.3796,
+   "z": 47.9
+  },
+  {
+   "term": "it",
+   "r26": 0.2898,
+   "r27": 0.4299,
+   "z": 47.5
+  },
+  {
+   "term": "every",
+   "r26": 0.0138,
+   "r27": 0.1564,
+   "z": 46.7
+  },
+  {
+   "term": "one",
+   "r26": 0.0734,
+   "r27": 0.1996,
+   "z": 46.4
+  },
+  {
+   "term": "each",
+   "r26": 0.1695,
+   "r27": 0.3245,
+   "z": 42.6
+  },
+  {
+   "term": "points",
+   "r26": 0.0355,
+   "r27": 0.1386,
+   "z": 42.2
+  },
+  {
+   "term": "not",
+   "r26": 0.1758,
+   "r27": 0.3153,
+   "z": 42.0
+  },
+  {
+   "term": "from",
+   "r26": 0.5533,
+   "r27": 0.6881,
+   "z": 42.0
+  },
+  {
+   "term": "state",
+   "r26": 0.0496,
+   "r27": 0.1416,
+   "z": 41.6
+  },
+  {
+   "term": "shared",
+   "r26": 0.0365,
+   "r27": 0.1471,
+   "z": 40.2
+  },
+  {
+   "term": "its",
+   "r26": 0.2393,
+   "r27": 0.379,
+   "z": 39.4
+  },
+  {
+   "term": "an",
+   "r26": 0.4677,
+   "r27": 0.6028,
+   "z": 38.8
+  },
+  {
+   "term": "across",
+   "r26": 0.4504,
+   "r27": 0.6039,
+   "z": 38.7
+  },
+  {
+   "term": "frozen",
+   "r26": 0.0135,
+   "r27": 0.1131,
+   "z": 38.6
+  },
+  {
+   "term": "than",
+   "r26": 0.165,
+   "r27": 0.3038,
+   "z": 38.3
+  },
+  {
+   "term": "whether",
+   "r26": 0.0444,
+   "r27": 0.1487,
+   "z": 37.9
+  },
+  {
+   "term": "no",
+   "r26": 0.0513,
+   "r27": 0.1513,
+   "z": 37.6
+  },
+  {
+   "term": "can",
+   "r26": 0.3458,
+   "r27": 0.5036,
+   "z": 37.3
+  },
+  {
+   "term": "changes",
+   "r26": 0.0278,
+   "r27": 0.1215,
+   "z": 37.3
+  }
+ ],
+ "examples": [
+  {
+   "id": "R1QnIz34Ut",
+   "title": "HOW  MUCH  INDEPENDENT  INFORMATION  DOES  AN  LLM COMMITTEE PROVIDE?",
+   "score": 29.93,
+   "n_markers": 20,
+   "status": "active",
+   "cluster": 137
+  },
+  {
+   "id": "8QGJ2dnd8j",
+   "title": "StrataBench: Expert-Grounded Evaluation for Oil and Gas Land and Title",
+   "score": 29.56,
+   "n_markers": 21,
+   "status": "desk_rejected",
+   "cluster": 70
+  },
+  {
+   "id": "90ibjymozF",
+   "title": "Reading and Writing: Testing Natural Language as a Causal Channel for Refusal",
+   "score": 29.1,
+   "n_markers": 20,
+   "status": "active",
+   "cluster": 263
+  },
+  {
+   "id": "950or2jh05",
+   "title": "Learning a Behavioral Skill Basis for AI Agents",
+   "score": 29.09,
+   "n_markers": 20,
+   "status": "active",
+   "cluster": 57
+  },
+  {
+   "id": "0yDuLVVVWn",
+   "title": "Matched Twins Show What an Evidence Contract Cannot Carry to a Verifier of ML-Experiment Claims",
+   "score": 28.44,
+   "n_markers": 19,
+   "status": "active",
+   "cluster": 70
+  },
+  {
+   "id": "aCc0AKg8B4",
+   "title": "What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents",
+   "score": 28.09,
+   "n_markers": 18,
+   "status": "active",
+   "cluster": 173
+  },
+  {
+   "id": "lSUr28odRy",
+   "title": "Relational Composition as Parallel Transport: What Per-Entity Frames Force in Attention",
+   "score": 27.96,
+   "n_markers": 18,
+   "status": "active",
+   "cluster": 123
+  },
+  {
+   "id": "iFUFUDHcyH",
+   "title": "SAUNA: Source-Anchored Unsupervised Neural Adaptation for Cross-Subject EEG Decoding",
+   "score": 27.68,
+   "n_markers": 18,
+   "status": "active",
+   "cluster": 131
+  },
+  {
+   "id": "qd4q2OE0OE",
+   "title": "Hidden Tape: Addressable Communication Beneath Identical Text",
+   "score": 27.33,
+   "n_markers": 18,
+   "status": "active",
+   "cluster": 83
+  },
+  {
+   "id": "btB6Cx4HsN",
+   "title": "Relic: From Multi-Agent Collaboration to Persistent Organizational Capability",
+   "score": 27.19,
+   "n_markers": 18,
+   "status": "active",
+   "cluster": 165
+  },
+  {
+   "id": "QsOlwlev7g",
+   "title": "Same Probe, Different Numbers: Are Activation Probes Robust to Inference-Time Numerical Non-Determinism?",
+   "score": 27.13,
+   "n_markers": 18,
+   "status": "active",
+   "cluster": 2
+  },
+  {
+   "id": "kRtggxSTIi",
+   "title": "Auditing Size Dependence in Zero-Cost NAS Proxies: Confound-Controlled Discovery and Held-Out Evaluation",
+   "score": 27.02,
+   "n_markers": 17,
+   "status": "active",
+   "cluster": 137
+  }
+ ],
+ "low_examples": [
+  {
+   "id": "AeW8zDu5nu",
+   "title": "Back to the Future: Reverse-Consequence Modeling for Long-Horizon Particle Dynamics",
+   "score": 0.0,
+   "n_markers": 0,
+   "status": "active",
+   "cluster": 242
+  },
+  {
+   "id": "U5zDnvH5JD",
+   "title": "Quantum Sharpness-Aware Minimization",
+   "score": 0.0,
+   "n_markers": 0,
+   "status": "active",
+   "cluster": 81
+  },
+  {
+   "id": "AuiiWB2mFR",
+   "title": "Gradient Subspace Dynamics During Supervised Fine-Tuning of LLMs: Input–Output Asymmetry",
+   "score": 1.1,
+   "n_markers": 1,
+   "status": "active",
+   "cluster": 97
+  },
+  {
+   "id": "VUFj5cptA9",
+   "title": "Textual Environmental Context and Spatial Graphs for LLM-Based Regional SST Forecasting",
+   "score": 0.0,
+   "n_markers": 0,
+   "status": "active",
+   "cluster": 0
+  },
+  {
+   "id": "OIbjUInQex",
+   "title": "ChartGalaxy++: A Richly Annotated Dataset for Chart Understanding and Generation",
+   "score": 1.07,
+   "n_markers": 1,
+   "status": "active",
+   "cluster": 185
+  }
+ ],
+ "notes": "score = sum over 40 rising style markers (abstract only) of ln(r27/r26) * presence; threshold = 2026 p99. Markers ranked by Monroe et al. (2008) log-odds z (2026->2027, informative Dirichlet prior = 1% of pooled counts), restricted to topic-neutral terms (primary-area KL < 0.10), non-topic nouns, r26 < 0.5, r27/r26 >= 2. 2027 is a pre-review snapshot (status active/withdrawn/desk_rejected as of 2026-10-07), so its desk/withdraw rates are not comparable with final 2025/26 rates. TL;DR is empty for 2025/26 in this corpus; rating (mean reviewer score) exists for 2025/26 only (2027 is pre-review). The score measures a writing register, NOT authorship; it must not be read as AI-detection."
+}
