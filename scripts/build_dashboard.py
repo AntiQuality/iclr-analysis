@@ -41,7 +41,11 @@ SAFETY_ORDER = ["agent", "attack", "align", "oversight", "govern", "trust"]
 
 
 def load(p, default=None):
+    """Load a JSON file; for work/insights/* prefer the copy-edited version in work/insights/edited/."""
     p = ROOT / p
+    ed = p.parent / "edited" / p.name
+    if p.parent.name == "insights" and ed.exists():
+        p = ed
     return json.loads(p.read_text()) if p.exists() else default
 
 

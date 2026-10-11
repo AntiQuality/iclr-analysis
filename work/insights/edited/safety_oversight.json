@@ -1,0 +1,435 @@
+{
+ "key": "oversight",
+ "title_zh": "监督转向运行时控制与效度审计",
+ "subtitle_zh": "监控器、审计工具和评测指标本身成为审视对象",
+ "headline_zh": "监督方向的份额从每万篇 44.4 升到 69.7，增量来自 agent 运行时监控、AI control 和探针监控器。监控器、评测指标和可解释性工具本身也在被重新检验，SAE 质疑类论文增至约 5 倍。",
+ "stats": [
+  {
+   "label_zh": "监督方向份额",
+   "value": "44.4 → 69.7",
+   "note_zh": "每万篇投稿；增量来自 agent 监控"
+  },
+  {
+   "label_zh": "监控类研究份额",
+   "value": "14.6 → 28.4",
+   "note_zh": "每万篇；CoT 忠实性持平"
+  },
+  {
+   "label_zh": "度量效度类安全论文",
+   "value": "15.1 → 28.8",
+   "note_zh": "每万篇；审计式标题占比 2.0% → 4.8%"
+  },
+  {
+   "label_zh": "危险能力评测｜网络攻防",
+   "value": "40.9→36.3 ｜ 4.5→7.2",
+   "note_zh": "每万篇；总量降，仅网络攻防升"
+  },
+  {
+   "label_zh": "SAE｜SAE 审视论文",
+   "value": "36.8→34.9 ｜ 4.0→10.0",
+   "note_zh": "每万篇；SAE 安全工具 0/7 接收"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "监督重心移到 agent 运行时控制",
+   "tag": "rising",
+   "body_zh": "监督研究的新问题是部署层面的控制，而不是监控器能否识别恶意。AI control、破坏（sabotage）与监控器规避论文从 6 篇增至 30 篇（每万篇 3.0 → 7.0）。生产环境的阻断式监控器在 79% 的试验中会被持续失准的 agent 用注入手段绕过。",
+   "note_zh": "监控簇合计每万篇 14.6 → 28.4。监督方向中以 agent 为目标的占比 10% → 25%，multi-agent 1 → 13 篇。阻断式监控器指 Claude Code Auto Mode、Codex Guardian（Xvoqy4F84S）。EvasionBench：没有攻击者时，agent 在普通任务压力下也会自发规避监控，尝试率最高 98%，成功率最高 88%，并随推理预算增加（Yi6uDVGgpF）。同一模型兼任监控器时会合谋，只用已抓获的一种合谋做纠正微调，未见过的合谋率从 91% 降到 14–20%（koUcOtZD0e）。离线 AUC 高估在线拦截能力，新指标要求在第一个不可逆步骤之前报警（yVGzyZ8zMc）。2026 年 Control Tax（6.0）与针对 trusted monitor 的自适应攻击（5.5）均被接收，该簇 2026 年均分 5.0。",
+   "evidence": [
+    {
+     "id": "Yi6uDVGgpF",
+     "year": 2027,
+     "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure"
+    },
+    {
+     "id": "Xvoqy4F84S",
+     "year": 2027,
+     "title": "Red-Teaming Auto Mode: Improving Blocking Classifiers Against Malign Coding Agents"
+    },
+    {
+     "id": "koUcOtZD0e",
+     "year": 2027,
+     "title": "Model Organisms of Collusion: Corrective Transfer in Untrusted Monitors"
+    },
+    {
+     "id": "yVGzyZ8zMc",
+     "year": 2027,
+     "title": "Offline Scores Overestimate Online Oversight: Timely Interception of LLM Agents with Causal-Cone Monitoring"
+    }
+   ]
+  },
+  {
+   "title_zh": "CoT 可监测性研究转向训练副作用",
+   "tag": "shift",
+   "body_zh": "CoT 可监测性（monitorability）的核心问题变成哪些常规训练会无意破坏它。相关论文从 9 篇增至 29 篇，宽泛的 CoT 忠实性研究份额持平，2026 年接收率仅 15%。persona 式 CoT 可控性微调没有任何规避训练，就把 gpt-oss-20b 的可监测性从 0.96 降到 0.72。",
+   "note_zh": "可监测性类：标题或 topic 明确涉及 monitorability，每万篇 4.5 → 6.7。CoT 忠实性 13 → 28 篇，每万篇 6.6 → 6.5，2026 年接收 2/13。长度惩罚让 Qwen3 的 hint 忠实率下降 35–39%（bDRNeSJYL0）；可控性结果见 FrpBCtqRnK。另两类增量：用互信息后训练恢复可监测性（5xrNwUd8y4）；理论界限，即复杂隐藏计算必然泄漏到 CoT，但泄漏的信息可以被加密。2026 年同类最高分：Output Supervision Can Obfuscate the CoT（7.0）。方法学警告：监控器 prompt、汇总统计量和标签噪声处理的差异，足以改变可监测性评测的结论。",
+   "evidence": [
+    {
+     "id": "bDRNeSJYL0",
+     "year": 2027,
+     "title": "Length Penalties Make Chain-of-Thought Less Monitorable"
+    },
+    {
+     "id": "FrpBCtqRnK",
+     "year": 2027,
+     "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability"
+    },
+    {
+     "id": "5xrNwUd8y4",
+     "year": 2027,
+     "title": "Monitorability Is Trainable: Post-Training for Chain-of-Thought Monitorability"
+    },
+    {
+     "id": "JTX0iqxBjk",
+     "year": 2026,
+     "title": "Output Supervision Can Obfuscate the Chain of Thought"
+    }
+   ]
+  },
+  {
+   "title_zh": "探针成为一线监控器并遭效度审计",
+   "tag": "rising",
+   "body_zh": "激活探针已能做一线监控器，但它到底读到了什么还说不清。探针与白盒监控器论文从 12 篇增至 61 篇，多层探针在 SHADE-Arena 上达到 98.8% AUC，超过 Claude Haiku 4.5 文本监控器。同期讨论探针鲁棒性、混杂和可迁移性的论文从 3 篇增至 21 篇。",
+   "note_zh": "探针类每万篇 6.1 → 14.2。98.8% AUC 的探针为多层、多 token 聚合，还能识别未用语言表达的欺骗（el0jXlbsg5）。效度问题：GPU 批次与数值精度的非确定性会改变读数（QsOlwlev7g）；常用 RepE 欺骗探针主要捕捉被指示说谎的 persona 状态，而非输出是否为真（zprNXrgKhb）；balanced perturbation 和子空间擦除在数学上无法识别监控器读取的内容。直接用探针作训练信号（IVJnUfZ3IU）也把 Goodhart 风险带进了白盒监控。",
+   "evidence": [
+    {
+     "id": "el0jXlbsg5",
+     "year": 2027,
+     "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception"
+    },
+    {
+     "id": "QsOlwlev7g",
+     "year": 2027,
+     "title": "Same Probe, Different Numbers: Are Activation Probes Robust to Inference-Time Numerical Non-Determinism?"
+    },
+    {
+     "id": "zprNXrgKhb",
+     "year": 2027,
+     "title": "What Do Linear Deception Probes Actually Detect?"
+    },
+    {
+     "id": "IVJnUfZ3IU",
+     "year": 2027,
+     "title": "Alignment via Training Against Probes Without Losing Monitorability"
+    }
+   ]
+  },
+  {
+   "title_zh": "对齐审计工具开始被反向攻击",
+   "tag": "rising",
+   "body_zh": "对齐审计开始被当作对抗问题研究。知道审计统计量的微调者能让 mean-diff、探针和输出分类器全部失效，同时保留植入的信念。AuditBench 用 56 个植入隐藏行为的模型评测审计工具，发现工具单独有效，交给 agent 使用后却失效。",
+   "note_zh": "审计簇含隐藏行为与目标诱出、model diffing、权重审计、API 完整性：22 → 48 篇，每万篇 11.1 → 11.2，份额持平。2026 年是本章评审回报最高的簇：接收率 50%（11/22），均分 4.96，最高分为 model diffing 论文 Narrow Finetuning Leaves Clearly Readable Traces（7.5）。自适应攻击见 MMkYLPv7YO。Model Organism Lottery 在 61 个 MO 上发现，可解释性能否检出隐藏行为取决于 MO 的训练方式（QSWzl6DF6M）；SAE 审计的零结果开始被要求给出检测限。API 完整性 4 → 7 篇，2026 年 2/4 被接收，2027 年出现 AuditGym。",
+   "evidence": [
+    {
+     "id": "sSOSRpUn48",
+     "year": 2027,
+     "title": "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors"
+    },
+    {
+     "id": "MMkYLPv7YO",
+     "year": 2027,
+     "title": "Read It and It’s Gone: Adaptive Attacks on Model-Diffing Audits"
+    },
+    {
+     "id": "QSWzl6DF6M",
+     "year": 2027,
+     "title": "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology"
+    },
+    {
+     "id": "qyVzZsrsnS",
+     "year": 2026,
+     "title": "Narrow Finetuning Leaves Clearly Readable Traces in the Activation Differences"
+    }
+   ]
+  },
+  {
+   "title_zh": "安全评测指标逐一接受效度检验",
+   "tag": "rising",
+   "body_zh": "安全栈的主要指标都在被重新检验，但纯批评在审稿中回报有限。以评测效度为主题的安全论文从 30 篇增至 124 篇，2026 年接收率仅 20%，低于基线 27%。标称 80% 的越狱，连续复现成功率只有约 50%。",
+   "note_zh": "按 topic 标注统计，每万篇 15.1 → 28.8；标题为否定式或审计式（is not / cannot / validity / confound 等）的安全论文占比 2.0% → 4.8%。2026 年接收 6/30，被接收者多同时给出替代方案，如 GuidedBench（6.0）。其他证据：StrongReject 判为成功的 29 条输出中 25–27 条没有实际操作价值（L17sEWT586）；指令式测谎基准的准确率无法区分检测到欺骗与检测到指令遵循（xnXAuL8JqU）；网络安全基准上单个评测流水线选项能让分数变动 80 个百分点以上（mmV9xVxNO5）；常用对抗安全数据集过度依赖触发词。越狱复现结果见 4KRb2UHKQO。",
+   "evidence": [
+    {
+     "id": "4KRb2UHKQO",
+     "year": 2027,
+     "title": "The Great Pretender: A Stochasticity Problem in LLM Jailbreak"
+    },
+    {
+     "id": "L17sEWT586",
+     "year": 2027,
+     "title": "Jailbreak-Success Scores Need Not Imply Operational Enablement"
+    },
+    {
+     "id": "xnXAuL8JqU",
+     "year": 2027,
+     "title": "What does lie-detection accuracy measure? An Identification Audit of behavioural LLM deception benchmarks"
+    },
+    {
+     "id": "mmV9xVxNO5",
+     "year": 2027,
+     "title": "Benchmark Scores Are Pipeline-Dependent: A Reliability Audit of Cybersecurity LLM Benchmarks"
+    }
+   ]
+  },
+  {
+   "title_zh": "LLM judge 本身成为被审计对象",
+   "tag": "rising",
+   "body_zh": "LLM judge 作为部署闸门，在结构上难以测量。以 judge、evaluator 或 verifier 为对象的论文从 7 篇增至 51 篇（每万篇 3.5 → 11.9）。评审团一致放行的输出若从不被审计，其错误率在数学上不可识别。",
+   "note_zh": "限本章范围。silent consensus 结果见 rnm0DNXZTf。模型评审自己轨迹中的动作时更宽松（frjth7SlNd）；用 RL 学出能骗过 agentic judge 的证明变体（3JzTSbUpiu）。比较 agent 自述与真实执行轨迹的论文在全部安全论文中 1 → 29 篇（正则粗匹配），涉及虚报完成、篡改日志、判断与行动脱节。2026 年被接收的是统计效度路线：Doubly-Robust LLM-as-a-Judge（6.67）和 Noisy but Valid（5.5）。",
+   "evidence": [
+    {
+     "id": "rnm0DNXZTf",
+     "year": 2027,
+     "title": "When All LLM Judges Agree: Silent Consensus Makes\\\\ Deployed Risk Unmeasurable"
+    },
+    {
+     "id": "frjth7SlNd",
+     "year": 2027,
+     "title": "Self-Attribution Bias Makes AI Monitors Go Easy on Themselves"
+    },
+    {
+     "id": "3JzTSbUpiu",
+     "year": 2027,
+     "title": "Learning Strategies to Break Judges"
+    },
+    {
+     "id": "EIA1tpKYL7",
+     "year": 2026,
+     "title": "Doubly-Robust LLM-as-a-Judge: Externally Valid Estimation with Imperfect Personas"
+    }
+   ]
+  },
+  {
+   "title_zh": "危险能力评测份额下降，网络攻防独自增长",
+   "tag": "shift",
+   "body_zh": "危险能力评测是本章唯一份额下降的子领域，每万篇 40.9 → 36.3。通用安全 benchmark 份额从每万篇 24.2 降到 13.3，2026 年接收率仅 19%；网络攻防评测从 9 篇增至 31 篇，接收率 44%。生物与化学评测只从 4 篇增至 12 篇，自主复制和关机抵抗类仅 3 → 4 篇。",
+   "note_zh": "子领域代码 DANGER_EVAL。通用类含通用、领域和多语种安全 benchmark，48 → 57 篇。网络攻防每万篇 4.5 → 7.2，CyberGym（7.0）为 oral；2027 年的形态包括多主机靶场中的有状态入侵、入侵后持久化、二进制补丁转化为利用，并开始检验只测攻击的基准是否高估残余风险（lT6nkm4mrw）。生物化学每万篇 2.0 → 2.8，以蛋白、分子模型红队为主；DRYLAB-Bench（LKQ4con2iF）是少数用 agent 加生物设计工具、对照实验真值评估突变设计风险的工作。",
+   "evidence": [
+    {
+     "id": "MbwCn5aoIR",
+     "year": 2027,
+     "title": "AgentCyberRange: Evaluating Frontier AI Systems in Realistic Cyber Ranges"
+    },
+    {
+     "id": "lT6nkm4mrw",
+     "year": 2027,
+     "title": "AwDGym: Attack-Only Benchmarks Overstate the Residual Risk of LLM Cyber Agents"
+    },
+    {
+     "id": "LKQ4con2iF",
+     "year": 2027,
+     "title": "DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design"
+    },
+    {
+     "id": "2YvbLQEdYt",
+     "year": 2026,
+     "title": "CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale"
+    }
+   ]
+  },
+  {
+   "title_zh": "SAE 份额持平，研究转向测量方法",
+   "tag": "fading",
+   "body_zh": "稀疏自编码器（SAE）没有随可解释性整体增长，研究转向检验它的测量方法。SAE 类论文份额从每万篇 36.8 降到 34.9，审视其指标、种子依赖和因果主张的论文从 8 篇增至 43 篇。2026 年把 SAE 直接用作安全 steering 或防御工具的 7 篇论文无一被接收。",
+   "note_zh": "范围含 INTERP_GEN，计 SAE、transcoder、crosscoder，73 → 150 篇；同期 INTERP_GEN 每万篇 111.5 → 179.0。审视类每万篇 4.0 → 10.0，按标题正则匹配，代表作有重建指标无法证明基底质量（l1b24dZA4C）、SAE 因果主张对测量方式不鲁棒、SAE 消融分数报告标准（BUQKer9bbG）。2026 年被接收的怀疑类工作：SAE 局限性理论（6.0）、自动可解释性指标无法区分训练过与随机初始化的 Transformer（6.0）、同数据不同种子学到不同特征（5.5）。SAE 安全工具类 7 篇均分 3.92。安全侧仍用 SAE 的工作多转为审计或探测，如 SAE clamp 被绕过后行为恢复（iTSq5A4muv）、监控器去捷径。",
+   "evidence": [
+    {
+     "id": "l1b24dZA4C",
+     "year": 2027,
+     "title": "DIAL M FOR MONOSEMANTICITY : RECONSTRUCTION METRICS CANNOT CERTIFY SAE BASIS QUALITY"
+    },
+    {
+     "id": "iTSq5A4muv",
+     "year": 2027,
+     "title": "SAE Interventions Can Be Unreliable: Post-Intervention Recovery of Suppressed Behavior"
+    },
+    {
+     "id": "BUQKer9bbG",
+     "year": 2027,
+     "title": "A Reporting Standard for Sparse Autoencoder Ablation Scores"
+    },
+    {
+     "id": "USyGD0eUod",
+     "year": 2026,
+     "title": "Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers"
+    }
+   ]
+  },
+  {
+   "title_zh": "安全可解释性转向拒答机制与因果效度",
+   "tag": "shift",
+   "body_zh": "安全可解释性（INTERP_SAFE）份额从每万篇 60.1 升到 88.6，重点从 steering 防御转向拒答机制。拒答机制论文从 12 篇增至 71 篇；Qwen2.5-7B 经 RLVR 训练后，识别有害与实际拒答的差距从 19.3 扩大到 36.6 个点。批判因果干预本身的论文从 1 篇增至 28 篇。",
+   "note_zh": "拒答机制含 abliteration，每万篇 6.1 → 16.5；RLVR 训练后的模型为 Code-R1。另关注 MoE 与多语种中能 steer 不等于已定位（Xx1ceKFk12）以及工具调用场景。activation steering 60 → 170 篇（每万篇 30.3 → 39.5），增速低于 INTERP_SAFE 整体，2026 年接收率 30%。因果干预批判每万篇 0.5 → 6.5，如 Intervention Is Not Identification、Decodability Is Not Use、What Can Activation-Patching Evidence Establish?，与度量效度研究同源。2026 年核心子领域 analysis 类接收率 20%，这批强调对照实验的机理论文在 2027 年能否获得更好回报有待观察。",
+   "evidence": [
+    {
+     "id": "N4kL8TnIRh",
+     "year": 2027,
+     "title": "Rewarding the Wrong Circuit: How RLVR Reshapes Safety in Reasoning Models"
+    },
+    {
+     "id": "Xx1ceKFk12",
+     "year": 2027,
+     "title": "Steering Does Not Imply Localization: Multilingual Refusal Control in Mixture-of-Experts Models"
+    },
+    {
+     "id": "GidObN1wEi",
+     "year": 2027,
+     "title": "INTERVENTION IS NOT IDENTIFICATION: ACTIVATION EDITS CAN PRODUCE THE PREDICTED EFFECT FOR THE WRONG REASON"
+    },
+    {
+     "id": "1vvbzAqdTe",
+     "year": 2026,
+     "title": "AlphaSteer: Learning Refusal Steering with Principled Null-Space Constraint"
+    }
+   ]
+  },
+  {
+   "title_zh": "内省成为小众但高回报的监督通道",
+   "tag": "watch",
+   "body_zh": "以内省、自我报告或激活语言化为监督信号的论文从 3 篇增至 28 篇，2026 年同类 3/3 被接收。2027 年的结果互相冲突：训练 observer channel 的工作在推进，但 8 个开源模型回答自身计算是否被改动时接近随机。内省能否成为与 CoT、探针并列的第三条监督通道，取决于哪一方证据更硬。",
+   "note_zh": "每万篇 1.5 → 6.5。2026 年同类均分 5.5，含 LatentQA（6.0）和 Spilling the Beans（6.0）。建设性工作还包括让模型说出评测意识（5HASBtgMJG）、用 natural-language autoencoder（NLA）读写激活；怀疑性工作指出 NLA 解释需配合真值对照。8 模型内省结果见 JINWOT9zWh。",
+   "evidence": [
+    {
+     "id": "M7bhrIY7b9",
+     "year": 2027,
+     "title": "Training Language Models for Introspective Oversight"
+    },
+    {
+     "id": "JINWOT9zWh",
+     "year": 2027,
+     "title": "Open-Weight Masked Introspection: Measuring What Language Models Can Report About Their Own Computation"
+    },
+    {
+     "id": "5HASBtgMJG",
+     "year": 2027,
+     "title": "Training LLMs to Verbalize Evaluation Awareness"
+    },
+    {
+     "id": "niUroX9EOd",
+     "year": 2026,
+     "title": "LatentQA: Teaching LLMs to Decode Activations Into Natural Language"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "AI control 与监控规避",
+   "n26": 6,
+   "n27": 30,
+   "note_zh": "SHADE-Arena 与生产监控器成默认测试床"
+  },
+  {
+   "name_zh": "激活探针与白盒监控器",
+   "n26": 12,
+   "n27": 61,
+   "note_zh": "已用作一线监控器，效度审计 3 → 21 篇"
+  },
+  {
+   "name_zh": "CoT 可监测性",
+   "n26": 9,
+   "n27": 29,
+   "note_zh": "研究训练副作用、可训练性与理论界限"
+  },
+  {
+   "name_zh": "CoT 忠实性",
+   "n26": 13,
+   "n27": 28,
+   "note_zh": "份额持平，2026 年接收率 15%，已饱和"
+  },
+  {
+   "name_zh": "隐写与隐蔽信道",
+   "n26": 9,
+   "n27": 18,
+   "note_zh": "2026 年接收率 56%（5/9），评审认可"
+  },
+  {
+   "name_zh": "对齐审计与隐藏行为诱出",
+   "n26": 14,
+   "n27": 28,
+   "note_zh": "份额持平；出现 AuditBench 等基准"
+  },
+  {
+   "name_zh": "模型差分与 API 完整性",
+   "n26": 8,
+   "n27": 20,
+   "note_zh": "2026 年接收率 50%；diffing 审计遭攻击"
+  },
+  {
+   "name_zh": "LLM judge 可靠性",
+   "n26": 7,
+   "n27": 51,
+   "note_zh": "自偏好、一致放行、对抗 judge"
+  },
+  {
+   "name_zh": "内省与激活语言化",
+   "n26": 3,
+   "n27": 28,
+   "note_zh": "新监督通道；2026 年 3/3 被接收"
+  },
+  {
+   "name_zh": "弱到强与辩论监督",
+   "n26": 17,
+   "n27": 25,
+   "note_zh": "每万篇 8.6 → 5.8；以理论和失败模式为主"
+  },
+  {
+   "name_zh": "网络攻防能力评测",
+   "n26": 9,
+   "n27": 31,
+   "note_zh": "接收率 44%，CyberGym 为 oral"
+  },
+  {
+   "name_zh": "生物与化学危险评测",
+   "n26": 4,
+   "n27": 12,
+   "note_zh": "以蛋白、分子模型红队为主，uplift 方法稀缺"
+  },
+  {
+   "name_zh": "拒答机制可解释性",
+   "n26": 12,
+   "n27": 71,
+   "note_zh": "识别与执行分离、MoE 与工具场景"
+  },
+  {
+   "name_zh": "SAE 方法学审视",
+   "n26": 8,
+   "n27": 43,
+   "note_zh": "同期 SAE 总份额持平"
+  },
+  {
+   "name_zh": "因果干预效度批判",
+   "n26": 1,
+   "n27": 28,
+   "note_zh": "patching 与 steering 的识别问题"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年本章三个核心子领域接收率 31%，略高于 27% 的基线，以 agent 为目标的论文达 57%（8/14）。回报最高的是审计簇（50%）、隐写与混淆（56%）、内省（3/3）和网络攻防评测（44%）。回报最差的是通用安全 benchmark（19%）、CoT 忠实性指标（15%）和把 SAE 当安全工具（0/7），纯效度批判也只有 20%。",
+ "gaps_zh": [
+  "监控器评测仍以离线 AUC 为主，在线拦截时机、跨 harness 移植和多监控器误差相关少有研究。",
+  "生物与 CBRN 评测不足，对照实验真值、评估 agent 加工具 uplift 的工作极少。",
+  "自主复制、关机抵抗、AI R&D 自动化等失控类能力评测几乎为空，仅 3 → 4 篇。",
+  "效度批判多，报告标准、预注册协议、检测限这类替代规范仍是个例。",
+  "多 agent 与新架构的监督刚起步，以 multi-agent 为目标的核心论文仅 1 → 15 篇。",
+  "审计可被知情对手规避，假定审计者已知的审计协议和 API 身份保证规模很小。"
+ ],
+ "watchlist_zh": [
+  "针对探针训练和互信息后训练可能带来新的 Goodhart 问题，监控器在分布内有效、实际被绕过。",
+  "生产监控器的红队测试和自发规避测量，可能成为 2027 年 control 方向的重点。",
+  "统计安全论证，包括零检出能证明什么、silent consensus 和在线拦截界，可能连接监督与治理。",
+  "J-space 等新读出视角从 0 篇增至 14 篇，已有因果效度反驳，能否接替 SAE 有待观察。",
+  "observer channel 与内省接近随机的结论冲突，2027 年评审结果将决定内省方向的走向。"
+ ],
+ "notes_zh": [
+  "口径：份额为每万篇投稿；2027 年总投稿是 2026 年的 2.17×，跨年比较用份额。子领域代码：监督 = OVERSIGHT，危险能力评测 = DANGER_EVAL，安全可解释性 = INTERP_SAFE，通用可解释性 = INTERP_GEN。监督方向份额按 sub 或 sub2 计。",
+  "监督方向 88 → 300 篇（3.4×）；只按 sub 计为每万篇 31.3 → 48.1。以 agent 为目标的占比 10% → 25%，theory 类型 8% → 11%。",
+  "监控簇含 CoT 可监测性、AI control、探针监控器、隐写，29 → 122 篇。其中 AI control 每万篇 3.0 → 7.0，激活/探针监控器 6.1 → 14.2；CoT 忠实性 6.6 → 6.5。",
+  "度量效度类按 topic 标注，30 → 124 篇；审计式标题指 is not / cannot / validity / confound 等否定式或审计式标题。",
+  "危险能力评测：通用和领域安全 benchmark 每万篇 24.2 → 13.3；网络攻防 9 → 31 篇；以 agent 为目标的占比 12% → 28%。",
+  "SAE 总量 73 → 150 篇；审视、评测类 8 → 43 篇，按标题正则匹配。2026 年把 SAE 用作安全工具的论文 0/7 被接收。",
+  "2026 年评审细节：三个核心子领域（OVERSIGHT、DANGER_EVAL、INTERP_SAFE，仅计 sub）共 163 篇，接收率分别为 32%、31%、28%，INTERP_GEN 为 32%。以推理模型为目标的论文接收率 17%（4/23）；eval 和 method 类型各 36%，defense 14%，analysis 20%。审计簇均分 4.96；CyberGym 为 7.0 分 oral。3 篇 oral 为 CyberGym、Reliable Weak-to-Strong Monitoring of LLM Agents（监控器红队）、The Shape of Adversarial Influence。最高分为 model diffing（7.5）、Output Supervision Can Obfuscate the CoT（7.0）、AlphaSteer（7.0）。评审奖励揭示真实部署风险的可证伪监督发现和有统计效度保证的评测方法，不奖励又一个 benchmark、steering 防御或忠实性分数。",
+  "微主题补充：AI control 每万篇 3.0 → 7.0，2026 年均分 5.0，接收率 33%；激活探针每万篇 6.1 → 14.2；CoT 可监测性每万篇 4.5 → 6.7；CoT 忠实性每万篇 6.6 → 6.5；隐写每万篇 4.5 → 4.2，2027 年出现训练出的高容量隐写 model organism 和 paraphrase 防御；对齐审计 2026 年审计相关簇整体接收率 50%，2027 年另有 RealAudit 和 MO lottery；model diffing 与 API 完整性每万篇 4.0 → 4.6，2026 年 diffing 论文 7.5 分、两篇 API 审计均被接收，2027 年出现 AuditGym、SCORE、RMF；LLM judge 每万篇 3.5 → 11.9，含 silent consensus；网络攻防 2026 年接收率 44%；内省每万篇 1.5 → 6.5；弱到强与辩论以随机特征理论和辩论失败模式为主；网络攻防每万篇 4.5 → 7.2；生物化学每万篇 2.0 → 2.8，CBRN uplift 方法学稀缺；拒答机制每万篇 6.1 → 16.5；SAE 审视每万篇 4.0 → 10.0；因果干预批判每万篇 0.5 → 6.5。",
+  "空白补充：监控器部署效度的零星论文为 yVGzyZ8zMc、y0qbjNRQLW、CSoTCflQb2，另缺采样率下的统计保证；生物与 CBRN 评测仅 4 → 12 篇；可替代规范的个例为 BUQKer9bbG、nYJ5p5voZ4、UStA5Nl1ES，2026 年纯批判论文接收率 20%；扩散 LM、looped LM 和 latent 通信的监控与可解释性刚起步，合谋检测缺少标准测试床；model diffing、探针和 SAE 审计都已被证明可被规避，API 完整性 4 → 7 篇。",
+  "观察补充：可监测性训练见 IVJnUfZ3IU、5xrNwUd8y4；生产监控器指 Auto Mode、Guardian 等阻断式分类器，自发规避测量见 EvasionBench；J-space / J-lens 已用于后门痕迹和合谋检测，因果效度反驳见 wdhZZ2Y7vT。"
+ ]
+}

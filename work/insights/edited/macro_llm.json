@@ -1,0 +1,443 @@
+{
+ "key": "llm",
+ "title_zh": "LLM 后训练与架构效率",
+ "subtitle_zh": "在线策略蒸馏成为后训练的第二根支柱",
+ "headline_zh": "2027 年 LLM 后训练从单一 GRPO 配方转为 RLVR 加在线策略蒸馏（OPD）的混合配方，OPD 论文从 1 篇增至 907 篇，GRPO 族份额持平。Qwen3/Qwen3.5 成为默认底座，架构侧 looped 递归、Gated DeltaNet 混合注意力、Muon 与 FP4 训练上升。",
+ "stats": [
+  {
+   "label_zh": "OPD 提及率",
+   "value": "0.5 → 210.9 /万篇",
+   "note_zh": "1 篇 → 907 篇，本领域增速最快"
+  },
+  {
+   "label_zh": "OPD 在后训练方法中占比",
+   "value": "0.1% → 20.5%",
+   "note_zh": "同期 DPO 17.3% → 9.8%"
+  },
+  {
+   "label_zh": "GRPO/RLVR 族提及率",
+   "value": "366.9 → 393.8 /万篇",
+   "note_zh": "仅 +7%，已成默认基础设施"
+  },
+  {
+   "label_zh": "Qwen/Llama 提及率",
+   "value": "Qwen 2.2%→9.7%→21.1%；Llama 14.5%→8.7%→6.6%",
+   "note_zh": "依次为 2025、2026、2027 年"
+  },
+  {
+   "label_zh": "looped 模型提及率",
+   "value": "10.1 → 50.9 /万篇",
+   "note_zh": "2026 年接收率 0.50"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "后训练配方加入在线策略蒸馏",
+   "tag": "shift",
+   "body_zh": "在线策略蒸馏（OPD）在后训练方法中的占比 0.1% → 20.5%，GRPO 族 39.3% → 38.2%。OPD 让学生在自采样轨迹上接受教师逐 token 打分，把 RLVR 的稀疏结果奖励换成稠密信号。它没有取代 RL，907 篇 OPD 论文中 36.5% 同时使用 GRPO/RLVR；被挤出的是 DPO 与经典 RLHF。",
+   "note_zh": "后训练方法池＝提及 GRPO/RLVR/OPD/DPO/RLHF/rubric/SFT 任一者的论文。OPD 用逐 token（反向）KL 打分，无需奖励模型。OPD/OPSD 提及率每万篇 210.9。907 篇中 34.8% 仍在数学/AIME 上评测。DPO 每万篇 95.9 → 57.2，RLHF+奖励模型每万篇 94.4 → 27.4。2026 年的标准配方为 SFT/蒸馏冷启动加 GRPO/DAPO 结果奖励。",
+   "evidence": [
+    {
+     "id": "Gd6XqCG7DC",
+     "year": 2027,
+     "title": "Gains and Collapse in On-Policy Distillation: A Reinforcement Learning Perspective"
+    },
+    {
+     "id": "bU0KqhOsHJ",
+     "year": 2027,
+     "title": "When Teachers Conflict with Verifiers: Support-Preserving On-Policy Distillation"
+    },
+    {
+     "id": "hoQmkt2Ajc",
+     "year": 2027,
+     "title": "From Imitation to Reward Discovery: On-Policy Warmup for Agentic RL"
+    },
+    {
+     "id": "FMjeC9Msws",
+     "year": 2026,
+     "title": "The Art of Scaling Reinforcement Learning Compute for LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "自蒸馏路线占全部 OPD 论文的 42%",
+   "tag": "rising",
+   "body_zh": "OPD 论文中 42% 采用在线策略自蒸馏（OPSD），教师是在 prompt 中看到参考解或执行反馈的学生自身。一年内这条线转向修补：24.1% 的论文讨论崩溃与不稳定，9.3% 做多教师，2.1% 做跨 tokenizer 蒸馏。剔除模板化论文后趋势仍成立，但增量工作的接收前景存疑。",
+   "note_zh": "特权信息（privileged information）提及率每万篇 6.1 → 60.2；OPSD 为 RLVR 全错组的失败轨迹提供逐 token 纠错方向。外溢：多模态占 24.6%，agentic OPD 每万篇 0 → 37.2，另见 block diffusion 语言模型。2026 年 OPD 无接收先例。OPD/OPSD 两簇约 52–53% 的稿件被标记为模板化写作；剔除后 OPD 提及率仍为每万篇 181.9。",
+   "evidence": [
+    {
+     "id": "lxGrzU1x9c",
+     "year": 2027,
+     "title": "ImmuneCoT: Learning Reasoning Immunity via Privileged On-Policy Self-Distillation"
+    },
+    {
+     "id": "QwvfMvZwNi",
+     "year": 2027,
+     "title": "On-Policy Self-Distillation without Any Supervision"
+    },
+    {
+     "id": "Mm5OLOPLT0",
+     "year": 2027,
+     "title": "Cross-Tokenizer On-Policy Distillation via Byte-Prefix Marginalization"
+    },
+    {
+     "id": "ZnAAI3cg7p",
+     "year": 2027,
+     "title": "Towards Unbiased On-Policy Distillation for Block Diffusion Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "GRPO 研究重心转向训推一致性",
+   "tag": "shift",
+   "body_zh": "在 GRPO/RLVR 论文中，熵与探索话题 24.5% → 14.5%，多轮/agent 19.1% → 31.1%，信用分配 3.7% → 14.7%。具名后继算法均未成为新标准，DAPO 每万篇 18.2 → 17.2。新增长来自工程问题，训推不一致每万篇 4.5 → 12.8，原生 NVFP4 精度下的 RL 稳定性开始出现。",
+   "note_zh": "样本为提及 GRPO/RLVR 的论文，2026 年 727 篇，2027 年 1,694 篇。其他话题占比：长度/效率 39.1% → 27.5%，理论分析 14.0% → 7.6%，利用失败/负样本 8.5% → 14.8%，hint/特权引导 6.1% → 12.8%。提及率（每万篇）：GSPO 5.6 → 6.5，Dr.GRPO 2.5 → 2.1，entropy collapse 13.1 → 7.0。训推不一致包括 rollout 引擎与训练引擎不一致、量化后 trust region 失效。",
+   "evidence": [
+    {
+     "id": "EDblkIcpw6",
+     "year": 2027,
+     "title": "Quantization Breaks Trust Region: Repairing Clipped RL Objective under Training--Inference Mismatch"
+    },
+    {
+     "id": "3TkUHSFp3e",
+     "year": 2027,
+     "title": "TRIAGE: Direction-Aware Mismatch Stabilization for Native NVFP4 Reinforcement Learning"
+    },
+    {
+     "id": "wk9FnLEEV0",
+     "year": 2027,
+     "title": "Bounding Token Divergence to Unlock Stable Reinforcement Learning for Large Language Models"
+    },
+    {
+     "id": "X9D5MVpPJ9",
+     "year": 2026,
+     "title": "TROLL: Trust Regions Improve Reinforcement Learning for Large Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "信用分配成为最热的 RL 子问题",
+   "tag": "rising",
+   "body_zh": "RL 的主要场景从单轮数学转向长程 agent，标题或关键词含信用分配的论文每万篇 9.1 → 102.8。基准随之从 AIME（1.30% → 0.56%）转向 SWE-bench（0.19% → 0.63%）。2026 年 GRPO 论文中涉及信用分配的接收率为 0.59，GRPO 整体约 0.33。",
+   "note_zh": "信用分配按标题/关键词匹配 turn-level/step-level credit 或 credit assignment。簇 111（Credit assignment for agentic RL）每万篇 12.1 → 86.5。agentic/多轮 RL 每万篇 29.3 → 75.6；环境合成（environment synthesis/scaling）6.1 → 19.8；SWE/terminal 场景 RL 28.8 → 43.2。AIME、SWE-bench 为全库占比。信用分配接收率样本 n=27。",
+   "evidence": [
+    {
+     "id": "9rM1Jg3VUu",
+     "year": 2027,
+     "title": "DCGPO: Dual-Conditioned Group Policy Optimization for Long-Horizon LLM Agents"
+    },
+    {
+     "id": "ZiPDKgumJx",
+     "year": 2027,
+     "title": "TACO: Reinforcing Multi-Turn Table Agents with Hierarchical Credit Assignment"
+    },
+    {
+     "id": "8t0YqlsEgB",
+     "year": 2027,
+     "title": "Recursive Environment Scaling for General Long-Horizon Agents"
+    },
+    {
+     "id": "k5nIOvYGCL",
+     "year": 2026,
+     "title": "MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent"
+    }
+   ]
+  },
+  {
+   "title_zh": "rubric 奖励开始取代偏好奖励模型",
+   "tag": "rising",
+   "body_zh": "评分细则（rubric）提及率每万篇 38.9 → 118.1，在后训练方法中的占比 4.2% → 11.5%，经典 RLHF 同期 94.4 → 27.4。2027 年的焦点是 rubric 自动生成、与策略共同演化和防御 reward hacking。审稿人认可 rubric 评测，对 rubric-RL 方法仍有保留：2026 年 rubric 论文接收率 0.364，rubric 奖励簇仅 0.235。",
+   "note_zh": "标题/关键词口径每万篇 11.6 → 41.8。生成式奖励模型 GenRM 每万篇 11.1 → 2.3；RLHF and reward modeling 簇 44.4 → 13.3。rubric 奖励簇全称 Rubric rewards and reward hacking。2026 年被接收的 rubric 工作以评测基准为主（ProfBench、ExpertLongBench 等），把 rubric 用作 RL 奖励的方法论文很少。2027 年另有 rubric 层面的信用分配；防御手段含精度目标、可靠性分诊。",
+   "evidence": [
+    {
+     "id": "QbUjIKUlaV",
+     "year": 2027,
+     "title": "Co-Evolving Policy and Rubric via Capability Awareness for Open-Ended Generation"
+    },
+    {
+     "id": "sMy13QhmQd",
+     "year": 2027,
+     "title": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL"
+    },
+    {
+     "id": "O0MnDF6uMA",
+     "year": 2027,
+     "title": "Dr.Credit: Rubric-Grounded Process Credit Assignment for Deep Research Agents"
+    },
+    {
+     "id": "pBjy4ek2QV",
+     "year": 2026,
+     "title": "Chasing the Tail: Effective Rubric-based Reward Modeling for Large Language Model Post-Training"
+    }
+   ]
+  },
+  {
+   "title_zh": "R1 时代的推理与过度思考话题降温",
+   "tag": "fading",
+   "body_zh": "DeepSeek-R1 提及率每万篇 83.8 → 17.2，过度思考（overthinking）43.4 → 9.8，数学推理方向 95.4 → 26.7。高效推理的占比持平，问题从压缩 CoT 长度转向何时停止与逐 token 自适应计算。潜空间推理每万篇 45.9 → 75.1，开始与 looped 架构合流。",
+   "note_zh": "数学推理方向为 LLM mathematical reasoning 簇。高效推理概念占比 1.20% → 1.22%。Chain-of-thought and latent reasoning 簇每万篇 87.3 → 40.5；test-time scaling 165.5 → 130.0。2026 年 overthinking 簇接收率 0.252，胜出的是少数机制清晰的工作，如解耦奖励加课程调度的 oral。自适应计算代表作 PonderLM-3。",
+   "evidence": [
+    {
+     "id": "kdeiRledV6",
+     "year": 2026,
+     "title": "Overthinking Reduction with Decoupled Rewards and Curriculum Data Scheduling"
+    },
+    {
+     "id": "bGhIOYs9hE",
+     "year": 2027,
+     "title": "Settle: Learning When to Stop Reasoning"
+    },
+    {
+     "id": "eGVeq4Cvyk",
+     "year": 2027,
+     "title": "PonderLM-3: Token-Adaptive Pondering with Differentiable Masking"
+    },
+    {
+     "id": "d09ROpuTpH",
+     "year": 2027,
+     "title": "Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers"
+    }
+   ]
+  },
+  {
+   "title_zh": "Qwen3 成为后训练研究的默认底座",
+   "tag": "shift",
+   "body_zh": "2025 → 2027 年，LLM 论文中提及 Qwen 的比例 2.2% → 9.7% → 21.1%，Llama 14.5% → 8.7% → 6.6%，两者在 2026 年交叉。2027 年 RL/OPD 论文中 Qwen 占 31.4%，Llama 占 3.0%。Llama-3.1-8B 提及仍在上升，但主要作安全与可解释研究的通用基线。",
+   "note_zh": "口径为 LLM 两个主题内的论文占比。型号提及率（每万篇）：Qwen3-8B 21.2 → 108.6，Qwen3-4B 14.6 → 76.5，Qwen3-30B-A3B（MoE 实验台）6.6 → 17.9，Qwen3.5 0 → 122.3；Qwen3-VL 0.5 → 75.1，超过 Qwen2.5-VL（56.5 → 48.8）。Llama-3.1-8B 全库每万篇 69.0。DeepSeek-R1-Distill 21.7 → 14.6，OLMo 41.9 → 63.7（全开放数据便于污染与归因研究），Kimi 8.6 → 23.7，GLM-4.5+ 5.0 → 26.3，gpt-oss 持平于 17.2。2026 年 LLM 主题内用 Qwen3 的论文接收率 0.352，用 Llama 的 0.275。",
+   "evidence": [
+    {
+     "id": "sBvEgtiF5l",
+     "year": 2027,
+     "title": "Counterfactual Visual On-Policy Distillation"
+    },
+    {
+     "id": "NOH2A7lGJk",
+     "year": 2027,
+     "title": "Protect What Is at Risk, Distill Where It Responds: On-Policy Distillation for Continual Learning in MLLMs"
+    },
+    {
+     "id": "t8Pg5VElI5",
+     "year": 2027,
+     "title": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments"
+    }
+   ]
+  },
+  {
+   "title_zh": "looped 递归与混合线性注意力上升",
+   "tag": "rising",
+   "body_zh": "循环 Transformer（looped / recurrent-depth）是增长最快的架构方向，每万篇 10.1 → 50.9，2026 年接收率 0.50。Gated DeltaNet（GDN）每万篇 2.0 → 18.8，Mamba 70.7 → 53.5，纯 SSM 让位于 GDN 加少量全注意力的混合结构。配套研究随之出现，包括混合模型的 KV 淘汰、递归状态压缩和 DSA 式稀疏注意力。",
+   "note_zh": "Ouro/Huginn 被点名每万篇 1.0 → 7.9。2027 年 looped 议题包括训练配方、稳定化、FlashLoop 式加速和长度外推；2026 年均分 4.82。DeltaNet 每万篇 2.5 → 23.2；Linear attention & DeltaNet hybrids 簇 17.7 → 26.7；SSM 簇 25.2 → 15.3。混合结构对应 Qwen3-Next/Qwen3.5 路线。DSA 式索引器加 top-k 稀疏注意力每万篇 0 → 7.0。另有递归状态跨模型迁移、混合模型上的 MTP 并行验证。",
+   "evidence": [
+    {
+     "id": "zsC1D9PH9q",
+     "year": 2027,
+     "title": "Closing the Loop: Practical Training Recipes for Looped Language Models"
+    },
+    {
+     "id": "tL5CbAtSCh",
+     "year": 2027,
+     "title": "Simply Stabilizing the Loop via Fully Looped Transformer"
+    },
+    {
+     "id": "jYHHPWZOhr",
+     "year": 2027,
+     "title": "Rotary-state Gated DeltaNet: Enhancing State Tracking through Rotation"
+    },
+    {
+     "id": "Z3M8L4BifD",
+     "year": 2027,
+     "title": "HybriKV: KV Cache Eviction for Hybrid Linear-Attention Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "效率研究跟随推理与 agent 负载",
+   "tag": "shift",
+   "body_zh": "KV cache 研究占比 1.03% → 1.84%，增长来自长推理解码与多轮 agent 场景。训练侧 Muon 每万篇 24.2 → 51.4 并开始用于 RL 与微调，FP4 训练 6.6 → 16.5。结构化剪枝与 LoRA 退潮，2026 年接收率仅 0.198 与 0.192，为全领域最低。",
+   "note_zh": "KV 细分（每万篇）：长推理解码 16.7 → 29.3，多轮/agent 7.6 → 21.9，prefix/KV 复用 5.0 → 25.3，KV 量化 3.5 → 12.6。Muon 2026 年接收率 0.354、均分 4.76，Polar Express 获 oral。FP4 指 NVFP4/MXFP4，2026 年接收率 0.538。剪枝与 LoRA 为簇口径：结构化剪枝每万篇 63.6 → 28.1，LoRA 63.1 → 47.2。scaling law 提及率 87.3 → 60.9。投机解码簇 35.8 → 53.2，EAGLE 12.6 → 8.4，新意来自 agent 动作级投机和混合模型上的验证。",
+   "evidence": [
+    {
+     "id": "yRtgZ1K8hO",
+     "year": 2026,
+     "title": "The Polar Express: Optimal Matrix Sign Methods and their Application to the Muon Algorithm"
+    },
+    {
+     "id": "rQwleoekAD",
+     "year": 2027,
+     "title": "When Does Muon Help Agentic Reinforcement Learning?"
+    },
+    {
+     "id": "WVEhEexg1S",
+     "year": 2027,
+     "title": "Full-Stack NVFP4: Stable, Role-Aware 4-Bit LLM Pretraining Beyond Linear Projections"
+    },
+    {
+     "id": "rQmjDK6lsw",
+     "year": 2027,
+     "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "在线策略蒸馏",
+   "from": 0.5,
+   "to": 210.9,
+   "unit": "per10k",
+   "note_zh": "教师逐 token 打分，为 RL 补稠密信号"
+  },
+  {
+   "name_zh": "Agent 信用分配",
+   "from": 9.1,
+   "to": 102.8,
+   "unit": "per10k",
+   "note_zh": "长程 agent 稀疏奖励下的核心难题"
+  },
+  {
+   "name_zh": "rubric 奖励",
+   "from": 38.9,
+   "to": 118.1,
+   "unit": "per10k",
+   "note_zh": "为不可验证任务提供奖励"
+  },
+  {
+   "name_zh": "特权信息教师",
+   "from": 6.1,
+   "to": 60.2,
+   "unit": "per10k",
+   "note_zh": "OPSD 的核心机制，教师可见参考解"
+  },
+  {
+   "name_zh": "Qwen3 系列提及",
+   "from": 100.4,
+   "to": 552.9,
+   "unit": "per10k",
+   "note_zh": "后训练研究的默认底座"
+  },
+  {
+   "name_zh": "looped 模型",
+   "from": 10.1,
+   "to": 50.9,
+   "unit": "per10k",
+   "note_zh": "复用层做多步计算，与潜空间推理合流"
+  },
+  {
+   "name_zh": "Muon 优化器",
+   "from": 24.2,
+   "to": 51.4,
+   "unit": "per10k",
+   "note_zh": "从预训练扩展到 RL 与微调"
+  },
+  {
+   "name_zh": "Gated DeltaNet",
+   "from": 2.0,
+   "to": 18.8,
+   "unit": "per10k",
+   "note_zh": "混合线性注意力的主流单元"
+  },
+  {
+   "name_zh": "KV/prefix 复用",
+   "from": 5.0,
+   "to": 25.3,
+   "unit": "per10k",
+   "note_zh": "服务 agent 与多轮场景"
+  },
+  {
+   "name_zh": "FP4 训练与量化",
+   "from": 6.6,
+   "to": 16.5,
+   "unit": "per10k",
+   "note_zh": "含原生 FP4 预训练与 FP4 RL"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "RLHF",
+   "from": 94.4,
+   "to": 27.4,
+   "unit": "per10k",
+   "note_zh": "被 OPD 与 rubric 奖励替代"
+  },
+  {
+   "name_zh": "DPO",
+   "from": 95.9,
+   "to": 57.2,
+   "unit": "per10k",
+   "note_zh": "被在线策略蒸馏挤出"
+  },
+  {
+   "name_zh": "过度思考",
+   "from": 43.4,
+   "to": 9.8,
+   "unit": "per10k",
+   "note_zh": "转向何时停止与自适应计算"
+  },
+  {
+   "name_zh": "DeepSeek-R1 提及",
+   "from": 83.8,
+   "to": 17.2,
+   "unit": "per10k",
+   "note_zh": "R1 复现潮结束"
+  },
+  {
+   "name_zh": "LLM 数学推理",
+   "from": 95.4,
+   "to": 26.7,
+   "unit": "per10k",
+   "note_zh": "评测转向 agent 任务"
+  },
+  {
+   "name_zh": "LLM 结构化剪枝",
+   "from": 63.6,
+   "to": 28.1,
+   "unit": "per10k",
+   "note_zh": "增量式压缩，审稿回报低"
+  },
+  {
+   "name_zh": "Mamba 提及",
+   "from": 70.7,
+   "to": 53.5,
+   "unit": "per10k",
+   "note_zh": "让位于 GDN 混合架构"
+  },
+  {
+   "name_zh": "熵崩溃",
+   "from": 13.1,
+   "to": 7.0,
+   "unit": "per10k",
+   "note_zh": "2026 年的 GRPO 热点"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年 LLM 两个主题共 3,749 篇，接收率 0.286，略高于全库基线 0.27。机制清楚、可扩展的工作回报高，如长上下文训练与评测 0.479、扩散语言模型 0.472、预训练数据 0.387。增量式压缩与套路化方法回报低，LoRA/PEFT 簇 0.192、结构化剪枝 0.198、联合压缩量化 0.171。",
+ "frontline_zh": [
+  "OPSD 的标准形态：模型看到参考解或执行反馈后充当教师，解决 RLVR 全错组无梯度的问题。",
+  "OPD 与 RL 分工：先用 OPD 做 on-policy 预热，再进入 agentic RL。",
+  "跨 tokenizer OPD 让 Qwen3 学生向异族教师学习；多教师占 OPD 论文 9.3%",
+  "OPD 扩展到 block diffusion LM、视频生成和全双工语音对话。",
+  "RL 基础设施成为论文主题，如量化 rollout 的训推不一致、NVFP4 RL 稳定化。",
+  "推理系统适配混合架构：DSA 索引器的融合 kernel，混合模型的 KV 淘汰与状态压缩。"
+ ],
+ "watchlist_zh": [
+  "OPD 能否通过审稿。2026 年无接收先例，分析崩溃与可蒸馏性的工作更可能胜出。",
+  "RLVR 与 OPD 能否统一为同一目标，OPD 能否用于持续学习与抗遗忘。",
+  "looped 模型能否走向真实预训练，并与潜空间推理、test-time scaling 合流。",
+  "GDN 混合架构普及后，KV、投机解码与量化研究的对象转向递归状态与索引器。",
+  "低精度 RL 与训推不一致可能取代熵崩溃，成为 2027 年 RL 稳定性的新主线。"
+ ],
+ "notes_zh": [
+  "「每万篇」指每一万篇投稿中命中相应术语或簇的论文数；占比为相应论文池或主题内的比例。",
+  "OPD 统计：OPD 簇每万篇 0.5 → 108.3，OPSD 簇 0 → 52.3，为本领域增速最快的两簇；OPD/OPSD 合计约 211/万篇。",
+  "后训练方法池 2026 年 1,851 篇、2027 年 4,432 篇；RLHF/奖励模型占比 27.9% → 14.2%，GRPO 族 39.3% → 38.2%。",
+  "GRPO/RLVR 族每万篇 366.9 → 393.8，即 +7%。RL/OPD 论文中 Qwen:Llama≈10:1。",
+  "looped 簇每万篇 7.1 → 34.9；2026 年该方向接收率 0.50（n=20，均分 4.82），基线 0.27。",
+  "Qwen3 系列提及为全库口径，另有 Qwen3.5 每万篇 0 → 122.3。上升/下降列表中 OPD 为 2026 年 1 篇 → 2027 年 907 篇。",
+  "2026 年接收率明细：llm_post 0.292、llm_core 0.279。高回报：RLVR 推理两簇 0.415 与 0.382，SFT↔RL 关系 0.385，Lean 定理证明 0.422，长上下文训练与评测均分 4.71，预训练数据均分 4.81（全领域最高），scaling law 0.388，稀疏注意力 0.391，SSM 0.38；概念层面扩散语言模型均分 4.67，looped 0.385（均分 4.92），Muon 0.377（均分 4.74）。",
+  "GRPO 论文内部接收率：credit assignment 0.59（n=27），off-policy/回放 0.47，pass@k 0.46，以 Qwen2.5 为底座的仅 0.26。低回报方向另有 RAG 多跳 0.196、提示优化 0.216、MoE 架构 0.22、KV 压缩 0.232、rubric/reward hacking 0.235、过度思考 0.252。",
+  "2026 年 51 篇 oral 包括 The Art of Scaling RL Compute、Coverage Principle、Mamba-3、Polar Express（Muon）、TROLL、OpenThoughts、ThinKV、MemAgent、LoongRL 等。",
+  "前沿代表作：OPSD 有 ImmuneCoT、SE-OPSD、Posterior Teachers；OPD 与 RL 分工有 On-Policy Warmup、VALVE（critic 引导 OPD）、PivotOPD（多轮 agent 从关键错误中恢复），另有研究教师与验证器冲突时保留支撑集；跨 tokenizer 有按字节前缀边缘化、Breaking the Tokenizer Barrier；非文本 OPD 有 block diffusion 无偏 OPD、StepX-OPD；RL 基础设施有 Quantization Breaks Trust Region、TRIAGE、miniTE。",
+  "前沿补充：train-inference mismatch 每万篇 4.5 → 12.8；Agent RL 环境供给有递归环境演化、可回放环境、终端环境族（SCOPE、Terminal-Universe），环境合成 6.1 → 19.8，SWE/terminal RL 28.8 → 43.2。DSA 落地实现有 LiteTopK、LISA、DoSA，indexer 从 0 到 30 篇。混合架构推理系统有 HybriKV、DASC、Xtra-MTP、LatentPort。Muon 走出预训练：When Does Muon Help Agentic RL、Muon 微调的优化器失配；MLA 缓存的可量化性受训练配方影响（When Cleaner Caches Break）。",
+  "实验台：Qwen3-8B/Qwen3-4B 是后训练默认规模，Qwen3-30B-A3B 是 MoE 实验台，Qwen3.5 首次出现即达每万篇 122.3；评测从 AIME（1.30% → 0.56%）/MATH-500 转向 SWE-bench（0.19% → 0.63%）、τ-bench 与 OSWorld。",
+  "观察项补充：2027 年 907 篇 OPD 投稿中约一半写作模板化；持续学习代表作 On-Policy Distillation for Continual Learning in MLLMs；looped 真实预训练参照 Ouro；低精度 RL 指 NVFP4。"
+ ]
+}

@@ -1,0 +1,451 @@
+{
+ "key": "agents",
+ "title_zh": "智能体研究转向自我进化",
+ "subtitle_zh": "harness、技能、记忆各自成为独立研究对象",
+ "headline_zh": "智能体主题份额每万篇 626 → 1155，占 2027 年全部投稿的 11.6%，是最大主题。增量来自 harness、技能、记忆、上下文和信用分配等组件研究，RAG 与通用多智能体框架等 2026 年主线在主题内占比 42.3% → 13.9%。",
+ "stats": [
+  {
+   "label_zh": "智能体主题份额",
+   "value": "626 → 1155 /万篇",
+   "note_zh": "2027 年占全部投稿 11.6%"
+  },
+  {
+   "label_zh": "自我进化家族份额",
+   "value": "9.1 → 234.6 /万篇",
+   "note_zh": "主题内占比 1.5% → 20.3%"
+  },
+  {
+   "label_zh": "harness 提及率",
+   "value": "0.5 → 111.8 /万篇",
+   "note_zh": "2026 年全库仅 1 篇"
+  },
+  {
+   "label_zh": "经典应用簇主题内占比",
+   "value": "42.3% → 13.9%",
+   "note_zh": "RAG 簇每万篇 89.8 → 24.9"
+  },
+  {
+   "label_zh": "老文本环境提及率",
+   "value": "12.6 → 80.4 · 8.6 → 53.7 /万篇",
+   "note_zh": "依次为 ALFWorld、WebShop"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "harness 取代 prompt 成为主要优化对象",
+   "tag": "rising",
+   "body_zh": "agent 脚手架（harness）优化簇在 2025、2026 年为 0 篇，2027 年出现 228 篇，每万篇 53.0。研究者把系统提示、工具集、记忆和控制流当作可进化的程序，用失败轨迹驱动改写；prompt 优化措辞同期持平。递归自我改进（RSI）每万篇 0.5 → 53.2，已有专用环境，也有自我改进转为自我退化的反面证据。",
+   "note_zh": "簇 282「agent harness 优化与进化」。全文匹配 agent harness / harness optimization 等措辞的论文 1 → 481 篇，每万篇 0.5 → 111.8。prompt 优化措辞指 DSPy/TextGrad/GEPA 等，每万篇 41.4 → 41.2。对象为 Claude Code/Codex/OpenClaw 式产品；Claude Code 提及每万篇 4.0 → 28.4，Codex 2.5 → 27.0。代表方法 HGM-Dual、JET、EvoRule；另有研究模型-harness 适配度与 harness 增益归因。2026 年唯一先声为 oral 论文 Huxley-Gödel Machine（编码 agent 自改进）；2027 年有 RSI-Env 等专用环境与 RRSI 等正则化方法。",
+   "evidence": [
+    {
+     "id": "g96VKH95HC",
+     "year": 2027,
+     "title": "How Well Do Models and Harnesses Work Together: Measuring Model–Harness Fit Beyond Task Scores"
+    },
+    {
+     "id": "6YRJH50sAy",
+     "year": 2027,
+     "title": "HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning"
+    },
+    {
+     "id": "PwLSweAzxz",
+     "year": 2027,
+     "title": "RSI-Env: An Open-Ended Environment for Recursive Self-Improvement of Agents"
+    },
+    {
+     "id": "T0EiEuhOOL",
+     "year": 2026,
+     "title": "Huxley-G\\\"odel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine"
+    }
+   ]
+  },
+  {
+   "title_zh": "技能文件成为自我进化的基本单元",
+   "tag": "rising",
+   "body_zh": "技能相关论文从 2026 年 5 篇增至 2027 年 402 篇，每万篇 2.5 → 93.5。SKILL.md 式技能成为主流 harness 的标准接口后，研究对象从原始轨迹上移到可复用技能文件，包括跨框架编译、强弱 agent 间迁移和技能遵循度。同时出现一批失效研究，涉及技能静默过期、技能库退役锁死和技能与策略协同进化的陷阱。",
+   "note_zh": "技能相关指簇 57（技能库）与簇 176（技能自演化）合计。全文 agent skill(s)/skill library 措辞每万篇 1.5 → 74.4。2025 年末 SKILL.md 式 Agent Skills 成为标准接口。2026 年的经验记忆以 ReasoningBank 为代表。代表作 SkCC、SkillIF、Repo2Skill-Evo、Skill Lock-In；另有技能边际效用研究。恶意技能与技能链劫持见安全章节。",
+   "evidence": [
+    {
+     "id": "EgaT7aRhoK",
+     "year": 2027,
+     "title": "SkCC: A Compiler for Cross-Framework Agent Skills"
+    },
+    {
+     "id": "JYd8XvwMkg",
+     "year": 2027,
+     "title": "Repo2Skill-Evo: Repository Skills Go Stale in Silence"
+    },
+    {
+     "id": "ICOKmwn5U1",
+     "year": 2027,
+     "title": "Skill Lock-In: Silent Retirement Failures in Self-Evolving LLM Skill Libraries"
+    },
+    {
+     "id": "tMv5dDcgM9",
+     "year": 2027,
+     "title": "SkillIF: Do Agents Follow Their Skills?"
+    }
+   ]
+  },
+  {
+   "title_zh": "记忆从检索附件变为 agent 核心状态",
+   "tag": "shift",
+   "body_zh": "记忆与上下文簇份额每万篇 24.2 → 149.0，记忆基准 LongMemEval 2.5 → 27.2。2026 年的问题是怎样构建记忆，2027 年转向记忆治理，包括写入删除路径是否可见、状态仲裁和记忆对代码 agent 是否有用。也出现了记忆越多 agent 越差的负面结果。",
+   "note_zh": "记忆/上下文簇为簇 56、198、221，增幅 6 倍。全文 agent memory/long-term memory 措辞每万篇 84.3 → 220.2；LoCoMo 35.8 → 64.9。2026 年 MemGen、ReasoningBank、MEM1 均被接收。2027 年代表作 Evidence Is Not Authority、MemDev-Bench、More Memory, Worse Agents（错误复现）。2026 年接收率两极：长期对话记忆簇 198 为 0.421，全文 agent memory 整体为 0.240。",
+   "evidence": [
+    {
+     "id": "U3rsNjPZu2",
+     "year": 2027,
+     "title": "More Memory, Worse Agents: Error Reproduction and Anti-Persistence in LLM Agents"
+    },
+    {
+     "id": "Wne2AYfvqG",
+     "year": 2027,
+     "title": "Evidence Is Not Authority: A Causal Study of State Arbitration in Long-Horizon Agent Memory"
+    },
+    {
+     "id": "nyjeTpcRHY",
+     "year": 2027,
+     "title": "MemDev-Bench: Does Memory Help Code Agents? Benchmarking Memory Systems over Real Repository Histories"
+    },
+    {
+     "id": "jL7fwchScm",
+     "year": 2026,
+     "title": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory"
+    }
+   ]
+  },
+  {
+   "title_zh": "上下文压缩成为可测量的工程问题",
+   "tag": "shift",
+   "body_zh": "上下文工程（context engineering）一词每万篇 9.1 → 5.8，具体的压缩与折叠措辞 22.7 → 68.6。2026 年 ACON 与 Context Folding 被拒、AgentFold 被接收；2027 年出现针对生产级编码 agent 的压缩刻画与成本优化。上下文管理与记忆、harness 的边界正在消失，三者都是 harness 中可优化的状态层。",
+   "note_zh": "压缩措辞含 context compression/folding/compaction 等。簇 221「长程上下文管理」每万篇 7.1 → 37.0。2027 年代表作 CliffCompaction、可逆折叠、ScrubAgent（上下文擦除）；评估口径转向任务进度与语义交接，而非 token 数。",
+   "evidence": [
+    {
+     "id": "NWYYYlWJhJ",
+     "year": 2027,
+     "title": "Characterizing and Optimizing Context Compaction in Production Coding Agents"
+    },
+    {
+     "id": "9xIhJWqfbr",
+     "year": 2027,
+     "title": "CliffCompaction: Cost-Efficient Compaction for Long-Horizon Coding Agents"
+    },
+    {
+     "id": "AVuTydEF9R",
+     "year": 2027,
+     "title": "ScrubAgent: Context Scrubbing for Scalable Long-Horizon LLM Agents"
+    },
+    {
+     "id": "IuZoTgsUws",
+     "year": 2026,
+     "title": "AgentFold: Long-Horizon Web Agents with Proactive Context Folding"
+    }
+   ]
+  },
+  {
+   "title_zh": "agentic RL 的研究瓶颈转到信用分配",
+   "tag": "rising",
+   "body_zh": "信用分配（credit assignment）每万篇 45.9 → 159.3，agentic RL 19.2 → 68.1。训练对象从单轮数学转向终端、搜索等多轮任务，在线策略蒸馏（OPD）也进入 agent 训练，agent 簇中 OPD 论文 0 → 35 篇。这是 2026 年回报最高的方向之一，agentic RL 簇接收率 0.400。",
+   "note_zh": "全文措辞口径；环境合成（environment synthesis/scaling）每万篇 6.1 → 22.1；turn/step 级奖励每万篇 52.0 → 79.3；llm_post 主题下簇 111「agentic RL 信用分配」12.1 → 86.5。OPD 含特权信息的 OPSD，代表作 PR-OPD。环境侧有 EnvCraft（Claw 类通用 agent 的可执行环境合成）和终端 agent 数据扩展。多轮任务含 ALFWorld/WebShop。agentic RL 簇为簇 28，均分 4.62；AgentFlow（7.33）与 AgentGym-RL 均为 oral。",
+   "evidence": [
+    {
+     "id": "89fbb1anXr",
+     "year": 2027,
+     "title": "EnvCraft: Synthesizing Executable Environments in Agentic RL for Claw-like Agent"
+    },
+    {
+     "id": "UOwYasdeqY",
+     "year": 2027,
+     "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence"
+    },
+    {
+     "id": "JZJgzbuurd",
+     "year": 2027,
+     "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning"
+    },
+    {
+     "id": "ZgCCDwcGwn",
+     "year": 2026,
+     "title": "AgentGym-RL: An Open-Source Framework to Train LLM Agents for Long-Horizon Decision Making via Multi-Turn RL"
+    }
+   ]
+  },
+  {
+   "title_zh": "编码 agent 评测转向迁移与终端任务",
+   "tag": "rising",
+   "body_zh": "SWE-bench 各变体提及率每万篇 18.7 → 63.2，其中 Verified 9.6 → 40.2，Terminal-Bench 0.5 → 29.3。SWE-bench 已近饱和，2027 年新基准转向整仓迁移、演化中的工作区和 harness 上的编码评测。2026 年审稿奖励训练配方而非新基准，新 SWE-* 基准接收率仅 0.071（1/14）。",
+   "note_zh": "Pro 每万篇 0.5 → 9.8，新起 SWE-* 基准 7.1 → 19.8。簇 122「编码 agent 与 SWE 基准」7.1 → 65.6（9 倍），偏修 issue 的老簇 216 反降 30.8 → 21.4。饱和背景为 Claude Code/Codex 普及。新基准代表作 SWE Refactor Bench、SWE-Shift、Claw-SWE-Bench（OpenClaw 式 harness）；另有研究过程评测究竟在测什么。2026 年被奖励的配方：Kimi-Dev（Agentless 训练作为 SWE-agent 技能先验，7.0）、Agent Data Protocol（oral）。",
+   "evidence": [
+    {
+     "id": "MOenIuYptM",
+     "year": 2027,
+     "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?"
+    },
+    {
+     "id": "DiTHJCF9XI",
+     "year": 2027,
+     "title": "SWE-Shift: Evaluating Coding Agents in Evolving Workspaces"
+    },
+    {
+     "id": "Ek5ip3L1o8",
+     "year": 2027,
+     "title": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks"
+    },
+    {
+     "id": "tYppHuGhxJ",
+     "year": 2026,
+     "title": "Kimi-Dev: Agentless Training as Skill Prior for SWE-agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "GUI agent 收缩，CLI 混合接口开始兴起",
+   "tag": "fading",
+   "body_zh": "GUI 两簇在智能体主题内占比 8.3% → 4.1%，ScreenSpot 提及每万篇 10.6 → 3.7。2027 年的新问题是手机 agent 是否需要看屏幕，做法是把 App 转为 agent 原生 CLI，或用 deeplink 跳转。2026 年评审已给出信号，数据与环境扩展簇接收率 0.512，GUI grounding 加 RL 小配方簇仅 0.133，为主题内最低。",
+   "note_zh": "GUI 两簇为簇 55 与簇 281，份额每万篇 52.0 → 47.4。OSWorld 11.1 → 15.6、AndroidWorld 8.1 → 8.8 基本持平。GUI/CLI/MCP 混合编排与 deeplink 相关措辞在 agent 簇中每万篇 1.0 → 10.5。簇 55 中 ScaleCUA 为 oral。",
+   "evidence": [
+    {
+     "id": "mMC3GtOPeB",
+     "year": 2027,
+     "title": "Do Mobile Agents Need the Phone Screen?"
+    },
+    {
+     "id": "CGBqZE8aoq",
+     "year": 2027,
+     "title": "Built for Humans, Not yet for Agents: Turning Apps into Agent-Native CLIs at scale"
+    },
+    {
+     "id": "O8NDs4fj5O",
+     "year": 2027,
+     "title": "HybridCUA: Learning to Orchestrate GUI and CLI for Computer-Use Agents"
+    },
+    {
+     "id": "yBFUqdJFZn",
+     "year": 2026,
+     "title": "ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data"
+    }
+   ]
+  },
+  {
+   "title_zh": "经典 RAG 与通用 deep research 基准同时退潮",
+   "tag": "fading",
+   "body_zh": "RAG 簇份额每万篇 89.8 → 24.9，GAIA 18.2 → 8.4，deep research 基准簇份额减半。检索没有消失，搜索 agent 措辞每万篇 45.9 → 82.1，检索成为 agentic RL 的一种环境。2026 年 RAG 簇接收率仅 0.191，通用 deep research 基准已无新增空间。",
+   "note_zh": "全文 RAG 措辞每万篇 239.2 → 181.8，GraphRAG 23.2 → 11.4；deep research 措辞 42.4 → 24.2；HLE 10.6 → 6.5，BrowseComp 持平 15.6 → 16.5；簇 251（DR 基准）25.7 → 11.9。搜索 agent 的焦点：证据准入、rubric 过程奖励、自进化搜索 agent 的共同作弊（False Frontiers）。DR 基准转向垂直场景：Wiki Live、生活/生产力、视频 DR。2026 年接收的通用基准如 DeepResearch Bench。",
+   "evidence": [
+    {
+     "id": "c8uQADFMRC",
+     "year": 2027,
+     "title": "Wiki Live Challenge: Challenging Deep Research Agents with Expert-Level Wikipedia Articles"
+    },
+    {
+     "id": "Id4G8bzzKO",
+     "year": 2027,
+     "title": "False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents"
+    },
+    {
+     "id": "Zh4k6rhTD7",
+     "year": 2027,
+     "title": "RubricAtlas: Decoupling Rubric Discovery from Fact Validation to Optimize Generalist Deep Research Agents"
+    },
+    {
+     "id": "hQ0K2Hhq7H",
+     "year": 2026,
+     "title": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "agent 评测重点转向执行过程是否正当",
+   "tag": "watch",
+   "body_zh": "工具 agent 运行时治理簇每万篇 0.5 → 78.3，成为主题内最大簇，关注状态变更授权、批量调用副作用和人工审批是否发生。AI 科学家簇 35.8 → 64.6，评测从复现转向成功是否有效。运行时治理簇的标题措辞高度同质，部分增量可能来自模板化投稿。",
+   "note_zh": "运行时治理为簇 196；簇 173（agent 评测与可靠性）每万篇 32.3 → 71.1。同质证据：agent 簇标题中含 evidence 的比例 0.8% → 5.4%，问句标题 4.2% → 8.2%，应打折解读。AI 科学家为簇 158；2026 年 AstaBench 为 oral，AI scientist 措辞接收率 0.373；2027 年另有开放数学问题上的可验证发现。正确输出不等于安全执行，见 SINGED。agent 安全本身见安全章节。",
+   "evidence": [
+    {
+     "id": "40R626leak",
+     "year": 2027,
+     "title": "SINGED: Correct Outputs Do Not Certify Safe Execution in LLM Agents"
+    },
+    {
+     "id": "7OKLuaaaqv",
+     "year": 2027,
+     "title": "EffectSet: A Batch Tool Call Is More Than One Outcome"
+    },
+    {
+     "id": "nZZ1V2yP0j",
+     "year": 2027,
+     "title": "When Success Is Invalid: Latent Validity in AI-Guided Machine Learning Research"
+    },
+    {
+     "id": "M7TNf5J26u",
+     "year": 2026,
+     "title": "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "harness 优化",
+   "from": 0.5,
+   "to": 111.8,
+   "unit": "per10k",
+   "note_zh": "把脚手架当作可进化的程序"
+  },
+  {
+   "name_zh": "Agent Skills",
+   "from": 1.5,
+   "to": 74.4,
+   "unit": "per10k",
+   "note_zh": "自我进化的基本单元"
+  },
+  {
+   "name_zh": "递归自我改进 RSI",
+   "from": 0.5,
+   "to": 53.2,
+   "unit": "per10k",
+   "note_zh": "已有专用环境，也有反面证据"
+  },
+  {
+   "name_zh": "agent 长期记忆",
+   "from": 84.3,
+   "to": 220.2,
+   "unit": "per10k",
+   "note_zh": "从 RAG 附件变为核心状态"
+  },
+  {
+   "name_zh": "上下文压缩与折叠",
+   "from": 22.7,
+   "to": 68.6,
+   "unit": "per10k",
+   "note_zh": "具体技术上升，口号下降"
+  },
+  {
+   "name_zh": "信用分配",
+   "from": 45.9,
+   "to": 159.3,
+   "unit": "per10k",
+   "note_zh": "多轮稀疏奖励下的核心难题"
+  },
+  {
+   "name_zh": "SWE-bench 各变体",
+   "from": 18.7,
+   "to": 63.2,
+   "unit": "per10k",
+   "note_zh": "编码 agent 的通用基准"
+  },
+  {
+   "name_zh": "Terminal-Bench",
+   "from": 0.5,
+   "to": 29.3,
+   "unit": "per10k",
+   "note_zh": "终端 agent 的新基准"
+  },
+  {
+   "name_zh": "ALFWorld",
+   "from": 12.6,
+   "to": 80.4,
+   "unit": "per10k",
+   "note_zh": "自我进化论文的默认试验台"
+  },
+  {
+   "name_zh": "工具 agent 运行时治理",
+   "from": 0.5,
+   "to": 78.3,
+   "unit": "per10k",
+   "note_zh": "管控状态变更与副作用"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "RAG 检索增强生成",
+   "from": 89.8,
+   "to": 24.9,
+   "unit": "per10k",
+   "note_zh": "检索并入搜索 agent 的 RL 训练"
+  },
+  {
+   "name_zh": "经典应用簇主题内占比",
+   "from": 42.3,
+   "to": 13.9,
+   "unit": "%",
+   "note_zh": "通用框架类工作减少"
+  },
+  {
+   "name_zh": "deep research",
+   "from": 42.4,
+   "to": 24.2,
+   "unit": "per10k",
+   "note_zh": "通用基准饱和，转向垂直场景"
+  },
+  {
+   "name_zh": "GAIA 基准",
+   "from": 18.2,
+   "to": 8.4,
+   "unit": "per10k",
+   "note_zh": "通用助手基准退潮"
+  },
+  {
+   "name_zh": "ScreenSpot",
+   "from": 10.6,
+   "to": 3.7,
+   "unit": "per10k",
+   "note_zh": "像素级 grounding 退潮"
+  },
+  {
+   "name_zh": "GraphRAG",
+   "from": 23.2,
+   "to": 11.4,
+   "unit": "per10k",
+   "note_zh": "随 RAG 一同退潮"
+  },
+  {
+   "name_zh": "LLM 社会模拟与心智理论",
+   "from": 44.4,
+   "to": 30.5,
+   "unit": "per10k",
+   "note_zh": "通用应用方向收缩"
+  },
+  {
+   "name_zh": "GPT-4o 骨干占比",
+   "from": 3.1,
+   "to": 0.9,
+   "unit": "%",
+   "note_zh": "开源 agentic RL 默认用 Qwen3"
+  }
+ ],
+ "rewarded_2026_zh": "智能体主题 2026 年接收率 0.269（1240 篇），与全库基线 0.270 持平。环境与数据扩展、可训练性最受奖励，computer-use 数据与环境簇 0.512，agentic RL 簇 0.400。再搭一个框架的工作回报低，标题含 framework 的论文 0.194，GUI grounding 加 RL 小配方簇仅 0.133。",
+ "frontline_zh": [
+  "新默认配方：harness 加技能库加可写记忆，靠失败轨迹自进化，不更新权重。",
+  "Claw 类通用 agent 成为新名词，配套出现 harness 上的黑盒 RL 与常驻助理基准。",
+  "多智能体通信转向潜空间，latent communication 每万篇 1.0 → 12.6。",
+  "Terminal-Bench、τ-bench、BFCL 上升，GAIA、HLE 下降，MCP 停滞。",
+  "agent 簇内骨干 Qwen3 1.9% → 9.2%，GPT-4o 3.1% → 0.9%。",
+  "自我进化的负面结果成为可发表品类；AI 科学家转向可验证发现。"
+ ],
+ "watchlist_zh": [
+  "harness 增益归因：若换 harness 的方差大于换模型，排行榜需同时报告 harness。",
+  "RSI 的安全阀：正则化自改进能否给出可复现的改进与退化边界。",
+  "技能供应链：过期检测、跨框架编译与恶意技能审计能否收敛成包管理式标准。",
+  "信用分配方法能否在 Terminal-Bench 等长程任务上胜过 GRPO 加环境扩展。",
+  "App 普遍暴露 agent 原生接口后，截图式 computer-use 是否收缩为细分领域。"
+ ],
+ "notes_zh": [
+  "「每万篇」指每一万篇投稿中命中的论文数。「全文措辞」指正文出现相应关键词；「簇」为主题聚类，编号沿用聚类结果。",
+  "智能体主题为 27 个 agent 簇合计；2026 年占全部投稿 6.3%，2027 年 11.6%；含 1 个措辞伪影簇（268，每万篇 40）。",
+  "自我进化家族为簇 282/57/176/92/225（harness、技能、RSI、经验记忆），2026 年在主题内仅占 1.5%，2027 年占 20.3%，是本章最大的结构性变化。",
+  "经典应用簇指 RAG、规划、社会模拟、MAS 编排、DR 基准，份额每万篇 264.5 → 160.2，主题内占比 42% → 14%。ALFWorld 与 WebShop 同时出现 197 篇；WebShop 每万篇 8.6 → 53.7。",
+  "2026 年接收率明细：computer-use 数据与环境为簇 55，长期记忆簇 198 0.421，agentic RL 簇 28 均分 4.62；全文 computer-use 措辞 0.488（均分 4.70），credit assignment 0.385，agentic RL 0.368，AI scientist 0.373，rubric 0.364；标题含 scale/scaling 的 agent 论文 0.339（均分 4.55）。",
+  "回报低的方向：标题含 multi-agent 0.212，RAG 簇 0.191，MAS 编排簇 157 0.227，GUI 小配方为簇 281，新 SWE-* 基准 1/14。标题/关键词含 benchmark 的 agent 论文 0.326，非基准 0.260。",
+  "2026 年 18 篇 oral 集中在 AgentFlow（7.33）、AstaBench、AgentGym-RL、ScaleCUA、MedAgentGym、Agent Data Protocol、Huxley-Gödel Machine，即训练环境、数据协议与自我改进，与 2027 年方向一致。",
+  "上升/下降列表补充：RSI 簇 92 每万篇 1.0 → 37.4；终端 agent 措辞 1.0 → 32.8；ScienceWorld 2.5 → 20.0，AppWorld 3.5 → 25.1；RAG 为簇 27；deep research 论文数持平 51 → 51；GraphRAG 2026 年接收率 0.174；社会模拟为簇 168，role-play 措辞 18.7 → 12.3；agent 簇内 Llama 2.7% → 1.0%；运行时治理簇措辞同质化明显，需打折。",
+  "新默认配方见于 OpenClaw/Claude Code 式 harness 加 SKILL.md，在 ALFWorld/WebShop/AppWorld 上报告无需更新权重的提升。OpenClaw/claw-style 措辞 0 → 约 54 篇（每万篇 12.6，含少量同名缩写），配套有 ClawGym II、ClawForge（命令行 agent 可执行基准生成）、Claw-Anything。",
+  "潜通信代表作 Thought Blocks、Draft-KV、CacheCodec（任务导向 KV 压缩），已有潜通信中的隐蔽协作检测；multi-agent debate 份额持平，每万篇 12.1 → 14.2。",
+  "OPD/OPSD 全文措辞全库每万篇 0.5 → 204.8；agent 簇中有 PR-OPD、轨迹记忆驱动的自蒸馏，与 GRPO 并列成为 agentic RL 的第二条训练线。",
+  "基准（每万篇）：SWE-bench Verified 9.6 → 40.2，Terminal-Bench 0.5 → 29.3，τ-bench 2.0 → 12.3，BFCL 6.1 → 21.6，AgentDojo 5.6 → 16.0，OSWorld 11.1 → 15.6；MCP 措辞 19.7 → 19.3，MCP 专用基准 4.0 → 3.5，MCP 已成基础设施。骨干（agent 簇内）：GPT-5 2.8% → 4.7%，Claude 3.5% → 4.6%，Llama 2.7% → 1.0%，o3/o4 1.9% → 0.1%。",
+  "GUI 去像素子线：MobiCLI、PhoneCLI、HybridCUA、PhoneHarness 用 CLI/deeplink/MCP 混合动作空间替代坐标点击；One Pixel Wider 显示图像预处理一像素之差会改变 grounding 点击。",
+  "负面结果：More Memory, Worse Agents、Skill Lock-In、Skill-Policy Co-evolution Trap、Recursive Hypercompression（自我改进→自我退化相变）、False Frontiers。AI 科学家：开放数学问题上从再发现到发现、SoundnessBench、AI 引导 ML 研究中的潜在无效成功；AlphaEvolve 式进化搜索簇 74 每万篇 31.8 → 50.2。",
+  "措辞警示：簇 196/268 与全库模板化簇（137 等）同源，统计运行时治理与决策审计热度时应剔除或打折。",
+  "观察项补充：RSI 另看 RRSI 与 recursively verified verifiers；信用分配方法含 turn 级 critic、反事实经验估值、OPD 融合；SWE-bench/Terminal-Bench 结果的可比性将受 harness 差异挑战；信用分配的真实长程检验包括 Terminal-Bench、SWE-bench Pro。基准下降另有 ScreenSpot。"
+ ]
+}

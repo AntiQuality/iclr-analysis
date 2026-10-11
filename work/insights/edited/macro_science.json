@@ -1,0 +1,443 @@
+{
+ "key": "science",
+ "title_zh": "科学、结构化学习与系统",
+ "subtitle_zh": "领域基础模型冻结后再研究，agent 只在少数方向落地",
+ "headline_zh": "科学、结构化学习、应用与系统四个主题的合计份额 19.1% → 17.0% → 15.4%（2025 → 2027），主要因为结构化学习收缩，图神经网络（GNN）的提及两年减半以上。增长来自两种形态：先预训练领域基础模型，再围绕冻结后的模型做研究；或者让 agent 包裹现成的科学工具。",
+ "stats": [
+  {
+   "label_zh": "四主题合计投稿份额",
+   "value": "19.1% → 17.0% → 15.4%",
+   "note_zh": "结构化学习 10.3% → 8.3% → 6.5%"
+  },
+  {
+   "label_zh": "GNN 全文提及",
+   "value": "465 → 332 → 203 /万篇",
+   "note_zh": "2026 年接收率 0.201，其余为 0.249"
+  },
+  {
+   "label_zh": "单细胞扰动预测",
+   "value": "3.4 → 5.6 → 24.9 /万篇",
+   "note_zh": "单细胞预训练模型 24.7 → 21.9"
+  },
+  {
+   "label_zh": "KV cache 复用与服务",
+   "value": "7.7 → 11.1 → 39.5 /万篇",
+   "note_zh": "2026 年接收率 0.455，均分 4.72"
+  },
+  {
+   "label_zh": "科学 · 系统的 agent 提及率",
+   "value": "5.5% → 8.1% · 5.4% → 18.3%",
+   "note_zh": "LLM 提及率 25.3% → 23.9%"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "GNN 退为科学模型的基础组件",
+   "tag": "fading",
+   "body_zh": "三个通用图学习簇合计从每万篇 204.0 降到 116.6。经典议题和 LLM 图推理同步收缩：节点分类 42.4 → 26.5，GNN×LLM 共现 40.9 → 20.2。剩下的 GNN 论文更多用在科学场景，落在 science 主题的比例从 16.4% 升到 19.5%。",
+   "note_zh": "三个通用图学习簇为 285、114、9；其中通用 GNN 簇 114 每万篇 49.0 → 18.1。补充数据：over-smoothing/over-squashing 26.2 → 14.6，graph transformer 28.3 → 19.1；KG+LLM 推理簇 200 42.4 → 23.7；graph foundation model 13.1 → 15.1。科学场景的例子是 MLIP 的消息传递感受野分析；节点级任务也开始交给 TabPFN 类表格基础模型。",
+   "evidence": [
+    {
+     "id": "OLVBsMicDW",
+     "year": 2027,
+     "title": "Graphs are Evidence, Not Circuits"
+    },
+    {
+     "id": "xr0kvrZVVb",
+     "year": 2027,
+     "title": "Graph Reach Sets the Remote-Response Limit of Local Interatomic Potentials"
+    },
+    {
+     "id": "NecNp6Nbmw",
+     "year": 2027,
+     "title": "Adapting Tabular Foundation Models for Graph Node-Level Tasks"
+    },
+    {
+     "id": "MgJUj9Sk3C",
+     "year": 2026,
+     "title": "Actions Speak Louder than Prompts: A Large-Scale Study of LLMs for Graph Inference"
+    }
+   ]
+  },
+  {
+   "title_zh": "时间序列研究转向冻结的 TSFM",
+   "tag": "shift",
+   "body_zh": "时间序列总份额持平，增长集中在时序基础模型（TSFM）：TSFM 簇每万篇 18.7 → 53.0。经典预测簇从 99.9 降到 77.9，把 LLM 改造成预测器的路线也在收缩，LLM 与时间序列共现从 35.3 降到 24.2。2026 年 TSFM 接收率 0.333，泛化时序预测为 0.196。",
+   "note_zh": "时间序列总份额按标题+关键词计，每万篇 250.3 → 253.9。TSFM 为簇 117，簇内提到 foundation model 的比例 16% → 36%；经典预测为簇 23；表征/生成簇 144 71.2 → 41.6。补充数据：Chronos 3.5 → 11.4，TimesFM 2.0 → 6.3，Moirai 1.5 → 4.4；TSFM×冻结/适配/测试时 14.6 → 26.7；Time-LLM 式 reprogramming 5.0 → 3.5；PatchTST/iTransformer 降为对照基线（9.1）。研究议程沿用 LLM：test-time compute 分配、可解释性（PRISM）、对冻结预测器的递归自我改进（GateCorrect）。簇 117 有 61% 的 2027 论文为模板化论文，但正则计数同样上升。",
+   "evidence": [
+    {
+     "id": "92LzwAEo0Z",
+     "year": 2027,
+     "title": "Forecasting the Forecasters: Training-Free Two-Phase Aggregation of Frozen Time-Series Foundation Models"
+    },
+    {
+     "id": "iaMmGPCgNV",
+     "year": 2027,
+     "title": "Recursive Inference for Test-Time Compute Allocation in Time-Series Foundation Models"
+    },
+    {
+     "id": "feG3zFbXRr",
+     "year": 2027,
+     "title": "What Does Text Add to Forecasting? A Controlled Audit"
+    },
+    {
+     "id": "EUAXc9Hlvm",
+     "year": 2026,
+     "title": "Context parroting: A simple but tough-to-beat baseline for foundation models in scientific machine learning"
+    }
+   ]
+  },
+  {
+   "title_zh": "表格基础模型扩展到因果与图任务",
+   "tag": "rising",
+   "body_zh": "先验数据拟合网络（PFN）家族的提及从每万篇 13.1 升到 31.9，用途从表格扩展到因果效应估计、半参数贝叶斯推断和图节点任务。评审尚不认可：2026 年表格基础模型簇接收率 0.125，PFN 家族 0.192，在本章最低一档。2027 年已有论文直接比较训练与上下文提示何时更优。",
+   "note_zh": "PFN 家族按 TabPFN/TabICL/prior-data fitted 匹配；表格基础模型为簇 104，每万篇 28.3 → 42.8。补充数据：作者关键词 tabular foundation model 从 8 篇增至 126 篇（每万篇 0.4 → 29.3）；treatment effect 簇中提到 FM 的比例 3% → 14%（CausaBridge、ProximalFM）；半参数推断见 Debiased PFN；SBI/摊销推断 14.1 → 17.4，2026 年接收率 0.357。",
+   "evidence": [
+    {
+     "id": "Qxy35e3AZh",
+     "year": 2027,
+     "title": "Learning Heterogeneous Tabular Tasks through Multiregime Pretraining of Prior-Data Fitted Networks"
+    },
+    {
+     "id": "TAB04ApfaZ",
+     "year": 2027,
+     "title": "CausaBridge: An Identification-Gated Causal Foundation Model for Transferable Effect Estimation"
+    },
+    {
+     "id": "IhddmioLtO",
+     "year": 2027,
+     "title": "Debiased Prior-Data Fitted Networks for Amortized Bayesian Semi-Parametric Inference"
+    },
+    {
+     "id": "DtmtCHOOkz",
+     "year": 2027,
+     "title": "When Does Training Beat Prompting on Tabular Data?"
+    }
+   ]
+  },
+  {
+   "title_zh": "单细胞研究重心转向扰动预测",
+   "tag": "rising",
+   "body_zh": "单细胞扰动预测簇从每万篇 5.6 升到 24.9（4.4×），单细胞预训练模型簇从 24.7 降到 21.9。目标从训练更大的预训练模型，变成预测任意干预下的细胞状态，主要做法是世界模型和由 agent 迭代修改模型。同期有多篇论文质疑这些模型能否胜过无学习基线。",
+   "note_zh": "扰动预测为簇 205，单细胞预训练模型（scGPT、Geneformer 等）为簇 79。补充数据：扰动预测正则 13.1 → 35.1，virtual cell 措辞 4.0 → 8.8，标题含 Virtual Cell 的论文从 4 篇增至 13 篇；单细胞×agent 共现 3.0 → 5.3。世界模型路线：VCWorld、DynamicVC、VCLMU；agent 路线：CellCanon、CellScientist；基线质疑：pseudobulk 预测器、FalsifyVC、系统性误差分析。",
+   "evidence": [
+    {
+     "id": "FyycZNGwsC",
+     "year": 2027,
+     "title": "CellCanon: An Agentic Cellular World Model for Prediction, Explanation, and Observation-Driven Updating"
+    },
+    {
+     "id": "0SpLnCrROA",
+     "year": 2027,
+     "title": "CellScientist: From Execution Feedback to Auditable Model-Revision Trajectories for Cellular Perturbation Prediction"
+    },
+    {
+     "id": "DVGHFaScK9",
+     "year": 2027,
+     "title": "Why Do Sophisticated Perturbation Prediction Models Not Outperform Learning-Free Baselines?"
+    },
+    {
+     "id": "hhq89Hs7T3",
+     "year": 2026,
+     "title": "VCWorld: A Biological World Model for Virtual Cell Simulation"
+    }
+   ]
+  },
+  {
+   "title_zh": "药物发现收缩，分子生成转向 flow matching",
+   "tag": "shift",
+   "body_zh": "drug discovery/design 提及从每万篇 70.2 降到 42.5；diffusion 用于分子、蛋白与材料的论文从 70.7 降到 48.6，flow matching 同口径从 29.3 升到 36.3。评审奖励结构生成：2026 年 flow matching×分子/蛋白接收率 0.431，生成式蛋白设计簇 0.362。agent 在进入这一领域但得分低，分子×agent 共现从 18.7 升到 32.3，2026 年接收率 0.216、均分 3.75。",
+   "note_zh": "drug discovery/design 在 2025 年为每万篇 105.4；diffusion 统计含分子、蛋白、材料与构象；分子×agent 为严格共现口径。补充数据：分子性质预测 17.7 → 14.6，2026 年接收率 0.143；基于结构的药物设计（SBDD）簇 257 26.8 → 18.1，簇内 agent 提及率 13% → 21%；蛋白语言模型簇 248 37.3 → 31.4；co-folding（AF3/Boltz/Chai-1）21.2 → 25.1，接收率 0.381；生成式蛋白设计簇接收率为 science 主题最高。MOLFRA 用 RL 直接对齐分子 flow；2026 年的 binder 设计 oral 结合生成式预训练与 test-time compute。评测转向可合成性与真实场景，如 BRIDGE-bench、PROTAC 合成可达性；MolViBench 评测 LLM 的分子 vibe coding。",
+   "evidence": [
+    {
+     "id": "qmCpJtFZra",
+     "year": 2026,
+     "title": "Scaling Atomistic Protein Binder Design with Generative Pretraining and Test-Time Compute"
+    },
+    {
+     "id": "6vY3Q5B0Mi",
+     "year": 2027,
+     "title": "MOLFRA: Online Alignment of Multimodal Molecular Flows via Forward-Process Reinforcement Learning"
+    },
+    {
+     "id": "5EU3kPRhPN",
+     "year": 2027,
+     "title": "Multi-Pose Structural Evidence for LLM Agent Molecular Optimization in Structure-Based Drug Design"
+    },
+    {
+     "id": "mky3ZgWBgx",
+     "year": 2027,
+     "title": "MolViBench: Evaluating LLMs on Molecular Vibe Coding"
+    }
+   ]
+  },
+  {
+   "title_zh": "PINN 让位于神经算子与物理代理模型",
+   "tag": "shift",
+   "body_zh": "神经算子簇从每万篇 33.8 升到 57.9，物理信息神经网络（PINN）求解器簇从 52.5 降到 29.8，2026 年接收率仅 0.173。2026 年受奖励的是真实数据和证伪：RealPDEBench 获 oral、均分 7.5，质疑零样本超分辨率的论文均分 6.0。这条线几乎不用 agent，神经算子簇的 agent 提及率约 1%。",
+   "note_zh": "神经算子为簇 84，正则口径每万篇 59.1 → 79.5；PINN 求解器为簇 174。补充数据：scientific machine learning 措辞 23.2 → 66.0，KAN 22.2 → 9.3；学习型物理仿真簇 242 29.8 → 39.1，2026 年均分 4.53，本章仅次于 KV cache；天气簇 0 29.8 → 42.3，2026 年接收率 0.136。2027 年的新路线是低保真预训练迁移到高保真，以及 PDE 基础模型迁移到全球天气预报。",
+   "evidence": [
+    {
+     "id": "y3oHMcoItR",
+     "year": 2026,
+     "title": "RealPDEBench: A Benchmark for Complex Physical Systems with Real-World Data"
+    },
+    {
+     "id": "hkF7ZM7fEp",
+     "year": 2026,
+     "title": "The False Promise of Zero-Shot Super-Resolution in Machine-Learned Operators"
+    },
+    {
+     "id": "ztlzkA9RvM",
+     "year": 2027,
+     "title": "Scaling 3D Physics Surrogates: Low-Fidelity Pretraining for High-Fidelity Transfer"
+    },
+    {
+     "id": "730CXGXE0s",
+     "year": 2027,
+     "title": "Tadpole-2D: From PDE Foundation Model to Global Weather Forecasting"
+    }
+   ]
+  },
+  {
+   "title_zh": "医疗方向转向临床 agent 与生物信号模型",
+   "tag": "shift",
+   "body_zh": "医学 LLM 问答在收缩，LLM×临床共现从每万篇 133.2 降到 110.9。增长来自两条线：agent×临床共现从 39.9 升到 63.9，生物信号×基础模型从 22.2 升到 33.5。这是本章评审最严的方向，2026 年电子病历（EHR）接收率 0.158、均分 3.47，临床 agent 为 0.190。",
+   "note_zh": "生物信号指 EEG/ECG/PPG/可穿戴×foundation model；EHR 接收率为正则口径。补充数据：医学影像 MLLM/报告生成簇 126 59.1 → 42.8，MedQA 类基准 16.2 → 14.6；显式 clinical/medical agent 2.5 → 10.0；EHR 簇 296 23.2 → 38.6，簇内 agent 提及率 9% → 26%；PPG/ECG/wearable 28.3 → 47.9，EEG 57.5 → 81.6；EEG 簇 2026 年接收率 0.207、均分 3.61。临床 agent 基准转向完整病人轨迹与 computer-use（SHIFT）；PPG/BCG 出现带语言对齐的基础模型族（PPG-LM、BCG-FM）。",
+   "evidence": [
+    {
+     "id": "8QhDkLlwUE",
+     "year": 2027,
+     "title": "SHIFT: Benchmarking Clinical Computer-Use Agents over Full Patient Trajectories"
+    },
+    {
+     "id": "y74JUWpBGO",
+     "year": 2027,
+     "title": "MedMDT: Self-Evolving Multidisciplinary Agent Teams for Clinical Reasoning"
+    },
+    {
+     "id": "EvigzD2Hze",
+     "year": 2027,
+     "title": "BCG-FM: A Foundation Model for Ambient Cardiac Health Sensing"
+    },
+    {
+     "id": "5Xwm8e6vbh",
+     "year": 2026,
+     "title": "Are EEG Foundation Models Worth It? Comparative Evaluation with Traditional Decoders in Diverse BCI Tasks"
+    }
+   ]
+  },
+  {
+   "title_zh": "系统研究转向 LLM serving 与 agent 负载",
+   "tag": "rising",
+   "body_zh": "infra 主领域从每万篇 89.8 升到 164.1，KV cache 复用簇从 11.1 升到 39.5。agent 既是新负载，也开始写 GPU kernel：agent serving 从 1.0 升到 10.9，agent×GPU kernel 从 1.5 升到 13.7。被挤出的有联邦学习 177.7 → 122.1，ANN 检索 9.6 → 5.3。",
+   "note_zh": "KV cache 复用为簇 229。簇 193 把 GPU kernel 与 NTK 混在一起，属措辞伪影，相关数字均用正则口径。补充数据：LLM serving/prefill/disaggregation 措辞 55.0 → 140.0；systems 主题 LLM 提及率 37.5% → 55.2%，agent 提及率 5.4% → 18.3%；GPU kernel 生成 19.2 → 42.8，compiler/autotuning 15.1 → 47.4；联邦学习 2026 年接收率 0.17；spiking 57.0 → 46.5。新问题包括 agentic RL rollout 的 KV 压缩、跨模型 KV 复用的安全不兼容、KernelBench 式判题器的变异测试。GPU kernel agent 的做法是 shape-aware 搜索、dispatch-aware 调优（KernelWeaver、KernelOPT）加多 agent 证据链（Evok）。",
+   "evidence": [
+    {
+     "id": "Jb1WkNSfUB",
+     "year": 2026,
+     "title": "TileLang: Bridge Programmability and Performance in Modern Neural Kernels"
+    },
+    {
+     "id": "bl2A41q92N",
+     "year": 2027,
+     "title": "AgentServeSim: Simulation-Driven Policy Design for Agent Serving"
+    },
+    {
+     "id": "SaboBZsQiW",
+     "year": 2027,
+     "title": "KernelWeaver: A Shape-Aware Kernel Agent for GPU Kernel Optimization"
+    },
+    {
+     "id": "Hdwn4xkEHp",
+     "year": 2027,
+     "title": "Measuring the Checker: Mutation Analysis for GPU-Kernel Benchmark Oracles"
+    }
+   ]
+  },
+  {
+   "title_zh": "形式化证明走向研究级，程序搜索开始自我审计",
+   "tag": "watch",
+   "body_zh": "2026 年 Lean 定理证明簇接收率 0.422，autoformalization 为 0.478，是本章最高的一组。目标从竞赛题转向研究级形式化：agent×Lean 从每万篇 6.1 升到 20.2，olympiad/IMO 提及从 26.2 降到 14.2。LLM 驱动的算法发现簇从 31.8 升到 50.2，2027 年出现多篇检验其发现是否只是选择噪声的论文。",
+   "note_zh": "Lean 定理证明为簇 66，每万篇 32.3 → 35.1；算法/启发式发现为簇 74。补充数据：AlphaEvolve/OpenEvolve/ShinkaEvolve 提及 2.0 → 7.0，FunSearch 2.5 → 1.2；传统神经组合优化求解器簇 93 52.5 → 39.8；符号回归簇 2026 年接收率 0.091，本章最低。研究级形式化包括整篇论文转 Lean（Paper2Lean）、TCS 研究级证明基准（TCSAlgBench）、AutoformBench 与形式化库复用（LIFT）；2026 年的 Lean Hammer premise selection 获 oral。自我审计的例子有 Mirage Discoveries、Noise Floor，以及方程发现受限于提议空间的分析。",
+   "evidence": [
+    {
+     "id": "m04JJNeRK6",
+     "year": 2026,
+     "title": "Premise Selection for a Lean Hammer"
+    },
+    {
+     "id": "HFyldZiJ7Z",
+     "year": 2027,
+     "title": "Paper2Lean: Agentic Autoformalization of Mathematical Research Papers at Scale"
+    },
+    {
+     "id": "da1Czy7foS",
+     "year": 2027,
+     "title": "Mirage Discoveries: Separating Signal From Selection Noise in LLM-Driven Program Search"
+    },
+    {
+     "id": "gb3n5lRwjw",
+     "year": 2027,
+     "title": "Outside the Dictionary: LLM-Guided Equation Discovery Is Limited by What It Proposes"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "单细胞扰动预测",
+   "from": 5.6,
+   "to": 24.9,
+   "unit": "per10k",
+   "note_zh": "目标转向预测干预后的细胞状态"
+  },
+  {
+   "name_zh": "KV cache 复用与服务",
+   "from": 11.1,
+   "to": 39.5,
+   "unit": "per10k",
+   "note_zh": "2026 年接收率 0.455，本章最高"
+  },
+  {
+   "name_zh": "LLM serving 相关措辞",
+   "from": 55.0,
+   "to": 140.0,
+   "unit": "per10k",
+   "note_zh": "agent serving 1.0 → 10.9"
+  },
+  {
+   "name_zh": "时序基础模型 TSFM",
+   "from": 18.7,
+   "to": 53.0,
+   "unit": "per10k",
+   "note_zh": "Chronos 3.5 → 11.4；冻结/适配类 14.6 → 26.7"
+  },
+  {
+   "name_zh": "神经算子",
+   "from": 33.8,
+   "to": 57.9,
+   "unit": "per10k",
+   "note_zh": "PINN 同期 52.5 → 29.8"
+  },
+  {
+   "name_zh": "PFN / 表格基础模型",
+   "from": 13.1,
+   "to": 31.9,
+   "unit": "per10k",
+   "note_zh": "扩展到因果效应、图节点和半参数推断"
+  },
+  {
+   "name_zh": "GPU kernel 生成与优化",
+   "from": 19.2,
+   "to": 42.8,
+   "unit": "per10k",
+   "note_zh": "agent×kernel 1.5 → 13.7；2026 年接收率 0.368"
+  },
+  {
+   "name_zh": "EHR 临床预测与推理",
+   "from": 23.2,
+   "to": 38.6,
+   "unit": "per10k",
+   "note_zh": "agent 提及率 9% → 26%"
+  },
+  {
+   "name_zh": "生物信号基础模型",
+   "from": 22.2,
+   "to": 33.5,
+   "unit": "per10k",
+   "note_zh": "EEG 方向 2026 年均分仅 3.61"
+  },
+  {
+   "name_zh": "agent × Lean 定理证明",
+   "from": 6.1,
+   "to": 20.2,
+   "unit": "per10k",
+   "note_zh": "olympiad/IMO 同期 26.2 → 14.2"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "GNN 主题簇",
+   "from": 95.9,
+   "to": 54.6,
+   "unit": "per10k",
+   "note_zh": "2025 年为 180.8，两年缩到不足三分之一"
+  },
+  {
+   "name_zh": "通用图神经网络",
+   "from": 49.0,
+   "to": 18.1,
+   "unit": "per10k",
+   "note_zh": "节点分类 42.4 → 26.5，过平滑 26.2 → 14.6"
+  },
+  {
+   "name_zh": "PINN 神经 PDE 求解器",
+   "from": 52.5,
+   "to": 29.8,
+   "unit": "per10k",
+   "note_zh": "2026 年接收率 0.173"
+  },
+  {
+   "name_zh": "药物发现与设计",
+   "from": 70.2,
+   "to": 42.5,
+   "unit": "per10k",
+   "note_zh": "2025 年为 105.4；分子性质预测 17.7 → 14.6"
+  },
+  {
+   "name_zh": "KG + LLM 推理",
+   "from": 42.4,
+   "to": 23.7,
+   "unit": "per10k",
+   "note_zh": "GNN×LLM 共现 40.9 → 20.2"
+  },
+  {
+   "name_zh": "医学影像 MLLM 与报告生成",
+   "from": 59.1,
+   "to": 42.8,
+   "unit": "per10k",
+   "note_zh": "LLM×临床共现 133.2 → 110.9"
+  },
+  {
+   "name_zh": "联邦学习",
+   "from": 177.7,
+   "to": 122.1,
+   "unit": "per10k",
+   "note_zh": "2026 年接收率 0.170"
+  },
+  {
+   "name_zh": "diffusion × 分子/蛋白/材料",
+   "from": 70.7,
+   "to": 48.6,
+   "unit": "per10k",
+   "note_zh": "flow matching 同期 29.3 → 36.3"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年本章四主题接收率 0.243，低于全库基准 0.270；science 主题均分 3.95，为各主题最低。评审奖励规模化的结构生成、可验证的形式化和底层系统：KV cache 复用簇 0.455，autoformalization 0.478，flow matching×分子/蛋白 0.431。给科学任务套一层 agent 或 LLM 不加分：提到 LLM 与否接收率为 0.241 对 0.243，提到 agent 的反而更低，为 0.219 对 0.244。",
+ "frontline_zh": [
+  "虚拟细胞的两类做法：机制条件化 flow 加世界模型（CellWright、DynamicVC），agent 依执行反馈改模型（CellScientist）。",
+  "冻结 TSFM 的免训练方法增多：集成聚合、外部上下文检索、patch 边界修正（One More Token）、test-time compute 分配。",
+  "PFN 被当作通用摊销推断器，TabPFN 的先验设计迁移到因果效应估计（CausaBridge）与半参数推断。",
+  "因果词汇转向可解释性：causal intervention/activation patching 每万篇 22.7 → 106.9，causal discovery 48.5 → 42.3。",
+  "不确定性量化从贝叶斯转向保证式方法：BNN 每万篇 15.6 → 6.0，conformal 64.6 → 77.0。",
+  "机器学习原子间势（MLIP）成为 GNN 理论的主要应用场景，universal potential 提及每万篇 4.5 → 7.2。"
+ ],
+ "watchlist_zh": [
+  "虚拟细胞世界模型能否稳定胜过无学习基线，决定 4.4× 的增长能否沉淀下来。",
+  "表格基础模型 2026 年接收率仅 0.125，2027 年向因果与图任务扩张的论文评审结果待看。",
+  "agent 负载（agentic RL rollout、agent serving）能否取代单请求 LLM serving，成为系统研究的主问题。",
+  "分子、临床、单细胞 agent 投稿多、得分低；2027 年评审是否会因湿实验或临床闭环证据而改变。"
+ ],
+ "notes_zh": [
+  "份额单位为每万篇投稿；未注明年份的两值序列为 2026 → 2027，接收率与均分均为 2026 年数据。",
+  "四主题指 science、struct（结构化学习）、apps、systems。struct 每万篇 834 → 651；science 主题份额 6.45% → 6.29% → 6.51%，基本持平；AI for Science 总份额每万篇 629 → 651。struct 是全库跌幅最大的主题之一。",
+  "GNN 全文提及按 graph neural network / GNN / message passing 匹配；标题+关键词口径为每万篇 338 → 218 → 154。",
+  "簇编号：单细胞扰动预测 205（2025 → 2027 为 3.4 → 5.6 → 24.9），单细胞预训练模型 79，KV cache 复用 229，GNN 主题簇 285（每万篇 95.9 → 54.6），通用图神经网络 114，PINN 求解器 174，KG+LLM 推理 200，医学影像 MLLM 126，TSFM 117，神经算子 84，EHR 296。",
+  "KV cache 复用簇 2026 年接收率在本章 48 个簇中最高；infra 主领域份额每万篇 89.8 → 164.1。",
+  "agent 提及率最高的簇：KV cache 36%、GPU kernel 30%、EHR 26%、符号回归 25%、SBDD 21%。",
+  "模板化论文：TSFM 簇 117 与 KV cache 簇 229 中分别有 61% 和 54% 的 2027 论文被标为模板化（全库 42.4%）。相关趋势已用正则计数交叉验证，但簇规模会被高估。",
+  "2026 年接收率明细：science 0.236、struct 0.244、apps 0.204、systems 0.299。受奖励：KV cache 复用簇均分 4.72，Lean 定理证明簇 0.422，co-folding 0.381，GPU kernel 生成 0.368，生成式蛋白设计簇 0.362，学习型物理仿真 0.339（均分 4.53），摊销贝叶斯推断簇 0.338（均分 4.44），TSFM 0.333（冻结/适配类 0.414）。被冷落：符号回归簇 0.091，表格 FM 簇 0.125，量子 ML 簇 0.129，天气簇 0.136，分子性质预测 0.143，EHR 0.158（均分 3.47），联邦学习 0.170，PINN 簇 0.173，GNN 0.201–0.205。域内对照：分子×agent 0.216（均分 3.75），临床×agent 0.190；提到 foundation model 的 0.279 对 0.240，提到 diffusion/flow 的 0.294 对 0.237。",
+  "前沿条目补充：causal reasoning 主领域每万篇 98.4 → 82.8；2026 年用 SAE 做探索式因果推断的论文获 oral，均分 7.0。GP 35.8 → 24.2，normalizing flow 29.8 → 15.1，conformal×LLM 10.6 → 16.7，conformal 风险控制簇 180 7.1 → 27.9（其中 65% 为模板化论文）；conformal 的对象扩展到 agent 运行时脆弱性和 LLM 委员会筛选。identifiability 措辞 65.1 → 138.8。MLIP 方向有论文分析局部消息传递对远程响应的感受野上限；universal potential（MACE/UMA）2026 年接收率 0.556（样本较小，n=9）。"
+ ]
+}

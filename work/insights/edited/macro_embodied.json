@@ -1,0 +1,446 @@
+{
+ "key": "embodied",
+ "title_zh": "具身智能与强化学习",
+ "subtitle_zh": "增长来自世界-动作模型与 JEPA，经典 RL 收缩",
+ "headline_zh": "具身主题份额每万篇 262 → 629，增速居所有主题之首，增量主要来自世界-动作模型（WAM）和联合嵌入预测架构（JEPA）的潜空间规划。不涉及 LLM 与具身的经典 RL 每万篇 471 → 359，在 RL 论文中的占比 30.1% → 26.2%。",
+ "stats": [
+  {
+   "label_zh": "具身主题份额",
+   "value": "262 → 629 /万篇",
+   "note_zh": "2025 年为 191"
+  },
+  {
+   "label_zh": "世界模型提及量",
+   "value": "111.5 → 351.1 /万篇",
+   "note_zh": "WAM 与 JEPA 两类增长最快"
+  },
+  {
+   "label_zh": "世界-动作模型 WAM",
+   "value": "0.5 → 86.5 /万篇",
+   "note_zh": "1 → 372 篇"
+  },
+  {
+   "label_zh": "经典 RL 份额",
+   "value": "548 → 471 → 359 /万篇",
+   "note_zh": "RL 论文内占比降至 26.2%"
+  },
+  {
+   "label_zh": "LIBERO 提及",
+   "value": "20.7 → 130.9 /万篇",
+   "note_zh": "约 26% 的论文报告 ≥95%"
+  }
+ ],
+ "insights": [
+  {
+   "tag": "shift",
+   "title_zh": "世界模型的增量主要来自机器人",
+   "body_zh": "2027 年世界模型的增长主要来自机器人，而不是可玩视频。WAM 与 JEPA 潜空间规划两类每万篇分别从 6.6 和 8.1 增至 87.9，交互视频与游戏 28.8 → 82.1，LLM 智能体世界模型 38.4 → 78.6。世界模型论文中同时提及 LLM 的比例 27.4% → 14.9%。",
+   "note_zh": "口径：2027 年全文提及 world model 的 1,510 篇论文按优先级互斥归为四类。补充数据：增幅 WAM 13×、JEPA 11×、交互视频 2.9×、LLM 世界模型 2.0×；Dreamer/RSSM 类经典 MBRL 9.1 → 14.2，驾驶世界模型 9.6 → 15.3。新的共同问题是动作保真度，即预测的未来是否随动作改变，以及把世界模型用作规划器或评估器。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "LwOs9PyFgD",
+     "year": 2027,
+     "title": "Does the Future Follow the Action? \\\\Measuring Action Fidelity in World Models"
+    },
+    {
+     "id": "N2GAuIods8",
+     "year": 2027,
+     "title": "World Action Planner: Generalizable Robot Decision-Making with Action-Conditioned World Models"
+    },
+    {
+     "id": "cZBccyTdoK",
+     "year": 2027,
+     "title": "What Visual Representations Do World Action Models Need?"
+    },
+    {
+     "id": "yDmb7xAfeb",
+     "year": 2026,
+     "title": "WoW!: World Models in a Closed-Loop World"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "WAM 把视频生成模型改造成策略",
+   "body_zh": "WAM 以预训练视频扩散模型为骨干，联合去噪未来帧与动作块（action chunk）。该词从 2026 年的 1 篇增至 2027 年的 372 篇，每万篇 86.5。参照系统迅速固化，Fast-WAM 被 50 篇论文提及，评测集中在 LIBERO 与 RoboTwin 2.0。",
+   "note_zh": "口径：WAM 论文聚集在簇 30（4.5 → 73.7）与簇 73。补充数据：Fast-WAM 占 WAM 论文 12%，LingBot-VA 被 35 篇提及，其他参照系统有 Cosmos Policy/Cosmos3、Motus、DreamZero；评测中 LIBERO 占 37%、RoboTwin 2.0 占 31%；典型骨干为 Wan2.x/Cosmos，用未来视觉动态作为比动作标签更稠密的监督；35% 的 WAM 论文处理视频骨干的推理代价（单步解码、未来 token 剪枝、异步执行）。命名上出现大量 X-WAM（OpenWAM、CausalWAM、RealtimeWAM）。",
+   "evidence": [
+    {
+     "id": "UXo6DDVa5e",
+     "year": 2027,
+     "title": "Vid2WAM: Distilling Video Diffusion Priors into World Action Models"
+    },
+    {
+     "id": "HhRC3hBEgh",
+     "year": 2027,
+     "title": "InstantWAM: Instant World Action Model via Asymmetric One-Step Decoding"
+    },
+    {
+     "id": "LQXJ6aMT5P",
+     "year": 2027,
+     "title": "Coordinating Imagination and Action: A Coupled Noise Prior for World Action Models"
+    },
+    {
+     "id": "wPEIStHxYH",
+     "year": 2026,
+     "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "VLA 收敛到 π0.5 式基线",
+   "body_zh": "视觉-语言-动作模型（VLA）没有被 WAM 取代，默认配方收敛为 π0.5 式的 VLM 加 flow matching 动作专家。在 VLA 论文中，π0.5 提及率 0.6% → 13.4%，diffusion 动作头 17.0% → 7.8%。另一条路线只在训练期做未来预测，2027 年有 36 篇，此前为 0。",
+   "note_zh": "补充数据：VLA 全文提及 88.8 → 227.4（每万篇）；训练期未来预测的预测头在部署时丢弃。VLA 论文内占比：OpenVLA 8.0% → 5.8%，flow matching 6.2% → 13.3%，action chunk 5.1% → 14.4%；涉及世界模型/foresight 12.5% → 21.3%；推理/CoT 27.8% → 17.5%，2026 年带推理的 VLA 录用率 0.33，不带的 0.39。2027 年的核心争论是策略先验该来自 VLM 还是视频生成器。",
+   "evidence": [
+    {
+     "id": "prEWwIzNXl",
+     "year": 2027,
+     "title": "Vision-Language-Action or World-Action? Just Action Models"
+    },
+    {
+     "id": "tEwr6dq6X9",
+     "year": 2027,
+     "title": "World Tokens: Enhancing Embodied Policies with Training-Time World Modeling"
+    },
+    {
+     "id": "TSmJv3g9IV",
+     "year": 2027,
+     "title": "Vision-Language Models Are Joint Denoisers in Robotic Action Generation"
+    },
+    {
+     "id": "tc2UsBeODW",
+     "year": 2026,
+     "title": "VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "JEPA 成为潜空间规划的新基线",
+   "body_zh": "JEPA 路线以 LeWorldModel 加 SIGReg 正则成为潜空间规划的新基线。JEPA 提及每万篇 8.6 → 89.5，LeWorldModel 被 80 篇论文提及。2026 年 TD-JEPA 获 oral（7.5 分），JEPA 相关论文录用率 0.41。",
+   "note_zh": "口径：簇 228 从 2 篇增至 204 篇；同时提及 JEPA 与 world model 的论文 2 → 216 篇。补充数据：主要用途为不重建像素的控制与规划（38.4），其次是嵌入 VLA/WAM（24.9），如动作校验器或预测性潜变量；LeWorldModel 18.6；V-JEPA 1.5 → 16.5；SIGReg/LeJEPA 正则 43 篇（2026 年为 0）；世界模型论文中使用 CEM/MPPI/MPC 规划的 2.5 → 17.0。2027 年问题转向规划接口：长视距目标错配、可达性几何、测试时适应和防坍缩训练。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "RIpEtbedmF",
+     "year": 2027,
+     "title": "LeWM++: Repairing the Planning Interface of Latent World Models"
+    },
+    {
+     "id": "MrNqktueaq",
+     "year": 2027,
+     "title": "JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts"
+    },
+    {
+     "id": "u8OFXbfqS1",
+     "year": 2027,
+     "title": "How Far Can Latent World Models Imagine Ahead? Probing the Capabilities and Limits of Latent Planning"
+    },
+    {
+     "id": "SzXDuBN8M1",
+     "year": 2026,
+     "title": "TD-JEPA: Latent-predictive Representations for Zero-Shot Reinforcement Learning"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "交互世界模型转向记忆与 3D 状态",
+   "body_zh": "交互式视频世界模型的重点从可玩演示转向长期记忆与显式 3D 状态。这类论文每万篇 30.8 → 78.3；其中关注长期记忆的比例 19.7% → 43.9%，纯游戏场景 34.4% → 20.2%。2026 年的 oral 给了 closed-loop 评测与物体中心动力学。",
+   "note_zh": "口径：仅统计不涉及机器人的视频/交互世界模型；簇 8 为 15.6 → 52.8。补充数据：3D/4D/几何显式状态 27.9% → 43.9%，相机控制 3.3% → 17.5%，蒸馏/少步实时生成 6.6% → 16.0%；Wan2.x 全库提及 20.7 → 33.0。2026 年 oral 为 WoW! 与 Latent Particle World Models。2027 年的主流问题是在固定显存预算下维持长期世界状态。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "LLBK9eAXmM",
+     "year": 2027,
+     "title": "WorldState: Scalable Implicit Memory for Interactive Video World Models"
+    },
+    {
+     "id": "vFWz9z4Dw4",
+     "year": 2027,
+     "title": "ReWorld: An Interactive World Model with Long-Horizon Memory"
+    },
+    {
+     "id": "BdZMUh50Wo",
+     "year": 2027,
+     "title": "OpenWorld: Scaling World Model Pretraining"
+    },
+    {
+     "id": "lTaPtGiUUc",
+     "year": 2026,
+     "title": "Latent Particle World Models: Self-supervised Object-centric Stochastic Dynamics Modeling"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "LIBERO 饱和，新基准接棒",
+   "body_zh": "LIBERO 已无法区分方法。约 26% 提及 LIBERO 的 2027 年论文报告 ≥95% 的成绩，2026 年 LIBERO 论文录用率仅 0.34。接棒的是 LIBERO-Plus/Pro（每万篇 0 → 47.9）、RoboTwin 2.0（3.5 → 60.2）与 RoboCasa（4.0 → 25.1）。",
+   "note_zh": "补充数据：LIBERO 20.7 → 130.9，机器人相关论文覆盖率 3.2% → 14.9%；SimplerEnv 9.6 → 9.5；Open X-Embodiment 作为评测 2.5 → 0.5；使用 RoboCasa 的论文 2026 年录用率 0.50、均分 5.06。2027 年出现审计评测本身的工作，如 VLA 加速基准中的 bug 与标准化真机对比。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "1ivlJ9lC5d",
+     "year": 2027,
+     "title": "Faster and Better? Benchmark Bugs and Design Limitations Distort the Evaluation of Vision-Language-Action Acceleration"
+    },
+    {
+     "id": "YL8wxvjCYf",
+     "year": 2027,
+     "title": "ManipArena: Comprehensive Real-world Evaluation of Reasoning-Oriented Generalist Robot Manipulation"
+    },
+    {
+     "id": "VP9fp5LFLI",
+     "year": 2027,
+     "title": "LADDER: A Long-horizon Robot Manipulation Benchmark"
+    },
+    {
+     "id": "tQJYKwc3n4",
+     "year": 2026,
+     "title": "RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "机器人 RL 转向 VLA 与世界模型",
+   "body_zh": "机器人 RL 的主要场景从 MuJoCo 基准转向 VLA 后训练与世界模型内训练。VLA 与 RL 共现的论文每万篇 14.6 → 37.4，在世界模型中训练机器人 RL 的 8.1 → 20.9。审稿人对此偏冷，2026 年 VLA×RL 录用率 0.276，低于 VLA 整体的 0.375。",
+   "note_zh": "补充数据：VLA×RL 2027 年 161 篇，2026 年均分 4.10；机器人论文中 GRPO/PPO 20.2 → 31.4；SimpleVLA-RL（7.0 分）是少数被接收的例外。新技术点：flow-based VLA 的结构化探索、Q 引导的动作编辑、真机在线 RL 中的任务坍缩。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "WYipNA7jVk",
+     "year": 2027,
+     "title": "Q-Guided Action-Transport Editing for Real-World Reinforcement Learning of Vision-Language-Action Models"
+    },
+    {
+     "id": "GrFWHYE1PL",
+     "year": 2027,
+     "title": "StructRL: Structured Action-Space Exploration for Flow-Based VLAs"
+    },
+    {
+     "id": "ySrDh3XkIp",
+     "year": 2027,
+     "title": "Uncertainty-Gated Exploration Noise Suppresses Task Collapse in Online RL Fine-Tuning of a Flow-Matching Vision-Language-Action Policy"
+    },
+    {
+     "id": "TQhSodCM4r",
+     "year": 2026,
+     "title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning"
+    }
+   ]
+  },
+  {
+   "tag": "fading",
+   "title_zh": "经典 RL 收缩，仅 flow 策略扩张",
+   "body_zh": "经典 RL 整体收缩，flow 生成式策略是唯一明显扩张的分支。RL 主题份额每万篇 600.6 → 478.0 → 354.1，通用 deep RL 算法 65.1 → 17.7，D4RL 21.7 → 10.0。flow/one-step 策略 7.6 → 20.2，2026 年录用率 0.60。",
+   "note_zh": "补充数据：离线 RL 簇 60.1 → 33.0（全文 offline RL 81.8 → 46.0），MCTS/SMC 簇 36.8 → 17.9，模仿/逆 RL 簇 19.2 → 8.4，MARL 社会困境簇 27.3 → 14.4；OGBench 8.6 → 21.6；目标条件 RL 27.3 → 41.4；flow 策略 2026 年均分 5.22，Mean Flow Policy 与 DiffusionNFT 为 oral。LLM/VLM-RL 在 RL 论文中的占比 2026 年 62.2%、2027 年 63.8%（份额 975 → 876），进入平台期。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "oJMhr52Aht",
+     "year": 2027,
+     "title": "Drift, Then Spread: Learning One-Step Generative Policies for Online Reinforcement Learning"
+    },
+    {
+     "id": "v3HyxmWSFJ",
+     "year": 2027,
+     "title": "Q-Learning with Scalar Adjoint Matching"
+    },
+    {
+     "id": "mIeKe74W43",
+     "year": 2026,
+     "title": "Mean Flow Policy with Instantaneous Velocity Constraint for One-step Action Generation"
+    },
+    {
+     "id": "VJZ477R89F",
+     "year": 2026,
+     "title": "DiffusionNFT: Online Diffusion Reinforcement with Forward Process"
+    }
+   ]
+  },
+  {
+   "tag": "stable",
+   "title_zh": "自动驾驶份额持平，评测转向 NAVSIM",
+   "body_zh": "自动驾驶是具身领域中唯一没有加速的板块。驾驶论文份额每万篇 110.0 → 112.1，内部从 BEV 感知转向 NAVSIM 等 closed-loop 评测，NAVSIM 提及率 6.4% → 21.8%。2026 年驾驶簇录用率 0.26，加推理或 CoT 的仅 0.15。",
+   "note_zh": "口径：簇 76 为 62.1 → 75.6；提及率为驾驶论文内占比。补充数据：closed-loop 评测 13.3% → 23.7%，驾驶 VLA 6.9% → 15.1%，驾驶世界模型 9.6% → 18.9%，扩散/flow 规划器 12.8% → 18.7%，3D 检测/BEV 10.6% → 7.1%；加推理/CoT 的论文 48 篇中 7 篇被接收。2027 年出现 GRPO 式驾驶策略优化与驾驶专用统一 tokenizer/WAM。",
+   "evidence": [
+    {
+     "id": "TwZI1k8xKz",
+     "year": 2027,
+     "title": "DriveUniTok: A Unified Multimodal Tokenizer for Driving World-Action Models"
+    },
+    {
+     "id": "HYFEY67gp2",
+     "year": 2027,
+     "title": "MomWorld: Momentum-Aware Latent World Model for Long-Horizon Autonomous Driving"
+    },
+    {
+     "id": "cbEkVPsGSJ",
+     "year": 2027,
+     "title": "DriveBeyond: Rethinking Group Advantage for Driving Policy Optimization"
+    },
+    {
+     "id": "OrgL5DsU0f",
+     "year": 2026,
+     "title": "DrivingGen: A Comprehensive Benchmark for Generative Video World Models in Autonomous Driving"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "世界-动作模型 WAM",
+   "from": 0.5,
+   "to": 86.5,
+   "unit": "per10k",
+   "note_zh": "视频生成骨干加动作专家"
+  },
+  {
+   "name_zh": "JEPA",
+   "from": 8.6,
+   "to": 89.5,
+   "unit": "per10k",
+   "note_zh": "潜空间规划的新基线"
+  },
+  {
+   "name_zh": "VLA",
+   "from": 88.8,
+   "to": 227.4,
+   "unit": "per10k",
+   "note_zh": "仍在增长，转向部署、记忆、安全与 RL"
+  },
+  {
+   "name_zh": "π0 / π0.5 作为基线",
+   "from": 8.6,
+   "to": 46.0,
+   "unit": "per10k",
+   "note_zh": "π0.5 占 VLA 论文 13.4%"
+  },
+  {
+   "name_zh": "LIBERO",
+   "from": 20.7,
+   "to": 130.9,
+   "unit": "per10k",
+   "note_zh": "已饱和，LIBERO-Plus/Pro 接棒"
+  },
+  {
+   "name_zh": "RoboTwin 2.0",
+   "from": 3.5,
+   "to": 60.2,
+   "unit": "per10k",
+   "note_zh": "双臂泛化基准，31% 的 WAM 论文使用"
+  },
+  {
+   "name_zh": "动作块",
+   "from": 7.1,
+   "to": 50.4,
+   "unit": "per10k",
+   "note_zh": "action expert 5.0 → 30.0"
+  },
+  {
+   "name_zh": "第一视角人类视频",
+   "from": 31.3,
+   "to": 66.5,
+   "unit": "per10k",
+   "note_zh": "用人类数据扩展 WAM 与灵巧操作"
+  },
+  {
+   "name_zh": "双臂操作",
+   "from": 7.6,
+   "to": 26.7,
+   "unit": "per10k",
+   "note_zh": "2026 年录用率 0.47，均分 5.31"
+  },
+  {
+   "name_zh": "flow 生成式策略",
+   "from": 7.6,
+   "to": 20.2,
+   "unit": "per10k",
+   "note_zh": "录用率 0.60，OGBench 同步上升"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "通用 deep RL 算法",
+   "from": 65.1,
+   "to": 17.7,
+   "unit": "per10k",
+   "note_zh": "2025 年为 92.5；录用率 0.233"
+  },
+  {
+   "name_zh": "离线 RL",
+   "from": 81.8,
+   "to": 46.0,
+   "unit": "per10k",
+   "note_zh": "2025 年为 115.7"
+  },
+  {
+   "name_zh": "D4RL 基准",
+   "from": 21.7,
+   "to": 10.0,
+   "unit": "per10k",
+   "note_zh": "被 OGBench 取代"
+  },
+  {
+   "name_zh": "MCTS / SMC",
+   "from": 36.8,
+   "to": 17.9,
+   "unit": "per10k",
+   "note_zh": "LLM 推理搜索热度回落；录用率 0.205"
+  },
+  {
+   "name_zh": "模仿学习与逆 RL",
+   "from": 19.2,
+   "to": 8.4,
+   "unit": "per10k",
+   "note_zh": "并入 VLA/WAM 的模仿学习"
+  },
+  {
+   "name_zh": "MARL 社会困境",
+   "from": 27.3,
+   "to": 14.4,
+   "unit": "per10k",
+   "note_zh": "MARL 两类录用率仅 0.17–0.19"
+  },
+  {
+   "name_zh": "Atari",
+   "from": 21.2,
+   "to": 13.7,
+   "unit": "per10k",
+   "note_zh": "MuJoCo 同期 39.4 → 29.8"
+  },
+  {
+   "name_zh": "VLA 扩散动作头占比",
+   "from": 17.0,
+   "to": 7.8,
+   "unit": "%",
+   "note_zh": "被 flow matching 取代"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年具身簇录用率 32.9%、均分 4.47，高于全库基线 27.0% / 4.21；RL 簇为 28.1% / 4.22。最受认可的是机器人世界-动作策略（0.567）和 RL 中的 flow-matching 策略（0.60），oral 集中在世界模型加控制。被压低的是合作 MARL（0.185）、MCTS/SMC（0.205）、安全 RL（0.214），以及 VLA 中的加 RL（0.276）与加推理（0.33）。",
+ "frontline_zh": [
+  "WAM 默认配方是视频 DiT 加 flow-matching 动作专家，推理时可跳过视频生成。",
+  "未来预测只作训练期辅助损失、部署时丢弃，2027 年有 36 篇此类论文。",
+  "LeWorldModel 加 SIGReg 成为潜空间规划基线，LeWM++ 与配套评测套件已出现。",
+  "VLA 研究转向部署，论文中记忆与历史占比 8.5% → 17.8%。",
+  "人形机器人份额每万篇 27.8 → 42.8，人形论文中全身控制占比 12.7% → 32.6%。",
+  "数据来源扩展到第一视角人类视频与触觉，触觉每万篇 7.6 → 19.5。"
+ ],
+ "watchlist_zh": [
+  "2027 年的 372 篇 WAM 能否通过审稿，2026 年同类仅 13 篇。",
+  "若骨干无关的 foresight 损失成立，WAM 的推理代价论点将失效。",
+  "评测是否转向 RoboTwin-hard、LIBERO-Plus 与真机 arena。",
+  "审稿人是否开始拒收只跑 LIBERO 的论文。",
+  "LeJEPA/SIGReg 能否成为控制以外的通用自监督配方。",
+  "RL 理论与算法能否借 VLA/WAM 后训练重新获得关注。"
+ ],
+ "notes_zh": [
+  "单位：除注明外，份额为每万篇投稿中的论文数（/万篇），录用率与均分来自 2026 年评审结果。",
+  "具身主题由 11 个簇组成，占 2027 年全部投稿 6.3%，增幅 2.4×；2026 年主题录用率 32.9%（基线 27.0%），平均分 4.47（基线 4.21）。",
+  "经典 RL 指 RL 论文中既不涉及 LLM/VLM 也不涉及具身的部分；其在全部 RL 论文中的占比为 55.6% → 30.1% → 26.2%（2025 → 2026 → 2027）。LLM/VLM-RL 份额 2027 年从 975 回落到 876。",
+  "世界模型四类按优先级互斥归类：WAM/联合视频-动作 6.6 → 87.9，JEPA/潜空间规划 8.1 → 87.9，交互视频/游戏 28.8 → 82.1，LLM/智能体世界模型 38.4 → 78.6。WAM 关键词口径为 0.5 → 86.5，JEPA 全文口径为 8.6 → 89.5，故数值不同。",
+  "「world action model」是 2027 年第二大全新作者关键词；23% 的 WAM 摘要明确以预训练视频生成模型为骨干。LIBERO 出现在 37.8% 的 2027 年 VLA 论文中。",
+  "统计范围：具身 11 个簇，RL 15 个簇。2026 年录用率较高：簇 73 机器人模仿与世界-动作策略 0.567 / 5.14（Cosmos Policy、RoboCasa365、DataMIL）；簇 147 flow-matching 策略 0.60 / 4.85（Mean Flow Policy、DiffusionNFT 为 oral）；sim-to-real 0.48 / 4.83，灵巧操作 0.51 / 4.80，双臂 0.47 / 5.31。oral：TD-JEPA、WoW!、Latent Particle World Models、GPU 可微 MPC。",
+  "2026 年录用率较低：合作 MARL 0.185、社会困境 MARL 0.167、MCTS/SMC 0.205、安全 RL 0.214、通用 deep RL 0.233、潜空间世界模型规划簇 161 0.238、自动驾驶簇 0.26。VLA 内部：加 RL 0.276 / 4.10，加推理 0.33，安全/鲁棒/失败分析 0.30（不含者 0.42），flow matching 0.55，测试时方法 0.53。按 RL 子类：具身 RL 0.351、LLM/VLM-RL 0.324、经典 RL 0.275。",
+  "WAM 审稿前景：2026 年联合视频-动作类 13 篇，录用率 0.38、均分 4.83。",
+  "风格伪影：2027 年具身簇中 41% 的论文带格式化写作标记（全库 42%），VLA 簇 172 达 62%；X-WAM 式命名泛滥，簇 172、161 的份额可能部分来自模板化投稿。",
+  "其他数据：TurboVLA 在消费级 GPU 上达 32 Hz；π0.5 单独提及 0.5 → 39.1；合作 MARL 簇 46.4 → 34.9；VLA 论文中测试时方法 8.5% → 11.0%，GR00T 提及率 2.3% → 4.3%；机器人论文中未来预测辅助目标 5.6 → 25.1；人形论文中 loco-manipulation 3.6% → 15.8%，Unitree/G1 提及 1.0 → 10.2；real2sim 5.6 → 8.4，机器人价值/进度模型 4.0 → 10.5；JEPA 在语言 12.1、科学模态 7.2；驾驶论文中 NAVSIM 6.4% → 21.8%。"
+ ]
+}

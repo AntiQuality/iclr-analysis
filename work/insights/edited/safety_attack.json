@@ -1,0 +1,432 @@
+{
+ "key": "attack",
+ "title_zh": "越狱、护栏、后门与生成器安全",
+ "subtitle_zh": "聊天越狱停滞，攻击面移向权重、部署链路与 agent",
+ "headline_zh": "聊天式越狱攻击在 2027 年停滞，论文数 118 → 116，每万篇 59.6 → 27.0。研究转向非 prompt 攻击面、会话级分层护栏（guardrail）和部署链路上的后门；2026 年评审已压低同类攻击论文，越狱攻击类接收率 20%，后门攻击类 9%。",
+ "stats": [
+  {
+   "label_zh": "越狱攻击每万篇",
+   "value": "59.6 → 27.0",
+   "note_zh": "绝对数 118→116，停滞而非消失"
+  },
+  {
+   "label_zh": "越狱防御与攻击论文比",
+   "value": "0.98 → 1.59",
+   "note_zh": "防御份额降幅小于攻击"
+  },
+  {
+   "label_zh": "后门 2026 年接收率",
+   "value": "13%（基线 27%）",
+   "note_zh": "攻击类 9%，LLM 目标 20%"
+  },
+  {
+   "label_zh": "本章占安全论文比例",
+   "value": "22.7% → 15.9%",
+   "note_zh": "让位给 agent、提示注入与监督"
+  },
+  {
+   "label_zh": "多轮越狱防御论文",
+   "value": "3 → 18",
+   "note_zh": "2027 年防御首次多于攻击"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "越狱攻击停滞并向其他方向外迁",
+   "tag": "fading",
+   "body_zh": "越狱攻击论文 118 → 116 篇，总投稿增长 2.17×，份额因此从每万篇 59.6 降到 27.0。含 jailbreak 或 red-team 的论文中，落在越狱子领域之外的占比 17% → 31%，越狱更多成为可解释性和 agent 研究的工具。2026 年越狱攻击接收率 21%，分析类为 33%；用自适应攻击击穿 12 个防御的 The Attacker Moves Second 得 6.0 分仍被拒。",
+   "note_zh": "按标题或 topic 含 jailbreak/red-team 计，共 178→236 篇；其中可解释性安全 3→17，提示注入 3→15，智能体安全 4→12。2026 年越狱攻击子领域撤稿率 34%，attack 类型接收率 20%；分析类最高分为解释可迁移性的机理论文（6.5）。",
+   "evidence": [
+    {
+     "id": "UQK3tUsouK",
+     "year": 2026,
+     "title": "Jailbreak Transferability Emerges from Shared Representations"
+    },
+    {
+     "id": "7B9mTg7z25",
+     "year": 2026,
+     "title": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections"
+    },
+    {
+     "id": "jJb8QPInoP",
+     "year": 2027,
+     "title": "RedDarwin: Evolving Jailbreak Skills against Frontier LLMs"
+    },
+    {
+     "id": "SoOfGBn7bw",
+     "year": 2027,
+     "title": "JailbreakSkill: Scaling Automated Red-Teaming with Reusable and Ever-Evolving Skills"
+    }
+   ]
+  },
+  {
+   "title_zh": "越狱攻击面从 prompt 移向权重与解码栈",
+   "tag": "shift",
+   "body_zh": "2027 年最有新意的越狱攻击绕开了输入文本。PrisonBreak 用 5–25 个 bit-flip 越狱十亿参数模型，另有工作经投毒 draft model 攻击投机解码，或静默 MoE 中的安全专家。扩散语言模型攻防 5 → 11 篇，2026 年 5 篇中 4 篇被接收；推理模型越狱则降温，每万篇 8.1 → 3.3。",
+   "note_zh": "PrisonBreak 配合 Rowhammer；投机解码攻击见 Never Sampled, Always Accepted；COMBAT 跨模型迁移拒绝方向；Large Language Lobotomy 定位 MoE 安全专家。dLLM 被接收论文含 7.0 分的 priming 漏洞。安全相关子领域中语音/音频 LM 7→26 篇，含全双工实时通话的多轮越狱；MoE 6→10 篇（份额 3.0→2.3）。推理模型越狱 16→14 篇，2026 年接收率 12%。",
+   "evidence": [
+    {
+     "id": "71aW30lVpo",
+     "year": 2027,
+     "title": "PrisonBreak: Jailbreaking LLMs with at Most Twenty-Five Targeted Bit-flips"
+    },
+    {
+     "id": "QekNiN2I9H",
+     "year": 2027,
+     "title": "Never Sampled, Always Accepted: Commitment Injection Through Top-$k$ Verification in Speculative Decoding"
+    },
+    {
+     "id": "xrFfJpuS2b",
+     "year": 2027,
+     "title": "Harmful Responses Are Jailbreak Templates: Transferring Autoregressive Jailbreaks to Diffusion Language Models"
+    },
+    {
+     "id": "qZVGWQneRt",
+     "year": 2027,
+     "title": "Crescendo-Live: Multi-Turn Jailbreaks of Full-Duplex Speech Models in Live Calls and Their Defense with Daimonion"
+    }
+   ]
+  },
+  {
+   "title_zh": "多轮越狱防御首次多于攻击",
+   "tag": "rising",
+   "body_zh": "多轮越狱论文 15 → 37 篇，是越狱方向少数份额上升的簇；防御从 2026 年的 3 篇增至 2027 年的 15 篇，攻击为 14 篇。新防御对会话状态建模，不再逐轮套用单轮护栏。一项表征分析发现，多轮漂移方向几乎完全落在单轮拒绝平面之外，据此可在首个有害回复前标出 76–86% 的攻击。",
+   "note_zh": "每万篇 7.6→8.6。表征分析见 RtTJM8mETC；其他防御有学习何时介入（mg8ETguyGt）、conformal 检测（vtM1llTAOn）、自适应多轮对话认证（JY5txJu5Ge）。",
+   "evidence": [
+    {
+     "id": "RtTJM8mETC",
+     "year": 2027,
+     "title": "Multi-Turn Jailbreaks Steer Along Directions Single-Turn Safety Did Not Shape"
+    },
+    {
+     "id": "mg8ETguyGt",
+     "year": 2027,
+     "title": "One Turn Too Late: Learning When to Intervene Against Multi-Turn Malicious Intent"
+    },
+    {
+     "id": "vtM1llTAOn",
+     "year": 2027,
+     "title": "Conf-Guard: Dynamic Multi-Turn Jailbreak Detection with Conformal Guarantees"
+    },
+    {
+     "id": "JY5txJu5Ge",
+     "year": 2027,
+     "title": "Certifying LLM Safety Across Adaptive Multi-Turn Conversations"
+    }
+   ]
+  },
+  {
+   "title_zh": "护栏转向内部探针、流式状态与级联",
+   "tag": "shift",
+   "body_zh": "越狱防御中，读取内部状态的监控 26 → 49 篇，增幅最大；外部 guard 53 → 79 篇，会话状态类 3 → 18 篇。2026 年被接收的模板是级联分类器与激活监控，Constitutional Classifiers++ 的生产流量拒绝率为 0.036%。可配置策略的 guard 尚未兑现：开源策略条件 guard 的判决跟随有害性方向，而非所启用的策略。",
+   "note_zh": "按机制关键词分类：内部状态含激活、探针、隐状态、轨迹；流式与解码期干预 5→11，认证与保证 2→10。CC++ 先用轻量分类器筛全部流量，再把可疑对话升级到全交换分类器。激活监控代表 AGWa8whf92、GAVEL；2027 年新增 qvVph9ziyG（隐状态轨迹）、HysGuard（流式）及面向 dLLM、looped LM、MoE 路由的专用防御。策略 guard 结论见 Oeu8HotX83。",
+   "evidence": [
+    {
+     "id": "eNvsH5Ye2V",
+     "year": 2026,
+     "title": "Constitutional Classifiers++: Production-Grade Defenses against Universal Jailbreaks"
+    },
+    {
+     "id": "AGWa8whf92",
+     "year": 2026,
+     "title": "Beyond Linear Probes: Dynamic Safety Monitoring for Language Models"
+    },
+    {
+     "id": "IjpLkj9Fn9",
+     "year": 2027,
+     "title": "HYSGUARD: RESETTING SAFETY STATE, NOT GENERATION, FOR STREAMING LLM SAFEGUARDS"
+    },
+    {
+     "id": "Oeu8HotX83",
+     "year": 2027,
+     "title": "Safety Guards Judge Harmfulness, Not Policy Violation"
+    }
+   ]
+  },
+  {
+   "title_zh": "护栏与评测指标本身成为审计对象",
+   "tag": "rising",
+   "body_zh": "越狱评测效度簇 12 → 42 篇，主要结论是现有数字不可靠。一项研究发现，监控器对模型本会拒绝的请求的命中率是会回答请求的 1.1–6.4 倍，而 AUROC 仍在 0.85 以上；SuperRed 只改变攻击者模型和访问范围，攻击成功率（ASR）就在 2.7% 到 67% 之间变化。攻击者也开始针对护栏，例如 ProbeFool 规避激活探针。",
+   "note_zh": "效度簇含 judge、ASR 可靠性与随机性，每万篇 6.1→9.8；越狱防御中 eval/analysis 类型 11→34 篇。监控命中率结果见 75zQg9DH4L。Vsaf2j1MdT 对 8 家 guard 加模型自身拒绝做精确 Shapley 分析：有害侧完全饱和，留一法表格只反映过度拒绝成本。投毒自我更新 guard 见 Twenty-Five Samples。2026 年 GuidedBench（6.0）被接收。",
+   "evidence": [
+    {
+     "id": "75zQg9DH4L",
+     "year": 2027,
+     "title": "Safety Monitors Mostly Catch What the Model Already Refuses"
+    },
+    {
+     "id": "Vsaf2j1MdT",
+     "year": 2027,
+     "title": "Saturated Screening, Concentrated Cost: What a Full-Stack Ablation Table Reads in a Redundant Refusal Stack"
+    },
+    {
+     "id": "h7jjGRtosD",
+     "year": 2027,
+     "title": "SuperRed: AI Red-Teaming and Security Benchmarking with a Fine-grained Threat Model"
+    },
+    {
+     "id": "bLGeIyOpEo",
+     "year": 2027,
+     "title": "Twenty-Five Samples to Blind a Guardrail: Stealthy Benign-Side Poisoning of Self-Adapting Safety Filters"
+    }
+   ]
+  },
+  {
+   "title_zh": "过度拒绝成为一等优化目标",
+   "tag": "rising",
+   "body_zh": "过度拒绝相关论文 19 → 43 篇，2026 年接收率 37%，在越狱方向各簇中最高。新工作揭示输出形式造成的缺口：同一有害请求以 grounding 形式提问时，拒绝率比 VQA 形式低 31–59 个百分点。护栏的边际价值越来越取决于误拒成本，而不是多拦截一点有害请求。",
+   "note_zh": "按摘要含 over-refusal/false refusal 计，每万篇 9.6→10.0。2026 年代表作 Contrastive Refinement（6.0）。2027 年另有 PJ3ZdImcJM 把安全即辨别写进推理模型训练，PROOF 按流量画像路由；grounding 结果见 zQZVpPwjbo。",
+   "evidence": [
+    {
+     "id": "GXcN0MuN1q",
+     "year": 2026,
+     "title": "Discern Truth from Falsehood: Reducing Over-Refusal via Contrastive Refinement"
+    },
+    {
+     "id": "PJ3ZdImcJM",
+     "year": 2027,
+     "title": "Safety Is Discernment, Not Refusal: Teaching Large Reasoning Models to Judge Before They Act"
+    },
+    {
+     "id": "YF1dlISxNG",
+     "year": 2027,
+     "title": "PROOF: Mixed-Traffic Jailbreak Defense via Profile Routing in Frozen LLMs"
+    },
+    {
+     "id": "zQZVpPwjbo",
+     "year": 2027,
+     "title": "Visual Grounding Safety in Vision-Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "后门移向 agent、蒸馏与部署链路",
+   "tag": "shift",
+   "body_zh": "后门份额每万篇 69.7 → 56.5，内部结构变化很大：以 agent 为目标的后门 4 → 20 篇，RAG 投毒 10 → 25 篇，蒸馏传播 3 → 11 篇。部署变换触发型后门 2 → 12 篇，在量化、良性微调、遗忘请求或 ANN→SNN 转换后才激活。威胁模型从训练集被投毒扩展到供应链任一环节。",
+   "note_zh": "agent、记忆、技能相关簇 9→28 篇，2027 年攻击 20 篇、防御仅 3 篇；RAG 攻防各 12 篇。蒸馏案例：on-policy 蒸馏会传播后门，稀释投毒数据反而可能强化所传递的行为。部署变换类经人工核对，2026 年 2 篇为剪枝与合并；良性微调触发见 FTTrap。",
+   "evidence": [
+    {
+     "id": "PwlYzqIzOb",
+     "year": 2027,
+     "title": "BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning"
+    },
+    {
+     "id": "yg0Wa2OH5s",
+     "year": 2027,
+     "title": "FTTrap: Downstream Fine-Tuning Walks into a Backdoor Trap"
+    },
+    {
+     "id": "T1fUcoIg6z",
+     "year": 2027,
+     "title": "GhostQuant: The Ghost that Appears Only After Quantization"
+    },
+    {
+     "id": "j9uWANGL9k",
+     "year": 2027,
+     "title": "On-policy distillation as a Backdoor Propagation Channel"
+    }
+   ]
+  },
+  {
+   "title_zh": "被拒的投毒实验催生投毒理论",
+   "tag": "rising",
+   "body_zh": "2026 年一篇论文证明投毒所需文档数近乎恒定，约 250 篇，与数据规模无关，但只得 4.4 分被拒。2027 年后门方向的理论论文 1 → 9 篇，多篇给出该现象的可解模型和标度指数。SAILS 显示，模型、数据和投毒数量都固定时，仅更换投毒集，ASR 就在 3% 到 80% 之间变化，随机抽样的基准低估了最坏情况。",
+   "note_zh": "原始实验为 ryYQQuAeCu，覆盖 600M–13B 预训练；理论工作见 i1ZhDfhKAN、2XH9Pc5030（区间依赖的标度指数）。",
+   "evidence": [
+    {
+     "id": "ryYQQuAeCu",
+     "year": 2026,
+     "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples"
+    },
+    {
+     "id": "i1ZhDfhKAN",
+     "year": 2027,
+     "title": "A Solvable Model of Near-Constant-Count Data Poisoning"
+    },
+    {
+     "id": "2XH9Pc5030",
+     "year": 2027,
+     "title": "A Solvable Theory of Pre-training Data Poisoning: Regime-Dependent Scaling Exponents"
+    },
+    {
+     "id": "Dmh1NL7Nes",
+     "year": 2027,
+     "title": "Pick Your Poison: Learning to Select Poison Sets for Stronger LLM Backdoor Attacks"
+    }
+   ]
+  },
+  {
+   "title_zh": "概念擦除趋于饱和并转向 DiT 与视频",
+   "tag": "shift",
+   "body_zh": "概念擦除仍是生成安全中最大的簇，38 → 55 篇，但每万篇从 19.2 降到 12.8。研究转向 flow/DiT 架构（6 → 21 篇）和擦除的耐久性：量化、模型合并、初始噪声优化都能让擦除失效。全场唯一 oral SGF（6.5）用控制障碍函数统一负向引导，获奖励的是理论框架而非新的擦除损失。",
+   "note_zh": "生成安全子领域份额 32.8→25.8/万；概念擦除 2026 年接收率 26%，撤稿率 45%。flow/DiT 按提及 flow matching、DiT 或 rectified flow 计；视频、3D、自回归生成器 9→18 篇。SAE 探针可暴露擦除残留。图像免疫、反编辑、反个性化 9→26 篇，2026 年 9 篇无一接收。",
+   "evidence": [
+    {
+     "id": "EA80Zib9UI",
+     "year": 2026,
+     "title": "SAFETY-GUIDED FLOW (SGF): A UNIFIED FRAMEWORK FOR NEGATIVE GUIDANCE IN SAFE GENERATION"
+    },
+    {
+     "id": "xwnYE6MomD",
+     "year": 2027,
+     "title": "BEM: Learning Bregman Divergences for Concept Erasure in Flow Matching Models"
+    },
+    {
+     "id": "GDTAORcpJ3",
+     "year": 2027,
+     "title": "When Weight Fidelity Misleads: Concept-Erasure Safety Edits Under Diffusion-Model Quantization"
+    },
+    {
+     "id": "d7AZGUMdgp",
+     "year": 2027,
+     "title": "Erased But Not Gone: How Model Merging Weakens Concept Erasure in Diffusion Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "对抗鲁棒性增量转向具身与闭源 MLLM",
+   "tag": "shift",
+   "body_zh": "对抗鲁棒性份额每万篇 119.6 → 68.8，降 42%，经典目标仍占 2027 年的 57%。增长集中在 VLA、世界模型等具身目标（13 → 34 篇）和针对 MLLM 的对抗攻击（16 → 37 篇），后者多以迁移或黑盒方式攻击闭源模型。2026 年以 LLM 为目标的论文接收率只有 6%，高分集中在可扩展认证（LipNeXt 6.7）和机理分析。",
+   "note_zh": "经典目标 169/296；MLLM 攻击中约六成（22/37）为迁移或黑盒攻击闭源商用模型。CLIP/VLM 防御 20→13 篇，尽管 2026 年接收率 35%。LLM 目标样本 18 篇；rl_robot 目标接收率 36%。具身案例：物理补丁攻击 VLA、BadWAM 攻击 world-action model 的想象与动作一致性。",
+   "evidence": [
+    {
+     "id": "hPdzz302eJ",
+     "year": 2027,
+     "title": "Rethinking Adversarial Patch Attacks on VLA: From Pixel Space to Physical Reality"
+    },
+    {
+     "id": "fCPdxfZtDn",
+     "year": 2027,
+     "title": "BadWAM: When World Action Models Dream Right but Act Wrong"
+    },
+    {
+     "id": "5yCSKu2bgz",
+     "year": 2027,
+     "title": "Enhancing Transferable Targeted Attacks on Closed-Source MLLMs with Progressive Semantic Chain"
+    },
+    {
+     "id": "2fgzEJPH02",
+     "year": 2026,
+     "title": "LipNeXt: Scaling up Lipschitz-based Certified Robustness to Billion-parameter Models"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "多轮越狱攻防",
+   "n26": 15,
+   "n27": 37,
+   "note_zh": "防御 3→18；2027 年防御首次多于攻击"
+  },
+  {
+   "name_zh": "自动化红队",
+   "n26": 30,
+   "n27": 43,
+   "note_zh": "从 RL 奖励设计转向可复用技能库与自演化"
+  },
+  {
+   "name_zh": "表征层越狱攻防",
+   "n26": 37,
+   "n27": 62,
+   "note_zh": "攻击用拒绝方向，防御读取隐状态轨迹"
+  },
+  {
+   "name_zh": "过度拒绝与可用性权衡",
+   "n26": 19,
+   "n27": 43,
+   "note_zh": "2026 年接收率 37%，越狱方向各簇最高"
+  },
+  {
+   "name_zh": "越狱评测效度",
+   "n26": 12,
+   "n27": 42,
+   "note_zh": "judge 可靠性、ASR 随机性、威胁模型标准"
+  },
+  {
+   "name_zh": "推理模型越狱",
+   "n26": 16,
+   "n27": 14,
+   "note_zh": "8.1→3.3/万；2026 年接收率 12%"
+  },
+  {
+   "name_zh": "扩散语言模型安全",
+   "n26": 5,
+   "n27": 11,
+   "note_zh": "2026 年 5 篇中 4 篇被接收"
+  },
+  {
+   "name_zh": "多模态内容审核护栏",
+   "n26": 12,
+   "n27": 26,
+   "note_zh": "meme、视频组合风险、代码渲染图像"
+  },
+  {
+   "name_zh": "联邦学习投毒",
+   "n26": 26,
+   "n27": 43,
+   "note_zh": "13.1→10.0/万；2026 年接收率 8%"
+  },
+  {
+   "name_zh": "RAG 与知识库投毒",
+   "n26": 10,
+   "n27": 25,
+   "note_zh": "GraphRAG 与结构化 RAG 成为新目标"
+  },
+  {
+   "name_zh": "Agent 技能与记忆后门",
+   "n26": 9,
+   "n27": 28,
+   "note_zh": "2027 年攻击 20 篇、防御仅 3 篇"
+  },
+  {
+   "name_zh": "蒸馏传播后门",
+   "n26": 3,
+   "n27": 11,
+   "note_zh": "on-policy 蒸馏传播；稀释反而增强"
+  },
+  {
+   "name_zh": "部署变换触发型后门",
+   "n26": 2,
+   "n27": 12,
+   "note_zh": "量化、微调、合并或转换后才激活"
+  },
+  {
+   "name_zh": "T2I/T2V 概念擦除",
+   "n26": 38,
+   "n27": 55,
+   "note_zh": "19.2→12.8/万；转向 DiT 与视频"
+  },
+  {
+   "name_zh": "图像免疫与反编辑",
+   "n26": 9,
+   "n27": 26,
+   "note_zh": "2026 年 0/9 接收；扩展到 I2V"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年本章五个子领域的接收率全部低于 27% 的基线，后门与投毒最低，为 13%。被接收的后门论文几乎都有贴近部署的威胁模型，如共享 LoRA 平台、vLLM 加载时剪枝、不可信模拟器和具身 VLM agent，经典的新触发器加新 CV 任务基本被拒。越狱方向奖励机理和评测，分析类接收率 33%、攻击类 20%；250 篇文档投毒（4.4）和 The Attacker Moves Second（6.0）虽有影响力，因缺少方法新意或理论支撑被拒。",
+ "gaps_zh": [
+  "Agent 后门防御不足：2027 年攻击 20 篇、防御 3 篇，缺少技能包与记忆写入的验证。",
+  "越狱带来的真实能力提升（uplift）几乎无人测量，按危害与 uplift 加权的基准仍是空白。",
+  "护栏仍以聊天为中心：184 篇越狱防御中以 agent 为目标的仅 2 篇。",
+  "用同一策略同时约束文本与动作的统一护栏，尚无人做。",
+  "部署变换下的安全耐久性缺少跨变换、跨模态的统一基准，现有工作每篇只研究一种变换。",
+  "语音护栏几乎空白：语音攻击面 7→26 篇，越狱防御中的音频防御只有 4 篇。"
+ ],
+ "watchlist_zh": [
+  "推理栈攻击（投机解码、Rowhammer、KV 压缩、模板后门）把越狱变成系统安全问题。",
+  "护栏自身的攻击面：guard 数据投毒、DoS 与探针规避，可能成为自适应评测的标准项。",
+  "蒸馏与潜意识传播：开源生态大量使用 on-policy 蒸馏，后门与偏置的传播和清除值得跟进。",
+  "新架构安全再验证：dLLM、looped 模型、MoE 路由、flow/DiT 都在重复补防御。",
+  "投毒与越狱的标度律理论可能取代经验 ASR 表格，成为评审新门槛。"
+ ],
+ "notes_zh": [
+  "子领域代码：越狱攻击 JB_ATK，越狱防御 JB_DEF，对抗鲁棒性 ADV_ROBUST，生成安全 GEN_SAFE，后门与投毒 BACKDOOR，可解释性安全 INTERP_SAFE，提示注入 PI，智能体安全 AGENT_SAFE。份额按每万篇投稿计，2027 年总投稿量是 2026 年的 2.17×。",
+  "越狱防御 116→184 篇，份额 58.5→42.8/万，降 27%。本章五个子领域合计 674→950 篇（340→221/万）。",
+  "多轮与会话级攻防合计 15→37 篇，2027 年防御 15 篇、攻击 14 篇；统计值 3→18 为越狱防御中会话与状态类机制。",
+  "2026 年接收率与均分：越狱攻击 21%（3.96），越狱防御 26%（4.16），对抗鲁棒性 21%，生成安全 20%（撤稿率 45%），后门与投毒 13%（3.95）。后门攻击类 9%（74 篇），防御类 20%；经典 CV、图、联邦设定 5%（55 篇），联邦学习投毒 8%，LLM 目标 20%。",
+  "2026 年其他接收信号：dLLM 安全 4/5，过度拒绝 37%，推理模型越狱 12%，MoE 0/5。被接收的后门论文有 JailbreakLoRA、vLLM 加载时剪枝（6.0）、不可信模拟器（6.5）、BEAT，以及无需先验或干净参考的 LLM 净化。全场唯一 oral 是 SGF。两篇被拒论文的后续理论与标准化工作 2027 年已出现。",
+  "微主题补充：自动化红队份额 15.1→10.0/万；多模态审核护栏 2026 年接收率 17%；T2I/T2V 擦除 2027 年转向 flow/DiT 与视频；图像免疫 2027 年扩展到 I2V 和 DiT 编辑；RAG 投毒 2026 年 10 篇无一接收，2027 年攻防各 12 篇；部署变换触发型后门经人工核对，安全相关子领域中含 quantiz 的论文 2→14。",
+  "uplift 方向的少数例外见 L17sEWT586。guard DoS 见 2ieHfp0vhO；潜意识信号清除见 Moonshine 协议；looped 与递归模型安全见 SafeLoop、EAhhvhCKgs。投毒标度结果包括投毒数量近乎恒定、BoN 越狱与多项式-指数交叉。"
+ ]
+}

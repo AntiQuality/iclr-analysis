@@ -1,0 +1,447 @@
+{
+ "key": "mmgen",
+ "title_zh": "视觉生成与多模态理解",
+ "subtitle_zh": "份额未涨，生成、视频、3D 与理解的默认方法都换了",
+ "headline_zh": "视觉三主题份额 21.4% → 19.3%，没有扩张，但各条线的默认方法都换了。生成转向流匹配（flow matching）与少步蒸馏，视频转向自回归流式生成，3D 转向前馈重建，多模态大模型（MLLM）转向以 Qwen-VL 为底座的空间推理与流式视频。",
+ "stats": [
+  {
+   "label_zh": "视觉三主题投稿占比",
+   "value": "21.4% → 19.3%",
+   "note_zh": "2025 年为 20.3%"
+  },
+  {
+   "label_zh": "流匹配与扩散提及量",
+   "value": "200 → 317 vs 998 → 730 /万篇",
+   "note_zh": "二者比值 0.20 → 0.43"
+  },
+  {
+   "label_zh": "自回归流式视频生成",
+   "value": "12.6 → 38.4 /万篇",
+   "note_zh": "2026 年接收率 0.52，本章最高"
+  },
+  {
+   "label_zh": "专题与通用 MLLM",
+   "value": "120.6 → 207.8 vs 124.2 → 48.1 /万篇",
+   "note_zh": "接收率 0.364 vs 0.321"
+  },
+  {
+   "label_zh": "前馈式 3D 重建",
+   "value": "12.6 → 35.8 /万篇",
+   "note_zh": "2026 年接收率 0.60"
+  }
+ ],
+ "insights": [
+  {
+   "tag": "shift",
+   "title_zh": "流匹配取代扩散成为默认生成框架",
+   "body_zh": "流匹配已是生成论文的默认框架。提及流匹配的论文每万篇 200 → 317，提及扩散模型的 998 → 730，二者比值 0.20 → 0.43。2026 年流匹配论文接收率 0.383，高于扩散的 0.313。",
+   "note_zh": "口径：全文措辞匹配 flow matching/rectified flow 与 diffusion model/denoising。补充数据：作者关键词 diffusion model 409 → 271（z=-12.5），为本域跌幅最大的词；扩散理论/采样簇 16 为 83 → 44 → 36.5，DDPM/score-based 措辞 68.6 → 51.6；流匹配应用簇 169 为 28 → 55，应用扩展到李群、Finsler 几何、单细胞轨迹、反应机理和连续流式语言模型。FALCON 获 2026 年 oral。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "FbssShlI4N",
+     "year": 2026,
+     "title": "FALCON: Few-step Accurate Likelihoods for Continuous Flows"
+    },
+    {
+     "id": "URZcHDHt6i",
+     "year": 2027,
+     "title": "Validity-Aware Flow Matching on Lie Groups: What Transfers to Target-Free Generators?"
+    },
+    {
+     "id": "CvdXzwOP6G",
+     "year": 2027,
+     "title": "Finsler Flow Matching: Dynamics-Aware Geodesic Interpolation for Single-Snapshot Trajectory Inference"
+    },
+    {
+     "id": "jJZQk8lFh4",
+     "year": 2027,
+     "title": "Rectified Language Flow"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "少步生成转向 MeanFlow 与 DMD",
+   "body_zh": "少步生成的主线从一致性模型（consistency model）转向 MeanFlow 与分布匹配蒸馏（DMD）。MeanFlow/flow map 每万篇 16.7 → 26.7，DMD 12.1 → 22.6，2026 年接收率 0.52 和 0.50，基线 0.27。2027 年的新做法是把在线策略（on-policy）蒸馏和奖励倾斜分布匹配引入扩散蒸馏。",
+   "note_zh": "口径：少步两簇为 207（流映射）与 266（蒸馏），合计 39.4 → 53.2，接收率 0.436。补充数据：一致性模型 28.8 → 16.5；一步/少步措辞 146 → 270；扩散语境 on-policy 措辞 3.0 → 22.3；drifting model 等免蒸馏一步生成 0.5 → 6.7。2027 年另有 flow map 可组合性与一致性代价的理论研究。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "2B8GkGTgmY",
+     "year": 2026,
+     "title": "CMT: Mid-Training for Efficient Learning of Consistency, Mean Flow, and Flow-Map Models"
+    },
+    {
+     "id": "adacb4JTIv",
+     "year": 2026,
+     "title": "AlphaFlow: Understanding and Improving MeanFlow Models"
+    },
+    {
+     "id": "TN82xNpc9g",
+     "year": 2027,
+     "title": "Reinforcing Few-step Generators via Reward-Tilted Distribution Matching"
+    },
+    {
+     "id": "5pn56kXIZb",
+     "year": 2027,
+     "title": "Flow Maps That Compose Exactly: When Consistency Costs Accuracy"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "视频生成转向自回归流式生成",
+   "body_zh": "视频生成的主线转向 Self-Forcing 式自回归流式生成。该方向每万篇 12.6 → 38.4，2026 年接收率 0.52、均分 5.06，为本章最高。按任务定制的可控视频扩散与人物动画份额减半，开源底座自带参考与相机条件后，这类管线失去空间。",
+   "note_zh": "口径：簇 112（自回归/流式视频生成）、簇 160（可控视频扩散，65.6 → 32.8）、簇 146（人物动画，30.8 → 11.4）。补充数据：X Forcing 系列措辞 5.6 → 23.5（Prospective/Local/Speculative/Delta/Pyramid/Trace Forcing）；视频生成语境 KV cache 措辞 3.5 → 19.1，研究重点是长时一致性记忆与自回归版 DMD；video world model 等措辞 14.6 → 60.7；相机控制 16.2 → 39.3。底座提及：Wan2.1/2.2 合计 20.7 → 33.0（Wan2.2 3.5 → 11.4），HunyuanVideo 5.0 → 10.5，CogVideoX 6.6 → 4.4，闭源 Sora/Veo/Kling 10.1 → 2.8。2026 年 Self-Forcing++ 均分 7.33、LongLive 6.67，MotionStream 为 oral。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "DzvPiqh23f",
+     "year": 2026,
+     "title": "Self-Forcing++: Towards Minute-Scale High-Quality Video Generation"
+    },
+    {
+     "id": "nCAODkpsPJ",
+     "year": 2026,
+     "title": "LongLive: Real-time Interactive Long Video Generation"
+    },
+    {
+     "id": "7nPfzKKfZ4",
+     "year": 2027,
+     "title": "Pyramid Forcing: Head-Aware Pyramid KV Cache Policy for High-Quality Long Video Generation"
+    },
+    {
+     "id": "sduHZ2U3Fx",
+     "year": 2027,
+     "title": "Latent Spatial Memory for Video World Models"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "VAE 不再是潜扩散的默认选择",
+   "body_zh": "替换 VAE 是潜扩散研究中增长最快的方向。像素空间扩散措辞每万篇 4.5 → 20.9，表征自编码器（RAE）1.5 → 8.4。2026 年评审奖励改变潜空间本身，RAE 与像素空间类接收率 0.57，泛 REPA 式对齐技巧仅 0.233。",
+   "note_zh": "口径：像素空间扩散含 JiT 式 x-prediction 与 latent-free；RAE/像素空间类接收率样本量 n=7。补充数据：通用 DiT/潜扩散两簇（163、203）88.8 → 63.0；生成语境 REPA 15.1 → 23.5。2026 年被接收的代表作为 Diffusion Transformers with RAE、PixNerd、Latent Diffusion Model without VAE；2027 年扩展到视频（像素空间视频 DiT、V-RAE），并出现 Pixel Space Doesn't Save You 这类反思。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "0u1LigJaab",
+     "year": 2026,
+     "title": "Diffusion Transformers with Representation Autoencoders"
+    },
+    {
+     "id": "BDnOrExHmt",
+     "year": 2026,
+     "title": "PixNerd: Pixel Neural Field Diffusion"
+    },
+    {
+     "id": "b8x2cV9LSD",
+     "year": 2027,
+     "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple"
+    },
+    {
+     "id": "2gTJxRGxQV",
+     "year": 2027,
+     "title": "Pixel Space Doesn't Save You: Two Mechanisms of Conditioning Homogenization in Diffusion Transformers"
+    }
+   ]
+  },
+  {
+   "tag": "fading",
+   "title_zh": "统一模型与视觉自回归新架构减少",
+   "body_zh": "统一理解与生成模型（UMM）和视觉自回归生成的新架构论文减少。UMM 每万篇 39.4 → 23.0，视觉自回归 41.9 → 13.9。图像生成收敛到 FLUX 与 Qwen-Image 底座，后训练以 Flow-GRPO 式在线 RL 为主，2026 年接收率 0.556。",
+   "note_zh": "口径：簇 50（统一多模态）、簇 271（视觉自回归，VAR/MAR）、簇 187（文生图对齐，59 → 34）、簇 210（主体驱动可控生成，52 → 25）；在线 RL 指 Flow-GRPO/DanceGRPO/DiffusionNFT，相关措辞 4.5 → 7.0，2026 年均分 5.63。补充数据：VAR/MAR 措辞 36.3 → 18.6；2026 年簇 50 接收率 0.41、均分 4.74，Generative Universal Verifier 以 8.0 获 oral，2027 年问题转为生成是否帮助理解（UniG2U-Bench）。底座提及：FLUX 45.9 → 53.9，Qwen-Image 8.1 → 18.1（2026 年接收率 0.375），SD3/3.5 14.1 → 27.7；SDXL/SD1.5 系 2026 年接收率 0.185。2027 年 Imago 系统研究在线 RL 配方。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "DM0Y0oL33T",
+     "year": 2026,
+     "title": "Generative Universal Verifier as Multimodal Meta-Reasoner"
+    },
+    {
+     "id": "VJZ477R89F",
+     "year": 2026,
+     "title": "DiffusionNFT: Online Diffusion Reinforcement with Forward Process"
+    },
+    {
+     "id": "JtHSh9TrHJ",
+     "year": 2027,
+     "title": "UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?"
+    },
+    {
+     "id": "O0Ct8qn2td",
+     "year": 2027,
+     "title": "Imago: Studying the Online RL Recipe for Visual Generation"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "通用 MLLM 研究让位于专题研究",
+   "body_zh": "MLLM 研究从通用能力转向具体专题。通用 MLLM 每万篇 124.2 → 48.1，专题方向 120.6 → 207.8，2026 年接收率 0.364 高于通用的 0.321。默认底座换成 Qwen3-VL，评测裁判从 GPT-4o 换成 GPT-5。",
+   "note_zh": "口径：通用簇为 130（视觉理解）与 64（VLM 分析）；专题簇为空间推理、流式视频、两类 token 压缩、视觉定位、多模态 RL（82、236、154、189、45、218）。补充数据：Qwen3-VL 0.5 → 74.9；GPT-4o/4V 148.9 → 28.1，GPT-5 78.7 → 126.5；作者关键词 large multimodal model 24.7 → 3.7，multimodal llm 24.7 → 9.1；Qwen-VL 全系 73.2 → 124.6，LLaVA 55.0 → 42.8，InternVL 15.1 → 22.8；多模态 R1/GRPO 式 RL 101.4 → 92.1，进入平台期；VLM 语境 on-policy 蒸馏 0.5 → 31.9；潜在视觉 token 推理是新方向。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "3gM6HwHvnc",
+     "year": 2026,
+     "title": "RL makes MLLMs see better than SFT"
+    },
+    {
+     "id": "xUyMXkI958",
+     "year": 2026,
+     "title": "DeepEyes: Incentivizing \"Thinking with Images\" via Reinforcement Learning"
+    },
+    {
+     "id": "74lhxSxrOC",
+     "year": 2027,
+     "title": "LatentOPD: On-Policy Distillation for Multimodal Reasoning with Visual Latents"
+    },
+    {
+     "id": "bVxCfXbctt",
+     "year": 2027,
+     "title": "Understand, Imagine, then Reason: Thinking with Foresight in Unified Latent Space"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "视频理解转向常开的流式助手",
+   "body_zh": "视频理解的增量来自流式场景，离线长视频问答停滞。流式视频理解每万篇 7.1 → 31.2，2026 年接收率 0.414；离线长视频理解 42.4 → 45.1，接收率 0.25。以离线问答基准为主要评测的论文 2026 年接收率仅 0.209。",
+   "note_zh": "口径：簇 236（流式视频理解，增幅 4.4×）、簇 275（离线长视频理解）；离线问答基准指 Video-MME/MVBench/MLVU。补充数据：MLLM 语境 streaming/online/proactive 措辞 14.6 → 41.8；长视频/流式记忆措辞 4.0 → 17.2（2026 年均分 5.04）；全模态（音视频）措辞 32.3 → 63.2，Qwen-Omni 系 4.0 → 18.4。2027 年的研究对象包括主动应答（Proact-VL2）、流式记忆机制自动发现（MemEvo）、全双工交互基准与流式智能幻觉诊断（StreamAct）。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "gVbPWbA97s",
+     "year": 2026,
+     "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams"
+    },
+    {
+     "id": "YTrpy3uYxb",
+     "year": 2027,
+     "title": "Proact-VL2: Reinforcement Learning for Open-Ended Proactive Real-Time Streaming Interaction"
+    },
+    {
+     "id": "QqcZ3QTdR2",
+     "year": 2027,
+     "title": "MemEvo: Automatic Discovery of Streaming Video Memory Mechanisms"
+    },
+    {
+     "id": "nCeJglsRSA",
+     "year": 2027,
+     "title": "StreamAct: Streaming or Just Answering? Diagnosing Streaming Intelligence Illusions in Video-Language Models"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "空间推理成为 MLLM 的首要考题",
+   "body_zh": "空间推理是 MLLM 研究增长最快的专题。VLM 空间推理每万篇 31.8 → 47.4，2026 年接收率 0.46，居全域前三。2027 年的工作从建基准转向补短板，用几何过程奖励和潜在世界模拟训练空间推理。",
+   "note_zh": "口径：簇 82（VLM 空间推理）；空间基准按名称严格匹配 VSI-Bench/MMSI/SPAR/MindCube/ViewSpatial/OmniSpatial/CV-Bench/BLINK 等。补充数据：空间基准论文 8.1 → 16.3，2026 年接收率 0.438；心理旋转/视角转换类 0.524。2026 年 MMSI-Bench、Theory of Space 被接收，MLLM 空间智能泛化能力一文获 oral。2027 年代表作：VERSE、WorldMind、渲染新视角辅助推理，以及审计推理链忠实性的 SpatialChain。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "gHRoX4vXm3",
+     "year": 2026,
+     "title": "MMSI-Bench: A Benchmark for Multi-Image Spatial Intelligence"
+    },
+    {
+     "id": "DE5ZJtR4bg",
+     "year": 2026,
+     "title": "On the Generalization Capacities of MLLMs for Spatial Intelligence"
+    },
+    {
+     "id": "4XgQCTTHEP",
+     "year": 2027,
+     "title": "VERSE: Verifiable Spatial Self-Evolution with Geometric Process Rewards"
+    },
+    {
+     "id": "7qezAf7EM8",
+     "year": 2027,
+     "title": "WorldMind: Test-Time Scaling for Visual Spatial Reasoning through Latent World Simulation"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "前馈 3D 重建取代逐场景优化",
+   "body_zh": "3D 视觉的主线从逐场景优化转向前馈几何基础模型。前馈 3D 重建措辞每万篇 12.6 → 35.8，2026 年接收率 0.60；NeRF 26.2 → 12.6。逐场景 3DGS 致密化与压缩类 2026 年接收率仅 0.217。",
+   "note_zh": "口径：前馈重建措辞匹配 feed-forward 3D/GS/重建；簇 145（前馈 3D/4D 重建）27.3 → 49.8，2026 年接收率 0.407。补充数据：前馈措辞类 2026 年均分 4.87；VGGT/π3/MapAnything 等具名模型 12.1 → 17.9；隐式神经表示簇 260 为 24.2 → 13.9，新视角合成簇 291 为 24.7 → 16.0；3DGS 总量 115.6 → 105.3。视觉骨干：CLIP 198.9 → 166.9，DINOv3 6.1 → 30.0，SAM 3 0.5 → 12.6。Depth Anything 3 获 2026 年 oral；2027 年延续 TTT3R 思路在前馈骨干上做测试时训练（TTT4D、Anderson 加速），并出现潜空间 bundle adjustment。单位为每万篇投稿中的论文数。",
+   "evidence": [
+    {
+     "id": "yirunib8l8",
+     "year": 2026,
+     "title": "Depth Anything 3: Recovering the Visual Space from Any Views"
+    },
+    {
+     "id": "5APgTKsnx8",
+     "year": 2026,
+     "title": "Streaming Visual Geometry Transformer"
+    },
+    {
+     "id": "wfDNKydk14",
+     "year": 2027,
+     "title": "Latent Bundle Adjustment"
+    },
+    {
+     "id": "OIgDOSbZoH",
+     "year": 2027,
+     "title": "Anderson Acceleration of Test-Time Training for Feed-Forward 3D Reconstruction"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "自回归流式视频生成",
+   "from": 12.6,
+   "to": 38.4,
+   "unit": "per10k",
+   "note_zh": "Self-Forcing 系，接收率 0.52"
+  },
+  {
+   "name_zh": "流式视频理解",
+   "from": 7.1,
+   "to": 31.2,
+   "unit": "per10k",
+   "note_zh": "常开助手、主动应答、流式记忆"
+  },
+  {
+   "name_zh": "视频世界模型",
+   "from": 14.6,
+   "to": 60.7,
+   "unit": "per10k",
+   "note_zh": "视频生成向可交互世界模拟器迁移"
+  },
+  {
+   "name_zh": "前馈式 3D 重建",
+   "from": 12.6,
+   "to": 35.8,
+   "unit": "per10k",
+   "note_zh": "VGGT/π3/DA3 系，接收率 0.60"
+  },
+  {
+   "name_zh": "Qwen3-VL 提及",
+   "from": 0.5,
+   "to": 74.9,
+   "unit": "per10k",
+   "note_zh": "成为默认 VLM 底座"
+  },
+  {
+   "name_zh": "VLM 在线策略蒸馏",
+   "from": 0.5,
+   "to": 31.9,
+   "unit": "per10k",
+   "note_zh": "LLM 后训练做法进入多模态"
+  },
+  {
+   "name_zh": "视觉 token 压缩与剪枝",
+   "from": 31.3,
+   "to": 54.9,
+   "unit": "per10k",
+   "note_zh": "视频-LLM 压缩接收率 0.433"
+  },
+  {
+   "name_zh": "像素空间扩散",
+   "from": 4.5,
+   "to": 20.9,
+   "unit": "per10k",
+   "note_zh": "RAE 1.5 → 8.4 同步上升"
+  },
+  {
+   "name_zh": "DMD 分布匹配蒸馏",
+   "from": 12.1,
+   "to": 22.6,
+   "unit": "per10k",
+   "note_zh": "2026 年接收率 0.50，扩展到视频"
+  },
+  {
+   "name_zh": "DINOv3 提及",
+   "from": 6.1,
+   "to": 30.0,
+   "unit": "per10k",
+   "note_zh": "DINOv2/v3 合计 44.4 → 85.6"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "通用 MLLM",
+   "from": 124.2,
+   "to": 48.1,
+   "unit": "per10k",
+   "note_zh": "被空间、流式、效率等专题分流"
+  },
+  {
+   "name_zh": "可控图像与视频生成",
+   "from": 207.4,
+   "to": 103.0,
+   "unit": "per10k",
+   "note_zh": "定制管线被底座吸收，接收率 0.236"
+  },
+  {
+   "name_zh": "GPT-4o/4V 提及",
+   "from": 148.9,
+   "to": 28.1,
+   "unit": "per10k",
+   "note_zh": "裁判换成 GPT-5（78.7 → 126.5）"
+  },
+  {
+   "name_zh": "视觉自回归生成",
+   "from": 41.9,
+   "to": 13.9,
+   "unit": "per10k",
+   "note_zh": "被统一模型与扩散、流匹配吸收"
+  },
+  {
+   "name_zh": "统一理解与生成",
+   "from": 39.4,
+   "to": 23.0,
+   "unit": "per10k",
+   "note_zh": "新架构减少，转向协同性分析"
+  },
+  {
+   "name_zh": "扩散模型作者关键词",
+   "from": 409.3,
+   "to": 270.6,
+   "unit": "per10k",
+   "note_zh": "生成论文改称流匹配"
+  },
+  {
+   "name_zh": "一致性模型",
+   "from": 28.8,
+   "to": 16.5,
+   "unit": "per10k",
+   "note_zh": "少步主线让位于 MeanFlow 与 DMD"
+  },
+  {
+   "name_zh": "NeRF",
+   "from": 26.2,
+   "to": 12.6,
+   "unit": "per10k",
+   "note_zh": "2025 年为 54.0，两年跌去 77%"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年生成方向接收率 0.317，高于基线 0.270；多模态 0.282、视觉 0.266 接近基线。评审奖励新方法与效率：前馈 3D 重建 0.60、扩散在线 RL 0.556、自回归流式视频生成 0.52、MeanFlow 0.52、VLM 空间推理 0.46。被压低的是模块堆叠、旧底座与饱和基准：文生图对齐 0.171、SDXL/SD1.5 底座 0.185、离线视频问答 0.209、逐场景 3DGS 0.217。",
+ "frontline_zh": [
+  "自回归视频生成的标准技术栈是 Self-Forcing 训练、滚动 KV cache 与自回归 DMD。",
+  "MeanFlow 扩展到图像之外，用于一步机器人策略、单细胞合成、蛋白主链与语言模型。",
+  "在线策略蒸馏进入 VLM 推理与扩散蒸馏，图像 RL 从 Flow-GRPO 走向前向过程 RL。",
+  "视觉 token 压缩扩展到全模态与 VLA，难度过滤造成的评测选择偏差开始被指出。",
+  "视觉编码器从 CLIP 转向 DINO，DINOv2/v3 每万篇 44.4 → 85.6。",
+  "视频生成评测转向物理合理性，相关措辞每万篇 53.0 → 78.8。"
+ ],
+ "watchlist_zh": [
+  "视频世界模型能否成为机器人策略骨干，同时满足实时生成与动作条件控制。",
+  "像素空间 DiT、RAE 与一步生成的组合，是否会让 VAE 退出 2027 年的主流配方。",
+  "免蒸馏一步生成能否直接替代 DMD 与 MeanFlow 蒸馏管线。",
+  "研究集中依赖 Qwen3-VL 与 Qwen3-Omni，评测结论能否迁移到其他底座。",
+  "流式全双工助手何时出现标准化基准。",
+  "几何过程奖励与潜在世界模拟能否带来跨基准泛化，而非新一轮基准过拟合。"
+ ],
+ "notes_zh": [
+  "单位：除注明外，份额为每万篇投稿中的论文数（/万篇），接收率与均分来自 2026 年评审结果。",
+  "视觉三主题指 mm、gen、vision。2026 年接收率 gen 0.317（均分 4.39）、mm 0.282、vision 0.266，基线 0.270；域内 oral 共 58 篇。",
+  "流匹配与扩散按全文措辞计数；作者关键词 diffusion model 409 → 271、flow matching 101 → 176。",
+  "自回归流式视频生成指簇 112；专题 MLLM 指簇 82、236、154、189、45、218，通用 MLLM 指簇 130、64；前馈 3D 重建统计用全文措辞。",
+  "可控图像与视频生成四簇为 210（主体驱动）、187（文生图对齐）、146（人物动画）、160（可控视频扩散）。视觉 token 压缩两簇为 154（视频-LLM，接收率 0.433）与 189（通用 VLM 剪枝，接收率 0.188）。视觉自回归簇为 271，统一理解与生成簇为 50。",
+  "2026 年接收率较高的簇：112（0.52，均分 5.06）、240 DiT 推理加速/特征缓存（0.465）、82（0.46）、77 扩散语言模型（0.444）、207（0.438）、266（0.433）、154（0.433）、50（0.41）、145（0.407）。概念级：Flow-GRPO 类扩散在线 RL 0.556（均分 5.63）、前馈 3D 0.60、MeanFlow 0.52、DMD 0.50、空间基准 0.438、流式视频理解 0.414、FM 0.383 vs 扩散 0.313。",
+  "2026 年接收率较低的簇：52 特征融合杂烩（0.147）、187（0.171）、10 VLM 推理诊断（0.173）、146（0.18）、45 2D/3D 定位（0.185）、273 CLIP 零样本异常检测（0.186）、189（0.188）、67 ViT 架构（0.189）。概念级：SDXL/SD1.5 底座 0.185、智能体式视频制作 0.182、泛 REPA 技巧 0.233、Video-MME 类离线视频问答 0.209、逐场景 3DGS 致密化/压缩 0.217。",
+  "2026 年代表性 oral：Depth Anything 3、Generative Universal Verifier（8.0）、视频生成器拼接多视图重建的 Text-to-3D（8.0）、SANA-Video、Stable Video Infinity、MotionStream、FlashWorld、FlashVID、FALCON。",
+  "簇 52（特征融合杂烩）与簇 46（杂项生成建模）coherence=1，属措辞或混合聚类，其涨跌不代表研究趋势。",
+  "扩散语言模型（簇 77，主题归 gen）59.1 → 76.5、2026 年接收率 0.444，属 LLM 架构议题，本章不展开。",
+  "其他前沿数据：VBench 37.3 → 55.1；扩散语境 on-policy 措辞 3.0 → 22.3；SigLIP 11.1 → 14.2，SAM 3/Perception Encoder 1.0 → 13.5，可提示分割簇 283 为 37.3 → 28.8；多智能体视频制作 11.1 → 34.9（2026 年接收率 0.182）；egocentric 措辞 35.3 → 70.7，联合音视频生成 11.1 → 18.6，Qwen-Omni 系（Qwen2.5-Omni/Qwen3-Omni）4.0 → 18.4。"
+ ]
+}

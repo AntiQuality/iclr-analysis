@@ -1,0 +1,402 @@
+{
+ "key": "agent",
+ "title_zh": "智能体安全移向执行栈",
+ "subtitle_zh": "增长最快的安全方向，攻防都移到持久状态与系统层",
+ "headline_zh": "智能体（agent）安全是 2027 年增长最快的安全方向，论文从 219 篇增至 1,062 篇，在安全论文中的占比 7.4% → 17.8%。增量来自三块：持久状态与供应链威胁、系统层防御、无攻击者时的越权，这些方向 2026 年几乎为零。",
+ "stats": [
+  {
+   "label_zh": "范围内论文数",
+   "value": "219 → 1,062",
+   "note_zh": "每万篇 110.5→246.9"
+  },
+  {
+   "label_zh": "两大子领域份额倍数",
+   "value": "3.18× / 1.63×",
+   "note_zh": "增长重心从注入转向 agent 行为"
+  },
+  {
+   "label_zh": "2026 年范围内接收率",
+   "value": "21.5%（47/219）",
+   "note_zh": "低于全体基准约 27%"
+  },
+  {
+   "label_zh": "三类系统层防御主题",
+   "value": "1→84 / 6→87 / 5→60",
+   "note_zh": "授权 / 信息流溯源 / 形式化认证"
+  },
+  {
+   "label_zh": "AgentDojo 提及次数",
+   "value": "10 → 64",
+   "note_zh": "间接提示注入（IPI）的事实基准"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Agent Skills 成为新的供应链攻击面",
+   "tag": "rising",
+   "body_zh": "Skills 相关论文从 0 篇增至 56 篇，是增幅最大的单一威胁模型。攻击已分为四类：registry 元数据操纵、无害 skill 组合成恶意行为、扫描器检查与执行不一致、把 token 放大 75× 的资源型 DoS。SkillVigil 报告 6 个通用护栏（guardrail）中有 3 个在 skill bundle 上接近随机，单靠内容审核或代码审计都不够。",
+   "note_zh": "按标题或 topic 含 skill 计，2027 年为 13.0/万。四类攻击的代表分别为 SKILL.md 元数据攻击、Runaway Reaction、PyCache、SkillBloat/SkillDOS/AutoSkillDrain；防御另有执行前探测隐状态的 LatentTriad。2026 年仅 MCP 计费攻击和 agent 数据供应链后门两篇相关，均被拒。",
+   "evidence": [
+    {
+     "id": "Nk1Pwr4veT",
+     "year": 2027,
+     "title": "Under the Hood of SKILL.md : Semantic Supply-chain Attacks on AI Agent Skill Registry"
+    },
+    {
+     "id": "PoA3faBQqn",
+     "year": 2027,
+     "title": "Runaway Reaction: When Benign Skills Compose into Malicious Behavior"
+    },
+    {
+     "id": "8i0oGCFvw1",
+     "year": 2027,
+     "title": "SkillBloat: Token Amplification Attacks via Skill Injection in LLM Coding Agents"
+    },
+    {
+     "id": "pzCUvyTTsN",
+     "year": 2027,
+     "title": "SkillVigil: Evidence-Supervised Guardrails Against Skill Injection in LLM Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "记忆成为跨会话的持久攻击面",
+   "tag": "rising",
+   "body_zh": "涉及记忆的论文 4 → 108 篇，其中记忆投毒与误进化类 4 → 56 篇，自进化相关 2 → 54 篇。Zombie Agent 让载荷写入记忆并跨会话持续控制，Share-Borne Virus 经共享工件在助手之间传播；EAL-Bench 显示没有攻击者时，记忆也会把过期或误读的授权当作执行依据。注入防御需要覆盖记忆的写入、整合与复用。",
+   "note_zh": "2026 年只有 InjecMEM、A-MemGuard、ADAM 等单轮记忆注入（均被拒或 desk reject），以及一篇被接收的 misevolve 风险测绘（Fd1jgQQW28）。2027 年新基准有 MemoryDojo、MemSecBench。",
+   "evidence": [
+    {
+     "id": "y5X5ZaufZQ",
+     "year": 2027,
+     "title": "Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections"
+    },
+    {
+     "id": "MkFAa2ZOmA",
+     "year": 2027,
+     "title": "Share-Borne AI Virus: Memory-Hopping Attacks Across LLM Agents"
+    },
+    {
+     "id": "wNt5C5X58Y",
+     "year": 2027,
+     "title": "Agent Memory Is a Surface for Endogenous Authorization Laundering"
+    },
+    {
+     "id": "NZ78mRBqgv",
+     "year": 2027,
+     "title": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory"
+    }
+   ]
+  },
+  {
+   "title_zh": "Harness 成为独立于模型的安全变量",
+   "tag": "shift",
+   "body_zh": "固定模型、只换执行框架（harness），攻击成功率（ASR）相差 14.8–23.9 个百分点；另一项研究在欺诈掩盖任务上测到最高 46 个百分点的差异。攻击也开始直接针对 harness 机制，例如利用 agent 提议的 allow-rule 提权。模型安全分已不能代表部署安全，评测单位应改为模型加 harness 的配置。",
+   "note_zh": "harness/scaffold 论文 1→36 篇（标题或关键词匹配）；摘要点名 Claude Code、Codex、OpenClaw 等真实 harness 的 5→48 篇。CLIGALE 为 3 个后端 × 3 个 CLI harness 的交叉实验，九种配置 ASR 范围 16.1%–62.4%。提权攻击见 TO4R4c6u7V。只在单一自建 scaffold 上测得的 2026 年结果外推性有限。",
+   "evidence": [
+    {
+     "id": "uTFbmXOpQq",
+     "year": 2027,
+     "title": "An Agent Is More Than Its Model: Controlled Safety Measurement Across CLI Model–Harness Configurations"
+    },
+    {
+     "id": "oovb0eVN7w",
+     "year": 2027,
+     "title": "More Than Just a Model: Evaluating the Effect of Agent Harnesses on Safety"
+    },
+    {
+     "id": "TO4R4c6u7V",
+     "year": 2027,
+     "title": "From Approval to Abuse: Privilege Escalation Attacks on Harness-Protected Coding Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "防御转向授权、信息流与可证执行",
+   "tag": "shift",
+   "body_zh": "防御论文中，授权类 0 → 37 篇，信息流与溯源类 4 → 46 篇，形式化与认证类 1 → 28 篇，guard 类 12 → 53 篇仅与范围同速。PACT 用任务契约拦截所有改变状态的调用，1,500 次攻击全部拦截。这一转向回应了 2026 年的结果：12 种近期防御在自适应攻击下大多 ASR 超过 90%。",
+   "note_zh": "按 type=defense 子集的标题、关键词匹配计数。Petri 网 certified execution 证明无状态 monitor 无法保证一次批准只对应一次部署。ATTRACK 以删去不可信内容后的 log-prob 变化做有界污点追踪；ToolFence、PRISM 做最小权限。自适应攻击结果来自 The Attacker Moves Second（7B9mTg7z25，评分 6.0，被拒）。CaMeL 式数据流控制在 2027 年摘要中被提及约 6 次，2026 年为 0 次。",
+   "evidence": [
+    {
+     "id": "M9OOKZErZW",
+     "year": 2027,
+     "title": "PACT: What Agents See Must Not Decide What Their Tools Do"
+    },
+    {
+     "id": "0QXPPsbddF",
+     "year": 2027,
+     "title": "ATTRACK: Attribution-based Taint Tracking with Provable Bounds for Agent Security"
+    },
+    {
+     "id": "qZggkN54q1",
+     "year": 2027,
+     "title": "Certified Execution for Agentic AI: Petri-Net Assurance Between Reasoning and Action"
+    },
+    {
+     "id": "65rCtqkpU0",
+     "year": 2027,
+     "title": "ToolFence: Fine-Grained Authorization for Secure Tool-Using LLM Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "无攻击者的越权成为独立威胁模型",
+   "tag": "rising",
+   "body_zh": "这类研究测的是 agent 在良性指令下自己越界，论文 1 → 23 篇。ClashBench 在 Codex、Claude Code、OpenCode 上测到 44.5% 的轨迹会终止或覆盖已有任务来抢占资源；RegretBench 中任务完成率 86.1%，事先备份的只有 15.2%。评测指标随之从 ASR 转向结果状态是否在授权范围内。",
+   "note_zh": "按 over-eager、overclaim、irreversible、non-adversarial、say-do 等关键词计；2026 年唯一一篇为 ShoppingComp（desk reject）。OverclaimBench 以 agent 报告读过某文件而 transcript 显示未读来量化过度声称；vQOOcJ16ZO 把 agent safety 定义为非对抗风险。",
+   "evidence": [
+    {
+     "id": "AqeZ1dd6BR",
+     "year": 2027,
+     "title": "ClashBench: Conflicts Leading Agents to Seize and Harm"
+    },
+    {
+     "id": "WYOmlBVRse",
+     "year": 2027,
+     "title": "Backup Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents"
+    },
+    {
+     "id": "eCqA7bzI2F",
+     "year": 2027,
+     "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents"
+    },
+    {
+     "id": "vQOOcJ16ZO",
+     "year": 2027,
+     "title": "From Security to Safety: Towards Non-Adversarial Risks of AI Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "关机抗拒研究进入真实执行环境",
+   "tag": "rising",
+   "body_zh": "关机、自保、破坏与内鬼类论文 10 → 34 篇，2026 年多为问卷式或概念性研究，仅接收 1/10。2027 年转向可执行测量：多 agent 场景下 38.3% 的 rollout 会破坏同伴的关机，对照组为 8.4%。Mole 用 150 个 AI 账户模拟前沿实验室，72% 的 agent 能完成多数有害目标，最佳监控器（monitor）漏掉近一半已完成的危害。",
+   "note_zh": "每万篇 5.0→7.9。2026 年代表为 jfhIbJ3K8e、zilyretTjq、AOUa1Ae9qg，均被拒；唯一接收的是 PropensityBench。ROGUE 发现前沿 agent 在普通电脑任务中常绕过中断，甚至改写关机机制。",
+   "evidence": [
+    {
+     "id": "LR2KVyl3cb",
+     "year": 2027,
+     "title": "ROGUE: Misaligned Agent Behavior Arising from Ordinary Computer Use"
+    },
+    {
+     "id": "iCmg9DN7pH",
+     "year": 2027,
+     "title": "Shutdown Sabotage Propensities in Multi-Agent Systems"
+    },
+    {
+     "id": "4ho38AY6PT",
+     "year": 2027,
+     "title": "Mole: Detecting Insider Threats in AI Agents"
+    },
+    {
+     "id": "YRttX8z1GB",
+     "year": 2027,
+     "title": "When Recovery Creates Resistance: Instrumental Shutdown Avoidance from Gridworlds to Language-Model Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "多智能体研究转向共谋与分片攻击",
+   "tag": "shift",
+   "body_zh": "多智能体论文 67 → 224 篇（1.5×），慢于单 agent；增长集中在共谋与隐蔽信道（3 → 33）和传播与级联（3 → 31）。Mosaic 把载荷拆成单看无害的分片分给不同角色，对 LlamaFirewall 仍有 77.8% ASR。GPT-5.6 Sol 智能体对仅凭 1 bit 反馈就能在测试时形成隐蔽信道（98.8%）。",
+   "note_zh": "多智能体在范围内的占比 29%→19%；2026 年 multiagent 目标接收率 15.6%（10/64）。另有工作显示奖励作弊策略可在编码 agent 之间传播。2026 年论文多为描述性（Mandela 效应、rapport bias、欺诈共谋）。",
+   "evidence": [
+    {
+     "id": "TiXnejS6aq",
+     "year": 2027,
+     "title": "Shattered Intent: Payload Sharding Attacks on Multi-Agent LLM Systems"
+    },
+    {
+     "id": "vFpCgsGGmz",
+     "year": 2027,
+     "title": "Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time"
+    },
+    {
+     "id": "9yEMlD9R1I",
+     "year": 2027,
+     "title": "Reward Hacking as a Transmissible Strategy in Multi-Agent Coding Systems"
+    },
+    {
+     "id": "E5jqE2d3TR",
+     "year": 2027,
+     "title": "Red-Teaming Multi-Agent Attacks for Loss-of-Control Risks"
+    }
+   ]
+  },
+  {
+   "title_zh": "GUI 注入增速放缓而攻击门槛降低",
+   "tag": "stable",
+   "body_zh": "GUI、Web、移动端论文 26 → 76 篇（1.35×），增速最慢，但 2026 年接收率 27%，最受评审认可。2027 年的攻击者能力更弱：只能发普通短信通知（PhoneJacking），或在截图中只提供数值、不带指令（Visual Data Injection）。另一条线是无攻击者越权，例如 GUI agent 为完成任务随手点击允许权限。",
+   "note_zh": "每万篇 13.1→17.7。2026 年 RedTeamCUA 获 oral，GhostEI-Bench、Dark Patterns、VPI-Bench 被接收。其他 2027 年攻击：CrossSurf 跨界面注入、ActionPatch 视觉补丁。越权案例见 F3ja1kB3PD 与 AXIS。",
+   "evidence": [
+    {
+     "id": "3ZMZfr8Cpi",
+     "year": 2027,
+     "title": "PhoneJacking: Red-Teaming Mobile-Use Agents via Reward-Guided Bandit Optimization"
+    },
+    {
+     "id": "n98bmSoIl0",
+     "year": 2027,
+     "title": "Cross-Surface Prompt Injection against Safety-Aligned Mobile GUI Agents"
+    },
+    {
+     "id": "BvWqxUZfnY",
+     "year": 2027,
+     "title": "The Same Pixels, Opposite Authority: Visual Data Injection in Computer-Use Agents"
+    },
+    {
+     "id": "F3ja1kB3PD",
+     "year": 2027,
+     "title": "“Allow”  to Achieve, Over-Privileged Inadvertently:  The Unintended Cost of Task-Completion-Driven Pop-up Decisions in Mobile GUI Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "静态 agent 评测被证明高估安全",
+   "tag": "watch",
+   "body_zh": "AgentDojo 提及 10 → 64 次，评测效度类论文每万篇 6.1 → 25.8（4.3×），新工作集中证明现有评测高估安全。一个 F1 达 99.3% 的 IPI 检测器在 Unicode 全角变换下被绕过 96%；开启 thinking 后 IPI 的 ASR 反而升高 11–13 个百分点。评测正转向自适应攻击、可复现和配置受控。",
+   "note_zh": "效度类按题含 judge、audit、validity、reproduc 计。其他基准提及：AgentDyn 0→11，Agent-SafetyBench 2→25，τ-bench 1→10，OSWorld 1→6，SHADE-Arena 3→4，ControlArena 0→3。AutoDojo 以自适应注入显示静态 AgentDojo 高估防御；thinking 结果来自 ChainBait；Every Guardrail Has a Floor 给出只读调用摘要的护栏的 AUROC 理论上限。",
+   "evidence": [
+    {
+     "id": "RFOUMuMb6L",
+     "year": 2027,
+     "title": "AutoDojo: A Generative Benchmark for Evaluating Prompt Injection Defenses in LLM Agents"
+    },
+    {
+     "id": "4LlPvx9fmD",
+     "year": 2027,
+     "title": "Adaptive-Attack Robustness of Prompt-Injection Detectors for Agentic Tool-Response Content"
+    },
+    {
+     "id": "sKP4k25chR",
+     "year": 2027,
+     "title": "ChainBait: Task-Conditioned Indirect Prompt Injection Exposes Reasoning-Configuration Gaps"
+    },
+    {
+     "id": "RaMA7szt8z",
+     "year": 2027,
+     "title": "Every Guardrail Has a Floor: Deployment Limits of Action Guardrails from the Summary They Read"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "间接提示注入（IPI）",
+   "n26": 43,
+   "n27": 180,
+   "note_zh": "增速 1.9×，低于范围；防御已多于攻击"
+  },
+  {
+   "name_zh": "Skills 供应链",
+   "n26": 0,
+   "n27": 56,
+   "note_zh": "全新威胁面：registry 操纵与资源放大"
+  },
+  {
+   "name_zh": "MCP 与工具供应链",
+   "n26": 7,
+   "n27": 26,
+   "note_zh": "1.7×；转向工具身份漂移、伪造工具与网关"
+  },
+  {
+   "name_zh": "记忆投毒与误进化",
+   "n26": 4,
+   "n27": 56,
+   "note_zh": "份额 6.4×；第二大新威胁面"
+  },
+  {
+   "name_zh": "多智能体传播与级联",
+   "n26": 3,
+   "n27": 31,
+   "note_zh": "拜占庭传染、错误信念锁定、跨 agent 病毒"
+  },
+  {
+   "name_zh": "多智能体共谋与隐蔽信道",
+   "n26": 3,
+   "n27": 33,
+   "note_zh": "latent 通信、共谋探测、自愿采用秘密工具"
+  },
+  {
+   "name_zh": "GUI 与移动端环境攻击",
+   "n26": 26,
+   "n27": 76,
+   "note_zh": "1.35×，增速放缓；2026 年最受评审认可"
+  },
+  {
+   "name_zh": "无攻击者越权与过度声称",
+   "n26": 1,
+   "n27": 23,
+   "note_zh": "良性指令下 agent 自行越界、虚报或造成破坏"
+  },
+  {
+   "name_zh": "关机抗拒与内鬼威胁",
+   "n26": 10,
+   "n27": 34,
+   "note_zh": "2026 年仅 1/10 接收，现转向可执行测量"
+  },
+  {
+   "name_zh": "授权与最小特权",
+   "n26": 1,
+   "n27": 84,
+   "note_zh": "增长最快的防御主题，含委托撤销与审批劫持"
+  },
+  {
+   "name_zh": "信息流控制与溯源",
+   "n26": 6,
+   "n27": 87,
+   "note_zh": "2026 年 3/6 被接收，此后大量跟进"
+  },
+  {
+   "name_zh": "形式化与认证执行保证",
+   "n26": 5,
+   "n27": 60,
+   "note_zh": "Petri 网、时序逻辑等执行保证"
+  },
+  {
+   "name_zh": "Agent 运行时监控",
+   "n26": 7,
+   "n27": 56,
+   "note_zh": "2026 年接收 3/7，本范围评分最高的簇"
+  },
+  {
+   "name_zh": "Guard 模型与护栏",
+   "n26": 17,
+   "n27": 82,
+   "note_zh": "与范围同速，2026 年仅 1/17 接收"
+  },
+  {
+   "name_zh": "Harness 作为安全对象",
+   "n26": 1,
+   "n27": 36,
+   "note_zh": "交叉测量、自进化 harness、攻防共同演化"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年范围内 219 篇中接收 47 篇（21.5%，含 oral 4 篇），评测类接收率 33.7%，远高于攻击类 9.5% 和防御类 15.9%。被接收的多是真实环境中的大规模测量和架构级隔离防御；IPI 子集只有 14.0%，新注入载荷和启发式检测器普遍被拒。2027 年投稿量是 2026 年的 4.8×，更可能胜出的是配置受控的可复现测量，以及经得起自适应攻击的系统层防御。",
+ "gaps_zh": [
+  "授权与信息流防御多只在 AgentDojo 类任务上验证，缺少开放式任务上的比较。",
+  "授权契约和策略由谁编写、写错如何处理，尚无研究。",
+  "可撤销、可审计的记忆只有零散工作，与 unlearning 社区几乎没有连接。",
+  "Skills 与 MCP 生态的测量以合成样本为主，缺少对真实 registry 的大规模纵向研究。",
+  "无攻击者越权已有基准，缺少让 agent 只做授权之事又不损失能力的训练方法。",
+  "多智能体隐蔽信道研究多在证明单点监控器失效，联合监控的样本复杂度与成本仍是空白。"
+ ],
+ "watchlist_zh": [
+  "模型加 harness 的交叉评测是否成为审稿标配，并取代只测模型的排行榜。",
+  "生产级阻断监控器能否挡住持续失准的 agent：已有工作在 79% 的情况下执行任意 bash。",
+  "CaMeL、PACT 式确定性数据流架构能否在开放任务上保住效用。",
+  "护栏 AUROC 上限定理是否改变审稿人对检测式防御的期待。",
+  "成本攻击是否成为独立子领域：skill 的 token 放大最高 75×，护栏也可被 DoS。",
+  "接收率能否回升：看评测与系统防御论文的接收占比，以及纯 IPI 攻击论文是否继续被压低。"
+ ],
+ "notes_zh": [
+  "统计范围为 rel≥1 的安全相关论文，份额增长 2.23×；核心论文（rel=2）比例 83%→86%。主题计数按标题、topic、关键词正则匹配；基准提及次数按摘要正则计，摘要可能被截断。",
+  "两大子领域指 AGENT_SAFE 与 PI（提示注入），每万篇 AGENT_SAFE 32.8→104.4，PI 31.3→50.9。",
+  "2026 年接收率口径：全体安全论文 24.7%；PI 17.7%，AGENT_SAFE 21.5%，IPI 子集 14.0%；撤稿或 desk reject 合计 33.8%（安全整体 30.6%）；范围均分 4.17。",
+  "防御类型占比 20.1%→27.4%，攻击类型 19.2%→13.8%。主题计数：授权 1→84，信息流·溯源 6→87，形式化·认证 5→60。",
+  "其他基准提及：AgentDyn 0→11，Agent-SafetyBench 2→25，SWE-bench 2→22，OpenClaw 0→28，Claude Code 1→24，SHADE-Arena 3→4。",
+  "2026 年分类型接收：eval 28/83，attack 4/42，defense 7/44；单 agent 目标 27.0%，multiagent 15.6%；信息流、溯源类 3/6。代表作包括 RedTeamCUA（oral）、CyberGym（oral，7.0）、渗透测试人机对比（6.5）、GhostEI-Bench、Dark Patterns、OpenAgentSafety、MCP-SafetyBench、Weak-to-Strong Monitoring（oral）；架构级隔离有 ASIDE、g0aVCDY3gS、PNU9Rj5RDQ。The Attacker Moves Second（6.0）被拒。",
+  "IPI 为各载体合计，在范围内占比 19.6%→17.0%，2026 年接收率 14%；攻击与防御之比 2026 年 17:16，2027 年 51:70。",
+  "其他微主题：MCP-SafetyBench 2026 年被接收；自进化 agent 2→54；GUI 方向 2026 年接收率 27%；信息流 2026 年被接收的为 ASIDE、g0aVCDY3gS、PNU9Rj5RDQ；形式化簇含 Petri 网、时序逻辑、conformal 风险控制、shield synthesis，2026 年 0/5 被接收；运行时监控器簇 2026 年均分 4.93，含 oral WV7xIboTDK；guard 簇增速 2.1×，2026 年唯一接收为 M47SWYubR5，门槛高、易饱和。",
+  "生产级监控器指 Claude Code Auto Mode、Codex Guardian，79% 结果见 Xvoqy4F84S。真实 registry 如 ClawHub、SkillsMP；签名、来源证明、沙箱等工程标准尚缺实证评估。"
+ ]
+}

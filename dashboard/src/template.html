@@ -152,95 +152,162 @@ details.row .body{margin:.4rem 0 .3rem 1rem;font-size:.84rem;color:var(--text-li
 footer.foot{margin-top:3rem;padding:1.5rem 0;border-top:1px solid var(--divider);text-align:center;font-size:.85rem;color:var(--text-light)}
 @media (max-width:600px){h1{font-size:1.65rem} .kpi{border-right:0;border-bottom:1px solid var(--divider)} .nest .box{padding:.9rem .7rem .7rem}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* v3: single-scroll report */
+header.paper{text-align:center;padding-block:3.75rem 1.25rem}
+header.paper .kicker{font-size:.8rem;letter-spacing:.06em;color:var(--text-light);margin-bottom:.9rem}
+header.paper h1{font-size:2.35rem}
+header.paper .dek{font:400 1.2rem/1.45 var(--font-serif);color:var(--text-light);margin-top:.5rem}
+header.paper .byline{font-size:.95rem;color:var(--text-light);margin-top:1rem}
+nav.toc{margin-top:1.5rem;margin-bottom:.5rem;border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);padding-block:1.1rem 1.2rem}
+nav.toc .toc-h{font:600 .8rem var(--font-sans);letter-spacing:.06em;color:var(--text-light);margin-bottom:.6rem}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:.55rem 2rem}
+nav.toc li{line-height:1.4}
+nav.toc .tp{display:flex;gap:.55rem;align-items:baseline;color:var(--text);font:600 1rem var(--font-serif)}
+nav.toc .tp:hover{color:var(--theme);text-decoration:none}
+nav.toc .tp .n{color:var(--text-faint);font-variant-numeric:lining-nums;min-width:1em}
+nav.toc .ts{display:block;margin:.15rem 0 0 1.55rem;font-size:.82rem;color:var(--text-light)}
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--theme);width:0;z-index:40;transition:width .1s linear}
+.section-nav{opacity:0;pointer-events:none;transition:opacity .3s;width:150px;max-height:80vh;overflow-y:auto;scrollbar-width:none}
+.section-nav.visible{opacity:1;pointer-events:auto}
+.section-nav a.part{color:#9a9a9a;font-weight:500;margin-top:.35rem}
+.section-nav a.part.active{color:var(--text)}
+.section-nav .kids{display:none}
+.section-nav .kids.open{display:block}
+section.part{padding-top:3.25rem;margin-top:2.25rem;border-top:1px solid var(--divider)}
+section.part:first-of-type{border-top:0;margin-top:0}
+.part-head{display:flex;align-items:baseline;gap:.75rem;margin-bottom:1.1rem}
+.part-head .pno{font:600 1.05rem var(--font-serif);color:var(--theme);font-variant-numeric:lining-nums}
+.part-head h2{font-size:1.8rem;margin:0}
+section.part h3{font-size:1.25rem;margin:2.75rem 0 .6rem;scroll-margin-top:1rem}
+.lead{font-size:1.06rem}
+.lead p{margin-bottom:.8rem}
+.scope{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .8rem;margin:1.25rem 0 .25rem;font-size:.86rem;color:var(--text-light)}
+.scope-l{font-weight:600;color:var(--text)}
+.scope-n{flex-basis:100%;font-size:.8rem}
+ol.findings{list-style:none;counter-reset:f;margin:2.25rem 0 0;padding:0;display:grid;gap:1.35rem;max-width:80ch}
+ol.findings li{counter-increment:f;display:grid;grid-template-columns:2rem minmax(0,1fr);gap:.1rem .6rem}
+ol.findings li::before{content:counter(f);font:600 1.05rem/1.5 var(--font-serif);color:var(--theme);font-variant-numeric:lining-nums}
+ol.findings .ft{font:600 1.08rem/1.45 var(--font-serif)}
+ol.findings .fb{grid-column:2;margin:.2rem 0 0;text-align:justify}
+ol.findings .ff{grid-column:2;font-size:.82rem;color:var(--text-light);margin-top:.25rem;font-variant-numeric:lining-nums tabular-nums}
+ol.findings .fl{grid-column:2;font-size:.84rem;margin-top:.15rem}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1.5rem}
+sup.fn{font-size:.7em;line-height:0;margin-left:1px}
+a.pid{font-size:.72em;color:var(--theme);text-decoration:none;margin:0 1px;vertical-align:.25em}
+@media (max-width:700px){.prose p,.prose li,.insight p,ul.dots li,ol.findings .fb,section.notes p,ol.fnlist li,p.prose{text-align:left}}
+sup.fn a{color:var(--theme);text-decoration:none;padding:0 1px}
+section.notes{color:var(--text-light);font-size:.86rem}
+section.notes h2{color:var(--text)}
+section.notes h4{font-size:.95rem;color:var(--text);margin:1.5rem 0 .4rem}
+section.notes p{max-width:86ch;text-align:justify;margin-bottom:.6rem}
+ol.fnlist{margin:1.5rem 0 0;padding-left:1.6rem;max-width:86ch;font-size:.82rem;color:var(--text-light)}
+ol.fnlist li{margin:.3rem 0;text-align:justify;scroll-margin-top:2rem}
+ol.fnlist li .grp{color:var(--text);font-weight:600;margin-right:.35rem}
+ol.fnlist li:target{background:var(--theme-wash)}
+ol.fnlist a.back{margin-left:.35rem;font-size:.8rem}
+.ch-sub{font:400 1.05rem/1.5 var(--font-serif);color:var(--text-light);margin:-.2rem 0 1rem}
 </style>
 
-<div class="topnote">桌面浏览器阅读体验最佳 · 所有论文条目均可点开 OpenReview 原文</div>
 <header class="paper wrap">
-  <h1>ICLR 2027 投稿图谱：研究重心正在往哪里移</h1>
+  <div class="kicker">研究报告 · 2026 年 10 月</div>
+  <h1>ICLR 2027 投稿图谱</h1>
+  <div class="dek">研究重心正在往哪里移，AI Safety 内部发生了什么</div>
   <div class="byline" id="byline"></div>
-  <div class="byline2" id="byline2"></div>
   <div class="links" id="links"></div>
 </header>
-<nav class="views" aria-label="视图"><div class="row" id="viewTabs" role="tablist"></div></nav>
-<nav class="section-nav" id="sectionNav" aria-label="本页章节"></nav>
+
+<nav class="toc wrap" id="toc" aria-label="目录"></nav>
+<nav class="section-nav" id="sectionNav" aria-label="章节导航"></nav>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <main class="wrap">
-  <div class="view" id="v-overview" data-title="总览">
-    <section class="s" id="o-abstract"><h2 data-nav="摘要">摘要</h2><div class="prose" id="abstract"></div>
-      <div class="nest" id="nest"></div><div class="figure-caption" id="nestCap"></div></section>
-    <section class="s" id="o-kpi"><h2 data-nav="规模与口径">规模与口径</h2><div class="kpis" id="kpis"></div><div class="prose light" style="font-size:.92rem" id="kpiNote"></div></section>
-    <section class="s" id="o-findings"><h2 data-nav="十个发现">十个最值得知道的变化</h2><p class="prose light" id="findingsIntro"></p><div class="cards" id="findings"></div></section>
-  </div>
+  <section class="part" id="p-summary" data-part="主要发现">
+    <div class="part-head"><span class="pno">1</span><h2>主要发现</h2></div>
+    <div class="prose" id="summary"></div>
+    <div class="nest" id="nest"></div><div class="figure-caption" id="nestCap"></div>
+    <div class="kpis" id="kpis"></div>
+    <ol class="findings" id="findings"></ol>
+  </section>
 
-  <div class="view" id="v-landscape" data-title="全景" hidden>
-    <p class="view-intro prose" id="landIntro"></p>
-    <div class="callout neutral" style="max-width:none"><div class="controls" style="margin:0"><span style="font-weight:600">口径</span><div class="seg robustSeg"></div><span class="light" style="font-size:.88rem" id="robustNote1"></span></div></div>
-    <section class="s" id="l-themes"><h2 data-nav="17 个大类">17 个研究大类</h2>
-      <div class="figure"><div class="legend"><span><i style="background:var(--y25)"></i>2025</span><span><i style="background:var(--y26)"></i>2026</span><span><i style="background:var(--hot)"></i>2027 上升</span><span><i style="background:var(--down)"></i>2027 下降</span></div><div id="themeChart"></div>
-      <div class="figure-caption"><b>图 1.</b> 各大类投稿占当年总投稿的比例。大类由 300 个细主题聚合而来，归属由分析 agent 判定。</div></div></section>
-    <section class="s" id="l-map"><h2 data-nav="细主题地图">300 个细主题：谁在起飞，谁在退场</h2>
-      <p class="prose" id="mapIntro"></p>
-      <div class="controls"><div class="seg" id="mapTheme"></div></div>
-      <div class="figure"><div id="clusterScatter"></div><div class="figure-caption"><b>图 2.</b> 每个点是一个细主题。横轴为 2026 年每万篇投稿中的篇数，纵轴为 2027 年（对数刻度），对角线以上表示份额上升；点大小为 2027 年篇数。浅灰点为“措辞型”伪簇，不参与趋势解读。</div></div>
-      <h3 id="l-movers" data-nav="涨跌榜" data-nested="1">份额涨跌榜</h3>
-      <div class="grid2"><div class="table-wrap"><table class="rt" id="riseTable"></table></div><div class="table-wrap"><table class="rt" id="fallTable"></table></div></div>
-      <p class="table-caption">每万篇投稿中的篇数，2026 → 2027。已剔除措辞型伪簇。</p></section>
-    <section class="s" id="l-signal"><h2 data-nav="去年录用信号">拥挤赛道与被奖励的赛道</h2><p class="prose" id="signalIntro"></p>
-      <div class="figure"><div id="quadChart"></div><div class="figure-caption"><b>图 3.</b> 横轴：细主题 2026 → 2027 的份额变化倍数（对数）；纵轴：该细主题 2026 年投稿的录用率，虚线为全会 27%。仅含 2026 年 ≥ 30 篇的细主题。</div></div></section>
-    <section class="s" id="l-table"><h2 data-nav="细主题明细">细主题明细</h2>
-      <div class="controls"><input class="search" id="clSearch" placeholder="搜索，例如 distillation、世界模型" aria-label="搜索细主题"><select class="sel" id="clTheme" aria-label="按大类筛选"></select></div>
-      <div class="table-wrap tall"><table class="rt" id="clTable"></table></div><p class="table-caption">点击表头排序，点击细主题展开说明与 2027 代表论文。</p></section>
-    <section class="s" id="l-areas"><h2 data-nav="Primary area">作者自选 primary area</h2><p class="prose light">OpenReview 投稿时作者自选的 21 个粗粒度领域，只作背景参照。</p>
-      <div class="figure"><div id="areaChart"></div><div class="figure-caption"><b>图 4.</b> 各 primary area 的投稿占比，按 2026 → 2027 的变化排序。悬停查看 2026 录用率。</div></div></section>
-  </div>
+  <section class="part" id="p-landscape" data-part="研究版图">
+    <div class="part-head"><span class="pno">2</span><h2>研究版图</h2></div>
+    <p class="prose lead" id="landIntro"></p>
+    <div class="scope"><span class="scope-l">统计口径</span><div class="seg robustSeg"></div><span class="scope-n" id="robustNote1"></span></div>
+    <h3 id="l-themes" data-nav="17 个研究大类">17 个研究大类</h3>
+    <div class="figure"><div class="legend"><span><i style="background:var(--y25)"></i>2025</span><span><i style="background:var(--y26)"></i>2026</span><span><i style="background:var(--hot)"></i>2027 上升</span><span><i style="background:var(--down)"></i>2027 下降</span></div><div id="themeChart"></div>
+      <div class="figure-caption"><b>图 1.</b> 各研究大类占当年投稿的比例。</div></div>
+    <h3 id="l-map" data-nav="300 个细主题">300 个细主题</h3>
+    <p class="prose" id="mapIntro"></p>
+    <div class="controls"><div class="seg" id="mapTheme"></div></div>
+    <div class="figure"><div id="clusterScatter"></div><div class="figure-caption"><b>图 2.</b> 每个点是一个细主题，位于对角线上方表示份额上升。坐标为每万篇投稿中的篇数（对数刻度），点大小为 2027 年篇数。</div></div>
+    <h3 id="l-movers" data-nav="涨跌榜">涨跌最大的细主题</h3>
+    <div class="grid2"><div class="table-wrap"><table class="rt" id="riseTable"></table></div><div class="table-wrap"><table class="rt" id="fallTable"></table></div></div>
+    <h3 id="l-signal" data-nav="去年的录用信号">去年的录用信号</h3>
+    <p class="prose" id="signalIntro"></p>
+    <div class="figure"><div id="quadChart"></div><div class="figure-caption"><b>图 3.</b> 横轴为份额变化倍数（2026 → 2027），纵轴为该细主题 2026 年的录用率；虚线为全会 27%。</div></div>
+    <h3 id="l-table" data-nav="细主题明细">细主题明细</h3>
+    <div class="controls"><input class="search" id="clSearch" placeholder="搜索细主题，如 distillation、世界模型" aria-label="搜索细主题"><select class="sel" id="clTheme" aria-label="按大类筛选"></select></div>
+    <div class="table-wrap tall"><table class="rt" id="clTable"></table></div><p class="table-caption">点击表头排序，点击细主题查看说明和代表论文。</p>
+    <h3 id="l-areas" data-nav="Primary area">作者自选的 primary area</h3>
+    <div class="figure"><div id="areaChart"></div><div class="figure-caption"><b>图 4.</b> OpenReview 的 21 个 primary area 占当年投稿的比例。</div></div>
+  </section>
 
-  <div class="view" id="v-radar" data-title="技术雷达" hidden>
-    <p class="view-intro prose" id="radarIntro"></p>
-    <div class="callout neutral" style="max-width:none"><div class="controls" style="margin:0"><span style="font-weight:600">口径</span><div class="seg robustSeg"></div><span class="light" style="font-size:.88rem" id="robustNote2"></span></div></div>
-    <section class="s" id="r-concepts"><h2 data-nav="技术与范式">具体技术与范式的提及率</h2>
-      <div class="controls"><div class="seg" id="radarGroup"></div></div><div class="controls"><div class="seg" id="radarSort"></div></div>
-      <div class="table-wrap"><table class="rt" id="radarTable"></table></div>
-      <p class="table-caption">提及率 = 标题、关键词、摘要中出现该技术的投稿占比。2027 摘要中位长度比 2026 长约 9%，因此 1.1× 以内的上浮不视为信号。高亮行为增长 ≥ 2× 的条目。</p></section>
-    <section class="s" id="r-eco"><h2 data-nav="模型与基准">模型与基准生态</h2><p class="prose" id="ecoIntro"></p>
-      <div class="grid2"><div class="figure"><div id="modelChart"></div><div class="figure-caption"><b>图 5.</b> 基座模型提及率（% 投稿）。</div></div>
-      <div class="figure"><div id="benchChart"></div><div class="figure-caption"><b>图 6.</b> 基准提及率（% 投稿）。</div></div></div></section>
-    <section class="s" id="r-kw"><h2 data-nav="作者关键词">作者关键词</h2><div class="grid2" id="kwBlocks"></div></section>
-  </div>
+  <section class="part" id="p-radar" data-part="技术与工具">
+    <div class="part-head"><span class="pno">3</span><h2>技术与工具</h2></div>
+    <p class="prose lead" id="radarIntro"></p>
+    <div class="scope"><span class="scope-l">统计口径</span><div class="seg robustSeg"></div><span class="scope-n" id="robustNote2"></span></div>
+    <h3 id="r-concepts" data-nav="114 项技术">114 项技术的提及率</h3>
+    <div class="controls"><div class="seg" id="radarGroup"></div></div><div class="controls"><div class="seg" id="radarSort"></div></div>
+    <div class="table-wrap"><table class="rt" id="radarTable"></table></div>
+    <h3 id="r-eco" data-nav="模型与基准">基座模型与基准</h3><p class="prose" id="ecoIntro"></p>
+    <div class="grid2"><div class="figure"><div id="modelChart"></div><div class="figure-caption"><b>图 5.</b> 基座模型的提及率。</div></div>
+      <div class="figure"><div id="benchChart"></div><div class="figure-caption"><b>图 6.</b> 基准的提及率。</div></div></div>
+    <h3 id="r-kw" data-nav="作者关键词">作者关键词</h3><div class="grid3" id="kwBlocks"></div>
+  </section>
 
-  <div class="view" id="v-domains" data-title="领域深挖" hidden>
-    <p class="view-intro prose">六个宏观领域，每个由一个分析 agent 读完相关细主题的论文后撰写。文中数字均由 agent 在数据上复算，引用论文均核对过 OpenReview ID。</p>
+  <section class="part" id="p-domains" data-part="六个领域">
+    <div class="part-head"><span class="pno">4</span><h2>六个领域</h2></div>
+    <p class="prose lead" id="domainsIntro"></p>
     <div class="subtabs" id="domainTabs" role="tablist"></div>
     <div id="domainBody"></div>
-  </div>
+  </section>
 
-  <div class="view" id="v-safety" data-title="AI Safety" hidden>
-    <section class="s" id="sf-top"><h2 data-nav="概览" id="safetyTitle"></h2><div class="prose" id="safetyIntro"></div><div class="kpis" id="safetyKpis"></div></section>
-    <section class="s" id="sf-thesis"><h2 data-nav="跨子领域趋势" id="thesisTitle">跨子领域的大趋势</h2><div id="thesisBody"></div></section>
-    <section class="s" id="sf-subs"><h2 data-nav="26 个子方向">26 个子方向的涨落</h2>
-      <div class="figure"><div class="legend"><span><i style="background:var(--y26)"></i>2026</span><span><i style="background:var(--hot)"></i>2027 上升</span><span><i style="background:var(--down)"></i>2027 下降</span></div><div id="subChart"></div>
-      <div class="figure-caption"><b>图 7.</b> 每万篇投稿中的安全相关论文数（rel ≥ 1），按变化倍数排序。悬停查看篇数、核心论文数与 2026 录用率。</div></div>
-      <div class="table-wrap"><table class="rt" id="subTable"></table></div><p class="table-caption">录用率按 2026 年该子方向全部投稿计算（含撤稿），全会基线约 27%。高亮行为 2026 录用率 ≥ 32% 的子方向。</p></section>
-    <section class="s" id="sf-mix"><h2 data-nav="对象与贡献类型">研究对象与贡献类型</h2>
-      <div class="grid2"><div class="figure"><div id="targetChart"></div><div class="figure-caption"><b>图 8.</b> 安全论文的研究对象构成。</div></div><div class="figure"><div id="typeChart"></div><div class="figure-caption"><b>图 9.</b> 安全论文的贡献类型构成。</div></div></div>
-      <h3 id="sf-heat" data-nav="子方向 × 对象" data-nested="1">子方向 × 研究对象（2027）</h3><div class="table-wrap" id="heat"></div><p class="table-caption">格内为 2027 论文数，底色深浅按篇数；悬停查看 2026 对比。</p></section>
-    <section class="s" id="sf-micro"><h2 data-nav="具体问题涨落">具体问题层面的涨落</h2><p class="prose light">六个子领域 agent 把逐篇标注的“具体问题”归并成问题簇后计数；份额倍数已按两年投稿总量换算。</p><div class="grid2" id="microBody"></div></section>
-    <section class="s" id="sf-ch"><h2 data-nav="子领域深挖">六个子领域深挖</h2><div class="subtabs" id="safetyTabs" role="tablist"></div><div id="safetyBody"></div></section>
-  </div>
+  <section class="part" id="p-safety" data-part="AI Safety">
+    <div class="part-head"><span class="pno">5</span><h2>AI Safety</h2></div>
+    <div class="prose lead" id="safetyIntro"></div>
+    <div class="kpis" id="safetyKpis"></div>
+    <h3 id="sf-thesis" data-nav="七个趋势">七个趋势</h3><div id="thesisBody"></div>
+    <h3 id="sf-subs" data-nav="26 个子方向">26 个子方向</h3>
+    <div class="figure"><div class="legend"><span><i style="background:var(--y26)"></i>2026</span><span><i style="background:var(--hot)"></i>2027 上升</span><span><i style="background:var(--down)"></i>2027 下降</span></div><div id="subChart"></div>
+      <div class="figure-caption"><b>图 7.</b> 各子方向每万篇投稿中的论文数，按变化倍数排序。</div></div>
+    <div class="table-wrap"><table class="rt" id="subTable"></table></div><p class="table-caption">高亮行为 2026 年录用率不低于 32% 的子方向；全会为 27%。</p>
+    <h3 id="sf-mix" data-nav="研究对象与贡献类型">研究对象与贡献类型</h3>
+    <div class="grid2"><div class="figure"><div id="targetChart"></div><div class="figure-caption"><b>图 8.</b> 安全论文的研究对象。</div></div><div class="figure"><div id="typeChart"></div><div class="figure-caption"><b>图 9.</b> 安全论文的贡献类型。</div></div></div>
+    <div class="table-wrap" id="heat"></div><p class="table-caption">2027 年各子方向 × 研究对象的论文数。悬停查看 2026 年。</p>
+    <h3 id="sf-micro" data-nav="具体问题">具体问题的涨落</h3><div class="grid2" id="microBody"></div>
+    <h3 id="sf-ch" data-nav="六个子领域">六个子领域</h3>
+    <div class="subtabs" id="safetyTabs" role="tablist"></div><div id="safetyBody"></div>
+  </section>
 
-  <div class="view" id="v-style" data-title="风格异动" hidden>
-    <section class="s" id="st-top"><h2 data-nav="发现" id="styleTitle">2027 出现了一批模板化摘要</h2><div class="prose" id="styleIntro"></div></section>
+  <section class="part" id="p-style" data-part="写作风格">
+    <div class="part-head"><span class="pno">6</span><h2 id="styleTitle">写作风格</h2></div>
+    <div class="prose lead" id="styleIntro"></div>
     <div id="styleBody"></div>
-  </div>
+  </section>
 
-  <div class="view" id="v-papers" data-title="论文库" hidden>
-    <section class="s" id="p-top"><h2 data-nav="论文库">论文库</h2><p class="prose">安全论文表带有 60 个 agent 的逐篇标注：子方向、研究对象、贡献类型和具体问题。全量表收录 2027 年全部投稿，可按细主题浏览。</p>
-      <div class="controls"><div class="seg" id="exMode"></div></div><div class="controls" id="exControls"></div>
-      <div class="table-wrap tall"><table class="rt" id="exTable"></table></div><p class="table-caption" id="exCount"></p></section>
-  </div>
+  <section class="part" id="p-papers" data-part="论文库">
+    <div class="part-head"><span class="pno">7</span><h2>论文库</h2></div>
+    <p class="prose lead" id="papersIntro"></p>
+    <div class="controls"><div class="seg" id="exMode"></div></div><div class="controls" id="exControls"></div>
+    <div class="table-wrap tall"><table class="rt" id="exTable"></table></div><p class="table-caption" id="exCount"></p>
+  </section>
 
-  <div class="view" id="v-method" data-title="方法" hidden>
-    <section class="s" id="m-top"><h2 data-nav="方法与局限">方法与局限</h2><div class="prose" id="methodBody"></div></section>
-  </div>
+  <section class="part notes" id="p-notes" data-part="注释与方法">
+    <div class="part-head"><span class="pno"></span><h2>注释与方法</h2></div>
+    <div id="methodBody"></div>
+    <ol class="fnlist" id="fnList"></ol>
+  </section>
 </main>
 <footer class="foot wrap" id="foot"></footer>
 <div class="tip" id="tip" role="tooltip"></div>
@@ -273,10 +340,17 @@ const tagBadge = t => el('span',{class:'badge '+({rising:'up',fading:'dn'}[t]||(
 function refs(ev){ if (!ev || !ev.length) return null; return el('ul',{class:'refs'}, ev.map(p => el('li',{}, el('span',{class:'y',text:String(p.year||'')}), el('a',{href:OR(p.id),target:'_blank',rel:'noopener',text:p.title||p.id})))); }
 function niceTicks(max, n){ const step0 = max / n; const mag = Math.pow(10, Math.floor(Math.log10(step0))); const st = [1,2,2.5,5,10].map(m=>m*mag).find(v => v >= step0) || step0; const out=[]; for (let v=0; v<=max+1e-9; v+=st) out.push(+v.toFixed(6)); return out; }
 
-$('#byline').textContent = T.byline; $('#byline2').textContent = T.byline2;
+$('#byline').textContent = T.byline;
 $('#links').append(...T.links.map(l => el('a',{href:l.href,target:'_blank',rel:'noopener'}, l.text)));
 $('#foot').innerHTML = T.footer;
 
+/* footnotes */
+const FN = [];
+function fnAdd(text, grp, back){ const i = FN.findIndex(f => f.text===text && f.grp===grp); if (i>=0) return i+1; FN.push({text, grp, back}); return FN.length; }
+function supN(n){ return el('sup',{class:'fn'}, el('a',{href:'#fn-'+n, id:'fnr-'+n, title:'注释 '+n}, String(n))); }
+function rich(str, grp, back){ const frag = document.createDocumentFragment(); const parts = String(str||'').split(/\{\{fn:([\s\S]*?)\}\}/);
+  parts.forEach((p,i) => { if (i%2===0) { const sp = document.createElement('span'); sp.innerHTML = p; while (sp.firstChild) frag.append(sp.firstChild); } else frag.append(supN(fnAdd(p, grp, back))); }); return frag; }
+function richEl(tag, str, attrs={}, grp, back){ const e = el(tag, attrs); e.append(rich(str, grp, back)); return e; }
 function dumbbell(host, rows, {unit='', labelW=220, rowH=26} = {}){
   host.innerHTML=''; const W = Math.max(320, host.clientWidth || 800); const narrow = W < 560; const lw = narrow ? Math.min(140, W*0.4) : labelW;
   const H = rows.length*rowH + 30; const x0 = lw + 12, x1 = W - 52;
@@ -307,34 +381,19 @@ function spark(vals, {w=78,h=22,color='var(--hot)'}={}){ const svg = s('svg',{vi
   pts.forEach((p,i)=>svg.append(s('circle',{cx:p[0],cy:p[1],r:i===pts.length-1?2.8:1.8,fill:i===pts.length-1?color:'var(--y26)'}))); return svg; }
 
 /* robust toggle */
-function redrawRobust(){ if (drawn['v-landscape']) { drawThemes(); drawScatter(); drawQuad(); drawClTable(); drawMovers(); } if (drawn['v-radar']) drawRadar(); }
+function redrawRobust(){ drawThemes(); drawScatter(); drawQuad(); drawClTable(); drawMovers(); drawRadar(); }
 function initRobust(){ document.querySelectorAll('.robustSeg').forEach(seg => { if (seg.children.length) return; [[true,'剔除模板化论文（推荐）'],[false,'全部论文']].forEach(([v,n]) => seg.append(el('button',{type:'button',class:v===ROBUST?'on':'',onclick:()=>{ ROBUST=v; document.querySelectorAll('.robustSeg').forEach(sg=>[...sg.children].forEach((bt,i)=>bt.classList.toggle('on', (i===0)===ROBUST))); redrawRobust(); }}, n))); });
-  ['#robustNote1','#robustNote2'].forEach(id => { const e=$(id); if (e) e.textContent = T.robustNote || ''; }); }
-/* views / routing */
-const views = [...document.querySelectorAll('.view')]; const drawn = {}; const DRAW = {};
-const tabRow = $('#viewTabs');
-views.forEach(v => tabRow.append(el('button',{type:'button',role:'tab','data-v':v.id.slice(2),onclick:()=>{ location.hash = v.id.slice(2); }}, v.dataset.title)));
-let navObs;
-function buildSectionNav(view){ const nav = $('#sectionNav'); nav.innerHTML=''; if (navObs) navObs.disconnect();
-  const heads = [...view.querySelectorAll('[data-nav]')]; const targets = [];
-  heads.forEach(h => { const tgt = (h.closest('section') && !h.dataset.nested) ? h.closest('section') : h; if (!tgt.id) return; targets.push(tgt); nav.append(el('a',{href:'#'+view.id.slice(2),class:h.dataset.nested?'nested':'','data-t':tgt.id,onclick:e=>{e.preventDefault(); tgt.scrollIntoView({behavior:'smooth',block:'start'});}}, h.dataset.nav)); });
-  navObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) nav.querySelectorAll('a').forEach(a => a.classList.toggle('active', a.dataset.t===e.target.id)); }), {rootMargin:'-20% 0px -70% 0px'});
-  targets.forEach(t => navObs.observe(t)); }
-function show(name){ const v = document.getElementById('v-'+name) || views[0]; views.forEach(x => x.hidden = x !== v); [...tabRow.children].forEach(b => b.classList.toggle('on', b.dataset.v===v.id.slice(2)));
-  if (!drawn[v.id] && DRAW[v.id]) { DRAW[v.id](); drawn[v.id] = true; } buildSectionNav(v); }
-addEventListener('hashchange', () => { show(location.hash.slice(1)); const nv = document.querySelector('nav.views'); if (scrollY > nv.offsetTop) window.scrollTo({top: nv.offsetTop, behavior:'instant'}); });
-
+  ['#robustNote1','#robustNote2'].forEach(id => { const e=$(id); if (e && !e.childNodes.length) e.append(rich(T.robustNote || '', '统计口径', '#p-landscape')); }); }
 /* OVERVIEW */
-DRAW['v-overview'] = () => {
-  $('#abstract').append(...T.abstract.map(p => el('p',{html:p})));
+const DRAW = {};
+DRAW.summary = () => {
+  T.summary.forEach(p => $('#summary').append(richEl('p', p, {}, '主要发现', '#p-summary')));
   const N = T.nest; let inner = null;
   [...N].reverse().forEach((b,i) => { const box = el('div',{class:'box b'+(N.length-i)}, el('div',{class:'lbl'}, el('div',{class:'n',text:b.n}), el('div',{class:'t',text:b.t}))); if (inner) box.append(inner); inner = box; });
-  $('#nest').append(inner); $('#nestCap').innerHTML = T.nestCaption;
-  $('#kpis').append(...T.kpis.map(k => el('div',{class:'kpi'}, el('div',{class:'k',text:k.label}), el('div',{class:'v',html:esc(k.value)+(k.unit?`<small>${esc(k.unit)}</small>`:'')}), el('div',{class:'d',text:k.note||''}))));
-  $('#kpiNote').innerHTML = T.kpiNote; $('#findingsIntro').textContent = T.findingsIntro;
-  $('#findings').append(...T.findings.map((f,i) => el('article',{class:'card'}, el('div',{class:'hd'}, el('span',{class:'no',text:'发现 '+(i+1)}), tagBadge(f.tag)), el('h4',{text:f.title}), el('p',{text:f.body}), f.fig?el('div',{class:'fig',text:f.fig}):null, f.view?el('a',{class:'more',href:'#'+f.view,text:'→ '+(f.viewText||'查看详情')}):null)));
+  $('#nest').append(inner); $('#nestCap').append(rich(T.nestCaption, '图 0', '#nest'));
+  $('#kpis').append(...T.kpis.map(k => el('div',{class:'kpi'}, el('div',{class:'k',text:k.label}), el('div',{class:'v',html:esc(k.value)+(k.unit?`<small>${esc(k.unit)}</small>`:'')}), el('div',{class:'d'}, rich(k.note||'', '规模', '#kpis')))));
+  $('#findings').append(...T.findings.map(f => el('li',{}, richEl('div', f.title, {class:'ft'}), richEl('p', f.body, {class:'fb'}, '主要发现', '#findings'), f.fig?richEl('div', f.fig, {class:'ff'}, '主要发现', '#findings'):null, f.ref?el('a',{class:'fl',href:'#'+f.ref,text:'→ '+(f.refText||'详见正文')}):null)));
 };
-
 /* LANDSCAPE */
 const themeKeys = Object.keys(THEME); let mapTheme='all';
 function drawThemes(){ dumbbell($('#themeChart'), D.themes.filter(t=>t.theme).map(t => ({label: THEME[t.theme]||t.theme, c:sh(t)[0], a:sh(t)[1], b:sh(t)[2]})).sort((p,q)=>q.b-p.b), {unit:'%', labelW:200}); }
@@ -388,9 +447,9 @@ function drawClTable(){ const q = $('#clSearch').value.trim().toLowerCase(), th 
     const det = el('details',{class:'row'}, el('summary',{text:c.name_zh+(c.coherence===1?'（措辞型伪簇）':'')}), el('div',{class:'body'}, el('div',{text:(c.name_en||'')+' — '+(c.desc_zh||'')}), el('div',{style:'margin:.3rem 0;color:var(--text)',text:c.trend_zh||''}), refs((c.examples||[]).map(e=>({id:e.id,year:2027,title:e.title})))));
     tb.append(el('tr',{}, el('td',{class:'l',style:'min-width:260px;max-width:420px'}, det), el('td',{class:'l light',style:'white-space:nowrap',text:THEME[c.theme]||c.theme}), el('td',{text:fmt(sh(c)[1])}), el('td',{text:fmt(sh(c)[2])}), el('td',{style:`color:${up?'var(--up-fg)':'var(--dn-fg)'}`,text:(up?'+':'')+fmt(sh(c)[2]-sh(c)[1])}), el('td',{}, badge(ratio(sh(c)[1],sh(c)[2],1))), el('td',{text:c.n[2]}), el('td',{style:(c.high27>=0.75?'color:var(--dn-fg);font-weight:600':''),text:c.high27!=null?(c.high27*100).toFixed(0)+'%':'—'}), el('td',{text:c.acc26!=null?(c.acc26*100).toFixed(0)+'%':'—'}), el('td',{}, spark(sh(c),{color: up?'var(--hot)':'var(--down)'})))); });
   t.append(tb); }
-DRAW['v-landscape'] = () => {
+DRAW.landscape = () => {
   initRobust();
-  $('#landIntro').textContent = T.landIntro; $('#mapIntro').textContent = T.mapIntro; $('#signalIntro').textContent = T.signalIntro;
+  $('#landIntro').append(rich(T.landIntro,'研究版图','#p-landscape')); $('#mapIntro').append(rich(T.mapIntro,'细主题','#l-map')); $('#signalIntro').append(rich(T.signalIntro,'录用信号','#l-signal'));
   const seg = $('#mapTheme'); [['all','全部'], ...themeKeys.map(k=>[k,THEME[k]])].forEach(([k,n]) => seg.append(el('button',{type:'button',class:k===mapTheme?'on':'',onclick:e=>{mapTheme=k; [...seg.children].forEach(b=>b.classList.toggle('on', b===e.target)); drawScatter();}}, n)));
   drawMovers();
   const sel = $('#clTheme'); sel.append(el('option',{value:'all',text:'全部大类'}), ...themeKeys.map(k => el('option',{value:k,text:THEME[k]})));
@@ -406,36 +465,49 @@ function drawRadar(){ const t=$('#radarTable'); t.innerHTML=''; let rows = CO.fi
     tb.append(el('tr',{class: x>=2?'hl':''}, el('td',{class:'l'}, el('span',{text:c.zh}), el('span',{class:'sub',text:c.en})), ...sh(c).map(v=>el('td',{text:v<1?v.toFixed(2)+'%':v.toFixed(1)+'%'})), el('td',{}, badge(x)), el('td',{}, spark(sh(c),{color: x<0.87?'var(--down)':'var(--hot)'})), el('td',{text: c.acc26!=null? (c.acc26*100).toFixed(0)+'%':'—'}))); });
   t.append(tb); }
 function drawEco(){ dumbbell($('#modelChart'), D.models.map(m=>({label:m.name,c:m.share[0],a:m.share[1],b:m.share[2]})).sort((a,b)=>b.b-a.b), {unit:'%', labelW:118}); dumbbell($('#benchChart'), D.benchmarks.map(m=>({label:m.name,c:m.share[0],a:m.share[1],b:m.share[2]})).sort((a,b)=>b.b-a.b), {unit:'%', labelW:118}); }
-DRAW['v-radar'] = () => {
+DRAW.radar = () => {
   initRobust();
-  $('#radarIntro').textContent = T.radarIntro; $('#ecoIntro').textContent = T.ecoIntro;
+  $('#radarIntro').append(rich(T.radarIntro,'技术与工具','#p-radar')); $('#ecoIntro').append(rich(T.ecoIntro,'模型与基准','#r-eco'));
   const segR = $('#radarGroup'); groups.forEach(g => segR.append(el('button',{type:'button',class:g===rGroup?'on':'',onclick:e=>{rGroup=g;[...segR.children].forEach(b=>b.classList.toggle('on',b===e.target));drawRadar();}}, g)));
   const segS = $('#radarSort'); [['x','按增长倍数排序'],['v','按 2027 提及率排序']].forEach(([k,n]) => segS.append(el('button',{type:'button',class:k===rSort?'on':'',onclick:e=>{rSort=k;[...segS.children].forEach(b=>b.classList.toggle('on',b===e.target));drawRadar();}}, n)));
   drawRadar(); drawEco();
-  [['kw_new','2027 新出现的关键词','2026 年 ≤ 2 篇，2027 年 ≥ 25 篇'],['kw_rise','升温最快的关键词','按 log-odds（Monroe et al., 2008）排序'],['kw_fall','降温最快的关键词','按 log-odds 排序']].forEach(([k,title,cap]) => {
+  [['kw_new','新出现的关键词','2026 年几乎没有、2027 年不少于 25 篇。'],['kw_rise','升温最快','篇数，2026 → 2027。'],['kw_fall','降温最快','篇数，2026 → 2027。']].forEach(([k,title,cap]) => {
     const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:title}), el('th',{text:'2026'}), el('th',{text:'2027'}))));
     const tb = el('tbody'); (D.kw[k]||[]).slice(0,15).forEach(r => tb.append(el('tr',{}, el('td',{class:'l mono',text:r.kw}), el('td',{text:r.n[1]}), el('td',{text:r.n[2]})))); t.append(tb);
-    $('#kwBlocks').append(el('div',{}, el('div',{class:'table-wrap'}, t), el('p',{class:'table-caption',text:cap+'；数字为篇数。'}))); }); };
+    $('#kwBlocks').append(el('div',{}, el('div',{class:'table-wrap'}, t), el('p',{class:'table-caption',text:cap}))); }); };
 
 /* chapters */
+let KNOWN = null;
+function knownIds(){ if (KNOWN) return KNOWN; KNOWN = new Map();
+  (D.papers27||[]).forEach(r => KNOWN.set(r[0], r[1])); (D.safetyPapers||[]).forEach(r => KNOWN.set(r[0], r[2]));
+  const ev = o => { if (Array.isArray(o)) o.forEach(ev); else if (o && typeof o==='object') { if (o.id && o.title && !KNOWN.has(o.id)) KNOWN.set(o.id, o.title); Object.values(o).forEach(ev); } };
+  ev(D.domains); ev(D.safetyChapters); ev(D.safetyThesis); return KNOWN; }
+const pidLink = id => el('a',{class:'pid',href:OR(id),target:'_blank',rel:'noopener',title:knownIds().get(id)||id}, '↗');
+// Replace OpenReview IDs quoted in prose with small links, dropping parentheses that held only IDs.
+function tx(str){ if (!str) return []; const K = knownIds(); const out = []; const re = /[（(]\s*([A-Za-z0-9_\-]{10}(?:\s*[，,、;；]\s*[A-Za-z0-9_\-]{10})*)\s*[)）]|\b([A-Za-z0-9_\-]{10})\b/g; let last = 0, m;
+  while ((m = re.exec(str))) { const ids = m[1] ? m[1].split(/\s*[，,、;；]\s*/) : [m[2]]; if (!ids.every(i => K.has(i))) continue;
+    out.push(str.slice(last, m.index)); ids.forEach(i => out.push(pidLink(i))); last = re.lastIndex; }
+  out.push(str.slice(last)); return out.filter(x => x!==''); }
+function prepChapter(ch, grp, anchor){ const nz = ch.notes_zh||[]; ch._fn = {ch: nz.length ? [fnAdd(nz.join('<br>'), grp, anchor)] : [], ins: (ch.insights||[]).map(i => i.note_zh ? fnAdd(i.note_zh, grp, anchor) : 0)}; }
 function chapter(ch){ const w = el('div',{});
-  w.append(el('h2',{text:ch.title_zh}));
-  if (ch.headline_zh) w.append(el('div',{class:'callout',html:'<b>要点　</b>'+esc(ch.headline_zh)}));
-  if (ch.stats?.length) { const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'指标'}), el('th',{text:'数值'}), el('th',{class:'l',text:'说明'})))); const tb=el('tbody'); ch.stats.forEach(st => tb.append(el('tr',{}, el('td',{class:'l',style:'min-width:150px',text:st.label_zh}), el('td',{style:'white-space:nowrap;font-weight:600',text:st.value}), el('td',{class:'l light',text:st.note_zh||''})))); t.append(tb); w.append(el('div',{class:'table-wrap'}, t)); }
-  w.append(el('h3',{text:'关键发现'}));
-  (ch.insights||[]).forEach((i,k) => w.append(el('div',{class:'insight'}, el('div',{class:'meta'}, tagBadge(i.tag)), el('h4',{text:`${k+1}. ${i.title_zh}`}), el('p',{text:i.body_zh}), refs(i.evidence))));
-  const mt = (title, rows, a, b) => { const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:title}), el('th',{text:'2026'}), el('th',{text:'2027'}), el('th',{text:'倍数'})))); const tb=el('tbody'); rows.forEach(r => tb.append(el('tr',{}, el('td',{class:'l'}, el('span',{text:r.name_zh}), r.note_zh?el('span',{class:'sub',text:r.note_zh}):null), el('td',{text:r[a]}), el('td',{text:r[b]}), el('td',{}, badge(ratio(+r[a],+r[b],1)))))); t.append(tb); return el('div',{class:'table-wrap'}, t); };
-  if (ch.rising?.length || ch.fading?.length) { w.append(el('h3',{text:'涨落明细'})); const g = el('div',{class:'grid2'}); if (ch.rising?.length) g.append(mt('上升（每万篇）', ch.rising, 'from', 'to')); if (ch.fading?.length) g.append(mt('退潮（每万篇）', ch.fading, 'from', 'to')); w.append(g); }
-  if (ch.microtopics?.length) { w.append(el('h3',{text:'具体问题簇'})); w.append(mt('问题簇（篇数）', ch.microtopics, 'n26', 'n27')); w.append(el('p',{class:'table-caption',text:'篇数为原始计数；2027 年投稿总量是 2026 年的 2.17 倍，倍数低于 2.17× 即意味着份额下降。'})); }
-  if (ch.frontline_zh?.length) { w.append(el('h3',{text:'一线观察'})); w.append(el('ul',{class:'dots'}, ch.frontline_zh.map(t=>el('li',{text:t})))); }
-  if (ch.rewarded_2026_zh) { w.append(el('h3',{text:'2026 年评审奖励了什么'})); w.append(el('p',{class:'prose',style:'text-align:justify',text:ch.rewarded_2026_zh})); }
-  if (ch.gaps_zh?.length) { w.append(el('h3',{text:'空白与开放问题'})); w.append(el('ul',{class:'dots'}, ch.gaps_zh.map(t=>el('li',{text:t})))); }
-  if (ch.watchlist_zh?.length) { w.append(el('h3',{text:'接下来值得盯的'})); w.append(el('ul',{class:'dots'}, ch.watchlist_zh.map(t=>el('li',{text:t})))); }
+  w.append(el('h3',{text:ch.title_zh, style:'margin-top:1.5rem'}, ...(ch._fn?.ch||[]).map(supN)));
+  if (ch.subtitle_zh) w.append(el('div',{class:'ch-sub',text:ch.subtitle_zh}));
+  if (ch.headline_zh) w.append(el('div',{class:'callout'}, el('span',{}, ...tx(ch.headline_zh))));
+  if (ch.stats?.length) { const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'指标'}), el('th',{text:'2026 → 2027'}), el('th',{class:'l',text:''})))); const tb=el('tbody'); ch.stats.forEach(st => tb.append(el('tr',{}, el('td',{class:'l',style:'min-width:150px',text:st.label_zh}), el('td',{style:'white-space:nowrap;font-weight:600',text:st.value}), el('td',{class:'l light',text:st.note_zh||''})))); t.append(tb); w.append(el('div',{class:'table-wrap'}, t)); }
+  (ch.insights||[]).forEach((i,k) => { const n = ch._fn?.ins?.[k]; w.append(el('div',{class:'insight'}, el('div',{class:'meta'}, tagBadge(i.tag)), el('h4',{text:i.title_zh}), el('p',{}, ...tx(i.body_zh), n?supN(n):null), refs(i.evidence))); });
+  const mt = (title, rows, a, b, unit) => { const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:title}), el('th',{text:'2026'}), el('th',{text:'2027'}), el('th',{text:'倍数'})))); const tb=el('tbody'); rows.forEach(r => tb.append(el('tr',{}, el('td',{class:'l'}, el('span',{text:r.name_zh}), r.note_zh?el('span',{class:'sub',text:r.note_zh}):null), el('td',{text:r[a]}), el('td',{text:r[b]}), el('td',{}, badge(unit==='n' ? ratio(+r[a]/D.meta.totals['2026'], +r[b]/D.meta.totals['2027'], 0.5/D.meta.totals['2026']) : ratio(+r[a],+r[b],1)))))); t.append(tb); return el('div',{class:'table-wrap'}, t); };
+  if (ch.rising?.length || ch.fading?.length) { w.append(el('h4',{text:'涨落',style:'margin-top:2rem'})); const g = el('div',{class:'grid2'}); if (ch.rising?.length) g.append(mt('上升（每万篇）', ch.rising, 'from', 'to')); if (ch.fading?.length) g.append(mt('下降（每万篇）', ch.fading, 'from', 'to')); w.append(g); }
+  if (ch.microtopics?.length) { w.append(el('h4',{text:'具体问题',style:'margin-top:2rem'})); w.append(mt('问题（篇数）', ch.microtopics, 'n26', 'n27', 'n')); w.append(el('p',{class:'table-caption',text:'倍数已按两年投稿总量换算。'})); }
+  const lists = [['一线观察', ch.frontline_zh], ['2026 年评审的偏好', ch.rewarded_2026_zh ? [ch.rewarded_2026_zh] : null], ['空白', ch.gaps_zh], ['值得关注', ch.watchlist_zh]];
+  lists.forEach(([t, arr]) => { if (arr?.length) { w.append(el('h4',{text:t,style:'margin-top:2rem'})); w.append(arr.length===1 && t.startsWith('2026') ? el('p',{class:'prose'}, ...tx(arr[0])) : el('ul',{class:'dots'}, arr.map(x=>el('li',{}, ...tx(x))))); } });
   return w; }
-function subtabs(tabHost, bodyHost, chapters){ let cur = chapters[0]?.key; if (!cur) { bodyHost.append(el('p',{class:'light',text:'章节暂缺。'})); return; }
+const SUBTAB = {};
+function subtabs(tabHost, bodyHost, chapters, group){ let cur = chapters[0]?.key; if (!cur) { bodyHost.append(el('p',{class:'light',text:'章节暂缺。'})); return; }
   const render = () => { bodyHost.innerHTML=''; bodyHost.append(chapter(chapters.find(c=>c.key===cur))); [...tabHost.children].forEach(b => b.classList.toggle('on', b.dataset.k===cur)); };
-  chapters.forEach(c => tabHost.append(el('button',{type:'button',role:'tab','data-k':c.key,onclick:()=>{cur=c.key; render(); tabHost.scrollIntoView({block:'start',behavior:'smooth'});}}, (c.title_zh||'').split(/[：:]/)[0]))); render(); }
-DRAW['v-domains'] = () => subtabs($('#domainTabs'), $('#domainBody'), D.domains);
+  chapters.forEach(c => tabHost.append(el('button',{type:'button',role:'tab','data-k':c.key,onclick:()=>{cur=c.key; render();}}, (c.title_zh||'').split(/[：:]/)[0])));
+  SUBTAB[group] = k => { cur = k; render(); tabHost.scrollIntoView({block:'start',behavior:'smooth'}); };
+  render(); }
+DRAW.domains = () => { $('#domainsIntro').append(rich(T.domainsIntro,'六个领域','#p-domains')); D.domains.forEach(ch => prepChapter(ch, '领域 · '+(ch.title_zh||'').split(/[：:]/)[0], '#p-domains')); subtabs($('#domainTabs'), $('#domainBody'), D.domains, 'domains'); };
 
 /* SAFETY */
 const TGT = {llm:'文本 LLM',reasoning:'推理模型',mllm:'多模态 LLM',agent:'单智能体',multiagent:'多智能体',diffusion:'图像 / 视频生成',rl_robot:'RL / 机器人',classic:'传统模型',general:'通用 / 理论'};
@@ -452,11 +524,11 @@ function drawSafetyCharts(){
   const rows = SF.subs.filter(r=>r.n[0]+r.n[1]>=12).map(r => ({label:r.zh+(['INTERP_GEN','OOD'].includes(r.sub)?'（相邻）':''), a:r.share[0], b:r.share[1], tipHtml:`<b>${esc(r.zh)}</b> · ${r.sub}<br>每万篇 ${r.share[0]} → <b>${r.share[1]}</b>（${ratio(r.share[0],r.share[1],0.5).toFixed(2)}×）<br>篇数 ${r.n[0]} → ${r.n[1]}（核心 ${r.n_core[0]} → ${r.n_core[1]}）<br>2026 录用率 ${r.acc26!=null?(r.acc26*100).toFixed(0)+'%':'—'}${r.rating26?` · 均分 ${r.rating26}`:''}`}));
   rows.sort((a,b)=>ratio(b.a,b.b,0.5)-ratio(a.a,a.b,0.5)); dumbbell($('#subChart'), rows, {labelW:220});
   stack100($('#targetChart'), SF.target, Object.keys(TGT).filter(k=>SF.target[k]), TGT); stack100($('#typeChart'), SF.type, Object.keys(TYP).filter(k=>SF.type[k]), TYP); }
-DRAW['v-safety'] = () => {
-  $('#safetyTitle').textContent = T.safetyTitle; $('#safetyIntro').append(...T.safetyIntro.map(p=>el('p',{html:p})));
+DRAW.safety = () => {
+  T.safetyIntro.forEach(p => $('#safetyIntro').append(richEl('p', p, {}, 'AI Safety', '#p-safety')));
   $('#safetyKpis').append(...T.safetyKpis.map(k => el('div',{class:'kpi'}, el('div',{class:'k',text:k.label}), el('div',{class:'v',html:esc(k.value)+(k.unit?`<small>${esc(k.unit)}</small>`:'')}), el('div',{class:'d',text:k.note||''}))));
-  const th = D.safetyThesis; const tb = $('#thesisBody'); if (th) { if (th.title_zh) $('#thesisTitle').textContent = th.title_zh; if (th.intro_zh) tb.append(el('p',{class:'prose',style:'text-align:justify',text:th.intro_zh}));
-    (th.theses||[]).forEach((i,k) => tb.append(el('div',{class:'insight'}, el('div',{class:'meta'}, tagBadge(i.tag||'shift'), i.fig?el('span',{class:'light',style:'font-size:.85rem',text:i.fig}):null), el('h4',{text:`${k+1}. ${i.title_zh}`}), el('p',{text:i.body_zh}), refs(i.evidence)))); } else tb.append(el('p',{class:'light',text:'综合分析暂缺。'}));
+  const th = D.safetyThesis; const tb = $('#thesisBody'); if (th) { const tn=(th.notes_zh||[]).length?fnAdd(th.notes_zh.join(' '),'AI Safety · 趋势','#sf-thesis'):0; if (th.intro_zh) tb.append(el('p',{class:'prose'}, th.intro_zh, tn?supN(tn):null));
+    (th.theses||[]).forEach((i,k) => { const n = i.note_zh ? fnAdd(i.note_zh, 'AI Safety · 趋势 '+(k+1), '#sf-thesis') : 0; tb.append(el('div',{class:'insight'}, el('div',{class:'meta'}, tagBadge(i.tag||'shift')), el('h4',{text:`${k+1}. ${i.title_zh}`}), el('p',{}, ...tx(i.body_zh), n?supN(n):null), i.fig?el('p',{class:'light',style:'font-size:.84rem;margin-top:-.2rem',text:i.fig}):null, refs(i.evidence))); }); } else tb.append(el('p',{class:'light',text:'综合分析暂缺。'}));
   drawSafetyCharts();
   const st = el('tbody'); [...SF.subs].sort((a,b)=>ratio(b.share[0],b.share[1],0.5)-ratio(a.share[0],a.share[1],0.5)).forEach(r => { const x = ratio(r.share[0],r.share[1],0.5); const acc = r.acc26; st.append(el('tr',{class: acc!=null && acc>=0.32 ? 'hl':''}, el('td',{class:'l',text:r.zh}), el('td',{class:'l mono light',text:r.sub}), el('td',{text:r.n[0]}), el('td',{text:r.n[1]}), el('td',{text:fmt(r.share[0])}), el('td',{text:fmt(r.share[1])}), el('td',{}, badge(x)), el('td',{style: acc!=null&&acc<0.2?'color:var(--dn-fg)':(acc>=0.32?'color:var(--up-fg);font-weight:600':''),text: acc!=null?(acc*100).toFixed(0)+'%':'—'}))); });
   const t = $('#subTable'); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'子方向'}), el('th',{class:'l',text:'代码'}), el('th',{text:'2026 篇'}), el('th',{text:'2027 篇'}), el('th',{text:'2026 /万'}), el('th',{text:'2027 /万'}), el('th',{text:'倍数'}), el('th',{text:'2026 录用率'})))); t.append(st);
@@ -467,22 +539,22 @@ DRAW['v-safety'] = () => {
   rows.forEach(r => { r.s26 = +r.n26 / D.meta.totals['2026'] * 1e4; r.s27 = +r.n27 / D.meta.totals['2027'] * 1e4; }); rows.sort((a,b) => (b.s27 - b.s26) - (a.s27 - a.s26));
   const mk = (title, list) => { const t=el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:title}), el('th',{text:'2026'}), el('th',{text:'2027'}), el('th',{text:'份额倍数'})))); const b=el('tbody'); list.forEach(r=>b.append(el('tr',{}, el('td',{class:'l'}, el('span',{text:r.name_zh}), el('span',{class:'sub',text:r.ch+(r.note_zh?' · '+r.note_zh:'')})), el('td',{text:r.n26}), el('td',{text:r.n27}), el('td',{}, badge(ratio(r.s26,r.s27,0.3)))))); t.append(b); return el('div',{class:'table-wrap'}, t); };
   if (rows.length) $('#microBody').append(mk('增长最快的具体问题', rows.slice(0,15)), mk('收缩的具体问题', [...rows].reverse().filter(r=>r.s27<r.s26).slice(0,15)));
-  subtabs($('#safetyTabs'), $('#safetyBody'), D.safetyChapters); };
+  D.safetyChapters.forEach(ch => prepChapter(ch, 'AI Safety · '+(ch.title_zh||'').split(/[：:]/)[0], '#sf-ch')); subtabs($('#safetyTabs'), $('#safetyBody'), D.safetyChapters, 'safety'); };
 
 /* STYLE */
-DRAW['v-style'] = () => { const S = D.style; const host = $('#styleBody'); if (!S) { host.append(el('p',{class:'light',text:'分析暂缺。'})); return; }
-  if (S.title_zh) $('#styleTitle').textContent = S.title_zh; (S.intro_zh||[]).forEach(p => $('#styleIntro').append(el('p',{html:p})));
+DRAW.style = () => { const S = D.style; const host = $('#styleBody'); if (!S) { host.append(el('p',{class:'light',text:'分析暂缺。'})); return; }
+  (S.notes_zh||[]).forEach(t => fnAdd(t, '写作风格', '#p-style')); const sfn = (S.notes_zh||[]).length ? FN.length - (S.notes_zh.length) + 1 : 0; (S.intro_zh||[]).forEach((p,i) => $('#styleIntro').append(el('p',{}, rich(p,'写作风格','#p-style'), (i===0 && sfn) ? supN(sfn) : null)));
   if (S.facts?.length) host.append(el('div',{class:'kpis'}, S.facts.map(f => el('div',{class:'kpi'}, el('div',{class:'k',text:f.label}), el('div',{class:'v',text:f.value}), el('div',{class:'d',text:f.note||''})))));
-  if (S.score_hist) { const sec = el('section',{class:'s',id:'st-hist'}, el('h2',{'data-nav':'风格分分布',text:'“模板化风格分”的分布'})); const c = el('div'); sec.append(el('div',{class:'figure'}, el('div',{class:'legend'}, el('span',{html:'<i class="sq" style="background:var(--y26)"></i>2026'}), el('span',{html:'<i class="sq" style="background:var(--hot)"></i>2027'})), c, el('div',{class:'figure-caption',html:'<b>图 10.</b> '+esc(S.hist_caption_zh||'每篇摘要的风格分分布（占当年投稿比例）。')}))); host.append(sec);
+  if (S.score_hist) { const sec = el('div',{}, el('h3',{'data-nav':'风格分布',id:'st-hist',text:'风格分的分布'})); const c = el('div'); sec.append(el('div',{class:'figure'}, el('div',{class:'legend'}, el('span',{html:'<i class="sq" style="background:var(--y26)"></i>2026'}), el('span',{html:'<i class="sq" style="background:var(--hot)"></i>2027'})), c, el('div',{class:'figure-caption',html:'<b>图 10.</b> '+esc(S.hist_caption_zh||'每篇摘要的风格分分布。')}))); host.append(sec);
     requestAnimationFrame(()=>{ const bins=S.score_hist.bins, a=S.score_hist['2026'], b=S.score_hist['2027']; const sa=a.reduce((x,y)=>x+y,0), sb=b.reduce((x,y)=>x+y,0); const pa=a.map(v=>v/sa), pb=b.map(v=>v/sb); const W=Math.max(300,c.clientWidth||700),H=260,m={l:42,r:10,t:10,b:30}; const n=pa.length, mx=Math.max(...pa,...pb);
       const svg=s('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%'}); const bw=(W-m.l-m.r)/n; const ax=s('g',{class:'axis'}); niceTicks(mx*100,4).forEach(t=>{const y=H-m.b-(H-m.t-m.b)*(t/100)/mx; ax.append(s('line',{x1:m.l,x2:W-m.r,y1:y,y2:y})); const tx=s('text',{x:m.l-6,y:y+4,'text-anchor':'end'}); tx.textContent=t+'%'; ax.append(tx);}); svg.append(ax);
       for(let i=0;i<n;i++){ const x=m.l+i*bw; [[pa[i],'var(--y26)',0],[pb[i],'var(--hot)',1]].forEach(([v,col,k])=>{const h=(H-m.t-m.b)*v/mx; const r=s('rect',{x:x+1+k*(bw-2)/2,y:H-m.b-h,width:Math.max(1,(bw-2)/2-1),height:h,fill:col,rx:1}); r.addEventListener('mousemove',ev=>showTip(ev,`风格分 ${esc(bins[i])}–${esc(bins[i+1]??'')}<br>2026 ${(pa[i]*100).toFixed(2)}% · 2027 <b>${(pb[i]*100).toFixed(2)}%</b>`)); r.addEventListener('mouseleave',hideTip); svg.append(r);}); }
       const lx=s('text',{x:W-m.r,y:H-6,'text-anchor':'end'}); lx.textContent='风格分 →'; svg.append(lx); c.append(svg); }); }
   if (S.markers?.length) { const t=el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'风格标记'}), el('th',{text:'2025'}), el('th',{text:'2026'}), el('th',{text:'2027'}), el('th',{text:'26→27'})))); const tb=el('tbody'); S.markers.slice(0,20).forEach(mk=>tb.append(el('tr',{}, el('td',{class:'l mono',text:mk.term}), el('td',{text:fmt(mk.r25,1)}), el('td',{text:fmt(mk.r26,1)}), el('td',{text:fmt(mk.r27,1)}), el('td',{}, badge(ratio(mk.r26,mk.r27,0.5),1))))); t.append(tb);
-    host.append(el('section',{class:'s',id:'st-markers'}, el('h2',{'data-nav':'标记词',text:'变化最大的风格标记词'}), el('div',{class:'table-wrap'}, t), el('p',{class:'table-caption',text:S.markers_caption_zh||'每千篇投稿中含该标记的篇数。'}))); }
-  (S.sections||[]).forEach((sec,i) => host.append(el('section',{class:'s',id:'st-x'+i}, el('h2',{'data-nav':sec.nav||sec.title_zh,text:sec.title_zh}), ...(sec.paras_zh||[]).map(p=>el('p',{class:'prose',style:'text-align:justify',html:p})), sec.evidence?refs(sec.evidence):null)));
-  if (S.examples?.length) host.append(el('section',{class:'s',id:'st-ex'}, el('h2',{'data-nav':'样例',text:'高分样例'}), el('p',{class:'prose light',text:'风格分最高的若干 2027 投稿。这是写作模式信号，不构成对任何单篇论文的判定。'}), refs(S.examples.slice(0,12).map(e=>({id:e.id,year:2027,title:e.title})))));
-  if (S.caveat_zh) host.append(el('div',{class:'callout neutral',html:'<b style="color:var(--text)">解读边界　</b>'+esc(S.caveat_zh)})); };
+    host.append(el('div',{}, el('h3',{'data-nav':'标记词',id:'st-markers',text:'变化最大的措辞'}), el('div',{class:'table-wrap'}, t), el('p',{class:'table-caption',text:S.markers_caption_zh||'每千篇投稿中含该标记的篇数。'}))); }
+  (S.sections||[]).forEach((sec,i) => host.append(el('div',{}, el('h3',{'data-nav':sec.nav||sec.title_zh,id:'st-x'+i,text:sec.title_zh}), ...(sec.paras_zh||[]).map(p=>el('p',{class:'prose',html:p})), sec.evidence?refs(sec.evidence):null)));
+  if (S.examples?.length) host.append(el('div',{}, el('h3',{'data-nav':'样例',id:'st-ex',text:'风格分最高的投稿'}), el('p',{class:'prose light',text:'风格分只描述措辞，不构成对任何单篇论文的判定。'}), refs(S.examples.slice(0,12).map(e=>({id:e.id,year:2027,title:e.title})))));
+  if (S.caveat_zh) host.append(el('div',{class:'callout neutral'}, el('span',{text:S.caveat_zh}))); };
 
 /* PAPERS */
 let exMode='safety'; const SP = D.safetyPapers, P27 = D.papers27; const clName = Object.fromEntries(CL.map(c=>[c.cluster,c.name_zh]));
@@ -504,13 +576,36 @@ function drawEx(){ const q=($('#exQ')?.value||'').trim().toLowerCase(); const t=
     t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'论文'}), el('th',{class:'l',text:'细主题'}))));
     rows.slice(0,LIM).forEach(p => tb.append(el('tr',{}, el('td',{class:'l'}, el('a',{href:OR(p[0]),target:'_blank',rel:'noopener',text:p[1]})), el('td',{class:'l light',text:clName[p[2]]||p[2]})))); }
   t.append(tb); $('#exCount').textContent = `共 ${rows.length.toLocaleString()} 篇${rows.length>LIM?`，显示前 ${LIM} 篇；可用搜索或筛选缩小范围`:''}。`; }
-DRAW['v-papers'] = () => { const seg=$('#exMode'); [['safety','安全论文（逐篇标注）'],['all27','全部 2027 投稿']].forEach(([k,n])=>seg.append(el('button',{type:'button',class:k===exMode?'on':'',onclick:e=>{exMode=k;[...seg.children].forEach(b=>b.classList.toggle('on',b===e.target)); buildExControls(); drawEx();}}, n))); buildExControls(); drawEx(); };
+DRAW.papers = () => { $('#papersIntro').append(rich(T.papersIntro,'论文库','#p-papers')); const seg=$('#exMode'); [['safety','安全论文（逐篇标注）'],['all27','全部 2027 投稿']].forEach(([k,n])=>seg.append(el('button',{type:'button',class:k===exMode?'on':'',onclick:e=>{exMode=k;[...seg.children].forEach(b=>b.classList.toggle('on',b===e.target)); buildExControls(); drawEx();}}, n))); buildExControls(); drawEx(); };
 
 /* METHOD */
-DRAW['v-method'] = () => { const b = $('#methodBody'); T.method.forEach(sec => { b.append(el('h3',{text:sec.title})); sec.paras.forEach(p => b.append(el('p',{style:'text-align:justify',html:p}))); }); };
+DRAW.notes = () => { const b = $('#methodBody'); T.method.forEach(sec => { b.append(el('h4',{text:sec.title})); sec.paras.forEach(p => b.append(el('p',{html:p}))); });
+  b.append(el('h4',{text:'正文注释'}));
+  $('#fnList').append(...FN.map((f,i) => el('li',{id:'fn-'+(i+1)}, f.grp?el('span',{class:'grp',text:f.grp}):null, el('span',{html:f.text}), el('a',{class:'back',href: document.getElementById('fnr-'+(i+1)) ? '#fnr-'+(i+1) : (f.back||'#top'), 'aria-label':'返回正文',text:'↩'})))); };
 
-show(location.hash.slice(1) || 'overview');
-let lastW = innerWidth, rt; addEventListener('resize', () => { if (Math.abs(innerWidth-lastW)<40) return; lastW=innerWidth; clearTimeout(rt); rt=setTimeout(()=>{ const v = views.find(x=>!x.hidden);
-  if (v.id==='v-landscape'){ drawThemes(); drawScatter(); drawQuad(); drawAreas(); } else if (v.id==='v-safety') drawSafetyCharts(); else if (v.id==='v-radar') drawEco(); }, 150); });
+['summary','landscape','radar','domains','safety','style','papers','notes'].forEach(k => { try { DRAW[k](); } catch(e) { console.error(k, e); } });
+/* top TOC + left nav */
+const parts = [...document.querySelectorAll('section.part')];
+const toc = $('#toc'); toc.append(el('div',{class:'toc-h',text:'目录'}));
+const tol = el('ol'); toc.append(tol);
+const chapterLinks = { 'p-domains': ['domains', D.domains], 'p-safety': ['safety', D.safetyChapters] };
+parts.forEach(p => { const no = p.querySelector('.pno')?.textContent || ''; const kids = [...p.querySelectorAll('h3[data-nav]')].map(h => h.dataset.nav);
+  const extra = chapterLinks[p.id] ? chapterLinks[p.id][1].map(c => (c.title_zh||'').split(/[：:]/)[0]) : [];
+  tol.append(el('li',{}, el('a',{class:'tp',href:'#'+p.id}, el('span',{class:'n',text:no}), el('span',{text:p.dataset.part})), (kids.length||extra.length) ? el('span',{class:'ts',text:(p.id==='p-domains'?extra:kids).slice(0,7).join(' · ')}) : null)); });
+const nav = $('#sectionNav'); const navTargets = [];
+parts.forEach(p => { const pa = el('a',{class:'part',href:'#'+p.id,'data-t':p.id}, p.dataset.part); nav.append(pa); navTargets.push(p);
+  const kids = el('div',{class:'kids','data-p':p.id});
+  [...p.querySelectorAll('h3[data-nav]')].forEach(h => { if (!h.id) return; kids.append(el('a',{class:'nested',href:'#'+h.id,'data-t':h.id}, h.dataset.nav)); navTargets.push(h); });
+  if (chapterLinks[p.id]) { const [g, chs] = chapterLinks[p.id]; chs.forEach(c => kids.append(el('a',{class:'nested',href:'#'+p.id,onclick:e=>{ e.preventDefault(); SUBTAB[g](c.key); }}, '· '+(c.title_zh||'').split(/[：:]/)[0]))); }
+  nav.append(kids); });
+let curPart = null;
+const setActive = id => { const t = document.getElementById(id); const p = t?.closest('section.part'); if (!p) return;
+  nav.querySelectorAll('a[data-t]').forEach(a => a.classList.toggle('active', a.dataset.t===id || a.dataset.t===p.id));
+  if (curPart !== p.id) { curPart = p.id; nav.querySelectorAll('.kids').forEach(k => k.classList.toggle('open', k.dataset.p===p.id)); } };
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) setActive(e.target.id); }), {rootMargin:'-15% 0px -75% 0px'});
+navTargets.forEach(t => io.observe(t));
+new IntersectionObserver(es => nav.classList.toggle('visible', !es[0].isIntersecting)).observe(toc);
+const prog = $('#progress'); addEventListener('scroll', () => { const h = document.documentElement; prog.style.width = (100 * h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)) + '%'; }, {passive:true});
+let lastW = innerWidth, rt; addEventListener('resize', () => { if (Math.abs(innerWidth-lastW)<40) return; lastW=innerWidth; clearTimeout(rt); rt=setTimeout(()=>{ drawThemes(); drawScatter(); drawQuad(); drawAreas(); drawSafetyCharts(); drawEco(); }, 150); });
 })();
 </script>

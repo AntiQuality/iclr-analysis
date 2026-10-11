@@ -1,0 +1,438 @@
+{
+ "key": "govern",
+ "title_zh": "数据与模型治理",
+ "subtitle_zh": "遗忘、隐私、水印和知识产权转向 agent 与后训练",
+ "headline_zh": "本章份额随大盘略降，每万篇 344 → 310，变化在研究对象。经典分类器遗忘、联邦学习隐私和 LLM 文本水印趋于饱和，增量来自 agent 记忆删除、后训练数据推断、生成内容检测和反蒸馏。",
+ "stats": [
+  {
+   "label_zh": "本章每万篇投稿",
+   "value": "344 → 310",
+   "note_zh": "主标签 682 → 1333 篇"
+  },
+  {
+   "label_zh": "以 agent 为目标的比例",
+   "value": "1.8% → 4.9%",
+   "note_zh": "12 → 65 篇"
+  },
+  {
+   "label_zh": "遗忘评测与审计论文",
+   "value": "29 → 73",
+   "note_zh": "2026 年接收率 14%"
+  },
+  {
+   "label_zh": "蒸馏相关 IP 论文",
+   "value": "7 → 35",
+   "note_zh": "每万篇 3.5 → 8.1（2.3×）"
+  },
+  {
+   "label_zh": "指纹与谱系接收率",
+   "value": "46%（3 篇 oral）",
+   "note_zh": "2026 年 13 篇接收 6 篇"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "遗忘研究转向检验是否真的忘了",
+   "tag": "shift",
+   "body_zh": "机器遗忘（unlearning）的重心从提出新方法转向检验遗忘是否真实发生。评测与审计类论文从 29 篇增至 73 篇，研究重学（relearning）和残留知识的从 24 篇增至 49 篇。有工作发现，输出已接近随机的题目，hidden state 中仍能读出答案。",
+   "note_zh": "评测与审计类每万篇 14.6 → 17.0，2026 年接收率 14%。Unreal Unlearning：WMDP-Bio 上 21.8–31.3% 的题目输出接近随机，线性探针仍能读出答案。Remember the Test：用 retain set 微调的方法可只修复被测试的事实，17 个配置中未被针对人物的准确率损失为目标人物的 44–104%。从未见过某事实的重训模型也能在上下文中重学（54–91%），in-context relearning 审计存在混淆。仅重拟合 BatchNorm 统计量，47/221 个 MU-Bench checkpoint 的 forget accuracy 变化超过报告的跨种子波动；RMU 附带损伤在 14 个微调种子上与是否学过目标知识无关。2027 年这批论文改用 ground-truth 对照模型和合成数据。",
+   "evidence": [
+    {
+     "id": "ITPcS1Qvif",
+     "year": 2027,
+     "title": "Unreal Unlearning: Behavioral Forgetting Without Knowledge Erasure"
+    },
+    {
+     "id": "M6F3f0A89g",
+     "year": 2027,
+     "title": "Unlearning Can Remember the Test and Forget the Rest"
+    },
+    {
+     "id": "mvYeASTcR9",
+     "year": 2027,
+     "title": "Retrained Models Can Relearn in Context"
+    },
+    {
+     "id": "GDws8Tm7j9",
+     "year": 2027,
+     "title": "Batch-Norm Statistics: The Unrecorded Convention in Unlearning Audits"
+    }
+   ]
+  },
+  {
+   "title_zh": "部署环节成为新的反遗忘通道",
+   "tag": "rising",
+   "body_zh": "2027 年的反遗忘攻击大多不靠微调，而来自部署环节。4-bit 量化、运行时翻转少量比特、多次采样、agent harness 和 MoE 路由，都能让被遗忘的知识恢复。遗忘效果需要在权重格式、解码策略和脚手架的组合下评估，只看全精度贪心解码不够。",
+   "note_zh": "本章范围内标题或 topic 含 quantization 的论文从 1 篇增至 17 篇。Forgetting That Sticks：现有方法每参数 RMS 更新比 NF4 量化步长低 47–828 倍，作者称之为 sparsity–permanence tradeoff。Bit-flip relearning 可绕过面向微调的完整性检查。GRPO 驱动的概率性攻击表明单次采样指标会漏掉多次采样下的暴露。harness 的推理引导和 schema 修复可恢复被遗忘的工具调用能力。",
+   "evidence": [
+    {
+     "id": "bueqgdoyyD",
+     "year": 2027,
+     "title": "Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution"
+    },
+    {
+     "id": "lWNXJFIYXn",
+     "year": 2027,
+     "title": "A Few Bits Break Forgetting: Bit-Flip Relearning Attack against Machine Unlearning"
+    },
+    {
+     "id": "wFimNDnUW3",
+     "year": 2027,
+     "title": "When Unlearning Meets the Harness: Helpful Assistance, Harmful Recovery"
+    },
+    {
+     "id": "qTH7I1CkN6",
+     "year": 2027,
+     "title": "Routing Can Hide What Unlearning Did Not Remove: A Forced-Routing Probe for Mixture-of-Experts"
+    }
+   ]
+  },
+  {
+   "title_zh": "可删除性前移到预训练阶段",
+   "tag": "rising",
+   "body_zh": "事后遗忘挡不住对抗微调，2027 年一批工作把可删除性前移到训练阶段。预训练期遗忘、模块化存储和原生可遗忘架构的论文从 2 篇增至 7 篇。评审更认可可复用的对照模型套件，2026 年 Hubble 记忆研究套件获 oral（7.5）。",
+   "note_zh": "论文经人工筛选计数；2026 年 2 篇中 1 篇被接收，均分 5.0。代表工作：预训练中施加遗忘损失，抗篡改效果优于数据过滤；DETER 在预训练阶段压制知识；DEX 让数据形成可整块切除的专家；Natively Unlearnable LLMs 从架构层面设计。另有工作在 OLMo-2 上从零训练，注入 7 类待删数据并提供反事实对照模型。",
+   "evidence": [
+    {
+     "id": "yXeTUSCljr",
+     "year": 2027,
+     "title": "Unlearning During Pretraining Can Improve Tamper Resistance over Data Filtering"
+    },
+    {
+     "id": "RsiSONHtrX",
+     "year": 2027,
+     "title": "Natively Unlearnable Large Language Models"
+    },
+    {
+     "id": "eOvIYkvz77",
+     "year": 2027,
+     "title": "A Ground-Truth Model Suite for Unlearning Evaluation Across the LM Training Lifecycle"
+    },
+    {
+     "id": "ZfdnZhOP0k",
+     "year": 2026,
+     "title": "Hubble: a Model Suite to Advance the Study of LLM Memorization"
+    }
+   ]
+  },
+  {
+   "title_zh": "agent 记忆成为删除与隐私的新载体",
+   "tag": "rising",
+   "body_zh": "涉及 agent 记忆删除或记忆隐私的论文从 1 篇增至 25 篇，增长倍数为本章最高。难点在派生状态：一条记录会被转写成摘要、embedding、图边、画像和缓存，只删原始行不够。三个已部署记忆系统的表面删除率为 97–100%，被禁止的事实其实只是被改写。",
+   "note_zh": "删除率按表面检索打分。DELETECERT 用从未见过该记录的反事实 agent 定义删除并给出证书。持久记忆会形成越披露越能推断的自增强回路。contextual integrity（CI）类论文从 6 篇增至 18 篇，2026 年接收率 50%，均分 5.03，CIMemories 与 VoxPrivacy 均为 6.5 分。",
+   "evidence": [
+    {
+     "id": "DiDL4aIWW1",
+     "year": 2027,
+     "title": "DELETECERT: Counterfactual Certificates for Deletion in Persistent Agent Memory"
+    },
+    {
+     "id": "SojB69xNn4",
+     "year": 2027,
+     "title": "Agent Memory Can Only Forget What Its Deletion Path Can See"
+    },
+    {
+     "id": "jSSjp45lQr",
+     "year": 2027,
+     "title": "Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory"
+    },
+    {
+     "id": "YnNIp38v1M",
+     "year": 2026,
+     "title": "CIMemories: A Compositional Benchmark For Contextual Integrity In LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "成员推断转向后训练产物",
+   "tag": "rising",
+   "body_zh": "针对 LLM/MLLM 的成员推断（MIA）从 14 篇增至 45 篇，攻击对象从预训练语料转向后训练产物。RL 数据、在线策略蒸馏（OPD）、LoRA adapter 和 MoE 路由都成为泄露面。一个公开的 LoRA adapter 能从约 57 万份候选文档中指认出自己的训练文档。",
+   "note_zh": "每万篇 7.1 → 10.5。The Scar of RL 用奖励痕迹为推理模型做 MIA，可判断 benchmark 题目是否混入 RL 训练。Leaky Students 研究 OPD 中 teacher 的特权信息经学生轨迹泄露。可续训 checkpoint 中的优化器状态也会泄露训练数据。本章范围内 MoE 相关论文从 2 篇增至 18 篇，多篇利用 router 更新或遥测信号做 MIA。低精度量化会优先抹掉逐字记忆，是隐私增益，也会干扰记忆审计。",
+   "evidence": [
+    {
+     "id": "lHtC7eJ5qb",
+     "year": 2027,
+     "title": "The Scar of RL: Membership Inference Attack for Reasoning Models"
+    },
+    {
+     "id": "nJrDPmSlNA",
+     "year": 2027,
+     "title": "Leaky Students: Membership Inference against On-Policy Distillation"
+    },
+    {
+     "id": "u82w02YBmy",
+     "year": 2027,
+     "title": "A Released LoRA Adapter Names the Document It Was Trained On"
+    },
+    {
+     "id": "JnthuFTite",
+     "year": 2027,
+     "title": "RouteMIA: Expert Routing Leaks Membership in MoE LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "联邦隐私与经典遗忘份额下降",
+   "tag": "fading",
+   "body_zh": "联邦学习隐私论文从 46 篇增至 60 篇，每万篇却从 23.2 降到 13.9，2026 年接收率 11%。经典分类器遗忘每万篇 33.8 → 21.6，模型窃取 2026 年 14 篇无一接收。差分隐私（DP）理论基本稳定，2026 年接收率 31%。",
+   "note_zh": "联邦学习隐私 2026 年均分 3.81。通用 DP 理论每万篇 21.2 → 19.5。GNN 方向 IP 论文从 9 篇降到 6 篇。DP 整体每万篇 52.0 → 40.7。本章 theory 类型接收率 40%，为各类型最高；最高分论文是多轮 DP 矩阵分解误差的最优界（7.5）。FHE/MPC 私有 LLM 推理从 16 篇增至 52 篇，每万篇 8.1 → 12.1，偏系统路线。",
+   "evidence": [
+    {
+     "id": "EEr6cADbZx",
+     "year": 2026,
+     "title": "Back to Square Roots: An Optimal Bound on the Matrix Factorization Error for Multi-Epoch Differentially Private SGD"
+    },
+    {
+     "id": "yBpzF8hp3J",
+     "year": 2026,
+     "title": "Differentially Private Domain Discovery"
+    },
+    {
+     "id": "Kpe8fWgGPf",
+     "year": 2027,
+     "title": "Scaling Up FHE-Based LLM Inference: Higher Throughput and Longer Inputs"
+    },
+    {
+     "id": "ddTY9xjAY8",
+     "year": 2027,
+     "title": "Deletion Must Reach Every Copy: Federated Execution of Unlearning"
+    }
+   ]
+  },
+  {
+   "title_zh": "文本水印饱和，问题转向推理栈与审计",
+   "tag": "shift",
+   "body_zh": "LLM 文本水印从 36 篇增至 71 篇，每万篇 18.2 → 16.5，2026 年接收率 19%，扩散模型水印为 36%。新问题来自推理栈和合规审计：兼容投机解码（speculative decoding）的论文从 1 篇增至 5 篇，已部署水印开始被第三方检验和伪造。",
+   "note_zh": "multi-bit 方案 2026 年 4 篇全部被拒，2027 年增至 14 篇。兼容投机解码的方向 2026 年唯一接收论文评分 6.67；2027 年工作包括 Poisson 多 draft 采样，以及在线投机解码中 draft 更新带来的水印漂移。摘要直接提到 EU AI Act 的只有 ProvenanceLab 一篇，它采集了 Claude、GPT-5.6、Gemini 在 2026 年上线水印前后的输出。以 GDPR 或被遗忘权为动机的论文从 25 篇降到 10 篇，每万篇 12.6 → 2.3。SynthID-Text 的黑盒存在性检验在 Claude 的 10 种初始配置下均未拒绝零假设；另有工作利用随机性复用做黑盒伪造。GPT-Image-2 反复重生成对 13 种图像水印的平均去除率达 89%。",
+   "evidence": [
+    {
+     "id": "HA8vzzT6Ax",
+     "year": 2026,
+     "title": "Break the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models"
+    },
+    {
+     "id": "FpZcpaYXxl",
+     "year": 2027,
+     "title": "WOSpec: Watermarked Online Speculative Decoding"
+    },
+    {
+     "id": "i8Km9oL5Xl",
+     "year": 2027,
+     "title": "PROVENANCELAB: AN AUDITABLE LONGITUDINAL CORPUS FOR LLM WATERMARK TRANSITION ANALYSIS"
+    },
+    {
+     "id": "zupJY6d00x",
+     "year": 2027,
+     "title": "Randomness Reuse in LLM Watermarks: Security Bounds and Black-Box Spoofing"
+    }
+   ]
+  },
+  {
+   "title_zh": "生成内容检测是本章最大增量",
+   "tag": "rising",
+   "body_zh": "WATERMARK 是本章唯一份额上升的子领域，每万篇 85.8 → 94.2，增量几乎全部来自不依赖水印的检测。AI 生成图像检测从 25 篇增至 97 篇，增量最大。2026 年基于 MLLM 推理的可解释取证接收率 36%，泛化类检测约 18–24%。",
+   "note_zh": "不依赖水印的检测 84 → 237 篇，每万篇 42.4 → 55.1；音频深伪 8 → 32 篇，人脸与视频深伪 22 → 65 篇；AI 生成图像检测每万篇 12.6 → 22.6。可解释取证 2026 年均分 4.96，Veritas（oral）与 FakeXplain 均为 6.5。2027 年一篇 placebo 对照审计发现消融增益大部分来自 baseline 的训练预算，另一篇指出 AIGV benchmark 存在信号反转。",
+   "evidence": [
+    {
+     "id": "5VXJPS1HoM",
+     "year": 2026,
+     "title": "Veritas: Generalizable Deepfake Detection via Pattern-Aware Reasoning"
+    },
+    {
+     "id": "UcpTOa8OnG",
+     "year": 2026,
+     "title": "FakeXplain: AI-Generated Image Detection via Human-Aligned Grounded Reasoning"
+    },
+    {
+     "id": "tvcgDlss1C",
+     "year": 2027,
+     "title": "Most of the Ablation Gain Was the Baseline's Training Budget: A Placebo-Controlled Audit of Evidence-Guided Deepfake Detection"
+    },
+    {
+     "id": "AutBI3cDF4",
+     "year": 2027,
+     "title": "Benchmarks Lie, Signals Reverse: A Forensic Audit of AI-Generated Video Detection"
+    }
+   ]
+  },
+  {
+   "title_zh": "反蒸馏与 API 完整性成为 IP 新方向",
+   "tag": "rising",
+   "body_zh": "与蒸馏相关的 IP 论文从 7 篇增至 35 篇，2026 年 7 篇只接收 1 篇。2027 年的威胁模型更现实：蒸馏后再做 RL，可击穿只在蒸馏后立即评估的防御。验证 API 背后是哪个模型的论文从 2 篇增至 6 篇，指纹欺骗攻击已经出现。",
+   "note_zh": "蒸馏相关每万篇 3.5 → 8.1。反蒸馏防御 2 → 10 篇，蒸馏检测与溯源 5 → 26 篇。2026 年均分 3.45，LUCID、Distillation Lineage Inspector、SelfCAD 在 2027 年重投。即使隐藏推理链，也能用 trace inversion 合成推理过程完成蒸馏。学习理论分析指出，反蒸馏是否可行取决于服务端是否有状态及对应 PAC 问题的难度。追踪对象扩展到 LLM judge 的标量反馈。API 完整性工作含 AuditGym 和 runtime fingerprint；指纹欺骗指服务商用微调过的弱模型冒充强模型，骗过用户侧检测。",
+   "evidence": [
+    {
+     "id": "2CsAdl54mp",
+     "year": 2027,
+     "title": "Distillation Defenses Easily Break After Reinforcement Learning"
+    },
+    {
+     "id": "t8p3BkzOKo",
+     "year": 2027,
+     "title": "How to Steal Reasoning Without Reasoning Traces"
+    },
+    {
+     "id": "ClRV6QBTCx",
+     "year": 2027,
+     "title": "Is Preventing Model Distillation Possible? A Theoretical Perspective"
+    },
+    {
+     "id": "odHachftD5",
+     "year": 2027,
+     "title": "Your “Pro” LLM Subscription May Actually Be “Free”: Exposing Fingerprint Spoofing Risks in LLM Inference Services"
+    }
+   ]
+  },
+  {
+   "title_zh": "指纹与谱系获认可，审计工具受质疑",
+   "tag": "shift",
+   "body_zh": "LLM 指纹、谱系与来源论文从 13 篇增至 49 篇，2026 年接收率 46%，含 3 篇 oral，本章整体为 24.5%。2027 年的新问题是审计工具本身是否可靠。用授权数据训练生成器、再用其重新生成的数据训练部署模型，可让 9 种许可审计全部失效。",
+   "note_zh": "每万篇 6.6 → 11.4。3 篇 oral：语义条件水印指纹 6.5、forgery-resistant signature 6.0、LLM DNA 5.5；IP 子领域接收率 18%。这类攻击称为 data laundering。黑盒谱系指纹被发现既鲁棒又脆弱，指纹也会被服务商伪造。版权与数据归因从 17 篇增至 33 篇，2026 年接收率 12%；Common Corpus 作为开放许可语料获 oral（7.0）。",
+   "evidence": [
+    {
+     "id": "t38nZqqi3Z",
+     "year": 2026,
+     "title": "LLM Fingerprinting via Semantically Conditioned Watermarks"
+    },
+    {
+     "id": "vLFqOoMBol",
+     "year": 2026,
+     "title": "Every Language Model Has a Forgery-Resistant Signature"
+    },
+    {
+     "id": "R9jIYhTnuj",
+     "year": 2027,
+     "title": "A False Sense of Provenance: Data Laundering Defeats Training-Data Licensing Audits"
+    },
+    {
+     "id": "ZRp8ojPOnx",
+     "year": 2027,
+     "title": "Same Artifact, Two Faces: Why Black-Box Lineage Fingerprints Look Both Robust and Fragile"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "agent 记忆删除与隐私",
+   "n26": 1,
+   "n27": 25,
+   "note_zh": "派生状态删除、删除证书与跨会话推断"
+  },
+  {
+   "name_zh": "蒸馏相关 IP",
+   "n26": 7,
+   "n27": 35,
+   "note_zh": "反蒸馏与蒸馏检测，多篇被拒后重投"
+  },
+  {
+   "name_zh": "LLM 指纹与谱系",
+   "n26": 13,
+   "n27": 49,
+   "note_zh": "本章 2026 年最受认可的 IP 方向"
+  },
+  {
+   "name_zh": "MLLM/VLM 遗忘",
+   "n26": 6,
+   "n27": 35,
+   "note_zh": "身份、跨模态再生与推理模型全链路遗忘"
+  },
+  {
+   "name_zh": "AI 生成图像检测",
+   "n26": 25,
+   "n27": 97,
+   "note_zh": "本章增量最大，泛化类方法同质化"
+  },
+  {
+   "name_zh": "音频与语音深伪检测",
+   "n26": 8,
+   "n27": 32,
+   "note_zh": "部分伪造、环境音、音乐与歌手音色"
+  },
+  {
+   "name_zh": "人脸与视频深伪检测",
+   "n26": 22,
+   "n27": 65,
+   "note_zh": "人脸替换与视频伪造的检测"
+  },
+  {
+   "name_zh": "遗忘评测与审计",
+   "n26": 29,
+   "n27": 73,
+   "note_zh": "检验遗忘是否真实发生"
+  },
+  {
+   "name_zh": "遗忘鲁棒性",
+   "n26": 24,
+   "n27": 49,
+   "note_zh": "威胁从微调转向量化等部署变换"
+  },
+  {
+   "name_zh": "LLM 成员推断",
+   "n26": 14,
+   "n27": 45,
+   "note_zh": "扩展到 RL、OPD、MoE 与 RAG"
+  },
+  {
+   "name_zh": "密码学私有推理",
+   "n26": 16,
+   "n27": 52,
+   "note_zh": "基于 FHE、MPC、TEE 的 LLM 推理"
+  },
+  {
+   "name_zh": "CI 与 agent 隐私",
+   "n26": 16,
+   "n27": 53,
+   "note_zh": "判断信息流是否恰当，评审认可"
+  },
+  {
+   "name_zh": "MoE 路由与隐私遗忘",
+   "n26": 2,
+   "n27": 18,
+   "note_zh": "路由泄露成员、掩盖残留知识、承载水印"
+  },
+  {
+   "name_zh": "LLM 文本水印",
+   "n26": 36,
+   "n27": 71,
+   "note_zh": "饱和，multi-bit 方案同质化"
+  },
+  {
+   "name_zh": "联邦学习隐私",
+   "n26": 46,
+   "n27": 60,
+   "note_zh": "份额下降，低回报方向"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年本章接收率 24.5%，低于约 27% 的基线，共 11 篇 oral。有严格理论、可复用对照基础设施或贴近部署问题设定的方向容易通过，如 LLM 指纹（46%）、可解释取证（36%）和 CI benchmark（50%）。在成熟方法上做增量的方向受挫，包括文本水印（19%）、遗忘评测（14%）、联邦学习隐私（11%）和反蒸馏。",
+ "gaps_zh": [
+  "缺少部署配置下的统一遗忘压力测试，量化、采样、harness 和路由各自只被单独验证。",
+  "RL 后训练数据治理薄弱：推理链遗忘仅 2 篇，RL 数据成员推断仅 1 篇。",
+  "视频生成治理没有随模型增长，相关论文从 10 篇增至 20 篇，份额持平。",
+  "法规可执行性研究稀少，摘要直接讨论 EU AI Act 的仅 1 篇。",
+  "跨厂商水印互认和检测器误报责任几乎空白，非母语与编辑后文本的误报率缺少测量。",
+  "反蒸馏缺少公认的威胁模型，也没有区分合法蒸馏与侵权蒸馏的度量。"
+ ],
+ "watchlist_zh": [
+  "ground-truth 对照模型能否成为遗忘评测新标准，并改变 14% 的低接收率。",
+  "已部署水印的第三方审计与伪造若成立，合规方案可能转向 split-key 检测或密码学签名。",
+  "蒸馏攻防哪一方先给出可证明结论：蒸馏后 RL、trace inversion、无损反蒸馏采样。",
+  "agent 记忆删除证书与授权生命周期，可能成为被遗忘权在 agent 上的技术实现。",
+  "MoE 路由信号兼作隐私泄露通道和遗忘审计探针。",
+  "API 背后模型被替换或篡改的检测，如 AuditGym 与指纹欺骗。"
+ ],
+ "notes_zh": [
+  "口径：本章含四个子领域（UNLEARN、PRIVACY、WATERMARK、IP），按主标签计；安全相关论文指 rel≥1。",
+  "本章占安全相关论文的比例 22.9% → 22.3%，稳定在 22–23%；2026 年接收率 24.5%，基线 27%。",
+  "以 agent/多智能体为目标的论文 12 → 65 篇；同期 MLLM 5.0% → 8.3%，经典模型（classic）35.2% → 25.4%。",
+  "遗忘评测与审计类每万篇 14.6 → 17.0，是 UNLEARN 中少数份额上升的方向；UNLEARN 整体每万篇 85.8 → 70.0。",
+  "蒸馏相关 IP 包括反蒸馏、蒸馏检测和 radioactive 追踪；2026 年 7 篇接收 1 篇（14%），均分 3.45。",
+  "LLM 指纹与谱系 2027 年增至 49 篇，每万篇 6.6 → 11.4。",
+  "微主题每万篇份额：MLLM/VLM 遗忘 3.0 → 8.1；AI 生成图像检测 12.6 → 22.6；音频深伪 4.0 → 7.4；人脸与视频深伪 11.1 → 15.1（2026 年接收率 18%）；遗忘评测 14.6 → 17.0；遗忘鲁棒性 12.1 → 11.4；LLM/MLLM 成员推断 7.1 → 10.5；私有推理 8.1 → 12.1；CI 与 agent 隐私 8.1 → 12.3；文本水印 18.2 → 16.5；联邦学习隐私 23.2 → 13.9。",
+  "微主题口径：遗忘鲁棒性含 relearning、量化、残留知识与恢复；成员推断含训练数据检测；CI 显式论文 6 → 18，2026 年接收率 50%；LLM 文本水印中 multi-bit 4 → 14，2026 年 0/4 被接收；联邦学习隐私 2026 年接收率 11%；LLM 指纹与谱系 2026 年接收率 46%，含 3 篇 oral；遗忘评测 2026 年接收率 14%。",
+  "2026 年评审细节：主标签 682 篇，均分 4.15，撤稿率 24.6%。按类型 theory 40%（均分 4.75）、eval 29%、attack 16%；按子领域 WATERMARK 28%、PRIVACY 25%、UNLEARN 22%、IP 18%。",
+  "2026 年获认可的方向：可解释取证均分 4.96（Veritas oral）；VLM 地理定位与属性推断隐私 4 篇全部接收，均分 5.62；CI benchmark 均分 5.03；水印兼容投机解码唯一接收论文 6.67；Hubble 模型套件 7.5 oral，Common Corpus 7.0 oral。受挫方向：multi-bit 水印 0/4；模型窃取 14 篇 0 接收；反蒸馏与蒸馏检测 7 篇接收 1 篇，均分 3.45；版权与数据归因 12%。",
+  "空白补充：推理链遗忘的 2 篇为全链路概念遗忘与推理痕迹中的危险知识，RLVR 训练集的污染与删除几乎无人研究；视频生成相关论文每万篇 5.0 → 4.6，视频遗忘、视频成员推断、视频生成水印各为个位数；反蒸馏防御大多只在蒸馏完成后立即评估，蒸馏后 RL、多账号采集、开放权重等场景刚被提出。",
+  "观察补充：遗忘评测的对照模型包括从零训练的 OLMo-2 套件、合成传记和 Hubble，对标 TOFU/WMDP；已部署水印审计对象包括 SynthID-Text；蒸馏追踪还包括 LLM judge 反馈的 radioactive 追踪；记忆删除相关工作包括 DELETECERT 与受众绑定记忆。"
+ ]
+}
