@@ -191,7 +191,7 @@ NOTES = ("score = sum over 40 rising style markers (abstract only) of ln(r27/r26
          "Markers ranked by Monroe et al. (2008) log-odds z (2026->2027, informative Dirichlet prior = 1% of pooled counts), "
          "restricted to topic-neutral terms (primary-area KL < 0.10), non-topic nouns, r26 < 0.5, r27/r26 >= 2. "
          "2027 is a pre-review snapshot (status active/withdrawn/desk_rejected as of 2026-10-07), so its desk/withdraw rates are not "
-         "comparable with final 2025/26 rates. TL;DR is empty for 2025/26 in this corpus and rating is empty for all years. "
+         "comparable with final 2025/26 rates. TL;DR is empty for 2025/26 in this corpus; rating (mean reviewer score) exists for 2025/26 only (2027 is pre-review). "
          "The score measures a writing register, NOT authorship; it must not be read as AI-detection.")
 
 
@@ -372,6 +372,7 @@ def main():
     idx27 = np.where(yr == 2027)[0]
     idx27s = np.sort(RNG.choice(idx27, size=len(idx26), replace=False))
     idx25 = np.where(yr == 2025)[0]
+    d["near_dup"] = False
     nd = near_dup_flags(d.abstract.fillna("").values, {"2025": idx25, "2026": idx26, "2027": idx27, "2027_sub": idx27s})
     near = {}
     for k, (idx, flags, npairs) in nd.items():
@@ -381,7 +382,7 @@ def main():
             near[k][f"cos>{t}"] = {"pairs": npairs[t], "share_with_dup": float(flag.mean()),
                                    "share_with_dup_high": float(flag[hi].mean()) if hi.any() else None,
                                    "share_with_dup_nonhigh": float(flag[~hi].mean())}
-        if k == "2027":
+        if k in ("2025", "2026", "2027"):
             d.loc[idx, "near_dup"] = flags[0.8]
     print("near-dup", json.dumps(near, indent=1))
     d27 = d[yr == 2027]
@@ -413,6 +414,24 @@ def main():
     coefL, seL = logit_with_se(np.column_stack([zl, np.log(nonwd.abs_words.clip(lower=10)), A]), nonwd.accepted.astype(int).values)
     logit_legacy = {"beta_per_sd": float(coefL[1]), "se": float(seL[1])}
     print("legacy index logit", logit_legacy)
+
+    # 2026 rating vs score (reviewed papers with a rating)
+    from scipy.stats import spearmanr
+    rr = nonwd[nonwd.rating.notna()]
+    rho, prho = spearmanr(rr.score, rr.rating)
+    Ar = pd.get_dummies(rr.primary_area, drop_first=True).astype(float).values
+    zr = (rr.score - rr.score.mean()) / rr.score.std()
+    Xr = np.column_stack([np.ones(len(rr)), zr, np.log(rr.abs_words.clip(lower=10)), Ar])
+    bet, *_ = np.linalg.lstsq(Xr, rr.rating.values, rcond=None)
+    res_ = rr.rating.values - Xr @ bet
+    cov = np.linalg.pinv(Xr.T @ Xr) * (res_ @ res_) / (len(rr) - Xr.shape[1])
+    rating = {"spearman_rho": float(rho), "p": float(prho), "n": int(len(rr)),
+              "ols_rating_per_sd_score": float(bet[1]), "se": float(np.sqrt(cov[1, 1])),
+              "mean_rating_high": float(rr.rating[rr.high].mean()), "mean_rating_rest": float(rr.rating[~rr.high].mean()),
+              "n_high": int(rr.high.sum()),
+              "by_decile": rr.groupby(pd.qcut(rr.score.rank(method="first"), 10, labels=False)).rating.mean().round(3).tolist(),
+              "controls": "OLS: log abstract length + primary-area FE; withdrawn/desk-rejected excluded"}
+    print("2026 rating", rating)
 
     # ---------------- 4. examples ----------------
     top = d27.sort_values("score", ascending=False).head(12)
@@ -463,6 +482,7 @@ def main():
         "acceptance_2026_high_vs_rest": acc_high,
         "acceptance_2026_logit": logit,
         "acceptance_2026_logit_legacy_index": logit_legacy,
+        "rating_2026": rating,
         "unfiltered_top_rising": [{"term": r.term, "r26": round(r.r26, 4), "r27": round(r.r27, 4), "z": round(r.z76, 1)}
                                   for r in unfiltered_top.itertuples()],
         "examples": [{"id": r.id, "title": r.title, "score": round(r.score, 2), "n_markers": int(r.n_markers),
@@ -473,7 +493,7 @@ def main():
     res["notes"] = NOTES
     json.dump(res, open(OUT / "style_anomaly.json", "w"), indent=1, ensure_ascii=False, default=float)
     d[["year", "id", "title", "primary_area", "status", "cluster", "score", "n_markers", "high", "legacy", "abs_words",
-       "formulaic_title"]].to_parquet(OUT / "style_anomaly_papers.parquet", index=False)
+       "formulaic_title", "near_dup", "n_kw", "has_tldr"]].to_parquet(OUT / "style_anomaly_papers.parquet", index=False)
 
 
 if __name__ == "__main__":
