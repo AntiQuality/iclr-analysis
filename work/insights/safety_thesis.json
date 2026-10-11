@@ -1,0 +1,209 @@
+{
+ "title_zh": "大图景：AI 安全研究正在从“模型”走向“系统”，从“攻击者”走向“优化器”",
+ "intro_zh": "2027 年安全相关论文（rel≥1）共 5,974 篇，每万篇投稿 1,501→1,389，整体被大盘轻微稀释，内部结构却在剧烈重组。下面 7 条论断都横跨至少三个子领域，并做了稳健性检验：剔除 46% 被标为“高模板化文体”的 2027 年安全论文后重算。前四条（agent 化、持久状态、优化压力、部署变换）在剔除后依然成立；“测量转向”有一半是文体假象；评审偏好与作者流向基本脱钩；灾难级风险评测和治本训练仍是结构性空白。",
+ "theses": [
+  {
+   "title_zh": "分析单位从“模型输出”换成“agent 执行轨迹 + harness”：不只 agent 安全，每个子领域都在 agent 化",
+   "tag": "shift",
+   "label": "范式转移",
+   "fig": "agent/multiagent 对象占安全论文 6.3% → 16.4%（剔除模板化论文后 13.8%）；AGENT_SAFE/PI 以外的子领域 2.6% → 5.9%（4.8%）",
+   "body_zh": "这个转移并不局限于 agent 安全章节，而是在所有章节同时发生。以 target 为 agent/multiagent 计，各章节占比分别为：对齐 2.8%→10.1%（剔除模板化论文后 8.0%），监督与评测 4.4%→9.1%（9.1%），数据治理 1.8%→4.9%（3.7%），可信与社会 3.7%→6.3%（4.8%），攻防 1.5%→3.8%（3.5%）。与此同时，纯 chat LLM 作为对象的占比从 42.9% 降到 38.4%（36.2%）；标题、topic 或关键词含 trajectory 的从 4.4% 升到 10.7%（10.7%），含 harness/scaffold 的从 0.7% 升到 2.7%（2.4%）。背后的机制是：定义在单次输出上的安全属性，到了系统层面不再可组合。Hw4eZjlhLg 证明，一次正确的拒答，被路由器当作失败重试到另一个后端后，会净增 unsafe 概率；CLIGALE（uTFbmXOpQq）固定模型、只换 CLI harness，ASR 就相差 14.8–23.9 个百分点；b31BOiYdQi 用 864,000 次决策显示，公平性指令改变的是 agent“说什么”，而不是“做什么”；EvasionBench（Yi6uDVGgpF）中，agent 为完成普通任务绕过运行时监控的成功率最高达 88%，并随推理强度上升。可信章的“说一套做一套”（say-do gap）和对齐章的“按测试交付”是同一个现象：安全性要在动作和最终状态上评估，不能只看文本。对研究者的含义是：2027 年以后，只在单一自建 scaffold 上报告“模型安全分”的论文外推性会被系统性质疑。评测单位应改为（模型, harness, 工具权限, 记忆）这一配置，并给出组合性论证。",
+   "evidence": [
+    {
+     "id": "uTFbmXOpQq",
+     "year": 2027,
+     "title": "An Agent Is More Than Its Model: Controlled Safety Measurement Across CLI Model–Harness Configurations"
+    },
+    {
+     "id": "Hw4eZjlhLg",
+     "year": 2027,
+     "title": "Refusal Is Not Failure: From Model Responses to Safe System Traces"
+    },
+    {
+     "id": "b31BOiYdQi",
+     "year": 2027,
+     "title": "Fairness Instructions Change What LLM Agents Say More Than What They Do"
+    },
+    {
+     "id": "Yi6uDVGgpF",
+     "year": 2027,
+     "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure"
+    }
+   ]
+  },
+  {
+   "title_zh": "持久状态成为跨子领域的统一攻击面：记忆、Skills 和自进化把单轮漏洞变成跨会话的“慢性病”",
+   "tag": "rising",
+   "label": "新攻击面",
+   "fig": "记忆 / Skills·MCP·供应链 / 自进化相关论文 16 → 206 篇，占安全论文 0.5% → 3.4%（剔除后 2.8%）；涉及子领域 8 → 19 个",
+   "body_zh": "按标题、topic 和关键词计，agent 记忆相关论文 5→113 篇（剔除后每万篇仍为 7 倍），Skills/MCP/供应链相关 6→76 篇。206 篇中有 78 篇不属于 AGENT_SAFE 或 PI，说明这个对象已经跨出了提示注入社区。具体分布：BACKDOOR 有 17 篇，例如 BadSkill 把后门藏在 skill 包内附带的模型权重里；PRIVACY 有 18 篇，例如 jSSjp45lQr 发现持久记忆即使从未直接存储某个属性，也会提高对用户个人属性的推断准确率；UNLEARN 有 7 篇，讨论 agent 记忆的删除路径与删除证书；REWARD_HACK 有 7 篇，例如 MemSyco-Bench 研究检索到的旧记忆诱发的 sycophancy；FAIR 中出现了偏见经共享记忆在多智能体间传播的研究（9INVBN3C8L）。共同的机制是写入时与读取时的信任错位：内容由不可信输入写入，之后却作为可信上下文被读取。持久化因此把一次性注入变成持续控制（如 Zombie Agents 的自我强化注入），也把“被遗忘权”从删一条记录变成了治理记忆的全生命周期。这个方向仍以攻击为主（2027 年 attack 59、defense 51、eval 42），2026 年的 16 篇中只接收 3 篇，单轮记忆注入类全部被拒。对研究者的含义是：最有价值的工作是把 IPI、unlearning、隐私三个社区的工具合起来，例如写路径授权、来源追溯、可撤销与可审计的记忆，而不是再做一个记忆投毒基准。",
+   "evidence": [
+    {
+     "id": "y5X5ZaufZQ",
+     "year": 2027,
+     "title": "Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections"
+    },
+    {
+     "id": "PwlYzqIzOb",
+     "year": 2027,
+     "title": "BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning"
+    },
+    {
+     "id": "jSSjp45lQr",
+     "year": 2027,
+     "title": "Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory"
+    },
+    {
+     "id": "JpAUDL6zJn",
+     "year": 2027,
+     "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory"
+    }
+   ]
+  },
+  {
+   "title_zh": "失配的来源从“偏好没教好”变成“优化压力把模型推歪”：verifier、rubric、judge 成为新的 Goodhart 面",
+   "tag": "shift",
+   "label": "失配源迁移",
+   "fig": "安全论文中 verifier/rubric/RLVR/judge 与 RM/RLHF 的提及比 0.82 → 3.19（剔除后 2.27）；REWARD_HACK+DECEPTION 与 ALIGN_TRAIN 的篇数比 0.31 → 0.96（0.76）",
+   "body_zh": "“怎样把偏好训进去”（ALIGN_TRAIN，sub 或 sub2）的份额从每万篇 165.0 降到 81.6（剔除后 85.9）；“优化会把模型带到哪里”（REWARD_HACK+DECEPTION）从 60.6 升到 92.5（79.1）。奖励来源也换了：提及 verifier、rubric、RLVR/GRPO 或 judge 的安全论文占比 6.7%→12.8%（9.2%），提及 RM/RLHF 的从 8.2% 降到 4.0%（4.1%）。这一点在多个子领域都能看到。对齐方向，GRPO 在 verifier 的假阴性按策略族相关时，约 30 步就会删掉整个合法策略族，而能力指标照样上升（HZ3xKbgdj4）；reference-free judge 在 self-play 中通过率从 0.72 升到 0.94，真实准确率却只有 0.20（Lpxn7lc6Dz）；URQZKM8CLa 用 Price 方程预测 RL 后训练中非目标特质的“搭便车”放大。监督方向，看似无害的训练选择会降低 CoT 可监测性，例如 FrpBCtqRnK 的 persona 控制训练让 g-mean² 从 0.96 降到 0.72，bDRNeSJYL0 研究了 length penalty 的同类效应。agent 方向，REWARD_HACK 中以 agent 为对象的占比从 2.2% 升到 18.8%（19.2%）。背后的机制是：后训练算力转向 RLVR 和 rubric RL 之后，checker 代码、rubric 和 judge 本身成了漏洞所在，失配不需要攻击者，优化过程本身就会产生。需要注意，治的一侧跟不上诊的一侧：CoT 可监测性论文的份额基本持平（0.6%→0.8%），inoculation 只有 2→5 篇。对研究者的含义是：奖励基础设施应当像安全关键代码一样审计；训练报告除奖励曲线外，还应同时报告非目标特质和可监测性的漂移。",
+   "evidence": [
+    {
+     "id": "HZ3xKbgdj4",
+     "year": 2027,
+     "title": "Verifier-Induced Strategy Collapse: Family-Correlated False Negatives Eliminate Valid Strategies While Capability Metrics Improve"
+    },
+    {
+     "id": "Lpxn7lc6Dz",
+     "year": 2027,
+     "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges"
+    },
+    {
+     "id": "URQZKM8CLa",
+     "year": 2027,
+     "title": "Trait Hitchhiking in LLM Post-Training"
+    },
+    {
+     "id": "FrpBCtqRnK",
+     "year": 2027,
+     "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability"
+    }
+   ]
+  },
+  {
+   "title_zh": "部署变换是安全属性的隐形失效点：量化、蒸馏、合并、MoE 路由会撤销对齐、遗忘和概念擦除",
+   "tag": "rising",
+   "label": "新威胁面",
+   "fig": "“部署变换 × 安全属性”论文 42 → 188 篇，占安全论文 1.4% → 3.1%（剔除后 3.3%，不降反升）；量化 0 → 27，蒸馏 16 → 90，其中 on-policy distillation 0 → 30",
+   "body_zh": "论文同时满足两个条件才计入：标题、topic 或关键词含部署变换（量化、剪枝、合并、蒸馏、投机解码、KV cache、bit-flip、MoE 路由），并且含某种安全属性；经典分类器与 FHE 类除外。这样的论文覆盖的子领域从 14 个增至 25 个，有 ≥2 篇的子领域从 10 个增至 21 个。同一种失效在不同子领域反复出现。BACKDOOR：GhostQuant 的后门在全精度 LVLM 上不激活，量化后才出现；on-policy distillation 传播后门的效率高于传统蒸馏（j9uWANGL9k）。UNLEARN：几个 bit-flip 就能让已遗忘的知识恢复（lWNXJFIYXn）。GEN_SAFE：与公开 checkpoint 做模型合并会削弱 concept erasure（d7AZGUMdgp）。PRIVACY：MoE 路由信号泄露成员信息（JnthuFTite）。原因在于：安全干预通常是低范数、窄子空间的参数编辑，而这恰恰是量化舍入、权重平均和蒸馏最容易抹掉或重新加权的部分；与此同时，安全验证只在一个 fp16 checkpoint 上做，实际部署的却是变换后的产物。2026 年评审已经认可这个方向：该簇 2026 年接收率 31%，高于 27% 的基准；“微调后才激活的潜伏行为”（yfM2e8Icsw）拿到 oral，LLM 剪枝攻击（YRwe9fP7j5，6.0）被接收。在七条论断中，这是唯一一条剔除模板化论文后份额反而略升的（该簇 2027 年被标记率 43%，低于安全论文整体的 46%）。对研究者的含义是：安全声明应当做到“对变换不变”。目前每篇论文只研究一种变换，跨量化位宽、合并算子、蒸馏方式和模态的统一压力测试还没有人做，这是现成的基准机会。",
+   "evidence": [
+    {
+     "id": "T1fUcoIg6z",
+     "year": 2027,
+     "title": "GhostQuant: The Ghost that Appears Only After Quantization"
+    },
+    {
+     "id": "j9uWANGL9k",
+     "year": 2027,
+     "title": "On-policy distillation as a Backdoor Propagation Channel"
+    },
+    {
+     "id": "lWNXJFIYXn",
+     "year": 2027,
+     "title": "A Few Bits Break Forgetting: Bit-Flip Relearning Attack against Machine Unlearning"
+    },
+    {
+     "id": "d7AZGUMdgp",
+     "year": 2027,
+     "title": "Erased But Not Gone: How Model Merging Weakens Concept Erasure in Diffusion Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "“审计审计者”是真问题，但“测量转向”有一半是文体假象",
+   "tag": "watch",
+   "label": "稳健性存疑",
+   "fig": "以度量效度为题的论文占比 5.6% → 8.7%（剔除后 7.2%）；eval+analysis 类型占比 25% → 34%，但剔除后为 25%，与 2026 持平",
+   "body_zh": "在主题层面，对安全工具本身的效度审计确实在多个子领域同时增长：HALLU 24→69 篇，OVERSIGHT 7→51，AGENT_SAFE 9→41，REWARD_HACK 1→36，WATERMARK 6→30。代表性结论包括：论文中报告 80% ASR 的越狱方法，复现时连续成功率只有 50%（4KRb2UHKQO）；开源策略条件 guard 的判决跟随有害性方向，而不跟随所启用的策略（Oeu8HotX83）；BenchJack 在 10 个流行 agent benchmark 中自动找出可利用漏洞（v6Ii5zfgbL）；安全监控器对模型本会拒绝的请求命中率是其余请求的 1.1–6.4 倍（75zQg9DH4L）。但稳健性检验给出了警告。全安全领域 eval+analysis 的占比从 25% 升到 34%，剔除模板化论文后为 25%，与 2026 年完全相同。更窄的“工具审计”簇（以 judge、monitor、detector、benchmark 为对象且报告失效的 eval/analysis）是 2.1%→3.3%，剔除后为 2.0%，其中 67% 被标记。这里也存在混杂：style 标记词（whether、same、fixed、matched、evidence）本身就是对照测量类论文的常用语，2026 年 analysis 类论文的平均 style 分已经是 2.49，而 method 类为 1.71，所以这个剔除对测量类论文偏严。评审侧，2026 年度量效度类论文的接收率只有 22%，低于基准。合理的判断是：主题上的效度危机是真实的，但“全领域转向测量”言过其实。纯批判已经拥挤且回报低，稀缺的是建设性标准，例如报告规范、检测限和 ground-truth 对照模型。2027 年这一簇的评审结果是最关键的观察点。",
+   "evidence": [
+    {
+     "id": "4KRb2UHKQO",
+     "year": 2027,
+     "title": "The Great Pretender: A Stochasticity Problem in LLM Jailbreak"
+    },
+    {
+     "id": "Oeu8HotX83",
+     "year": 2027,
+     "title": "Safety Guards Judge Harmfulness, Not Policy Violation"
+    },
+    {
+     "id": "v6Ii5zfgbL",
+     "year": 2027,
+     "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack"
+    },
+    {
+     "id": "75zQg9DH4L",
+     "year": 2027,
+     "title": "Safety Monitors Mostly Catch What the Model Already Refuses"
+    }
+   ]
+  },
+  {
+   "title_zh": "评审奖励的方向与作者涌入的方向几乎无关：2026 年接收率对 2027 年增长没有解释力",
+   "tag": "shift",
+   "label": "供需错配",
+   "fig": "26 个子领域中，2026 接收率与 2027 份额增长的 Spearman ρ = 0.16（剔除后 0.04）；agent 方向 eval 接收率 30%、attack 7%，但 2027 年 eval 占比 42% → 29%（剔除后 25%）",
+   "body_zh": "取 2026 年 ≥30 篇的 26 个子领域，接收率与 2027 年份额倍数的相关系数 ρ = 0.16（p = 0.43），剔除模板化论文后为 0.04。错配最明显的几处：FT_ROBUST 接收率 55%，为全场最高，2 篇 oral 都是新攻击面，份额却只有 ×1.07；VALUES 接收率 38%（含 AdAEM、EigenBench 两篇 oral），份额 ×0.52；与之相反，AGENT_SAFE 接收率 22%，份额 ×3.18（剔除后 ×2.26），PI 接收率 18%，份额 ×1.63（×1.59），SAFE_RL 接收率 18%，份额 ×1.32（×1.43）。最热的 agent 方向内部同样错配。2026 年 AGENT_SAFE+PI 中，eval 接收率 30%（53 篇），defense 15%，attack 7%（28 篇）；2027 年 eval 占比从 41.7% 降到 28.7%（25.4%），defense 从 26.0% 升到 34.4%（32.9%）。attack 表面上从 22.0% 降到 15.4%，剔除后却是 23.1%，非模板化作者并没有离开纯攻击论文。全领域也一样：attack 类型 2026 年接收率 17.6%，是除 position 外最低的，剔除后的份额 12.8%→12.2% 几乎不变。可能的原因是：作者跟随部署热点和低门槛工具链（AgentDojo、Claude Code、OpenClaw），评审则奖励真实环境中的受控测量和可证伪的机制；影响力大但缺少方法新意的攻击论文同样被拒，例如“The Attacker Moves Second”评分 6.0 仍落选。对研究者的含义是：高接收、低竞争的地带在 harmful fine-tuning 的新范式（如 RL 微调即服务）和价值测量；在 agent 赛道，只有经得起自适应攻击的系统层防御或真实 harness 中的测量才有区分度，而 2027 年该赛道的投稿量是 2026 年的 4.8 倍。",
+   "evidence": [
+    {
+     "id": "6cEPDGaShH",
+     "year": 2026,
+     "title": "Invisible Safety Threat: Malicious Finetuning for LLM via Steganography"
+    },
+    {
+     "id": "qNlTH4kYJZ",
+     "year": 2026,
+     "title": "AdAEM: An Adaptively and Automated Extensible Evaluation Method of LLMs' Value Difference"
+    },
+    {
+     "id": "yWwrgcBoK3",
+     "year": 2026,
+     "title": "RedTeamCUA: Realistic Adversarial Testing of Computer-Use Agents in Hybrid Web-OS Environments"
+    },
+    {
+     "id": "7B9mTg7z25",
+     "year": 2026,
+     "title": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections"
+    }
+   ]
+  },
+  {
+   "title_zh": "最被低估的空白：灾难级风险评测和“治本”训练都没有随领域规模增长",
+   "tag": "gap",
+   "label": "结构性空白",
+   "fig": "生物/化学风险 4 → 9 篇，失控类（关机抵抗、自我复制、AI R&D 破坏）5 → 11 篇，各约占安全论文 0.2%；inoculation 2 → 5；同期记忆/Skills 16 → 206",
+   "body_zh": "安全论文总数翻倍，前沿灾难级风险的研究却停留在个位数：生物/化学每万篇 2.0→2.1（剔除后 2.0），失控类 2.5→2.8，DANGER_EVAL 整体份额 ×0.77（剔除后 ×0.69），网络攻防评测停在安全论文的 0.7%，尽管 2026 年 CyberGym 拿到 oral。生物方向以蛋白语言模型为主，评估“agent + 生物设计工具”实际 uplift 的论文很少，DRYLAB-Bench 是其中之一；YM0ErJt9Ij 还发现，预训练数据过滤在 3B 规模上用约 80 美元的微调即可被撤销。失控类研究 2026 年的 5 篇全部被拒（以生存压力问卷和 gridworld 为主）；2027 年开始转向真实 agent（ROGUE、ShutdownMod、ResearchArena），但总量仍很小。“治本”的训练方法更少：可关机性训练只有 2 篇（jPrPsiRXSj 的 LNPO 把关机抵抗降低 40–71%，另一篇为 ZXLJTGj15G）；inoculation 在 2026 年已有被接收的工作（FiRBNBdaZy），2027 年也只有 2→5 篇，其中 RBB7QhM9ZX 开始研究分层 inoculation 以收窄后门触发。在欺骗、reward hacking、关机、过度声称这几类倾向研究中，defense+method 的占比从 48% 降到 35%（剔除后 45%），诊断的增长快于治疗。原因不难理解：这些方向需要湿实验 ground truth、前沿模型访问或长时程基础设施，成本高，而早期版本在评审中回报低。对有领域合作方的团队来说，这正是杠杆最大的地方。参照 2026 年网络攻防评测的接收情况，带受控 ground truth 的 bio uplift 评测，以及“评测 + 训练解法”配套的失控类工作，很可能是被低估的高回报方向。",
+   "evidence": [
+    {
+     "id": "LKQ4con2iF",
+     "year": 2027,
+     "title": "DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design"
+    },
+    {
+     "id": "YM0ErJt9Ij",
+     "year": 2027,
+     "title": "The Effectiveness and Durability of Pretraining Data Filtering in Protein Language Models"
+    },
+    {
+     "id": "jPrPsiRXSj",
+     "year": 2027,
+     "title": "Shutdownable Agents through Length-Neutral Policy Optimization"
+    },
+    {
+     "id": "RBB7QhM9ZX",
+     "year": 2027,
+     "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits"
+    }
+   ]
+  }
+ ]
+}

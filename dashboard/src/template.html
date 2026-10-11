@@ -174,6 +174,7 @@ footer.foot{margin-top:3rem;padding:1.5rem 0;border-top:1px solid var(--divider)
 
   <div class="view" id="v-landscape" data-title="全景" hidden>
     <p class="view-intro prose" id="landIntro"></p>
+    <div class="callout neutral" style="max-width:none"><div class="controls" style="margin:0"><span style="font-weight:600">口径</span><div class="seg robustSeg"></div><span class="light" style="font-size:.88rem" id="robustNote1"></span></div></div>
     <section class="s" id="l-themes"><h2 data-nav="17 个大类">17 个研究大类</h2>
       <div class="figure"><div class="legend"><span><i style="background:var(--y25)"></i>2025</span><span><i style="background:var(--y26)"></i>2026</span><span><i style="background:var(--hot)"></i>2027 上升</span><span><i style="background:var(--down)"></i>2027 下降</span></div><div id="themeChart"></div>
       <div class="figure-caption"><b>图 1.</b> 各大类投稿占当年总投稿的比例。大类由 300 个细主题聚合而来，归属由分析 agent 判定。</div></div></section>
@@ -195,6 +196,7 @@ footer.foot{margin-top:3rem;padding:1.5rem 0;border-top:1px solid var(--divider)
 
   <div class="view" id="v-radar" data-title="技术雷达" hidden>
     <p class="view-intro prose" id="radarIntro"></p>
+    <div class="callout neutral" style="max-width:none"><div class="controls" style="margin:0"><span style="font-weight:600">口径</span><div class="seg robustSeg"></div><span class="light" style="font-size:.88rem" id="robustNote2"></span></div></div>
     <section class="s" id="r-concepts"><h2 data-nav="技术与范式">具体技术与范式的提及率</h2>
       <div class="controls"><div class="seg" id="radarGroup"></div></div><div class="controls"><div class="seg" id="radarSort"></div></div>
       <div class="table-wrap"><table class="rt" id="radarTable"></table></div>
@@ -263,6 +265,7 @@ const tip = $('#tip');
 function showTip(ev, html){ tip.innerHTML = html; tip.style.opacity = 1; const w = tip.offsetWidth, h = tip.offsetHeight;
   let x = ev.clientX + 14, y = ev.clientY + 14; if (x + w > innerWidth - 8) x = ev.clientX - w - 14; if (y + h > innerHeight - 8) y = ev.clientY - h - 14; tip.style.left = Math.max(8,x)+'px'; tip.style.top = Math.max(8,y)+'px'; }
 function hideTip(){ tip.style.opacity = 0; }
+let ROBUST = true; const sh = o => (ROBUST && o.share_r) ? o.share_r : o.share;
 const T = D.text, THEME = D.themeNames, CL = D.clusters, SF = D.safety, SUBZH = SF.sub_zh;
 const badge = (x, digits=2) => el('span',{class:'badge '+(x>=1.15?'up':x<0.87?'dn':'nt'),text:x.toFixed(digits)+'×'});
 const TAGZH = {rising:'上升',fading:'退潮',shift:'范式转移',stable:'稳定',watch:'值得关注',gap:'空白'};
@@ -303,6 +306,10 @@ function spark(vals, {w=78,h=22,color='var(--hot)'}={}){ const svg = s('svg',{vi
   svg.append(s('polyline',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:color,'stroke-width':1.6,'stroke-linejoin':'round','stroke-linecap':'round'}));
   pts.forEach((p,i)=>svg.append(s('circle',{cx:p[0],cy:p[1],r:i===pts.length-1?2.8:1.8,fill:i===pts.length-1?color:'var(--y26)'}))); return svg; }
 
+/* robust toggle */
+function redrawRobust(){ if (drawn['v-landscape']) { drawThemes(); drawScatter(); drawQuad(); drawClTable(); drawMovers(); } if (drawn['v-radar']) drawRadar(); }
+function initRobust(){ document.querySelectorAll('.robustSeg').forEach(seg => { if (seg.children.length) return; [[true,'剔除模板化论文（推荐）'],[false,'全部论文']].forEach(([v,n]) => seg.append(el('button',{type:'button',class:v===ROBUST?'on':'',onclick:()=>{ ROBUST=v; document.querySelectorAll('.robustSeg').forEach(sg=>[...sg.children].forEach((bt,i)=>bt.classList.toggle('on', (i===0)===ROBUST))); redrawRobust(); }}, n))); });
+  ['#robustNote1','#robustNote2'].forEach(id => { const e=$(id); if (e) e.textContent = T.robustNote || ''; }); }
 /* views / routing */
 const views = [...document.querySelectorAll('.view')]; const drawn = {}; const DRAW = {};
 const tabRow = $('#viewTabs');
@@ -330,60 +337,62 @@ DRAW['v-overview'] = () => {
 
 /* LANDSCAPE */
 const themeKeys = Object.keys(THEME); let mapTheme='all';
-function drawThemes(){ dumbbell($('#themeChart'), D.themes.filter(t=>t.theme).map(t => ({label: THEME[t.theme]||t.theme, c:t.share[0], a:t.share[1], b:t.share[2]})).sort((p,q)=>q.b-p.b), {unit:'%', labelW:200}); }
+function drawThemes(){ dumbbell($('#themeChart'), D.themes.filter(t=>t.theme).map(t => ({label: THEME[t.theme]||t.theme, c:sh(t)[0], a:sh(t)[1], b:sh(t)[2]})).sort((p,q)=>q.b-p.b), {unit:'%', labelW:200}); }
 function drawAreas(){ dumbbell($('#areaChart'), D.areas.map(a => ({label:a.zh||a.area, c:a.share[0], a:a.share[1], b:a.share[2], tipHtml:`<b>${esc(a.zh)}</b><br>${esc(a.area)}<br>2025 ${a.share[0]}% · 2026 ${a.share[1]}% → 2027 <b>${a.share[2]}%</b><br>2027 篇数 ${fmtInt(a.n[2])} · 2026 录用率 ${(a.acc26*100).toFixed(0)}%`})).sort((p,q)=>(q.b-q.a)-(p.b-p.a)), {unit:'%', labelW:230}); }
 function drawScatter(){ const host = $('#clusterScatter'); host.innerHTML=''; const W = Math.max(320, host.clientWidth||900), H = Math.min(560, Math.max(360, W*0.56)); const m = {l:44,r:14,t:26,b:34};
-  const L = v => Math.log10(v + 2); const vmax = Math.max(...CL.map(c=>Math.max(c.share[1],c.share[2]))); const lo = L(0), hi = L(vmax*1.1);
+  const L = v => Math.log10(v + 2); const vmax = Math.max(...CL.map(c=>Math.max(sh(c)[1],sh(c)[2]))); const lo = L(0), hi = L(vmax*1.1);
   const X = v => m.l + (W-m.l-m.r)*(L(v)-lo)/(hi-lo), Y = v => H-m.b - (H-m.t-m.b)*(L(v)-lo)/(hi-lo);
   const svg = s('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img'});
   const ax = s('g',{class:'axis'}); [0,5,10,20,50,100,200].filter(t=>t<=vmax*1.1).forEach(t => { ax.append(s('line',{x1:X(t),x2:X(t),y1:m.t,y2:H-m.b})); ax.append(s('line',{x1:m.l,x2:W-m.r,y1:Y(t),y2:Y(t)})); const a=s('text',{x:X(t),y:H-m.b+16,'text-anchor':'middle'}); a.textContent=t; ax.append(a); const b=s('text',{x:m.l-6,y:Y(t)+4,'text-anchor':'end'}); b.textContent=t; ax.append(b); });
   svg.append(ax); svg.append(s('line',{x1:X(0),y1:Y(0),x2:X(vmax*1.1),y2:Y(vmax*1.1),stroke:'var(--text-faint)','stroke-width':1,opacity:.6}));
   const xl=s('text',{x:W-m.r,y:H-4,'text-anchor':'end'}); xl.textContent='2026 每万篇 →'; svg.append(xl); const yl=s('text',{x:m.l-6,y:12,'text-anchor':'start'}); yl.textContent='↑ 2027 每万篇'; svg.append(yl);
   const nmax = Math.max(...CL.map(c=>c.n[2]));
-  [...CL].sort((a,b)=>b.n[2]-a.n[2]).forEach(c => { const on = (mapTheme==='all' || c.theme===mapTheme) && c.coherence!==1; const up = c.share[2] >= c.share[1];
-    const r = 2.5 + 9*Math.sqrt(c.n[2]/nmax); const dot = s('circle',{cx:X(c.share[1]),cy:Y(c.share[2]),r, fill: c.coherence===1?'var(--y25)':(up?'var(--hot)':'var(--down)'), 'fill-opacity': on?0.62:0.08, stroke:'#fff','stroke-width':1.2});
-    dot.addEventListener('mousemove', ev => showTip(ev, `<b>${esc(c.name_zh)}</b> · ${esc(THEME[c.theme]||'')}<br>${esc(c.name_en||'')}<br>每万篇 2025 ${c.share[0]} · 2026 ${c.share[1]} → 2027 <b>${c.share[2]}</b><br>2027 篇数 ${c.n[2]}${c.acc26!=null?` · 2026 录用率 ${(c.acc26*100).toFixed(0)}%`:''}<br>${esc(c.trend_zh||'')}`));
+  [...CL].sort((a,b)=>b.n[2]-a.n[2]).forEach(c => { const on = (mapTheme==='all' || c.theme===mapTheme) && c.coherence!==1; const up = sh(c)[2] >= sh(c)[1];
+    const r = 2.5 + 9*Math.sqrt(c.n[2]/nmax); const dot = s('circle',{cx:X(sh(c)[1]),cy:Y(sh(c)[2]),r, fill: c.coherence===1?'var(--y25)':(up?'var(--hot)':'var(--down)'), 'fill-opacity': on?0.62:0.08, stroke:'#fff','stroke-width':1.2});
+    dot.addEventListener('mousemove', ev => showTip(ev, `<b>${esc(c.name_zh)}</b> · ${esc(THEME[c.theme]||'')}<br>${esc(c.name_en||'')}<br>每万篇 2026 ${sh(c)[1]} → 2027 <b>${sh(c)[2]}</b>（全部论文口径 ${c.share[2]}，模板化占比 ${Math.round((c.high27||0)*100)}%）<br>2027 篇数 ${c.n[2]}${c.acc26!=null?` · 2026 录用率 ${(c.acc26*100).toFixed(0)}%`:''}<br>${esc(c.trend_zh||'')}`));
     dot.addEventListener('mouseleave', hideTip); svg.append(dot); });
   const lab = CL.filter(c => c.coherence!==1 && (mapTheme==='all'||c.theme===mapTheme)).sort((a,b)=>ratio(b.share[1],b.share[2],3)-ratio(a.share[1],a.share[2],3)).slice(0, mapTheme==='all'?16:10);
-  const boxes=[]; lab.forEach(c => { const tw = c.name_zh.length*11.5 + 4; let x = X(c.share[1])+8, y = Y(c.share[2])-6, anchor='start'; if (x + tw > W - m.r) { x = X(c.share[1]) - 8; anchor='end'; }
+  const boxes=[]; lab.forEach(c => { const tw = c.name_zh.length*11.5 + 4; let x = X(sh(c)[1])+8, y = Y(sh(c)[2])-6, anchor='start'; if (x + tw > W - m.r) { x = X(sh(c)[1]) - 8; anchor='end'; }
     const bx = anchor==='start' ? [x, y-12, x+tw, y+2] : [x-tw, y-12, x, y+2]; if (boxes.some(b => !(bx[2]<b[0]||bx[0]>b[2]||bx[3]<b[1]||bx[1]>b[3]))) return; boxes.push(bx);
     const t = s('text',{x,y,'font-size':11.5,'text-anchor':anchor}); t.textContent=c.name_zh; t.style.fill='var(--text)'; t.style.paintOrder='stroke'; t.style.stroke='#fff'; t.style.strokeWidth='3px'; svg.append(t); });
   host.append(svg); }
 function moverTable(t, rows, title){ t.innerHTML=''; t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:title}), el('th',{text:'2026'}), el('th',{text:'2027'}), el('th',{text:'倍数'}))));
   const tb=el('tbody'); rows.forEach(r => tb.append(el('tr',{}, el('td',{class:'l'}, el('span',{text:r.name}), r.sub?el('span',{class:'sub',text:r.sub}):null), el('td',{text:fmt(r.a)}), el('td',{text:fmt(r.b)}), el('td',{}, badge(ratio(r.a,r.b,1)))))); t.append(tb); }
 function drawQuad(){ const host=$('#quadChart'); host.innerHTML=''; const pts = CL.filter(c=>c.coherence!==1 && c.acc26!=null && c.n[1]>=30); const W=Math.max(320,host.clientWidth||900), H=Math.min(520,Math.max(340,W*0.5)), m={l:44,r:14,t:14,b:34};
-  const xs = pts.map(c=>Math.log2(ratio(c.share[1],c.share[2],1))); const xmn=Math.min(...xs,-2), xmx=Math.max(...xs,2); const ymn=0.05, ymx=Math.max(...pts.map(c=>c.acc26))+0.03;
+  const xs = pts.map(c=>Math.log2(ratio(sh(c)[1],sh(c)[2],1))); const xmn=Math.min(...xs,-2), xmx=Math.max(...xs,2); const ymn=0.05, ymx=Math.max(...pts.map(c=>c.acc26))+0.03;
   const X=v=>m.l+(W-m.l-m.r)*(v-xmn)/(xmx-xmn), Y=v=>H-m.b-(H-m.t-m.b)*(v-ymn)/(ymx-ymn);
   const svg=s('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%'}); const ax=s('g',{class:'axis'});
   [-2,-1,0,1,2,3,4,5].filter(v=>v>=xmn&&v<=xmx).forEach(v=>{ax.append(s('line',{x1:X(v),x2:X(v),y1:m.t,y2:H-m.b})); const t=s('text',{x:X(v),y:H-m.b+16,'text-anchor':'middle'}); t.textContent=(2**v>=1?(2**v)+'×':'1/'+(2**-v)); ax.append(t);});
   [0.1,0.2,0.3,0.4,0.5,0.6].filter(v=>v<=ymx).forEach(v=>{ax.append(s('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v)})); const t=s('text',{x:m.l-6,y:Y(v)+4,'text-anchor':'end'}); t.textContent=(v*100)+'%'; ax.append(t);}); svg.append(ax);
   svg.append(s('line',{x1:m.l,x2:W-m.r,y1:Y(D.meta.acc_base26),y2:Y(D.meta.acc_base26),stroke:'var(--text-faint)','stroke-dasharray':'3 3'})); svg.append(s('line',{x1:X(0),x2:X(0),y1:m.t,y2:H-m.b,stroke:'var(--text-faint)','stroke-dasharray':'3 3'}));
   [['拥挤且门槛高',W-m.r-6,m.t+14,'end'],['被奖励的小众',m.l+6,m.t+14,'start'],['涌入但未被奖励',W-m.r-6,H-m.b-8,'end'],['退潮',m.l+6,H-m.b-8,'start']].forEach(([t,x,y,a])=>{const e=s('text',{x,y,'text-anchor':a,'font-size':11.5}); e.textContent=t; e.style.fill='var(--text-faint)'; svg.append(e);});
-  pts.forEach(c=>{const x=Math.log2(ratio(c.share[1],c.share[2],1)); const d=s('circle',{cx:X(x),cy:Y(c.acc26),r:4.2,fill:x>=0?'var(--hot)':'var(--down)','fill-opacity':.6,stroke:'#fff','stroke-width':1.2});
-    d.addEventListener('mousemove',ev=>showTip(ev,`<b>${esc(c.name_zh)}</b><br>2026 录用率 <b>${(c.acc26*100).toFixed(0)}%</b>（${c.n[1]} 篇）${c.rating26?` · 均分 ${c.rating26}`:''}<br>份额 ${c.share[1]} → ${c.share[2]} /万（${ratio(c.share[1],c.share[2],1).toFixed(2)}×）`)); d.addEventListener('mouseleave',hideTip); svg.append(d);});
+  pts.forEach(c=>{const x=Math.log2(ratio(sh(c)[1],sh(c)[2],1)); const d=s('circle',{cx:X(x),cy:Y(c.acc26),r:4.2,fill:x>=0?'var(--hot)':'var(--down)','fill-opacity':.6,stroke:'#fff','stroke-width':1.2});
+    d.addEventListener('mousemove',ev=>showTip(ev,`<b>${esc(c.name_zh)}</b><br>2026 录用率 <b>${(c.acc26*100).toFixed(0)}%</b>（${c.n[1]} 篇）${c.rating26?` · 均分 ${c.rating26}`:''}<br>份额 ${sh(c)[1]} → ${sh(c)[2]} /万（${ratio(sh(c)[1],sh(c)[2],1).toFixed(2)}×）`)); d.addEventListener('mouseleave',hideTip); svg.append(d);});
   const lab=[...pts].sort((a,b)=>Math.abs(b.acc26-D.meta.acc_base26)*Math.abs(Math.log2(ratio(b.share[1],b.share[2],1)))-Math.abs(a.acc26-D.meta.acc_base26)*Math.abs(Math.log2(ratio(a.share[1],a.share[2],1)))).slice(0,14);
   const qb=[[W-m.r-90,m.t,W-m.r,m.t+18],[m.l,m.t,m.l+90,m.t+18],[W-m.r-100,H-m.b-22,W-m.r,H-m.b],[m.l,H-m.b-22,m.l+40,H-m.b]];
-  lab.forEach(c=>{const xv=Math.log2(ratio(c.share[1],c.share[2],1)); const tw=c.name_zh.length*11+4; let x=X(xv)+7, y=Y(c.acc26)-6, an='start'; if (x+tw>W-m.r){x=X(xv)-7; an='end';} const bx = an==='start'?[x,y-11,x+tw,y+2]:[x-tw,y-11,x,y+2]; if (qb.some(b=>!(bx[2]<b[0]||bx[0]>b[2]||bx[3]<b[1]||bx[1]>b[3]))) return; qb.push(bx);
+  lab.forEach(c=>{const xv=Math.log2(ratio(sh(c)[1],sh(c)[2],1)); const tw=c.name_zh.length*11+4; let x=X(xv)+7, y=Y(c.acc26)-6, an='start'; if (x+tw>W-m.r){x=X(xv)-7; an='end';} const bx = an==='start'?[x,y-11,x+tw,y+2]:[x-tw,y-11,x,y+2]; if (qb.some(b=>!(bx[2]<b[0]||bx[0]>b[2]||bx[3]<b[1]||bx[1]>b[3]))) return; qb.push(bx);
     const t=s('text',{x,y,'font-size':11,'text-anchor':an}); t.textContent=c.name_zh; t.style.fill='var(--text)'; t.style.paintOrder='stroke'; t.style.stroke='#fff'; t.style.strokeWidth='3px'; svg.append(t);});
   host.append(svg); }
+function drawMovers(){ const good = CL.filter(c => c.coherence !== 1);
+  moverTable($('#riseTable'), [...good].sort((a,b)=>(sh(b)[2]-sh(b)[1])-(sh(a)[2]-sh(a)[1])).slice(0,15).map(c=>({name:c.name_zh, sub:c.trend_zh, a:sh(c)[1], b:sh(c)[2]})), '上升最多');
+  moverTable($('#fallTable'), [...good].sort((a,b)=>(sh(a)[2]-sh(a)[1])-(sh(b)[2]-sh(b)[1])).slice(0,15).map(c=>({name:c.name_zh, sub:c.trend_zh, a:sh(c)[1], b:sh(c)[2]})), '下降最多'); }
 let clSort = {k:'d', dir:-1};
 function drawClTable(){ const q = $('#clSearch').value.trim().toLowerCase(), th = $('#clTheme').value;
   let rows = CL.filter(c => (th==='all'||c.theme===th) && (!q || (c.name_zh+c.name_en+(c.desc_zh||'')+(c.trend_zh||'')).toLowerCase().includes(q)));
-  const key = c => ({name:c.name_zh, theme:c.theme, s26:c.share[1], s27:c.share[2], d:c.share[2]-c.share[1], x:ratio(c.share[1],c.share[2],1), n27:c.n[2], acc:c.acc26??-1})[clSort.k];
+  const key = c => ({name:c.name_zh, theme:c.theme, s26:sh(c)[1], s27:sh(c)[2], d:sh(c)[2]-sh(c)[1], x:ratio(sh(c)[1],sh(c)[2],1), n27:c.n[2], hi:c.high27??0, acc:c.acc26??-1})[clSort.k];
   rows.sort((a,b)=> (key(a)>key(b)?1:-1)*clSort.dir);
-  const cols = [['name','细主题','l'],['theme','大类','l'],['s26','2026 /万'],['s27','2027 /万'],['d','变化'],['x','倍数'],['n27','2027 篇'],['acc','2026 录用率'],[null,'走势']];
+  const cols = [['name','细主题','l'],['theme','大类','l'],['s26','2026 /万'],['s27','2027 /万'],['d','变化'],['x','倍数'],['n27','2027 篇'],['hi','模板化占比'],['acc','2026 录用率'],[null,'走势']];
   const t = $('#clTable'); t.innerHTML='';
   t.append(el('thead',{}, el('tr',{}, cols.map(([k,n,cls]) => el('th',{class:(cls||'')+(k?' sort':''),onclick:k?()=>{clSort = {k, dir: clSort.k===k? -clSort.dir : -1}; drawClTable();}:null}, n + (clSort.k===k?(clSort.dir<0?' ↓':' ↑'):''))))));
-  const tb = el('tbody'); rows.forEach(c => { const up = c.share[2]>=c.share[1];
+  const tb = el('tbody'); rows.forEach(c => { const up = sh(c)[2]>=sh(c)[1];
     const det = el('details',{class:'row'}, el('summary',{text:c.name_zh+(c.coherence===1?'（措辞型伪簇）':'')}), el('div',{class:'body'}, el('div',{text:(c.name_en||'')+' — '+(c.desc_zh||'')}), el('div',{style:'margin:.3rem 0;color:var(--text)',text:c.trend_zh||''}), refs((c.examples||[]).map(e=>({id:e.id,year:2027,title:e.title})))));
-    tb.append(el('tr',{}, el('td',{class:'l',style:'min-width:260px;max-width:420px'}, det), el('td',{class:'l light',style:'white-space:nowrap',text:THEME[c.theme]||c.theme}), el('td',{text:fmt(c.share[1])}), el('td',{text:fmt(c.share[2])}), el('td',{style:`color:${up?'var(--up-fg)':'var(--dn-fg)'}`,text:(up?'+':'')+fmt(c.share[2]-c.share[1])}), el('td',{}, badge(ratio(c.share[1],c.share[2],1))), el('td',{text:c.n[2]}), el('td',{text:c.acc26!=null?(c.acc26*100).toFixed(0)+'%':'—'}), el('td',{}, spark(c.share,{color: up?'var(--hot)':'var(--down)'})))); });
+    tb.append(el('tr',{}, el('td',{class:'l',style:'min-width:260px;max-width:420px'}, det), el('td',{class:'l light',style:'white-space:nowrap',text:THEME[c.theme]||c.theme}), el('td',{text:fmt(sh(c)[1])}), el('td',{text:fmt(sh(c)[2])}), el('td',{style:`color:${up?'var(--up-fg)':'var(--dn-fg)'}`,text:(up?'+':'')+fmt(sh(c)[2]-sh(c)[1])}), el('td',{}, badge(ratio(sh(c)[1],sh(c)[2],1))), el('td',{text:c.n[2]}), el('td',{style:(c.high27>=0.75?'color:var(--dn-fg);font-weight:600':''),text:c.high27!=null?(c.high27*100).toFixed(0)+'%':'—'}), el('td',{text:c.acc26!=null?(c.acc26*100).toFixed(0)+'%':'—'}), el('td',{}, spark(sh(c),{color: up?'var(--hot)':'var(--down)'})))); });
   t.append(tb); }
 DRAW['v-landscape'] = () => {
+  initRobust();
   $('#landIntro').textContent = T.landIntro; $('#mapIntro').textContent = T.mapIntro; $('#signalIntro').textContent = T.signalIntro;
   const seg = $('#mapTheme'); [['all','全部'], ...themeKeys.map(k=>[k,THEME[k]])].forEach(([k,n]) => seg.append(el('button',{type:'button',class:k===mapTheme?'on':'',onclick:e=>{mapTheme=k; [...seg.children].forEach(b=>b.classList.toggle('on', b===e.target)); drawScatter();}}, n)));
-  const good = CL.filter(c => c.coherence !== 1);
-  moverTable($('#riseTable'), [...good].sort((a,b)=>(b.share[2]-b.share[1])-(a.share[2]-a.share[1])).slice(0,15).map(c=>({name:c.name_zh, sub:c.trend_zh, a:c.share[1], b:c.share[2]})), '上升最多');
-  moverTable($('#fallTable'), [...good].sort((a,b)=>(a.share[2]-a.share[1])-(b.share[2]-b.share[1])).slice(0,15).map(c=>({name:c.name_zh, sub:c.trend_zh, a:c.share[1], b:c.share[2]})), '下降最多');
+  drawMovers();
   const sel = $('#clTheme'); sel.append(el('option',{value:'all',text:'全部大类'}), ...themeKeys.map(k => el('option',{value:k,text:THEME[k]})));
   $('#clSearch').addEventListener('input', drawClTable); sel.addEventListener('change', drawClTable);
   drawThemes(); drawScatter(); drawQuad(); drawClTable(); drawAreas(); };
@@ -393,11 +402,12 @@ const CO = D.concepts; const groups = [...new Set(CO.map(c=>c.group))]; let rGro
 function drawRadar(){ const t=$('#radarTable'); t.innerHTML=''; let rows = CO.filter(c=>c.group===rGroup);
   rows.sort((a,b)=> rSort==='x' ? ratio(b.share[1],b.share[2],0.05)-ratio(a.share[1],a.share[2],0.05) : b.share[2]-a.share[2]);
   t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'技术 / 范式'}), ...['2025','2026','2027','26→27','走势','2026 录用率'].map(h=>el('th',{text:h})))));
-  const tb = el('tbody'); rows.forEach(c => { const x = ratio(c.share[1],c.share[2],0.05);
-    tb.append(el('tr',{class: x>=2?'hl':''}, el('td',{class:'l'}, el('span',{text:c.zh}), el('span',{class:'sub',text:c.en})), ...c.share.map(v=>el('td',{text:v<1?v.toFixed(2)+'%':v.toFixed(1)+'%'})), el('td',{}, badge(x)), el('td',{}, spark(c.share,{color: x<0.87?'var(--down)':'var(--hot)'})), el('td',{text: c.acc26!=null? (c.acc26*100).toFixed(0)+'%':'—'}))); });
+  const tb = el('tbody'); rows.forEach(c => { const x = ratio(sh(c)[1],sh(c)[2],0.05);
+    tb.append(el('tr',{class: x>=2?'hl':''}, el('td',{class:'l'}, el('span',{text:c.zh}), el('span',{class:'sub',text:c.en})), ...sh(c).map(v=>el('td',{text:v<1?v.toFixed(2)+'%':v.toFixed(1)+'%'})), el('td',{}, badge(x)), el('td',{}, spark(sh(c),{color: x<0.87?'var(--down)':'var(--hot)'})), el('td',{text: c.acc26!=null? (c.acc26*100).toFixed(0)+'%':'—'}))); });
   t.append(tb); }
 function drawEco(){ dumbbell($('#modelChart'), D.models.map(m=>({label:m.name,c:m.share[0],a:m.share[1],b:m.share[2]})).sort((a,b)=>b.b-a.b), {unit:'%', labelW:118}); dumbbell($('#benchChart'), D.benchmarks.map(m=>({label:m.name,c:m.share[0],a:m.share[1],b:m.share[2]})).sort((a,b)=>b.b-a.b), {unit:'%', labelW:118}); }
 DRAW['v-radar'] = () => {
+  initRobust();
   $('#radarIntro').textContent = T.radarIntro; $('#ecoIntro').textContent = T.ecoIntro;
   const segR = $('#radarGroup'); groups.forEach(g => segR.append(el('button',{type:'button',class:g===rGroup?'on':'',onclick:e=>{rGroup=g;[...segR.children].forEach(b=>b.classList.toggle('on',b===e.target));drawRadar();}}, g)));
   const segS = $('#radarSort'); [['x','按增长倍数排序'],['v','按 2027 提及率排序']].forEach(([k,n]) => segS.append(el('button',{type:'button',class:k===rSort?'on':'',onclick:e=>{rSort=k;[...segS.children].forEach(b=>b.classList.toggle('on',b===e.target));drawRadar();}}, n)));
@@ -411,7 +421,7 @@ DRAW['v-radar'] = () => {
 function chapter(ch){ const w = el('div',{});
   w.append(el('h2',{text:ch.title_zh}));
   if (ch.headline_zh) w.append(el('div',{class:'callout',html:'<b>要点　</b>'+esc(ch.headline_zh)}));
-  if (ch.stats?.length) { const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'指标'}), el('th',{text:'数值'}), el('th',{class:'l',text:'说明'})))); const tb=el('tbody'); ch.stats.forEach(st => tb.append(el('tr',{}, el('td',{class:'l',text:st.label_zh}), el('td',{style:'white-space:nowrap;font-weight:600',text:st.value}), el('td',{class:'l light',text:st.note_zh||''})))); t.append(tb); w.append(el('div',{class:'table-wrap'}, t)); }
+  if (ch.stats?.length) { const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:'指标'}), el('th',{text:'数值'}), el('th',{class:'l',text:'说明'})))); const tb=el('tbody'); ch.stats.forEach(st => tb.append(el('tr',{}, el('td',{class:'l',style:'min-width:150px',text:st.label_zh}), el('td',{style:'white-space:nowrap;font-weight:600',text:st.value}), el('td',{class:'l light',text:st.note_zh||''})))); t.append(tb); w.append(el('div',{class:'table-wrap'}, t)); }
   w.append(el('h3',{text:'关键发现'}));
   (ch.insights||[]).forEach((i,k) => w.append(el('div',{class:'insight'}, el('div',{class:'meta'}, tagBadge(i.tag)), el('h4',{text:`${k+1}. ${i.title_zh}`}), el('p',{text:i.body_zh}), refs(i.evidence))));
   const mt = (title, rows, a, b) => { const t = el('table',{class:'rt'}); t.append(el('thead',{}, el('tr',{}, el('th',{class:'l',text:title}), el('th',{text:'2026'}), el('th',{text:'2027'}), el('th',{text:'倍数'})))); const tb=el('tbody'); rows.forEach(r => tb.append(el('tr',{}, el('td',{class:'l'}, el('span',{text:r.name_zh}), r.note_zh?el('span',{class:'sub',text:r.note_zh}):null), el('td',{text:r[a]}), el('td',{text:r[b]}), el('td',{}, badge(ratio(+r[a],+r[b],1)))))); t.append(tb); return el('div',{class:'table-wrap'}, t); };
@@ -424,7 +434,7 @@ function chapter(ch){ const w = el('div',{});
   return w; }
 function subtabs(tabHost, bodyHost, chapters){ let cur = chapters[0]?.key; if (!cur) { bodyHost.append(el('p',{class:'light',text:'章节暂缺。'})); return; }
   const render = () => { bodyHost.innerHTML=''; bodyHost.append(chapter(chapters.find(c=>c.key===cur))); [...tabHost.children].forEach(b => b.classList.toggle('on', b.dataset.k===cur)); };
-  chapters.forEach(c => tabHost.append(el('button',{type:'button',role:'tab','data-k':c.key,onclick:()=>{cur=c.key; render(); tabHost.scrollIntoView({block:'start',behavior:'smooth'});}}, c.title_zh))); render(); }
+  chapters.forEach(c => tabHost.append(el('button',{type:'button',role:'tab','data-k':c.key,onclick:()=>{cur=c.key; render(); tabHost.scrollIntoView({block:'start',behavior:'smooth'});}}, (c.title_zh||'').split(/[：:]/)[0]))); render(); }
 DRAW['v-domains'] = () => subtabs($('#domainTabs'), $('#domainBody'), D.domains);
 
 /* SAFETY */
