@@ -1,0 +1,30 @@
+{"id": "qN6PvwwgJA", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "robust graph augmentation under adversarial attacks"}
+{"id": "uEgKiy3RmP", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "reward hacking in text-to-image alignment"}
+{"id": "1Bf0tToGT1", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "method", "target": "reasoning", "topic": "perspective-diverse subjective reasoning"}
+{"id": "SCjABrJule", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning in class-incremental learning"}
+{"id": "aIULmVHnl8", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_GEN", "type": "defense", "target": "mllm", "topic": "adversarial explanation manipulation in VLMs"}
+{"id": "GMDzJdJPik", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "llm", "topic": "red-teaming search-augmented LLMs"}
+{"id": "CA1JtSYaeg", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "GliI8fGM76", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "prompt injection in multi-agent systems"}
+{"id": "PYlbrgaJKp", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "efficient CoT length control"}
+{"id": "YkrfH3jQH9", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "FT_ROBUST", "type": "defense", "target": "agent", "topic": "dormant poisoning activated by fine-tuning"}
+{"id": "6zg74Nzxhn", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "cyclic preferences in reward modeling"}
+{"id": "JINWOT9zWh", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "LLM introspection self-report reliability"}
+{"id": "yk9yj6mpc0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "belief representations in RL agents"}
+{"id": "q8KqAvdfZK", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "sensitivity verification of tree ensembles"}
+{"id": "TZYcwtU6Cb", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "task-aware OOD detection"}
+{"id": "0gjDrA3wA0", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "INTERP_SAFE", "type": "analysis", "target": "agent", "topic": "safety judgment-action gap in agents"}
+{"id": "TADsPhlp32", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "RAULpdQ0Km", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "transformer state abstraction identification"}
+{"id": "Gccrrp7VGt", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "neural selectivity feature discovery"}
+{"id": "MQ8mfQvWoz", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "IP", "type": "attack", "target": "llm", "topic": "guardrail reverse-engineering attack"}
+{"id": "bwGiQWaEs5", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in grounded captioning"}
+{"id": "YtHtgNReeg", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "model extraction defense for GNNs"}
+{"id": "LBOKEpNNaD", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "reward hacking in agent benchmarks"}
+{"id": "UbC6JXDtog", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "CLIP negative-label OOD detection"}
+{"id": "nc28mSbyVG", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "personalized preference learning for RLHF"}
+{"id": "6rg4RWzNun", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "preference optimization generation collapse"}
+{"id": "YDaxkBBRB5", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "watermark-based image tamper recovery"}
+{"id": "6cEPDGaShH", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "harmful fine-tuning via steganography"}
+{"id": "ahYQ3Hxqin", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "theory", "target": "llm", "topic": "social choice limits of scalar reward models"}
+{"id": "oHOF5q7TfM", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "classic", "topic": "subliminal learning behavioral transfer"}

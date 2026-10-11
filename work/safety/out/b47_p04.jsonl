@@ -1,0 +1,30 @@
+{"id": "ondeWR9g8k", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "eval", "target": "multiagent", "topic": "delegation safety in agent marketplaces"}
+{"id": "Rl5Y2xpr1i", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "membership inference on tabular diffusion models"}
+{"id": "wV4bK1dHpC", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "statistical gating of agent self-improvement"}
+{"id": "KNhTIKVCDk", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "class unlearning in classifiers"}
+{"id": "t8dAptHsru", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "concept-anchored SAEs for VLMs"}
+{"id": "OiLVLIZy0i", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local edge differential privacy graph algorithms"}
+{"id": "MHlwNs9k1Y", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "LLM political consensus drafting"}
+{"id": "VnPdHU5795", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "music generation process reward model"}
+{"id": "oNQG0QrCdV", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "LLM self-knowledge of own behavior"}
+{"id": "vJgG20sjea", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "looped transformer iterative computation"}
+{"id": "MWiEn9GGuT", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "undetectable LLM watermarking"}
+{"id": "nlBqL9oXYR", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "game-theoretic LLM alignment limits"}
+{"id": "Y1UhUy7qAQ", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attack on video object segmentation"}
+{"id": "2e1uTFJpBK", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "mllm", "topic": "membership inference on VLMs"}
+{"id": "ngsSCsHa1r", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "evaluation awareness steering in scheming models"}
+{"id": "Tygnjcgtd2", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "llm", "topic": "self-activating LLM backdoors"}
+{"id": "0HuBR9Qqvq", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "reward-model error in T2I RL credit assignment"}
+{"id": "Bx4SNhQULI", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "over-the-air acoustic adversarial attacks"}
+{"id": "WvRmaSD2QV", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "robustness of LLM knowledge editing"}
+{"id": "6gJELX705a", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "natural adversarial examples via diffusion"}
+{"id": "exXUns94vF", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward over-exploitation in video generation RL"}
+{"id": "bPVLklCEcO", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "GEN_SAFE", "type": "defense", "target": "mllm", "topic": "image content guardrail"}
+{"id": "T0CoYToBwu", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "classic", "topic": "unlearning request idempotence"}
+{"id": "N23Ide49js", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "irrelevant context effects in LLMs"}
+{"id": "b84aSfg9eC", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "SAEs for crystal diffusion models"}
+{"id": "wRak3yNj2F", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "homomorphic encryption LLM inference"}
+{"id": "oWdSEmsInE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "classic", "topic": "participation incentives in online federated learning"}
+{"id": "0QC9AVsz7e", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "runtime anomaly detection for LLM agents"}
+{"id": "4CTGnjWgTJ", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "verifiable federated learning against poisoning"}
+{"id": "IjyhPcKtPG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "weak-to-strong model routing"}

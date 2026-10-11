@@ -1,0 +1,23 @@
+{"id": "rpMtZ567Cm", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "3ReIyCYLtG", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "shared directions for sycophancy and refusal"}
+{"id": "t97mEckqc1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "automated LLM benchmark construction"}
+{"id": "zrT8hzB3IE", "y": 2026, "rel": 1, "sub": "IP", "sub2": "UNLEARN", "type": "method", "target": "general", "topic": "data valuation via unlearning"}
+{"id": "ztMCnGTDF0", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "ZR4b5ajTQC", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "multilingual LLM safety evaluation"}
+{"id": "Re3dvjG4dX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "interference between concurrent computations"}
+{"id": "JpAUDL6zJn", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "sycophancy in LLMs"}
+{"id": "i5cjA1ApHW", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization for model fusion"}
+{"id": "ZujfJpD6as", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "stealthy jailbreak attacks"}
+{"id": "1tYymCWmG5", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "classic", "topic": "deepfake image detection"}
+{"id": "rHuqBT5TCm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "intervention geometry in recurrent world models"}
+{"id": "eLumHGBa0a", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "classic", "topic": "predictive multiplicity in forecasting"}
+{"id": "UStA5Nl1ES", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "agent safety evaluation methodology"}
+{"id": "7DXEF4xHt3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "adversarial training of process reward models"}
+{"id": "o0k034W6vx", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "reasoning", "topic": "GRPO as process reward model"}
+{"id": "Hak4lWkqCD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal optimization modeling"}
+{"id": "jYMFX0svEc", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "hWQy7IZLS4", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM reasoning for lunar missions"}
+{"id": "HW4XzZ9efh", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "implicit user modeling in LLMs"}
+{"id": "wmUKPNlj16", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "Fourier number features in LMs"}
+{"id": "fruHXlUzfv", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "method", "target": "agent", "topic": "runtime policy compliance monitoring for agents"}
+{"id": "P2BxQCv1pY", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "HALLU", "type": "analysis", "target": "reasoning", "topic": "CoT faithfulness / causal reliance"}

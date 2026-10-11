@@ -1,0 +1,30 @@
+{"id": "HLB77qwQ8X", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "llm", "topic": "length confound in AI-generated text detection"}
+{"id": "1ddbk4iCEp", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "myhhe2Rweg", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "visual hallucination mitigation in MLLMs"}
+{"id": "HBp4uTW5b0", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "mllm", "topic": "mechanisms of object hallucination in VLMs"}
+{"id": "jY7fAo9rfK", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "empirical privacy of DP LLM adaptation"}
+{"id": "aJcx7folWb", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "analysis", "target": "classic", "topic": "input loss curvature of backdoored networks"}
+{"id": "CPajDOuA3h", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "RL evasion of latent-space monitors"}
+{"id": "JH8vp5nwZi", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "RAG knowledge base ownership attribution"}
+{"id": "NfH0v1QPFQ", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "cost estimation errors in constrained RL"}
+{"id": "NuVpQ65fHJ", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "human alignment of LLM behavioral dispositions"}
+{"id": "TaeJeH0vyw", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "multiagent", "topic": "message effects in multi-agent echo chambers"}
+{"id": "zBPzxhso8M", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "jailbreak safety of diffusion LLMs"}
+{"id": "NBRxyZGt6o", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "verifiable runtime guardrails for LLM agents"}
+{"id": "EJIncQ0qmm", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "OOD detection with VLM negative labels"}
+{"id": "y2mEFusnXD", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "test-time OOD detection with CLIP"}
+{"id": "sLJRdIt3IP", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "evaluation awareness in LLMs"}
+{"id": "kQRjcBmFAD", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "reasoning", "topic": "jailbreaking reasoning models via long CoT"}
+{"id": "TyE0kJ1UB4", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "budgeted jailbreak attack scheduling"}
+{"id": "W1Fk5fO7kg", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OOD", "type": "analysis", "target": "rl_robot", "topic": "world-model agent representations under false observations"}
+{"id": "dZVAfFZAOj", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "video-based jailbreak of MLLMs"}
+{"id": "ktecmYSZFb", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM-automated systematic literature review"}
+{"id": "BzeVZ63hh4", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "Overton pluralistic alignment"}
+{"id": "EhkVnTXbh8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "certified robustness for network intrusion detection"}
+{"id": "qYu4wj7O3z", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "provenance of image autoregressive generations"}
+{"id": "ztCVzRbnvQ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "preference optimization for MILP solving"}
+{"id": "GtPUNUOdIX", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "activation stitching reverts alignment fine-tuning"}
+{"id": "BLhQv7iF3q", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "Fisher information robustness metric"}
+{"id": "8k0mxUCXND", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "circuit-based knowledge distillation for LLMs"}
+{"id": "KRG386u8c6", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "adversarial robustness of spiking neural networks"}
+{"id": "GaBIQ32oCA", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "efficient approximate machine unlearning"}

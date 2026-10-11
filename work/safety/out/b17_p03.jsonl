@@ -1,0 +1,30 @@
+{"id": "BT8SBXyFLr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "evidence use vs rank-following in RAG"}
+{"id": "0TuoFvyMQ1", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "AGENT_SAFE", "type": "method", "target": "llm", "topic": "steering assistant trust in users"}
+{"id": "qQoLZ25tIs", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination reduction via neural diversity"}
+{"id": "Q7cULvkx0X", "y": 2027, "rel": 2, "sub": "PI", "sub2": "REWARD_HACK", "type": "attack", "target": "agent", "topic": "RL-trained multi-turn agent red-teaming"}
+{"id": "7dhe87Qjjq", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization for diffusion LLMs"}
+{"id": "JT6L583Iae", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "BACKDOOR", "type": "theory", "target": "reasoning", "topic": "distribution shift and poisoning in CoT learning"}
+{"id": "ippWaS9PG9", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "listwise preference optimization for T2I"}
+{"id": "1MHZGpvSDJ", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "multi-constraint Lagrangian safe RL"}
+{"id": "PqQcRNSxQy", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "analysis", "target": "llm", "topic": "refusal mechanisms in LLMs"}
+{"id": "pZvv6oTrju", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "multiagent", "topic": "permission flow security in multi-agent systems"}
+{"id": "1ZqJ6jj75q", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "generative reasoning reward models"}
+{"id": "CdTyNbiDDA", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "adversarial robustness of fact-checking"}
+{"id": "sI3TpJxlWx", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "general", "topic": "convergence diagnostics for weight-tied networks"}
+{"id": "2Aj7sA2vbb", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "INTERP_GEN", "type": "analysis", "target": "diffusion", "topic": "bias discovery in text-to-image models"}
+{"id": "ueo8rf6eZI", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "depth cue reliance in VLMs"}
+{"id": "mCrxoyID6v", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "representation collapse in multi-task learning"}
+{"id": "gzYD8y06Q1", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "eval", "target": "agent", "topic": "agent memory auditing"}
+{"id": "UOlz2AlHfc", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM persona trait control"}
+{"id": "Y16qXOaylp", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "e5TY7nqvjv", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "agent safety monitor false-alarm auditing"}
+{"id": "f56l1eROcB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "in-context learning in linear attention"}
+{"id": "1ifRzv1QQE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "depth and in-context learning theory"}
+{"id": "Ta0GR70Yz4", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "SOCIETAL", "type": "defense", "target": "mllm", "topic": "harmful meme detection"}
+{"id": "xjYqszWAhz", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "agent", "topic": "evidence collapse in verifiable-reward agents"}
+{"id": "DDoDP4VsSx", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "discrete adversarial token attacks"}
+{"id": "FIakJL1eiv", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "JB_ATK", "type": "theory", "target": "general", "topic": "transferable attacks and compute theory"}
+{"id": "odT4KUovj9", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-as-a-judge reliability auditing"}
+{"id": "BQQ34bv25t", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "eval", "target": "agent", "topic": "web agent action risk guardrails"}
+{"id": "AOjN1GN0N7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "length extrapolation mechanisms"}
+{"id": "H1Q1tl8DmX", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "OOD", "type": "eval", "target": "rl_robot", "topic": "VLA robustness to physical faults"}

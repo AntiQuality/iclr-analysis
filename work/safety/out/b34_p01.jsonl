@@ -1,0 +1,30 @@
+{"id": "thdemgegiH", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in visual autoregressive generators"}
+{"id": "FnwU7ogRzv", "y": 2026, "rel": 1, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "offensive cybersecurity CTF LLM agents"}
+{"id": "esNaWlyXGa", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "sample-efficient randomized smoothing certification"}
+{"id": "djFCKhRNsP", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "general", "topic": "subgroup data balance and performance"}
+{"id": "PpdZP9fs9s", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "analysis", "target": "multiagent", "topic": "covert collusion evading multi-agent monitors"}
+{"id": "H5yzikGR94", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "classic", "topic": "gradient-ascent unlearning overcorrection dynamics"}
+{"id": "YnNIp38v1M", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "contextual integrity of LLM memory"}
+{"id": "5VEOXfOKEJ", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "code watermarking for LLMs"}
+{"id": "y0qbjNRQLW", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "runtime monitor portability for agents"}
+{"id": "fkIePp9YEO", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM simulation of online shopping behavior"}
+{"id": "u0P9EXhjed", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "fact retention under model merging"}
+{"id": "pPwfDyVHSQ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "label-space leakage in DP continual learning"}
+{"id": "eBDCScbOSM", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "backdoor detection via internal representations"}
+{"id": "ROcFqn6Pxi", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "copyrighted dataset usage detection via watermarking"}
+{"id": "NZYQmkw56T", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "internal vs stated error detection"}
+{"id": "WFo8P1gQBh", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "generalization to unseen jailbreaks"}
+{"id": "uAJsBbLeMB", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "organizational policy compliance of agents"}
+{"id": "ID2ZgYsxZg", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "multiagent", "topic": "covert collusion detection in multi-agent systems"}
+{"id": "cK35kNVm5r", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "medical visual reasoning via RL"}
+{"id": "AiBUm6iKBf", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion image watermarking"}
+{"id": "9SxsrLIsLR", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "emergent misalignment persona generalization"}
+{"id": "1YnIM9GCzq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "tabular counterfactual consistency regularization"}
+{"id": "zXocoL0tlq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "speech rate representation vs use in ASR"}
+{"id": "VUqtXFrFtp", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "agent", "topic": "agent progress scoring rewarding shortcuts"}
+{"id": "1vBNAnAgCD", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "llm", "topic": "gradient-based social bias debiasing in LMs"}
+{"id": "JrWpxBqqFk", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "online vs offline preference optimization"}
+{"id": "RdxPVLHvZo", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "unauthorized distillation tracing via watermark"}
+{"id": "tkfsulHXST", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "clinical concept representations in LLMs"}
+{"id": "TtORzBLPtR", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "llm", "topic": "proof certificate validity under updates"}
+{"id": "4eiydaPgEA", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "gradient inversion in federated learning"}

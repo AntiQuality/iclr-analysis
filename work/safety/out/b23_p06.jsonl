@@ -1,0 +1,23 @@
+{"id": "gjuEk72u4p", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "circuit identifiability under activation patching"}
+{"id": "ijzD68LDjM", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM watermarking"}
+{"id": "4pXeceZ1iK", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "action-level hallucination in LLM agents"}
+{"id": "OS4zPgH2xQ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "class-level machine unlearning"}
+{"id": "6fREkk6KrG", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "llm", "topic": "training-free LLM text detection"}
+{"id": "MNwAfsys3n", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "theory", "target": "general", "topic": "cross-task generalization of agentic safety"}
+{"id": "t3um9hohp8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transfer attacks from leaked FL checkpoints"}
+{"id": "4umw6GQl7C", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "GNN robustness to node injection"}
+{"id": "UC6oEpbaqC", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "reasoning", "topic": "reasoning distillation with worst-case constraints"}
+{"id": "cLvGSIKHUh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "on-policy distillation for flow matching"}
+{"id": "90ibjymozF", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "analysis", "target": "llm", "topic": "natural language autoencoder steering of refusal"}
+{"id": "UR7XkIO5bf", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "diffusion", "topic": "T2I failure mode discovery"}
+{"id": "iKiQwdPFib", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "VLM jailbreak via text-image segmentation"}
+{"id": "VFgTMukSRE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "context compression for search agents"}
+{"id": "PWhCfZJaRU", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "wrong-target state-changing actions in tool agents"}
+{"id": "f7uO3rAyIZ", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "backdoor attacks on VLA models"}
+{"id": "eg6HrnGymt", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM judge vs generator asymmetry"}
+{"id": "NmWf0gLufZ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "privacy-preserving visual localization inversion"}
+{"id": "Ae8QfW9KiR", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "gradient inversion in federated LoRA"}
+{"id": "pY5hgAVvYG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanistic effect of activation steering"}
+{"id": "90EZvjKMqK", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "qb3KZoqVLm", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "benign fine-tuning safety degradation"}
+{"id": "HnKdPK6C0N", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "strategic pricing in LLM routing markets"}

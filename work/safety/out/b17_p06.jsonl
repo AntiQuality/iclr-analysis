@@ -1,0 +1,23 @@
+{"id": "L2L1hi0FGj", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "spurious correlation worst-group robustness"}
+{"id": "fJXPPgqOiB", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "general", "topic": "local representation stability certification"}
+{"id": "jKkmhmNU7y", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "analysis", "target": "reasoning", "topic": "control decisions bypass verbalizable workspace"}
+{"id": "IUKnax4deH", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "multi-agent system security auditing"}
+{"id": "ulmVvB9rHq", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "eval", "target": "mllm", "topic": "compositional harm in video moderation"}
+{"id": "6IuZfDGv6D", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "speech deepfake detection"}
+{"id": "VG7WIjbzyA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "ESG event propagation modeling"}
+{"id": "FzH2xeEpSf", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "diffusion", "topic": "data unlearning in flow matching models"}
+{"id": "sKcibXcqfE", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "self-report vs behavior coherence"}
+{"id": "ion4VYJWvo", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "rl_robot", "topic": "adversarially robust policy optimization"}
+{"id": "3TM5xfS1m7", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "value alignment consistency benchmark"}
+{"id": "mMvuHd3qKi", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local differential privacy quantile inference"}
+{"id": "iHWmn52wwn", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "eval", "target": "agent", "topic": "evaluating pre-execution guards for agents"}
+{"id": "b0tlUYBEII", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "correlated failure in multi-agent reasoning"}
+{"id": "fNr4xz74kG", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "road centerline extraction"}
+{"id": "eyy7VlEVIk", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "xMW5s7Km8n", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "INTERP_SAFE", "type": "analysis", "target": "mllm", "topic": "source bias in VLM credibility judgments"}
+{"id": "mKPHeR9RC2", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "classic", "topic": "multimodal fake news detection"}
+{"id": "HMD0xk4A6J", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "jailbreak defense for diffusion LLMs"}
+{"id": "2eoMtzq03h", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "analysis", "target": "llm", "topic": "refusal mechanisms in LLMs"}
+{"id": "YPlC5OLyEg", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "safe continual RL on non-resetting graphs"}
+{"id": "cXo4vQudaa", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "trustworthiness repair after fine-tuning"}
+{"id": "DdeRtXKXHr", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "FT_ROBUST", "type": "attack", "target": "llm", "topic": "transformation-triggered malicious LLMs"}

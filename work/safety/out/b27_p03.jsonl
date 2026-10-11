@@ -1,0 +1,30 @@
+{"id": "uOJunxhkam", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "indirect prompt injection defense evaluation"}
+{"id": "zupJY6d00x", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM watermark spoofing attacks"}
+{"id": "1hqV6haZRi", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "locally private graph learning"}
+{"id": "4VwFrf5lgL", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "geometric supervision of internal representations"}
+{"id": "37SbPItNb8", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "dJM2YZT7VW", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "ADV_ROBUST", "type": "defense", "target": "rl_robot", "topic": "safety authorization for driving VLA models"}
+{"id": "V3412jhu1x", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "OwinX7PI83", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "visual backdoors in embodied VLM agents"}
+{"id": "lPMUA3M2T0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "diffusion memorization detection"}
+{"id": "GTM7rY262N", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "SOCIETAL", "type": "defense", "target": "classic", "topic": "harmful meme detection"}
+{"id": "69slXQ9OtF", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "multilingual preference alignment conflicts"}
+{"id": "QVYNHACJEH", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "model specification inconsistency detection"}
+{"id": "rkBB6zTUTC", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": "IP", "type": "attack", "target": "llm", "topic": "leaderboard manipulation via LLM identification"}
+{"id": "s9V8x1kAra", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "vIrKUzlwpC", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "backdoors in pretrained world models"}
+{"id": "GidObN1wEi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "activation intervention identification pitfalls"}
+{"id": "PebB30oWQb", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "quantization effects on model decisions"}
+{"id": "E9n2OlNZCH", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": "OOD", "type": "eval", "target": "classic", "topic": "certified robustness of change detection"}
+{"id": "jHr6Oay80d", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "cross-modal hallucination in omni-LLMs"}
+{"id": "GhhWCEKoib", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "durability of character training"}
+{"id": "p8GkJn0BaO", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "robust and fragile video watermarking"}
+{"id": "gyRJizZwIb", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "diffusion", "topic": "demographic bias in text-to-image models"}
+{"id": "xQ3JwAjqaJ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "re-identification from neural decoder embeddings"}
+{"id": "TjYl55QdhJ", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "SOCIETAL", "type": "analysis", "target": "mllm", "topic": "human perception of MLLM hallucinations"}
+{"id": "ICOKmwn5U1", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "harmful skill retention in self-evolving agents"}
+{"id": "rq8vbbiKNX", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "mllm", "topic": "membership inference on VLMs and diffusion"}
+{"id": "xvDT99Fk6z", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "interpretable node classification"}
+{"id": "TzZvCk47Wf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "natural-language user profile generation"}
+{"id": "KdI9luPqaB", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "RL-based jailbreak attacks"}
+{"id": "YS3GVgktvQ", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}

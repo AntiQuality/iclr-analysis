@@ -1,0 +1,30 @@
+{"id": "exIVgFrWlu", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "verifier-guided multimodal reasoning RL"}
+{"id": "o7avj3PWNC", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "HALLU", "type": "eval", "target": "reasoning", "topic": "sycophancy in theorem proving"}
+{"id": "diE5JWaKFP", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection in multi-teacher distillation"}
+{"id": "Sp9jcZDRoC", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "depth mechanisms in graph prior-fitted networks"}
+{"id": "khSwvAYhNU", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "robust safe multi-objective RL"}
+{"id": "PSx10YdkYB", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "mllm", "topic": "fairness-aware test-time adaptation"}
+{"id": "ofJaimOZBF", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "neuron-based jailbreak detection in LVLMs"}
+{"id": "Y2R1fJKD5i", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "multi-principal authority resolution for agents"}
+{"id": "SPbRhV7vjW", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "shutdownability via reward design"}
+{"id": "PeAjx9FpDq", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "method", "target": "agent", "topic": "accountable agent memory with certificates"}
+{"id": "FzxvQdweRc", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "certified unlearning via noisy fine-tuning"}
+{"id": "ukfkZw17EA", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "On5zSJMC3P", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private synthetic text generation"}
+{"id": "bTYxaNh8R7", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "prompt injection detection for web agents"}
+{"id": "k4oybKBzR2", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward degeneration in DPO"}
+{"id": "6Y9NP1qhoM", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "misinformation injection in multi-agent systems"}
+{"id": "R9jIYhTnuj", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "attack", "target": "general", "topic": "data laundering against provenance audits"}
+{"id": "7Mndq2QcMU", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "position", "target": "llm", "topic": "AI personality formation framework"}
+{"id": "jHxi2WOOz8", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "malicious third-party agent skills"}
+{"id": "YL4tnAD8qP", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on social event forecasting"}
+{"id": "BaFPkXHdrg", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reference-answer-based alignment"}
+{"id": "R7tK96vtAl", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "safety alignment data reweighting"}
+{"id": "JS6H6R60I6", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "harmful algal bloom forecasting"}
+{"id": "7snyG2MgiV", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanisms of compositional inference"}
+{"id": "ZV5ogTZUtd", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "analysis", "target": "llm", "topic": "behavioral watermarks transferred through distillation"}
+{"id": "R4FoJvqfWN", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI image editing detection and attribution"}
+{"id": "qBfeoNi3Ja", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference data difficulty curriculum"}
+{"id": "WHVk2qoCIY", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "multi-agent system security evaluation"}
+{"id": "o1hJsKByEM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "text-conditioned diversity in image generation"}
+{"id": "em6BBWQUbs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "composable activation steering from weight updates"}

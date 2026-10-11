@@ -1,0 +1,23 @@
+{"id": "0imYw5ajm4", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "memory poisoning in LLM agents"}
+{"id": "vNrNba8MEL", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "embedding-space jailbreak of open LLMs"}
+{"id": "xxaNM9HYPv", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "eval", "target": "classic", "topic": "agent-driven FL poisoning harness"}
+{"id": "KezVIhjQuu", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "label-flipping poisoning in FL"}
+{"id": "Hl9xKChoO3", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM model provenance detection"}
+{"id": "BPzSV4uw0x", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private federated LoRA"}
+{"id": "3jNEVOP3OV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference alignment for flow models"}
+{"id": "fVlHzXO4UN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "novel word lexical function in LMs"}
+{"id": "y3rnzfgUk0", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "latent watermarking for diffusion models"}
+{"id": "taOzU6e5hf", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "metric DP leakage under joint observation"}
+{"id": "x9OPC7j6hh", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "RAG hallucination mitigation fine-tuning"}
+{"id": "25MsStaezF", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "spatio-temporal graph unlearning"}
+{"id": "hW8MtlRzY7", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "conditional pretraining for steerability"}
+{"id": "IaA0g7jZdB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM procurement auction routing"}
+{"id": "X7CESP8IIw", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "attacker-defender co-evolution safety training"}
+{"id": "HZnfnmWwlM", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "AI labor adoption measurement"}
+{"id": "7iTakBZs8W", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "theory", "target": "agent", "topic": "AI control monitoring of decomposition attacks"}
+{"id": "gR2lj6f8vG", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "safe clinical text augmentation"}
+{"id": "FS2jAx9QaC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "memory selection for LLM agents"}
+{"id": "wvkbSz7VnD", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "goal-completion verification for tool agents"}
+{"id": "w24Jp0ezVa", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "SFT data curation"}
+{"id": "gl2nAqMlII", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "fair reward modeling"}
+{"id": "LQzaQhC06b", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "regularization for generalization and robustness"}

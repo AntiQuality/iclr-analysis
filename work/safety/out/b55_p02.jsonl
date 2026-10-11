@@ -1,0 +1,30 @@
+{"id": "FJ0evDpJ0M", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse dictionary learning for LLM features"}
+{"id": "G8bzqAzG09", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving synthetic tabular data"}
+{"id": "JdiqncU1eK", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "llm", "topic": "social bias mitigation in LLM decoding"}
+{"id": "RnsavZx5z7", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "llm", "topic": "preference leakage from inference-time alignment"}
+{"id": "1m0EU6QXj6", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained RL policy optimization"}
+{"id": "AYwD5KoSDZ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "unrestricted adversarial image generation"}
+{"id": "ddWKU9Igcn", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "truthful data procurement mechanism"}
+{"id": "f722QmweC5", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "analysis", "target": "mllm", "topic": "safety bypass via optical context compression"}
+{"id": "RZGxuanHlw", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "client-level DP federated learning"}
+{"id": "tzWY9hXGwW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "capability forgetting in RL post-training"}
+{"id": "XOss4ZZ6ni", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "video diffusion watermarking"}
+{"id": "f3funFkVzk", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "defense", "target": "diffusion", "topic": "unlearnable data against generative training"}
+{"id": "ST0wOB1bdX", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multilingual reward/judge model"}
+{"id": "rS8cNc2R9e", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "carbon footprint of LLM inference"}
+{"id": "3iw5t2W41F", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "remaining-data-free machine unlearning"}
+{"id": "tYeuz2LwVU", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "polysemantic interference transfer across models"}
+{"id": "0LNRTVVqoF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "label leakage in LLM split learning"}
+{"id": "dI5GvUg7ps", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "counterfactual learning-to-rank"}
+{"id": "EBMCrq3rwK", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "safe text-to-image steering"}
+{"id": "a3JmkJtTDV", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "reward models for story preference"}
+{"id": "4ZknweRfcV", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "classic", "topic": "vision SAE concept grounding"}
+{"id": "UO9oWYp6W8", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "general", "topic": "unseen failure modes in pre-deployment testing"}
+{"id": "oTVdnpii0z", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "xPEvuCGFZF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "analysis", "target": "multiagent", "topic": "emergent risk in multi-agent LLM societies"}
+{"id": "Ef0nUFg3Jw", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "FT_ROBUST", "type": "attack", "target": "llm", "topic": "spurious token injection in LoRA finetuning"}
+{"id": "PlRH5NS6Q3", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "hallucination in LLM agents"}
+{"id": "kgdraAm0fG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "rubric-based reward for multimodal generation"}
+{"id": "NYphgYTloq", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "fairness benchmark for unified MLLMs"}
+{"id": "p822NKLWR3", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "triggerless data poisoning misinformation"}
+{"id": "i4ahnQl7Vu", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": "OOD", "type": "defense", "target": "agent", "topic": "spurious correlations in agent memory"}

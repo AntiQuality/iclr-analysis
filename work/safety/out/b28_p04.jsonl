@@ -1,0 +1,30 @@
+{"id": "Ta2WxQVUhI", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "mllm", "topic": "training data memorization in document VLMs"}
+{"id": "bYA07SdHoS", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box jailbreak attacks on LLMs"}
+{"id": "oIAUP1K5Dq", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "robust DPO under noisy preferences"}
+{"id": "LfmKW6Zion", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "SOCIETAL", "type": "defense", "target": "classic", "topic": "multimodal hateful content moderation"}
+{"id": "ixiOWyKx03", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "safety-aware multi-LLM routing"}
+{"id": "17iH7ElJOV", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "physical adversarial camouflage on detectors"}
+{"id": "RoY11DEPwE", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward-conditioned T2I pretraining"}
+{"id": "355c9fSzPy", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination audit planning"}
+{"id": "h0pUFbO53w", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "SAE-guided RL data selection"}
+{"id": "FbXvG1HaPn", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "general", "topic": "risk-controlled recursive self-improvement"}
+{"id": "bIG1LElIeE", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "general", "topic": "membership inference evaluation reliability"}
+{"id": "5nhi1iA44b", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "llm", "topic": "indirect prompt injection localization"}
+{"id": "3lmBhMwdqM", "y": 2027, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "image processing history forensics"}
+{"id": "9J0Q9oeWQk", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "llm", "topic": "LLM robustness to prompt perturbations"}
+{"id": "ECTv9t8kTJ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "e-commerce dialogue agent benchmark"}
+{"id": "uMJsFpBGtp", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness of transformers"}
+{"id": "KvH9izsHFW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "long-prompt T2I alignment"}
+{"id": "D16zamgWSd", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "mllm", "topic": "short-video misinformation detection"}
+{"id": "0L4ChLlwXm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "world-model RL for robot policies"}
+{"id": "CInuBxWN8m", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward feedback for face restoration"}
+{"id": "HXok21UQfd", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "i47qii8cIZ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "classic", "topic": "neuron explanation reliability"}
+{"id": "bMMpt9SFy6", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "analysis", "target": "llm", "topic": "refusal representations in LLMs"}
+{"id": "zBvSFeZRL8", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "jailbreak backdoor injection"}
+{"id": "pdZRtcQ9Cd", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "3owwswBgda", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "classic", "topic": "privacy risks of medical image embeddings"}
+{"id": "n2CIy5Bm8M", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "probabilistic verification of neural networks"}
+{"id": "5h1Cd2POX0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "homomorphically encrypted federated learning"}
+{"id": "BReqQMFlJb", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection in computer-use agents"}
+{"id": "vXekakDqvv", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "CoT monitorability"}

@@ -1,0 +1,30 @@
+{"id": "cVb6jJilvJ", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "LLM abstention calibration / over-refusal"}
+{"id": "KQYnfeBNjl", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE features predicting fine-tuning transfer"}
+{"id": "5JJ05LHYRU", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "latent region structure of LLM reasoning"}
+{"id": "MkVIzyw1X7", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "verifiable environment for architecture-design agents"}
+{"id": "z4H49rxpb2", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "eval", "target": "classic", "topic": "poisoning detection in 3D Gaussian Splatting"}
+{"id": "MvNFQTVXuH", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "KV cache eviction with RoPE remapping"}
+{"id": "u94T9UWCzY", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "memory injection in persistent LLM agents"}
+{"id": "zWavcZ6Jug", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "context use in time-series foundation models"}
+{"id": "PfhSe4a0GY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "multimodal process reward model evaluation"}
+{"id": "TAer6K7scZ", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in MLLMs"}
+{"id": "T1zcJOQFMQ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "contextual privacy leakage in LLM agents"}
+{"id": "N5gNhO2OPB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "RF device fingerprint representation learning"}
+{"id": "Tj8ZsGcoAv", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "BACKDOOR", "type": "analysis", "target": "llm", "topic": "subliminal learning hidden trait transfer"}
+{"id": "g0aVCDY3gS", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense in agents"}
+{"id": "gW5oMWPLiq", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "proactive guardrails for LLM agents"}
+{"id": "TjAhTNzRub", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "irreversible feature-level class unlearning"}
+{"id": "RS1h0oATlt", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "validity of LLM self-report psychometrics"}
+{"id": "v4Fb6JeHUe", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "jailbreak ASR judge reliability"}
+{"id": "iOR6p8v3ZH", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "SAE concept mapping of fMRI activity"}
+{"id": "xvJv0Fh1FD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "numerical precision sensitivity of LLM evaluation"}
+{"id": "NYvIPav8UG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "generative augmentation for RF localization"}
+{"id": "x7fntC2OV8", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "skill injection attacks on agent routers"}
+{"id": "0WEFS1BMkc", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "interpretable rubric reward models"}
+{"id": "oBb0uicpGo", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "LLM-as-a-judge manipulation in peer review"}
+{"id": "OgGyOdeWn1", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "contextual faithfulness hallucination mitigation"}
+{"id": "ScwthqGzyt", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "probing internals for answer correctness"}
+{"id": "whkdFg9YD5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "semantic prompting for few-shot recognition"}
+{"id": "Gyy6clUUHD", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "hallucinated reactions in retrosynthesis"}
+{"id": "Fz3JWBVLG8", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "efficient preference optimization"}
+{"id": "8qFOfUAMWI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion preference alignment for image quality"}

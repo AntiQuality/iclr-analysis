@@ -1,0 +1,30 @@
+{"id": "Ye9EhObnid", "y": 2027, "rel": 2, "sub": "PI", "sub2": "JB_ATK", "type": "attack", "target": "agent", "topic": "environment injection jailbreak of embodied LVLM agents"}
+{"id": "uUghQYGVKO", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "systematic caption error detection"}
+{"id": "Rx63MyqDyn", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "IP", "type": "method", "target": "llm", "topic": "revocable external memory for RTL LLMs"}
+{"id": "Ge0Z13xWaR", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "gradient inversion defense"}
+{"id": "IP1H2coORG", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "hybrid HE-MPC private transformer inference"}
+{"id": "a1pYHwJHhl", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "vision-language representational misalignment"}
+{"id": "srB3lzJVqR", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "capability changes under safety-removal fine-tuning"}
+{"id": "bxC7wUMjTQ", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "attack", "target": "classic", "topic": "fairness audit manipulation (fair-washing)"}
+{"id": "7M7DM92S8D", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering dose calibration"}
+{"id": "b0YQ6hV6y1", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "HE encryption boundary for private inference"}
+{"id": "16dklduerp", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "instance-wise calibration for ViTs"}
+{"id": "giMpNTtGsL", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "homogenization and conformity in multi-agent systems"}
+{"id": "LylcvXMuZa", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "anti-editing image protection"}
+{"id": "ZcOCE4B0Aw", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "attack", "target": "agent", "topic": "implicit-tool attacks on coding agents"}
+{"id": "DxLKWwiiOP", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "cognitive bias in RLHF preference data"}
+{"id": "XjEmO6Znz9", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "sparse steering for cultural alignment"}
+{"id": "mdunHhVDPz", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "political opinion alignment of LLMs"}
+{"id": "YhKqfjMUBh", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "user simulator exploitation in persuasion RL"}
+{"id": "0BBM7KM0d2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "structured pruning for LLM compression"}
+{"id": "4qCL11laq3", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "membership inference privacy for GNNs"}
+{"id": "Ng06xzJ5BL", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "counterfactual fairness-utility trade-off"}
+{"id": "XGBvOkQIzf", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "malicious agent skill supply chain"}
+{"id": "dj41CyOSnJ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "method", "target": "multiagent", "topic": "conformity to misleading peers in multi-agent systems"}
+{"id": "6otNLsCC3b", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "classic", "topic": "fairness harm from data pruning"}
+{"id": "FY0dDuAnW1", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "immune repertoire representation learning"}
+{"id": "7GRhavWDoi", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "multi-turn preference optimization for coding agents"}
+{"id": "NXGAVuPO9o", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "causal abstraction faithfulness diagnosis"}
+{"id": "6bvAX4PPdG", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation decoding in LVLMs"}
+{"id": "jbl4qCAXc4", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "agent", "topic": "source inconsistency in web agents"}
+{"id": "xeKcT9GqDd", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "GEN_SAFE", "type": "attack", "target": "mllm", "topic": "multi-turn jailbreak of conversational image generation"}

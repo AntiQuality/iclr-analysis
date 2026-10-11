@@ -1,0 +1,30 @@
+{"id": "sDPattDnqV", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "efficient LLM unlearning via embedding edits"}
+{"id": "h7ZAgetMLc", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanisms of two-hop compositional recall"}
+{"id": "9LCkkGrCTh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "certified piecewise affine regression inference"}
+{"id": "bEZVJpmXux", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder ensembles"}
+{"id": "IAuK8al1UI", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "factual grounding rewards for clinical notes"}
+{"id": "n18lFcxaNT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "latent reasoning dynamics in KV cache"}
+{"id": "IHkWUI629S", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "DPO for multi-stage 3D generation"}
+{"id": "H3285m9hiZ", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "fairness impossibility and trade-offs"}
+{"id": "mKPpS6n3cZ", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward hacking mitigation in RLHF"}
+{"id": "7bw3F5RtQv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "LLM agent simulation of DAO governance"}
+{"id": "jegHle9py1", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "clarification suppression under retrieval"}
+{"id": "U8UHfaYSeb", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "faithful physiological evidence in emotion reasoning"}
+{"id": "xKHYnW2tsO", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "LLM agent for phishing URL detection"}
+{"id": "UGT8A9cRCv", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "internal representations of tabular foundation models"}
+{"id": "3QZd2oKcfu", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "mllm", "topic": "multimodal unlearning benchmark"}
+{"id": "qKmXz1UR0Z", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "feature evolution during pre-training"}
+{"id": "u3QZEZZWwN", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "adversarial self-play safety training"}
+{"id": "bH2a5BQqiD", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "hallucination cost of cross-modal reasoning distillation"}
+{"id": "1vvbzAqdTe", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "refusal activation steering without over-refusal"}
+{"id": "Lj4pwDXd5u", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "human overreliance on LLM decision support"}
+{"id": "e3yJIeiFAv", "y": 2027, "rel": 2, "sub": "PI", "sub2": "BACKDOOR", "type": "eval", "target": "llm", "topic": "measurement validity of LLM attack detectors"}
+{"id": "cNEshxVcWg", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "invisible watermarking for diffusion images"}
+{"id": "GG7YQnsdhp", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "adaptive reasoning modes for social agents"}
+{"id": "7xUXpS64Ds", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM confidence calibration via RL"}
+{"id": "DHCgzuNSuc", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "efficient LLM unlearning optimisation"}
+{"id": "aWt2SkfVhq", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "RL-based diverse automated red teaming"}
+{"id": "XEPWfJy9nn", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "predicting harmful data pooling under shift"}
+{"id": "LZwHsK40qW", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "low-perplexity white-box jailbreak attack"}
+{"id": "terdVfnoc5", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "RL-based diverse automated red teaming"}
+{"id": "66FG4uokuy", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "theory", "target": "classic", "topic": "selective prediction / learning to abstain"}

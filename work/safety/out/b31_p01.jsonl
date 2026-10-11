@@ -1,0 +1,30 @@
+{"id": "Qju89AVNrj", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe VLA robot manipulation"}
+{"id": "mdfPmiv7f7", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "reward hacking mitigation via steering"}
+{"id": "H1ofGvKeAz", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "theory", "target": "mllm", "topic": "hallucination quantification in MLLMs"}
+{"id": "pmgK8Kn99Z", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "relation hallucination in VLMs"}
+{"id": "n7CocJrEyz", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "machine-generated text detectability"}
+{"id": "oPMZQyHvfb", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "adversarial training for federated LLMs"}
+{"id": "TdowtEYAl1", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc OOD detection"}
+{"id": "1vpiAj3LXX", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "robot risk fields from human videos"}
+{"id": "1yiuTo6CBO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "federated local explanations"}
+{"id": "i9yuplD2ub", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "OVERSIGHT", "type": "defense", "target": "llm", "topic": "harmful fine-tuning detection via auditing agents"}
+{"id": "TTVHWgCqBH", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "scalable circuit discovery with SAEs"}
+{"id": "X4beAROpfa", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "on-device LLM model stealing protection"}
+{"id": "ljFzvvUlxK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "method", "target": "agent", "topic": "agent accountability via verifiable insurance"}
+{"id": "KfKNlcy9zh", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "offensive cyber capability evaluation of agents"}
+{"id": "KEp6IfP01V", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "gradient inversion defense in federated learning"}
+{"id": "prVKpqOiaT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "reward models for AI system optimization"}
+{"id": "0Gz0Lafv3v", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "defense", "target": "classic", "topic": "certified backdoor defense for conformal prediction"}
+{"id": "1nFHED6QEr", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "analysis", "target": "diffusion", "topic": "memorization in text-to-image diffusion"}
+{"id": "NVggl3a16p", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "zero-shot OOD detection with CLIP"}
+{"id": "veTQX3F4Hg", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "mllm", "topic": "model watermarking for LVLM copyright"}
+{"id": "6YSRWeZUVW", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "text anonymization against attribute inference"}
+{"id": "8i0oGCFvw1", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "malicious skill injection in coding agents"}
+{"id": "ush2guQNTI", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "unsafe image generation mitigation"}
+{"id": "NJUmKny4ZI", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "indirect prompt injection in web agents"}
+{"id": "kHVzEjThKE", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "LLM internal knowledge of opinions"}
+{"id": "ZKdBab2WX6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "visual token pruning"}
+{"id": "Riiy1TffUk", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "layer-wise processing of table cells in VLMs"}
+{"id": "BVvcVDd5nS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "unintended side effects of stateful agents"}
+{"id": "Xc1t0S4xtD", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private RAG"}
+{"id": "Wui5vF8IQf", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in text-to-video"}

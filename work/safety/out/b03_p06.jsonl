@@ -1,0 +1,23 @@
+{"id": "j5XCXAKN4c", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "emergent LLM utilities vs behavior"}
+{"id": "UsWTBvkTwf", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "method", "target": "diffusion", "topic": "multi-concept erasure in diffusion"}
+{"id": "713ywmTZHv", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private training with limited data"}
+{"id": "d3R0TF7w5f", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "forget-set-free machine unlearning"}
+{"id": "WPw6ERKUZL", "y": 2026, "rel": 1, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "Indic multilingual pretraining corpus"}
+{"id": "DBRg2u6Tuk", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "embedding perturbation jailbreak of open-weight LLMs"}
+{"id": "BEtrOfbbqA", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "sycophancy in self-rewarding LLM judges"}
+{"id": "qgUCuzgGDw", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "concept subspaces vs logit lens readout"}
+{"id": "nIk4bviF8z", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "source attribution in clinical summarization"}
+{"id": "Bi7CPaOMHC", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "ADV_ROBUST", "type": "eval", "target": "diffusion", "topic": "adversarial robustness of AI-generated image detectors"}
+{"id": "BTmc8Llsuz", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "black-box attack on driving segmentation"}
+{"id": "W70J5TZtLL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "data value in LLM self-improvement"}
+{"id": "fD9YRHazW3", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "PI", "type": "method", "target": "llm", "topic": "in-context watermarking of LLM text"}
+{"id": "Jp6cxBPJ7p", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "low-altitude governance multimodal benchmark"}
+{"id": "91yZEsfVp7", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "sycophancy in LLMs mitigation via attention steering"}
+{"id": "A8UjEgmztz", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "social sycophancy mitigation"}
+{"id": "jF3weaoi13", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "decision-sufficient representations"}
+{"id": "VU7wekA9CD", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "membership inference risk of SAM"}
+{"id": "4Zs7PbGzTJ", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DANGER_EVAL", "type": "analysis", "target": "reasoning", "topic": "CoT monitorability evaluation methodology"}
+{"id": "vAgmDsWXxP", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "adversarial robustness of dataset distillation"}
+{"id": "ywkbERYvpx", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for LLM agents"}
+{"id": "fF9alVesJ0", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for LLM agents"}
+{"id": "4Ewgw9M2xE", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal reward model training"}

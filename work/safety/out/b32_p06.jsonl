@@ -1,0 +1,23 @@
+{"id": "iFNnYaEHgJ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "monotone FFNs for token-substitution robustness"}
+{"id": "cY2aTfhT3L", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "post-hoc safe image regeneration"}
+{"id": "0KUOGfmuww", "y": 2027, "rel": 1, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "multiagent", "topic": "adversary detection in hidden-role games"}
+{"id": "WnllEEBykk", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair medical image analysis"}
+{"id": "n6kIYzPRPL", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "general", "topic": "social impact evaluation in model reporting"}
+{"id": "7iXG8TKmfB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "activation patching without corrupted inputs"}
+{"id": "GTl9MwNkvx", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "evolutionary black-box adversarial attacks"}
+{"id": "Lupg86mC2r", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "agent memory poisoning governance"}
+{"id": "rHbWZ11w9K", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "eval", "target": "agent", "topic": "safety of LLM planners for care robots"}
+{"id": "N0X8TUW9AF", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "ALIGN_TRAIN", "type": "attack", "target": "llm", "topic": "backdoor attacks in RLHF"}
+{"id": "Lej4WvdpFE", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning for continual learning negative transfer"}
+{"id": "tGqgJ0rkYV", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "reasoning", "topic": "AI mathematical discovery ethics"}
+{"id": "wQPgYAY9qz", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "symbolic policy extraction for agent guardrails"}
+{"id": "oOFndOXCUT", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "omni-modal hallucination mitigation"}
+{"id": "TQM6zSBRcF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "contactless fingerprint completion"}
+{"id": "50V6SPxzIO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "probing reasoning trajectory quality"}
+{"id": "WL4GEBzQLP", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "trajectory similarity representation learning"}
+{"id": "Y6BZ2vuP69", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "steering-induced emergent misalignment"}
+{"id": "tSnNoGfM5d", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "reasoning", "topic": "sycophancy in merged reasoning models"}
+{"id": "Gm6MiSoCuf", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "secure MoE inference via MPC"}
+{"id": "Hy2ZG4IgBD", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "paraphrase-robust LLM text watermarking"}
+{"id": "07HyQCqbme", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "LLM honesty under preference misalignment"}
+{"id": "qwsSJcHB8c", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "SOCIETAL", "type": "defense", "target": "llm", "topic": "adolescent-safe LLM guardrails"}

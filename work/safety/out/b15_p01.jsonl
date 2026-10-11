@@ -1,0 +1,30 @@
+{"id": "LXEyg7LY7W", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "ADV_ROBUST", "type": "defense", "target": "rl_robot", "topic": "corrupted cost signals in safe MARL"}
+{"id": "AyOaCG4B4G", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "black-box refusal policy discovery"}
+{"id": "vPPLbbXsCs", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "PRM self-preference calibration"}
+{"id": "sae8XpxKwD", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "CkZAO6tDHv", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "identity echoing in agent-agent conversations"}
+{"id": "jMFbdAu8wH", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-turn jailbreak defense"}
+{"id": "brvQlcwZVP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "creative writing decoding"}
+{"id": "v2FRshTyPe", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "distributional unlearning data selection"}
+{"id": "PYrOKfgPRt", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "rule-governed decision reasoning benchmark"}
+{"id": "YVzvi34qyc", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "theory", "target": "general", "topic": "truthful multi-class calibration measures"}
+{"id": "LO2c9ZznJl", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "stylized conversational companion with GraphRAG"}
+{"id": "G3gm7QBeMc", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "adversarial robustness in cooperative MARL"}
+{"id": "8bjuA06JXB", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "eval", "target": "agent", "topic": "embodied LLM agent safety benchmark"}
+{"id": "jNY2bQnQ6D", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "diffusion", "topic": "data unlearning in diffusion models"}
+{"id": "M6F3f0A89g", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM unlearning evaluation retain-set leakage"}
+{"id": "YUBbbDwjcp", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "guardrail LLM judge adaptation"}
+{"id": "8U7sg8RgeT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "mllm", "topic": "personal information extraction from videos"}
+{"id": "pwmFIF4CY4", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "safe deployment-time adaptation supervision"}
+{"id": "UF5C43bOgq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "protein IDR generation with SAE features"}
+{"id": "8c2SbG5PLj", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "refusal direction steering for safety"}
+{"id": "TmHLZgUPa3", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "deception in tool-using agents"}
+{"id": "OBa3owju9Z", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "evidence certificate verification for tool agents"}
+{"id": "QRa6eTsdwr", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "semantic uncertainty for hallucination detection"}
+{"id": "WqbN2fuoJf", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "long-context DPO data construction"}
+{"id": "fDpuBJKuIB", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward model scaling laws"}
+{"id": "Cp1AIr62er", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "analysis", "target": "general", "topic": "massive activations and robustness"}
+{"id": "9664No4ulo", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "reasoning", "topic": "listwise ranking reward for GRPO"}
+{"id": "sMy13QhmQd", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "reward hacking in rubric-based RL"}
+{"id": "A4Us8jxVGq", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "training dynamics of token associations"}
+{"id": "fkLFVABijT", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM-generated text detection"}

@@ -1,0 +1,30 @@
+{"id": "o1aGo0GzBo", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL sampling efficiency for flow-matching T2I"}
+{"id": "HqMRCGad5Q", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "test-time safety alignment via decoding"}
+{"id": "2hdqPP25DM", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "multi-trigger backdoor attack"}
+{"id": "HBDAnBCgyr", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "over-refusal and jailbreak via surface cues"}
+{"id": "6wfS5dCSF7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "RAG citation attribution from attention"}
+{"id": "E4dyBlD5z7", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection in web agents"}
+{"id": "T6kSSXbXyy", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "AGENT_SAFE", "type": "analysis", "target": "multiagent", "topic": "fairness in multi-agent deliberation topology"}
+{"id": "sSOSRpUn48", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "alignment auditing of hidden behaviors"}
+{"id": "XUaG9okoCk", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "across-seed training variance reduction"}
+{"id": "bk5QyV9fNX", "y": 2026, "rel": 1, "sub": "BACKDOOR", "sub2": null, "type": "method", "target": "general", "topic": "metagradient data optimization and poisoning"}
+{"id": "2wtiLzDgGs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "unigram prior direction in LLM unembedding"}
+{"id": "1GDVZNoF1j", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning internal state and relearning"}
+{"id": "FotNLO6fOF", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "cross-modal hallucination in omni-modal LLMs"}
+{"id": "7FfZc9MePg", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "llm", "topic": "social bias mitigation in LLMs"}
+{"id": "fYlMl5MxeV", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "data-free backdoor purification"}
+{"id": "XFcenszBe3", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE feature explanation and steering"}
+{"id": "iyAA3hXf4J", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "multiagent", "topic": "cooperation and betrayal among LLM agents"}
+{"id": "SMBFj6xJeQ", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "sequential knowledge editing stability"}
+{"id": "TVg7ZZUnGD", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "efficient GRPO for flow-matching T2I"}
+{"id": "oySbAiD69E", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "prompt attention steering for instruction focus"}
+{"id": "wvebgelKnP", "y": 2026, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "reasoning", "topic": "length bias in reward models"}
+{"id": "SASwzu2b4x", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "multi-agent behavior modeling in chess"}
+{"id": "hhqMBPtskh", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "federated unlearning for LLMs"}
+{"id": "EoypgLdcmo", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "smart contract exploit benchmark for agents"}
+{"id": "tdgQHe4jQ0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "m46gxP9yJJ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "structural super-resolution for bone CT"}
+{"id": "tjZHVvgmZt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "repository-level C to Rust translation"}
+{"id": "I88toT6Leg", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "position", "target": "multiagent", "topic": "validity of LLM social simulation"}
+{"id": "6gO6KTRMpG", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "belief tracking mechanism in LMs"}
+{"id": "Q4gS70AH9E", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "sparse subnetworks in RL fine-tuning"}

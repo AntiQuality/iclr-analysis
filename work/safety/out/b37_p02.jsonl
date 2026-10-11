@@ -1,0 +1,30 @@
+{"id": "9fBck6CClD", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "JQSzQOFcTz", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "shortcut-invariant encrypted traffic classification"}
+{"id": "cQpa6099tb", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "sociolinguistic identity bias in LLMs"}
+{"id": "TXG8geevv1", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM backdoor purification"}
+{"id": "YusPP61J8k", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "lens readout of multi-token concepts"}
+{"id": "hn03tZrTQs", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "domain generalization of CLIP"}
+{"id": "ZlCTAZfhEO", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense in federated LLMs"}
+{"id": "oEjqJEMMyi", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "GEN_SAFE", "type": "attack", "target": "diffusion", "topic": "backdoor propagation via diffusion synthetic data"}
+{"id": "rT6sTWto1q", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated video detection"}
+{"id": "uIeNtpbkWc", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "HALLU", "type": "analysis", "target": "multiagent", "topic": "failure modes of heterogeneous multi-agent debate"}
+{"id": "UCSIbNjFi1", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "agent", "topic": "preference distillation for tool-use agents"}
+{"id": "nSsaEp75xm", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "model watermarking for federated LLM ownership"}
+{"id": "hOywXVc7Qq", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "constraint violation bounds in online CMDPs"}
+{"id": "ksYDIwef4w", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "INTERP_SAFE", "type": "defense", "target": "agent", "topic": "long-horizon tool agent safety steering"}
+{"id": "nhn8aUeiCw", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in vertical federated learning"}
+{"id": "GDlLS3ytBI", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL with diffusion"}
+{"id": "Y7phfABIZH", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "long scroll image generation"}
+{"id": "yU8XMH30g4", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "repetition counting in video LMs"}
+{"id": "9WtgapSaCv", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "DPO likelihood displacement in video diffusion"}
+{"id": "yk3QBsB43u", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection under label noise"}
+{"id": "R3JxR3AubP", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "DANGER_EVAL", "type": "position", "target": "general", "topic": "guardrails versus societal cyber/bio resilience"}
+{"id": "yk5IoHAbjt", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "human-in-the-loop RL with suboptimal experts"}
+{"id": "htzKaJTTMj", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "action-level trust regions for language agents"}
+{"id": "EdQqDglzwK", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "method", "target": "llm", "topic": "training data detection with FDR control"}
+{"id": "GXcN0MuN1q", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "method", "target": "llm", "topic": "over-refusal mitigation in LLMs"}
+{"id": "vXYe9SXbxE", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "backdoor attacks on CLIP"}
+{"id": "shpQH24STD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "logit-lens workspace in audio LLMs"}
+{"id": "aswN7j6JPA", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "OOD", "type": "analysis", "target": "rl_robot", "topic": "VLA physical failures under camera faults"}
+{"id": "YwbKvDhL1o", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "eval", "target": "agent", "topic": "computer-use agent safety benchmark"}
+{"id": "jSs8CDsF0A", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "confidence calibration under noisy labels"}

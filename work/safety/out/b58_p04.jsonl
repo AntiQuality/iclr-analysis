@@ -1,0 +1,30 @@
+{"id": "Edbm1wp43K", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "single-domain generalized object detection"}
+{"id": "sk4IkvfwVC", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "certified robustness via linearity grafting"}
+{"id": "doTyfDv4FW", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "local anomaly detection in images"}
+{"id": "OSgCinkK4B", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "reasoning", "topic": "long-reasoning jailbreak of reasoning models"}
+{"id": "NTLCPR8NTR", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "evidence-certified clinical QA routing"}
+{"id": "owv9VvPwOW", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "SOCIETAL", "type": "eval", "target": "classic", "topic": "deepfake image detection dataset"}
+{"id": "8hiaVfCZlJ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE transfer under self-consuming training"}
+{"id": "2iMLiUrBiW", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "cross-lingual narrative role-play jailbreak"}
+{"id": "Bu7y9CV3zG", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe RL with hard constraints"}
+{"id": "foJOTjtyT2", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "post-fine-tuning safety recovery"}
+{"id": "tSRJ28Gisv", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination detection in VLMs"}
+{"id": "eiZIgH3WFy", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "narrow misalignment from aligned fine-tuning data"}
+{"id": "Mexg9Kpoyx", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward hacking in diffusion RL fine-tuning"}
+{"id": "HVciz8hi1c", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "critic-free policy optimization for RLHF"}
+{"id": "junLsbcJhV", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness to semantic perturbations"}
+{"id": "uuCQJtKMqS", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "privacy-preserving LLM API interaction"}
+{"id": "Xzr1Xjtyn2", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "transferable interpretability across LLMs"}
+{"id": "UkiGZBRZmg", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "decentralized optimization acceleration"}
+{"id": "uxNbEubRfu", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "classic", "topic": "detectability of identity unlearning requests"}
+{"id": "x3YMNAr61f", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "evidence-grounded audio reasoning"}
+{"id": "ENeoGllR2l", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "overthinking in reasoning models"}
+{"id": "rM8lcZxbj9", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "multi-turn jailbreak of unified multimodal models"}
+{"id": "0PYmHSugcj", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "SOCIETAL", "type": "defense", "target": "mllm", "topic": "multimodal hateful content moderation"}
+{"id": "b1IDDWPpAd", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "multi-turn red-teaming of LLM agents"}
+{"id": "cYCQVr0BgI", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "DECEPTION", "type": "defense", "target": "llm", "topic": "emergent misalignment mitigation in fine-tuning"}
+{"id": "SQj2PUKxLw", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private PCA"}
+{"id": "hu43nQaERO", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation robustness"}
+{"id": "6HB5ngatyS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "stale tool-call authorization in voice agents"}
+{"id": "msduXHeEA6", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-sensitive CVaR RL"}
+{"id": "a7j9MD3O2z", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal hallucination mitigation via attention"}

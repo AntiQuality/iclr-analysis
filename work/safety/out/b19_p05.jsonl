@@ -1,0 +1,30 @@
+{"id": "fb7yTBOV3p", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "on-device knowledge editing"}
+{"id": "xG0mQ4Xsfm", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "BACKDOOR", "type": "method", "target": "classic", "topic": "unlearning corrupted training data"}
+{"id": "ourMOktSsW", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "agent", "topic": "explainable LLM agents for resource allocation"}
+{"id": "PlCqBcfwkd", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation"}
+{"id": "Gdpv6fBqrX", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "LLM reward code for offline imitation learning"}
+{"id": "KIdmC9bg7Z", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "position", "target": "agent", "topic": "safety analysis of self-improving agents"}
+{"id": "7vIocBoPq8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "RAG evidence utilization failures"}
+{"id": "xcBV0fK0ZK", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "misleading agents in multi-agent systems"}
+{"id": "k79Un1LSXy", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reference mismatch in DPO"}
+{"id": "d1haddFStx", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "graph unlearning"}
+{"id": "S9iWSROf54", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "reward-free RLHF optimization"}
+{"id": "57jcZv7Kuq", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "character-level perturbation jailbreaks"}
+{"id": "S5mAL5U4NR", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "privacy of synthetic tabular data"}
+{"id": "8IgcgVlgVc", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "context-dependent activation steering"}
+{"id": "GICPSMuCNI", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "procedural policy compliance shielding for agents"}
+{"id": "GpBo97z6GH", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "deep safety alignment against prefilling attacks"}
+{"id": "Q10oKchkHw", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "persistent memory authorization in agents"}
+{"id": "jXYhfMxLnB", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "BACKDOOR", "type": "defense", "target": "llm", "topic": "runtime misbehavior detection via hidden states"}
+{"id": "VPtHqcafIY", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "LayerNorm removal for interpretability"}
+{"id": "SdPEzdGJ4G", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "training data memorization in fine-tuning"}
+{"id": "3ZMZfr8Cpi", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "notification injection on mobile agents"}
+{"id": "uh3QCxox5a", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "stale history reuse in multi-agent systems"}
+{"id": "dgirdRlD7Y", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "calibration in test-time prompt tuning"}
+{"id": "O8dieLuYNC", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "safety degradation under benign fine-tuning"}
+{"id": "nVGeJRTQr6", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "diffusion", "topic": "image watermark removal via regeneration"}
+{"id": "dYPpkd7aHu", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "character training for risk aversion"}
+{"id": "pr9gnbb2bs", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "statistical cost of machine unlearning"}
+{"id": "Q0MRBPTAVT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "photorealistic portrait generation RL"}
+{"id": "28Hfz8RLcD", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "concept-based interpretation of vision models"}
+{"id": "jlhgTkYgva", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "visual history encoding in VLAs"}

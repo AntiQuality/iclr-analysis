@@ -1,0 +1,30 @@
+{"id": "Uowq0ts0EJ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "policy-adaptive guard models for agents"}
+{"id": "GKHnmZBqXq", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "diffusion", "topic": "identity protection against diffusion personalization"}
+{"id": "hLTwlmllgB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "online learning on streaming data"}
+{"id": "v8yooSV1AW", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "OOD", "type": "theory", "target": "classic", "topic": "certified group fairness under distribution shift"}
+{"id": "ODibPQmeP1", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "reward model bias calibration"}
+{"id": "5tVsS1vVLC", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "method", "target": "reasoning", "topic": "probing CoT to predict reasoning model behavior"}
+{"id": "liQueBuFXi", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable adversarial image attacks on VLMs"}
+{"id": "sNw1RMRHB4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "circuit decomposition into low-rank transformations"}
+{"id": "DV7SnWL9j9", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "deletable compositional generation"}
+{"id": "dZ8LimQ7N3", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "robustness of biological foundation models"}
+{"id": "6OxvdqP6RH", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "dense credit assignment for RLHF"}
+{"id": "PJxRsQZfbx", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference alignment for diffusion models"}
+{"id": "P0lB2uLHli", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "certified smoothing jailbreak defense"}
+{"id": "RiU4WP0ld9", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "kCA5z6XrTF", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "MoE routing interventions for step verification"}
+{"id": "2avgS6ZkFu", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT faithfulness / causal reliance"}
+{"id": "0g8hnBea8D", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion image super-resolution artifacts"}
+{"id": "AJBJ7dTmLY", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "gender bias in text-to-image models"}
+{"id": "Tzex3gVsu5", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private synthetic text"}
+{"id": "Lqt5weP0Gr", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "DECEPTION", "type": "attack", "target": "rl_robot", "topic": "AI manipulation of human-AI teams"}
+{"id": "siEhJKTFEX", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "robustness of biosecurity screening classifiers"}
+{"id": "Qaa6LjDMHq", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "agent", "topic": "self-preservation in language agents"}
+{"id": "0ESONo1863", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference in test-time adaptation"}
+{"id": "J8xDL4jrnD", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "LLM use in peer review"}
+{"id": "a7LlI2n7OB", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "theory", "target": "llm", "topic": "LLM use in peer review"}
+{"id": "0oU6sU8ZDZ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private sampling algorithms"}
+{"id": "JA58fls13L", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "FT_ROBUST", "type": "method", "target": "llm", "topic": "preserving uncertainty expression under fine-tuning"}
+{"id": "Xn6EnJZghu", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "forget-set retrieval for LLM unlearning"}
+{"id": "pditRmQF4l", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "validating truth probes"}
+{"id": "oG51VONhcN", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in video diffusion"}

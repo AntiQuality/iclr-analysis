@@ -1,0 +1,30 @@
+{"id": "1pN7mqygAr", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "general", "topic": "robust audio watermarking"}
+{"id": "tgdYKhuzm5", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "method", "target": "agent", "topic": "training LLM agents on cyber CTF tasks"}
+{"id": "rD5P7rtREF", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "classic", "topic": "model extraction via GNN explanations"}
+{"id": "xltpXfyZDL", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "LLM agents for APT attack provenance"}
+{"id": "tf5gd7Ife1", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "ALIGN_TRAIN", "type": "method", "target": "agent", "topic": "step-level safety alignment for LLM agents"}
+{"id": "6NUtPO9PdV", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "sentence-level attribution in reasoning traces"}
+{"id": "891bscHQBA", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "answer stability under benign input perturbation"}
+{"id": "CNiJg49vyP", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "Byzantine-robust federated aggregation"}
+{"id": "hNd5L7WnjC", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "generalizable deepfake face forgery detection"}
+{"id": "cgmo3v18sx", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "SAE-based data filtering for VLM pretraining"}
+{"id": "Wfe6Wrh6xw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward alignment of 3D diffusion models"}
+{"id": "YD35wEcjhf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "post-conclusion continuation in CoT SFT data"}
+{"id": "vv8wSnUhVn", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward over-optimization in DPO"}
+{"id": "KQpJxcOxr9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "client-fair federated person re-identification"}
+{"id": "87LFzHKd5G", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "persistent model self beneath personas"}
+{"id": "utVraPnnZw", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "OOD", "type": "method", "target": "general", "topic": "post-hoc uncertainty quantification"}
+{"id": "dVgfIdnRgx", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "eval", "target": "llm", "topic": "honesty elicitation and lie detection"}
+{"id": "eX4l4K7R3c", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "diffusion", "topic": "demographic debiasing in diffusion models"}
+{"id": "i2NVLvbzmd", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "block-local memory for exact cache reuse"}
+{"id": "HzKNDL9p5J", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "relationship-conditioned full-duplex speech agents"}
+{"id": "oTGJZtrprx", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "robust diffusion image watermarking"}
+{"id": "zjcLFxT7m8", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "latent uncertainty directions for factuality"}
+{"id": "6nYWuUL6Io", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": "OOD", "type": "eval", "target": "rl_robot", "topic": "robot task planning robustness to impaired speech"}
+{"id": "5W7IHizaKd", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "delayed harm replay in safe RL"}
+{"id": "F9cKXn4RCM", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "general", "topic": "membership inference in federated prompt tuning"}
+{"id": "aZdcNDf3pc", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection via internal representations"}
+{"id": "MC0c6Vsq91", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "protective perturbations against unauthorized 3D reconstruction"}
+{"id": "PKToLtvIZl", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "faithfulness of natural-language activation explanations"}
+{"id": "xhEYyPYgzP", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "t4mxrDk437", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "diffusion", "topic": "preventing unauthorized diffusion personalization"}

@@ -1,0 +1,23 @@
+{"id": "nsqu9ug4Kp", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "locally differentially private Bayesian optimization"}
+{"id": "RymkoKMLCB", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "analysis", "target": "mllm", "topic": "compositional harm safety robustness in LVLMs"}
+{"id": "O8ZotTjxRL", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "FAIR", "type": "analysis", "target": "multiagent", "topic": "in-group bias in multi-agent LLM cooperation"}
+{"id": "yvW87aKeFa", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "cross-model SAE feature coactivation"}
+{"id": "h8PCI0zehv", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "hardware-triggered backdoors"}
+{"id": "8xSU8Oscvg", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT length reduction via preference optimization"}
+{"id": "Uh2vvMhjmA", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking diffusion language models"}
+{"id": "QSxnB2PXJb", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "DANGER_EVAL", "type": "method", "target": "llm", "topic": "robust unlearning of hazardous knowledge"}
+{"id": "TToNLahVXD", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "agent harness vulnerability detection"}
+{"id": "p3A0n5sDNs", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "power-law surrogates for trust-region RL"}
+{"id": "5QSABMAdjf", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "agent", "topic": "editing parametric agent memory"}
+{"id": "nzPspcH7dz", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM hardware Trojan auditing benchmark"}
+{"id": "6XdUI9Cibc", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "general", "topic": "hard nonlinear constraints in neural networks"}
+{"id": "ngxyKpb52A", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "KV cache eviction"}
+{"id": "OOYO9x9gpH", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "IP", "type": "eval", "target": "diffusion", "topic": "logo concept erasure benchmark"}
+{"id": "H3ooCxZiAX", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "diffusion", "topic": "T2I prompt safety guardrails"}
+{"id": "Pm3N5wnUb7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "skill mechanism localization in VLMs"}
+{"id": "efoe5VJfKz", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward model overoptimisation in RLHF"}
+{"id": "Tzcj46FpZT", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "principled concept extraction beyond SAEs"}
+{"id": "m9IO0tzu60", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "COcC2p78v2", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "Schwartz value representation learning"}
+{"id": "izqDX2cBJ5", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "llm", "topic": "evaluation awareness detection"}
+{"id": "Ib1jIeUqf6", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP-GD risk bounds under interpolation"}

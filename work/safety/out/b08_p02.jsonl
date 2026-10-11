@@ -1,0 +1,30 @@
+{"id": "Cifw49ooSU", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "attack", "target": "multiagent", "topic": "topology inference attack on multi-agent systems"}
+{"id": "fmn7RIbLmF", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "safety erosion from parametric in-context learning"}
+{"id": "7mCo3R3Wyn", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL fine-tuning of flow models"}
+{"id": "0bPrfRIwPI", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "9QOtWOZmJW", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "indirect prompt injection red-teaming of agents"}
+{"id": "s6xhLtm9Gt", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "uncertainty guarantees in LLM content moderation"}
+{"id": "lSssiO5R5A", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "preference learning theory Bradley-Terry"}
+{"id": "zSsNzxjWP4", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "compression and adversarial robustness"}
+{"id": "9bMnCRcBM4", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "fault-tolerant robot manipulation"}
+{"id": "d5owldiXkm", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "reasoning trace faithfulness"}
+{"id": "fYn5AQaVua", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "privacy-preserving LLM inference"}
+{"id": "6ffIOqDkeK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "agent runtime guardrails"}
+{"id": "32C5hsq9Bo", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "FAIR", "type": "defense", "target": "llm", "topic": "regulatory compliance risk in LLM training"}
+{"id": "ruNZQYtXsp", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "general", "topic": "privacy auditing via membership inference"}
+{"id": "1cYh01go7K", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "nDdpp0285M", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "multi-agent delegation for reasoning"}
+{"id": "ewMERT5PC9", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "jailbreak guardrails for embodied agents"}
+{"id": "OR4anjIaT3", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "zero-shot adversarial robustness of CLIP"}
+{"id": "bUsa1smD4p", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "classic", "topic": "batch-based OOD detection"}
+{"id": "gpo6UBSyJ6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "rubric-based LLM evaluation"}
+{"id": "KVrUqfQ8xH", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "concept-based model explanations"}
+{"id": "7XPnWLC54h", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "few-step image generation with RL"}
+{"id": "uz2vUuT74E", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on collaborative perception"}
+{"id": "6bXdhIQJVO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "learning dynamics of CoT state tracking"}
+{"id": "OkjB6PWJEA", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box jailbreak attacks"}
+{"id": "f07Kf4pD0f", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "certified robustness via convex relaxation"}
+{"id": "V03iEp7t4v", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor poisoned sample detection"}
+{"id": "NHeM7X2Wr0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model training"}
+{"id": "Zq7XXV5Cru", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "MLLM-generated safety constraints for planning"}
+{"id": "LZZENDlZt9", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model training"}

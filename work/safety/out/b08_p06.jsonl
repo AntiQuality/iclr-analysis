@@ -1,0 +1,23 @@
+{"id": "Y9b5UuGi9O", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "EWIjZ6MOQX", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM influence on human decision-making"}
+{"id": "RoxVchuVww", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "temporal grounding of RAG citations"}
+{"id": "Jlc4IV3qr4", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "decoupling factual knowledge from LMs"}
+{"id": "rRKveE98VH", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "prompt injection persistence via context compaction"}
+{"id": "ddUktvl59g", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "i74loq2c23", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM hallucination mitigation"}
+{"id": "Mu4nBIeYmr", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained RL sample efficiency"}
+{"id": "Ntju2HNwRq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "affect state tracking mechanisms in LMs"}
+{"id": "XOHh3z8FP6", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "OOD detector benchmark evaluation"}
+{"id": "fxFrXt9tKX", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "toxic molecule generation red-teaming"}
+{"id": "DBhUDhfJfh", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "instruction revocation in long agent sessions"}
+{"id": "rx2d6VSCBD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "failure data for robot reward learning"}
+{"id": "JEmaV0rLdp", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "agent", "topic": "auditing AI scientist research claims"}
+{"id": "0dAyCDALn5", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "unsafe defaults in text-to-image generation"}
+{"id": "q4e7geBr2y", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "ALIGN_TRAIN", "type": "method", "target": "agent", "topic": "agent safety alignment training"}
+{"id": "QUnPxb7v2e", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion model watermarking"}
+{"id": "0mYcWbQyo7", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "continual LLM unlearning"}
+{"id": "Y1suaFtBwf", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "automated attribution graph analysis for safety"}
+{"id": "K2bz5SudPr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "physical quantity probing in video diffusion"}
+{"id": "Qpr2ZiFIcZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "conditional hypothesis generation from text"}
+{"id": "41Z9kK4T0N", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "reasoning", "topic": "CoT hijacking jailbreak defense"}
+{"id": "w7jkX7FfZ5", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "llm", "topic": "constrained RL for safe code generation"}

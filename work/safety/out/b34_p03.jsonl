@@ -1,0 +1,30 @@
+{"id": "QaZqd4a9Ed", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "9DCi9Y8fYl", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "efficient online RLHF reward modeling"}
+{"id": "6SZHa9bHO2", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "attack", "target": "llm", "topic": "privacy backdoors in RAG systems"}
+{"id": "5EqmkQN9bK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "guard-executor coordination for agent safety"}
+{"id": "gMytUk3pfP", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "adaptive attacks on post-hoc safety repair"}
+{"id": "6k0c5tCz7Y", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "activation steering for medical VQA correction"}
+{"id": "d1zdLEAwwz", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "DPO vs continued SFT"}
+{"id": "uiNEaqdOY5", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "multilingual tokenizer fragmentation disparities"}
+{"id": "c2HA3xucfZ", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "controllable safety via MoE upcycling"}
+{"id": "hlQtUIgCal", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "distillation-augmented preference optimization"}
+{"id": "cMV7OAScY2", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "steering socially responsible behavior in LLMs"}
+{"id": "q7sS0HKv0l", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "concept erasure for demographic bias"}
+{"id": "ja0tZJS3hM", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "general", "topic": "knowledge transfer in knowledge distillation"}
+{"id": "igbRHKEiAs", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "lqnRwnjp7J", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "deception probes benchmarking"}
+{"id": "GLPmZhhCAE", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "bias mitigation benchmark for vision and LVLMs"}
+{"id": "6jIc8m38gj", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "SAE contribution decomposition of networks"}
+{"id": "5WJzbZZeh1", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated image detection with MLLMs"}
+{"id": "OuMNJoKJBQ", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "reasoning-aware safety alignment against jailbreaks"}
+{"id": "eEnW7lUXxY", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "medical hallucination in radiology MLLMs"}
+{"id": "cJDTlO6N1u", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "classic", "topic": "anti-forensic attacks on AI-generated image detectors"}
+{"id": "xOVLCeI7Rd", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "diffusion", "topic": "radioactive watermarks for training-data tracing"}
+{"id": "AoZyris0nv", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "eval", "target": "multiagent", "topic": "collective financial failures in LLM agent societies"}
+{"id": "Jy8Fx1E8lB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "in-context reward models for robot manipulation"}
+{"id": "unmj67QVP1", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "token and task representational subspaces"}
+{"id": "jZDhM6IJNq", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "attention mechanism of jailbreak attacks"}
+{"id": "2Nxok8UtV8", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "defense", "target": "rl_robot", "topic": "reward hacking in VLA robot RL"}
+{"id": "X74KnsoYEM", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "label smoothing for machine unlearning"}
+{"id": "C7GAtj9UJZ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "physical adversarial attacks on driving perception"}
+{"id": "vCK9KqAnV2", "y": 2027, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "3D Gaussian Splatting watermarking"}

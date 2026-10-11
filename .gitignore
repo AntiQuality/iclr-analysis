@@ -1,0 +1,5 @@
+# large intermediate data rebuilt by scripts/build_corpus.py from public mirrors
+data/corpus.parquet
+__pycache__/
+data/safety_candidates.parquet
+work/safety/batches/

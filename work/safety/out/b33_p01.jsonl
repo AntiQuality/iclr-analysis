@@ -1,0 +1,30 @@
+{"id": "P3Z7HhMtW1", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "poisoned data forensic detection"}
+{"id": "DDHEqVUKTi", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "strategyproof linear regression mechanism design"}
+{"id": "7MjYspnB9H", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "analysis", "target": "multiagent", "topic": "fault contagion in LLM multi-agent systems"}
+{"id": "Hy9bg4NnDG", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "training-data extraction from LLMs via jailbreaks"}
+{"id": "3Z5Ygk2g1U", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "agent", "topic": "local DP certified agent tool routing"}
+{"id": "mcW0WyMKWW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion preference alignment dense reward"}
+{"id": "HbyUxlpFNJ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "white-box hallucination detection in LLMs"}
+{"id": "qsatfDyMHu", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "invisible image watermarking robustness"}
+{"id": "jV2xkqr9J6", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "verbatim memorization extraction in LLMs"}
+{"id": "D38gr0oexD", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "negative guidance for robot policy constraints"}
+{"id": "pFuxtzaC3K", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward RL for reasoning"}
+{"id": "AkLyfa0dQN", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "diffusion", "topic": "anti-personalization protective perturbations"}
+{"id": "jL7XBcMGuw", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "analysis", "target": "classic", "topic": "label poisoning in tactile models"}
+{"id": "yNVoSoxM0u", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "general", "topic": "adversarial reward-model attacks on offline bandits"}
+{"id": "HC6RlhcCNI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "efficient split federated learning"}
+{"id": "mNeitRAdWV", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "efficient tool-integrated reasoning"}
+{"id": "Ui1PRSKHHQ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "MLLM hallucination mitigation decoding"}
+{"id": "zW1rC1dm94", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "backpropagation gradients vs brain responses"}
+{"id": "kI7kCgcY8Y", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "backdoor poisoning of agent training data"}
+{"id": "luLOawnXMS", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "full-stack app generation benchmark"}
+{"id": "6YTEDVd80T", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "WATERMARK", "type": "defense", "target": "general", "topic": "synthetic media misinformation mitigation"}
+{"id": "VrDzjzIjMC", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "classic", "topic": "model watermarking against distillation"}
+{"id": "yQUjLyRLkW", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair regression fairness-utility trade-off"}
+{"id": "AuzSDvSUzg", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial purification defense"}
+{"id": "URDLFvUFiF", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc OOD detection"}
+{"id": "Tlffy1vOZ2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "knowledge editing locality"}
+{"id": "yNMqog18g4", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "multi-objective traffic signal control"}
+{"id": "8Q0G2EWioK", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "safety continued pretraining for LLMs"}
+{"id": "KfOVJk3kyJ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "zero-knowledge verifiable private computation"}
+{"id": "iDtmbOOzwB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM-simulated survey respondent validity"}

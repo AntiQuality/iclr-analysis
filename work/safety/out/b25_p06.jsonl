@@ -1,0 +1,23 @@
+{"id": "2qPJhax9At", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "ALIGN_TRAIN", "type": "eval", "target": "mllm", "topic": "consequence-aware MLLM safety"}
+{"id": "lAa9nhwLdu", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "stable gradient-difference LLM unlearning"}
+{"id": "EYC0ByQYjO", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "watermarking autoregressive image generation"}
+{"id": "IOgqcspZdR", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "mllm", "topic": "cultural understanding of VLMs"}
+{"id": "aUgq0XEAt1", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "heterogeneity in DPO"}
+{"id": "sz2gtTBVIq", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "multilingual LLM trustworthiness benchmark"}
+{"id": "wBfajUkDn1", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "residual knowledge after LLM unlearning"}
+{"id": "bi0W5GwrZq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "llm", "topic": "best-of-N reranking regret"}
+{"id": "sAzwmLa1Lw", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference learning from user dissatisfaction"}
+{"id": "WgZJCnb8lJ", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair GNNs with missing sensitive attributes"}
+{"id": "2EH7m3WJOW", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "multi-turn jailbreak attacks"}
+{"id": "S9Ogp2WcHX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "multi-subject personalized generation benchmark"}
+{"id": "tncqFvLRkj", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "privacy-preserving deepfake detection"}
+{"id": "lHBkoPg6K4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "repetition collapse in diffusion LMs"}
+{"id": "Ya7h85Xb2o", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "agent", "topic": "CoT faithfulness in agent actions"}
+{"id": "2UQFQeS2uq", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "mllm", "topic": "black-box backdoor detection in MLLMs"}
+{"id": "pzCUvyTTsN", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "malicious agent skills prompt injection"}
+{"id": "KMtLgvt7mb", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "physical adversarial attacks on detectors"}
+{"id": "fHgPwcSeeH", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "test-time evolving guardrails for LLM agents"}
+{"id": "1697uoLMLT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated continual learning with prompts"}
+{"id": "gpLz4rJjGA", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "LLM dark patterns and manipulation"}
+{"id": "6rz7VyAatm", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks on object detection"}
+{"id": "arzW42n0jT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention sink mechanism"}

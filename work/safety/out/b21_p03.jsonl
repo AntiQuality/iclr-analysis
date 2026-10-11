@@ -1,0 +1,30 @@
+{"id": "kYG2bagDWJ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "mllm", "topic": "adversarial robustness of VLM test-time adaptation"}
+{"id": "HGoc2AbXsm", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "circuit faithfulness benchmark validity"}
+{"id": "FARvuE3ais", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "classic", "topic": "exposure fairness in ranking"}
+{"id": "UKFOpWt3fr", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "social bias mitigation in LLMs"}
+{"id": "zqtfYsbtro", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "general", "topic": "multi-objective local search"}
+{"id": "RXsSXsOFuA", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "LUiqtv6vrd", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "jailbreak defense via self-rewarded RL"}
+{"id": "GWM1gYzRE4", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "general", "topic": "human-AI decision accuracy auditing"}
+{"id": "jiteWKkiuE", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "wqbnA6PcKr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "robust preference alignment for diffusion"}
+{"id": "03ccrSpjOx", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "value alignment in multi-agent LLM debate"}
+{"id": "FJ6AlmTufP", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "differentially private text reporting"}
+{"id": "bXlg7np7XS", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "JB_ATK", "type": "attack", "target": "general", "topic": "universal adversarial perturbations"}
+{"id": "pDqwEXUMWc", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "preference annotation reliability"}
+{"id": "c1Jzp1cZOy", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "multi-table question answering"}
+{"id": "hfEFadtfAd", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "ADV_ROBUST", "type": "attack", "target": "diffusion", "topic": "adversarial NSFW hijacking of diffusion models"}
+{"id": "6xcPyBfYeK", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "indirect prompt injection red-teaming reliability"}
+{"id": "r0DyvxuZSE", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "LLM factual knowledge unlearning"}
+{"id": "i1CV85c8RC", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarially robust architectures"}
+{"id": "LvT8QLzNVB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "interatomic potential uncertainty"}
+{"id": "gqPeFXX5wS", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "mllm", "topic": "private federated medical VQA"}
+{"id": "YPUISOJ9Rg", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense for concept bottleneck models"}
+{"id": "IyTA7a9ppZ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "autonomous driving trajectory planning"}
+{"id": "zD5kl1X7xh", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor data poisoning defense"}
+{"id": "BzNf90Csfa", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference on data curation"}
+{"id": "ZraLv0JwtB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "activation steering localization vs control"}
+{"id": "kem0GvTx6C", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "mllm", "topic": "reward hacking in RL fine-tuning"}
+{"id": "RsTTew7WE5", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "self-report vs behavior dissociation"}
+{"id": "3pjI2Lrj50", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "process vs outcome reward sample complexity"}
+{"id": "awBRdqA09x", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "deep safety alignment against jailbreaks"}

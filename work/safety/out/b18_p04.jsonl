@@ -1,0 +1,30 @@
+{"id": "VlDiauRfk0", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "certified unlearning theory"}
+{"id": "IeNXtofK6T", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "prompt injection detection"}
+{"id": "bhPaXhWVKG", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "agentic workflow generation"}
+{"id": "NfjsrorG4H", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "medical VLM hallucination"}
+{"id": "6UGCLVZVJn", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "hallucination detection via internal states"}
+{"id": "jNpyhtMWWL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "online fair division"}
+{"id": "4vPLl7zVBU", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "corruption robustness via diffusion features"}
+{"id": "MwBqZqYWXN", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "black-box fairness auditing"}
+{"id": "eBJYQwqfEP", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "endogenous compliance drift in agents"}
+{"id": "UDwmE0jPw3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "mechanistic analysis of VLA policies"}
+{"id": "RZHvDWr0x0", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM-mediated decision manipulation"}
+{"id": "HFmxJSOI9S", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "sparse autoencoder feature recovery"}
+{"id": "S4dBL1kAEX", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe decoding for VLA policies"}
+{"id": "lzxkk1ynai", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal label noise diagnosis"}
+{"id": "sMjESVShz3", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "zc09CYjJwu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "spatial reasoning gap in VLMs"}
+{"id": "MfVpY7E7Xw", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "OyXIRFCscc", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "modular addition mechanisms"}
+{"id": "KM8kL0EvKY", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "epistemic transparency under knowledge conflict"}
+{"id": "MWu9EU6nkM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "industrial control code generation"}
+{"id": "u6gVELv8sv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM industrial anomaly inspection"}
+{"id": "Re3A6vzCTC", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy-preserving RAG"}
+{"id": "B6ILMPPKnK", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "RAG knowledge base data extraction"}
+{"id": "nsi6beQLbn", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "pessimistic DPO with conformal guarantees"}
+{"id": "NnlelrGapm", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "agent", "topic": "uncertainty quantification for LLM agents"}
+{"id": "ujpTOmuWpq", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe multi-agent RL"}
+{"id": "How3ivYLwf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "fMRI connectivity diagnosis"}
+{"id": "DcrtGkprHc", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection outlier synthesis"}
+{"id": "xXtm0uXwpZ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection"}
+{"id": "wT2k544flc", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "malicious agent skill detection"}

@@ -1,0 +1,30 @@
+{"id": "Rx4RIf0bMO", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "multi-agent LLM-as-judge evaluation"}
+{"id": "GEJILNb7Mw", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "RLHF policy optimization"}
+{"id": "R5IVtCQliF", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "safety degradation after benign fine-tuning"}
+{"id": "axQgyubT4X", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference data selection for DPO"}
+{"id": "uXecy0nKiJ", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "activation steering breaks safety alignment"}
+{"id": "dBaWaZ4g4c", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "VLA safety for robot manipulation"}
+{"id": "qTcPvZGxrl", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "eliciting LLM moral profiles"}
+{"id": "iGVdBEsFnn", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "adaptive best-of-N sampling"}
+{"id": "xJEphLBCqS", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination mitigation in LLMs"}
+{"id": "87jXCZzMnk", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "probe-based jailbreak detection"}
+{"id": "OMnzG9O0FE", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "temporal grounding mechanisms in video MLLMs"}
+{"id": "QQdn8nNqgi", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "backdoor attacks on VLA models"}
+{"id": "yCfBWq6bfQ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "agent safety under accumulated context"}
+{"id": "0Fl2BtJlBz", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "compositional generalization learning dynamics"}
+{"id": "sD4VE6dPBF", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "agent", "topic": "AI control for self-improvement sabotage"}
+{"id": "0yZiAv0rMW", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "authorization for tool-using agents"}
+{"id": "hqoNx83fzF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "general", "topic": "protein representation evaluation"}
+{"id": "2enhyOGIfa", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "diffusion", "topic": "differentially private image generation"}
+{"id": "QP7WX3XmEy", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "general", "topic": "biosafety red-teaming of protein models"}
+{"id": "f1EO4zFcqR", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "code watermarking for LLMs"}
+{"id": "XeBL12llCW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agent memory management credit assignment"}
+{"id": "ivLeExWXbx", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering method"}
+{"id": "0tnKNuuVsY", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "defense", "target": "classic", "topic": "robust GNNs against graph poisoning"}
+{"id": "DpNsyjKqXT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "internal user models in LLMs"}
+{"id": "mteZOi0xyu", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward modeling from ordinal feedback"}
+{"id": "8w2dqQfiH3", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "general", "topic": "LLM synthesis of barrier certificates"}
+{"id": "RvCkW44eOm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM simulation of human survey responses"}
+{"id": "tRJJkeMtby", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "qcx4q4RksZ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "tool-call hallucination in agents"}
+{"id": "XMGzodoTwV", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "personality circuits in LLMs"}

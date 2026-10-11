@@ -1,0 +1,30 @@
+{"id": "ppgq3jfqWX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "antimicrobial peptide design"}
+{"id": "yoVbNsRK03", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "multiagent", "topic": "privacy-aware federated multi-agent collaboration"}
+{"id": "MW8kq4ucR8", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "token-level DPO credit assignment"}
+{"id": "GNWMrNlBlX", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "analysis", "target": "multiagent", "topic": "fragmented attacks evading agent runtime monitors"}
+{"id": "waIraBjnc0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "variational activation function design"}
+{"id": "WIy6PEkmO8", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "federated visible-infrared person re-identification"}
+{"id": "sZbc4jhm0S", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "training-data social priors shape model trust"}
+{"id": "vT6YfPt8Uk", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc uncertainty meta-model"}
+{"id": "00fJODQVdn", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "sensitive activity privacy in mmWave HAR"}
+{"id": "ZZuqsaIOOh", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "data-free model extraction defense"}
+{"id": "aQ1IvLU9yT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "training data attribution interventions"}
+{"id": "IDQdJphVxR", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "zero-shot class unlearning"}
+{"id": "9NxDihXqSc", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "one-shot federated learning efficiency"}
+{"id": "GeGyLDe52S", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "generalizable deepfake detection"}
+{"id": "TbdXqLjruE", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "42objvKs3y", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "jailbreak benchmark for mobile agents"}
+{"id": "bQmaOpXE1v", "y": 2027, "rel": 1, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "one-sided activation steering"}
+{"id": "LSZ0adCum7", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "RL-based black-box jailbreak attack"}
+{"id": "7mxxQAMSIU", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "search agent robustness to visual misinformation"}
+{"id": "oATEaCEnPh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "peer review feature trend analysis"}
+{"id": "YgMYjM8HkK", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "worst-group robustness in continual learning"}
+{"id": "WtGCxYPpvD", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "mllm", "topic": "AI-generated fraudulent evidence detection"}
+{"id": "dIJ6IU11yN", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "RLHF sample efficiency theory"}
+{"id": "8u8RDncRGM", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "HALLU", "type": "attack", "target": "mllm", "topic": "adversarial object hallucination in video LLMs"}
+{"id": "j0SJyQMALf", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "FHE privacy-preserving inference"}
+{"id": "Aek2zBlsKv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "sepsis treatment LLM agent"}
+{"id": "hm0oEvAcAE", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective preference alignment"}
+{"id": "o6OWfKqCcw", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "synthetic tabular data generation"}
+{"id": "d6GPhs75Gm", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "grokking failure and variable binding"}
+{"id": "cLLimEnHqU", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "agent memory contamination prevention"}

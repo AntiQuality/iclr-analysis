@@ -1,0 +1,23 @@
+{"id": "VmB1GGeU7y", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": "OVERSIGHT", "type": "eval", "target": "reasoning", "topic": "safety constraint violations in LRM task planning"}
+{"id": "I9YfvZ3VH7", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "red-teaming coverage via quality-diversity search"}
+{"id": "gEu9xXzTlI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "generative process reward models"}
+{"id": "VGUH3U1mBd", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "theory", "target": "general", "topic": "user protection against adaptive platform optimization"}
+{"id": "S19Gc84xmb", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "context-induced errors in VLMs"}
+{"id": "LBjoEeJ5oP", "y": 2027, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "mllm", "topic": "hidden content recognition in generated images"}
+{"id": "HD7ghtLVvd", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "OOD", "type": "analysis", "target": "classic", "topic": "speech deepfake detection shortcuts"}
+{"id": "89cECgVi4S", "y": 2027, "rel": 1, "sub": "INTERP_SAFE", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM steering method benchmark"}
+{"id": "ibXhUapwcz", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial example generation"}
+{"id": "lUEedsO2RO", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "knowledge-boundary-aware abstention in reasoning models"}
+{"id": "uHw27dDfbO", "y": 2027, "rel": 2, "sub": "IP", "sub2": "OVERSIGHT", "type": "defense", "target": "llm", "topic": "LLM API model identity verification"}
+{"id": "OzBkhsAURH", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "reward hacking in coding RL"}
+{"id": "4cKnr4IZtH", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "FAIR", "type": "method", "target": "diffusion", "topic": "concept steering for T2I safety and debiasing"}
+{"id": "kL5s1daacQ", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "probe-based safety monitoring for diffusion LLMs"}
+{"id": "7SDVew6ZKy", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local differential privacy inference"}
+{"id": "zMS0U4oIU8", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "ArKFzXnhWf", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "Nash learning from human feedback convergence"}
+{"id": "Kgf9dVDKcO", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking for attribution"}
+{"id": "6xy4ixNMnp", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "confused-deputy attacks on coding agents"}
+{"id": "mkiSHfWgb4", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "BACKDOOR", "type": "attack", "target": "classic", "topic": "malicious unlearning request attacks"}
+{"id": "96UDhXfENi", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "certifying LLM judge verifier failures"}
+{"id": "u0Luxn1MYM", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial patch detection"}
+{"id": "2T0y1aEzKe", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "personalized preference alignment"}

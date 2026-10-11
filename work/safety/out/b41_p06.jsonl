@@ -1,0 +1,23 @@
+{"id": "DpHBd1SXyE", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PI", "type": "attack", "target": "llm", "topic": "RAG knowledge poisoning attacks"}
+{"id": "2fAXwfIawS", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "safety removal via task vectors"}
+{"id": "Uu1fbKxEAb", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "analysis", "target": "llm", "topic": "jailbreak robustness of diffusion LMs"}
+{"id": "aMGkFCMOf1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "cybersecurity text embedding benchmark"}
+{"id": "tcF72Ul9NA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "fine-grained preference optimization for diffusion"}
+{"id": "7rvMexIZA1", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "gradient-based OOD detection"}
+{"id": "59UXqRT1in", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "agricultural misinformation fact-checking"}
+{"id": "Ytw4pWrGGW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "quality-aware physiological rhythm reasoning"}
+{"id": "KXjodzWukU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "position", "target": "general", "topic": "limits of individual counterfactuals"}
+{"id": "GKQc3ItjI0", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "diffusion customization under protective perturbations"}
+{"id": "dBJpBmn5MH", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness via soft loss"}
+{"id": "gxgyxCQ6rl", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "eval", "target": "rl_robot", "topic": "embodied agent safety benchmark"}
+{"id": "6iIXcxQ62F", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "zero-shot adversarial robustness of CLIP"}
+{"id": "HdUlQV6dde", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "benign fine-tuning safety degradation"}
+{"id": "SzFsrRf7RJ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving face recognition"}
+{"id": "gwi2T2CsfK", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "red teaming audio deepfake detectors"}
+{"id": "63OyUCD9HC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "Bayesian low-rank adaptation"}
+{"id": "A09ReRzNU3", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "jailbreak defense with low over-refusal"}
+{"id": "z7iK0I9iUE", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "circuit localization from free-form generation"}
+{"id": "YQeWgbsnPt", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "privacy leakage by browser agents"}
+{"id": "bvjN2EzrM3", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "system prompt adherence for safety"}
+{"id": "l09t6heq83", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_ATK", "type": "analysis", "target": "llm", "topic": "shallow safety alignment"}
+{"id": "LEWQk3j73j", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "imbalanced multi-class ensemble"}

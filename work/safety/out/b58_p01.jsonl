@@ -1,0 +1,30 @@
+{"id": "XJxXSMLDoZ", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe trajectory planning in autonomous driving"}
+{"id": "1trW14d4ja", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "method", "target": "llm", "topic": "efficient suffix jailbreak evaluation"}
+{"id": "lM3dNuwy2r", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "preference optimization dynamics DPO vs PPO"}
+{"id": "USa4hbQ5lF", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "moral judgment-action consistency in agents"}
+{"id": "yyr2PSDBly", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM quantization error compensation"}
+{"id": "CqwesbUXkY", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning layer selection"}
+{"id": "SZEO5MrQN5", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "bias of LLM peer reviewers"}
+{"id": "GVzwnds0ZL", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "analysis", "target": "llm", "topic": "refusal sensitivity to user risk context"}
+{"id": "1ePY26RJ2T", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "continual instruction tuning forgetting"}
+{"id": "mLL1AQeNsE", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM knowledge editing"}
+{"id": "t8p3BkzOKo", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "reasoning", "topic": "reasoning trace extraction and distillation stealing"}
+{"id": "271UL2Ch5r", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness to structured deletion"}
+{"id": "reJVZajXqT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder feature quality"}
+{"id": "eSI3t4fAG8", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "evasion of activation monitors by models"}
+{"id": "PNU9Rj5RDQ", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "control-flow hijacking in multi-agent systems"}
+{"id": "cTCx0kjnSn", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "grokking mechanisms in multitask modular arithmetic"}
+{"id": "wP3ou7tnlZ", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "general", "topic": "input reliability via cross-model representation disagreement"}
+{"id": "jDhBl5eznH", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "refusal direction ablation robustness"}
+{"id": "NwRNsiAHcF", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness via persistent homology"}
+{"id": "H52CPqWFx9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "singular learning theory and mechanistic interpretability"}
+{"id": "oBWWEoNYjM", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "knowledge editing attack on MLLMs"}
+{"id": "7y9IKjl8dt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward models for math RL"}
+{"id": "5N2CafbMbJ", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DECEPTION", "type": "eval", "target": "multiagent", "topic": "voluntary collusion among LLM agents"}
+{"id": "JwTTe0DNRJ", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "few-shot OOD detection with VLMs"}
+{"id": "A4LvENbeBY", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "class unlearning in CLIP"}
+{"id": "ExzCs8jaKl", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL with scarce violation data"}
+{"id": "bJI3LHVQRT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "sparse autoencoder feature consistency"}
+{"id": "Gat4Cm2m7u", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "randomized smoothing with diffusion denoisers"}
+{"id": "uIQPJJ7nn1", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective safety alignment"}
+{"id": "HVAznTPXdX", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "anti-facial recognition privacy protection"}

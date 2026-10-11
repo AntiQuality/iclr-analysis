@@ -1,0 +1,30 @@
+{"id": "YL5oma2FkD", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "knowledge editing and unlearning interference"}
+{"id": "MDulpv6NRF", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "geometry-consistent video generation"}
+{"id": "zilyretTjq", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "VALUES", "type": "eval", "target": "multiagent", "topic": "self-preservation vs human harm in LLM agents"}
+{"id": "Hf7jMztvve", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "strategic deception detection with SAEs"}
+{"id": "cclWhNhJ6D", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-constrained diffusion driving planner"}
+{"id": "iJ0Xl52vzh", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "classic", "topic": "misinformation detection"}
+{"id": "L5uW8xwAkS", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE evaluation reliability"}
+{"id": "vnYBKGd6Lw", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "probing internal uncertainty vs expressed hedging"}
+{"id": "RXCRKAcv3B", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "value conflict prioritisation in LLMs"}
+{"id": "sGVZRmZQzK", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "classic", "topic": "membership inference on tabular foundation models"}
+{"id": "TJnyOYoMdQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM social simulation fidelity"}
+{"id": "RCUZVHXlkj", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "classic", "topic": "long-term fairness with selective labels"}
+{"id": "uujLjRfFBj", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "multiagent", "topic": "deception in multi-agent social deduction games"}
+{"id": "4YgvVRoSnF", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "malicious shared LoRA adapter backdoor"}
+{"id": "tCjYJ01Jbk", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "robustness to malicious in-context demonstrations"}
+{"id": "QmHT6f5txa", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "reasoning", "topic": "LLM-as-judge bias robustness"}
+{"id": "6EDpNDns1i", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "contextual privacy leakage in LLM agents"}
+{"id": "xLUhlfoeKH", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "visual grounding after RL post-training"}
+{"id": "H7MHLHY3zm", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "benign fine-tuning safety degradation in VLMs"}
+{"id": "8JcBfsTfUc", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "cimbhC3i1J", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "provenance verification of edited LLM outputs"}
+{"id": "VgVeQpagf7", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "DP synthetic data via dataset distillation"}
+{"id": "10gpXxro8z", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "multi-turn jailbreak by LLM red teamers"}
+{"id": "u4R504MyWl", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "RAG corpus poisoning attack"}
+{"id": "GGw37srpoS", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "mllm", "topic": "multi-turn cross-modal safety in unified models"}
+{"id": "EfMMNGjuNo", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "backdoor in federated LLM instruction tuning"}
+{"id": "56Pxkr20Wa", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "multi-agent communication topology learning"}
+{"id": "NlRc4ndSBD", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "mllm", "topic": "contextual privacy in audio LLMs"}
+{"id": "UXKYpRTzhY", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "mechanistic analysis of VLM fine-tuning"}
+{"id": "GS9sSbxg8B", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "mental health counseling LLM safety"}

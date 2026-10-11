@@ -1,0 +1,30 @@
+{"id": "1jP2hufr3z", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "guardrail evasion by coding agents"}
+{"id": "0gWDByQMR7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "global concept graphs for vision models"}
+{"id": "TMpkIv0oIc", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "unified multimodal reward model"}
+{"id": "nRD9mDZlE4", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning objective"}
+{"id": "jDKpOvTCM8", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "noisy preference robust alignment"}
+{"id": "Gk7gLAtVDO", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "defense", "target": "reasoning", "topic": "implicit reward hacking detection"}
+{"id": "6AMsJpfxDX", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "probing recurrent refinement in looped transformers"}
+{"id": "hvG2z0FNf0", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "rubric-guided preference optimization"}
+{"id": "LgxAdSPWIv", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "uncertainty estimation for hallucination detection"}
+{"id": "rfro2bhFGc", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM watermark localization"}
+{"id": "zOpNGKdbY0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "privacy-preserving speech embeddings"}
+{"id": "SgDel0emz4", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "INTERP_GEN", "type": "method", "target": "rl_robot", "topic": "VLA robustness to object displacement"}
+{"id": "rSTE827Y1p", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "autonomous driving safety corner cases"}
+{"id": "n9kqVWyuXU", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "ADV_ROBUST", "type": "defense", "target": "llm", "topic": "certified fairness of language models"}
+{"id": "FDlvVdh1sB", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe offline RL"}
+{"id": "YyOgB1HddJ", "y": 2026, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "defense", "target": "general", "topic": "unlearnable data against unauthorized training"}
+{"id": "lK7sr0NeeS", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "agent", "topic": "multimodal forgery detection and localization"}
+{"id": "iwYPSWfPlD", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP-SGD per-layer clipping"}
+{"id": "ocT8JYyJ19", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE-based brain encoding models"}
+{"id": "3azDaaAYzb", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "reasoning", "topic": "reasoning-level risk awareness in LRMs"}
+{"id": "sptCQnKS9X", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "flatness and adversarial robustness"}
+{"id": "5xrNwUd8y4", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "4svy1XuEAa", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "diffusion", "topic": "hallucination in diffusion inverse problems"}
+{"id": "qnLj1BEHQj", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "concept attractors in LLM representations"}
+{"id": "15HYjY5ol7", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "immune repertoire diagnosis agent"}
+{"id": "hKWCGxuD5v", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reasoning reward model for image editing"}
+{"id": "o8BZ6upf3P", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal situational safety in VLMs"}
+{"id": "PIJAUtXYOE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "cooperation in multi-agent LLM simulation"}
+{"id": "IelhmYSjPt", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "subliminal learning in distillation"}
+{"id": "wSPmqFCICq", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "black-box encoder tampering detection"}

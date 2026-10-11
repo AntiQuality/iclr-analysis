@@ -1,0 +1,30 @@
+{"id": "mex3rvs2KX", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "differentially private fair learning"}
+{"id": "BefiRIc6Ct", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "RL-trained judges for agent trajectory auditing"}
+{"id": "N4kL8TnIRh", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "FT_ROBUST", "type": "analysis", "target": "reasoning", "topic": "safety degradation from RLVR training"}
+{"id": "7tAfOGcqz8", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "general", "topic": "OOD generalization via shift detectors"}
+{"id": "BuK47gYbF7", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "label-changing perturbation evaluation"}
+{"id": "4qb1nyFkxJ", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "eNXP3SDyxM", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "medication-safety RAG evidence selection"}
+{"id": "j9uWANGL9k", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "backdoor transfer via distillation"}
+{"id": "IKUjfAknOl", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "agent", "topic": "automated red-teaming of coding agents"}
+{"id": "8EmiXfV800", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "web evidence poisoning of search agents"}
+{"id": "svU3aOGOw8", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "personalized online preference alignment"}
+{"id": "1NIyjrtxJU", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO variant preference optimization"}
+{"id": "OZPEAauuMN", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "graph structure attack robustness"}
+{"id": "25F5ot3UWg", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM unlearning via relabeling"}
+{"id": "7EKNxwiX7s", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "wildfire prediction evaluation"}
+{"id": "YiGdNowqj6", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion image watermarking robustness"}
+{"id": "rqt6YQt4FO", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "neural control barrier function learning"}
+{"id": "jd3hA3DyKf", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor detection in federated learning"}
+{"id": "6bT67VKN6x", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "safety-critical procedure execution by agents"}
+{"id": "zEAaLYe02Q", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "diffusion", "topic": "image watermark forgery attacks"}
+{"id": "HzaiSvvrnl", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box jailbreak attacks"}
+{"id": "Dk3tNFLtDl", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "classic", "topic": "class-wise performance disparity"}
+{"id": "DTybC3hq0s", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination in radiology report generation"}
+{"id": "E0onj2cL8w", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "classic", "topic": "dynamic OOD detection"}
+{"id": "IBHE5Nj61C", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "explainable AI-generated image detection"}
+{"id": "nKCrn6ZMIz", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "mllm", "topic": "MLLM web understanding benchmark"}
+{"id": "G4wxGLr55b", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "generative video quality evaluation"}
+{"id": "ZVg8y3ibyM", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "jailbreak evaluation reliability"}
+{"id": "5iUTFIysUv", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "defense", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "Ha1Z42wHqz", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "OVERSIGHT", "type": "method", "target": "diffusion", "topic": "concept discovery in LoRA adapters"}

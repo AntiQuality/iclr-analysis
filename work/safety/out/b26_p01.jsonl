@@ -1,0 +1,30 @@
+{"id": "9D2kHkM8vA", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "theory", "target": "general", "topic": "provable hallucination mitigation in generative models"}
+{"id": "EfBNRrMf4r", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "conformal resource allocation under censoring"}
+{"id": "OOHPNlHS4Y", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "GEN_SAFE", "type": "defense", "target": "llm", "topic": "harmful prompt detection classifier"}
+{"id": "Ch62pc2CZs", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "privacy leakage in LLM agent delegation"}
+{"id": "6zYv52WeQD", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "general", "topic": "robust audio watermarking"}
+{"id": "91Yw5tzRe6", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "normative competence of LLM agents"}
+{"id": "19VTnmOUow", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "black-box defense against unsafe T2I generation"}
+{"id": "F7VrEjR04m", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "activation patching hidden causal contributions"}
+{"id": "FipxNN0SaY", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "circuit extraction via sparse weight decomposition"}
+{"id": "rCgxaWvBRj", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agentic image restoration"}
+{"id": "izgmqY1Fmn", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "PRIVACY", "type": "method", "target": "mllm", "topic": "zero-shot visual anomaly detection"}
+{"id": "88AL9uYhnp", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "poisoned agent skills token-amplification DoS"}
+{"id": "wScns4xdaT", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "REWARD_HACK", "type": "theory", "target": "general", "topic": "verifier audit collapse under policy improvement"}
+{"id": "6MrulGSXs5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "deep search agent training recipe"}
+{"id": "cN1QlgqORs", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "agent robustness to user behaviour traits"}
+{"id": "1ORtD7gIHY", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe language-conditioned UAV navigation"}
+{"id": "KDIgNmK8YT", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "human preference alignment benchmark"}
+{"id": "f6TKbKtWYQ", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "diffusion", "topic": "backdoor attacks on diffusion models"}
+{"id": "LrnkE7OZ7K", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "attack", "target": "multiagent", "topic": "resource-exhaustion attacks on multi-agent systems"}
+{"id": "JdqTkhQM3G", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "general", "topic": "statistical leakage auditing of data products"}
+{"id": "t5Wjl2meIc", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "model poisoning defense in federated learning"}
+{"id": "9AaSlmRhtI", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": "OOD", "type": "method", "target": "classic", "topic": "error recovery in deployment-time learning"}
+{"id": "nTWZCXrnvs", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "model poisoning defense in federated learning"}
+{"id": "hA7nZ1HOqA", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "general", "topic": "extrapolation detection in flow matching"}
+{"id": "CQZtf0i1dm", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "base-rate dilution attack on anomaly detectors"}
+{"id": "9vo3J4LwoT", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "virtual screening with subgraph propagation"}
+{"id": "ZJlVXZ5dmK", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal sparse autoencoders"}
+{"id": "ZgXemXrEt1", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "training-free feature unlearning"}
+{"id": "c5LyUiiPpT", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "expert monosemanticity in MoE LLMs"}
+{"id": "7ULMVG5Dzv", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion image watermarking fidelity"}

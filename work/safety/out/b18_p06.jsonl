@@ -1,0 +1,23 @@
+{"id": "S2RYgFsuYz", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "analysis", "target": "llm", "topic": "surface-cue reliance in safety alignment"}
+{"id": "1bF7B1bzn3", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "weak-to-strong diffusion training targets"}
+{"id": "DiuI6HgBZQ", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "policy-grounded LLM guardrails"}
+{"id": "uWvLZqxjmx", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "natural adversarial examples via diffusion"}
+{"id": "NLMCTdbzUD", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair representation learning"}
+{"id": "aNmsbdUkFJ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "unauthorized actions in service agents"}
+{"id": "pen4NG41j6", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM jailbreak detection"}
+{"id": "Gysom20mJ1", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "citation hallucination detection"}
+{"id": "UZalsOhToM", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "agent", "topic": "temporal logic shields for LLM agents"}
+{"id": "JAIymWFRU2", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "activation steering side effects"}
+{"id": "H5WXDnLoqo", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "diffusion", "topic": "data unlearning in diffusion"}
+{"id": "ZLbE8Eetod", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "NTYGJJSxHv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL post-training for 3D generation"}
+{"id": "sb9GorRAvU", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "genomic data reconstruction attacks"}
+{"id": "17fSgenDtj", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "action authorization for LLM agents"}
+{"id": "zV3CowFm7x", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning in gradient boosted trees"}
+{"id": "oytJKuKja0", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "general", "topic": "weak-to-strong generalization"}
+{"id": "yTKZ8GvLa2", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "yp2eng0wwf", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "aware-but-unsafe generation"}
+{"id": "Svj6xw6TpF", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "general", "topic": "proxy overoptimization in inference-time search"}
+{"id": "NFdYRTp3st", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "agent", "topic": "token consumption of coding agents"}
+{"id": "nMolvClcX7", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "FHE private transformer inference"}
+{"id": "o4dTaxZ1S9", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "classic", "topic": "machine unlearning benchmark"}

@@ -1,0 +1,30 @@
+{"id": "8o7iV9l27T", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "visual attention sink and LVLM hallucination"}
+{"id": "ERNpUGr8M5", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "RsCqOnkAKE", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "classic", "topic": "fairness under scaling in vision models"}
+{"id": "v7vvgA2gyW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "multi-human virtual try-on"}
+{"id": "npqsJ791MS", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "transfer adversarial attacks in personalized FL"}
+{"id": "S6qbSSFx8Y", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "GEN_SAFE", "type": "method", "target": "diffusion", "topic": "text-guided concept unlearning in GANs"}
+{"id": "W8BViO3wZp", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "general", "topic": "3D Gaussian splatting watermarking"}
+{"id": "3mm8FmbbHn", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "FAIR", "type": "method", "target": "llm", "topic": "cross-lingual fact verification gap"}
+{"id": "twpToSgMuO", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "adversarial robustness of time-series foundation models"}
+{"id": "Pg1iNYmDKw", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "self-evolving agent misevolution safety"}
+{"id": "RGT8BSJ8W2", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "reasoning", "topic": "self-jailbreak in reasoning models"}
+{"id": "xpHiVf0xhf", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified training via robust teacher distillation"}
+{"id": "NFJK96X82a", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "reasoning", "topic": "reward models for multi-domain test-time scaling"}
+{"id": "FHEJN59Wfu", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "radio frequency fingerprint identification"}
+{"id": "rO2uXIP019", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective helpful-harmless alignment conflicts"}
+{"id": "gnGzF5LGOu", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "theory", "target": "general", "topic": "copyright protection via information limits"}
+{"id": "oGpnoXtA6G", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "online RLHF exploration"}
+{"id": "Ai689rllCI", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "FT_ROBUST", "type": "method", "target": "llm", "topic": "alignment tax safety retention in DPO"}
+{"id": "wS8RMRwhnz", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "gradient leakage defense in federated learning"}
+{"id": "Y5DOgeYet1", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness for state-space models"}
+{"id": "ggAJSyCAKf", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "shopping agent benchmark with safety hazards"}
+{"id": "nUsSqKbTZp", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "medical multimodal deepfake detection"}
+{"id": "wNt5C5X58Y", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent memory authorization laundering"}
+{"id": "i7vS325TzM", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL cost inference"}
+{"id": "L0Kgn7Uyx4", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "differential privacy for tabular foundation models"}
+{"id": "VgcB5z3SZ0", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "fairness benchmark for federated learning"}
+{"id": "t1HJAbv7Bs", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "mode connectivity machine unlearning"}
+{"id": "4ogYQanXBR", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "agent", "topic": "human vs LLM negotiation behavior"}
+{"id": "pfZXcqH19i", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "standardized black-box jailbreak attack"}
+{"id": "L8lSVDdhk1", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "multiagent", "topic": "misinformation intervention via LLM agents"}

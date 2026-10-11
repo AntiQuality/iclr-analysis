@@ -1,0 +1,30 @@
+{"id": "vavYaeJO1v", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "general", "topic": "selective human auditing of AI decisions"}
+{"id": "qZgKaHkRjl", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "jailbreaking RL-trained search agents"}
+{"id": "aTDBg8UhlT", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "toSJvafAhC", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "in-context exemplar poisoning detection"}
+{"id": "uDCb7b2JgS", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "image watermarking for generative models"}
+{"id": "xnWNIWXNKb", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on tabular models"}
+{"id": "c2BygWVqag", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated jailbreak red-teaming"}
+{"id": "xJC5Rpg6VO", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "harmful fine-tuning defense robustness"}
+{"id": "W9oGZd4B8R", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "empowerment-based assistive alignment"}
+{"id": "FNnjijLUaI", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "classic", "topic": "unlearning evaluation vs retraining equivalence"}
+{"id": "JgLghvm6Qm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "rubric reward modeling for legal LLMs"}
+{"id": "OllKu9vgU9", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "modular unlearning by construction"}
+{"id": "3MyTiaYpVs", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness without adversarial training"}
+{"id": "azGbK02EQf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "ambiguity detection for LLM structured mapping"}
+{"id": "vLKooyuhwp", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "training exposure and membership inference"}
+{"id": "1Pl7dnC0IV", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "SOCIETAL", "type": "defense", "target": "llm", "topic": "jailbreak-induced fake news defense"}
+{"id": "R1QuNKyVOw", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "watermarking tabular generative models"}
+{"id": "7abrCk4Uok", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "verifier feedback routing for post-training"}
+{"id": "1XMUe2dGRr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "noise-tolerant active automata learning"}
+{"id": "gNn2hwgL21", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "certified neural approximation of dynamics"}
+{"id": "US1UwMHHtS", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "llm", "topic": "weight watermarking for open-source LLMs"}
+{"id": "eYxkpYBQzt", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "eval", "target": "agent", "topic": "agent rule violation under pressure"}
+{"id": "tcbh5eKGPr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "trajectory entropy-constrained RL"}
+{"id": "ORDBfThusC", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "concept erasure under domain shift"}
+{"id": "y79cK0KbTX", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD-robust semi-supervised learning"}
+{"id": "Efekr8cBMG", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "SAE steering of reasoning strategies"}
+{"id": "TwswjxtT6c", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "gradient-based jailbreak optimization"}
+{"id": "WhNlBq6aLx", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE-based concept erasure leakage"}
+{"id": "kylhUNRXyt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "speech style representation learning"}
+{"id": "AqeZ1dd6BR", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "destructive actions by coding agents"}

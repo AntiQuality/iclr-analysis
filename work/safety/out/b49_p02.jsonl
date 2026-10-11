@@ -1,0 +1,30 @@
+{"id": "X0krMpvu2S", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM knowledge boundary perception"}
+{"id": "8zzUwa5h0L", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "modality competition in multimodal federated learning"}
+{"id": "3aBWTYGcaT", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking diffusion language models"}
+{"id": "zyCjizqOxB", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "uncertainty-aware OCR in VLMs"}
+{"id": "LmGSD6CedJ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "KV-cache side-channel prompt leakage"}
+{"id": "cCbVsSE2Eb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "music mastering under degradation chains"}
+{"id": "1Ne3tfQC0T", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "zero-knowledge proofs of transformer inference"}
+{"id": "NOPkIZzgLa", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "position", "target": "general", "topic": "historical analogies for AI societal debate"}
+{"id": "XYOE8YRodz", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "auditing deepfake detectors"}
+{"id": "eGOTTYHpyZ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "classic", "topic": "membership inference vulnerability estimation"}
+{"id": "s0Ve6wLJqT", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "weak-to-strong generalization"}
+{"id": "xrFfJpuS2b", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "jailbreaking diffusion language models"}
+{"id": "s8P0OBvacH", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "reasoning", "topic": "reasoning correctness monitor evaluation"}
+{"id": "BRC1NeECFo", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "GUI agent trajectory process reward"}
+{"id": "5ftq4e6alF", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "SOCIETAL", "type": "method", "target": "classic", "topic": "post-deployment AI audit monitoring"}
+{"id": "n836u2pjGl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "post-deletion memory persistence in agents"}
+{"id": "eQt1oaF4yN", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy-utility tradeoff in adaptive retrieval"}
+{"id": "Ai3j6RhQS1", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination in video LLMs"}
+{"id": "GOFjiCsATQ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "CespIWOBYY", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "general", "topic": "group price fairness in online pricing"}
+{"id": "NkdonlSAjW", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private federated learning"}
+{"id": "ItnC0ga3JZ", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "MCP tool poisoning detection"}
+{"id": "tuFRx6Ww2n", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "probe-based jailbreak detection"}
+{"id": "4JNazwK5rA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "prompt optimization for LLM judges"}
+{"id": "mzTunQGn6l", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "context-dependent safety in robot navigation"}
+{"id": "Iir0Y5yPZm", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "general", "topic": "uncertainty quantification for regression"}
+{"id": "nIlXkefSiD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference optimization for text-to-image"}
+{"id": "hZKNA6NHbX", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_GEN", "type": "analysis", "target": "classic", "topic": "superposition as cause of adversarial vulnerability"}
+{"id": "NLgGWaHssl", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "method", "target": "agent", "topic": "agent policy compliance training"}
+{"id": "Ik6xke4qH5", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private metric release"}

@@ -1,0 +1,30 @@
+{"id": "qvVph9ziyG", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "jailbreak prompt detection via refusal trajectories"}
+{"id": "1Ott6EBW32", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "DANGER_EVAL", "type": "eval", "target": "mllm", "topic": "hallucination audit metrics in medical VLMs"}
+{"id": "IbYlE3lDII", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "failure dynamics in recurrent reasoning models"}
+{"id": "LuFO0E0A28", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "source reliability trust in LLMs"}
+{"id": "bbDKLX9z7A", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "SAE causal validation methodology"}
+{"id": "zIKFB5Tq85", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "policy-configurable guardrail benchmark"}
+{"id": "OwstUTHGOB", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "sandbagging detection"}
+{"id": "AGDWmpRmoE", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "llm", "topic": "AI safety via debate"}
+{"id": "siPO3jbY8f", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "annotator bias in preference alignment"}
+{"id": "YuN1c8dl0Y", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "collaborative fairness in federated learning"}
+{"id": "0MUrJkJYnP", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization for LLM alignment"}
+{"id": "mPaaLb4tAX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "discrete diffusion preference optimization"}
+{"id": "wpTLstf0kk", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in LVLMs"}
+{"id": "U8T1slG6DL", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "nX2tVxR1jy", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "inference-time behavior steering"}
+{"id": "7nNi7ydSt2", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "federated learning for sensor data recovery"}
+{"id": "FVmWGMIoES", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "data poisoning defense for medical LLMs"}
+{"id": "erYE1VciKv", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated video detection"}
+{"id": "m0vm5EcHMt", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on depth estimation"}
+{"id": "aIZZxXOceD", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "federated learning for IoT security"}
+{"id": "fn4GQ210Nr", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "object hallucination detection in VLMs"}
+{"id": "9hNkKIUgVu", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "least-privilege authorization for tool agents"}
+{"id": "9jYpHmI8ot", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "INTERP_GEN", "type": "analysis", "target": "general", "topic": "spurious correlation detection"}
+{"id": "ceqmeWyUO3", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on spatiotemporal forecasting"}
+{"id": "zS2IETPnol", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "probing world model latents"}
+{"id": "bVsAuIOvJ5", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "analysis", "target": "reasoning", "topic": "CoT faithfulness via resampling"}
+{"id": "uVpqBRTUBz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM generative advertising mechanism"}
+{"id": "nC4An4ipHw", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "source reliance in retrieval-augmented generation"}
+{"id": "pkymKR1YiW", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "rule placement effects in prompts"}
+{"id": "yYw1McdibB", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "membership inference on in-context learning"}

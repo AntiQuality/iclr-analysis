@@ -1,0 +1,23 @@
+{"id": "yEYioJFZPK", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "jailbreak transferability across deployments"}
+{"id": "mmUlhcO6H1", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "GEN_SAFE", "type": "method", "target": "diffusion", "topic": "concept unlearning in video generation"}
+{"id": "bgCPtYsfNw", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "attack", "target": "agent", "topic": "attacks on human oversight in agents"}
+{"id": "KFUKBhcSEg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "envy-free fair division under noisy valuations"}
+{"id": "9Lrcxvs7GS", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "FT_ROBUST", "type": "method", "target": "llm", "topic": "safety alignment robustness to perturbations"}
+{"id": "pNLDpKhvbZ", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "moral coercion detection in dialogue"}
+{"id": "kgLKoxQ1vy", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "training data watermark attribution in federated LLMs"}
+{"id": "x5UMMVUfkO", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "relation hallucination in VLMs"}
+{"id": "zuPxAZgT9F", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "spatio-temporal video grounding RL"}
+{"id": "aCRvstw8nw", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "FT_ROBUST", "type": "defense", "target": "agent", "topic": "safety degradation in self-evolving agents"}
+{"id": "nPhYAzZfaa", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "tamper-resistant safeguard circumvention"}
+{"id": "bh4KmCs0BY", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "epiphenomenal CoT steps"}
+{"id": "iUvfxtlHDl", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "LLM self-concept and safety dispositions"}
+{"id": "yV1Cqypc1A", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion sampling guidance"}
+{"id": "Jq6I5yUXXR", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "bijection jailbreak attacks"}
+{"id": "naYMDn0l19", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "auction-driven image generation"}
+{"id": "ky5iqwZSXI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "math proof evaluation"}
+{"id": "g3PTkKNx01", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "multi-bit watermarking for visual AR models"}
+{"id": "e4UccNuYdB", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "file injection attacks on coding agents"}
+{"id": "eXRKslhHmT", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "runtime backdoor defense in VLA models"}
+{"id": "FfdXH1EdlU", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "hidden content injection in 3D Gaussian splatting"}
+{"id": "ZrPXJnHpYI", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on code search"}
+{"id": "PTsB7phnzQ", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "probe-guided latent knowledge recovery"}

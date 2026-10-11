@@ -1,0 +1,30 @@
+{"id": "79wzDmy6nc", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward model robustness against reward hacking"}
+{"id": "dgkarYpfIC", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "OOD", "type": "analysis", "target": "classic", "topic": "audio-visual deepfake detection shortcuts"}
+{"id": "73TwqWPjpv", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "interpretable reward models for personalization"}
+{"id": "UmLECpFH6C", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "identity unlearning in face recognition"}
+{"id": "KiFyTfqMDa", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-aware control under belief uncertainty"}
+{"id": "R1gSnxnTJy", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "bias discovery in VLM retrieval"}
+{"id": "oYMqnOdLFI", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "medical hallucination evaluation"}
+{"id": "afxhYl1XEu", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in RAG"}
+{"id": "Uih66XPzHU", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "multilingual healthcare trustworthiness benchmark"}
+{"id": "K8J6zYRZrO", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "black-box jailbreak of MLLMs"}
+{"id": "CDnkuVs7ki", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "structured sparse autoencoders"}
+{"id": "qGihS60jfT", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion preference optimization with latent rewards"}
+{"id": "t8nOwIA4gB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "fabricated quotations in LLM peer reviews"}
+{"id": "QCD3TWorsc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "multimodal affective computing uncertainty"}
+{"id": "3GeMiZzQCa", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "REWARD_HACK", "type": "theory", "target": "llm", "topic": "differentially private best-of-N alignment"}
+{"id": "gCm55KYiqz", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "VALUES", "type": "eval", "target": "llm", "topic": "culturally adaptive red-teaming benchmark"}
+{"id": "Xx1ceKFk12", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "analysis", "target": "llm", "topic": "refusal mechanisms in MoE experts"}
+{"id": "DVTNNkDNZ3", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "superposition and representational similarity"}
+{"id": "nrinbZTy26", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "secret knowledge elicitation for auditing"}
+{"id": "OZjLqxUfO3", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "UePQHiuiKI", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "data-free adversarial training"}
+{"id": "QxzO1biVta", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "training-free small-object detection"}
+{"id": "cc49esSZt6", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "BACKDOOR", "type": "theory", "target": "general", "topic": "noise-free indistinguishability guarantees"}
+{"id": "9fonzyLBl8", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning parameter localization"}
+{"id": "LOI9sm64e8", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "audio hallucination in omni-modal LLMs"}
+{"id": "7FvOdS8ZMe", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "credit assignment in multi-agent orchestration"}
+{"id": "nRoysZdkE5", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "mediated cooperation among LLM agents"}
+{"id": "YIKFIPyb8M", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "method", "target": "agent", "topic": "zero-knowledge verifiable agent tool authorization"}
+{"id": "mIba84JmXa", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "expected reward prediction for routing"}
+{"id": "f7VURhhLEL", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "multiagent", "topic": "cost-aware hallucination benchmarking"}

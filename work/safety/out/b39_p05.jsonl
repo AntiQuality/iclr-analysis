@@ -1,0 +1,30 @@
+{"id": "1SdPgRQrr5", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "reach-avoid safe RL via Hamilton-Jacobi"}
+{"id": "rT7fnADPPs", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "contextual integrity privacy judgment in LLMs"}
+{"id": "lR3jTdzryb", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "learned data weighting for reward models"}
+{"id": "BXUnpS9Y2b", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "quantization-conditioned backdoors in LLMs"}
+{"id": "pjOeMOuTxa", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "PKrYc2nyO4", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "training-free jailbreak defense"}
+{"id": "NrJ9XaVHDD", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM hallucination mitigation"}
+{"id": "gZiLJVfD2v", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "role-conditioned value alignment"}
+{"id": "tw5p54zQlV", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM simulation of online community reactions"}
+{"id": "863AbI0D7D", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "multiagent", "topic": "copyright leakage detection in multi-agent LLMs"}
+{"id": "kQ7sdn5Vep", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "general", "topic": "interactive video world model evaluation"}
+{"id": "tdF6Wnoc6U", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial prompt tuning for VLM robustness"}
+{"id": "28qvccNuTQ", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "evidence fabrication attacks on tool agents"}
+{"id": "w2k0bJByI6", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "intersectional bias mitigation via steering"}
+{"id": "B0HCvb3GJ7", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-turn privacy inference leakage"}
+{"id": "tHGrxt8b4D", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-as-a-judge reliability"}
+{"id": "YlzFyd7n3E", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "SAE reconstruction vs interpretability trade-off"}
+{"id": "bpmQnmnvp1", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT faithfulness"}
+{"id": "OJJ1v5R72c", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "KG-constrained faithful reasoning"}
+{"id": "RjEx6MSVtM", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "7lzq9mMVxq", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature hedging"}
+{"id": "WTtmFuGOZd", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "selective prediction and deferral in clinical LLMs"}
+{"id": "izjO5lY1Rp", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "RL from pairwise continuation comparisons"}
+{"id": "jvjUTOTqCa", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "schema tightening for agent-written knowledge graphs"}
+{"id": "G54coMSTRj", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "object binding in ViT attention"}
+{"id": "2GU1kWPpAz", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "inference-time LLM unlearning"}
+{"id": "vmDs1AU0MX", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "decoding-time personalized alignment"}
+{"id": "q4qxtaKVAU", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "LLM steganography evading monitors"}
+{"id": "ZExlJYlSn6", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "llm", "topic": "LLM fingerprinting via watermark distillation"}
+{"id": "djIRyJcNKn", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "video hallucination mitigation evaluation"}

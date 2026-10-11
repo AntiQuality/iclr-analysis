@@ -1,0 +1,30 @@
+{"id": "rrJMJI1k0q", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "GkVoABYmXk", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "b9wKsueNNA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "LLM reasoning system for Go"}
+{"id": "zAtOYooFOf", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "regret-optimal RLHF under adversarial preferences"}
+{"id": "97IeQrvSqb", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "multimodal jailbreak attacks on VLMs"}
+{"id": "wEEJwbEHF2", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "generalizable deepfake face forgery detection"}
+{"id": "HgJmkOenSI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "Eyht9PsI5k", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "user-level differentially private optimization"}
+{"id": "tAM9SGoEmD", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "safety-critical driving scenario generation"}
+{"id": "XvWe1P7P8A", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "label privacy in weakly supervised learning"}
+{"id": "q5AawZ5UuQ", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "emergent misalignment"}
+{"id": "UJAisq0CKV", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "verifier noise auditing in RLVR"}
+{"id": "J1k8QKNiqj", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "math-to-physics reasoning transfer"}
+{"id": "BuVFqkbm0y", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "auditing agent task-contract checkers"}
+{"id": "3MlMp7vZpl", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated red teaming of LLMs"}
+{"id": "md9nBwwmEh", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "method", "target": "mllm", "topic": "debiasing CLIP via attention heads"}
+{"id": "slFoSI7NQd", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective helpfulness-safety policy optimization"}
+{"id": "S6jBIulhDf", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "HALLU", "type": "defense", "target": "llm", "topic": "Byzantine-robust conformal federated RAG"}
+{"id": "qOstx3qCfu", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "mllm", "topic": "LVLM fingerprinting for ownership verification"}
+{"id": "NrDYq21X8n", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "untargeted adversarial attacks"}
+{"id": "3appZGYsMg", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM hallucination mitigation"}
+{"id": "TvEXzEvnT3", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "internal signals of factual reliability"}
+{"id": "hSw3gkxBTC", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "secure code generation with LLMs"}
+{"id": "JI8gM3Zstq", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "interpretable rubric rewards from constitutions"}
+{"id": "Cl06DrgcII", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "complexity of computation in superposition"}
+{"id": "nU4Fv2yXN1", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "classic", "topic": "subpopulation shift theory"}
+{"id": "uuMMdEfFXR", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "protein-guided drug design"}
+{"id": "TXZ54qxdAF", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "agent", "topic": "weak-to-strong generalization"}
+{"id": "1ARtzMFMsC", "y": 2027, "rel": 2, "sub": "IP", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "black-box LLM API model equality testing"}
+{"id": "xfkwEmPh1z", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "influence of local generation choices"}

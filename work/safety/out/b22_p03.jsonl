@@ -1,0 +1,30 @@
+{"id": "60JvRzRApW", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "multiagent", "topic": "deception propensity in multi-agent games"}
+{"id": "3Eqw8cvuw6", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "MLLM unlearning robustness/relearning"}
+{"id": "1LXuGC53fB", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "safe policy selection under risk limits"}
+{"id": "T6NVogsXCZ", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "reasoning", "topic": "LLM text watermarking for reasoning models"}
+{"id": "W4yb89Ezz8", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PI", "type": "attack", "target": "llm", "topic": "RAG knowledge base poisoning"}
+{"id": "ryJaoyjhgQ", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "implicit narrative injection steering agent decisions"}
+{"id": "OAen4KgX4Q", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "VLM reward models for robot manipulation"}
+{"id": "Kpij6oOnJl", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "mllm", "topic": "test-time poisoned sample detection in CLIP"}
+{"id": "BnEG8pn3pK", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "ADV_ROBUST", "type": "analysis", "target": "classic", "topic": "model inversion attacks"}
+{"id": "xQj9th1WXj", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "analysis", "target": "llm", "topic": "visible payoff signals overriding safety"}
+{"id": "VdfXmGARbK", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "value-action gap in LLMs"}
+{"id": "fKYZ6T3dmI", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "llm", "topic": "AI-generated text detection benchmark"}
+{"id": "RQVfKLuzYb", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "subliminal learning hidden bias transfer"}
+{"id": "d0WJskC05d", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "backdoors in diffusion language models"}
+{"id": "DmhbGdwIkr", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection training"}
+{"id": "sWQSbVsPEz", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "reward modeling for role-playing agents"}
+{"id": "66207RUZBX", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "multi-image object hallucination benchmark"}
+{"id": "nY4nULFzDP", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "diffusion", "topic": "hallucination in diffusion models"}
+{"id": "HbSh0TTeHJ", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety constraints for VLA control"}
+{"id": "vc9Tj11LNE", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "game-theoretic preference optimization"}
+{"id": "IvVCyGOjj1", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "classic", "topic": "harmful short video detection"}
+{"id": "gySrI8QG9a", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "on-policy distillation for dense retrieval"}
+{"id": "LMPlJINDDe", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "DANGER_EVAL", "type": "eval", "target": "rl_robot", "topic": "VLA safety evaluation scenarios"}
+{"id": "yfM2e8Icsw", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "BACKDOOR", "type": "attack", "target": "llm", "topic": "finetuning-activated adversarial behaviors"}
+{"id": "sYlzZaMPnS", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "llm", "topic": "model parameter watermarking for ownership"}
+{"id": "wCF5cPWjiD", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "agent", "topic": "auditing agent research claims"}
+{"id": "5m2Av0sJSN", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "AI-generated image detection in documents"}
+{"id": "L8AfKK2RHl", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "research intent integrity in research agents"}
+{"id": "VulRP1YBrD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "classic", "topic": "concept steering evaluation in vision models"}
+{"id": "vfQNgx6R8l", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "automated red teaming for safety training"}

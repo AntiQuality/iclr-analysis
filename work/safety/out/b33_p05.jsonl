@@ -1,0 +1,30 @@
+{"id": "1OLTJL1wHG", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "confidence-calibrated abstention against hallucination"}
+{"id": "ip6I6UQitx", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "error propagation in multi-agent LLM systems"}
+{"id": "vACJ6vPkRM", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion robustness"}
+{"id": "0Cxn7UQC8P", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "preference reward model sample complexity"}
+{"id": "I9hPHq3H2b", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "agent", "topic": "benchmark overoptimization by coding agents"}
+{"id": "jUGWx29UHK", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "PxB88xYLN9", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "VLM jailbreak defense via activation steering"}
+{"id": "ZZAIF9fjlU", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "math proof reward model"}
+{"id": "XFnrBCAmAQ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP for hybrid quantum-classical algorithms"}
+{"id": "Ey62HqacSn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "final-layer jump and logit lens"}
+{"id": "d5PLbOmiJM", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "GEN_SAFE", "type": "eval", "target": "mllm", "topic": "concept unlearning in unified multimodal models"}
+{"id": "YsN2ERsWEP", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "classifier machine unlearning"}
+{"id": "zMyibeGzDX", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "agent skill, memory and tool poisoning"}
+{"id": "MhMDlXKX57", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "deception in LLM agents benchmark"}
+{"id": "fF89cNAmCW", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "faithfulness to input evidence"}
+{"id": "QN4RLfLrOR", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "private densest submatrix selection"}
+{"id": "QekNiN2I9H", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "jailbreak via speculative decoding draft model"}
+{"id": "QkErYsrUZc", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "classic", "topic": "black-box label space inference attack"}
+{"id": "OBJMVeBfSf", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "diffusion", "topic": "training hyperparameter inference from diffusion outputs"}
+{"id": "9BBLakjWp0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "failure-guided T2I preference alignment"}
+{"id": "1kwZzqOHrI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "partial audio deepfake detection"}
+{"id": "AutBI3cDF4", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "AI-generated video detection benchmark audit"}
+{"id": "PzUXLYx10M", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "latent chain-of-thought robustness vs necessity"}
+{"id": "lgilxvZ9TZ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "structured representation of interpretability findings"}
+{"id": "WW47sMD57T", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "mllm", "topic": "membership inference on VLMs"}
+{"id": "uV0tGPmnLT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "privacy leakage in federated RLHF"}
+{"id": "p9gjilMqxL", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "over-refusal and safety boundary control"}
+{"id": "4mE2FlL66E", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO likelihood displacement"}
+{"id": "q42Wqkwe3q", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "prerequisite circuits in learning dynamics"}
+{"id": "yhZyEZ13fk", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "classifier machine unlearning"}

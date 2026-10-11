@@ -1,0 +1,30 @@
+{"id": "0wq04UeED8", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "federated LoRA aggregation error"}
+{"id": "BHbsr7Pc7T", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "malicious agent detection in multi-agent debate"}
+{"id": "rnnM5Pp7aE", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "mllm", "topic": "hallucination mitigation in MLLMs via DPO"}
+{"id": "QWTDFuJC3F", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "hallucination in video LLMs"}
+{"id": "kpjb0kbaW6", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "RsrzrnVZ2r", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "jailbreak success evaluation judging"}
+{"id": "PpOI7Udsps", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "adversarial attacks on image forgery localization"}
+{"id": "iIbe6qDN0A", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "mllm", "topic": "hallucination mitigation in MLLMs via DPO"}
+{"id": "rjTyRLJ2R1", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "denial-of-service in multi-agent systems"}
+{"id": "5hUZm2ehx8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "mechanisms of looped transformers"}
+{"id": "T3KGhnOUL6", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "automated red-teaming of audio LLMs"}
+{"id": "syOYjXqKnS", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "watermark-based user attribution"}
+{"id": "TJk1qGtk51", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "constrained decoding effect on reasoning"}
+{"id": "EjK2faUgSi", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "socially-aware robot navigation"}
+{"id": "vGqhl0qIm5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "federated constrained bilevel optimization"}
+{"id": "6uLbvIOLvh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "process rewards for search agents"}
+{"id": "gCoxUBviiy", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "contextual hallucination mitigation"}
+{"id": "OGqiokpRCr", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "error propagation via shared agent memory"}
+{"id": "887vde4ZAW", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "safety preservation during fine-tuning"}
+{"id": "yFpANKjW9f", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "human-AI teammate personalization"}
+{"id": "yltxogmiKh", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "channel-level unlearning in time series"}
+{"id": "ZIzH3a7ywS", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "generative reward models for RL"}
+{"id": "RPCQEuqhrz", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "diffusion", "topic": "differentially private image compression"}
+{"id": "eTQM22BeeX", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "model poisoning in Byzantine-robust FL"}
+{"id": "pHuo7e9GBb", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "GEN_SAFE", "type": "eval", "target": "diffusion", "topic": "social bias in text-to-image models"}
+{"id": "frKRE58U02", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucinated reference detection"}
+{"id": "yyPDGf8fN9", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "reliable medical tool-using agents"}
+{"id": "Xal7wChhqw", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "gradient inversion attack defense in FL"}
+{"id": "htWKZVku7f", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "proactive desktop agent personalization"}
+{"id": "uiDb5HXVfi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "LLM introspective awareness of activations"}

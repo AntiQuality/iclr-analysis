@@ -1,0 +1,30 @@
+{"id": "EaWllvg21z", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "universal adversarial perturbations"}
+{"id": "whFNoXlMEF", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "QnQqW0tU9n", "y": 2027, "rel": 1, "sub": "INTERP_SAFE", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "conditional activation steering"}
+{"id": "wjH5SlB9ro", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "client similarity in federated learning"}
+{"id": "uYoWwqqa1f", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "DECEPTION", "type": "analysis", "target": "reasoning", "topic": "failure disclosure honesty under RL"}
+{"id": "b1ITgc4J4M", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "preventing negative transfer"}
+{"id": "Jw2rCRp0m4", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "LLM-as-judge for safety evaluation"}
+{"id": "0ZqvV0puLY", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "BACKDOOR", "type": "analysis", "target": "agent", "topic": "memory poisoning in LLM agents"}
+{"id": "DyB3m95eCV", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanistic analysis of RL reasoning gains"}
+{"id": "119qowYLUX", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE feature quality evaluation"}
+{"id": "6tHVfXVRtU", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "theory", "target": "agent", "topic": "runtime monitoring of GUI agents"}
+{"id": "6qUOXQGyxf", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "data attribution for group fairness"}
+{"id": "G7DBGlgjjp", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization data reweighting"}
+{"id": "MDFWR3rc6r", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "auditing LLM-curated data for causal inference"}
+{"id": "AB0GxLOAn9", "y": 2026, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "Hn3zsVQgAG", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "INTERP_GEN", "type": "analysis", "target": "classic", "topic": "SAE-based OOD detection"}
+{"id": "CtvnVtWZvN", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "defense", "target": "reasoning", "topic": "CoT monitoring for unsafe outputs"}
+{"id": "UlMCtFDBRn", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial example detection"}
+{"id": "CYyXzuI313", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "backdoors in LLM agents"}
+{"id": "kNz4TjY7oq", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "faithful summarization via preference data"}
+{"id": "h18MFp9RZa", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "auditing safety gates in trading agents"}
+{"id": "jsJJJvOXwr", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "multiagent", "topic": "moral hazard in multi-agent LLMs"}
+{"id": "w8rxQ2u6lt", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "weak-to-strong generalization theory"}
+{"id": "nCP9kyST95", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "semantic adversarial attack defense"}
+{"id": "wGFD7ITicm", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "controlled hallucination for archival gaps"}
+{"id": "cHzpqBAuPv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "contribution evaluation in hierarchical FL"}
+{"id": "OdBN42D3US", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "theory", "target": "mllm", "topic": "cost of verification in multimodal agents"}
+{"id": "1nwMvYnkBM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "reasoning step monitoring for early stopping"}
+{"id": "cRmIcXyAG1", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "variational sparse autoencoders"}
+{"id": "qLaUGPq6h6", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "Matryoshka SAE improvements"}

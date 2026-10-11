@@ -1,0 +1,30 @@
+{"id": "fp51nxr5B1", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "llm", "topic": "LLM generation of safety-compliant LTL specs"}
+{"id": "NG6Pa93AjW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "label-scarce vertical federated learning"}
+{"id": "kgDnO2WYhp", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "correctness probes for hallucination detection"}
+{"id": "3wMvDtzd8y", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "citation hallucination in LLMs"}
+{"id": "ScVl9QlLpD", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "VALUES", "type": "eval", "target": "llm", "topic": "multilingual safety guardrail benchmark"}
+{"id": "brKaA7RlgD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE feature selection for steering"}
+{"id": "sR0dbwZcZU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "multi-granularity agent trajectory judging"}
+{"id": "w3byGQMCqX", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "modular capability removal for dual-use"}
+{"id": "pdYwhHmIlP", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "FC2NhJYZ2v", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "inference-time interpretability method audit"}
+{"id": "oMgvjTBD53", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "activation steering attack detection"}
+{"id": "DTEznworjj", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "INTERP_SAFE", "type": "analysis", "target": "agent", "topic": "action reversibility awareness in agents"}
+{"id": "IMjf5J9NG1", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "coupling design for randomized decisions"}
+{"id": "S0UYQsWkYr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "semi-supervised LLM fine-tuning"}
+{"id": "E823AY0taq", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "mllm", "topic": "audio LLM trustworthiness benchmark"}
+{"id": "Lr3B8miY4X", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "pluralistic social equity preference data"}
+{"id": "aDBl6BoIOA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "attention sinks in diffusion transformers"}
+{"id": "gVPtJxl0X9", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM hallucination detection"}
+{"id": "mjNZLUFK21", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "REWARD_HACK", "type": "analysis", "target": "reasoning", "topic": "safety of self-rewarding test-time RL"}
+{"id": "PJ3ZdImcJM", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "method", "target": "reasoning", "topic": "over-refusal in reasoning models"}
+{"id": "txswzldKOg", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "mllm", "topic": "user-level privacy inference from social posts"}
+{"id": "LDYRWfn2Fl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "lock-in under learning-by-doing assignment"}
+{"id": "yBxakpKCLr", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "MLLM hallucination detection and mitigation"}
+{"id": "AxHwTT1CWO", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "eval", "target": "multiagent", "topic": "distributed harmful intent across agents"}
+{"id": "L4p6rtOY60", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated generative recommendation"}
+{"id": "7UOOgk51ba", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "representation-based refusal safety scoring"}
+{"id": "XkEFr1O1vs", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "unintended harmful side effects of coding agents"}
+{"id": "5IGVfiAbNA", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "learned reward hacking in robot RL"}
+{"id": "Rc8rbAQ3Hg", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "guardrail denial feedback enabling bypass"}
+{"id": "SmNO5GVed5", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "low-resource language jailbreak"}

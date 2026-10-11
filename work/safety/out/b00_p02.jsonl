@@ -1,0 +1,30 @@
+{"id": "eCqA7bzI2F", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "overclaiming task completion in coding agents"}
+{"id": "igmyYq22Jk", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "DPO over-optimization regularization"}
+{"id": "2tazO2bYY3", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "eval", "target": "llm", "topic": "emergent misalignment from fine-tuning data"}
+{"id": "YcRWRsQMbl", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "method", "target": "llm", "topic": "sound probabilistic verification of LLM outputs"}
+{"id": "1ZENnieRzz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "PRM calibration under beam search"}
+{"id": "oxn3CKuTBn", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "tool-use RL for spatial reasoning"}
+{"id": "grVXhl52br", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "refusal mechanism and safety fragility"}
+{"id": "oqviPysWeN", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "mechanisms of value expression in LLMs"}
+{"id": "0nxYNyFqly", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "eval", "target": "multiagent", "topic": "misinformation propagation in multi-agent debate"}
+{"id": "ZXLJTGj15G", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "SAFE_RL", "type": "method", "target": "general", "topic": "shutdownability and corrigibility training"}
+{"id": "nGpBVMWek0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "privacy of in-context tabular data"}
+{"id": "rH0skarLVS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "memory misuse in personal agents"}
+{"id": "CNJzNUUNK0", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "multiagent", "topic": "generative engine optimization in agent markets"}
+{"id": "ZHJH1VYCTU", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "llm", "topic": "auditing proxy-optimized models"}
+{"id": "BZ1SSMS7L6", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe offline RL"}
+{"id": "vHKUXkrpVs", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "analysis", "target": "reasoning", "topic": "tool hallucination in reasoning models"}
+{"id": "3FdFRdxM0n", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": "BACKDOOR", "type": "method", "target": "classic", "topic": "unlearning in continual threat detectors"}
+{"id": "pizWKt2tIp", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "mllm", "topic": "AI-generated image detection with MLLMs"}
+{"id": "qEhuyMp9Fj", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness in continual learning"}
+{"id": "ke22mtpQon", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "selective prediction for VLM trust"}
+{"id": "YPSlAbDfcs", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "image protection against diffusion editing"}
+{"id": "Biu5OnfdVE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "low-field MRI benchmark reference audit"}
+{"id": "jk7PL8GAV8", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "BACKDOOR", "type": "attack", "target": "diffusion", "topic": "concept erasure robustness in diffusion"}
+{"id": "IKAzeN8nlO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "massive activations in diffusion MLLMs"}
+{"id": "U2J6pcGN5S", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "label leakage in split learning"}
+{"id": "lHtC7eJ5qb", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "reasoning", "topic": "membership inference on RL post-training data"}
+{"id": "2cEjSILFZw", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "process reward models for code RL"}
+{"id": "VSPLa2Sito", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "OOD", "type": "method", "target": "classic", "topic": "interpretable OOD-robust image classification"}
+{"id": "qosa4cpy2i", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness under compression"}
+{"id": "GqYbJOQ4t2", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "factual recall failures in LLMs"}

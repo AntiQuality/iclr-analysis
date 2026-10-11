@@ -1,0 +1,30 @@
+{"id": "C1YVJvWOBT", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "memory-induced failures in personal agents"}
+{"id": "8rRLc5sCxL", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "quantization-conditioned attacks on LLMs"}
+{"id": "V7eSad5SEy", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "safety-critical driving scenario generation"}
+{"id": "rPTXiJ8vMR", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "voice replay detector robustness"}
+{"id": "wK9ybjfTkq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "process reward model evaluation"}
+{"id": "TynYvwkSlF", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "reasoning", "topic": "refusal steering in reasoning models"}
+{"id": "Fploot7Db9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "classic", "topic": "video explanation benchmark"}
+{"id": "QOWYX3Q2XS", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "multilingual response quality evaluation"}
+{"id": "UpdcNE6HLZ", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "counterfactual fairness in bandits"}
+{"id": "Gbau7RIG2C", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "adaptive DP in federated learning"}
+{"id": "UKo155jelh", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_GEN", "type": "analysis", "target": "reasoning", "topic": "CoT faithfulness"}
+{"id": "y4TCdn8fmL", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "physical information reliance in neural models"}
+{"id": "NLc8KJzXBK", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image protection against unauthorized editing"}
+{"id": "Vvks41GeL9", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "qyVzZsrsnS", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "model diffing of finetuned LLMs"}
+{"id": "CHA43xIiAG", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "FAIR", "type": "theory", "target": "general", "topic": "safe policy improvement with subgroup constraints"}
+{"id": "Z8cMacRgJn", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in LVLMs"}
+{"id": "n9Ps1SFOlE", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "gradient inversion on diffusion models"}
+{"id": "iWibncaIN1", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "UNLEARN", "type": "defense", "target": "llm", "topic": "LLM deception mitigation"}
+{"id": "ICbrBVE11Y", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial purification"}
+{"id": "FExLO2WABj", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "gradient leakage defense in federated learning"}
+{"id": "YEPCHTuvLa", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "HALLU", "type": "method", "target": "classic", "topic": "conformal prediction under performative shift"}
+{"id": "VkPUXYLEA9", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "private transfer learning dataset selection"}
+{"id": "Z8qaTd5JIv", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": "FAIR", "type": "theory", "target": "diffusion", "topic": "memorization vs bias amplification in diffusion"}
+{"id": "MxTe9wDyk8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering methods"}
+{"id": "azmp7x3lZv", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "superposition in mixture of experts"}
+{"id": "x8keHmr09N", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "representation-space augmentation for event detection"}
+{"id": "HNZY0zgzZX", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering side effects"}
+{"id": "QfC4aHe7f9", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "sycophancy in LLM agents"}
+{"id": "bBTVxBNXJX", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "safety experts in MoE LLMs"}

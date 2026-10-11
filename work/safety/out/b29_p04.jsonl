@@ -1,0 +1,30 @@
+{"id": "e3yHrzh0El", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "malicious smart contract detection"}
+{"id": "60P72cEHev", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "privacy leakage in tool-using agents"}
+{"id": "H1botH81TW", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "persona-based user simulation fidelity"}
+{"id": "5tnJ2tpUgq", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness for graph transformers"}
+{"id": "T0JBRmZ4pB", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "agent", "topic": "sabotage and monitoring in automated AI R&D"}
+{"id": "eO93WYB5QI", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "causal spectral modes in learning dynamics"}
+{"id": "iiBjaiikJG", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "long-context preference optimization"}
+{"id": "LRqzcmBq7T", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "preference data reuse in DPO"}
+{"id": "9Lfv5lRBHb", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "method", "target": "llm", "topic": "knowledge edit robustness under fine-tuning"}
+{"id": "RpKcrdxPpg", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "classic", "topic": "model inversion in collaborative inference"}
+{"id": "UGftJlN2a5", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination detection in LVLMs"}
+{"id": "F0NzC1CdRm", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "decomposition jailbreak attack datasets"}
+{"id": "pqw6kWr6kt", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "diffusion", "topic": "physical hallucination in video generation"}
+{"id": "8298ipdPC6", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward hacking mitigation in RLHF"}
+{"id": "KFjtRqVnKH", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "multi-turn jailbreak safety benchmark"}
+{"id": "6xLTuBFR5D", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM data extraction toolkit"}
+{"id": "jLgGlHj30G", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe offline RL"}
+{"id": "x3DDQq0RMo", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "on-policy self-distillation for reasoning"}
+{"id": "TQEeBvTZXe", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "automated agent red teaming"}
+{"id": "kdsFviNUJB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "VLM compositional benchmark scoring"}
+{"id": "5HJezgmC2t", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "mllm", "topic": "audio jailbreak defense for ALMs"}
+{"id": "f5Msvhxruv", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "extractable memorization in LLMs"}
+{"id": "3JzTSbUpiu", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "attack", "target": "agent", "topic": "adversarial robustness of LLM judges"}
+{"id": "FrxiIrkLSN", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "HaCsmjkB7P", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "counterfactual fairness auditing of LVLMs"}
+{"id": "FXm5U16vxD", "y": 2026, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward hacking in music RL post-training"}
+{"id": "DSOTgzeH3w", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "SAE feature recovery theory"}
+{"id": "9vVrNt0PtJ", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "video LLM hallucination benchmark"}
+{"id": "gb9trSifkT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "leakage in encrypted representation inference"}
+{"id": "e6wBXihYGF", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "alignment generalization prediction"}

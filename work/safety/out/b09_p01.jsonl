@@ -1,0 +1,30 @@
+{"id": "FZYUQ9T6e2", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_GEN", "type": "theory", "target": "general", "topic": "computational limits of interpretability for oversight"}
+{"id": "9ha5b9KlSn", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "attack", "target": "mllm", "topic": "adversarial attack on video LLM frame sampling"}
+{"id": "oOf83pSxUP", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "LKv3bx610K", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "nJ1TnqKHwB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature reliability"}
+{"id": "M2DXbwO8le", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "multi-reward diffusion fine-tuning"}
+{"id": "6zOgSVjJv3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "concept representations in signal-grounded LLMs"}
+{"id": "M9OOKZErZW", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection in tool agents"}
+{"id": "b1BdNPeg9d", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy in decentralized learning"}
+{"id": "gvNBXwLEt1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "weak-to-strong model routing"}
+{"id": "ryYQQuAeCu", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "analysis", "target": "llm", "topic": "pretraining data poisoning scaling"}
+{"id": "Ya6azgvULv", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "eval", "target": "agent", "topic": "computer-use agent safety benchmark"}
+{"id": "1gusejS3qB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "biomolecular sequence-structure co-design"}
+{"id": "SiqK9UzqNT", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private synthetic data"}
+{"id": "ppcaB23ZiK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward models for math"}
+{"id": "11kPIEkj75", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection via uncertainty"}
+{"id": "RFIwErKtGq", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination detection in MLLMs"}
+{"id": "jf3Yf67Ou8", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "ALIGN_TRAIN", "type": "method", "target": "agent", "topic": "agent loyalty to principal interests"}
+{"id": "Ox6magMhbP", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "diffusion", "topic": "NSFW prompt detection for text-to-image"}
+{"id": "TP2q9ZU0pT", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "method", "target": "llm", "topic": "emergent misalignment from fine-tuning"}
+{"id": "404TzkOCUD", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "privacy leakage from machine unlearning"}
+{"id": "VFwbVsF2lE", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "LLM-as-judge safety moderation robustness"}
+{"id": "B19MBDrvlM", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "classic", "topic": "fairness of task arithmetic model editing"}
+{"id": "B9H2705C7c", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local differential privacy online learning"}
+{"id": "1NgSAgPC8n", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "empathy steering directions in LLMs"}
+{"id": "WxbKtGW2cU", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "Nash learning from human feedback"}
+{"id": "bsEX1h0og2", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective test-time alignment"}
+{"id": "3iCEbbYIjV", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal harmful content detection"}
+{"id": "kQdVNX7UlO", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "multi-agent LLM safety evaluation"}
+{"id": "dX1yxeQOF3", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private federated optimization"}

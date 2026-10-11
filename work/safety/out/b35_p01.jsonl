@@ -1,0 +1,30 @@
+{"id": "gvLK56mpAS", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "prompt privacy sanitization for cloud LLMs"}
+{"id": "PjV2K443VX", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": "AGENT_SAFE", "type": "analysis", "target": "llm", "topic": "real-user intent-gap failure taxonomy"}
+{"id": "hY720JSxOG", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "RAG knowledge poisoning attacks"}
+{"id": "ysYgzJzdpr", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "runtime assurance risk bounds for physical AI"}
+{"id": "8HZzPtMcZo", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "SAE steering for zero-shot image classification"}
+{"id": "NtByTvUr2E", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "method", "target": "general", "topic": "generative near-optimal policies for human discretion"}
+{"id": "ZzN0iKA4cf", "y": 2027, "rel": 2, "sub": "PI", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "RL-based prompt injection red-teaming"}
+{"id": "1InFGGz1D5", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "analysis", "target": "llm", "topic": "jailbreak attacker-target capability scaling"}
+{"id": "bz5YoJ20wr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "looped transformer mechanistic interpretability"}
+{"id": "gLbaA3jrFe", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "privacy leakage auditing of fine-tuned LLMs"}
+{"id": "NfM92qRuew", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "JbyaS5zhcB", "y": 2026, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "geographic fairness via domain-adversarial training"}
+{"id": "s1LKsHTyUa", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "effects of alignment training on representations"}
+{"id": "qCQFJLLUCH", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "weak-to-strong soft supervision for CLIP"}
+{"id": "mwXlU9GA3z", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private LoRA fine-tuning"}
+{"id": "L1uqbuqkFY", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "HALLU", "type": "eval", "target": "agent", "topic": "agent memory fabrication auditing"}
+{"id": "klLmplfyyA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "test-time consensus over alternative contexts"}
+{"id": "RuS19L6RIE", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "mechanistic analysis of length generalization"}
+{"id": "DBkMR6xgBm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "human-AI task assignment under capacity"}
+{"id": "rWRwzoXjHw", "y": 2027, "rel": 1, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "capability-preserving activation steering"}
+{"id": "ncAvxPhboH", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "structural obfuscation attacks on financial guardrails"}
+{"id": "ANbAB0tXv3", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "corruption robustness of embodied navigation"}
+{"id": "V4nPFdnkfB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "validating causal use of steering features"}
+{"id": "1jQnAtp4VG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "cartilage defect grading from MRI"}
+{"id": "Qxumcb4sHY", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "OOD", "type": "defense", "target": "mllm", "topic": "VLM misbehavior detection"}
+{"id": "yzWGQNTbHQ", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM hallucination detection"}
+{"id": "4ho38AY6PT", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "AI control monitoring of insider-threat agents"}
+{"id": "KxSBc0ESFU", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "unified SFT-RL preference learning"}
+{"id": "Oeu8HotX83", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "policy-conditioned safety guard models"}
+{"id": "EcIyiJrajc", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "operational safety out-of-scope refusal"}

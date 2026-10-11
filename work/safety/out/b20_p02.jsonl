@@ -1,0 +1,30 @@
+{"id": "gvUab30ph3", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial observation attacks on RL"}
+{"id": "BFY37xuyd1", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "model merging non-additivity analysis"}
+{"id": "l4myfUXl7x", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "certified graph unlearning"}
+{"id": "M0czNtnviA", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "general", "topic": "privacy leakage in synthetic data"}
+{"id": "1DRfBQuVyz", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "confidence calibration during RLVR"}
+{"id": "8jlQCOQp5J", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "auditing LLM reasoning traces"}
+{"id": "himcPrg6sS", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "physics-informed model-based RL adaptation"}
+{"id": "MnDbIdDZ4u", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "zero-shot dialogue state tracking"}
+{"id": "40R626leak", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "malicious third-party tool selection by agents"}
+{"id": "O02qsgSUtY", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "GEN_SAFE", "type": "attack", "target": "diffusion", "topic": "backdoor attacks on text-to-image diffusion"}
+{"id": "SFasDDnlSo", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "robust task allocation in agent networks"}
+{"id": "9CuSEqyuFa", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial image attacks on VLMs"}
+{"id": "cTkFkFZ8GF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "DP synthetic text utility benchmark"}
+{"id": "jEIhUhvNIi", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "llm", "topic": "ICL demonstration order sensitivity"}
+{"id": "DOmb6CZd1q", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "method", "target": "multiagent", "topic": "collusion-robust multi-agent oversight"}
+{"id": "mXlAdNtLN5", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "diffusion", "topic": "privacy-preserving edge-cloud diffusion inference"}
+{"id": "0PwKGIID1r", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "multilingual PII detection"}
+{"id": "8lGMGXFM6R", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "multimodal sentiment analysis conflict"}
+{"id": "yma0wdovEV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "capability retention in LLM post-training"}
+{"id": "cRsmDAYneb", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "verification-friendly neural network training"}
+{"id": "ebKHZ3y6A3", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "multi-hop hallucination in VLMs"}
+{"id": "4ejlQOH2AY", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanisms of in-context learning"}
+{"id": "SL3GBvdwKw", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "diffusion", "topic": "video-conditioned EEG generation"}
+{"id": "M7eWB695jp", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "backdoor removal in LLMs"}
+{"id": "yB3veAHcW4", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "malicious agent skill detection"}
+{"id": "g0uBExrnjz", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": "ADV_ROBUST", "type": "attack", "target": "reasoning", "topic": "inference cost attack on reasoning LLMs"}
+{"id": "cw31BKxol1", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "FAIR", "type": "defense", "target": "classic", "topic": "Byzantine-robust fair federated learning"}
+{"id": "QX0oi9Vlsg", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "attribution explanations for CLIP"}
+{"id": "hEsfARMKJi", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "face embedding privacy protection"}
+{"id": "b75gIu5adT", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "general", "topic": "watermark removal and forgery attacks"}

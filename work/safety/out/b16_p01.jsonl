@@ -1,0 +1,30 @@
+{"id": "UMauKu2azg", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "visual prompt injection in computer-use agents"}
+{"id": "oJWlezUBd8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial attack on visual token compression"}
+{"id": "j38ZvRGXo1", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-progress tradeoff in driving RL"}
+{"id": "wusNjuEb6G", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "political stance auditing of LLMs"}
+{"id": "ZVm5YqO1RH", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "unauthorized risky actions in GUI agents"}
+{"id": "eRR2Sa6MUu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature-brain response correspondence"}
+{"id": "oKCidBweXz", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "method", "target": "multiagent", "topic": "governance of multi-agent systems"}
+{"id": "SCCbnM6H3z", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "UNLEARN", "type": "method", "target": "llm", "topic": "unlearning for preference alignment"}
+{"id": "EWLNGN77lX", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention as cue-based memory retrieval"}
+{"id": "0YPl4uolbM", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "s1H22o72kx", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "pediatric drug extrapolation benchmark"}
+{"id": "y6Gzzp5VEH", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM-generated text source attribution"}
+{"id": "P6qAB7VCZC", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "OOD detection score combination"}
+{"id": "mHUb1e0RVt", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "demographic bias in LLM agent decisions"}
+{"id": "SmQJJSD180", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differential privacy amplification by iteration"}
+{"id": "29R8XbELEK", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "eval", "target": "rl_robot", "topic": "adversarial robustness of driving VLAs"}
+{"id": "cKVXkbGqgs", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "misinformation detection benchmark"}
+{"id": "2v3NgsBxcY", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "subject-level privacy in pose estimation"}
+{"id": "pOxoEpizbq", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "watermarking against unauthorized distillation"}
+{"id": "aVa7etWnwF", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "geometry-aware generic object tracking"}
+{"id": "8XSsUjMzmg", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "alignment pretraining with synthetic personas"}
+{"id": "gOhgX9lVFA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "rubric reward model for text-to-image"}
+{"id": "wEvzWAKzLV", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context concept representation geometry"}
+{"id": "4b6eKlVitF", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "general", "topic": "offline evaluation of clarification policies"}
+{"id": "i4qdY4vQU9", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "propagation-based graph contrastive learning"}
+{"id": "yI79EvEm8G", "y": 2026, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "robust image watermarking"}
+{"id": "8yFE4lxHYU", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_ATK", "type": "defense", "target": "diffusion", "topic": "visual prompt attacks on image-to-video models"}
+{"id": "UZDfYOEoxC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "rubric verifier rewards for STEM RL"}
+{"id": "Tnhg2WskM6", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning utility preservation"}
+{"id": "eWWm1KDHBz", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection in computer agents"}

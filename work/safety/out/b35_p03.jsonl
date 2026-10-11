@@ -1,0 +1,30 @@
+{"id": "fB12Hcpsrf", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "source attribution of diffusion-generated images"}
+{"id": "t5cYJlV6aJ", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "domain-specific guardrail moderation"}
+{"id": "6ohtKuBbZL", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "INTERP_GEN", "type": "method", "target": "llm", "topic": "computational provenance of LLM outputs"}
+{"id": "dO3X2yZJhI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "vrlM41in2o", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "defense", "target": "mllm", "topic": "safety alignment of molecular multimodal models"}
+{"id": "RzFdZ5Pjy6", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "llm", "topic": "deceptive behavior in LLM dialogue"}
+{"id": "7ZgOmMUnmL", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model false-positive bias"}
+{"id": "hI2fAYvROC", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "self-evolving agent harness safety"}
+{"id": "v6XIxJzVWF", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "federated learning backdoor defense"}
+{"id": "7k7huYiFBl", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE vs transcoder feature discrimination"}
+{"id": "LKQ4con2iF", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "biosecurity risk of LLM agent biodesign"}
+{"id": "aCOHtW0Nu8", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "replay-free RL for autonomous driving"}
+{"id": "1TZlQ9UoVO", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference on graph neural networks"}
+{"id": "7p2YQtAIfv", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM backdoor defense"}
+{"id": "nDVXnRqStA", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe learning of CBF safety filters"}
+{"id": "WZpYqe51tV", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "REWARD_HACK", "type": "analysis", "target": "multiagent", "topic": "conformal coverage under peer pressure"}
+{"id": "QVB1G3kx3M", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "verbalized confidence calibration"}
+{"id": "1PCiOaPsos", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "defense", "target": "mllm", "topic": "unlearnable examples data protection"}
+{"id": "1YfZtwka7S", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "physical adversarial attacks on depth estimation"}
+{"id": "TwgqfUTc5T", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": null, "type": "analysis", "target": "llm", "topic": "cross-lingual decision inconsistency in LLMs"}
+{"id": "lXIB72o5CP", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "safety disposition transfer via distillation"}
+{"id": "DK4o1mjy3t", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference data selection for reward modeling"}
+{"id": "frqg27qMkd", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "diffusion", "topic": "social media image forgery detection"}
+{"id": "ZCLoMDVHBw", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM risk preference elicitation and steering"}
+{"id": "1oomqkjUAM", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in semantic segmentation"}
+{"id": "HkH9iMUFHS", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "controllable fingerprint image generation"}
+{"id": "jCykSSfU98", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "sensation-evoking ad image generation"}
+{"id": "2fgzEJPH02", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "Lipschitz certified robustness"}
+{"id": "abP8U1HyAH", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private synthetic data"}
+{"id": "4SnoDLyHJt", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "activation-based harmful prompt detection"}

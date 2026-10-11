@@ -1,0 +1,30 @@
+{"id": "vmTnFtHN8S", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "diffusion", "topic": "data unlearning in diffusion models"}
+{"id": "Q7YwCym2jH", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward model generalization for RLHF"}
+{"id": "Xro6fuRwkk", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "persona-space structure of jailbreaks"}
+{"id": "7rBMLN5FTX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "sign language video generation"}
+{"id": "yg0Wa2OH5s", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "FT_ROBUST", "type": "attack", "target": "llm", "topic": "fine-tuning-activated dormant backdoors"}
+{"id": "nDSTDq0uDK", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "M4fNHbh9ma", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "general", "topic": "selective information disclosure in human-AI decisions"}
+{"id": "t9PqRsaIvc", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in LVLMs"}
+{"id": "V6V2zdSZ2v", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking LLM numeric forecasts"}
+{"id": "b1M8zM4AW9", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "universal refusal direction across LLMs"}
+{"id": "MPhnlqdU9Z", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "runtime monitorability of neural networks"}
+{"id": "OeYN1hrBGu", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "visual hallucination in multimodal RL"}
+{"id": "L5oGS5ntnF", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "WATERMARK", "type": "defense", "target": "mllm", "topic": "multimodal misinformation detection"}
+{"id": "fZJvPuadUT", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "optimal stopping for best-of-N sampling"}
+{"id": "MxYBT9RENc", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in LVLMs"}
+{"id": "zrOyBeDJqe", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "model watermarking for federated LLM ownership"}
+{"id": "z648lOb3gH", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "eV3BgnmiAU", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "layer adaptability in fine-tuning"}
+{"id": "0cBwBD4uHU", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in LVLMs"}
+{"id": "ytIwlWzo0M", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial purification"}
+{"id": "uh7b7doBNd", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "optimization-based jailbreak attacks"}
+{"id": "J7D10YouCM", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "dictionary learning for interpretability"}
+{"id": "lRq7bDPtsj", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box jailbreak attacks"}
+{"id": "bJ4hT11duP", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM unlearning collateral damage"}
+{"id": "7V7yEt8IkI", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "FAIR", "type": "analysis", "target": "agent", "topic": "wealth-based steering in personal agents"}
+{"id": "7F6l2JI9Fn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "CoT-question conflicts in reasoning models"}
+{"id": "N5RV691l3H", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward-guided video diffusion distillation"}
+{"id": "kvzlRwS73X", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "QYoQM33Y3L", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "l86eXLKuHS", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "mechanism-preserving LLM quantization"}

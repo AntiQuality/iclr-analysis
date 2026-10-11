@@ -1,0 +1,30 @@
+{"id": "aWeTP9FH13", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "INTERP_SAFE", "type": "defense", "target": "multiagent", "topic": "malicious message propagation in multi-agent systems"}
+{"id": "KwWYvt547M", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "mllm", "topic": "safety-helpfulness trade-off in MLLMs"}
+{"id": "Uq8C7C58Bi", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe RL with heterogeneous safety signals"}
+{"id": "DExKx0cu81", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "1BBM64rOV5", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "homomorphic-encrypted federated LLM training"}
+{"id": "FgGtPDr18J", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "executable state abstractions for interpretability"}
+{"id": "V4bBAG6p04", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "multiagent", "topic": "steering no-regret agents in games"}
+{"id": "mWzUTxY6q2", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "multiagent", "topic": "collusion detection in multi-agent debate"}
+{"id": "jnVppkiQyV", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "membership inference repudiation"}
+{"id": "mq6GMkoGjh", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "mllm", "topic": "sycophancy in medical VLMs"}
+{"id": "hYZ03uKVO7", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "long-context jailbreak attacks"}
+{"id": "veoQ4ddunw", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "gradient ascent LLM unlearning stability"}
+{"id": "UK937HbLDh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "neural combinatorial optimization efficiency"}
+{"id": "eWxDPNsAIv", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "graph unlearning"}
+{"id": "mCzFs924Kh", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection"}
+{"id": "r8Vi0m5RDg", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "refusal sensitivity to request framing"}
+{"id": "b1CwF3Ae3B", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "defense", "target": "agent", "topic": "vulnerabilities in LLM-generated code"}
+{"id": "zSLAIavoJp", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO under noisy preferences"}
+{"id": "0eZRx3TrCU", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "streaming token-level safety guardrail"}
+{"id": "OwbT4EloeN", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "INTERP_GEN", "type": "method", "target": "llm", "topic": "self-preference bias in LLM judges"}
+{"id": "hvO8d1KxZp", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "d394H1GLAg", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "query-efficient black-box video attacks"}
+{"id": "X9MMGZdqmc", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "character training via constitutional AI"}
+{"id": "HUsmdUgBoY", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective LLM alignment"}
+{"id": "1Qc5JW1HJL", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "audio deepfake detection"}
+{"id": "VRRCTZfwzl", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "REWARD_HACK", "type": "method", "target": "mllm", "topic": "text-induced gaslighting in MLLMs"}
+{"id": "FHTt9ipAra", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in MLLMs"}
+{"id": "nuJI84VI8e", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "Wasserstein barycenters via flow matching"}
+{"id": "H6WwS8VOvw", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "ADV_ROBUST", "type": "method", "target": "classic", "topic": "robust graph unlearning"}
+{"id": "Eut4tG3ro9", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "SOCIETAL", "type": "analysis", "target": "multiagent", "topic": "human-directed stereotypes in agent social networks"}

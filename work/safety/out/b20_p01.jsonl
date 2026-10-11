@@ -1,0 +1,30 @@
+{"id": "aTCXvJKnkE", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM persuasion capability evaluation"}
+{"id": "De1C9JO09d", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "BACKDOOR", "type": "eval", "target": "agent", "topic": "AI control against agent sabotage of fine-tuning"}
+{"id": "bAlRB3fojP", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "multiagent", "topic": "targeted adversarial attacks on MARL"}
+{"id": "DbHtCaO4RD", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": "ADV_ROBUST", "type": "attack", "target": "llm", "topic": "bit-flip inference cost attack on LLMs"}
+{"id": "E1sqClfF16", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "audio-visual deepfake detection"}
+{"id": "Kz2rjtnKgO", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "agent", "topic": "assistance games human goal inference"}
+{"id": "u7lXflJQX9", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "pluralistic human judgments of AI harm"}
+{"id": "XKwXtZTaNB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "label symbol bias in VLMs"}
+{"id": "88C7vSdn0t", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "multi-turn LLM consistency robustness"}
+{"id": "ECXsauXWek", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "agent", "topic": "false memory in memory-augmented agents"}
+{"id": "ztIFs5nZJr", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "generalizable deepfake detection"}
+{"id": "Txeeap69UG", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward learning from demonstrations for alignment"}
+{"id": "uYsok31soR", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "physically-aware video subject insertion"}
+{"id": "RlqHADiVtJ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "interpretable veterinary disease prediction"}
+{"id": "68xaUEyTkf", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "runtime safety monitoring of LLM agents"}
+{"id": "1roHwQ9Wdi", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "agent", "topic": "certified LLM-judge agent evaluation"}
+{"id": "YM3RcI3q0E", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "hallucination reduction via activation steering"}
+{"id": "Gsjk6RX4SK", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "cultural pluralistic reward modeling"}
+{"id": "h9b5h69v3p", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "discrete diffusion reward alignment"}
+{"id": "DwmUDnIxSn", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "llm", "topic": "self-preference bias in LLM judges"}
+{"id": "cHTFLsVYmQ", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "long-term fairness in performative decisions"}
+{"id": "9SrtI40SR5", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "memory reliability answer preservation audit"}
+{"id": "xQTugkVHyM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "molecular fingerprint representations"}
+{"id": "vo1qxcMxxx", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "general", "topic": "watermarking generated DNA sequences"}
+{"id": "gDkZzcCvtl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private federated LoRA"}
+{"id": "y2P0h8Bxm8", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "LLM personalization via RL"}
+{"id": "as65TxCJSO", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "adversarial attacks on deepfake detectors"}
+{"id": "kXZkkYseBp", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "agent privacy disclosure authorization"}
+{"id": "WFVs8Vl4UD", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "runtime safety for VLA robot policies"}
+{"id": "w5JVJiFnuQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM human behavior simulation fidelity"}

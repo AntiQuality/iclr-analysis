@@ -1,0 +1,30 @@
+{"id": "kvdz1tMppc", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "procedural compliance verification for tool agents"}
+{"id": "q0QR1ze7vR", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "structured sparse autoencoder dictionaries"}
+{"id": "h7DDKwPIVv", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "scene text processing in LVLMs"}
+{"id": "Rs8qiI2GDb", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "GRPO preference alignment for flow models"}
+{"id": "czMKrKKMIO", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "attack", "target": "diffusion", "topic": "concept erasure robustness in diffusion"}
+{"id": "9S9zmlQj4I", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "SAE concept comparison of tabular models"}
+{"id": "Iih9WbOtBr", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "stale interaction policies across task switches"}
+{"id": "8tXE4LrTJW", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "HALLU", "type": "eval", "target": "mllm", "topic": "grounded faithful multimodal reasoning benchmark"}
+{"id": "VgOWxor3LV", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "rigged 3D generation from strokes"}
+{"id": "YHz6PybFqK", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "membership inference on generative text classifiers"}
+{"id": "BRG43Nc7ec", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "agentic self-evolving safety evaluation"}
+{"id": "3L3RllEzPF", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "classic", "topic": "harmful test-time adaptation under shift"}
+{"id": "NfuBj8jleE", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "RL exploration for knowledge-graph reasoning"}
+{"id": "KWMX2crLkh", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "graph federated unlearning"}
+{"id": "bMEVP3fPv8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "adversarial robustness evaluation methodology"}
+{"id": "fKqH2FO2nj", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "document provenance via semantic signatures"}
+{"id": "wDDsdCxsUH", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "social intelligence under communication barriers"}
+{"id": "8PehJKSMDt", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "well-log interpretation benchmark"}
+{"id": "JLHWcd9FHK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "closed-loop traffic simulation preference alignment"}
+{"id": "VlzGcvDqVC", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "collective manipulation of LLM agent populations"}
+{"id": "t5wIvCcJQ6", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "white-box activation jailbreak attacks"}
+{"id": "fvHdrkWktD", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "DPO hyperparameter transfer"}
+{"id": "EyXBv291ST", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "retain set selection for LLM unlearning"}
+{"id": "p9u9qw2q1j", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM hallucination detection"}
+{"id": "zt6hZQsriy", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent operational consistency testing"}
+{"id": "Nj0xzBbbka", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion initial-noise watermarking"}
+{"id": "5T0BXtJxzN", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": "INTERP_GEN", "type": "eval", "target": "llm", "topic": "auditing LLM inference patterns in legal judgment"}
+{"id": "qRSlhvA38I", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "jailbreak detection guardrail"}
+{"id": "OswqOlTYR2", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "subject-driven generation RL"}
+{"id": "AUPW3mvemi", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "safety-constrained planning for GUI agents"}

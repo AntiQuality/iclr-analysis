@@ -1,0 +1,30 @@
+{"id": "eujwxLQ3Vf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "general", "topic": "evaluator selection under label budget"}
+{"id": "JcI8Q7jIMW", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in LVLMs"}
+{"id": "UwqHsbG1sD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "steering directions for behavioral economic biases"}
+{"id": "0hdSiZ1br0", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking diffusion language models"}
+{"id": "kUfubnK8uY", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "quantum machine unlearning architecture search"}
+{"id": "BoNED9kGUf", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "predictive guardrail for computer-use agents"}
+{"id": "17dGAnvZRM", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "eval", "target": "agent", "topic": "fiduciary duty compliance of AI agents"}
+{"id": "qVoeRMyxb2", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "LLM agent offensive cyber capability benchmark"}
+{"id": "DUWf4gSPz7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "grokking circuit size and learning rules"}
+{"id": "t3O3MXFjLg", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "fair submodular maximization"}
+{"id": "deRU1K3G4N", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "vertical federated minimax optimization"}
+{"id": "Gv7ihC6yUi", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "runtime safeguards for tool-using agents"}
+{"id": "siEm5TmOO0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "data reconstruction under differential privacy"}
+{"id": "YxJEMTflww", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "hallucination detection with probes"}
+{"id": "svxfUWqgrE", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "diffusion", "topic": "whole-body video anonymization"}
+{"id": "dj6Cf3ohHM", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning in self-training pipelines"}
+{"id": "vVLwi82RpQ", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "solver gaming in LLM formal model repair"}
+{"id": "LcWx5qZ1Rj", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "model organisms evaluation methodology"}
+{"id": "oj551RYJF7", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "universal adversarial perturbations"}
+{"id": "0uhzMXFKjp", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "sparse autoencoder alternatives"}
+{"id": "wiV8704yXa", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "belief revision mechanisms in LLMs"}
+{"id": "eHXECvUB3O", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "PI", "type": "eval", "target": "mllm", "topic": "multimodal content moderation with dynamic rules"}
+{"id": "YrK1o1VWHw", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PI", "type": "eval", "target": "llm", "topic": "system prompt extraction"}
+{"id": "ouLIdDu4ei", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "humanoid skill blending"}
+{"id": "x9msPF2MuD", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "eval", "target": "agent", "topic": "embodied agent safety benchmark"}
+{"id": "5cE5OuOKoq", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "oNmMv7Lcj5", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "preference-based cold start for VLM RL"}
+{"id": "MIWQusH2rq", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "theory", "target": "general", "topic": "model collapse from synthetic data"}
+{"id": "U1nlpXh9rY", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "OOD", "type": "defense", "target": "rl_robot", "topic": "safety shielding for world-model control under shift"}
+{"id": "77Df5e97XU", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}

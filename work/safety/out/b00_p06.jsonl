@@ -1,0 +1,24 @@
+{"id": "zHuV3Vatov", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "logical verification of chain-of-thought"}
+{"id": "iWgKeFsVtF", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "HALLU", "type": "method", "target": "general", "topic": "post-hoc uncertainty quantification"}
+{"id": "6YeKgVm0Vo", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on tabular data"}
+{"id": "8GUJOgaz3u", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-assisted schema matching"}
+{"id": "7eaatmaL3G", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "tool poisoning in MCP agents"}
+{"id": "jbJGhHpwmJ", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "ALIGN_TRAIN", "type": "method", "target": "classic", "topic": "transferring robustness via representation distillation"}
+{"id": "HcubxPWpw7", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "mllm", "topic": "multi-image safety fine-tuning for VLMs"}
+{"id": "60aARgs8Li", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "reward model identifiability from preference data"}
+{"id": "o3HYrfai5D", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "test-time reward verifier for VLA models"}
+{"id": "hpsWFM9fPb", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "synthetic image source attribution"}
+{"id": "d3ABURcHk3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization for subtitle translation"}
+{"id": "s3bzBRMLsg", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private robust low-rank regression"}
+{"id": "O9h17FOmSb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "LLM-evolved RowHammer defenses"}
+{"id": "P49LP8qJeq", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "pre-execution checks for agent actions"}
+{"id": "iOMrEsKlZG", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "semantic cache poisoning in LLM serving"}
+{"id": "zhx6i9l8dw", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "secure two-party private LLM inference"}
+{"id": "skh35Rdc30", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "tail-risk constraints in safe RL"}
+{"id": "14ZgLZdteo", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "reachability-based expert intervention in imitation learning"}
+{"id": "HeMyWG4uYe", "y": 2026, "rel": 2, "sub": "PI", "sub2": "SOCIETAL", "type": "attack", "target": "llm", "topic": "prompt injection in LLM peer review"}
+{"id": "FVfI9jvpjF", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differential privacy and generalization bounds"}
+{"id": "kuWcVe9WV4", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "INTERP_SAFE", "type": "defense", "target": "diffusion", "topic": "unsafe content steering in text-to-image"}
+{"id": "jmy4p8m78H", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "risk propagation in agent memory"}
+{"id": "rYbL25lEoY", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM failures in cyber threat intelligence"}
+{"id": "I1iwOhlx4O", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection for network intrusion"}

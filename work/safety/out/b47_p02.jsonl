@@ -1,0 +1,30 @@
+{"id": "SW0VDPiwhS", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "world model poisoning for LLM agents"}
+{"id": "aoEtzdRkGh", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "canA6Ef0RP", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "process reward model for web agents"}
+{"id": "zu3zNCwOTk", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective rubric reward weighting"}
+{"id": "o4pl4KPO6S", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "rl_robot", "topic": "concept explanations of clinical RL policies"}
+{"id": "E4YcqAye6K", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM backdoor detection benchmark"}
+{"id": "EQzds0sfQc", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "verified action release for agents"}
+{"id": "023yMrtHQP", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM fact verification prompting"}
+{"id": "SFMr0umHED", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "rl_robot", "topic": "differentially private VLA fine-tuning"}
+{"id": "Vv3PGcSn7c", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair classification post-processing"}
+{"id": "8yXugJJFFH", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "general", "topic": "membership inference in continual fine-tuning"}
+{"id": "qZH0jWCuNb", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "LLM bias mitigation evaluation"}
+{"id": "68nsPk5Xiw", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "agent task-feasibility awareness and abstention"}
+{"id": "UcpTOa8OnG", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated image detection"}
+{"id": "mCcMNyHoSX", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward modeling from heterogeneous feedback"}
+{"id": "v5rV5Y1IZv", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "self-verification circuits in reasoning models"}
+{"id": "2pBctLv9vj", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "cross-model hidden-state interoperability"}
+{"id": "ltSAJVmHWF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "world action models for manipulation"}
+{"id": "myvR225M8S", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM introspection mechanisms"}
+{"id": "RZIfy4Qzxa", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "medical multi-agent system safety"}
+{"id": "4iu9Lj0Ist", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "theory", "target": "general", "topic": "certified unlearning in continual learning"}
+{"id": "tguzk54PbV", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "adversarial RL defense against prompt injection"}
+{"id": "jMxBxR3yle", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "INTERP_SAFE", "type": "analysis", "target": "diffusion", "topic": "compositional harm in image editing models"}
+{"id": "Mq6bGrtktf", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM citation behaviour vs human preferences"}
+{"id": "TDG1twoyxC", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "ordinal concept geometry in LLMs"}
+{"id": "Pf8OJjKeT5", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "brain encoding with foveated attention"}
+{"id": "BoyoTNQiGf", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "Machiavellian advice benchmark for LLMs"}
+{"id": "rxZdaKhu2I", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "treatment allocation sample complexity"}
+{"id": "ap1V0VNd3D", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "deception in LLM agents under incentives"}
+{"id": "quVsAPDOqR", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "indirect prompt injection benchmark for tool agents"}

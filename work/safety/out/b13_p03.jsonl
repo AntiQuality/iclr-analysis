@@ -1,0 +1,30 @@
+{"id": "8Qw0UnF1Q9", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "audio-visual deepfake detection"}
+{"id": "ziKfm6LEJN", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "analysis", "target": "llm", "topic": "safety guard ensemble fusion"}
+{"id": "oDU8QhnTfl", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "long-conversation attention degradation"}
+{"id": "oC9HoFbtVY", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM hallucination detection"}
+{"id": "dmJeZ2FraF", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "runtime safety gate for VLA robots"}
+{"id": "NzzWQSTuyp", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "theory", "target": "llm", "topic": "manipulation-robust text scoring rules"}
+{"id": "Pa6ak2B9jJ", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated red-teaming of LLMs"}
+{"id": "X5YiG1YXVT", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "safety degradation from benign fine-tuning"}
+{"id": "n5V3HU0M3A", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "SAE features in video models"}
+{"id": "aLYFJ8Tpv3", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "LLM judgments in social dilemmas"}
+{"id": "sjnErRHXf3", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "LVLM hallucination mitigation"}
+{"id": "gnEMoXpn0i", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "trojan LLM detection in multi-agent systems"}
+{"id": "b4pyaD4yLL", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM fingerprinting for ownership verification"}
+{"id": "wQ8HYxyEbA", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "LLM judge errors in RLVR"}
+{"id": "ugASZHL9SY", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "2CsAdl54mp", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "reasoning", "topic": "anti-distillation defenses"}
+{"id": "MqLJRCUBYG", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "RCPod1i6XP", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "personalized assistant alignment"}
+{"id": "1naqTtp0Ge", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "representation editing for truthfulness"}
+{"id": "D8aHO4Oa6c", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "generative reward model judging"}
+{"id": "2cDEvLyhJf", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "SAE features in protein models"}
+{"id": "x1s8c7gC2C", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE evaluation methodology"}
+{"id": "qsn1iHXMet", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "credential leakage in LLM agents"}
+{"id": "g4HnsWynfN", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal unlearning benchmark"}
+{"id": "1MCQzboBrR", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "YgbvwvksAl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private covariance estimation"}
+{"id": "z5wQfIymHB", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning for classifiers"}
+{"id": "jGXTx64gal", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "robust fairness in robustness distillation"}
+{"id": "Nrr35WpJn9", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "reasoning", "topic": "jailbreaking large reasoning models"}
+{"id": "H25CbFP4ES", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "test-time scaling for SWE agents"}

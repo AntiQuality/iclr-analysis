@@ -1,0 +1,30 @@
+{"id": "VgNs9dzyp6", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on quantum neural networks"}
+{"id": "viLtzsjimG", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation metrics"}
+{"id": "tBsPKcI7oe", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "poisoning defense in federated learning"}
+{"id": "5YN7fITPdz", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "HALLU", "type": "method", "target": "agent", "topic": "selective autonomy for coding agents"}
+{"id": "UROgzMyB7h", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "agent", "topic": "runtime safety monitoring of agents"}
+{"id": "4v6PmfXzxB", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "BACKDOOR", "type": "defense", "target": "llm", "topic": "latent adversarial training against jailbreaks"}
+{"id": "sEbb8HQSyW", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "adversarial robustness in transfer learning"}
+{"id": "W9RqH3alng", "y": 2027, "rel": 1, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering layer selection"}
+{"id": "NGQN02Qy07", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "OVERSIGHT", "type": "attack", "target": "rl_robot", "topic": "reasoning-chain attacks on VLA policies"}
+{"id": "Syw5lE0CrG", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "federated test-time adaptation"}
+{"id": "2NzWjWEMPb", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "neural network robustness verification"}
+{"id": "RtTJM8mETC", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "multi-turn jailbreak detection"}
+{"id": "R7lveZtPEk", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "long-context reward modeling"}
+{"id": "mEdS90r8cT", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "nHwJLjWZuv", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "lightweight LLM moderation guardrails"}
+{"id": "f14XYKJt8I", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "interpretable decomposition of sycophancy and deception"}
+{"id": "4K2NNr9W5C", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial robustness of VLMs"}
+{"id": "L49qTH31Bq", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "sxIFlT0MJi", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "analysis", "target": "llm", "topic": "model organisms of scheming"}
+{"id": "vSbYEwVFqM", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fairness-aware model compression"}
+{"id": "JFxZaXlewi", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "GEN_SAFE", "type": "attack", "target": "diffusion", "topic": "bias injection attacks on T2I diffusion"}
+{"id": "wlR7iHFs09", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "llm", "topic": "human-AI complementarity in scalable oversight"}
+{"id": "PluWBC86I4", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "poisoned sample detection"}
+{"id": "sYk9GaFHEf", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified and empirical adversarial robustness"}
+{"id": "FluMwHqAh9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "eval", "target": "llm", "topic": "decision-aware evaluation of interpretability"}
+{"id": "PLZx2hpauY", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "JB_DEF", "type": "defense", "target": "mllm", "topic": "inference-compute scaling for adversarial robustness"}
+{"id": "VVMeDpgYCv", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "diffusion", "topic": "image generator model fingerprinting"}
+{"id": "lBZowy724d", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "knowledge integration via fine-tuning"}
+{"id": "BpxyBAMHCN", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image watermarking robustness"}
+{"id": "Fn2rSOnpNf", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "optimization-based jailbreak attacks"}

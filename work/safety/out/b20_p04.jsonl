@@ -1,0 +1,30 @@
+{"id": "enKDGOuzZ9", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "inference-time jailbreak defense via hidden states"}
+{"id": "voqdJhz26e", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "population preference emulation"}
+{"id": "AJf2aIBwqb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "progressive LiDAR compression"}
+{"id": "JG9EIz95eI", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "eval", "target": "multiagent", "topic": "security of language-based cooperative driving"}
+{"id": "vAV0RGwA0A", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "transferring safety pretraining via distillation"}
+{"id": "IbDr8xgUMW", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "strategic dishonesty undermining safety evals"}
+{"id": "aAshH4kQ1v", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "mechanistic interpretability of learned planning"}
+{"id": "JLCTd00wr8", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "guard model paraphrase robustness"}
+{"id": "IDUumDpisu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "module-level error repair in VLMs"}
+{"id": "HKuoFpDLvP", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "GEN_SAFE", "type": "attack", "target": "diffusion", "topic": "compositional LoRA backdoors in diffusion"}
+{"id": "kE3ODBSDFQ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "text-driven 3D indoor scene synthesis"}
+{"id": "aIF8NerUEh", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "sandbagging hidden capability evaluation"}
+{"id": "AUkvPP5mxS", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "agent", "topic": "credit assignment in multimodal agentic RL"}
+{"id": "87BJnwSZWE", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "defense", "target": "classic", "topic": "omission-aware misinformation detection"}
+{"id": "BuJGMgwdZb", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "reward model ensemble aggregation"}
+{"id": "KDQf6JFCHs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanisms of prompt adaptation"}
+{"id": "0Wnc6JBDM0", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "BACKDOOR", "type": "analysis", "target": "mllm", "topic": "subliminal learning preference transfer"}
+{"id": "jSkzXJ24qU", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "REWARD_HACK", "type": "eval", "target": "llm", "topic": "disclosure effects in emotional support chats"}
+{"id": "9BRT7SVELI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL post-training of video world models"}
+{"id": "ALSVgwNzLI", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM representation of group composition"}
+{"id": "vklNOdnRbs", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "incentive-compatible contextual bandits"}
+{"id": "nabVJ1CrAL", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "backdoor attacks on MLLMs"}
+{"id": "nZByC53zgL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "llm", "topic": "clipping in zeroth-order optimization"}
+{"id": "7J2DXTCEwz", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "safety boundary and over-refusal tradeoff"}
+{"id": "5eIQxFegpM", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "defense", "target": "llm", "topic": "deception detection via linear probes"}
+{"id": "uLbaNB7y4W", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "cross-channel injection attacks in web agents"}
+{"id": "JfgqVdZkRG", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal misinformation detection"}
+{"id": "Jpvd7Ql5JI", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "anti-distillation defense for LLMs"}
+{"id": "ZMrdV4Ysia", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "REWARD_HACK", "type": "analysis", "target": "reasoning", "topic": "RL-induced motivated reasoning in CoT"}
+{"id": "C0KCGdDWue", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "grounded financial response generation"}

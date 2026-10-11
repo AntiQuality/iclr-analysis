@@ -1,0 +1,23 @@
+{"id": "KdNYsdAwJ5", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "OVERSIGHT", "type": "attack", "target": "llm", "topic": "provably unelicitable capability backdoors"}
+{"id": "MyFkkVcxbi", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "visual jailbreak attacks on VLMs"}
+{"id": "tL9EuFUP3S", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "safety midtraining for LLMs"}
+{"id": "L3nD0TxkHK", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "black-box hallucination detection"}
+{"id": "c8WN29giQe", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "diffusion", "topic": "speaker identity unlearning in TTS"}
+{"id": "TRgEiJ5yN0", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "alignment as distribution learning"}
+{"id": "v5Yl9V8rJs", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "method", "target": "llm", "topic": "MoE expert steering for safety"}
+{"id": "PZUekooCH3", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "label differential privacy for regression"}
+{"id": "boEZ5UpU5D", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-turn jailbreak detection"}
+{"id": "Tp9I0PbJPD", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarkable speculative sampling"}
+{"id": "i3OKIHSsHC", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward model routing for RLHF"}
+{"id": "IEPwURcPis", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "indistinguishability reward for distillation"}
+{"id": "mXdukqbYRP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE feature evaluation concept assignment"}
+{"id": "hXHrZMMYZS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "multiagent", "topic": "identity spoofing in agent orchestration"}
+{"id": "c3WIZ7G6v3", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable point cloud adversarial attacks"}
+{"id": "Xvoqy4F84S", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "red-teaming AI control monitors for coding agents"}
+{"id": "C4jAhm8L1V", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "general", "topic": "DP auditing under substitute adjacency"}
+{"id": "YkOvTOQ2l8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "representation-output gap in code models"}
+{"id": "8ZFJjkFbBA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "identifiability of transformer components"}
+{"id": "CQYixubl4w", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "length and syntax bias in preference optimization"}
+{"id": "iCmg9DN7pH", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "multiagent", "topic": "shutdown resistance in AI agents"}
+{"id": "O6D8zB2WBE", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "contextual geometry of concept representations"}
+{"id": "quYCH8w7k5", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "persona unlearning in LLMs"}

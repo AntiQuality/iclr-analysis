@@ -1,0 +1,23 @@
+{"id": "h2Qy0VR2Ec", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "data-efficient safety alignment"}
+{"id": "JDtIrWYB4o", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "logprob-based black-box jailbreaks"}
+{"id": "eCayGuvov4", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "uncertainty-gated RL for reasoning"}
+{"id": "TEXk3wsGkV", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "FT_ROBUST", "type": "method", "target": "reasoning", "topic": "safety alignment of reasoning models"}
+{"id": "GECUTH82ze", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "truthfulness-preserving style steering"}
+{"id": "rU4vv847NX", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "black-box adversarial attacks on LVLMs"}
+{"id": "WWg4Gj19zy", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "eliciting capabilities from sandbagging models"}
+{"id": "NawG5QS05q", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "eval", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "Vqq8ZO7yui", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "eval", "target": "agent", "topic": "deception by omission in LLM agents"}
+{"id": "uQuinumkOP", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "adversarial robustness of graph anomaly detectors"}
+{"id": "vLHJXsxR6e", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "attack-free adversarial vulnerability assessment"}
+{"id": "V8JaldWivi", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "feature manifolds in LLM representations"}
+{"id": "ubqecIxYBR", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "reward modeling for robotic manipulation"}
+{"id": "q4MfqSWooC", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "misuse prevention in talking-head generation"}
+{"id": "kd3UXSjMi3", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "fine-tuning resistance in open-weight LLMs"}
+{"id": "66LjgAErdw", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "multimodal human deception detection"}
+{"id": "zJjpNWymXH", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "distillation detection via watermarks"}
+{"id": "QzIQgloYgX", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "harmful fine-tuning attacks"}
+{"id": "Lg8k37mN0e", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "sparse attention index reuse"}
+{"id": "J90bp18yhT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "single-cell perturbation generators"}
+{"id": "FEMv4lHJ2C", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial robustness of LVLMs"}
+{"id": "aaKilxcQ1N", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "SOCIETAL", "type": "analysis", "target": "general", "topic": "resource requirements for AI auditing"}
+{"id": "sw1vuvVqQ3", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "data-efficient online DPO"}

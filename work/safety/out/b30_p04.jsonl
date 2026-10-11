@@ -1,0 +1,30 @@
+{"id": "tNsrshOGDa", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "theory", "target": "general", "topic": "social choice analysis of RLHF objectives"}
+{"id": "wwd2YlTTss", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "general", "topic": "Laplace uncertainty transfer across widths"}
+{"id": "bTxpmrRMOV", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "offline RL unlearning evaluation"}
+{"id": "N8AMUF0ZeE", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "BACKDOOR", "type": "method", "target": "classic", "topic": "corrective unlearning of poisoned data"}
+{"id": "kqk2pmwz72", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "contextual integrity disclosure control in agents"}
+{"id": "b3GdPvoGWK", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "multiagent", "topic": "fairness composition in multi-agent systems"}
+{"id": "WfQKvcg6Ua", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "diffusion", "topic": "DP accounting for diffusion sampling"}
+{"id": "jFwhmx3tAm", "y": 2026, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "dynamic adversarial LLM evaluation"}
+{"id": "RmyLhyL7Mu", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "computer-use agent safety verification"}
+{"id": "ibM9ZjUCiu", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "search-efficient RL for LLMs"}
+{"id": "2FxQQRzdIr", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "forget-only unlearning lower bounds"}
+{"id": "XRYwcQg2C6", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "PI", "type": "attack", "target": "llm", "topic": "black-box attack via verbalized confidence"}
+{"id": "xWqhLNyBJn", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "poisoned sample detection in driver attention"}
+{"id": "5xjFPv39pG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "pretraining data selection"}
+{"id": "tXB870BgFU", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention head activity under serial demand"}
+{"id": "2htuKJ7xO8", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "test-time adaptive jailbreak defense"}
+{"id": "EPREfh3h40", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "multi-turn jailbreak defense"}
+{"id": "U9LUhiOaLV", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "PI", "type": "defense", "target": "llm", "topic": "instruction provenance watermarking"}
+{"id": "a195V8Qp4Z", "y": 2026, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "robust image steganography"}
+{"id": "E2atTuJMD2", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "UNLEARN", "type": "eval", "target": "general", "topic": "jailbreaking protein generative models"}
+{"id": "gKHAMfD4mn", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "persistent memory injection in computer-use agents"}
+{"id": "k2y6PTxoTT", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair federated learning"}
+{"id": "jXdKeMOraF", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "spurious shortcut discovery in classifiers"}
+{"id": "R0LtYqWS6X", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "context vs parametric knowledge choice"}
+{"id": "smvFKyulvM", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "worst-group fairness under latent subgroups"}
+{"id": "FnZaqERwFp", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "recurrent depth multi-hop reasoning"}
+{"id": "DVIRiv55uQ", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "method", "target": "general", "topic": "auditable AI evaluation protocol"}
+{"id": "oc2UIYOvXO", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "text corpus anonymization"}
+{"id": "9yHbh2vv4q", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "SAE dictionary learning theory"}
+{"id": "xVqGCq3X2z", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "environmental sound deepfake detection"}

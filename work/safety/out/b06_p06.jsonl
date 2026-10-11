@@ -1,0 +1,23 @@
+{"id": "4Nsx2kZkex", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "llm", "topic": "verification-constrained RL for code synthesis"}
+{"id": "CxUBd0eyCZ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "FT_ROBUST", "type": "attack", "target": "multiagent", "topic": "safety of latent communication in multi-agent systems"}
+{"id": "xnFGyKxC7M", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agent test-time scaling tree search"}
+{"id": "hNkuYHn7Ty", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "VLM jailbreak defense via activation steering"}
+{"id": "e8rF9RKVLI", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "singing voice deepfake detection"}
+{"id": "NbyhwSvOgE", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "data ordering backdoor attacks"}
+{"id": "Kli9GFdYug", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "explainability for quantum circuit learning"}
+{"id": "G7Dan0L7ho", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "dark patterns manipulating web agents"}
+{"id": "pguFq8hyd4", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "lifelong model editing"}
+{"id": "Kirv8S69Ne", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "automated red-teaming of tool-using agents"}
+{"id": "TPbu1cHiCa", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "analysis", "target": "mllm", "topic": "massive activations in LVLMs"}
+{"id": "32Mckcyz7F", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "worst-case reliability and abstention in RLVR"}
+{"id": "AUOn1tuzCX", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM hallucination mitigation"}
+{"id": "Mr9a9XuLTI", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial example detection"}
+{"id": "FZlYWHzom4", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "data poisoning attacks on online learners"}
+{"id": "vGe3cv9NDD", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "multiagent", "topic": "AI persuasion in competitive debate"}
+{"id": "sdnZI9tILO", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "sparse transferable adversarial attacks"}
+{"id": "Hzh4FKWvwX", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "over-refusal reduction in safety adaptation"}
+{"id": "qIYalq3vpb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "LLM-agent matching market simulation"}
+{"id": "HyzKV4a9fT", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "video detoxification via editing"}
+{"id": "W6zas5fKle", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "hard-constrained safe RL"}
+{"id": "uxVfYEPti3", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "diffusion", "topic": "deepfake provenance watermarking"}
+{"id": "jymuXl8GYi", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL fine-tuning of diffusion models"}

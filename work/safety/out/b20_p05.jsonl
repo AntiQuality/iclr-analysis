@@ -1,0 +1,30 @@
+{"id": "c5IOU1Y7FL", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "unlearnable examples for trajectory data"}
+{"id": "aYK0w5oIkH", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "continual backdoor defense"}
+{"id": "VTyL1y4Lab", "y": 2026, "rel": 2, "sub": "PI", "sub2": "JB_ATK", "type": "attack", "target": "agent", "topic": "RL-trained prompt injection attacker"}
+{"id": "14Cp3A2kOi", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "data valuation under local DP"}
+{"id": "G2Wp2skOg9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "EEG emotion recognition distillation"}
+{"id": "FIpctuE7GT", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "speech synthesis watermarking robustness"}
+{"id": "TPk6364A45", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "identifiability of SAE features"}
+{"id": "m4VAwxLMqt", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "reasoning", "topic": "safety benchmark for reasoning models"}
+{"id": "sJJauAn1Pd", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "graph OOD detection"}
+{"id": "lt5s8MElIJ", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal misinformation detection"}
+{"id": "WYOmBgtNRl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "label differential privacy mechanisms"}
+{"id": "SBgQTj5qOe", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "multiagent", "topic": "multi-agent system security evaluation"}
+{"id": "w3kUlguPC0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "steering via cognitive model variables"}
+{"id": "YQhrjevre3", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "SAE-based safety steering"}
+{"id": "JodVUecxdF", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "multiagent", "topic": "fairness in multi-agent sequential decisions"}
+{"id": "CqxBL8BhfC", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "adversarial training against jailbreaks"}
+{"id": "QE1w9kikm7", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "numerical errors in robustness evaluation"}
+{"id": "eXidGkRUFt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "graph structure tokens for LLMs"}
+{"id": "XYpOY14bC4", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "agent", "topic": "contextual integrity privacy in LLM agents"}
+{"id": "MRdrxZsxyG", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "one-run DP auditing canary design"}
+{"id": "9uOw4C9OT9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature hierarchy co-activation"}
+{"id": "0pZ0Mm7M5T", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "eval", "target": "classic", "topic": "XAI evaluation for intrusion detection"}
+{"id": "vk478Rfji9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "offline-to-online RL for cluster scheduling"}
+{"id": "w95aAffIRR", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "runtime safety for VLA robot policies"}
+{"id": "hljBsCg6Bc", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "membership inference defense"}
+{"id": "h7doXt0W8x", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "agent", "topic": "stale memory verification in agents"}
+{"id": "gOkitaPCfZ", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "AI-edited text detection"}
+{"id": "kyEHs6HGjo", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "hierarchical concept geometry and steering"}
+{"id": "UX27QPxdhq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "energy of latent multi-agent communication"}
+{"id": "Lx4MhiIzhH", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "over-refusal in LLMs"}

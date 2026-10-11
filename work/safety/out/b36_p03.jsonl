@@ -1,0 +1,30 @@
+{"id": "bWFuKd784a", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "deployment-grounded agent safety benchmark"}
+{"id": "PEjLNW70dE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "decentralized federated LoRA fine-tuning"}
+{"id": "vpxCnpfkBh", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "identifiability of agent preferences from behaviour"}
+{"id": "uLLAap4Is6", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "attack", "target": "diffusion", "topic": "jailbreaking concept-erased diffusion models"}
+{"id": "NYRIzuYDbR", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "image forgery detection and localization"}
+{"id": "g8ODF0GTa0", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination in radiology report generation"}
+{"id": "lJ7zecny2e", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "grounded chain-of-thought for remote sensing VLMs"}
+{"id": "0KsofOO9ZQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "calibrated user action simulation"}
+{"id": "eZu358JOOR", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "reward model for image editing"}
+{"id": "dFn9KC6qXC", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "auditing MoE serving route execution"}
+{"id": "AhPZSeiGze", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM unlearning"}
+{"id": "skgLq4avhD", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "federated test-time OOD detection"}
+{"id": "FEqJ91D8ql", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "4D human-object understanding from IMUs"}
+{"id": "qSF6LxtL76", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "skill poisoning in LLM agents"}
+{"id": "HYmim7C1SF", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "method", "target": "mllm", "topic": "activation steering for MLLM visual grounding"}
+{"id": "7MiJeIFRpV", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM judgment of performative compliance with norms"}
+{"id": "LiDFsWRdQD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "targeted feature learning for concept steering"}
+{"id": "PwlYzqIzOb", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PI", "type": "attack", "target": "agent", "topic": "backdoored agent skills supply chain"}
+{"id": "pQW22dmJPz", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial defense for object detectors"}
+{"id": "5fK6OlvtFu", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "graph OOD detection under scaffold shift"}
+{"id": "DBK9oykvCW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "adaptive reasoning budget RL fine-tuning"}
+{"id": "aAnTEqLOtD", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "selective reliance on unreliable agent guidance"}
+{"id": "a3BwxmJuul", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "DECEPTION", "type": "method", "target": "llm", "topic": "synthetic document fine-tuning for model organisms"}
+{"id": "lduxR2cLsS", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "method", "target": "llm", "topic": "measuring training data memorization in LLMs"}
+{"id": "rviixPQ8Tu", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "solver-auditor incentive design for alignment"}
+{"id": "y8dVmQxKgb", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private text generation via PATE"}
+{"id": "VK0dzej8BI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "KL regularization in diffusion RL"}
+{"id": "072P11r1wu", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "benign overfitting in transformers"}
+{"id": "sQPLvlAEOq", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "llm", "topic": "harmful reachability beyond attack success rate"}
+{"id": "OVLwz0jslU", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated video detection"}

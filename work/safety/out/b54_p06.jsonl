@@ -1,0 +1,23 @@
+{"id": "crKJJ4Ej60", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "contextual faithfulness hallucination in RAG"}
+{"id": "cQOyBCdKTa", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "diffusion", "topic": "hallucination in generative super-resolution"}
+{"id": "Av7DXS5EzB", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "behavioral identifiability of safety preference training"}
+{"id": "fVxfCEv8xG", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "agent memory poisoning defense"}
+{"id": "CWy1EyUons", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "general", "topic": "certified generalization for few-shot PEFT"}
+{"id": "i57dQomaoE", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "BACKDOOR", "type": "defense", "target": "classic", "topic": "unlearnable examples for data protection"}
+{"id": "afTEBg7pvv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "collusion formation in peer review"}
+{"id": "yB26qSaaWD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "state persistence in long-context transformers"}
+{"id": "kQgu7RFcse", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial attacks"}
+{"id": "xgXuzIXH9u", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "chance-constrained safe RL"}
+{"id": "C81TnwHiRM", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "llm", "topic": "instruction-data separation against prompt injection"}
+{"id": "2sNrnTTEcv", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "diffusion", "topic": "conceptual blindspots in image generators"}
+{"id": "Wn5OyzZuj8", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "faithful guideline-following medical reasoning"}
+{"id": "xjDgITlk7a", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": "ADV_ROBUST", "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on safe RL policies"}
+{"id": "YyCgWQFGtL", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal process reward models"}
+{"id": "4twbqwV4br", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection from attention graphs"}
+{"id": "Tw2Dph5GOS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "defense", "target": "agent", "topic": "embodied agent safe task planning"}
+{"id": "CwOUM2ZHcN", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "theory", "target": "llm", "topic": "scaling laws for reward over-optimization"}
+{"id": "9JxOVBdwNf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "multi-agent collaboration under cognitive load"}
+{"id": "qSj68qrJxo", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair conformal prediction for KG embedding"}
+{"id": "YtiZpRAv7e", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "test-time adaptation under distribution shift"}
+{"id": "wmOqNL6RdR", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "diffusion", "topic": "symmetry error of 3D generative models"}
+{"id": "YMNn2A1b5k", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "memory poisoning in LLM agents"}

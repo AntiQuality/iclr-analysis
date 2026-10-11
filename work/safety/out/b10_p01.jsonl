@@ -1,0 +1,30 @@
+{"id": "YUaU4YBQGd", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "discretized hidden-state geometry for failure prediction"}
+{"id": "0NHYfkBeAM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated multispectral palmprint recognition"}
+{"id": "8vjsLM4yKd", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "theory", "target": "classic", "topic": "backdoor attack budget theory"}
+{"id": "UF0uK2oGeW", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "image quality assessment reward model"}
+{"id": "6DWjm5NlFl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "diffusion", "topic": "Fisher information query selection for diffusion DPO"}
+{"id": "afccZ23qXD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "misaligned multi-focus image fusion"}
+{"id": "2wteljhcBB", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "spurious correlations in preference optimization"}
+{"id": "b881hxwiZ3", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "DP-SGD on long-tailed data"}
+{"id": "qjIq4JWFVs", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "position", "target": "general", "topic": "causal evaluation of AI virtual cells"}
+{"id": "vTSgcHXiJJ", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "red-teaming LLM-agent societies misinformation propagation"}
+{"id": "ygUDyxR4Ys", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "multi-teacher on-policy distillation forgetting"}
+{"id": "Ts9bZceJ5W", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "agent monitoring for malicious side tasks"}
+{"id": "EHHVnaxRKs", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "mllm", "topic": "verifier exploitation in multimodal RL"}
+{"id": "TPq7npewc5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "stochastic penalty-barrier constrained optimization"}
+{"id": "hSus9fbPGk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "Bayesian maximum tolerated dose finding"}
+{"id": "pKKtSi88fH", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "LLM-judge reliability under multi-turn jailbreaks"}
+{"id": "jEPxb3Qjgf", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "time series generation watermarking"}
+{"id": "XLXTYlzcFF", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "unlearning pretraining knowledge in LLMs"}
+{"id": "HEB5PBo76C", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "SOCIETAL", "type": "eval", "target": "diffusion", "topic": "visual misinformation in image generators"}
+{"id": "P3zuKazMzC", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "formal protocol enforcement for multi-agent LLMs"}
+{"id": "0qgcZvtQx0", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT faithfulness formal verification"}
+{"id": "YOE8ftDahC", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "position probing interventions in RoPE models"}
+{"id": "ARbeXboTVC", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "MwaQx1VqfO", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "minority welfare in LLM-governed allocation"}
+{"id": "2fASWxStuW", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box single-turn jailbreak"}
+{"id": "4xmCRQF7PF", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness for spiking networks"}
+{"id": "yerFqgICph", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "transformer component attribution patching"}
+{"id": "w23kIHf4sk", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "personalized preference alignment"}
+{"id": "orPgmoe342", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-turn jailbreak defense"}
+{"id": "3tsXadkxmc", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "explainable face forgery detection"}

@@ -1,0 +1,30 @@
+{"id": "X4XngsoBml", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM self-awareness of quantization"}
+{"id": "M7toaoVsuU", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "defense", "target": "llm", "topic": "model substitution detection in LLM APIs"}
+{"id": "Q9wUp2jdr3", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "safety evaluation after fine-tuning"}
+{"id": "2w9Nk5yb6q", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE explanation of MoE routing"}
+{"id": "uz3SlVCzto", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "cross-modal jailbreak defense for omni-LLMs"}
+{"id": "q30odZbjFw", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "multicalibrated LLM reliability prediction"}
+{"id": "iQw5cxWAnF", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "classic", "topic": "tabular data watermarking"}
+{"id": "f0B8S74VxC", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "multilingual agentic tool-use benchmark"}
+{"id": "BQ3b4yblxt", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "UNLEARN", "type": "attack", "target": "classic", "topic": "per-sample membership inference attacks"}
+{"id": "AnsxpIWvcZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "diverse generation in LLMs"}
+{"id": "mHuQxVXlyR", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "diffusion", "topic": "fairness in generative models"}
+{"id": "YZTklAYYcK", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "mllm", "topic": "audio jailbreaks in audio-language models"}
+{"id": "il3bLmnYOx", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "mechanistic hallucination mitigation in LLMs"}
+{"id": "QUoY30Fb4w", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "LLM content moderation benchmark"}
+{"id": "0uRB0irpqi", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "federated LLM domain personalization"}
+{"id": "nG8mpFKXo5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "document-level machine translation RL"}
+{"id": "QqzruNjKqg", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "adversarial agent detection in multi-agent debate"}
+{"id": "238TsoyNjd", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal hallucination mitigation"}
+{"id": "89Rkv153Du", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "reward model preference instability"}
+{"id": "C2J6vKkOgj", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "sandbagging and hidden policy identification"}
+{"id": "NjWEJGu9tW", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "personality representations in LLMs"}
+{"id": "7TImfQIpSU", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "agent", "topic": "prompt injection against MCP security scanners"}
+{"id": "RFo0WyC3Yt", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_GEN", "type": "method", "target": "classic", "topic": "attributing prediction disparities in clinical models"}
+{"id": "wQdv9LZWAP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "synthetic virtual patient generation"}
+{"id": "7qNbWQTV26", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private equilibrium finding"}
+{"id": "oQ1qmIZUee", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "cost-sensitive abstention evaluation"}
+{"id": "DNBlGOsIxn", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "conditional image generation DPO"}
+{"id": "iXo8oV3Pz0", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "set-level preference optimization"}
+{"id": "QW7KbfUcVh", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "GEN_SAFE", "type": "method", "target": "diffusion", "topic": "concept unlearning in diffusion models"}
+{"id": "XbQw70QBqD", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "theory", "target": "llm", "topic": "theoretical limits of jailbreak robustness"}

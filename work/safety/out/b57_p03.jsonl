@@ -1,0 +1,30 @@
+{"id": "yrqUzEJ7HS", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "secret exfiltration authorization for agent tool calls"}
+{"id": "ts0GneS9CK", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "universal adversarial perturbations for tabular classifiers"}
+{"id": "c2QMZBcoZ1", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "SzmVeymK0l", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "3D adversarial attacks on SAR target recognition"}
+{"id": "BFI85sE3c5", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "medical LLM safety evaluation"}
+{"id": "uDCCSXyqBE", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "influence functions for contrastive learning"}
+{"id": "lYNsZdKn5R", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "adversarial scenario generation for autonomous driving"}
+{"id": "BuNhkdvEDz", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "theory", "target": "llm", "topic": "LLM self-evaluation calibration"}
+{"id": "MvXJ91WzsO", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "DANGER_EVAL", "type": "attack", "target": "llm", "topic": "secondary risks under benign prompts"}
+{"id": "gbHET70JiF", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "secure code generation with LLMs"}
+{"id": "O5sBMu6EAB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "reasoning", "topic": "process reward model benchmark"}
+{"id": "HRp5OacQyC", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "agent", "topic": "auditing agentic science discovery claims"}
+{"id": "ApX86hpoYc", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "secure MPC LLM inference"}
+{"id": "AC6ssToF2B", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "test-time compute allocation for diffusion LMs"}
+{"id": "R7M2KMeKFJ", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "graph OOD detection"}
+{"id": "XKxDS2jtAp", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection with synthetic outliers"}
+{"id": "M2GuwJn5mO", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "general", "topic": "specification gaming in reward-guided molecular generation"}
+{"id": "UQOEUbePDM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "intrusion detection with hyperdimensional computing"}
+{"id": "zU9US3qBih", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "multimodal backdoors in VLMs"}
+{"id": "g90QSXMB1M", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "behavioral coverage across model ecosystems"}
+{"id": "yIoMqDes7O", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "HALLU", "type": "eval", "target": "multiagent", "topic": "collective false memory in multi-agent systems"}
+{"id": "mOTHJE79Be", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "AI-generated image detection false positives"}
+{"id": "Q947vyFU9R", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "reasoning", "topic": "SAEs for reasoning features"}
+{"id": "Vt5Eqf6BZd", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "certified RAG against knowledge poisoning"}
+{"id": "S3yiqSxOXG", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "conflicts between sequential LLM defenses"}
+{"id": "JmDIjrokvf", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "tZXWWpVmbk", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "adversarial prompt detection"}
+{"id": "NzRJ3C97oF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "process reward model decision thresholds"}
+{"id": "9WukHr2fnG", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "disparate impact in DP-SGD"}
+{"id": "mPtkeRxjEA", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "reasoning", "topic": "PRM over-optimization in guided search"}

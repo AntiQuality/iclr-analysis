@@ -1,0 +1,23 @@
+{"id": "YyxvOL3Zkd", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "IP", "type": "eval", "target": "llm", "topic": "LLM dependency provenance auditing"}
+{"id": "HFhyCyln4X", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "efficient federated LoRA fine-tuning"}
+{"id": "ObF4WIMkY6", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "RLVR exploration via sample-then-forget"}
+{"id": "svXy2X2cnc", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "general", "topic": "watermark erasure barriers for trajectories"}
+{"id": "PJIOTqYHnm", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "statistical fairness-utility testing"}
+{"id": "PDBBYwd1LY", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "llm", "topic": "self-initiated LLM deception on benign prompts"}
+{"id": "hFJXDYOu41", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "mNk3RU0C58", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "alignment from noisy user feedback"}
+{"id": "j80CZhhz30", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified semantic robustness of pruned models"}
+{"id": "7pLSvJb5Yc", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "SOCIETAL", "type": "position", "target": "general", "topic": "conceptions of values in alignment research"}
+{"id": "mkq91P0xph", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "partially linear contextual bandits"}
+{"id": "BUQKer9bbG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE latent ablation score measurement"}
+{"id": "VXgbwYKPxs", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "privacy leakage in multi-site data pooling"}
+{"id": "kABKmwVgIi", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "test-time jailbreak defense"}
+{"id": "v1R2InFIwL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "policy-reward manifold alignment for reasoning RL"}
+{"id": "aT9w2osZBk", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "grounding diagnosis for long-video QA"}
+{"id": "cKG5DrtVDm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "llm", "topic": "speculative decoding verification cost"}
+{"id": "9XqNxRghz9", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "agent", "topic": "epistemic hedging in research-writing agents"}
+{"id": "bHQSQoQIKS", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection in computer-use agents"}
+{"id": "2HSvNXH4T3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "visual memory in hybrid SSM VLMs"}
+{"id": "crAw2tmpP1", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "safety decisions in web agent world models"}
+{"id": "pHyMt2zWFY", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "instruct model tuning via base model grafting"}
+{"id": "MtOPVSMTz0", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM goal-directedness evaluation"}

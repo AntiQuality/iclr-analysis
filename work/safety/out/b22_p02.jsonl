@@ -1,0 +1,30 @@
+{"id": "wfmEwfaRxN", "y": 2026, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "AI-generated text detection evasion"}
+{"id": "A5M8X7MMNk", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "molecular property prediction with hypergraphs"}
+{"id": "c6IRL2mdDR", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "post-training backdoor detection"}
+{"id": "CNf2m9D4zY", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "contextual integrity privacy in multi-agent systems"}
+{"id": "wA6dvVnKe8", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial patch attacks on VLA models"}
+{"id": "323rMmFiY8", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "deepfake detection with MLLMs"}
+{"id": "ChmQ3Uw7zI", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "multimodal multi-turn jailbreak red teaming"}
+{"id": "LIBBd6WcNa", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward models for text-to-image quality"}
+{"id": "lxV4zgk9Zf", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "unlearning audit in memory-augmented LMs"}
+{"id": "9f1MuExEbF", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "spectral attention-graph interpretability"}
+{"id": "Gv3nkawMTb", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "cross-modal hallucination in omni-modal LLMs"}
+{"id": "JYmXcExOh6", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "tool-dependent safety in agentic VLMs"}
+{"id": "GTJ8Ug8ddb", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "FAIR", "type": "analysis", "target": "llm", "topic": "hallucinated facts about people mechanisms"}
+{"id": "DJJpWzeLhB", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "DANGER_EVAL", "type": "eval", "target": "rl_robot", "topic": "object preservation safety in VLA manipulation"}
+{"id": "VD0cSkkIxc", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "dual-key backdoors in MLLMs"}
+{"id": "JoLPWCskyl", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "model inversion attacks"}
+{"id": "c2TBI8RzwD", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "analysis", "target": "multiagent", "topic": "LLM auditor failure attribution"}
+{"id": "Ic65R0Tbc1", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "rl_robot", "topic": "reward function repair against reward hacking"}
+{"id": "13fD1GifyB", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "homomorphic encrypted transformer inference"}
+{"id": "I4jBCglUOI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "video diffusion preference post-training"}
+{"id": "VujXzI1qBN", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "network anomaly detection under synthetic data shift"}
+{"id": "GG4wT3xor5", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "membership inference on diffusion models"}
+{"id": "O91NGmIAj1", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "clean-label backdoor data sanitization"}
+{"id": "bqEnnzfhBZ", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "unlearning trace detection in LLMs"}
+{"id": "T1fUcoIg6z", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "quantization-activated backdoors"}
+{"id": "BpyR6Wkl1c", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "AI control protocol cost"}
+{"id": "4dbtW4y8aS", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "preference coherence of purchasing agents"}
+{"id": "2YsuA35ucj", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "activation probes for safety classification"}
+{"id": "VWotZgyf6h", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "KAvPoroQnT", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "classic", "topic": "deepfake detection generalization"}

@@ -1,0 +1,30 @@
+{"id": "OA6nnLMQng", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "personalized FL under annotator preference shift"}
+{"id": "XAvswNGHmG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "circuit evaluation faithfulness to model errors"}
+{"id": "o9jaeEDUHI", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "mllm", "topic": "backdoor defense in VLMs"}
+{"id": "RafiZ0ikvb", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal AI-generated content detection"}
+{"id": "eyRorqX5S7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "natural-language readout of weight updates"}
+{"id": "C9LBK4Wcqc", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "diffusion", "topic": "source tracing of generated stylized images"}
+{"id": "l4WFDcw3Yy", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection from log-probs"}
+{"id": "zLcSTj1dLl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "one-step trajectory planning for driving"}
+{"id": "XTS7iAOGWw", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "certified robustness of Lipschitz networks"}
+{"id": "U8CMAlFIxo", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "membership inference defense for fine-tuned LLMs"}
+{"id": "J2UFyF9YeD", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "automated LLM backdoor injection via agents"}
+{"id": "bXTDrSo0ya", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "personalized federated fine-tuning of foundation models"}
+{"id": "oAFJZ9ZWnb", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness of combinatorial optimization solvers"}
+{"id": "4t51qDeEq7", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "hallucination mitigation via RL feedback"}
+{"id": "aN1s7Aeeqz", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "certified backdoor poisoned-sample detection"}
+{"id": "4msXyRezc2", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking LLM-generated code"}
+{"id": "8pUF4GaSVm", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "token-level credit assignment in RLHF"}
+{"id": "0NjJeTaYzZ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP-SGD gradient clipping geometry"}
+{"id": "5LZseaZGzq", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "gradient-based jailbreak attack"}
+{"id": "pn7tcJU4YN", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "UCqXhDA4Mw", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "DANGER_EVAL", "type": "attack", "target": "agent", "topic": "LLM-agent adaptive attacks on adversarial defenses"}
+{"id": "W0p7VKbcGO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "multilingual representation sharing mechanisms"}
+{"id": "39XYhoxu0W", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "test-time open-set recognition"}
+{"id": "9Y5OdGgI0F", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "hard action constraints for robot control"}
+{"id": "I6XtP6BpbP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "SAE features in speech SSL models"}
+{"id": "5Jd7TObzee", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "black-box LLM fingerprinting"}
+{"id": "c4Ev1YuUfc", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective test-time alignment"}
+{"id": "svxC0Nb9nm", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "concept-level backdoors in VLMs"}
+{"id": "z68XxlkxC3", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "audio deepfake detection"}
+{"id": "0AYN4gwcax", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local differential privacy statistical inference"}

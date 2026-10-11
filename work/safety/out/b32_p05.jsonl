@@ -1,0 +1,30 @@
+{"id": "842NHIqIg4", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "agent", "topic": "research integrity auditing in AI scientist agents"}
+{"id": "hshp5RGaxn", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness of classifiers"}
+{"id": "NtGE93iQXd", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "adversarial robustness of neural CO solvers"}
+{"id": "5EqAAgBMWZ", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "pointwise direct alignment algorithm"}
+{"id": "ulCVfMOo30", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differential privacy on Hadamard manifolds"}
+{"id": "8ivYJXO0Hy", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "mechanisms of instructed lying in LLMs"}
+{"id": "DMBSb2IKsQ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "UNLEARN", "type": "method", "target": "llm", "topic": "function-targeted fine-tuning of attention heads"}
+{"id": "wb8d3PG2m1", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "node-level DP for multi-attribution data"}
+{"id": "CvhluT0DdJ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "smart meter privacy against load inference"}
+{"id": "seU1LYAiwm", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "general", "topic": "training-data leakage from optimizer state"}
+{"id": "piThXl52G9", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "consequence readout from world model predictions"}
+{"id": "2xUp4TBZkL", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "attacking compression-based adversarial purification"}
+{"id": "FwzDg8qGWN", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated image detection with MLLMs"}
+{"id": "YD9OacHN9v", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "SAE-based tool-learning data selection"}
+{"id": "yvB5j8OPJy", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "equivariant RL for agricultural MLLMs"}
+{"id": "EnWBxpAKPd", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "robust preference optimization with incomplete rubrics"}
+{"id": "7l9gH9h9aZ", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "refusal erosion during benign fine-tuning"}
+{"id": "o7ODDwTMgU", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "error decomposition in closed-vocabulary generation"}
+{"id": "P3llbp9Dr2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "causal discovery of executable operations"}
+{"id": "4XMPZGOQ5d", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "UNLEARN", "type": "method", "target": "classic", "topic": "test-time privacy via induced uncertainty"}
+{"id": "UjHe8F48eE", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "method", "target": "general", "topic": "SAE encoder-based debiasing and steering"}
+{"id": "Gd6XqCG7DC", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward hacking in on-policy distillation"}
+{"id": "c7rcjMTe4e", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "dictionary-structured adversarially robust CNNs"}
+{"id": "ittJU5NZcd", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated image detection with MLLMs"}
+{"id": "x7cGnB8f7x", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "pruning-induced hallucination in MLLMs"}
+{"id": "u4PTh20S7R", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "understanding-to-generation transfer audit"}
+{"id": "4fEnZd9kF4", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "mllm", "topic": "multilingual multimodal safety evaluation"}
+{"id": "Jf3DvJcNkX", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "modality use in multimodal sentiment"}
+{"id": "RHbwzY7fQI", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "zero-shot OOD detection with CLIP"}
+{"id": "Be72SJOCjJ", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "general", "topic": "system identification under adversarial attacks"}

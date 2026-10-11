@@ -1,0 +1,30 @@
+{"id": "QbBGNV1GdQ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "neuron sharing in multi-task RL policies"}
+{"id": "yk7FFLoNcP", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "x4m8cHULGI", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "llm", "topic": "financial-domain LLM safety benchmark"}
+{"id": "NbCUrv0VZq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "training-free small object detection"}
+{"id": "YnYeUDCVz6", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "user-level local differential privacy"}
+{"id": "4hXmBk30K0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "secure MPC transformer inference"}
+{"id": "WLpNPSo20n", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "gradient-projection LLM unlearning"}
+{"id": "z3M8weP6Mn", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "agent", "topic": "agent ownership watermarking"}
+{"id": "Z7T1Hf7O2H", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "agent", "topic": "evidence-grounded clinical diagnosis agents"}
+{"id": "xp7wDU9JBW", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "continual vision-language learning"}
+{"id": "9smzfZdiXx", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "virtue-ethics constitutional AI trade-offs"}
+{"id": "HQuboWvFA1", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "decomposition attack monitoring"}
+{"id": "6fQPzQKGT4", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective LLM alignment"}
+{"id": "IUtWp60bvv", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference on 3D Gaussian splatting"}
+{"id": "eICPYY9A0P", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "knowledge updating via preference optimization"}
+{"id": "hnoPpdzS4U", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "llm", "topic": "social bias mitigation in LLMs"}
+{"id": "cJroQG2nRK", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "membership inference on diffusion models"}
+{"id": "oB8wGPbjhy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "cross-depth sparse feature tracking"}
+{"id": "p0QruD1HwN", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "repetition in long structured generation"}
+{"id": "nACU7cccNX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "auxiliary rewards in PPO"}
+{"id": "RjAg0NMPjO", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning in class-incremental learning"}
+{"id": "Tu9aikEafp", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "llm", "topic": "junk-data continual pretraining degradation"}
+{"id": "pCL2KkO50j", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "image watermarking for diffusion models"}
+{"id": "omJu0a2qIP", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "data valuation for preference alignment"}
+{"id": "7zuhQWJIqX", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "policy violation detection for web agents"}
+{"id": "VCjlm003WL", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "pattern matching in compositional generalization"}
+{"id": "FIfxogIoe8", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "agent capability for ML privacy attacks"}
+{"id": "AdnUNAPXDO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "turn-level preference learning for tool agents"}
+{"id": "1FkKvXT8KI", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "selective answering in conversational memory"}
+{"id": "dT2gGWoO6m", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}

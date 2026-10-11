@@ -1,0 +1,30 @@
+{"id": "8YtL2EVYve", "y": 2026, "rel": 2, "sub": "PI", "sub2": "ADV_ROBUST", "type": "attack", "target": "mllm", "topic": "adversarial image instruction injection in MLLMs"}
+{"id": "wMQsVkaTLG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "subspace circuit discovery"}
+{"id": "xpeuy3Ebeb", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "attribute inference auditing for graph LLMs"}
+{"id": "bjMGyj2eHZ", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "efficient latent generative reward modeling"}
+{"id": "qHXju2NexN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "supervision density and transformer mechanisms"}
+{"id": "E5mL07Fbq8", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection via uncertainty estimation"}
+{"id": "eu3PwSle8J", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "llm", "topic": "instruction hierarchy prompt injection defense"}
+{"id": "R6MMnCCP8T", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial faces against face recognition"}
+{"id": "gQSnEIA3Z3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "script-based web data extraction"}
+{"id": "idEOpdnzBk", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "SOCIETAL", "type": "eval", "target": "mllm", "topic": "adaptive student attacks on LLM tutors"}
+{"id": "2tHt7cMkCF", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "in-conversation misinformation correction"}
+{"id": "IyIaAOihmZ", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "agent", "topic": "automated red-teaming of code agents"}
+{"id": "vGqkrrOGty", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "spurious correlation debiasing benchmarks"}
+{"id": "dGQubVJQx6", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "identifiable concept extraction from LLM activations"}
+{"id": "3Pf8UOO4lh", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "top-down image understanding reliability"}
+{"id": "0qsTfF8zdK", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "defense against refusal direction abliteration"}
+{"id": "V8AVsJ445k", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "CG2VPDZkwM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "physics-aware video generation"}
+{"id": "75zQdOc9fM", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "grounded abstention for language-conditioned UAV actions"}
+{"id": "nCJF1CDapQ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "defense", "target": "llm", "topic": "TEE-based confidential model inference"}
+{"id": "9PwLBYBoaL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "compositional warm-start recommendation"}
+{"id": "HFfcBg8MZo", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "audio deepfake detection"}
+{"id": "zfVICPB5Sv", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "llm", "topic": "knowledge extraction attack on RAG"}
+{"id": "LZij3Zavmr", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "community membership hiding in graphs"}
+{"id": "tfqngWheDX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "spectral loss for time series forecasting"}
+{"id": "IHyY6vdYZw", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal process reward model dataset"}
+{"id": "vpCHB2zfpO", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "adversarial pruning robustness"}
+{"id": "PmrsFvtfmm", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "shield synthesis for safe RL"}
+{"id": "Qma5CYaxtO", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "mllm", "topic": "debiasing omni-modal LLMs"}
+{"id": "hsKjwjbimN", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "structured multi-aspect reward modeling"}

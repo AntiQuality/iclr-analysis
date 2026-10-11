@@ -1,0 +1,30 @@
+{"id": "fGPjN6lIad", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "method", "target": "llm", "topic": "safety guard model calibration"}
+{"id": "bLO9HrTn3n", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM factuality on structured data"}
+{"id": "X3ZDwnzC6d", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "test-time program discovery with LLMs"}
+{"id": "pHxWsgPZAT", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "FAIR", "type": "analysis", "target": "llm", "topic": "weak-to-strong trustworthiness generalization"}
+{"id": "HBozeTR6J6", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private silent speech recognition"}
+{"id": "a6DcJBsuPr", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor trigger localization"}
+{"id": "950or2jh05", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agent capability profiling"}
+{"id": "EetMA6RCpD", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "deep feature forgetting in unlearning"}
+{"id": "tKqFFTMrhs", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "SOCIETAL", "type": "eval", "target": "mllm", "topic": "demographic bias in VLM review summaries"}
+{"id": "1gPao3aKec", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "mllm", "topic": "image reliance audit in medical VLMs"}
+{"id": "FHxOTiYVFM", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM political value trade-offs"}
+{"id": "jsPlJXCatM", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained RL with flow policies"}
+{"id": "k5pJk5hty1", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal fairness benchmark"}
+{"id": "DQlOn3pVvL", "y": 2026, "rel": 1, "sub": "PI", "sub2": null, "type": "method", "target": "agent", "topic": "web agent observation pruning"}
+{"id": "kbi0o0xQS5", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "theory of activation steering"}
+{"id": "pnx9XFlpdr", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "LVLM object hallucination mitigation"}
+{"id": "uVQIypRm0K", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "social authority bias in LLM judgments"}
+{"id": "MmnNgk1SMc", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "method", "target": "mllm", "topic": "token attribution in MLLMs"}
+{"id": "GDTAORcpJ3", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "concept erasure robustness to quantization"}
+{"id": "1ZZrtLJs2i", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "compute-aware jailbreak robustness evaluation"}
+{"id": "qPuaGgBGx2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "function vectors for analogical reasoning"}
+{"id": "IGXsbftQJV", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "model poisoning against robust federated learning"}
+{"id": "vo9mmVYmGc", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM self-verification via RL"}
+{"id": "pCBz41FHGN", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "FT_ROBUST", "type": "method", "target": "llm", "topic": "introspection-based auditing of fine-tuning shifts"}
+{"id": "6JYDfAaLRO", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "hallucination in long-horizon meeting threads"}
+{"id": "amyi0tJd3V", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "PRIVACY", "type": "analysis", "target": "general", "topic": "training efficiency vs vulnerability trade-off"}
+{"id": "7OVZwupz0E", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "eval", "target": "general", "topic": "certified mode coverage of generative models"}
+{"id": "tJ7GAPAnyH", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal in-context demonstration selection"}
+{"id": "x6MpzbnsfV", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "agent", "topic": "private personalized driving recommendation agent"}
+{"id": "oKazreE5XQ", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "analysis", "target": "classic", "topic": "data poisoning in tabular foundation models"}

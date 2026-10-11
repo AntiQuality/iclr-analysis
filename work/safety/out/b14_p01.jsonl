@@ -1,0 +1,30 @@
+{"id": "4ea7Fl9miO", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "refusal editing via LoRA weight difference"}
+{"id": "BO2R94Ipk5", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward hacking transfer to later learning"}
+{"id": "pBPToqFbRO", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "refusal topic discovery auditing"}
+{"id": "KvjohQDQhB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "V2X LLM autonomous driving reasoning"}
+{"id": "FRgF9IcoQy", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "AI-generated video detection"}
+{"id": "SvkQeg4p36", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "VLM relational visual prompt grounding"}
+{"id": "vT5ZpD7AB4", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "certified unlearning under distribution shift"}
+{"id": "8ytqtZr2QM", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "closed-loop autonomous driving safety benchmark"}
+{"id": "g4n0Jwuo0x", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "molecular structure elucidation from spectra"}
+{"id": "jvTgvKYRDe", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "tabular prediction fragility certification"}
+{"id": "tqeaPJ2fUX", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "refusal activation steering"}
+{"id": "AHZN2NoyrH", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "confidence-guided LLM fact-checking"}
+{"id": "7K8mS5QNkf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "LLM-assisted causal discovery"}
+{"id": "NH3RSAVUZU", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "activation steering theory"}
+{"id": "A70YVKYiBn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "induction heads mechanism analysis"}
+{"id": "UuBFviV8Gz", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "human-AI cooperation trust modeling"}
+{"id": "7YiYBzr2MV", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on world-model planning"}
+{"id": "BIHsM6SZ3f", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "AI value prioritization risk dilemmas"}
+{"id": "Bvhvv3NFkK", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "low-hallucination synthetic image captions"}
+{"id": "9gvUS0ewHm", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "OOD", "type": "method", "target": "classic", "topic": "fair OOD detection"}
+{"id": "F9c35HFpa5", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "concealment-reconstruction jailbreak attack"}
+{"id": "hFXbYiFUX6", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "general", "topic": "certified robustness transformer verification"}
+{"id": "CxiNICq0Rr", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "method", "target": "reasoning", "topic": "white-box CoT correctness verification"}
+{"id": "mRLnS8jQWt", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "layer relevance metrics in LLMs"}
+{"id": "gXwgZ39zcp", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "pooled measurement amortized Bayesian inference"}
+{"id": "anIjfqKxNw", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "classic", "topic": "unlearnable examples deletion certification audit"}
+{"id": "LsfWORAbdA", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "IP", "type": "method", "target": "classic", "topic": "zero-knowledge confidential model auditing"}
+{"id": "GpzFuqv3td", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "graph adversarial robustness"}
+{"id": "kgbdSBjGtq", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "theory", "target": "llm", "topic": "inference-time alignment with multiple rewards"}
+{"id": "8iRKcgfBMb", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "OOD", "type": "analysis", "target": "classic", "topic": "visible perturbations preserving model predictions"}

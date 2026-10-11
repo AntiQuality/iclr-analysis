@@ -1,0 +1,30 @@
+{"id": "8QGJ2dnd8j", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "oil and gas document AI benchmark"}
+{"id": "ihI4ECm6M8", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "bias propagation in weak-to-strong generalization"}
+{"id": "TEKU3bDzzM", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "runtime authorization monitor for agent actions"}
+{"id": "UHFA411YHy", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "efficient secure transformer inference"}
+{"id": "aep2pG17Kt", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "diffusion", "topic": "evaluating preference-aligned text-to-image models"}
+{"id": "AUwGwHmO7a", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "instruction-following self-revision"}
+{"id": "7dTqUaY2Kl", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "jailbreak benchmark for fake news generation"}
+{"id": "whcCSVoCWe", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PI", "type": "attack", "target": "llm", "topic": "chat template inference-time backdoors"}
+{"id": "tKyAD2LhnI", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "video diffusion watermarking"}
+{"id": "pUj6uDM1SK", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "belief implantation via synthetic fine-tuning"}
+{"id": "w27mNVSvLr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "cross-domain offline RL data filtering"}
+{"id": "ZvM6SAwCGk", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image immunization against diffusion editing"}
+{"id": "ghwxbTx7do", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "semi-supervised preference optimization"}
+{"id": "ZO2H1Fd3l7", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "verifier serving for test-time scaling"}
+{"id": "LfI0kdZkCg", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "bit-flip backdoor defense"}
+{"id": "4IyULUbzQO", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "RAG output consistency across paraphrases"}
+{"id": "hrveinV6zZ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "fArqFprckh", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "private LLM inference with homomorphic encryption"}
+{"id": "MNZOx2SRbM", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "targeted adversarial attacks on human pose estimation"}
+{"id": "03ELNqpOT7", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "general", "topic": "unlearning evaluation via feature recovery"}
+{"id": "tl5bbHE78p", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "conditional 3D brain MRI synthesis"}
+{"id": "9RJCpcWU9G", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "rl_robot", "topic": "robust foundation-model RAN for robot cooperation"}
+{"id": "un1FlqpdVM", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "classic", "topic": "class unlearning evaluation audit"}
+{"id": "EChjbaBYts", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "eval", "target": "agent", "topic": "agent guardrail benchmark with paired tasks"}
+{"id": "tEI2PFk25l", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc calibration with human uncertainty"}
+{"id": "NZybxmI9Ek", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "analysis", "target": "llm", "topic": "emotion representations and self-report in LLMs"}
+{"id": "x7aLhLMVn1", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "Nash learning from human feedback"}
+{"id": "zHeRINHDQe", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "ZLkfhip63G", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "concept bottleneck models"}
+{"id": "Wxo2lhW3z8", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "proportionally fair clustering"}

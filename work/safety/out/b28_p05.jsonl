@@ -1,0 +1,30 @@
+{"id": "kZYacfMSMj", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local differential privacy for clustering"}
+{"id": "rGpx1j1ae1", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline-to-online safe RL"}
+{"id": "KVNlfq7GAO", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "runtime failure detection for VLA robots"}
+{"id": "s57tr9JibG", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "mllm", "topic": "visual shortcut reward hacking in multimodal RL"}
+{"id": "Pv7EP7ebxg", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "logit lens for vision transformers"}
+{"id": "go44bcifFA", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "DANGER_EVAL", "type": "eval", "target": "mllm", "topic": "physical safety understanding in embodied AI"}
+{"id": "c4xVSwQcrD", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "embodied agent hazard handling benchmark"}
+{"id": "1O6pjqEsuG", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hypothesis-space inadequacy detection"}
+{"id": "6ak6A7Jakd", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "certified robustness for RL agents"}
+{"id": "9bXv9BTMsq", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on test-time adaptation"}
+{"id": "Egmvi2RWnj", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "theory", "target": "llm", "topic": "pluralistic preference aggregation"}
+{"id": "sMiO3zP5bo", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "feedback-based alignment of imitation policies"}
+{"id": "0Z7KBFCfUB", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "classic", "topic": "label-only membership inference"}
+{"id": "aED3Fh5eVk", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "auditing persistent agent skill updates"}
+{"id": "ImqXHecKq3", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "reward hacking in rubric-based RL"}
+{"id": "sj9jmrBjMf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "visual reasoning process reward models"}
+{"id": "bkU1bQUSQD", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "RL for Verilog generation"}
+{"id": "7D0ONz01rz", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion data-point unlearning persistence"}
+{"id": "fYHenO0KnG", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "general", "topic": "fair insurance pricing"}
+{"id": "fs9YzqF64C", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "hallucination detection in reasoning models"}
+{"id": "MacwI5NteS", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "personalized federated prompt learning"}
+{"id": "pz3WCd3HtG", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "audio LLM jailbreak defense"}
+{"id": "xd7k03tAPp", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "uncertainty quantification and OOD detection"}
+{"id": "sGiE05Dc0v", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "black-box alignment via input refinement"}
+{"id": "yhHaaucuGn", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "llm", "topic": "indirect prompt injection document screening"}
+{"id": "pfvG1fjpMq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "creativity reward for language generation"}
+{"id": "I62uT0kajV", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE interpretability evaluation"}
+{"id": "ueknOG1wXL", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multilingual safety alignment"}
+{"id": "r0X0gGlZFE", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "analysis", "target": "mllm", "topic": "language prior bias in VLMs"}
+{"id": "h0lOaeDwF2", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "multi-turn jailbreak of VLMs"}

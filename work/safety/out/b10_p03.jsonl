@@ -1,0 +1,30 @@
+{"id": "Bi3PxDwhFC", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination mitigation in MLLMs via grounded reasoning"}
+{"id": "TOc0cgsSXk", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "black-box hallucination detection"}
+{"id": "QYFZ5y8NyK", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "reward hacking in best-of-N alignment"}
+{"id": "CntLuVv5Jx", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "capability drift across post-training stages"}
+{"id": "GM9H3iM7VJ", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "indirect prompt injection in email agents"}
+{"id": "CGo8A72w1n", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "RilHcrajAl", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor reactivation defense"}
+{"id": "x0czTU8Lzm", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal data poisoning filtering"}
+{"id": "4ShE1EH6K4", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in LVLMs"}
+{"id": "f2jxgNjub6", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "theory", "target": "llm", "topic": "certified copyright protection in decoding"}
+{"id": "XXNh0JfsDN", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "adversarial robustness of genomic foundation models"}
+{"id": "UC2fbLs7Ab", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in LVLMs"}
+{"id": "EoTAuTzgJZ", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "multiagent", "topic": "conformity in multi-agent debate"}
+{"id": "ohVOD2ixBH", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "human-LLM collaborative feature engineering"}
+{"id": "DRwcPyOQaq", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "gradient inversion in federated learning"}
+{"id": "DqvnwRe1V2", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "attack", "target": "classic", "topic": "class unlearning residual recovery"}
+{"id": "xMy1PNPXs9", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "risk-aware multi-agent diagnostic deliberation"}
+{"id": "LnBEASInVr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "tool-call process reward model"}
+{"id": "iPuAJTiiRS", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "mllm", "topic": "LVLM image content moderation"}
+{"id": "x8WlNCQL4s", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "analysis", "target": "llm", "topic": "strategic LLM deception under auditing"}
+{"id": "vsiVsJWvnz", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "persona-induced refusal inconsistency"}
+{"id": "YFC2MMg0Dg", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "54Crgt6qul", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "capability-preserving LLM detoxification"}
+{"id": "EEs6I4cO7S", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder architecture"}
+{"id": "2hOQcn5QUA", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "fairness of speculative decoding"}
+{"id": "YGuHMn1Qbp", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "diffusion", "topic": "differentially private federated diffusion"}
+{"id": "G0MXpcJcOJ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "adversarial sensitivity of recurrent LMs"}
+{"id": "WLJL9YYjzv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "step-level SLM-LLM routing for agents"}
+{"id": "XzUGHn7hUN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "self-repair under ablation"}
+{"id": "8QqrK0wUU6", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "reasoning", "topic": "multilingual safety alignment of reasoning models"}

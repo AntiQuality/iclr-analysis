@@ -1,0 +1,30 @@
+{"id": "e4EvcTUOkN", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": null, "type": "attack", "target": "llm", "topic": "cross-tenant attacks on LLM gateways"}
+{"id": "e7KTsFHCDP", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "method", "target": "mllm", "topic": "temporal hallucination in video MLLMs"}
+{"id": "CRHLdRAVgK", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "eQAELNKt4a", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "VLM judges for computer-use trajectories"}
+{"id": "p7jNedmKxb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "local supervision from aggregate feedback"}
+{"id": "8aT5yt8Vmt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "few-shot CLIP adaptation"}
+{"id": "C7M6F0OJ1l", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "hierarchical sparse autoencoders"}
+{"id": "xHRuyXnJXd", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "classic", "topic": "traceable watermarks in federated learning"}
+{"id": "vLy6kvtfV6", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "geographic fairness of AI weather forecasts"}
+{"id": "0luMFw8Art", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "distributional reward modeling"}
+{"id": "kga18ld70t", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "backbone LLM security in agents"}
+{"id": "ziP9zetlLp", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "general", "topic": "cognitively faithful moral preference models"}
+{"id": "pz1tpHPiM3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "speech quality reward modeling"}
+{"id": "LYt5NnOoVM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "language selection for multilingual QA"}
+{"id": "X5bX9NCF8E", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "staged audio sound event localization"}
+{"id": "ztDnkSE0iC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward modeling for music generation"}
+{"id": "DMpcZnLnAC", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "HALLU", "type": "eval", "target": "mllm", "topic": "visual memory misbinding in personalized MLLMs"}
+{"id": "yJoHTqUNry", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "opponent shaping by LLM agents"}
+{"id": "uLlHwTxEpr", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "faithful summarization hallucination reduction"}
+{"id": "Wqiem5ido9", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "theory", "target": "multiagent", "topic": "emergent manipulation under power asymmetry"}
+{"id": "YsRMMYAWRL", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "black-box multimodal unlearning"}
+{"id": "M47SWYubR5", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "pre-execution guardrail for agents"}
+{"id": "FV1SPNPaWl", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "LLM unlearning robustness/relearning"}
+{"id": "DAlNueeFQ5", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning for time-series forecasting"}
+{"id": "gfP802J7rE", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "fairness benchmark for spiking networks"}
+{"id": "OqQi651YHl", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "certified robustness of spiking networks"}
+{"id": "udjtWhlqMB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "forgetting in agent skill libraries"}
+{"id": "60949HHudh", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "distributional reward modeling"}
+{"id": "GbzrTE2vvK", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial missingness in time series"}
+{"id": "mHrkaIjq8m", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO training dynamics"}

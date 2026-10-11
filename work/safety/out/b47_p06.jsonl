@@ -1,0 +1,23 @@
+{"id": "QYf78ai2ET", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "RLHF for multi-instruction following"}
+{"id": "dMeIamHECo", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM concept unlearning"}
+{"id": "gs3uNjP4sJ", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward distribution learning from implicit feedback"}
+{"id": "gJGOnXZUG0", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "formal shields for tool-using agents"}
+{"id": "vu0ApHXTM6", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination detection in diffusion VLMs"}
+{"id": "3fXMk4KDTg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "constrained molecular policy improvement"}
+{"id": "H4uJMqNHtX", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "AI-generated video detection shortcut biases"}
+{"id": "YaKWwVIoWN", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "graph unlearning"}
+{"id": "r6Z3BXDrzO", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "llm", "topic": "retrain equivalence impossibility in unlearning"}
+{"id": "YeCwgukgnQ", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "OOD", "type": "method", "target": "llm", "topic": "uncertainty estimation for LLM probes"}
+{"id": "FiMZSxo4DO", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "k0wjCXb6ut", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "least privilege in skill-using agents"}
+{"id": "3hLdmjsrdc", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "HALLU", "type": "analysis", "target": "general", "topic": "calibration under homomorphic encryption inference"}
+{"id": "lK03wKqHMk", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "risk-based access control for agents"}
+{"id": "S9JBN7LmH0", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning robustness to paraphrase"}
+{"id": "vaZ3qRjhEf", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "cybersecurity agent reasoning benchmark"}
+{"id": "G9wn4CVX14", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "client attribution auditing in federated LLMs"}
+{"id": "iEklPQfD9v", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "concept insertion via activation steering in VLMs"}
+{"id": "dPWpXPLvQS", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "llm", "topic": "zero-shot machine-generated text detection"}
+{"id": "Do0Dj0T2je", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "knowledge retrieval mechanisms in LLMs"}
+{"id": "KA9StC9l3T", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal depression detection"}
+{"id": "vLIWSGciWk", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": "OOD", "type": "defense", "target": "rl_robot", "topic": "VLA failure detection and recovery"}
+{"id": "eCXpA14KHd", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial training"}

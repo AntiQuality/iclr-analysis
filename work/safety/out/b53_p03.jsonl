@@ -1,0 +1,30 @@
+{"id": "3yV8ieAgU7", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "safe subgame resolving in multiplayer games"}
+{"id": "TKghG47ua1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "scoring signal selection for test-time scaling"}
+{"id": "Q04RwdeN9z", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "long-form factuality via RL"}
+{"id": "Ay79oYdIGG", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "localized subspace LLM unlearning"}
+{"id": "D7kybfZFgl", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "general", "topic": "model ownership watermarking"}
+{"id": "2M35KkgY5g", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "entity recognition components in VLMs"}
+{"id": "0ad4aBnjoQ", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "reward hacking of agent environment verifiers"}
+{"id": "noF3QHneqT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "latent state reuse in looped transformers"}
+{"id": "nwfEDieg3h", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "humorous meme generation"}
+{"id": "lsEnQ47VXh", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "attack", "target": "diffusion", "topic": "attacks on concept erasure in diffusion"}
+{"id": "rcbJWBW9Zc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "multi-constraint instruction following"}
+{"id": "gahH3DaJ15", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "circuit recoverability in grokking"}
+{"id": "aLxlSUntfU", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "validity of evidence-grounded leaderboard claims"}
+{"id": "vFlz8jsfhb", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "hallucination propagation in text-to-SQL"}
+{"id": "ZzPm9tbfa9", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "general", "topic": "randomized smoothing for continuous outputs"}
+{"id": "AzmtrYcj2C", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "visual jailbreak of MLLMs"}
+{"id": "UlW35UavEm", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal safety alignment boundary cases"}
+{"id": "BdkTCk70gP", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "memory poisoning in LLM agents"}
+{"id": "Mu84EVClyD", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "analysis", "target": "multiagent", "topic": "uncertainty propagation in multi-agent systems"}
+{"id": "Swy0XEqJdA", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "PII leakage from RAG systems"}
+{"id": "LVlH4QhFVe", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "PI", "type": "analysis", "target": "llm", "topic": "passive context exposure steering LLM decisions"}
+{"id": "kWCNhRdcDI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "open-world natural language planning"}
+{"id": "FmyTFgVrdA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "discovering benchmark capability demands"}
+{"id": "WVo10uMSkP", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO beta optimization dynamics"}
+{"id": "dr5wAhScXQ", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "classic", "topic": "natural-language user control of recommenders"}
+{"id": "dZbefFmJ4Q", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "test-time adaptation for driving planning"}
+{"id": "DlCEJavdXc", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "Wasserstein robustness verification"}
+{"id": "Oeeu3f1c6u", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness of GNNs"}
+{"id": "4gGmwiKbnU", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization for reasoning consistency"}
+{"id": "lmVfTPQF3a", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "memorized data leakage via distillation"}

@@ -1,0 +1,30 @@
+{"id": "L8OJURpvji", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "internal dynamics of emergent abilities"}
+{"id": "L7OpKXskvE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "soft prompt tuning for reasoning"}
+{"id": "EFiWVSt0JK", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "exact unlearning in reinforcement learning"}
+{"id": "ezFhE6hufB", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "defending multi-agent systems from corrupted agents"}
+{"id": "xt5IOj9tyJ", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference data selection for DPO"}
+{"id": "i87fJE8Vk8", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "audio-visual hallucination mitigation"}
+{"id": "5AxiRkU5co", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private kernel mean release"}
+{"id": "wb7Yet4e2F", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "text privatization for LLM inference"}
+{"id": "RupGCDLywG", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_GEN", "type": "defense", "target": "classic", "topic": "backdoor defense for rationalization models"}
+{"id": "QpfTbPOvXv", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "classic", "topic": "federated unlearning evaluation"}
+{"id": "xggDEhWFpH", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "eval", "target": "llm", "topic": "reward hacking in coding RL"}
+{"id": "LYU80Xj5R4", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "time series forecasting with exogenous variables"}
+{"id": "UavntTtUSC", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "mllm", "topic": "truthfulness probing across model families"}
+{"id": "R59Nk7DS3a", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "human deception detection from facial video"}
+{"id": "ero6V13p0p", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "policy compliance in agent delegation"}
+{"id": "Ou0Iry74u4", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "steerable multi-objective alignment"}
+{"id": "mB0zpcuUDa", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "metric differential privacy under joint observation"}
+{"id": "RL5YGdYNpF", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "social and ethical norm compliance judgment"}
+{"id": "FjGiCaa2p1", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "inference-time LLM unlearning"}
+{"id": "jm4oRKjB3u", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "Zw69oDmVeR", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "belief drift from accumulated context"}
+{"id": "NNxYSewmeu", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarially robust distillation"}
+{"id": "WV7xIboTDK", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "monitor red-teaming for agent misbehavior"}
+{"id": "3ovC6hHof7", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "authorization-aware training against prompt injection"}
+{"id": "UVdxF5FAr7", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "routing-aware answer selection in MoE VLMs"}
+{"id": "Hh9zmxskfT", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "SAE features of reasoning behaviors"}
+{"id": "JITcICt5n3", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "robustness metric measurement artifacts"}
+{"id": "zJgGRuawjw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "memory write policies for LLM agents"}
+{"id": "PC2g1Qg90q", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "theory", "target": "llm", "topic": "jailbreak success scaling with samples"}
+{"id": "Fj7adDEWm4", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "VALUES", "type": "eval", "target": "llm", "topic": "domain-specific safety benchmark for LLMs"}

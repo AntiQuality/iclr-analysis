@@ -1,0 +1,30 @@
+{"id": "TBJIf2M23q", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM distillation as constrained RL"}
+{"id": "4I2qS5Edtg", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "safety degradation in continual fine-tuning"}
+{"id": "qllYBMRYjA", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "agent robustness to environmental hazards"}
+{"id": "BjQqvH2LgW", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "causal concept effects under confounding"}
+{"id": "rSSs7JASDl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "analysis", "target": "llm", "topic": "counterfactual vs verbatim memorization in LLMs"}
+{"id": "RjrAbASoB7", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "latent truth vs output divergence in LLMs"}
+{"id": "oWKJursYpW", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on diffusion language models"}
+{"id": "GEtOzC4MIi", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection via information geometry"}
+{"id": "jCkmwIN9kz", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "test set contamination detection"}
+{"id": "afy6Gq1w3A", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "gradient complexity of DP-ERM"}
+{"id": "8mpFgb0mLa", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "REWARD_HACK", "type": "analysis", "target": "reasoning", "topic": "steganographic CoT under monitor pressure"}
+{"id": "sagVyendRg", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "efficient best-of-N inference-time alignment"}
+{"id": "pLoTkiULgd", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "synthetic data via gradient matching for MLLMs"}
+{"id": "Bd4HiGwiid", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "3j8DZJMlbs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "style circuits in music generation models"}
+{"id": "dbpgrF0s02", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning with uncertain forget sets"}
+{"id": "EzHOmjg3R6", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "song generation via block flow matching"}
+{"id": "GNs46VNem6", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "federated learning backdoor defense"}
+{"id": "hpoWWEDJW9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent benchmark version drift"}
+{"id": "GdQpcOWDeB", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "OOD", "type": "defense", "target": "mllm", "topic": "preserving adversarial robustness in model merging"}
+{"id": "F8nItFk7j5", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "spectral saliency machine unlearning"}
+{"id": "A3gq1azIk7", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "RAG hallucination detection via hidden states"}
+{"id": "GkqvpkLWL1", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "safety alignment of tool-using agents"}
+{"id": "nuAQ0okd8i", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "93INgoeitm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "communication sparsification in MARL"}
+{"id": "ogCG1QdTOB", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "out-of-authorization actions by LLM agents"}
+{"id": "BGSlOIzOXG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "evaluating communication in multi-agent LLMs"}
+{"id": "ig13XeveLQ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "causal interventions in VLA robot policies"}
+{"id": "ZWQgkPHfYJ", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "general", "topic": "certified extrapolation radius for generative maps"}
+{"id": "xrZRxy4eK6", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "multiagent", "topic": "economic decision security in agent marketplaces"}

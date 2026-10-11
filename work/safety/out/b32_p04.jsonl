@@ -1,0 +1,30 @@
+{"id": "ZzcmQVN3BX", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "theory", "target": "general", "topic": "theory of hallucination in transformers"}
+{"id": "tEkcE3HKIV", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "agent vulnerability remediation benchmark"}
+{"id": "XF4wk5rljV", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "SAE-based passive scoping of LLMs"}
+{"id": "XGk4GfLndJ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "localized LLM unlearning parameter selection"}
+{"id": "5kKH4nxSxB", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "evidence-free claim verification"}
+{"id": "8MLGZgOJus", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "attack", "target": "classic", "topic": "adversarial attack on federated graph learning"}
+{"id": "g1rzEH4l9g", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "prompt injection in shared-workspace agents"}
+{"id": "BcztkwoCKv", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "resource exhaustion attack on tool agents"}
+{"id": "mPh4B1JoAN", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "method", "target": "multiagent", "topic": "hierarchical multi-agent oversight for healthcare"}
+{"id": "SG88ZsW9LD", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "PI", "type": "attack", "target": "llm", "topic": "evasion of LLM-based malware detectors"}
+{"id": "gA2XT53Yvz", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "classic", "topic": "cryptanalytic neural network parameter extraction"}
+{"id": "l4YckUQepC", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "multi-image hallucination mitigation"}
+{"id": "hXjd7kCskD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "style-timbre control in zero-shot TTS"}
+{"id": "M7bhrIY7b9", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "method", "target": "llm", "topic": "introspective oversight via observer channel"}
+{"id": "ga85Tp54Ua", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM text watermarking"}
+{"id": "BGj2sWO0qJ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "protein binder design search"}
+{"id": "pYmVMOMjqJ", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety verification of decision-tree policies"}
+{"id": "MNyh80uddJ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "verified activation interpretation"}
+{"id": "21dxwzKCPO", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "energy-based LLM unlearning"}
+{"id": "aJacDo8LVg", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "rubric-based RL credit assignment"}
+{"id": "Zp66glOivu", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "h524snJ5zS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "self-reinforcing safety failures in agents"}
+{"id": "yn7NRfRwdr", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "acoustic context gating in voice agents"}
+{"id": "tZaHwMrvq2", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "PI", "type": "analysis", "target": "llm", "topic": "mechanistic localization of prompt injection compliance"}
+{"id": "Zn18gRDxhF", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "color perception in VLMs"}
+{"id": "7iRbzeH6ia", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-aware embodied planning"}
+{"id": "TLgml4RxY9", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion image watermarking"}
+{"id": "eZv8SJ7Gfh", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "protection against unauthorized image-to-image generation"}
+{"id": "4tq4GJuZVx", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "analysis", "target": "agent", "topic": "social influence on coding agents"}
+{"id": "NUkP7guv48", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private model merging"}

@@ -1,0 +1,30 @@
+{"id": "CFWGPbuH85", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "classic", "topic": "privacy-preserving activity recognition sensing"}
+{"id": "K8lJg5ED9u", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial patch hijacking of robot policies"}
+{"id": "n5Cz9BxMXc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline-to-online RL with preference feedback"}
+{"id": "6hKhOvyIo8", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "diverse multi-turn RL red teaming"}
+{"id": "rD44ubxMB2", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "failure diagnostic for amortized adversarial attacks"}
+{"id": "B7oQWswV7y", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "few-shot jailbreak demonstration selection"}
+{"id": "SfPYZfxM8r", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "need-to-know contextual text sanitization"}
+{"id": "p6mPrnFp8N", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "cinematography understanding benchmark"}
+{"id": "x0p9eA7vZN", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "DP-SGD with correlated noise bounds"}
+{"id": "NDXSUUWoCO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "compositional knowledge use in fine-tuning"}
+{"id": "xvp4bV32jk", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "FHE private transformer inference"}
+{"id": "XxYNlbTFYS", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "reasoning", "topic": "safety alignment of reasoning models via RL"}
+{"id": "I6Gx5US2sY", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "runtime policy enforcement for agent actions"}
+{"id": "5RupDwqAIh", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "evidence attribution in document VQA"}
+{"id": "qzpyfkvrYu", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-critical traffic simulation via RL"}
+{"id": "iJnV9TtasX", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "federated graph unlearning"}
+{"id": "vHR8wOcCFR", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "eval", "target": "llm", "topic": "instruction-tuning data poisoning benchmark"}
+{"id": "5VXHGJiQuW", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "personalized driving trajectory generation"}
+{"id": "HCp1xl0sol", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking robustness"}
+{"id": "TWIlQMevJx", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "game-theoretic alignment for user welfare"}
+{"id": "JbNDtjVHA6", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "mllm", "topic": "hallucination in LVLMs"}
+{"id": "1f88yd3oiV", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "llm", "topic": "semantic reanchoring via in-context examples"}
+{"id": "OaijL8iG5G", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "policy optimization for LLM post-training"}
+{"id": "Po8prlHTRx", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "step dependency awareness in CoT"}
+{"id": "puqTFU4Pe4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "functional validation of SAE decompositions"}
+{"id": "UpkskRFuEK", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "steering vector refinement via SAE"}
+{"id": "eiBp7rsc3K", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "conformal factuality under distribution shift"}
+{"id": "u9T0BdbuzS", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "guardrail-aware safety alignment"}
+{"id": "5S6YTG9dL0", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "geolocation privacy protection against MLLMs"}
+{"id": "rfjD2IMEys", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "blame manipulation in multi-agent failure attribution"}

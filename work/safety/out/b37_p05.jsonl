@@ -1,0 +1,30 @@
+{"id": "jPrPsiRXSj", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "DECEPTION", "type": "method", "target": "agent", "topic": "shutdownability and corrigibility training"}
+{"id": "cWV3cyGi3x", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "hierarchical DPO for repository code generation"}
+{"id": "HiJgXynT0k", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "multi-agent actor-critic QA collaboration"}
+{"id": "BtzW1Vvk2W", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal jailbreak defense for VLMs"}
+{"id": "yr06ivlnaG", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM watermarking"}
+{"id": "OBuXpHoLNh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "preference-based latent control"}
+{"id": "4gec4slkyN", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "attack", "target": "llm", "topic": "GraphRAG knowledge extraction attack"}
+{"id": "g6sInRbdK8", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "relational safety in emotional support"}
+{"id": "GwtCoVwxZf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "general", "topic": "auditing proxy-guided scientific design"}
+{"id": "XXSPoq3uik", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "representational erasure in class unlearning"}
+{"id": "tNPHZZs8a4", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "refusal preservation under high-temperature sampling"}
+{"id": "ECAK3P92eg", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination span detection"}
+{"id": "8qQrEcsdls", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "audio-visual talking-face deepfake detection"}
+{"id": "msiN4D6F2A", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "skin-tone fairness in dermatology classification"}
+{"id": "Mf8envGWlT", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "LLM confidence-competence gap"}
+{"id": "vY15YMeOuP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "linear versus nonlinear probing theory"}
+{"id": "gGjwMNAYAr", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated jailbreak with optimized judges"}
+{"id": "sK06hYt75z", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "cultural localization steering in LLMs"}
+{"id": "BRJserk9XM", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "X8s3TiQjsN", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "biological AI tool-building capability evaluation"}
+{"id": "wyucYNGPiW", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "diffusion image watermarking"}
+{"id": "4kN4XH782a", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "y89ckFndSX", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "guard models for computer-use agents"}
+{"id": "7bHjHAOXH9", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "context attribution in RAG"}
+{"id": "wTGcb3DxOn", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "concept-augmented LLM pretraining"}
+{"id": "YHSlikDOqO", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "FHE program optimization"}
+{"id": "WNUDOLYlbh", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning for classifiers"}
+{"id": "aP6RtTtW3D", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "persistent safety rule enforcement for agents"}
+{"id": "9i6iHj2aYN", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "mllm", "topic": "zero-shot OOD detection with VLMs"}
+{"id": "tkwKLgCSmW", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "safe text-to-image generation"}

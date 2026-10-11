@@ -1,0 +1,30 @@
+{"id": "MvYGMIlpWB", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "multiagent", "topic": "sycophancy to peer agents mechanisms"}
+{"id": "jKQQb8uClw", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "jailbreak safety of diffusion LLMs"}
+{"id": "gBfKH31uj0", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "robust Nash learning from human feedback"}
+{"id": "jkzWegRGWk", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on continual learning"}
+{"id": "BYmN2DuMWB", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "mllm", "topic": "LVLM text watermarking"}
+{"id": "9DPh1i7KzA", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "attribute misbinding hallucination in VLMs"}
+{"id": "7iwqu82yOC", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair facial recognition calibration"}
+{"id": "xf2nZlJNhc", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "cultural knowledge structure in LLMs"}
+{"id": "4QgIZJXRbF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "GRPO under noisy supervision"}
+{"id": "fiohEI16sf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "rhetorical style in ML papers"}
+{"id": "gXjOsBcXIR", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated video detection"}
+{"id": "dFobSoJ39d", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "Byzantine-robust multi-agent collaboration"}
+{"id": "b37m1YoFSI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "cognition-aware LLM tutoring"}
+{"id": "o0pNwgXLBr", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "critic-free RLHF optimization"}
+{"id": "tnP3MMqSfb", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "eval", "target": "agent", "topic": "decomposition attacks on agents"}
+{"id": "jN9oCkVnsL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "cross-model consensus for answer selection"}
+{"id": "IfeJTXlr1g", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion preference optimization"}
+{"id": "BXNkFzIycB", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "hazard analysis for embodied AI"}
+{"id": "t5EKcAiJOL", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable attacks on object detectors"}
+{"id": "9XfH1iAA4W", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "risk awareness in agent trajectories"}
+{"id": "OEXuDVNvwu", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "analysis", "target": "classic", "topic": "evaluating composed federated poisoning defenses"}
+{"id": "ooROvpmxMV", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "implicit step rewards for agentic RL"}
+{"id": "gxf1BvFVfW", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "graph reconstruction from federated embeddings"}
+{"id": "bhdqCizNqu", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "evolved safety harnesses for agents"}
+{"id": "GW2rLeww7t", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "process reward models for robot evaluation"}
+{"id": "ucSLrKJdbW", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial detection and purification"}
+{"id": "0JQgo3xnjc", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "ADV_ROBUST", "type": "attack", "target": "agent", "topic": "LLM red agents against RL cyber defenses"}
+{"id": "4vTWdcUobG", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial examples"}
+{"id": "yS0rS495vo", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "GEN_SAFE", "type": "method", "target": "diffusion", "topic": "SAE-based concept erasure in diffusion"}
+{"id": "FBG56NMi0K", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "PI", "type": "attack", "target": "llm", "topic": "black-box attacks via verbalized confidence"}

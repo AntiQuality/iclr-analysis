@@ -1,0 +1,23 @@
+{"id": "xJm3HxHJpC", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "HALLU", "type": "defense", "target": "llm", "topic": "fact-checking under contaminated evidence"}
+{"id": "6lUrCxJTPC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "financial deep research agent training"}
+{"id": "oHghQxYtN1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "process verifiers for deep research agents"}
+{"id": "nuPXk8JyWz", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature co-activation structure"}
+{"id": "dxjQ22XCmb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "process reward models for web agents"}
+{"id": "dW2m8XVgp4", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "xxZgj3HEjo", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "distillation detection via fingerprinting"}
+{"id": "D35YSHKg2w", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "selective homomorphic encryption in FL"}
+{"id": "b1fmD87gPd", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO for safety alignment"}
+{"id": "eTV6fTUuax", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "general", "topic": "residual reward learning for RLHF"}
+{"id": "jcy6YEPMRv", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "visual evidence dependence in VLMs"}
+{"id": "G9Oj0dMQIJ", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "8s5jBVybhQ", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "rl_robot", "topic": "robot policy watermarking for ownership"}
+{"id": "SHoZWYOjWD", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "agent safety benchmark validity"}
+{"id": "4M9tz8d1Qi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "heuristic override in LLM reasoning"}
+{"id": "5TitVYbQQ2", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness of PEFT"}
+{"id": "nQ2pCeVwRj", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "method", "target": "llm", "topic": "rare failure probability estimation"}
+{"id": "nUWhOVFbTu", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "federated LLM unlearning"}
+{"id": "PLidw19tPf", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "defense", "target": "agent", "topic": "LLM monitoring of agent sabotage"}
+{"id": "zy2cjG9vf9", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "general", "topic": "certifying surrogates under distribution shift"}
+{"id": "yCPN210alA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM judge reliability estimation"}
+{"id": "E3zB17tCkW", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "rubric-based rewards for open-ended RL"}
+{"id": "vpHv3h0nke", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "multi-label annotation aggregation"}

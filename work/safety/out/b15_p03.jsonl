@@ -1,0 +1,30 @@
+{"id": "w1QWc1tRJW", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "analysis", "target": "llm", "topic": "multi-turn jailbreak attacks"}
+{"id": "R4mxdyixnH", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "correctness prediction from activations"}
+{"id": "YkfhTzq3hL", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "hallucination in speech recognition models"}
+{"id": "DSIZapaKKE", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "analysis", "target": "llm", "topic": "linear decoding of refused knowledge"}
+{"id": "7u6Zz3X4h5", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "XFHXlREKbQ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "INTERP_SAFE", "type": "defense", "target": "agent", "topic": "agent trajectory harm detection from internal states"}
+{"id": "kTuIMbhP1E", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "computer-use agents in incentive-misaligned environments"}
+{"id": "ldmBU3r55l", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "PI", "type": "attack", "target": "llm", "topic": "invisible Unicode jailbreak suffixes"}
+{"id": "DmoNViA41R", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "alignment and distillation ordering"}
+{"id": "i7twcxEXJ6", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "over-privilege in agent skills"}
+{"id": "PoA3faBQqn", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "malicious agent skill composition"}
+{"id": "XZemvCFYHL", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "hard-label black-box adversarial attacks"}
+{"id": "t3ZMiHhqXm", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "mllm", "topic": "demographic bias in web-scale training data"}
+{"id": "t5HbM8xlHo", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "XXitLkRU4q", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "Bayesian in-context learning in transformers"}
+{"id": "Mz1BjZ8hK7", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "confidence and deception in LLMs"}
+{"id": "oAMmUnkAAA", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "anti-distillation protection of LLMs"}
+{"id": "m826DekCpp", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "protein inverse folding preference alignment"}
+{"id": "SzQhnpa8is", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "selective prediction via hidden-state probes"}
+{"id": "Xb1tYrmcuY", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial defense without adversarial training"}
+{"id": "BphQ3Ib8LM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "federated VLA training"}
+{"id": "BaG67KNavy", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "OVERSIGHT", "type": "defense", "target": "reasoning", "topic": "latent CoT safety alignment auditability"}
+{"id": "wSHvuy1308", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair tabular foundation models"}
+{"id": "jugY302BAh", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "preference-aligned LLM annotation"}
+{"id": "gkGLiuDFeB", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "PI", "type": "eval", "target": "llm", "topic": "adversarial robustness of LLM phishing detection"}
+{"id": "d5E2lwjO32", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "analysis", "target": "agent", "topic": "web agent cost-awareness in content access"}
+{"id": "Pc8P3kCecq", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "adversarial capture of multi-agent deliberation"}
+{"id": "8F9aMllvWm", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion model watermarking"}
+{"id": "tnarI4i30K", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "hallucination mitigation via activation steering"}
+{"id": "yxGPF62JUz", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "mllm", "topic": "deepfake video detection benchmark"}

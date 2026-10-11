@@ -1,0 +1,30 @@
+{"id": "kSIEZjsBRU", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "spectral geometry of concept representations"}
+{"id": "omg9K6lI93", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "llm", "topic": "translation-masked benchmark contamination"}
+{"id": "O1hfVE0UxG", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "interactive personalization of LLM reasoning"}
+{"id": "SoQL47nVG8", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "scope-aware instruction following"}
+{"id": "EJjq0o3iQk", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "flow-matching inverse RL"}
+{"id": "ludS0SUwJC", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "robust image watermarking"}
+{"id": "eU753ZhN5y", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "neuron community discovery"}
+{"id": "miuuUDaLV1", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "JB_ATK", "type": "attack", "target": "agent", "topic": "adversarial query obfuscation in dense retrieval"}
+{"id": "2McprQZ1Dt", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_ATK", "type": "method", "target": "llm", "topic": "adversarial crowdsourced safety alignment data"}
+{"id": "WSHDtfk5hW", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "MLLM-based deepfake detection"}
+{"id": "BJACmAEfW6", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "ADV_ROBUST", "type": "attack", "target": "llm", "topic": "acceleration-collapse attack on speculative decoding"}
+{"id": "UawTnXqsM3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "causal effects of retained KV history"}
+{"id": "7hzX7vOk47", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "certified utility control in unlearning"}
+{"id": "kBzyIo7Ze6", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "DECEPTION", "type": "defense", "target": "llm", "topic": "backdoor trigger self-awareness in LLMs"}
+{"id": "0rsRCbVNQ9", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on 3D Gaussian splatting"}
+{"id": "f17aMuQIPz", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "method", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "8kEDWYmAVa", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "method", "target": "mllm", "topic": "universal adversarial images for VLM steering"}
+{"id": "aDoHo9F2BW", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "cyber offense capability evaluation of agents"}
+{"id": "UoSiPGRPPZ", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "mllm", "topic": "spurious cue sensitivity in MLLMs"}
+{"id": "9bzbS8SbV0", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "comic visual question answering reasoning"}
+{"id": "cqPfEIu8Wo", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "safe sim-to-real transfer"}
+{"id": "j4o5OSnG7Y", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "enforcing safety flags in LLM agents"}
+{"id": "8NtEHw8c8C", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "neural topology probing of LLMs"}
+{"id": "vGk4D0fUzv", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "jailbreak detection from internal dynamics"}
+{"id": "x8WY5hXpdq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "domain subspace in residual stream"}
+{"id": "zYP7dMwvwB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "SAE-guided efficient LLM RL"}
+{"id": "XKAcf5UbwD", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "general", "topic": "speech tampering detection"}
+{"id": "1n7yRC65E4", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "target selection for adversarial attacks"}
+{"id": "98Rbm5C5Bl", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "cross-model activation stitching"}
+{"id": "bJqdLHRD6b", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "steering directions for prompt interpretation"}

@@ -1,0 +1,30 @@
+{"id": "0CH2ORSgBt", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL under cost budgets"}
+{"id": "8YHtweGqZC", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "multi-surface prompt injection in agents"}
+{"id": "aefBGaMzXC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "unsupervised RL post-training objective"}
+{"id": "LwjUKEWAvt", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "physical safety warnings in assistants"}
+{"id": "2Rp8RaZEXO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "multi-fidelity Bayesian optimization"}
+{"id": "RLBEeYYv3n", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "memorization in diffusion language models"}
+{"id": "QGOw6AU8Lp", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "bias in LLM-as-a-judge"}
+{"id": "OAKwf0y829", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "general", "topic": "abstention training on unknown queries"}
+{"id": "dkiCPDAmev", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "multi-turn jailbreak attacks"}
+{"id": "nxMR2NGFik", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation"}
+{"id": "5hfa2itwGz", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": "OOD", "type": "theory", "target": "general", "topic": "weak-to-strong generalization under spurious correlations"}
+{"id": "CHv2FrwvpM", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "mllm", "topic": "deepfake detection with MLLMs"}
+{"id": "MGHZ3iiw6x", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "inference-time safety for VLA policies"}
+{"id": "hXqLI5v51m", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "AI-generated text span localization"}
+{"id": "6xB2mKOGqx", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "federated LoRA fine-tuning aggregation"}
+{"id": "Ar078WR3um", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "personalized RLHF reward modelling"}
+{"id": "WHHqkNG8Yn", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "mllm", "topic": "bias in MLLM-based recommenders"}
+{"id": "9JIfazDwdT", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "adversarial detection in VLA models"}
+{"id": "SeQqnw5eNj", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "UNLEARN", "type": "defense", "target": "llm", "topic": "agentic test-time LLM security defense"}
+{"id": "XFUTPZJ67R", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "psychologically grounded role-playing agents"}
+{"id": "JlB77xKq8e", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": null, "type": "attack", "target": "llm", "topic": "adversarial manipulation of LLM schedulers"}
+{"id": "6wzeuCEa6X", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "cyber offense capability evaluation"}
+{"id": "1ZqtI6o3vQ", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "deception vs hallucination mechanisms"}
+{"id": "9SnMvHmxKs", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "llm", "topic": "action-decision calibration in agents"}
+{"id": "3tUPFoi80o", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on world-action models"}
+{"id": "WzTL9FaGqJ", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "fairness auditing under label noise"}
+{"id": "wPkvMGRCkW", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "mllm", "topic": "safe image generation in unified models"}
+{"id": "17UDRTRLmp", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "subgroup fairness"}
+{"id": "sU3grFapKD", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "llm", "topic": "LLM compliance safety benchmark"}
+{"id": "MXiYTRBXNm", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}

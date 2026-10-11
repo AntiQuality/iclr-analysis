@@ -1,0 +1,30 @@
+{"id": "nbIbiJTibd", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "analysis", "target": "reasoning", "topic": "CoT monitorability across languages"}
+{"id": "CwOZPXu8l4", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "generative reward model training"}
+{"id": "0mAiZxTH3y", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP synthetic data via private evolution"}
+{"id": "yJEPMDtDM2", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "HALLU", "type": "method", "target": "mllm", "topic": "radiology report preference optimization"}
+{"id": "0cb6zfwHm7", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "agent", "topic": "world models ignoring environment refusals"}
+{"id": "14vBE8iAEx", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "spurious correlations in reward models"}
+{"id": "sme7Kz2wT6", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc OOD detection"}
+{"id": "IE4Ym7L9Ho", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "OVERSIGHT", "type": "attack", "target": "mllm", "topic": "CoT-obfuscated backdoor in VLMs"}
+{"id": "Ga5ICrf1fi", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "analysis", "target": "llm", "topic": "user identity awareness shifting model behavior"}
+{"id": "LlhiiTg9ux", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "attention dimensionality reduction for KV cache"}
+{"id": "3y3hnL7KhS", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "rnm0DNXZTf", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "correlated errors in LLM-judge monitoring"}
+{"id": "MTlBNELM9S", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "defense", "target": "llm", "topic": "toxicity removal via toxic subspace"}
+{"id": "bwCNQvkEyB", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "LLM adaptation to hidden evaluators"}
+{"id": "pq6rx9r6Aj", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "proactive defense against search-based jailbreaks"}
+{"id": "VxrPmimMeZ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "fairness of DP-SGD clipping"}
+{"id": "zftquoHTgS", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "underthinking in long-CoT reasoning"}
+{"id": "MpG2tqZ6cI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "test-time compute budget allocation"}
+{"id": "mUiUV8qvS0", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "HALLU", "type": "method", "target": "mllm", "topic": "inference-time preference alignment for VLMs"}
+{"id": "ex2CrZ6x1r", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "intent-aware preference optimization"}
+{"id": "HShr77HnAP", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP statistical inference on manifolds"}
+{"id": "cnt2K3pBY7", "y": 2027, "rel": 1, "sub": "INTERP_SAFE", "sub2": null, "type": "eval", "target": "llm", "topic": "emotion steering vs random directions"}
+{"id": "l6W3nsTQpy", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "anti-misuse image protection perturbations"}
+{"id": "KcAC7CBxd2", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "knowledge-aware abstention under fine-tuning"}
+{"id": "AEKji3PwD9", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "safety degradation from knowledge distillation"}
+{"id": "Oyfz6G0hmc", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "DP synthetic trajectory generation"}
+{"id": "g03rPJwRwS", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "Tqusxp1tXg", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "PATE without public data"}
+{"id": "RnRHNEeqvI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "compositional generalization in map navigation"}
+{"id": "Vogxs8BzJS", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attack in federated learning"}

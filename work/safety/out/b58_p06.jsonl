@@ -1,0 +1,23 @@
+{"id": "vzRprHSvdU", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM-based private attribute inference"}
+{"id": "irr8jw79Uv", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM Bayesian persuasion games"}
+{"id": "WjjXW0nQ2T", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "refusal steering safety-utility trade-off"}
+{"id": "6x4DWjhMsH", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "FT_ROBUST", "type": "eval", "target": "llm", "topic": "refusal robustness scaling with model size"}
+{"id": "ELoktlfkCU", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "agent", "topic": "safety persistence in self-improving agents"}
+{"id": "5ZBaVwOEdN", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "molecular toxicity optimization benchmark"}
+{"id": "ZY9nFE36OY", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "offline constrained multi-agent RL benchmark"}
+{"id": "rDEucu52Z2", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "auditable reasoning benchmark for embodied VLAs"}
+{"id": "FHXvxKGpdv", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "personalized image generation RL"}
+{"id": "smdNDdHjnO", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "cybersecurity agent capability evaluation"}
+{"id": "FKMA2UD8GS", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "eval", "target": "classic", "topic": "backdoor defense cost evaluation"}
+{"id": "Jo6U0y2omr", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "benign fine-tuning safety degradation"}
+{"id": "ftyxA5CVXR", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "interpretable tabular foundation model"}
+{"id": "rB348tgnFq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "linear representation probing in GNNs"}
+{"id": "k5Sc3ageMW", "y": 2026, "rel": 2, "sub": "PI", "sub2": "JB_DEF", "type": "defense", "target": "reasoning", "topic": "instruction hierarchy via reasoning"}
+{"id": "EUiwYKQQVt", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "analysis", "target": "agent", "topic": "agent memory provenance and reuse control"}
+{"id": "vmQ02I4vxh", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "general", "topic": "unlearning robustness benchmark"}
+{"id": "UelTYgX3YN", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "intent rewriting for agent planning"}
+{"id": "td6jCPkD5k", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "method", "target": "agent", "topic": "authorization scope policies for tool agents"}
+{"id": "xGim4tCjKP", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "causal inference with unmeasured confounding"}
+{"id": "dv227oqMy3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "classic", "topic": "concept interpretability of pathology models"}
+{"id": "bVxDJPGLop", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "agent", "topic": "visual reward models for GUI agent RL"}
+{"id": "qQZFziLHO8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "targeted transfer adversarial attacks on MLLMs"}

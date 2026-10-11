@@ -1,0 +1,23 @@
+{"id": "NnsuEaN1Wx", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "black-box privacy-preserving MRI harmonization"}
+{"id": "QFLeRKRTdR", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "ADV_ROBUST", "type": "analysis", "target": "mllm", "topic": "transferability of VLM image jailbreaks"}
+{"id": "ZF443JePxe", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "causal tracing of factual recall"}
+{"id": "IxSVZFIxAW", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "cross-model universality of causal variables"}
+{"id": "OC52MrhuKS", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "binary SAEs for vision embeddings"}
+{"id": "LnYzMi3s0s", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "diffusion", "topic": "sampler stochasticity in diffusion RLHF"}
+{"id": "qins7MdufH", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial attacks on image and video MLLMs"}
+{"id": "YmzE4bTKxM", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "7XwfLhMTul", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "molecular editing via inference-time search"}
+{"id": "Esntu2V82P", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "misuse harmfulness of computer-use agents"}
+{"id": "wuHxyZZn2N", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "intersectional fairness in VLMs"}
+{"id": "EvAw2OPG25", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "ADV_ROBUST", "type": "defense", "target": "multiagent", "topic": "malicious agents in multi-agent debate"}
+{"id": "2u7klclOrk", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "security of agent-generated FHE programs"}
+{"id": "opbO5bc3Jd", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "SOCIETAL", "type": "eval", "target": "multiagent", "topic": "training LLM agents to persuade judges"}
+{"id": "3qAzQyOOnA", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "theory-of-mind reasoning via RL"}
+{"id": "RVytSWHvRj", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "copying mechanisms in protein language models"}
+{"id": "vB4rf5b64N", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "coherent belief-utility decision-making"}
+{"id": "tmTcJhlEYR", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "multi-concept activation steering"}
+{"id": "PXkMJQ5v6Y", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "calibrated memory reuse for tool agents"}
+{"id": "vZ4upwJomY", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial camouflage defense for depth estimation"}
+{"id": "143k1yAajo", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "mllm", "topic": "cross-modal adversarial attacks on VLMs"}
+{"id": "b5K7k80gHU", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "unified OOD detection and generalization"}
+{"id": "ZuUN1ZibwK", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks on vertical federated graph learning"}

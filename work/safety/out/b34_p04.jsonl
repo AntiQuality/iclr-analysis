@@ -1,0 +1,30 @@
+{"id": "jngzJtRo8u", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "method", "target": "llm", "topic": "long-context retrieval failure prediction"}
+{"id": "tyHfHVp7cI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "llm", "topic": "evading LLM authorship attribution"}
+{"id": "emA6Lon6B2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "mechanistic view of diffusion transformer denoising"}
+{"id": "ehwhVLrb0f", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "MoE expert routing counterfactual evaluation"}
+{"id": "gQhDz0kwqv", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "speech deepfake detection"}
+{"id": "i7ImxGfZgd", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination in diffusion MLLMs"}
+{"id": "7akSRQS5Xh", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "feature geometry under superposition"}
+{"id": "C5Ihi4bVQt", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "judicial fairness of LLMs"}
+{"id": "cZrTMqYVL6", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "divergent representations from causal interventions"}
+{"id": "ZVZSHadrDb", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "reward identifiability in preference learning"}
+{"id": "UR4LGuL05t", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "method", "target": "reasoning", "topic": "over-refusal shortcuts in safety alignment"}
+{"id": "NgJDFIJF5c", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "jailbreak benchmark by reasoning complexity"}
+{"id": "JNnhlu9Nop", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "AI-generated image detection dataset"}
+{"id": "gdBDm0JAaz", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box controlled decoding jailbreak"}
+{"id": "lBctELT2f9", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE feature absorption and composition"}
+{"id": "WtGDNZdaYF", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "generalizable deepfake detection"}
+{"id": "JtVKO5mc0B", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "GEN_SAFE", "type": "method", "target": "diffusion", "topic": "class unlearning in one-step generators"}
+{"id": "qG2wDVvELP", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "reward model evaluation"}
+{"id": "HYFGmu6wDX", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "runtime safety guardrails for agents"}
+{"id": "Gar7W23Ouu", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "RL for multi-hop RAG agents"}
+{"id": "tP09UYGOTk", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": "VALUES", "type": "theory", "target": "multiagent", "topic": "alignment via competition among misaligned agents"}
+{"id": "tjPAfnz7Iv", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "face anonymization against recognition"}
+{"id": "1o0H00pH0y", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "cultural alignment of LLMs"}
+{"id": "fDxfTU9S5u", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "verification for computer-use agents"}
+{"id": "4puxTouUSV", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in diffusion LLMs"}
+{"id": "p9uryyZ5bw", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "membership inference on diffusion models"}
+{"id": "RuP0GDhjWb", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "multiagent", "topic": "sample efficiency of multi-agent RL for LLMs"}
+{"id": "Olc7XhgstJ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "under-thinking in reasoning models"}
+{"id": "h3et0fXbEg", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "context poisoning of AI coding assistants"}
+{"id": "yLxuoueGpH", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-sensitive constrained RL"}

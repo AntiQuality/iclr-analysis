@@ -1,0 +1,30 @@
+{"id": "X0eCGaNLsC", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "misalignment in self-evolving agents"}
+{"id": "VG8z28dKYl", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "harm prediction in multi-agent workflows"}
+{"id": "SLMOUUr6Il", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "surgical video segmentation memory gating"}
+{"id": "onikA0KWkD", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM model extraction attacks and defenses"}
+{"id": "2XvzCbCJaa", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "reasoning", "topic": "safety alignment of reasoning models"}
+{"id": "r0UAb9KaIL", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "Jacobian lenses for diffusion LMs"}
+{"id": "r2ZcgOo2fA", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "multiagent", "topic": "financial fraud agent-based simulation"}
+{"id": "XADrkO76DT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "alpha factor mining agent"}
+{"id": "LHpYWmI7nr", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "BACKDOOR", "type": "analysis", "target": "agent", "topic": "monitoring covert agent sabotage"}
+{"id": "YiJfrsQXZg", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "diffusion", "topic": "stereotype bias in text-to-image models"}
+{"id": "8Wx5E9yZBG", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "concept drift in malware detection"}
+{"id": "eOqnXPOl4S", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "REWARD_HACK", "type": "method", "target": "reasoning", "topic": "abstention on underspecified questions"}
+{"id": "PjCnllEZP3", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "claim-level grounding in VLMs"}
+{"id": "3giqfYzxBf", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "defense", "target": "diffusion", "topic": "active defense against generative steganography"}
+{"id": "bydk8kAZRM", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "federated unlearning performance consistency"}
+{"id": "jGaWwvRfFr", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "reasoning-based LLM guardrails"}
+{"id": "4Lsh00FCD9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "SAEs for time-series forecasting"}
+{"id": "SR6wwmCONp", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "analysis", "target": "llm", "topic": "harmful prompt detection from internal signals"}
+{"id": "neZh2fVD3I", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "DPO for few-step generators"}
+{"id": "lxLiDWpG89", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "neuron sinks and position bias"}
+{"id": "nPfZtBf9ZH", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE feature absorption repair"}
+{"id": "uCxSgfLul3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "spatial information in vision encoder tokens"}
+{"id": "9RPk7sxpaK", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "mllm", "topic": "harmful image-text generation in unified MLLMs"}
+{"id": "LePzIv8HAX", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "evasion of LLM vulnerability detectors"}
+{"id": "T4PMT8ZCZo", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "general", "topic": "carbon accounting for AI models"}
+{"id": "r1tRcy6xXz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "record formation in prompt-to-data"}
+{"id": "q6whBjptep", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "selective answer revision in VLMs"}
+{"id": "5MeT4h1IVk", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "agent", "topic": "attribution of agent actions"}
+{"id": "z6uPONc8h1", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "manipulation in LLM agent negotiation"}
+{"id": "j5QHipPQjp", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "domain-specific implicit harmful prompt generation"}

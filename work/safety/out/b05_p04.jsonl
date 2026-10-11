@@ -1,0 +1,30 @@
+{"id": "WNMMzIJwrn", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private tabular foundation model"}
+{"id": "BLYR9Fm7PI", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "jx6tH3Mbua", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "REWARD_HACK", "type": "defense", "target": "llm", "topic": "consistency training against sycophancy and jailbreaks"}
+{"id": "thoPskdIcE", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "federated learning under distribution shift"}
+{"id": "UKSTTa9HJb", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "video watermarking framework"}
+{"id": "ObXaMZKOoK", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "SOCIETAL", "type": "defense", "target": "mllm", "topic": "multimodal hateful content moderation"}
+{"id": "qt3lJ7ESMr", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "rule-based correction of VLM errors"}
+{"id": "N6FsjQoxGq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "advertising design generation"}
+{"id": "e5NgdvOg8D", "y": 2027, "rel": 1, "sub": "GEN_SAFE", "sub2": null, "type": "method", "target": "diffusion", "topic": "activation steering for concept suppression in diffusion"}
+{"id": "1KhaUqHpUB", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "harmfulness detection via red flag tokens"}
+{"id": "NCq9B31weY", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "diffusion", "topic": "multi-turn T2I jailbreak defense"}
+{"id": "BAGMWyIj3J", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "00UQtHqB2k", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "general", "topic": "group fairness evaluation metrics"}
+{"id": "u82Fkl3jwy", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "black-box adversarial attacks on VLMs"}
+{"id": "X4Oo6ovLT3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "reasoning", "topic": "generative reward models for reasoning"}
+{"id": "ogfxZ1EZdq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "histopathology multi-magnification classification"}
+{"id": "yh8Ri9QeWv", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward model training for RLHF"}
+{"id": "Dand0GuG3b", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": "ADV_ROBUST", "type": "method", "target": "classic", "topic": "selective prediction for molecular property"}
+{"id": "T3ILyVXoxd", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "diffusion", "topic": "unlearning in generative image models"}
+{"id": "NrSx6J6IZk", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "meta-study of LLM safety benchmarks"}
+{"id": "uFzOJRRWDh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "layout repair for design agents"}
+{"id": "jDpe3c8gys", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference attacks"}
+{"id": "syLuDUAVe1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "incomplete multimodal graph learning"}
+{"id": "ilr07ypuYl", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "unlearnable examples for data protection"}
+{"id": "GLXMDkCqeP", "y": 2027, "rel": 1, "sub": "BACKDOOR", "sub2": null, "type": "method", "target": "general", "topic": "metagradient training data optimization"}
+{"id": "S1EtycuoEf", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "hallucination detection from internal states"}
+{"id": "ONZ2rzKpfx", "y": 2027, "rel": 1, "sub": "DECEPTION", "sub2": null, "type": "method", "target": "multiagent", "topic": "deception in multi-agent social games"}
+{"id": "BaP2OvipGl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "general", "topic": "DP-SGD privacy accounting integrity"}
+{"id": "KUuqUEtSMZ", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "visual jailbreak attacks on MLLMs"}
+{"id": "WJD5ja8pLm", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "method", "target": "llm", "topic": "subliminal data poisoning via synthetic data"}

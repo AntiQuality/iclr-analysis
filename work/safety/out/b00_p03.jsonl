@@ -1,0 +1,30 @@
+{"id": "yJcAOW33pe", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ADV_ROBUST", "type": "defense", "target": "llm", "topic": "certified defense against suffix jailbreaks"}
+{"id": "zMRdihOkqk", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "white-box attention manipulation jailbreaks"}
+{"id": "2leB3WVtb1", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "parameter localization of harmful knowledge"}
+{"id": "ju1uuv6PwJ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "LLM unlearning objective"}
+{"id": "JAI7afWA9e", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "analysis", "target": "mllm", "topic": "visual evidence underuse in VLMs"}
+{"id": "sQeTssIaEL", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_GEN", "type": "attack", "target": "mllm", "topic": "adversarial attacks on explanation faithfulness"}
+{"id": "j2lkMsE9no", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO likelihood displacement regularization"}
+{"id": "q66yrHcX0P", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder training"}
+{"id": "H8VNDfcFds", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "long-term memory for LLM agents"}
+{"id": "QJTZmnUoSv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "position", "target": "general", "topic": "AI conference peer review reform"}
+{"id": "fyQANoXid7", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial robustness of vision-language models"}
+{"id": "jizAMTYHz2", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "reward model bias mitigation"}
+{"id": "Uw0mjeL4C1", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning in generative recommendation"}
+{"id": "MrhTMnpITy", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "organizational pressures on agent safety"}
+{"id": "KKWlUurqfH", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "personalization via activation steering"}
+{"id": "rw4heZqYlP", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucinations from fine-tuning on new knowledge"}
+{"id": "CVXpkc3bXc", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder training"}
+{"id": "CONFJT1Bkx", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "interpretability-guided parameter-efficient fine-tuning"}
+{"id": "xCJZZJ4opT", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in text-to-3D generation"}
+{"id": "qDodr0QKgk", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "transferable activation probes for monitoring"}
+{"id": "DofaiMRo3b", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference-aligned text-to-3D generation"}
+{"id": "10GdK6MTWj", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "OVERSIGHT", "type": "eval", "target": "reasoning", "topic": "private knowledge use in latent CoT"}
+{"id": "a6nvlnvsF9", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "general", "topic": "machine unlearning evaluation metrics"}
+{"id": "DNgsOhGZBI", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "cpANFgtWVn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "mechanisms of CoT long-context counting"}
+{"id": "4mTH6AFTd5", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained RL safe exploration"}
+{"id": "af7kg2UptA", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "OVERSIGHT", "type": "analysis", "target": "general", "topic": "learned veto gates under distribution shift"}
+{"id": "UVgbFuXPaO", "y": 2026, "rel": 2, "sub": "PI", "sub2": "PRIVACY", "type": "attack", "target": "agent", "topic": "prompt injection via MCP tools"}
+{"id": "HxeuXB34hg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "reward uncertainty for diverse RL policies"}
+{"id": "xURArpl40L", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "calibration of conformal prediction sets"}

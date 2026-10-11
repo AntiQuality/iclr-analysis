@@ -1,0 +1,30 @@
+{"id": "8zDjtc7anv", "y": 2027, "rel": 1, "sub": "PI", "sub2": null, "type": "eval", "target": "llm", "topic": "instruction-data boundary separation in prompts"}
+{"id": "FKmSQWLcCF", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "noise injection against black-box adversarial attacks"}
+{"id": "1zTEKK69fE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "rollout-free preference training for agents"}
+{"id": "usNFTPG5fE", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-sensitive safe control under noisy actuation"}
+{"id": "PSIe9mmF7a", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "IP", "type": "defense", "target": "llm", "topic": "detecting model substitution in LLM APIs"}
+{"id": "SI2OZJuvPO", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "unsupervised interpretable subspace discovery"}
+{"id": "0IJfBft1i9", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "adversarial robustness of graph topology"}
+{"id": "MeCZwYlnpy", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "unintended attribute leakage and hyperparameters"}
+{"id": "T5I5uQQEbi", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "unlearning in diffusion language models"}
+{"id": "gSPkuTTWgU", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "classic", "topic": "graph unlearning benchmark"}
+{"id": "a87iGur9hx", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "LLM agents for vulnerability repair"}
+{"id": "rQwoDP5uhz", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "protected attribute mentions in LVLM descriptions"}
+{"id": "mtJUSjOIv2", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "HALLU", "type": "theory", "target": "llm", "topic": "identifiability of LLM verification with trust anchors"}
+{"id": "G9rclU8orB", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "geospatial representations in VLMs"}
+{"id": "bIJkCBVSgd", "y": 2026, "rel": 2, "sub": "PI", "sub2": "JB_DEF", "type": "attack", "target": "reasoning", "topic": "reasoning distraction injection in LRMs"}
+{"id": "OmHv7TA7iS", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "answer verifier for reasoning evaluation"}
+{"id": "71w49BSk8z", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "classic", "topic": "demographic invariance and fairness"}
+{"id": "NWI8bAkcCv", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "pluralistic alignment via representative raters"}
+{"id": "zADmssXnTH", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "general", "topic": "3D mesh watermarking"}
+{"id": "T2JoJkvPgP", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "method", "target": "llm", "topic": "online safety self-play red-teaming"}
+{"id": "IVFASEtqp6", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "self-rewarding optimization collapse"}
+{"id": "106xEOnwGi", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "class and concept unlearning"}
+{"id": "PS8iu4PxKz", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "preference learning for mobile GUI agents"}
+{"id": "htdcolcmT2", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "method", "target": "llm", "topic": "multi-round adversarial safety training"}
+{"id": "OcIwiPVB1B", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "in-generation NSFW detection in diffusion"}
+{"id": "70RbLmZVvW", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "safety-preserving quantization"}
+{"id": "jCMm98woUr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "in-context demonstrations for reasoning models"}
+{"id": "O7gwtEz2lE", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "safety guidance for diffusion language models"}
+{"id": "ZAe8TzrcRj", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-domain LLM unlearning"}
+{"id": "JadfZVJabx", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "bilevel optimization for auction design"}

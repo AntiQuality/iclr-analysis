@@ -1,0 +1,30 @@
+{"id": "AV3WQu1TNa", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "llm", "topic": "formal verification of large transformers"}
+{"id": "MtySiIyk6R", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "k455jbnE51", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "persistent jailbreak backdoors in LLMs"}
+{"id": "Bu8Bfc5Gx2", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "proactive face image provenance verification"}
+{"id": "FvibEbI0Ar", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "hallucination snowballing in multi-agent MLLMs"}
+{"id": "s2vWrgO4OA", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "global XAI auditing of injected LLM bias"}
+{"id": "ftmNGndWgl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "controllable song generation from captions"}
+{"id": "6rwl7O9KMC", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "unpaired preference optimization for image generators"}
+{"id": "b97EwMUWu7", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO chosen-response likelihood degradation"}
+{"id": "tHFw6goUt5", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "Wasserstein singular vectors for feature geometry"}
+{"id": "fEPmEkD7j8", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "defense", "target": "classic", "topic": "poisoning-robust conformal prediction"}
+{"id": "Fcf5fLmaeG", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "general", "topic": "trustworthiness benchmark for generative models"}
+{"id": "qmw8M7qJer", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "SAE analysis of VLM depth ambiguity"}
+{"id": "CEJl0gN2gj", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "eval", "target": "classic", "topic": "adversarial robustness of text-attributed graph learning"}
+{"id": "nRZiVYpKbw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "causal-abstraction-based LLM distillation"}
+{"id": "32nkTkRBjO", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "dialect bias from pretraining quality filters"}
+{"id": "NWepz4imFH", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "JA5j9DEoy1", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "causal fairness in graph node classification"}
+{"id": "CZxcst0Xbe", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "eval", "target": "mllm", "topic": "deception detection in multimodal LLMs"}
+{"id": "kbGIuuTWP0", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "agent", "topic": "indirect prompt injection red teaming for agents"}
+{"id": "UIYAjlHyqe", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in text-to-video diffusion"}
+{"id": "c5Cpl6Mqnz", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "causal readability assessment for Chinese"}
+{"id": "dWEQpTkr1v", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "RL preference alignment for drug design"}
+{"id": "NPsB5UMOzM", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "agent", "topic": "process accountability of coding agents"}
+{"id": "16MJNrz0xV", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "energy-guided protein inverse folding"}
+{"id": "ErcCQSs93S", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "tamper-resistant safeguards against abliteration"}
+{"id": "eWwlq7rait", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "linguistic confidence calibration in LLMs"}
+{"id": "e8tYFmI6d8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "GEN_SAFE", "type": "attack", "target": "diffusion", "topic": "adversarial steering of retrieval-augmented diffusion"}
+{"id": "l9dRkT8u1I", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference alignment for text-to-image diffusion"}
+{"id": "r445x6qgGk", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "INTERP_SAFE", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}

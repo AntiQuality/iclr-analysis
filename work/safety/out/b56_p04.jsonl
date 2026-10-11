@@ -1,0 +1,30 @@
+{"id": "5Qb3y4jBGS", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "reasoning", "topic": "CoT faithfulness evaluation"}
+{"id": "9C4gVbPqSy", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "mllm", "topic": "omni-modal reward modeling"}
+{"id": "f2ZiFnZEQA", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "red-teaming LLM search agents"}
+{"id": "jqiHayepiw", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "certified robustness to block erasures"}
+{"id": "yYaCCwYAlk", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning robustness to relearning"}
+{"id": "OkfzdkDeXo", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "eval", "target": "llm", "topic": "LLM ownership watermark robustness to distillation"}
+{"id": "ssWi0rC3mx", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "unlearnable examples for data protection"}
+{"id": "q5ePtZc9N7", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "poisoned sample detection"}
+{"id": "mc7gHWvzi9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "agent", "topic": "process supervision labels for tool agents"}
+{"id": "fX56pVe88c", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "verifiable federated unlearning"}
+{"id": "11z2ZV85eV", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "multi-turn automated jailbreak attacks"}
+{"id": "lmSw3cM1yQ", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "OOD", "type": "defense", "target": "classic", "topic": "audio-visual deepfake detection"}
+{"id": "CIfltlXWBc", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "psychopathology-like computations in LLMs"}
+{"id": "tuqNbmDEU9", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "linear truth directions in LLMs"}
+{"id": "aCtzPkszvi", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "diffusion", "topic": "adversarial attacks on text-to-speech"}
+{"id": "62Neelc2n2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "shared memory management for multi-agent LLMs"}
+{"id": "MRvkRet7iP", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "optimal DP noise mechanisms"}
+{"id": "5MkFAxyX5Q", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "query complexity of noisy comparison oracles"}
+{"id": "wf73W2xatC", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM redaction of sensitive information"}
+{"id": "lRcCYjSwE6", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "data minimization for LLM queries"}
+{"id": "nzEf4dAsEw", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "robust and fair graph learning"}
+{"id": "pKp1yVjm8D", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "classic", "topic": "post-hoc OOD detection"}
+{"id": "U8kgxasLfy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "symbolic reasoning failures in LLMs"}
+{"id": "5o6gR931F1", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "emergent misalignment from narrow fine-tuning"}
+{"id": "2ieHfp0vhO", "y": 2027, "rel": 2, "sub": "PI", "sub2": "JB_DEF", "type": "attack", "target": "agent", "topic": "denial-of-service attacks on agent guardrails"}
+{"id": "mVRZ9YOWyo", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "privacy leakage in RAG"}
+{"id": "v8C2Cd0lAh", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "ncA3UUL0Ri", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "privacy-preserving video understanding"}
+{"id": "TVNzkcCIUm", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "jQy8qzLTDG", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}

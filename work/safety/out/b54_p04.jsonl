@@ -1,0 +1,30 @@
+{"id": "Is6x1cdPAa", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "efficient federated unlearning"}
+{"id": "mdqDB878Qk", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "Sybil knowledge poisoning in shared agent memory"}
+{"id": "eySyCrQ5zU", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "provably safe exploration in constrained MDPs"}
+{"id": "POLPQHcuYY", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in code LLMs"}
+{"id": "wD55MXF6xr", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "multi-concept erasure in diffusion"}
+{"id": "gM6hJRzCtR", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature universality across LLMs"}
+{"id": "hjhEzSMEEd", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "long-tail closed-loop autonomous driving benchmark"}
+{"id": "Rf2esC7NHG", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM abstention for hallucination"}
+{"id": "XQDy4obYLZ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private instrumental variable regression"}
+{"id": "0r44FPmIK4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "diffusion", "topic": "non-linear activation steering in text-to-image"}
+{"id": "Gzl0mBf1WC", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private quantile regression"}
+{"id": "4qf7UONkSq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "value composition in goal-conditioned RL"}
+{"id": "Oa6cd1WAfB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "generative reward model for video social reasoning"}
+{"id": "7ezxQ00iGD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "representation geometry of number comparison"}
+{"id": "0J8NnqyEpM", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "eval", "target": "mllm", "topic": "textual bias in driving MLLMs"}
+{"id": "Bg4ICS8b39", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "agent", "topic": "evaluation awareness in coding agents"}
+{"id": "e1UZeFdCPb", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "medical triage safety of LLMs"}
+{"id": "IQjQzQkMqC", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "feature sparsity via margin maximization"}
+{"id": "6XRSyCvIAr", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness for output codes"}
+{"id": "M84KJx6oCx", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "policy and generative reward co-training"}
+{"id": "YlU6SELb6C", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained policy optimization for safe RL"}
+{"id": "OJftgGm4Sk", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "anti-forensic attacks on manipulation localization"}
+{"id": "imxSI4yUZo", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "energy-efficient CNN filter pruning"}
+{"id": "13FlZnpjSN", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "attention-guided agent memory refinement"}
+{"id": "gBeQYfCWMh", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "module removal in continual learning"}
+{"id": "ZqoUV0nMb0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "molecular fingerprint prediction from spectra"}
+{"id": "Rj5ZJk956j", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "weakening neurons in gated transformers"}
+{"id": "Us00XndbVi", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "offensive cyber capability of AI agents"}
+{"id": "gnJWVJSc3V", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM confidence calibration under distraction"}
+{"id": "IFNylIaMx4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "dense components in sparse autoencoders"}

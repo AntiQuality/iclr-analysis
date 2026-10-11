@@ -1,0 +1,30 @@
+{"id": "fejDLlOKCl", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "long-form factuality in reasoning models"}
+{"id": "U1XBHtXl7Y", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in video diffusion"}
+{"id": "uwIe0OdDa5", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "reasoning", "topic": "personalized preference inference"}
+{"id": "lbE9qJj360", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "jailbreak backdoors via model editing"}
+{"id": "g4Z3tzuDI6", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "privacy of obfuscated LLM inference"}
+{"id": "SCDBTvFCqi", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "hallucination detection generalization across LLMs"}
+{"id": "nqBt0ZyvfB", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "theory", "target": "llm", "topic": "RLHF under preference heterogeneity"}
+{"id": "aBjJ2aYnWn", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "physics-grounded humanoid interaction generation"}
+{"id": "n65DR2PHNU", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "runtime guard for LLM agents"}
+{"id": "xilSk7TxGG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "representation geometry of LLMs"}
+{"id": "9yEMlD9R1I", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "analysis", "target": "multiagent", "topic": "reward hacking propagation in multi-agent coding"}
+{"id": "bpLwioderF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "evidence-governed discovery agents"}
+{"id": "mHA7Kr1vaO", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection for molecular models"}
+{"id": "ElTfjCQhdp", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private LLM inference"}
+{"id": "HX7AfmH46l", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "many-shot jailbreak defense"}
+{"id": "wPwmOuGDQ1", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "contrastive decoding for factuality"}
+{"id": "m8PrG1xwE3", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "defense", "target": "classic", "topic": "certified defense against poisoning"}
+{"id": "Xzo6qIcdSW", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "spurious correlation mitigation"}
+{"id": "qmCpJtFZra", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "protein binder design"}
+{"id": "x4AF6x9znL", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "general", "topic": "replay-to-online evaluation in self-improvement"}
+{"id": "VR99r27ooo", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "causal abstraction for interpretability"}
+{"id": "Kv6an6YVFx", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "general", "topic": "one-run DP auditing"}
+{"id": "IC2xFScUo4", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "irreversible action authorization in agents"}
+{"id": "syvHka7qAh", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated video detection"}
+{"id": "J18e1EO4UQ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP-SGD correlated noise"}
+{"id": "7aTGx5ZKWo", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "exact unlearning in recommendation"}
+{"id": "CVqYCYpq75", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "natural corruption robustness"}
+{"id": "xmP7ZpjPQ5", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal process reward model training"}
+{"id": "YPNDGGgByQ", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "interpretable-by-design LM architecture"}
+{"id": "9gJBhkLRat", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "knowledge-aware refusal / abstention"}

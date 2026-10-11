@@ -1,0 +1,30 @@
+{"id": "CjwqgGq0Ky", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained trust-region policy optimization"}
+{"id": "XCmDFcrB5g", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "safety invariants on multi-agent connection graph"}
+{"id": "hUii0ju5aA", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "LoRA safety alignment patch"}
+{"id": "Wq7NWibkfu", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "Dnto7O7p3W", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "attack", "target": "diffusion", "topic": "evading unauthorized data usage protections"}
+{"id": "gyPUMAq5xN", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "steering LLM risk preferences"}
+{"id": "RKTmHwIHFt", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "token-weighted preference optimisation"}
+{"id": "Xon6bcy3Hu", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "piecewise-linear neural network verification"}
+{"id": "Aiw7aS2yIx", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "anti-distillation sampling"}
+{"id": "E8oXt1jURv", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "causal abstraction via Shapley indirect effects"}
+{"id": "b9xDou7uAX", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": null, "type": "method", "target": "reasoning", "topic": "auditing hidden reasoning token billing"}
+{"id": "2OJ187fKm6", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "silent tool failure hallucination in agents"}
+{"id": "03ik9DjGcl", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "video forgery localization"}
+{"id": "2L4Dg2SVD0", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "omission detection by LLM judges"}
+{"id": "3aXqxcPCzD", "y": 2027, "rel": 2, "sub": "PI", "sub2": "JB_DEF", "type": "eval", "target": "mllm", "topic": "visual prompt injection authorization in LVLMs"}
+{"id": "liBdU2FFUP", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "general", "topic": "image watermark removal attack"}
+{"id": "lD2tXRhk4x", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "misinformation detection temporal generalization"}
+{"id": "9PtaiAXKSE", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "agent", "topic": "SAE steering for agent plan revision"}
+{"id": "nQwU8tPmKE", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "open-set AI-generated image attribution"}
+{"id": "ieCOL2YAqv", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "general", "topic": "backdoor defense via model merging"}
+{"id": "Jq0KN0lgtM", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "adversarial clients in federated RL"}
+{"id": "sfz57tKe5E", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "latent perturbation safety robustness"}
+{"id": "zFkMvT8hxx", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "PRM verification early stopping"}
+{"id": "KPyoSqDayk", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "formal policy guardrails for LLM agents"}
+{"id": "Zfkuo1BRcN", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "llm", "topic": "radioactive watermarking distillation detection"}
+{"id": "bgJW02fenF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "self-evolving agents hard negatives"}
+{"id": "iJFSda0XNn", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "reward hacking in coding agents"}
+{"id": "b4IrzWdpW7", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection"}
+{"id": "m9oP8W9MLX", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "llm", "topic": "watermarked segment localization"}
+{"id": "AiM1nrYYCq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "SAE feature recovery sparsity"}

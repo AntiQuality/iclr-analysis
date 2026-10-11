@@ -1,0 +1,30 @@
+{"id": "YnEO24jWpq", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "sparse adversarial attacks on VLMs"}
+{"id": "plIRiWr6lO", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "attack", "target": "multiagent", "topic": "covert attacks in multi-agent systems"}
+{"id": "H4pVNQsYSQ", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "JB_DEF", "type": "theory", "target": "llm", "topic": "safety hacking in best-of-N sampling"}
+{"id": "x359pWENg0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "federated textual prompt optimization"}
+{"id": "E7fCochFil", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "poisoning attacks in decentralized federated learning"}
+{"id": "3xkYXuHDA6", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy auditing of DP-SGD"}
+{"id": "Drtz899zwV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "biomedical causal discovery"}
+{"id": "akIkiXo5tp", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward hacking in best-of-N selection"}
+{"id": "kVgf2cVN5b", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "adversarial recovery via activation steering"}
+{"id": "pWPrqlYTnl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "personalized federated prompt learning"}
+{"id": "OhvYHqvlJs", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair graph representation learning"}
+{"id": "AF3uKEyhL6", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "generalizable deepfake detection"}
+{"id": "uWmHks1R6F", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "decision-based attacks against randomized defenses"}
+{"id": "FvwT42QPDE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "mixed-precision quantization allocation"}
+{"id": "JZjk6rSfFe", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "PII scrubbing and leakage"}
+{"id": "CL5D33stq1", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "iwB6e5n7fQ", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "mllm", "topic": "chart reasoning robustness to perturbations"}
+{"id": "otilssOJMr", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "multilingual safety alignment evaluation"}
+{"id": "k2TTm0bDYP", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "llm", "topic": "LLM text watermark robustness to rewriting"}
+{"id": "gyix23FtN2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "privileged multi-agent distillation"}
+{"id": "TNpLRNUf70", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM-generated text detection"}
+{"id": "zeUVJ3fy0y", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "qNvg5trCv2", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "selective safety deliberation"}
+{"id": "JOaHsljcLr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "temporal attention heads in video diffusion"}
+{"id": "9yMYjHrOwM", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "hallucination mitigation via SAE steering"}
+{"id": "pWjehHNGg3", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "WATERMARK", "type": "analysis", "target": "llm", "topic": "membership inference vs machine text detection"}
+{"id": "6qWUjiKVL5", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box jailbreak attacks"}
+{"id": "TK6YtmEDR9", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated jailbreak with reusable skills"}
+{"id": "ZokiZYcEsg", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "mobility trajectory generation"}
+{"id": "pz3boxiil0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "prompt reconstruction from KV cache"}

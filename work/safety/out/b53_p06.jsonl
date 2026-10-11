@@ -1,0 +1,23 @@
+{"id": "mi3dsGv6Ur", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "attention sink routing and cone geometry"}
+{"id": "kFHg8YIi2M", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "defense", "target": "classic", "topic": "certified robustness to graph poisoning"}
+{"id": "RypqWww4nY", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "behavioral watermarking for model ownership"}
+{"id": "PB1qNd7xgj", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "spatial representation vs decision gap"}
+{"id": "cq5VyQ2bgw", "y": 2027, "rel": 1, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM self-modeling theory of mind"}
+{"id": "DK6AToxJNo", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "reasoning", "topic": "reasoning-based jailbreak defense"}
+{"id": "DBoGyuahIX", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "input-specific circuit discovery"}
+{"id": "FSMk1uw8In", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "task embedding injection vs in-context learning"}
+{"id": "3rO59y6pgO", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "mllm", "topic": "gender bias in LVLM in-context learning"}
+{"id": "QTc2Zrx0zK", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "diffusion", "topic": "image watermark robustness benchmark"}
+{"id": "Zh9tvJj4AL", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "uncertainty triage for neural operators"}
+{"id": "60RXHBGag4", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "diffusion-based adversarial purification"}
+{"id": "8QXGLg69Hh", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "mllm", "topic": "AI-generated image detection"}
+{"id": "96vyGkAO08", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection with retrieval"}
+{"id": "IHVQX0Vcje", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "pre-decoding truthfulness probing"}
+{"id": "v2ZKyH9VXC", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial camouflage against vehicle detectors"}
+{"id": "YUTtBGv8XT", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "human deception detection from audio-video"}
+{"id": "VLOprj6bRK", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "diffusion", "topic": "AI-generated video detection"}
+{"id": "FONB5dIxSB", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "online alignment as perceptual loss"}
+{"id": "f7Lvvp9Jym", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "theory", "target": "multiagent", "topic": "cascading risky actions in agents"}
+{"id": "34bRy8dfI1", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "jailbreaking embodied LLM agents"}
+{"id": "eXSAhJBl4m", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "analysis", "target": "mllm", "topic": "visual jailbreak of MLLMs"}
+{"id": "U7ONNWWUMA", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in video diffusion"}

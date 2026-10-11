@@ -1,0 +1,30 @@
+{"id": "gI7HEFvyjy", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "mechanistic uncertainty quantification in LLMs"}
+{"id": "X9GxuB55r5", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "vision-induced safety degradation recovery"}
+{"id": "PTic6zZAch", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "agent", "topic": "expression style bias in LLM agents"}
+{"id": "Vwwn4fzTr3", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on streaming ASR"}
+{"id": "l9jJYx9tnl", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "multilingual hallucination detection benchmark"}
+{"id": "phZhh4OEh1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "spectrum-to-structure molecular generation"}
+{"id": "HOGZJfArym", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "classic", "topic": "deepfake detection scaling laws"}
+{"id": "hcL8wbKFB5", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "gradient inversion defense in FL"}
+{"id": "VdyVoA6K2y", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "llm", "topic": "regulating memory influence in LLM responses"}
+{"id": "NXQvejGBFx", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "classic", "topic": "3D Gaussian splatting watermarking"}
+{"id": "CS0Sx3gpKP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "weak-to-strong on-policy distillation"}
+{"id": "1TdRdf0fkw", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "suppressing evaluation awareness via steering"}
+{"id": "tPh0sadVBb", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "PI", "type": "defense", "target": "mllm", "topic": "typographic attack defense for VLMs"}
+{"id": "mg8ETguyGt", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-turn jailbreak intervention timing"}
+{"id": "ocmGsqQWG2", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "universal involuntary jailbreak prompt"}
+{"id": "hstem66Zcw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "RLVR for time series captioning"}
+{"id": "EbgCEd8gyN", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "adaptive system prompt guardrail"}
+{"id": "zk9xpLKpBl", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "llm", "topic": "AI-generated text detection evaluation"}
+{"id": "TT0C34DzFP", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "medical long-context faithfulness hallucination"}
+{"id": "Mkph551NQ4", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "safety preference optimization over-refusal trade-off"}
+{"id": "IhsolEaSIb", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "contextual hallucination under KV-cache compression"}
+{"id": "4fclVIrUg2", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference data selection for alignment"}
+{"id": "gOWsx5avcM", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM text watermarking"}
+{"id": "xfcFM5qPme", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "co-occurrence bias in open-set detection"}
+{"id": "c2PRtpZkr7", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "stealthy graph backdoor attacks"}
+{"id": "nc9nNZvFZZ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "evidence-grounded agent authorization evaluation"}
+{"id": "OWlbp6QYsD", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "persistent-state poisoning of claw-style agents"}
+{"id": "F5n55bk6Vs", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "black-box adversarial patches on VLAs"}
+{"id": "HWnHAOEsJ8", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "individual specificity in EEG foundation models"}
+{"id": "9mLXHDASyb", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "ADV_ROBUST", "type": "attack", "target": "llm", "topic": "additive subliminal prompt control of models"}

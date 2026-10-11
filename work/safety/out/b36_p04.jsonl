@@ -1,0 +1,30 @@
+{"id": "iSmMnyDEOo", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ADV_ROBUST", "type": "defense", "target": "mllm", "topic": "adversarial training against multimodal jailbreaks"}
+{"id": "KdQfRboMUc", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "mllm", "topic": "detecting image-induced errors in VLMs"}
+{"id": "WN33eW6bQB", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "cultural alignment reward modeling"}
+{"id": "JWp43k7nDU", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "spectral diagnostics of attention weights"}
+{"id": "sLkis6UGKk", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "OVERSIGHT", "type": "method", "target": "mllm", "topic": "evidence-grounded faithful multimodal reasoning"}
+{"id": "5XNmlKqMIW", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "skill co-activation graphs and generalization"}
+{"id": "DqmQIjSQKV", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "HALLU", "type": "eval", "target": "classic", "topic": "OOD detection for EEG models"}
+{"id": "Zh6W1jeiJ9", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "decoding-time principle-based self-monitoring"}
+{"id": "vWV28DjBbz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "RL for medical multimodal reasoning"}
+{"id": "wgZCA7JAoO", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "defense", "target": "agent", "topic": "reward hacking detection in coding agents"}
+{"id": "Q083YRHAux", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "unfaithful rationale citations in LLMs"}
+{"id": "RW3lGTOKLt", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "critic training for agent test-time search"}
+{"id": "NXWLaiiJKm", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "associative recall in delta-rule memories"}
+{"id": "Ri3QZJFw5m", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "AGENT_SAFE", "type": "position", "target": "agent", "topic": "legal agency and accountability of AI agents"}
+{"id": "39aUGMR7iv", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "long-tailed adversarial robustness"}
+{"id": "1qmrDuq4sg", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy auditing of training data disclosure"}
+{"id": "miNzDqDENd", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "reward-guided speculative decoding"}
+{"id": "Hd0xBKO3Nq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "on-policy distillation for medical VLMs"}
+{"id": "j1r5sDYgE2", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "cross-format generalization of knowledge editing"}
+{"id": "Vua46vTf7W", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "DANGER_EVAL", "type": "eval", "target": "rl_robot", "topic": "safety evaluation of robot manipulation policies"}
+{"id": "a7sisyAuRA", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "defense", "target": "classic", "topic": "soft-error fault tolerance in DNN inference"}
+{"id": "5AuN6RD072", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "SAE features in single-cell foundation models"}
+{"id": "yFaIaj40Fr", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc confidence calibration"}
+{"id": "bKh3SE7AAU", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "tool-mediated travel planning benchmark"}
+{"id": "FUp0KeEEBs", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "preference data valuation for alignment"}
+{"id": "ne2u9vJmMg", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "classic", "topic": "filter bubbles in recommender systems"}
+{"id": "0grovmqEyi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "limits of activation steering for reasoning"}
+{"id": "9V4bHxQRc4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "spatial representations in MLLMs"}
+{"id": "1wYcH5D30v", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "method", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "ujtqfmU69k", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "moral history effects on LLM choices"}

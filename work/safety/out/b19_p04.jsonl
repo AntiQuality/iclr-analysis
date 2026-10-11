@@ -1,0 +1,30 @@
+{"id": "09osI0HV7E", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "weak-to-strong on-policy distillation for VLMs"}
+{"id": "2PdLKGdtqW", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "gradient conflict in multi-task learning"}
+{"id": "cWWd9pZpe0", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "jau7d0SfPQ", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "hallucinated actions in LLM agents"}
+{"id": "Z4wVtY7PrV", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "ZYSU20zoD5", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "refusal in tool-mediated interactions"}
+{"id": "B4ICxIxrvH", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "agent", "topic": "alignment drift in self-evolving agents"}
+{"id": "dLcwLG5axg", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "model-editing backdoor injection in LLMs"}
+{"id": "kWMXdNzvA9", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning for forward-forward models"}
+{"id": "RzcxXjLCsm", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "policy lag in asynchronous on-policy RL"}
+{"id": "UtzdSeit84", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal process reward models"}
+{"id": "23adDIOrjB", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "intrinsic dimension of prompt representations"}
+{"id": "DWLteBQEtx", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "mllm", "topic": "visual prompt injection in LVLMs"}
+{"id": "nwANzdlMKI", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "ALIGN_TRAIN", "type": "eval", "target": "llm", "topic": "mental-health chatbot safety evaluation"}
+{"id": "yfqHr7l2tG", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "faithfulness to intermediate reasoning structures"}
+{"id": "z1M5egqvJX", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward modeling for visual generation"}
+{"id": "fasU6t3hL4", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "LLM-generated hard instances for heuristics"}
+{"id": "ddTY9xjAY8", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "H7iSXqPYTu", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local differential privacy CDF estimation"}
+{"id": "3caudXTDvX", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "indirect prompt injection via agent state handoff"}
+{"id": "clyjBLBnKE", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "web agent oversharing of user data"}
+{"id": "QK7aXEEujz", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "visual privacy protection in multi-turn VLMs"}
+{"id": "BEiLtqTkhz", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private prompt perturbation"}
+{"id": "AFFYDV3onB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model training"}
+{"id": "sNjSZB96EJ", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial robustness of zero-shot CLIP"}
+{"id": "g1Aq2U1L3T", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "theory of direct preference optimization"}
+{"id": "9RXOBWkcPx", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "linear representations in VLA models"}
+{"id": "mz9B4eruYp", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "MLLM hallucination mitigation via self-distillation"}
+{"id": "4eBhaKJLoE", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "retain-forget tradeoffs in unlearning"}
+{"id": "7NBlFCtd2e", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "llm", "topic": "tracing distillation from LLM judges"}

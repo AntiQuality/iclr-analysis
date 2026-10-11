@@ -1,0 +1,30 @@
+{"id": "H89TwE2JrC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "LLM agents for clinical process monitoring"}
+{"id": "UeCojsal9m", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "VaR-constrained safe RL"}
+{"id": "tsIXTnmj4F", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_GEN", "type": "defense", "target": "classic", "topic": "adversarial training via neuron sensitivity"}
+{"id": "IO06XJvfI8", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "robustness to spurious correlations"}
+{"id": "oRYzpI3cmJ", "y": 2026, "rel": 1, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "cross-model representation finetuning transfer"}
+{"id": "rMKGl4z0Ee", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "fabricated findings in medical VLM reasoning"}
+{"id": "3o3sWY1WiW", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private semidefinite programming"}
+{"id": "4iUt6ZSiCQ", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "analysis", "target": "mllm", "topic": "refusal direction localization in multimodal LMs"}
+{"id": "zs2x1K9d18", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "llm", "topic": "machine-generated text detection under model blending"}
+{"id": "6g7ZKY3FFp", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "interpretability interventions under quantization"}
+{"id": "vkxqmLGJ8i", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "GEN_SAFE", "type": "method", "target": "diffusion", "topic": "training-free diffusion data unlearning"}
+{"id": "4p8GakF368", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "behavioral forgetting vs causal accessibility"}
+{"id": "CNrU5kGJYG", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "backdoor attacks on offline RL"}
+{"id": "tJU1wP6bW7", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "mllm", "topic": "automated LVLM safety benchmark construction"}
+{"id": "qTfBSM6upA", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "weak monitor capability detection in agents"}
+{"id": "xmDikn1ZEO", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private LoRA fine-tuning"}
+{"id": "SvkswM7OB9", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "analysis", "target": "multiagent", "topic": "LLM collusion in multi-agent systems"}
+{"id": "ZswAdsBDg2", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-generated text steganography"}
+{"id": "BOyTp7MiOV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "self-improving search agent feedback"}
+{"id": "AW0Pc22F2f", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "sparse dictionary learning theory"}
+{"id": "VyPOheGacK", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "position", "target": "llm", "topic": "user vs provider control in AI safety"}
+{"id": "4AZRVsUKv5", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "FT_ROBUST", "type": "attack", "target": "llm", "topic": "test-time learning poisoning jailbreak"}
+{"id": "zEvJmHCOUL", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "mllm", "topic": "bypassing activation steering defenses in VLMs"}
+{"id": "UdHqmMUypF", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "knowledge-task fit metric for multi-agent LLMs"}
+{"id": "dktiyeQanc", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM overconfidence calibration"}
+{"id": "SIE9fNq8lk", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "RL from natural language feedback"}
+{"id": "mKJKDNmCg2", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "context-aware multimodal safety decoding"}
+{"id": "iKvECCrAgT", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "DANGER_EVAL", "type": "analysis", "target": "reasoning", "topic": "instrumental convergence under RLVR"}
+{"id": "ME9fL9xjfe", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "eval", "target": "llm", "topic": "forecasting emergent misalignment from training data"}
+{"id": "BSk4rdBgoJ", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM epistemic uncertainty estimation"}

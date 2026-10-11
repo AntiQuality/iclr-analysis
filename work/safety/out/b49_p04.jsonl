@@ -1,0 +1,30 @@
+{"id": "e1yRYFdCNa", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "analysis", "target": "multiagent", "topic": "steganographic collusion under monitoring"}
+{"id": "l1HxTNKVv7", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "multiagent", "topic": "privacy-aware cross-hospital agent collaboration"}
+{"id": "lHfmlRXGFw", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "cooperation failures in multi-agent LLMs"}
+{"id": "OwXfeTco9D", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "autonomous driving safety evaluation"}
+{"id": "E12eFxKLTV", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "temporal object consistency in video LLMs"}
+{"id": "Jgp9ebDoex", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "disparate impact of DP-SGD"}
+{"id": "0pRvnSBNGx", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "code hallucination via selective generation"}
+{"id": "0694m9ixnv", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "instruction data augmentation"}
+{"id": "Gn9bbQAwQD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "efficient sparse autoencoder architectures"}
+{"id": "nzAHo1Cp7l", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "integer quantization for regression"}
+{"id": "90mRxCvkmf", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "llm", "topic": "AI-generated text detection evasion"}
+{"id": "gJgcwQSMiq", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "diffusion", "topic": "backdoor attack on retrieval-augmented diffusion"}
+{"id": "GDI9NHxRRX", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "VALUES", "type": "eval", "target": "mllm", "topic": "jurisdiction-aware safety in embodied VLMs"}
+{"id": "fhlLDg6Wpm", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "MCP gateway security evaluation"}
+{"id": "x8Y75Kgu6m", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "multi-turn legal consultation benchmark"}
+{"id": "8rMJFiz38Y", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "joint return distributions in distributional RL"}
+{"id": "X1D7RRisFX", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "general", "topic": "safe test-time adaptation for regression"}
+{"id": "V3cF6G9muN", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "factuality via response consensus"}
+{"id": "ek5uFoXhY3", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "federated learning poisoning defense"}
+{"id": "BnfgChS6tY", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "least-privilege permission inference for coding agents"}
+{"id": "7Bp22EHN6J", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-aware control under missing observations"}
+{"id": "WcKOVk3bhc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "verifier-guided search width control"}
+{"id": "PGiXdAiJ0c", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "binary preference alignment"}
+{"id": "ioYdy7aghG", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "uKfbyaZ6bQ", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking diffusion language models"}
+{"id": "dHz2LBCyTh", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "second-order machine unlearning"}
+{"id": "cLbTq27xwT", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "classic", "topic": "unlearning verification in face recognition"}
+{"id": "vOB3i3OTRb", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "state-contingent risks in web agents"}
+{"id": "ndUcmJ8Zrx", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "copyrighted character generation mitigation"}
+{"id": "fAWptnL4vh", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "agent", "topic": "federated agent skill evolution"}

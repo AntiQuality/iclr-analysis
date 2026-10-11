@@ -1,0 +1,30 @@
+{"id": "L37nYyd22W", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "modular harm mitigation adapters"}
+{"id": "1MX3QC0bSH", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "gradient-free LLM alignment"}
+{"id": "kHO54PQFNk", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "private data filtering for LM training"}
+{"id": "pncI1uHqZM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization for generative recommendation"}
+{"id": "aKXoFEjBrG", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "efficient approximate machine unlearning"}
+{"id": "cTekVoqmpm", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM text watermarking quality"}
+{"id": "3xUklblyVO", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "mllm", "topic": "identity unlearning in VLMs"}
+{"id": "aS1mI0lqWS", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "backdoor attacks on code LLMs"}
+{"id": "cDXVot4jor", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "pluralistic alignment via social choice"}
+{"id": "GJfdHOgKGE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "classic", "topic": "certified deployment of test-time adaptation"}
+{"id": "JL858vtWi9", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "deepfake video detection"}
+{"id": "yWvpR5Olu0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "SAE interpretability of protein models"}
+{"id": "8dYaiUpvvT", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "agent", "topic": "evading AI-generated text detection"}
+{"id": "olbdGYAplT", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "radiology VLM hallucination detection benchmark"}
+{"id": "AV5se53oxk", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "eval", "target": "llm", "topic": "activation steering evaluation validity"}
+{"id": "fPksGO5qgo", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "span-level hallucination detection"}
+{"id": "PL4aPRtr3R", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "transfer jailbreak to fine-tuned private LLMs"}
+{"id": "McGNyPiTO0", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "BACKDOOR", "type": "attack", "target": "llm", "topic": "malicious draft models in speculative decoding"}
+{"id": "hSLopCTOtT", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "reasoning", "topic": "clean-label CoT data poisoning"}
+{"id": "FcPM88SbQN", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "attention-based process reward model"}
+{"id": "vxq1OnaAMq", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "constrained flow matching over convex sets"}
+{"id": "XTN9P3SrBk", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "safe scenario region synthesis for driving"}
+{"id": "1QZRnqbb44", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection under covariate shift"}
+{"id": "Fy1EoIaAzQ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward fine-tuning of motion diffusion"}
+{"id": "5nmkbdcMvZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward modeling for image editing"}
+{"id": "UXn9X3dREU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "preference-aligned photo retouching"}
+{"id": "3QlKFFBcNO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "effects of reasoning post-training"}
+{"id": "5KmPBxbFFK", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "privacy-utility tradeoff in representations"}
+{"id": "oTy3pIHiUt", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "Lipschitz certificate tightness"}
+{"id": "4zVr06zr8K", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "alignment concept vectors for steering"}

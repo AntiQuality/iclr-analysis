@@ -1,0 +1,23 @@
+{"id": "NsJLyHKjfW", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "Yjlsd2Ueox", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "SAFE_RL", "type": "eval", "target": "rl_robot", "topic": "visual factor bias in robotic manipulation"}
+{"id": "eNvsH5Ye2V", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "universal jailbreak defense classifiers"}
+{"id": "fUVcAp2Wqx", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "safe text-to-image steering"}
+{"id": "dj3jCaz82F", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "OVERSIGHT", "type": "defense", "target": "llm", "topic": "weights-only audit of harmful fine-tuning"}
+{"id": "z8QUyYrB1e", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "IP", "type": "eval", "target": "diffusion", "topic": "logo concept unlearning benchmark"}
+{"id": "p6l1A7b5Xe", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "poisoning attacks on federated learning"}
+{"id": "s5GIYSs8JN", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "unsafe generation from underspecified T2I prompts"}
+{"id": "frHL4aSwYX", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "over-refusal mitigation via activation steering"}
+{"id": "zc0WwpIZQK", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-guaranteed neural dynamics models"}
+{"id": "uSJnMmyk9o", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "source preference bias in LLM agents"}
+{"id": "L6sUUuJ9SY", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "ADV_ROBUST", "type": "theory", "target": "general", "topic": "surjectivity and inherent jailbreak vulnerability"}
+{"id": "FV0FlsdEb8", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "poisoning attacks on federated RL"}
+{"id": "m1rKJvHORR", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "stale evidence exclusion in persistent memory"}
+{"id": "CyAlVWQ6eo", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "theory", "target": "general", "topic": "reward alignment with elicited utilities"}
+{"id": "qMWDZWFgFA", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": "ADV_ROBUST", "type": "theory", "target": "rl_robot", "topic": "certified stability of learned dynamical systems"}
+{"id": "fOZaEHgL0E", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "emotional TTS reward optimization"}
+{"id": "qTH7I1CkN6", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning robustness/auditing"}
+{"id": "MUnHOkaEFC", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "open-set recognition"}
+{"id": "MZodbg4BOZ", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "indirect prompt injection in tool agents"}
+{"id": "yUvvOVO6Yu", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "CoT learning dynamics and faithfulness"}
+{"id": "Y4YtKEJheR", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "execution-consistent math preference optimization"}
+{"id": "QwR82HWPJs", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "general", "topic": "auditing safety filters under topology shift"}

@@ -1,0 +1,30 @@
+{"id": "pFniEnWkYR", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "training-free residual stream decomposition"}
+{"id": "aoss5YQGDA", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "false-positive hallucination in VLMs"}
+{"id": "dJTMvkuhMr", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "LLM persuasion and susceptibility"}
+{"id": "39CEoMXTHh", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-in-the-loop Bayesian optimization"}
+{"id": "msBSL6JnkZ", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "c8vwP5gJlo", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "catalog-grounded generative recommendation"}
+{"id": "MtsmJZXIu5", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "defense", "target": "rl_robot", "topic": "reward poisoning in in-context RL"}
+{"id": "KyIdMdPiEX", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "political stance auditing of LLMs"}
+{"id": "nTlGOrt0Es", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "equivariant latent misalignment correction"}
+{"id": "Hnk3AHcqzG", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "self-repair under input corruption"}
+{"id": "TKVMMf0rVm", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "harm classifier disagreement effects"}
+{"id": "DLKIln4eAT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "causal variable localization"}
+{"id": "KUXLrSXYPv", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "membership inference on diffusion models"}
+{"id": "nQiV6kQpEc", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "classic", "topic": "TEE-based model parameter protection"}
+{"id": "dd6EOhdrHb", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "mllm", "topic": "crosscoder reconstruction fidelity"}
+{"id": "Litd4TYnJU", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "SOCIETAL", "type": "method", "target": "general", "topic": "human oversight delegation under AI risk"}
+{"id": "L3xLWvPZhb", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "RL training for adversarial robustness"}
+{"id": "NgGsjZ1G92", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks in federated learning"}
+{"id": "lTUfCi9Smh", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "PII leakage in VLMs"}
+{"id": "xIuaaiFQOs", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "opU91paIvZ", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "yoJP018EVw", "y": 2027, "rel": 2, "sub": "PI", "sub2": "INTERP_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection detection via probes"}
+{"id": "4gCzAMayy0", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "agent privacy and authorization enforcement"}
+{"id": "oFQN4JrriB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "cross-user output diversity"}
+{"id": "CrGxvyppMS", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": "BACKDOOR", "type": "defense", "target": "general", "topic": "verifiable training data provenance"}
+{"id": "75zQg9DH4L", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "safety monitor evaluation on complied requests"}
+{"id": "XOZ6lNL12D", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "backdoor detection in VLA policies"}
+{"id": "qTyqC55Ti6", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "federated generalization under distribution shift"}
+{"id": "6yfM5cYb6I", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "selective SFT on long CoT"}
+{"id": "K4AWuYu6Q3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "recurrent circuit faithfulness certification"}

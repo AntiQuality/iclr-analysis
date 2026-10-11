@@ -1,0 +1,23 @@
+{"id": "xTVKObXd5r", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "privacy risk of efficient fine-tuning"}
+{"id": "rgN3ooalra", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection with EMA models"}
+{"id": "XhaJ9V3HhQ", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "robust watermarking for generated speech"}
+{"id": "tFXkdOizF8", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "predictive multiplicity and group robustness"}
+{"id": "R5djXMSh35", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "unembedding geometry of in-context learning"}
+{"id": "IHLizuY9lH", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "weight-based transformer circuit mapping"}
+{"id": "VmrJ8C3gxu", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_SAFE", "type": "method", "target": "mllm", "topic": "test-time MLLM unlearning via steering"}
+{"id": "j75CM5OwMa", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM unlearning leakage on indirect queries"}
+{"id": "pryXDZIIGl", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "SAE concept attribution in vision models"}
+{"id": "lj4yGmynpw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "reasoning", "topic": "verifier limits on test-time scaling"}
+{"id": "1k4rCXykad", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "agent", "topic": "agent self-jailbreaking via self-modification"}
+{"id": "klhPjs6kBD", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "stylistic effects of post-training"}
+{"id": "oRSo2XCibQ", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "targeted adversarial attacks on multimodal encoders"}
+{"id": "kSIb3I524l", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference on vision models"}
+{"id": "KwZMjt6Da8", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained multi-agent RL cost allocation"}
+{"id": "EAlWO4Eiwp", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP-SGD privacy accounting"}
+{"id": "K97WYPrbKO", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "hallucination detection evidence audit"}
+{"id": "55YPUEkyyO", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "agent", "topic": "RL infrastructure for coding agents"}
+{"id": "9VVpHOaYp9", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "IP", "type": "defense", "target": "llm", "topic": "non-fine-tunable foundation models"}
+{"id": "04jxdXTSjx", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "intent-boundary compliance in computer-use agents"}
+{"id": "MqeVxBiCJX", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "membership leakage from machine unlearning"}
+{"id": "dfxrltDpBe", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "PII detection failures in LLMs"}
+{"id": "8mkLMx317E", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP-SGD privacy accounting"}

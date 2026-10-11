@@ -1,0 +1,30 @@
+{"id": "3PiZOeBSWn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "validating linear probe geometry claims"}
+{"id": "q16xUYFs76", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "SAE concept learning theory"}
+{"id": "qirGds1BmK", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "value model pretraining for RLHF"}
+{"id": "SDgmqWOY2z", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "grokking plateau component analysis"}
+{"id": "D9wHJAM89a", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "hallucination memorization during RL post-training"}
+{"id": "GzgZkJeEWG", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "diffusion", "topic": "backdoors in interactive video generation"}
+{"id": "ZwJmrC5WR5", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "steering LLM agents for social simulation"}
+{"id": "nfjLTi3KJB", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "temporal reward model refresh"}
+{"id": "5D1LvUPbNr", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "diagnosing agent injection defense failures"}
+{"id": "COSCWcF6GR", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "certified repair of agent memory"}
+{"id": "2juWcZtIVR", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference optimization configuration selection"}
+{"id": "b7fLdhBLIc", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM model fingerprinting"}
+{"id": "6TJJ72S23q", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "theory", "target": "multiagent", "topic": "certified risk bounds for agent workflows"}
+{"id": "EKtmR2WnFK", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "static reward model evaluation identifiability"}
+{"id": "NoZgrya6Ua", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reference-guided LLM judges for alignment"}
+{"id": "zY423SFoco", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "llm", "topic": "code LLM trustworthiness evaluation"}
+{"id": "oagI3xi3Yc", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "medical VQA reasoning RL"}
+{"id": "lneAO3HEg9", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "federated novel view synthesis"}
+{"id": "zXK8UQ338g", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe RL with diffusion policies"}
+{"id": "f5cuyevYu6", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination in radiology report generation"}
+{"id": "WHvsJf6vWb", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "private black-box LLM inference"}
+{"id": "WH9rPOUxJw", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "diffusion", "topic": "fair diffusion sampling"}
+{"id": "ktdCDSOjIv", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on time series forecasting"}
+{"id": "qkPr7l24fC", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on RAG"}
+{"id": "b107VY19Id", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on spiking networks"}
+{"id": "DDG5aWdAfN", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "evidence-constrained VLM report generation"}
+{"id": "YPn1sxZ3UV", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "Byzantine-robust private federated learning"}
+{"id": "vvFCD6b0E5", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated image detection"}
+{"id": "LYiP0hfueQ", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "interactive monitoring of agents"}
+{"id": "icRw5ZcUxW", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "llm", "topic": "delayed feedback reward misspecification"}

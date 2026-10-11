@@ -1,0 +1,23 @@
+{"id": "fQvVV6UN4p", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "defense", "target": "llm", "topic": "emergent misalignment mitigation via data attribution"}
+{"id": "HU33BX9cUe", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "personalized reward models under preference drift"}
+{"id": "hIlzn5oGaC", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "test-time safe policy improvement"}
+{"id": "k4dFvuGPXI", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "memory poisoning in embodied agents"}
+{"id": "5cB8CF4sEU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "preference-guided multi-objective RL"}
+{"id": "KdFqPtyZt2", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "influence function data attribution accuracy"}
+{"id": "1N3q0tA7AW", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "certified unlearning with noisy fine-tuning"}
+{"id": "rayrXomfjG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE analysis of MoE expert specialization"}
+{"id": "9sYPmZpkri", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair interpretable mortgage lending models"}
+{"id": "1Quy3DVlhG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE-guided LoRA update selection for math"}
+{"id": "iIw2d3AkJM", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "reasoning token cues from training data"}
+{"id": "yjrVOxjkDR", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "emergent misalignment mechanisms"}
+{"id": "T9B2nlQXRD", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "length-fair clipping for sequence-level RL"}
+{"id": "hdASJjZsan", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "data poisoning of semantic-ID recommenders"}
+{"id": "tXzyc2lht7", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "activation steering for safety control"}
+{"id": "Ud9cPB9SS4", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "caption rewards for VLM reasoning RL"}
+{"id": "qbuqW5zMNg", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "emergent misalignment mechanisms"}
+{"id": "creDoVOIXQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "regional image restoration agents"}
+{"id": "QLMHtA7hoi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "explainable video anomaly detection with MLLMs"}
+{"id": "Q8jyH7NJDn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "emotion representations in LLMs"}
+{"id": "p5yByOjvXY", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "pBjy4ek2QV", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward over-optimization in RLHF"}
+{"id": "rE64yoFKY9", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "targeted transferable adversarial attacks"}

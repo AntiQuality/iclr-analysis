@@ -1,0 +1,30 @@
+{"id": "X1qSwfzPo1", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fairness-utility trade-off in regression"}
+{"id": "o2k64ag4HA", "y": 2026, "rel": 1, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "contextual ASR in high-stakes domains"}
+{"id": "v3KoJoorcB", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "eval", "target": "llm", "topic": "ethical-framework moral reasoning dataset"}
+{"id": "FUpDz8VwWD", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "54AErxHQyH", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "reward model interpretability"}
+{"id": "wY3Ttt2nuY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "antimicrobial peptide generation"}
+{"id": "6mOJW1VvOu", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "safety-preserving fine-tuning"}
+{"id": "PHlDfWcIa9", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "disparate impact of speculative decoding"}
+{"id": "mPaHEZFLi2", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "DANGER_EVAL", "type": "analysis", "target": "reasoning", "topic": "evaluation awareness"}
+{"id": "G79dGQmiFk", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward model robustness under shift"}
+{"id": "mlRWnMN6vE", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private regression"}
+{"id": "2zQJHLbyqM", "y": 2026, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "cybersecurity agent CTF evaluation"}
+{"id": "vbNDNIOuqf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "graph federated learning heterogeneity"}
+{"id": "fwwZr5jsJv", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "layerwise interpretability of tabular foundation models"}
+{"id": "GEBVeN0zLl", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective preference alignment"}
+{"id": "RhXUBi7XZL", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "prompt privacy in partitioned TEE inference"}
+{"id": "MvvZQZQ1NN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "algorithms learned by looped transformers"}
+{"id": "1ivz5AasHb", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "concept erasure robustness"}
+{"id": "VtWkPIbAQ8", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "SAE feature recovery theory"}
+{"id": "jwv2Lsh8Wo", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "theory", "target": "general", "topic": "multiclass calibration sample complexity"}
+{"id": "CezjVxDusO", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "refusal direction steering attack"}
+{"id": "W4BwSXVxhp", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "adversarial training jailbreak defense"}
+{"id": "SoHZapVUPE", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "flow matching RL sampling"}
+{"id": "uCBbLTjlcQ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "register token routing in ViTs"}
+{"id": "Mfau21u9fC", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "black-box adversarial attacks on tabular models"}
+{"id": "y4l0mv8I9D", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "selective representation steering"}
+{"id": "LDo9numrx6", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "spiking neural network perturbation robustness"}
+{"id": "dpffX83mgX", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "cooperation and exploitation in LLM agent communication"}
+{"id": "7nrSWfkSPK", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "theory of mind in human-AI interaction"}
+{"id": "85GPpcnKq4", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": "HALLU", "type": "method", "target": "mllm", "topic": "visual grounding reward for VLM RL"}

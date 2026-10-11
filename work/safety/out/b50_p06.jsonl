@@ -1,0 +1,23 @@
+{"id": "GldscJJSyC", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "reward model training for RLHF reliability"}
+{"id": "TFC25ZT9nI", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "task-agnostic model fingerprinting"}
+{"id": "2GPDxcF2sh", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "AGENT_SAFE", "type": "eval", "target": "llm", "topic": "safety reward models in long-context settings"}
+{"id": "5gnEuw1dYd", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "method", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "IncMH7p1zG", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "AGENT_SAFE", "type": "eval", "target": "mllm", "topic": "physical safety of embodied LLM agents"}
+{"id": "B4YEuDpdIL", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination mitigation via contrastive training"}
+{"id": "VEMknlIPtM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-based automatic heuristic design"}
+{"id": "Yk09iKovaA", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "method", "target": "reasoning", "topic": "CoT faithfulness"}
+{"id": "aue8HO1NOK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal depression screening"}
+{"id": "KDIwmUEJln", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "identity leakage in privacy-preserving face recognition"}
+{"id": "nvnIYLDgTp", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL post-training for protein binder design"}
+{"id": "qur2ef8MqQ", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "w2QhGE3Jqa", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "single-pass hallucination detection via uncertainty"}
+{"id": "vIS18zNPOe", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM watermarking"}
+{"id": "7qA0ewB7oK", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "theory", "target": "agent", "topic": "verifier representation sufficiency for agent safety"}
+{"id": "DREMM6MxYg", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection from hidden states"}
+{"id": "GyWDjjkfVb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "proactive verification rewards for GUI agents"}
+{"id": "Cg9hNQjlg1", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM model provenance with coverage guarantees"}
+{"id": "DYsdXzdrtD", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "mllm", "topic": "cross-modal unlearning in VLMs"}
+{"id": "ZpuAI1imrv", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "confident hallucination in context-grounded QA"}
+{"id": "l8dP3SS3RI", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in diffusion language models"}
+{"id": "hp43WMCdKT", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "end-to-end autonomous driving planning"}
+{"id": "HwTfgBHT1T", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "BACKDOOR", "type": "theory", "target": "classic", "topic": "unlearnable examples for data protection"}

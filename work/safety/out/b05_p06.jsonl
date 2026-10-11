@@ -1,0 +1,23 @@
+{"id": "MT1CuTuLXf", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "HALLU", "type": "method", "target": "classic", "topic": "uncertainty estimation and OOD detection"}
+{"id": "W6qSjvTQMW", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "multiagent", "topic": "debate for scalable oversight"}
+{"id": "1dgpAgg0KY", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "sQ0mgXjWG9", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "classic", "topic": "deepfake detection and localization"}
+{"id": "mDXSvmz4np", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "mobile agent evaluation with safety"}
+{"id": "DszlwnWXJO", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "SOCIETAL", "type": "theory", "target": "multiagent", "topic": "emergent group bias in multi-agent systems"}
+{"id": "tvr3KccJz9", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "LLM backdoor removal"}
+{"id": "hzK2mNnJGI", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "self-explanation faithfulness of LLM judges"}
+{"id": "EZn2TmBBfF", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "llm", "topic": "reward hacking in best-of-N"}
+{"id": "JbbnltqeJb", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination detection in MLLMs"}
+{"id": "ypbXXnLwRi", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private synthetic text"}
+{"id": "d24zTCznJu", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "tWqKgkMcZR", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "transporting experimental results"}
+{"id": "SNoB5wai8o", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "white-box adversarial attacks on classifiers"}
+{"id": "1YqND6cTQX", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "personalized alignment under conflicting preferences"}
+{"id": "MuCDzH0ctf", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "web agent safety and policy compliance"}
+{"id": "aHUpQSpvXj", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "social intelligence via multi-turn RL"}
+{"id": "HA8vzzT6Ax", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "llm", "topic": "LLM text watermarking efficiency"}
+{"id": "BGfO0KuFnL", "y": 2027, "rel": 2, "sub": "PI", "sub2": "BACKDOOR", "type": "attack", "target": "mllm", "topic": "persistent visual prompt injection"}
+{"id": "x1gGnrQEsH", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "attack", "target": "mllm", "topic": "MLLM unlearning robustness/relearning"}
+{"id": "eXXR5UD4hH", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "modality bias in MLLMs"}
+{"id": "WGOj26QIlR", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "multiagent", "topic": "adversarially induced harmful actions in agents"}
+{"id": "edAa22MQGY", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "pluralistic value alignment at test time"}

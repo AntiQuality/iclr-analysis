@@ -1,0 +1,30 @@
+{"id": "zu02kGyZsw", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "output diversity in aligned LLMs"}
+{"id": "fExXlIkcJY", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "persona effects on probe-based monitoring"}
+{"id": "YAYhkZYRNY", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "mllm", "topic": "social bias in VLMs"}
+{"id": "oGYbb3htR7", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP training with correlated noise"}
+{"id": "OtonxkK5L3", "y": 2027, "rel": 2, "sub": "PI", "sub2": "BACKDOOR", "type": "defense", "target": "llm", "topic": "RAG knowledge poisoning defense"}
+{"id": "qZggkN54q1", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "formal runtime assurance for tool-use agents"}
+{"id": "PxbkcxC9ew", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "binary networks in federated learning"}
+{"id": "bXXX712U3q", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "jailbreak evaluation methodology"}
+{"id": "CdPmNDVZen", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy-preserving LLM inference"}
+{"id": "PS43wqCSME", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "PI", "type": "defense", "target": "llm", "topic": "RAG knowledge poisoning defense"}
+{"id": "6lNUBgLNlW", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "formal CoT verification"}
+{"id": "vZbAbuTNOf", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "self-correction in CoT reasoning"}
+{"id": "E2Nbvj5CbA", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward model instruction compliance"}
+{"id": "NjCAfEFZgb", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "attribution in latent vs explicit reasoning"}
+{"id": "MKXIYeLMQU", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "mllm", "topic": "differentially private fine-tuning"}
+{"id": "WZr5q26MtG", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box jailbreak attacks"}
+{"id": "IF58J4fNM2", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "mllm", "topic": "harmful video moderation evaluation"}
+{"id": "09iOu1DmrT", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "analysis", "target": "classic", "topic": "adversarial and backdoor robustness of ASR"}
+{"id": "MhdCB2lvPQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "truthful forecasting mechanism design"}
+{"id": "fSfir7d0we", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "RLHF for multi-turn dialogue"}
+{"id": "fURdEvv4oq", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial attacks"}
+{"id": "LIqsZmk6bY", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "streaming hypergraph sparsification"}
+{"id": "qgNs5NmQB7", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "text-to-audio generation"}
+{"id": "g2Dbbba2hI", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "multiagent", "topic": "Byzantine robustness of multi-agent LLMs"}
+{"id": "Ui2V1tDmNJ", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "self-improving safety alignment from model spec"}
+{"id": "rEMJc47c2T", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "interpretable sparse feedforward layers"}
+{"id": "IErH5gvB83", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "tool-use agent post-training"}
+{"id": "kVaE2kYjtV", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "demographically aware human preference evaluation"}
+{"id": "eOsq3T5o60", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "LLM simulation of human participants"}
+{"id": "BP4NLWzSMg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "latent visual reasoning"}

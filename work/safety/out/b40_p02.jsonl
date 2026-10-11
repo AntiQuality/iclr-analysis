@@ -1,0 +1,30 @@
+{"id": "9OZNqYwrbm", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "online preference optimization sampling"}
+{"id": "Xv9lUIwPay", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "face privacy protection against recognition"}
+{"id": "imzDS4N8CW", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "general", "topic": "model calibration for cascading"}
+{"id": "CbHteaAWDk", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "few-shot safety task adaptation with steering"}
+{"id": "hIFjVTpDSQ", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "reasoning", "topic": "safety recovery in reasoning models"}
+{"id": "aWUcLnqmb8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial patches on visible-infrared VLMs"}
+{"id": "2uTxLC4LmC", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "reasoning", "topic": "safe reasoning alignment in LRMs"}
+{"id": "sbvdUNO12X", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "contextual privacy in LLM agent dialogue"}
+{"id": "Pmq7kzALnV", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "defense", "target": "agent", "topic": "online monitors for scheming agents"}
+{"id": "IoxBlRhANV", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "scalable oversight with complementary labels"}
+{"id": "EAhhvhCKgs", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "safety across recurrent depths in looped LMs"}
+{"id": "553zhiE5ul", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "attack", "target": "diffusion", "topic": "model immunization against harmful fine-tuning"}
+{"id": "Ue6QMEDTRV", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "9VHua2RFIP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "rubric rewards for video generation"}
+{"id": "bXitbe80cw", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "gray-box hallucination detection"}
+{"id": "Lp8CoFiT2L", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "protection against unauthorized image-to-video generation"}
+{"id": "d0Xk6GWgaA", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "long-context safety degradation"}
+{"id": "75djGJ5C5u", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "causal organization in continual learning"}
+{"id": "4Grhy3DAZi", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "self-play preference alignment"}
+{"id": "FCnWjmOlAg", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "memory poisoning defense for LLM agents"}
+{"id": "c4r7iLhGcQ", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection via feature norm"}
+{"id": "1937ieHnYA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "consistent sparse dictionary learning"}
+{"id": "KsmTaPygR9", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "safety-pragmatism trade-off in agents"}
+{"id": "2b3OPG7K1y", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "circuit discovery validity"}
+{"id": "HOqV0oYSbh", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "sense-level LLM unlearning"}
+{"id": "3QHKJcwnpb", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward hacking in RLHF reward models"}
+{"id": "fLINn5pFHN", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "developmental toxicity prediction"}
+{"id": "BrfyqUOt3X", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "attack", "target": "reasoning", "topic": "CoT monitor evasion red-teaming"}
+{"id": "TIoz1hqahd", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "belief and value representations in transformers"}
+{"id": "d3snhrbiOl", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "long-tail OOD detection"}

@@ -1,0 +1,23 @@
+{"id": "ATQID0RXnK", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "likelihood displacement in DPO"}
+{"id": "BKIwMYZPx7", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "REWARD_HACK", "type": "method", "target": "agent", "topic": "evidence-grounded agentic verification"}
+{"id": "Eu2I5jI8Cs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention surrogate faithfulness"}
+{"id": "PsrmEN6HHg", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "backdoor defense for diffusion language models"}
+{"id": "kBnvzwO5pN", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "long-tailed machine unlearning"}
+{"id": "rCOg7JPQhD", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "prompt reconstruction from hidden states"}
+{"id": "7Y0LJSLPR3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "audio-visual segmentation"}
+{"id": "FbCU9VsLBi", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "on-device LLM weight protection"}
+{"id": "iHQIacMKka", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "risk-sensitive agent workflow composition"}
+{"id": "RsRxs7m9PC", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on latent world models"}
+{"id": "Z5IUN9uqfT", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on time-series foundation models"}
+{"id": "jz41Oh9eV1", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "inference-time personalized preference alignment"}
+{"id": "cAnCNrvPHu", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective reward aggregation in RLHF"}
+{"id": "ohWWIEbM9w", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal grounding adapters"}
+{"id": "hKxYESOzen", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "length bias in reward models"}
+{"id": "GtjELGHkPB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "graph-based RAG retriever alignment"}
+{"id": "gvboE2A04D", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "unsupervised elicitation of latent behaviors"}
+{"id": "FDitFfgFgK", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "in-context constitutional alignment"}
+{"id": "q1Zt6mK0Kg", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "jailbreaks on speech LLMs"}
+{"id": "MlJhZy1MZM", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "tool-call authorization for agents"}
+{"id": "W7ueKChKEc", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness of DNNs"}
+{"id": "IuMamxh76q", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "localizing behavioral preferences in weights"}
+{"id": "UBeQ17317u", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "concept-level steering via Jacobian lens"}

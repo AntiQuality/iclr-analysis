@@ -1,0 +1,23 @@
+{"id": "AOX6NE4Me8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "theory", "target": "classic", "topic": "intervention harm in concept-based models"}
+{"id": "RMwJXp5Kb1", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "reasoning", "topic": "moral reasoning evaluation"}
+{"id": "6PyxBV9IRe", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "diffusion", "topic": "text-to-image hallucination control"}
+{"id": "vr36DTbxT9", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "maTSo2aM0x", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "robust parameter-efficient adaptation of ViTs"}
+{"id": "WxNx1MPRTc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "LLM trading agents"}
+{"id": "Bzml8zYONC", "y": 2027, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "classic", "topic": "deepfake localization multi-task attribution"}
+{"id": "otluievHBK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "medical agent safety under pressure"}
+{"id": "9xe4sVWLN7", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM hallucination detection"}
+{"id": "SOxO7e6ySB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "working memory in LLMs"}
+{"id": "yG55kGe36o", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "safety diagnostics for constrained MARL"}
+{"id": "k7mtIYlofS", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "mode connectivity for unlearning"}
+{"id": "KxQ37v53S8", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "behavioral privacy leakage in RL agents"}
+{"id": "r8MD5FCA5b", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal unlearning in MLLMs"}
+{"id": "HG4OLgeTR3", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "secure MPC LLM inference"}
+{"id": "NpSPNIkO5s", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "fine-grained policy-grounded safety behavior"}
+{"id": "45CzHgLUkz", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "learned environment generation for curricula"}
+{"id": "LIdnNbeycJ", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "graph OOD detection"}
+{"id": "JHD8U4fk6f", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context learning circuits"}
+{"id": "AowetLTHAd", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "social agent coordination benchmark"}
+{"id": "jWDgcTT1J7", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "diffusion", "topic": "reward over-optimization in image editing"}
+{"id": "tJmoOt1aNW", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "identifiability of feature superposition"}
+{"id": "JsWSrenBkc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion post-training exposure bias"}

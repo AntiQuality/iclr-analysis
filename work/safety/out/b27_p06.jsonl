@@ -1,0 +1,23 @@
+{"id": "YrqdIMBukM", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "cultural principle adherence in LLMs"}
+{"id": "7cUxi8LbKD", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe exploration in RL"}
+{"id": "2pgueLIlKe", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks on federated learning"}
+{"id": "ZKrBgNnLsR", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "multilingual safety alignment data"}
+{"id": "U1ttMrMhig", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "DPO for structure-based drug design"}
+{"id": "sLk14cQAUk", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "embodied safety benchmark for VLA models"}
+{"id": "xmDdTDx241", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "defense", "target": "llm", "topic": "emergent misalignment risk forecasting"}
+{"id": "MBm115neoT", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "probabilistic safety verification with barrier certificates"}
+{"id": "lINWtlpvSF", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "black-box hallucination detection"}
+{"id": "jSSjp45lQr", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "attribute inference via agent memory"}
+{"id": "tuq9NF7QLX", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial patch detection"}
+{"id": "djpBhStyNj", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM confidence calibration for clinical prediction"}
+{"id": "27oJibuygA", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "OOD", "type": "defense", "target": "classic", "topic": "uncertainty-based adversarial input detection"}
+{"id": "n9zG3wmMK9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "uncertainty-aware multi-modal clustering"}
+{"id": "6rvpzYGNOn", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "accuracy-first differential privacy"}
+{"id": "LR2KVyl3cb", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DECEPTION", "type": "eval", "target": "agent", "topic": "corrigibility of computer-use agents"}
+{"id": "67uxRy2tRR", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent SOP and constraint adherence"}
+{"id": "Np9WkgwUzT", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "graph foundation models under density shift"}
+{"id": "Aev5GP0bav", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "verifier susceptibility in RL with LLM judges"}
+{"id": "vZNbvgUl3W", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "diffusion", "topic": "dataset-use auditing for T2I models"}
+{"id": "PhUCxfS0yf", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM abstention training"}
+{"id": "keCnsHtION", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "KL regularization in RLHF"}
+{"id": "RwYMqkNeCg", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "probing code model system-level representations"}

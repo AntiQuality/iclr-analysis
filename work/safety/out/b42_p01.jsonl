@@ -1,0 +1,30 @@
+{"id": "sjGaLWeD8i", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "truthfulness benchmark surface-feature leakage"}
+{"id": "dCb3HntcgY", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "context-label poisoning of tabular foundation models"}
+{"id": "ukFm0QSCUi", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "constitutional AI preference optimization"}
+{"id": "ku2i7fyPfE", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "multiagent", "topic": "ownership watermarking of multi-agent routing"}
+{"id": "reogedwLME", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "UNLEARN", "type": "defense", "target": "llm", "topic": "conformity/sycophancy mitigation in LLMs"}
+{"id": "FY283zxwCY", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "HALLU", "type": "defense", "target": "mllm", "topic": "text-image tampering detection"}
+{"id": "O7a08TTnlE", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "wjl0Mcjw6V", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "deepfake detection generalization"}
+{"id": "b2ZE4TCiXj", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "multi-value alignment of LLMs"}
+{"id": "ULqzEEkyxk", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "training data extraction from LLMs"}
+{"id": "UQK3tUsouK", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "jailbreak transferability across LLMs"}
+{"id": "EkzVuZj60c", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "compositional text-to-image DPO"}
+{"id": "UEN8B8Rylx", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "general", "topic": "model ownership verification under fine-tuning"}
+{"id": "Hp37sye5t3", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "llm", "topic": "AI-generated text detection limits"}
+{"id": "J610tpRsLZ", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "deepfake detection evaluation methodology"}
+{"id": "72TdQJ4kkM", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "concept-level backdoor attack on CLIP"}
+{"id": "hvTFoDsgCe", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "machine unlearning definition"}
+{"id": "Rnwz2yGLcx", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "INTERP_GEN", "type": "analysis", "target": "classic", "topic": "object detector failure prediction under shift"}
+{"id": "SgIOGmujRB", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "llm", "topic": "rubric reward hacking in RL"}
+{"id": "2Q8i6Jg6n8", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "RLHF policy optimization"}
+{"id": "wXRvfDtCIL", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "emergent misalignment from fine-tuning"}
+{"id": "HgKpuxSiyU", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "learning from clinician edit feedback"}
+{"id": "guVhWVT4WG", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "evidence-grounded scientific document QA"}
+{"id": "pwW2Wdfbsl", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "mllm", "topic": "sycophancy in VLMs"}
+{"id": "ItBVWHYcI2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model for math reasoning"}
+{"id": "2VvJNe1sJD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "systematic generalization in transformers"}
+{"id": "mvwyNLN46k", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "analysis", "target": "classic", "topic": "certified robustness of explanations"}
+{"id": "FsUeKY4edN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "cross-modal performance gap mechanisms in VLMs"}
+{"id": "QHuDroQMgj", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "activation steering method"}
+{"id": "wtkXtgdCFj", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "online machine unlearning"}

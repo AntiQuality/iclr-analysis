@@ -1,0 +1,30 @@
+{"id": "bixb78HAc2", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "local differential privacy nonresponse leakage"}
+{"id": "Bd4NiAehoD", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "mllm", "topic": "geographic bias in VLM representations"}
+{"id": "qVMtipJxgE", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "video-based jailbreak of MLLMs"}
+{"id": "XgsVElfyvZ", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving federated graph clustering"}
+{"id": "p9s6j9oq4g", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "SAE failure detection in visuomotor policies"}
+{"id": "2Fv4GxUElU", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanistic interpretability of in-context learning"}
+{"id": "cYe4ofKubJ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "personalized LLM counseling agent"}
+{"id": "pRP3GJMy6p", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "watermarking LLM-generated code"}
+{"id": "4E9uxVIAFP", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "mu8sO1Vw0C", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference optimization for text-to-video quality"}
+{"id": "FOQhjQTkzj", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-bit LLM text watermarking"}
+{"id": "Pojr22PX3M", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "probing decodability vs causal responsibility"}
+{"id": "nC02whIg9t", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "mllm", "topic": "AI-edited document detection"}
+{"id": "R0KwO3vDzy", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "post-training effect on exact arithmetic"}
+{"id": "qsNOlaucUn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "induction circuits in hybrid architectures"}
+{"id": "rXw7KZVzvt", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "agent", "topic": "code-executable LLM-as-judge for agents"}
+{"id": "ZWfDRKNeFe", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "general", "topic": "geographic bias quantification in AI models"}
+{"id": "Hp0hn0O6vs", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "explainable LLM-generated text detection"}
+{"id": "axlhr1Y1Vf", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "induction heads and in-context learning"}
+{"id": "ogKZnm8F7D", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "reasoning", "topic": "preference optimization for math reasoning"}
+{"id": "T42s43m0cc", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "targeted bias injection via activation steering"}
+{"id": "I9ED9VWZq6", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "speech naturalness judgment benchmark"}
+{"id": "rV7CzvpbDA", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "analysis", "target": "general", "topic": "canary dependence in unlearning privacy audits"}
+{"id": "pScfmUrMH1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "model selection for multi-LLM collaboration"}
+{"id": "71aW30lVpo", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "bit-flip jailbreak of LLMs"}
+{"id": "a2Dx9CSiXU", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "hallucination neuron detection and mitigation"}
+{"id": "ZPkI4eVlm5", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "personalized function calling benchmark"}
+{"id": "ah64v1jnvQ", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "mllm", "topic": "explainable AI-generated image detection evaluation"}
+{"id": "2g8EmFwNTB", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM knowledge graph reasoning"}
+{"id": "vsh53iMl9J", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "training-free VLM hallucination mitigation"}

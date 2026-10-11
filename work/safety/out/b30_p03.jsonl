@@ -1,0 +1,30 @@
+{"id": "nnRXa9ARJn", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward models for visual generation"}
+{"id": "aHeerhmjR8", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM data unlearning"}
+{"id": "92fliNrbxY", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "watermarking graph diffusion models"}
+{"id": "td682AAuPr", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "audiovisual cue hallucination in MLLMs"}
+{"id": "zE2tVigoub", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "mobile GUI agent benchmark"}
+{"id": "7Zbe5ad3eX", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "DP analysis for federated learning"}
+{"id": "I4XCJtoP1G", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "memory poisoning in LLM agents"}
+{"id": "qF6VdXNR5g", "y": 2026, "rel": 1, "sub": "DECEPTION", "sub2": null, "type": "method", "target": "rl_robot", "topic": "deceptive path planning in MDPs"}
+{"id": "nMOX3DjPdV", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "protection against unauthorized model merging"}
+{"id": "YRM6WOgIGb", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "multi-dimensional preference RL"}
+{"id": "Gi4nEacyeO", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "eoMJm7WLrW", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "agent", "topic": "evidence-grounded agentic RAG"}
+{"id": "M1hTi1kT2J", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "positional bias in legal LLM adjudication"}
+{"id": "OnZwqqRq3M", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial training regularization"}
+{"id": "bUnG3WcSYX", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "multi-turn jailbreak detection"}
+{"id": "wP588aEOQf", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "gradient inversion in federated learning"}
+{"id": "U3fkjG9WSf", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "model-level backdoor detection"}
+{"id": "rcw57CvSdw", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "tKNV6R8o1h", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL"}
+{"id": "WA2hiqnXye", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "JB_DEF", "type": "defense", "target": "mllm", "topic": "privacy refusal in VLMs via model editing"}
+{"id": "D3o11BIhap", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "watermarking AI-generated crystals"}
+{"id": "uikLSN1yot", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "untrustworthy source filtering in LLMs"}
+{"id": "4811SpNHpa", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "popularity bias correction in recommenders"}
+{"id": "eXjDR9Mphk", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "reward models for subjective writing"}
+{"id": "V2WSJ2e28q", "y": 2026, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "method", "target": "general", "topic": "robust capability inference from benchmarks"}
+{"id": "gbr1MYbnP1", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "general", "topic": "contrastive error auditing theory"}
+{"id": "kgFMhJvQ2l", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "anti-customization protective perturbation"}
+{"id": "aKrLBN1tiO", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair influence maximization"}
+{"id": "aD1zhekGUI", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "general", "topic": "SAE evaluation sanity checks"}
+{"id": "FrpBCtqRnK", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "analysis", "target": "reasoning", "topic": "CoT monitorability"}

@@ -1,0 +1,23 @@
+{"id": "pBThM9DLtd", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "semantic-level LLM unlearning"}
+{"id": "z7tFlC6jzr", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "agent", "topic": "agent policy compliance on unseen rules"}
+{"id": "TCUMPNTlIq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "negation mechanisms in LLMs"}
+{"id": "2412wDS7ZC", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "multimodal OOD detection"}
+{"id": "J48XM0au4u", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "diffusion", "topic": "SAE steering of diffusion transformers"}
+{"id": "OEnIVaoOaI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "fusing rewards and preferences in RL"}
+{"id": "0991ymvCYW", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "evidence calibration in dynamic medical diagnosis"}
+{"id": "3ZesmvOJ6o", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "zero-shot in-context LLM unlearning"}
+{"id": "SoOfGBn7bw", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated red-teaming with evolving skills"}
+{"id": "IplYh5Agup", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "agent", "topic": "reward hacking in RLVR code agents"}
+{"id": "Lq1MYguKbD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE-guided structured channel pruning"}
+{"id": "8R1g3BNvR5", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "invisible Unicode backdoors in multilingual models"}
+{"id": "NeqaHLKAt6", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "fairness poisoning attack on GNNs"}
+{"id": "HsAehG6wJW", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "mllm", "topic": "moral alignment benchmark for VLMs"}
+{"id": "pii2f3Enyw", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "diffusion", "topic": "fair text-to-image generation"}
+{"id": "gwavfvxSwg", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "attributional style reframing benchmark"}
+{"id": "0hjJwDnuyI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated cross-platform recommendation"}
+{"id": "pTe58Of3na", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "task-heterogeneous federated surgical video"}
+{"id": "ee7Kr1z6jy", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DECEPTION", "type": "eval", "target": "multiagent", "topic": "imposter detection in agent collectives"}
+{"id": "DCp7Nqno3n", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "visual reward hacking in robot policy optimization"}
+{"id": "ITqOwESxXX", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "heavy-tailed DP stochastic convex optimization"}
+{"id": "lrpwOygf1b", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward over-optimization in flow-matching RL"}
+{"id": "Y0vB8hglEA", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "agent", "topic": "conversation-observing indirect prompt injection"}

@@ -1,0 +1,30 @@
+{"id": "ofgxkMLqic", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference data curation for reward models"}
+{"id": "3cKjLHrBrN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "FAIR", "type": "theory", "target": "general", "topic": "collateral cost of linear concept erasure"}
+{"id": "7rJzbhjSJt", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "reasoning", "topic": "latent reasoning without verbalization"}
+{"id": "I1TBgjF9FU", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "video anomaly detection benchmark analysis"}
+{"id": "NEmiqpLAa5", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "analysis", "target": "diffusion", "topic": "memorization detection in diffusion models"}
+{"id": "uuvOdvPIqC", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "code transformation defense against attacker agents"}
+{"id": "4qddTfOQac", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "multi-agent incident recovery via provenance"}
+{"id": "IP6NWw6GwJ", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "HALLU", "type": "method", "target": "classic", "topic": "confidence calibration under label shift"}
+{"id": "szmwO84A7W", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "method", "target": "mllm", "topic": "bias discovery and steering in VLM judges"}
+{"id": "9o87Jq7EzG", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "backdoored retrievers in agentic RAG"}
+{"id": "syvfsHSqm2", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "randomized smoothing certified robustness"}
+{"id": "LzU8U7NVCs", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "UNLEARN", "type": "defense", "target": "llm", "topic": "data poisoning auditing in summarization"}
+{"id": "gdvOF1OMa7", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanistic interpretability of in-context learning"}
+{"id": "YMS86j5KTu", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private federated learning"}
+{"id": "AdOTrxFJHw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "irrigation world model adaptation"}
+{"id": "yMOSkmX5uC", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "model diffing base vs fine-tuned"}
+{"id": "bZ4dAz0aMK", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "steering-based VLM hallucination mitigation"}
+{"id": "VoJ8FflwBk", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "agent", "topic": "indirect prompt injection in LLM agents"}
+{"id": "duntROHZ5R", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "activation-based misuse monitoring"}
+{"id": "EPjGdDzsvf", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "multimodal deepfake detection"}
+{"id": "Hs08zFNBBh", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "group fairness in low-data classification"}
+{"id": "6fjAJTxmyV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "multi-agent debate for reasoning accuracy"}
+{"id": "NS0MIuwgrg", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness repair via honeypots"}
+{"id": "9Xf15SW6mg", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "general", "topic": "demographic bias in image-text datasets"}
+{"id": "P6WMpwq1L4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "physical-law circuits in transformers"}
+{"id": "0HEPRgsL15", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "mental health chatbot safety evaluation"}
+{"id": "PpmdCkC42j", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "reasoning", "topic": "safety under test-time scaling"}
+{"id": "BWgqEOJQCn", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "AI control monitoring of omission attacks"}
+{"id": "GDVCfZ1hh7", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal jailbreak detection"}
+{"id": "MaP2KsIEzp", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM initialization for Bayesian optimization"}

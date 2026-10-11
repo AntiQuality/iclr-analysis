@@ -1,0 +1,30 @@
+{"id": "6kDoAMVPn5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "cross-domain few-shot object detection"}
+{"id": "wbOqOEgNeY", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "distillation attribution and model provenance"}
+{"id": "QlPS71AW8a", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "VALUES", "type": "analysis", "target": "multiagent", "topic": "LLM cooperation in social dilemmas"}
+{"id": "KfsK8ybjaP", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward over-optimization in RLHF"}
+{"id": "6eSNG1VNkl", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "multi-turn jailbreak attacks"}
+{"id": "wJYVjubJp3", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "zFUkXQj6U6", "y": 2026, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "attack", "target": "classic", "topic": "upstream encoder inference attack"}
+{"id": "OGpuwplImJ", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "reliability of deception probes"}
+{"id": "zQZVpPwjbo", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "eval", "target": "mllm", "topic": "visual grounding output safety refusal gap"}
+{"id": "wkWwXiw4Vb", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "learning from mixed-quality data"}
+{"id": "WBLF08hpqs", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "SAE-based activation steering"}
+{"id": "gxUJiBISEh", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "efficient unlearning for tree ensembles"}
+{"id": "1gOsttzrWG", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "multiagent", "topic": "constrained multi-agent RL"}
+{"id": "K5Hw3X459h", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "minimum-norm adversarial attacks"}
+{"id": "6GKn8DBmgm", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "privacy-preserving fairness auditing"}
+{"id": "jBt5e6AmST", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "FT_ROBUST", "type": "attack", "target": "llm", "topic": "embedding perturbation safety bypass"}
+{"id": "K6NFBKjxUN", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "semantic-trigger backdoors in LLMs"}
+{"id": "UulvIPNsmz", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "reasoning", "topic": "safety alignment of reasoning models"}
+{"id": "Z9PwmPQpT7", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "evaluation awareness in LLMs"}
+{"id": "pZsUT3QB69", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning utility preservation"}
+{"id": "VsEkWh3mXu", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "safety side-effects of representation steering"}
+{"id": "RdrFt2kTAh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "one-shot federated LoRA merging"}
+{"id": "m8EG1AeLW9", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "x9I1V6JY0r", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "generative audio watermarking"}
+{"id": "ZrZReH7xV1", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "ALIGN_TRAIN", "type": "eval", "target": "llm", "topic": "defender-centric jailbreak evaluation"}
+{"id": "YdV8tlfmJI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "2XH9Pc5030", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "theory", "target": "llm", "topic": "pre-training data poisoning scaling laws"}
+{"id": "nEWvHbuVpV", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving federated learning"}
+{"id": "WMS0ypYjwm", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "deepfake face detection generalization"}
+{"id": "rkC5vGGki3", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-hop deep unlearning in LLMs"}

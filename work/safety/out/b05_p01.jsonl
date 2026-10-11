@@ -1,0 +1,30 @@
+{"id": "6pU5ZZMHht", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "EPva1hwEz9", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": "HALLU", "type": "eval", "target": "mllm", "topic": "clinical reliability evaluation of medical MLLMs"}
+{"id": "EfW954zYCU", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "13GGonC35f", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "hallucination in video LLMs"}
+{"id": "1MGZCBVa4T", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "general", "topic": "personalized alignment from pairwise feedback"}
+{"id": "p43oXKOV8G", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "regularized Markov game equilibrium convergence"}
+{"id": "Ppv5ZYQrXl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private federated learning"}
+{"id": "BK3VnIymLp", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "contextual hallucination detection in RAG"}
+{"id": "FN9cUkUwI3", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "multi-agent cooperation failure modes"}
+{"id": "ppiyUHtAMQ", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "reasoning", "topic": "hallucination reduction via preference alignment"}
+{"id": "7mVZy4mI1J", "y": 2026, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model false positives"}
+{"id": "oDAgK12ZCF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM personality control"}
+{"id": "pQuy0XSFjd", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "jailbreaking agents to execute harmful tasks"}
+{"id": "urwICN0fD1", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "iACQf5tnua", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "llm", "topic": "training data extraction from LLMs"}
+{"id": "ECMhMhrx4X", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "mllm", "topic": "privacy-preserving split inference"}
+{"id": "0a8ebRImO1", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "agent", "topic": "hallucination in financial agents"}
+{"id": "Z3SH1xlFs6", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "backdoor attacks on RL agents"}
+{"id": "VlxZTDtM2P", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "jailbreak defense via safety prompt tuning"}
+{"id": "yJgX8GyVCW", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "inference-time alignment"}
+{"id": "JSjOlFLUsS", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "nTh608IsKA", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "modality bias in MLLMs"}
+{"id": "XNYPgC5NoM", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "theory", "target": "multiagent", "topic": "misaligned multi-agent interaction dynamics"}
+{"id": "wNDXppfkJj", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "classic", "topic": "generative capabilities of robust classifiers"}
+{"id": "PFoTM2FkwD", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "safety evaluation of diffusion LM decoding"}
+{"id": "u7O2Hyonmw", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "multiagent", "topic": "security of multi-agent debate"}
+{"id": "EB0591wzrZ", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "general", "topic": "OOD generalization evaluation"}
+{"id": "ls9nJ25ave", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "memory poisoning in LLM agents"}
+{"id": "vX0QvyMeub", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "vdDtiQ1w8B", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal reward models for video"}

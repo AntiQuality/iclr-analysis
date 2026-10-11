@@ -1,0 +1,23 @@
+{"id": "3ZitkIFZuo", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "CBRN uplift evaluation methodology"}
+{"id": "G9KSLKoFJV", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "llm", "topic": "causal fairness in LLM generation"}
+{"id": "afVv4WANKg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "super-resolution fidelity assessment"}
+{"id": "FzZx99DRAJ", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "mllm", "topic": "audio LLM jailbreak defense via steering"}
+{"id": "fCI19z3I8v", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "unlearning forget-retain Pareto front"}
+{"id": "x0twSeyTMo", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "OVERSIGHT", "type": "eval", "target": "llm", "topic": "adversarial evidence selection against LLM judges"}
+{"id": "snt9GLCWFQ", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal RAG context recorruption"}
+{"id": "vSbV01bdvf", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "emotional prompt framing effects"}
+{"id": "HtI3lwY0AZ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning in continual learning"}
+{"id": "nA8vLqvBRJ", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "diffusion", "topic": "multimodal deepfake detection benchmark"}
+{"id": "4KVeb0Vv13", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "d1RejSWved", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constraint learning from safe demonstrations"}
+{"id": "w5k4FfyNnP", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "mllm", "topic": "fair medical image segmentation with VLMs"}
+{"id": "qGYKxt8nGS", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal rubric hallucination"}
+{"id": "xJ0TBb2jh8", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "discrete-to-continuous channel simulation"}
+{"id": "bNtLZATRRV", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "mobile agent unsafe action benchmark"}
+{"id": "BXHawAvJsy", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "classic", "topic": "certified unlearning in continual learning"}
+{"id": "S3jnCjBMMs", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "user-model uncertainty in personal assistants"}
+{"id": "huSqmDAny7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal SAE compositional faithfulness"}
+{"id": "PCx6NOLoke", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "continuous LLM unlearning"}
+{"id": "z4kwbzLmqG", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "spurious correlation removal via explanations"}
+{"id": "8YIs6ENyBk", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "state tracking mechanisms in transformers"}
+{"id": "WbV6w9R2Ox", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "general", "topic": "unlearning evaluation metrics"}

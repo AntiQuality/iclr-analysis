@@ -1,0 +1,30 @@
+{"id": "hRc0sauHSE", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "query-efficient black-box adversarial attack"}
+{"id": "ygrx8bN3MO", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "QJXhFrXSOK", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "test-time adaptation under covariate shift"}
+{"id": "iO0N2x4fv1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "Bayesian active reasoning with clarifying questions"}
+{"id": "T7HBx7rOnM", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "joint pixel-feature adversarial robustness of VLMs"}
+{"id": "XkPHo8tXiS", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "LLM verification scaling"}
+{"id": "mo3S2ihVAe", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "SLM-LLM collaboration under privacy constraints"}
+{"id": "u9tJQvDHx4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "irrelevant facts steering transformer answers"}
+{"id": "gX30Aapm6u", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "factual caption reward modeling"}
+{"id": "KnDkteVLTn", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "training-free machine unlearning"}
+{"id": "RHstSzh3xh", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "defense", "target": "llm", "topic": "robust fact-checking under evidence contamination"}
+{"id": "RF09v6kO2v", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on MoE LLMs"}
+{"id": "Zbw6oh8WqK", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "WATERMARK", "type": "analysis", "target": "llm", "topic": "AI-generated text in peer review"}
+{"id": "HzmfN0OLT6", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "D9bLUj7wUW", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "retrieval-free citation attribution"}
+{"id": "e6rclIR8c1", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "weather-based adversarial attacks on VLMs"}
+{"id": "NdyMp1LNIq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "interpretable time-series forecasting"}
+{"id": "slH0HSbKjn", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "diffusion", "topic": "jailbreaking image editing models"}
+{"id": "aTxnsFFO7t", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated causal survival analysis"}
+{"id": "MEbLLqrHLy", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT faithfulness training"}
+{"id": "7Idfb1oBwM", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "MoE router intervention for safety"}
+{"id": "iVe8A0yUxu", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "UNLEARN", "type": "attack", "target": "classic", "topic": "data reconstruction in federated unlearning"}
+{"id": "fRnH2IlcAm", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM deception auditing"}
+{"id": "Wc0VC0wUl6", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "compositional jailbreak benchmark"}
+{"id": "SRoOGSmAlw", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "reconstruction bounds under DP-SGD"}
+{"id": "yA2h0UDEIi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "interpretability localizers for adaptation placement"}
+{"id": "XeZGx0FSDF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "method", "target": "llm", "topic": "cross-lingual DP fine-tuning"}
+{"id": "WmXtQGnLQc", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "persona conditioning circuits"}
+{"id": "Xt4uPOjGNs", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fairness-aware graph prompting"}
+{"id": "jsD1puKzWX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "news-informed LLM forecasting"}

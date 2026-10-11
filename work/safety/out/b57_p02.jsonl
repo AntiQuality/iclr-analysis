@@ -1,0 +1,30 @@
+{"id": "ihgny8WC3i", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "deep safety alignment against prefilling attacks"}
+{"id": "Mlu1LSmijg", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "pluralistic alignment preference aggregation"}
+{"id": "4HenLycCQ3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "MBTI personality inference from text"}
+{"id": "6D5Odqol1B", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "method", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "fiNAjzqAtc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model uncertainty"}
+{"id": "uBjsMo8ylJ", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "interpretable feature interaction models"}
+{"id": "wBmaKUqoBB", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "mllm", "topic": "federated black-box VLM prompt adaptation"}
+{"id": "0pVKknV9nM", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "zero-shot LLM-generated text detection"}
+{"id": "CtegAlSDQj", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "multi-constraint safe RL"}
+{"id": "0UddOenT1G", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "multi-watermark coexistence under image editing"}
+{"id": "sX9HbELwLO", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "0e0urElUyG", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "pluralistic alignment preference aggregation"}
+{"id": "QguE2FYSrj", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "private LLM inference with homomorphic encryption"}
+{"id": "l8QLREVM3v", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differential privacy in federated learning"}
+{"id": "TaC9r7VRv0", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image immunization against diffusion customization"}
+{"id": "6swenuPPrz", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "ADV_ROBUST", "type": "method", "target": "classic", "topic": "post-hoc uncertainty for object detection"}
+{"id": "fxBFinhuWl", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "pJoSE7Cvj0", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "critical neurons in LLMs"}
+{"id": "NNqi3tBcZr", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "theory", "target": "general", "topic": "conformal risk-averse decision making"}
+{"id": "QrhTIhi4KE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "physics-guided molecular diffusion"}
+{"id": "SeO4vyAj7E", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "reward hacking via test case exploitation"}
+{"id": "bCeQpOEhSe", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "FSOoR1ZFtf", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection via uncertainty"}
+{"id": "2eAGrunxVz", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion model image watermarking"}
+{"id": "I2mvqugrfi", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "GpK5kZUdCW", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "decentralized federated unlearning"}
+{"id": "DgUXcqGJ00", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "general", "topic": "pluralistic alignment preference aggregation"}
+{"id": "4S5x8yhJ5H", "y": 2026, "rel": 1, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "face verification dataset for eKYC"}
+{"id": "gG2SMVAiQH", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "physical adversarial attacks on vehicle detectors"}
+{"id": "ETY39ugUnd", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "federated unlearning"}

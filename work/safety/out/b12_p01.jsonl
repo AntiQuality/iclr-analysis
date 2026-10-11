@@ -1,0 +1,30 @@
+{"id": "TSSShVXiOK", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "analysis", "target": "rl_robot", "topic": "unlearning verification via membership scores"}
+{"id": "7KlsFqjvGX", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "multi-turn jailbreak attacks on LLMs"}
+{"id": "e8w3aO02sq", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "time-triggered backdoor attacks on LLMs"}
+{"id": "uYVLkvGOSL", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ADV_ROBUST", "type": "defense", "target": "llm", "topic": "certified robustness against LLM jailbreaks"}
+{"id": "VWqcwAURmD", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "ib1Mg4c5pl", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM binary diff summarization"}
+{"id": "cGv4z4eaNr", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "data-efficient alignment datasets"}
+{"id": "WRvZw0bpxA", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "federated preference optimization for LLMs"}
+{"id": "mFV5ALCRwJ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "mllm", "topic": "continual unlearning benchmark for MLLMs"}
+{"id": "nHn3GLsgBS", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "general", "topic": "watermark inheritance through distillation"}
+{"id": "nFXQFLoFiJ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "model routing evaluation protocol"}
+{"id": "HGN2jtzKg0", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "VLM hallucination detection benchmark validity"}
+{"id": "e4QlBA8rQz", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "massive activations in transformers"}
+{"id": "YzIlhcjUs1", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM text watermark public detection"}
+{"id": "YqRWHU8dGJ", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "linguistic bias in LLM peer review"}
+{"id": "rUDEPUZAvL", "y": 2026, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward hacking in text-to-image RL"}
+{"id": "ebck5OKmiM", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "differentially private in-context demonstrations"}
+{"id": "UFoUPOPJ8d", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "corrupted exemplar effects on answers"}
+{"id": "ezWEGpMmmK", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "llm", "topic": "source model attribution of generated text"}
+{"id": "c3uJYTRld6", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "defense", "target": "llm", "topic": "reward hacking in self-evolving models"}
+{"id": "BSDkUPrqAh", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "SAE feature recovery"}
+{"id": "50lBc51vMa", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "UNLEARN", "type": "analysis", "target": "mllm", "topic": "LoRA-installed shortcut capabilities in VLMs"}
+{"id": "T0g2JWoaST", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "7K1S8y2CXa", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "structural cardinality backdoor triggers"}
+{"id": "wQ4OykcxaV", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "automated red-teaming of VLMs"}
+{"id": "wnFuR14QBF", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "indirect prompt injection in web agents"}
+{"id": "ee0bbQDoIf", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "social bias evaluation methodology"}
+{"id": "w0OSBRyfSU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "self-evolving coding agent harness"}
+{"id": "Uu2MI8ifrm", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on dynamic graphs"}
+{"id": "drWyIP55rJ", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "llm", "topic": "inference-time reward hacking in best-of-n"}

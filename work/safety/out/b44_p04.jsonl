@@ -1,0 +1,30 @@
+{"id": "IU4rqTlpRb", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "CzJMp2WFAh", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "agent", "topic": "LLM judge bias in web agent evaluation"}
+{"id": "ApRvN6wyFZ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "reach of attention steering"}
+{"id": "FhMm14yrJ7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "activation explanations for expert oversight"}
+{"id": "4PQgDYRytU", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "safety system prompt optimization"}
+{"id": "AY3QtM0mQ9", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "language bias and LVLM hallucination"}
+{"id": "ALJsIAmO54", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "generative recommendation item indexing"}
+{"id": "4imlZj1k8b", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "open-set recognition"}
+{"id": "wGj8LU2EOf", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "position", "target": "llm", "topic": "formal correctness for LLM code translation"}
+{"id": "QIb9LvN0Xp", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "failure modes in 3D diffusion transformers"}
+{"id": "gu08Twu8Sb", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM fingerprinting and lineage verification"}
+{"id": "1Dzm5ZnPde", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "safe RLHF constrained optimization"}
+{"id": "ggQf4Wmbyy", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "multi-value activation steering"}
+{"id": "Ncf2LFDT4e", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM debiasing benchmark"}
+{"id": "iY0l6rbw3U", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "BACKDOOR", "type": "method", "target": "llm", "topic": "efficient LLM unlearning"}
+{"id": "Cj5ItMX3UD", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "NtAfl4BXWX", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "RAG corpus poisoning"}
+{"id": "It2Nwp7QSy", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "alignment faking without verbalization"}
+{"id": "tFEAzYdz92", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model for operations research"}
+{"id": "nXLXjAir6m", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "multi-step backdoor in LLM agents"}
+{"id": "YMoKcwIb8J", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "generative reward modeling with human critiques"}
+{"id": "RubVE3fHFS", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "defense", "target": "multiagent", "topic": "collusion detection among LLM agents"}
+{"id": "JL6UpZeewX", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "UNLEARN", "type": "analysis", "target": "llm", "topic": "negative learning in LLM fine-tuning"}
+{"id": "6Vd5Y30s9I", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "certified patch defense for VLA models"}
+{"id": "CcN9fUcpZO", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial training for image classification"}
+{"id": "TQ2FLSi4wq", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "bias attribution in RAG pipelines"}
+{"id": "m3FOf6nKnU", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "input-perturbation machine unlearning"}
+{"id": "QOPlh31RTZ", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": "ALIGN_TRAIN", "type": "method", "target": "rl_robot", "topic": "constrained RL from human feedback"}
+{"id": "L7S7nNEPmk", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "general", "topic": "constrained RL sample complexity"}
+{"id": "A3VDbR9arh", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "compound AI system optimization"}

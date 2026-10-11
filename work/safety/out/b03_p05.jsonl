@@ -1,0 +1,30 @@
+{"id": "9chqEmpIZT", "y": 2026, "rel": 1, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward hacking in LLM recommendation"}
+{"id": "36CFsyvsv7", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "attack", "target": "diffusion", "topic": "concept erasure in diffusion attack"}
+{"id": "kafDVPibi8", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "post-hoc text-to-image safety editing"}
+{"id": "Yi6uDVGgpF", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "agent", "topic": "instrumental monitor evasion by LLM agents"}
+{"id": "AEZ1gQ9yWY", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "age stereotypes in VLM affective reasoning"}
+{"id": "v6Ii5zfgbL", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "reward hacking exploits in agent benchmarks"}
+{"id": "YpL4lsNANl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "long-term memory evidence alignment"}
+{"id": "31N19VSZUM", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "over-refusal in adversarial safety tuning"}
+{"id": "1uKiakJHan", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "process rewards for retrieval agents"}
+{"id": "4F1py5vQXm", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "agent", "topic": "secure FHE code generation agents"}
+{"id": "zK9Itimly5", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "tckfWaA6uL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "probe-based reasoning step verification"}
+{"id": "xcV1IciBK1", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "inference-time LLM backdoor defense"}
+{"id": "H11xtXtdPj", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "ADV_ROBUST", "type": "eval", "target": "mllm", "topic": "authority-cue persuasion of VLMs"}
+{"id": "5EWKGwfsax", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "self-evolving agent safety memory"}
+{"id": "hZJWxKY5hB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination mitigation in LVLMs"}
+{"id": "TVSPV6D0co", "y": 2026, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "high-capacity semantic image watermarking"}
+{"id": "qXlWhgkpBp", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "formal safety verification of RL policies"}
+{"id": "XoyLyS3kwC", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "source inference attack in federated learning"}
+{"id": "7fd1KMBauN", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "agent", "topic": "execution evidence for agent fault diagnosis"}
+{"id": "Hn7G1NGzSB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "cross-modal hallucination in audio-visual LLMs"}
+{"id": "BpXkl2Y5UG", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "interpretable feature steering of preference optimization"}
+{"id": "PLO5usohCN", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "fair interval scheduling"}
+{"id": "x2xuZI3oUs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "patch-level training data attribution for VLMs"}
+{"id": "OsXr7S8X4x", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "low-rank PGD adversarial attack"}
+{"id": "aznqUxfIuv", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "eval", "target": "agent", "topic": "quantization effects on agent scope violations"}
+{"id": "CdsxIDlf9N", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "intent-bound multimodal safety alignment"}
+{"id": "2zi9z2geAO", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "environmental injection in mobile GUI agents"}
+{"id": "3ouK4frGSB", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection with normalizing flows"}
+{"id": "lXifV7UieX", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_GEN", "type": "attack", "target": "mllm", "topic": "adversarial manipulation of VLM explanations"}

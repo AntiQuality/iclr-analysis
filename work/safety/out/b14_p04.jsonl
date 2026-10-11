@@ -1,0 +1,30 @@
+{"id": "fnfG8pI00B", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "classic", "topic": "group fairness of personalization benefits"}
+{"id": "mJSL9qU8DW", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "access-controlled LLMs for confidential data"}
+{"id": "7jVREIvIWo", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "differentially private RAG"}
+{"id": "YGZGA1CbnM", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair representation learning"}
+{"id": "B81lqtb6xS", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "certified hallucination correction decoding in VLMs"}
+{"id": "IWeTWYM8qw", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning residual hidden-state leakage"}
+{"id": "Gs0npN1ivF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "user consent in agent actions"}
+{"id": "XmIXQ83u84", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "pre-generation hallucination probing validity"}
+{"id": "SXbnBpfnux", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "graph unlearning at high deletion ratios"}
+{"id": "TidLO0qdp0", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "rl_robot", "topic": "unlearning in diffusion offline RL policies"}
+{"id": "3KqASrNJGK", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "steering-aided LLM judges for dishonesty"}
+{"id": "pBK2Ta9ypO", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "agent", "topic": "long-horizon autonomous agent loop safety"}
+{"id": "wleUyyqTz2", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "preference-based hierarchical RL"}
+{"id": "eWBu4tY9ta", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "mllm", "topic": "multimodal RAG knowledge copyright watermarking"}
+{"id": "Urs8lNvMXB", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "reasoning", "topic": "unsolvable math problem recognition"}
+{"id": "jrZeSleifR", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "mllm", "topic": "MLLM safety representation steering"}
+{"id": "h7Tm6dSWWp", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "contextual heads long-context distraction"}
+{"id": "OpGnirzkwN", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "agent claim-action misalignment"}
+{"id": "AbsmTcjnbZ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "adversarial observation defense in cooperative driving"}
+{"id": "VHiHVBNy1M", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "personalized safety via activation steering"}
+{"id": "BxfO5mKuLK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "order dependence in LLM listwise scorers"}
+{"id": "i1ZhDfhKAN", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "theory", "target": "llm", "topic": "pretraining data poisoning sample count theory"}
+{"id": "XNNDODynCl", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "general", "topic": "pluralistic quantile-fair policy aggregation"}
+{"id": "gKpvwexNuO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "method", "target": "general", "topic": "attribution measure for grokking and adversarial transfer"}
+{"id": "JOroN3ORXp", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "industrial safety spatio-temporal prediction"}
+{"id": "aIxsc3WqeT", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "method", "target": "multiagent", "topic": "formal safety certificates for LLM agents"}
+{"id": "rC7Vl4Xw1T", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "personalized reward modeling"}
+{"id": "5YYlqU0kgR", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "agent trajectory safety monitoring"}
+{"id": "x2ovxUlsVd", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "model lineage detection fingerprinting"}
+{"id": "7PMxvMsPg1", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "audio-visual talking-face deepfake detection"}

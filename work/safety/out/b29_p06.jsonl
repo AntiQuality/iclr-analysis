@@ -1,0 +1,23 @@
+{"id": "yy8Ih9hAPv", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "MoE LLM unlearning"}
+{"id": "tXQecZo0BR", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "high-leverage activation channel interventions"}
+{"id": "TfJjBvNDSq", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "classic", "topic": "approximate unlearning guarantees"}
+{"id": "4NyTIuZCC1", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "reasoning", "topic": "CoT monitorability across languages"}
+{"id": "KlSqW2YTzt", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "persona prompting effect generalization"}
+{"id": "GseYsMIvJY", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination mitigation via post-training"}
+{"id": "dqGWQdFdTC", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "internal planning in LMs"}
+{"id": "W8MNmj29ws", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "local DP vector quantization"}
+{"id": "yBpzF8hp3J", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private domain discovery"}
+{"id": "HF6V0hETrP", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "PRIVACY", "type": "theory", "target": "general", "topic": "harmful personalization in adaptive AI"}
+{"id": "qHmfByRRGn", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "theory of mind for social LLM agents"}
+{"id": "PbiQPxFLtQ", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "classic", "topic": "model stealing via GNN explanations"}
+{"id": "S4h2CspUDB", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO under noisy preferences"}
+{"id": "8RotWXibgd", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "attack", "target": "agent", "topic": "LLM-driven hardware trojan generation"}
+{"id": "V1VXc5MaqQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "clinical diagnosis RL environment"}
+{"id": "10JEfJtiJM", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "unsupervised concept extraction"}
+{"id": "Lz755URdm1", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "general", "topic": "model supply chain component hijacking"}
+{"id": "4Tx3iBmnIR", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "safety preservation under self-improvement"}
+{"id": "8iTqrW1sxY", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "steering fidelity under quantization"}
+{"id": "fQTAcmvhbi", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "safety degradation under benign fine-tuning"}
+{"id": "EE6ntTBRIt", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "BACKDOOR", "type": "attack", "target": "llm", "topic": "reference poisoning in distributed RL training"}
+{"id": "bppDDqbO3V", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "positional encoding in length generalization"}
+{"id": "ndSvzdeXf8", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "eval", "target": "agent", "topic": "agent trace tampering"}

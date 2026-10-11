@@ -1,0 +1,30 @@
+{"id": "qx5AF0X6jW", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "fine-grained OOD detection benchmark"}
+{"id": "X06N9Uuw7m", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "SAFE_RL", "type": "eval", "target": "rl_robot", "topic": "multimodal OOD detection for driving"}
+{"id": "uUYcKsPNgM", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "audio-video deepfake detection benchmark"}
+{"id": "SFHjSDIMKn", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "NSFW detection in text-to-image diffusion"}
+{"id": "IWer3Ciqkp", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "grounded urban scene description"}
+{"id": "DnJPI4byYj", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on pose estimation"}
+{"id": "VqAhhF6av8", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "theory", "target": "llm", "topic": "provider-user misalignment in LLM routing"}
+{"id": "1VvStbHUzg", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "theory", "target": "general", "topic": "exact unlearning in bandits"}
+{"id": "7EYihHcEJI", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "resource inequality in agent economies"}
+{"id": "0EzPFA5ZiG", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP sensitive document summarization"}
+{"id": "TNqbfqSPoD", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "missing knowledge discovery in clinical data"}
+{"id": "mJzj0wq8nC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "modality collapse in federated learning"}
+{"id": "iKqQGEOeej", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning without gradient ascent"}
+{"id": "kksz86yafY", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "cyber offense capability evaluation of agents"}
+{"id": "U8GokgEgbv", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "INTERP_GEN", "type": "method", "target": "llm", "topic": "hidden-state control of preference expression"}
+{"id": "Ug5AJdTAF0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM security evidence reasoning"}
+{"id": "52HNK6kCVN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "decodability-steerability gap in probes"}
+{"id": "spdYeZG3zT", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "domain specialization in attention and MLP"}
+{"id": "ELbKq3PrHc", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "realistic model organisms for alignment auditing"}
+{"id": "737cqDj4ah", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable targeted adversarial attacks"}
+{"id": "qB74mS1l55", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "goal representations in VLA models"}
+{"id": "3axBqFqDgk", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "reasoning", "topic": "GRPO group size and DPO connection"}
+{"id": "3bPtlWbGRP", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "ADV_ROBUST", "type": "defense", "target": "llm", "topic": "attention-graph interventions for privacy"}
+{"id": "e4B8QJfZnW", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "DP synthetic text via private inference"}
+{"id": "7vF0deIdyT", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "mVLyBC4sRI", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "RL-based harmful fine-tuning attacks"}
+{"id": "P6aEzthDtG", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "latent hallucination detection"}
+{"id": "ABZ4B38D67", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "validating prompt-based behavioral specifications"}
+{"id": "32bXbTKcXx", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "training data memorization dynamics"}
+{"id": "difAlp151J", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "continual fraud detection under imbalance"}

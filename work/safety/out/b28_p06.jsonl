@@ -1,0 +1,23 @@
+{"id": "7fVGKkTvD5", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "certified feature unlearning"}
+{"id": "CVmLl9P1W6", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial attacks from ViTs"}
+{"id": "ucSEa8Hzsl", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "moral outrage representations in LLM judgments"}
+{"id": "WZWLnivZAj", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "mHbJHNVC2w", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "LLM agents for vulnerability exploitation"}
+{"id": "gqDNjDPo2A", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "classic", "topic": "counterfactual fairness in ranking"}
+{"id": "Lhq1TH2Nv9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "audio-video consistency evaluation"}
+{"id": "u8IrCiuCqe", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "analysis", "target": "agent", "topic": "jailbreak persistence in tool agents"}
+{"id": "Xm2ad5sPBi", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private RAG"}
+{"id": "kPII2EfBf7", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "multiagent", "topic": "cross-session state poisoning in multi-agent systems"}
+{"id": "pjGjxZoqvr", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "world-model test-time steering of VLA policies"}
+{"id": "fDCtw2lywD", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "quantization effect on memorization"}
+{"id": "A5QjoSISIc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "mllm", "topic": "modality competition in unified multimodal models"}
+{"id": "N8b7YbC0g7", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "factuality-oriented prompt optimization"}
+{"id": "fbzXTjTZ9x", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLMs as Bayesian optimization policies"}
+{"id": "Gb6hBIgLGB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "rule polarity representations in LLMs"}
+{"id": "r3Q2dkT0Ok", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "eval", "target": "agent", "topic": "multilingual long-context guardrail bypass in agents"}
+{"id": "rxymH5ceT5", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc removal of obsolete classes"}
+{"id": "p1Zxt5QWZe", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "jailbreak attack transferability"}
+{"id": "27rVHDgYEg", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "PnN3AXO9Og", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "mllm", "topic": "AI-generated image detection"}
+{"id": "sgqV4je95N", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "fabrication in LLM matrix arithmetic"}
+{"id": "tiBOtdLlX6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "sample difficulty in RLVR"}

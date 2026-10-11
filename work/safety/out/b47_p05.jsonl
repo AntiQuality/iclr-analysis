@@ -1,0 +1,30 @@
+{"id": "RkmN93BOxy", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "video editing benchmark and reward model"}
+{"id": "RfyQrUICUm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "robust loss for time series forecasting"}
+{"id": "dcB4KFUuse", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe exploration for VLA online RL"}
+{"id": "qK43vBvOZ7", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "layer pruning harms test-time scaling"}
+{"id": "YVEKBwggSO", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "adversarial suffix transferability"}
+{"id": "CwoM9T55lG", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "theory", "target": "llm", "topic": "intractability of safety filtering"}
+{"id": "sp1Wr40egd", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "OOD", "type": "defense", "target": "mllm", "topic": "VLM misclassification detection"}
+{"id": "nKFnzYza4F", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "selective automated program repair"}
+{"id": "ONGhOee3qt", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "rare-token neurons in LLMs"}
+{"id": "ZdD1v5tXJG", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "subgroup-fair clustering"}
+{"id": "W3Cu3aT5GP", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM watermark spoofing"}
+{"id": "x9JVdQzeTe", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "worst-group fairness under latent groups"}
+{"id": "Aw4ugMGqoa", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM hallucination mitigation"}
+{"id": "ewLNkpc1Ap", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "GRPO importance sampling correction"}
+{"id": "v9EXVvmqyb", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "grammatical number direction transfer"}
+{"id": "AKQx3GBSsz", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "arithmetic feature directions in LLMs"}
+{"id": "wmiEXNEXPs", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "tense jailbreak mitigation via activation scaling"}
+{"id": "dDa1UXAmTz", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "stabilizing DPO probability squeezing"}
+{"id": "6whdepL0v1", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "a7Rw7sWq9e", "y": 2027, "rel": 2, "sub": "PI", "sub2": "ADV_ROBUST", "type": "attack", "target": "agent", "topic": "adversarial audio hijacking of voice agents"}
+{"id": "I9zmIscxN2", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "clean-image backdoor poisoning vs robust aggregation"}
+{"id": "neE8pqIqyR", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "llm", "topic": "watermarking open-source LLM weights"}
+{"id": "MXNX7MGN5S", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "MoE routing influence propagation"}
+{"id": "DluPNPqS2E", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "audio generation watermarking"}
+{"id": "0bPrFLWTjU", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "cross-user leakage in evolving agent skills"}
+{"id": "r83AdmvULT", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD overconfidence mitigation"}
+{"id": "2ortwDBy1P", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "FT_ROBUST", "type": "eval", "target": "llm", "topic": "rare failure rate estimation for LLMs"}
+{"id": "vKHCM9O25U", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "intent-based jailbreak defense"}
+{"id": "AMCFpquOtZ", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "probabilistic robustness verification of object detectors"}
+{"id": "J9Bt5vTUCQ", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "hidden value controller leakage"}

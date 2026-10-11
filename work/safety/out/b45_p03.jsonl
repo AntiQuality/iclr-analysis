@@ -1,0 +1,30 @@
+{"id": "tvPDPew62q", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE decoder geometry across layers"}
+{"id": "ULMWrc9N0h", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "agent safety in socially distributed environments"}
+{"id": "rzi77zNngG", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning robustness under sampling"}
+{"id": "w17dCxHzrx", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "runtime backdoor detection in LLMs"}
+{"id": "Krnj8qBask", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "implicit reasoning risk in multimodal reasoning"}
+{"id": "AtSdWkDzJN", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "suNcQvUkiN", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "WATERMARK", "type": "defense", "target": "diffusion", "topic": "anti-editing image protection"}
+{"id": "ZMzha5gbnF", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "jailbreak vulnerability of diffusion language models"}
+{"id": "lqpaS9WCnC", "y": 2026, "rel": 2, "sub": "PI", "sub2": "PRIVACY", "type": "eval", "target": "llm", "topic": "system prompt extraction"}
+{"id": "Q4zATLYoKi", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "audio-driven visual dubbing"}
+{"id": "ou2GyHZ7HI", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "reasoning faithfulness from post-training data"}
+{"id": "EPBculZ1Hh", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "unlearning readiness at training time"}
+{"id": "l5YeoEF1nK", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "internal-external knowledge conflict"}
+{"id": "Lv6kI6mc5P", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "IP", "type": "method", "target": "llm", "topic": "code LLM unlearning via steering"}
+{"id": "uXU04x0PHW", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial reasoning hijacking in VLMs"}
+{"id": "2LdyUr6wUw", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "classic", "topic": "class-level damage from data pruning"}
+{"id": "wBAFJIrEpM", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "mllm", "topic": "model inversion from LoRA adapters"}
+{"id": "9KtcjE2y2l", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "cSNijSgcC6", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination mitigation via RL"}
+{"id": "emn5g1f3Wm", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "poisoning decentralized RL post-training"}
+{"id": "2wjkpdjMJU", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "mllm", "topic": "adversarial robustness of multimodal entity linking"}
+{"id": "TuatXpgFn5", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "interpretable OOD detection"}
+{"id": "lol98N7mHn", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "experience rewriting for agent training"}
+{"id": "EpEsHRuArF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "secure MPC private neural network training"}
+{"id": "Nx6znWy7IF", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": "OOD", "type": "method", "target": "rl_robot", "topic": "robust trajectory forecasting refinement"}
+{"id": "aa91WoBZeg", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair conformal prediction"}
+{"id": "nt48oMQTIp", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fairness in imbalanced data streams"}
+{"id": "f3z5S81NDD", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "FT_ROBUST", "type": "theory", "target": "general", "topic": "structural distance between safe and unsafe subnetworks"}
+{"id": "FFCwpJXmLZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "symbolic music representation learning"}
+{"id": "DXqiaXrNLu", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "llm", "topic": "LLM unlearning robustness/relearning"}

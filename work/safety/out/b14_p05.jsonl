@@ -1,0 +1,30 @@
+{"id": "Ab4inDtjSN", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "CHDAgfFsM1", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "diffusion", "topic": "backdoor propagation via diffusion synthetic data"}
+{"id": "mIe17L3kWn", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "defense", "target": "reasoning", "topic": "safety alignment of reasoning models"}
+{"id": "DfjN5fMfvG", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "theory", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "fjLhF4cQCw", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "model hijacking via distilled datasets"}
+{"id": "cBngICB5jf", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "membership inference defense limits"}
+{"id": "rJiqdyAaRm", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "reasoning", "topic": "certified CoT prefix stability"}
+{"id": "6Z13EwtcEu", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference data selection for DPO"}
+{"id": "z409Nct6AS", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward calibration for emotional video generation"}
+{"id": "iLWxh1RSEd", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "sequential knowledge editing collapse"}
+{"id": "CmyqMn3HeJ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "implicit process rewards for reasoning RL"}
+{"id": "xEsJW4xqQC", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "personalized graph federated learning"}
+{"id": "77VCQs9VSU", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "theory of mind in human-AI interaction"}
+{"id": "EWM9JQ6gX7", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "method", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "EOHO0SmBHW", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "general", "topic": "computation cost attack defense for 3DGS"}
+{"id": "HEIqsXlTGu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "brain-LM representation divergence"}
+{"id": "yKauGJioRX", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "VLM representations under perceptual stress"}
+{"id": "cIFtAOLTh7", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM-based deepfake face detection"}
+{"id": "RBljxB74dg", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "data-quality-aware uncertainty calibration"}
+{"id": "ksWsF80beE", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "arithmetic circuits in transformers"}
+{"id": "ewhmfYRPy0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "role-play cognitive boundary mechanisms"}
+{"id": "Xbj61gw8Zb", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "sequential testing for deployment monitoring"}
+{"id": "84vfd0YVhG", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "evidence sufficiency detection in agent memory"}
+{"id": "RSLWoScF3o", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "gradient inversion in federated learning"}
+{"id": "FZBkRsBAfs", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "quantization-induced bias in LLMs"}
+{"id": "rxebCYtG4Y", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "retrieval evidence sufficiency detection"}
+{"id": "uPCJOK6C2i", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "EEG acquisition signature removal"}
+{"id": "nY7Q7sYhaL", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "sequential SAE steering interaction"}
+{"id": "KsxSp2LMlo", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "diffusion", "topic": "NSFW image classifier red-teaming"}
+{"id": "zngPsNt6dN", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "cross-modal hallucination in omni models"}

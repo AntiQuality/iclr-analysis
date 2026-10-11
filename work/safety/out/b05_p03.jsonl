@@ -1,0 +1,30 @@
+{"id": "Yx4xJIepOm", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "fine-grained human activity video understanding"}
+{"id": "IYnHo278PI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "learning dynamics of compositional quanta"}
+{"id": "l8MYnB4KYf", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "LLM text watermarking with privacy"}
+{"id": "QYqvpMZT0s", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward alignment of one-step image generators"}
+{"id": "8T7CSGfznP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "multi-service tool-use agent benchmark"}
+{"id": "T9kA1rkGEF", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "classic", "topic": "privacy audit of synthetic data"}
+{"id": "OHl8XTXsgc", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "misalignment from persuasion RL training"}
+{"id": "W4FAenIrQ2", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "cybersecurity domain LLM"}
+{"id": "y8bix3VioJ", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective preference alignment"}
+{"id": "ZfACRKEOND", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "shutdown resistance evaluation in agents"}
+{"id": "RGyZN08gPv", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM watermarking"}
+{"id": "m3PjV9TV3a", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM benchmark evaluation vs training distribution"}
+{"id": "97L74Ntta2", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM fingerprinting for provenance"}
+{"id": "rpnnC5ggga", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "validating interpretability concept discovery"}
+{"id": "zc1ezBrr5m", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward models for tabular reasoning"}
+{"id": "owqAp6CZZn", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning for vision models"}
+{"id": "xfGeJRco51", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "general", "topic": "single-cell embedding geometry"}
+{"id": "knv4wu3JP5", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "FT_ROBUST", "type": "defense", "target": "llm", "topic": "tamper-resistant knowledge suppression in pretraining"}
+{"id": "jKGvmZixqc", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "dataset distillation"}
+{"id": "UhmEdfAk46", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective preference alignment"}
+{"id": "keTTE3kh6u", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "analysis", "target": "classic", "topic": "targeted data poisoning"}
+{"id": "Ybh88ZJcz7", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "WATERMARK", "type": "method", "target": "classic", "topic": "fairness in deepfake detection"}
+{"id": "cmmu25plng", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "watermarking synthetic tabular data"}
+{"id": "wKi4Jeqqrb", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "attack", "target": "classic", "topic": "reconstruction attacks on unlearning"}
+{"id": "By1Lg0P4LY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "interaction-order neural architecture"}
+{"id": "14AE2GjGp8", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "RAG citation grounding verification"}
+{"id": "ffRPEtHtqZ", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM fingerprinting for provenance"}
+{"id": "D60Az2aOBR", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "kOa6e3QUCt", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "OOD", "type": "defense", "target": "classic", "topic": "adversarial robustness in domain adaptation"}
+{"id": "9HhZ60LbVV", "y": 2026, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "self-preference bias in LLM judges"}

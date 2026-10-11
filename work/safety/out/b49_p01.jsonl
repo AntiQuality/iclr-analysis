@@ -1,0 +1,30 @@
+{"id": "jNiEMDsRgc", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "llm", "topic": "robustness of LLM leaderboard rankings"}
+{"id": "dORR3BQrmq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "causal readout mechanisms in VLMs"}
+{"id": "iJNM7KY8FD", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "MPC privacy-preserving LLM fine-tuning"}
+{"id": "PfqsMELstA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "temporal correlations in transformer activations"}
+{"id": "wMtS3brldm", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering for toxicity mitigation"}
+{"id": "cAzHAN5GIG", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-aware autonomous driving planning"}
+{"id": "gFhle7NDFG", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "reward hacking of societal rule loopholes"}
+{"id": "ZrrVEMyQeU", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "GNN confidence calibration"}
+{"id": "GNo1qMqgPD", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "mllm", "topic": "contextual privacy in speech language models"}
+{"id": "9AteoLRWtp", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "analysis", "target": "multiagent", "topic": "covert channels in latent agent communication"}
+{"id": "ktExbgMjWP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE feature stability"}
+{"id": "nOyu4xGi0m", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "malicious agent skills supply-chain attack"}
+{"id": "3E4qWaN7Te", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM-as-a-judge inconsistency mechanisms"}
+{"id": "9A2etpDFIB", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse decomposition of attention heads"}
+{"id": "UxuZ7nbhlm", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "reasoning resumption after task interruption"}
+{"id": "XRuFvMBf9q", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "general", "topic": "certified robustness via randomized smoothing"}
+{"id": "KSXOVNR6Kw", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "JUY3s1zrcz", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "defense", "target": "agent", "topic": "runtime tool-call policy enforcement for agents"}
+{"id": "YRsxa1mUsk", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "fine-grained prompt risk classification guardrail"}
+{"id": "5MCa2nyfjG", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "annotation-free spurious correlation mitigation"}
+{"id": "pvdf8ED6Qb", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward hacking mitigation in RLAIF"}
+{"id": "xme9ZFHUb0", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "analysis", "target": "mllm", "topic": "multimodal jailbreak failure diagnosis"}
+{"id": "RlJ8GW7ILK", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for tool agents"}
+{"id": "1MI7X0ZL2J", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "on-policy self-distillation safety alignment"}
+{"id": "qtYBPlUl3B", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "attribute hallucination in VLMs"}
+{"id": "rhH9KiatVm", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "general", "topic": "concept erasure evaluation for embedding privacy"}
+{"id": "Q42IhAZHwg", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "unlearning harmful outputs for jailbreak robustness"}
+{"id": "xiuXr2UoH8", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "contextual generalization of narrow fine-tuning"}
+{"id": "4HuAsxw9lJ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "exemplar-free domain-incremental learning"}
+{"id": "jPoQNcgeJA", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "safety filter for VLA robot policies"}

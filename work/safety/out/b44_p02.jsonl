@@ -1,0 +1,30 @@
+{"id": "s8usvGHYlk", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "agent", "topic": "hierarchical preference optimization for agents"}
+{"id": "l7MusOHIxR", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE feature evaluation for circuits"}
+{"id": "GcZQrpVMWp", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "homomorphic encrypted transformer inference"}
+{"id": "cR0St8qS2n", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "secure code generation by coding agents"}
+{"id": "4lAQBVU2Za", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe multi-objective RL"}
+{"id": "S5MvBJhige", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion preference optimization for image quality"}
+{"id": "b4kNmxT254", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "CVaR-constrained RL sample complexity"}
+{"id": "7Aaf1wrWAU", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "mllm", "topic": "few-shot reward modeling via activations"}
+{"id": "ZafDWjuU8y", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "weak-to-strong RL transfer via distillation"}
+{"id": "BeLwO47iNn", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "sharpness and robustness/calibration"}
+{"id": "7zy11kFbLf", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "agent guardrail with plan remediation"}
+{"id": "3qdB7Q0tAO", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "self-replication risk in LLM agents"}
+{"id": "svMbuocaEB", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "llm", "topic": "set-level control of LM generation"}
+{"id": "U41tpnPtDk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "unsupervised process reward models"}
+{"id": "5vWFY4FBoT", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "verifier-guided repair search control"}
+{"id": "arac568McP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "rank collapse in grokking"}
+{"id": "oKHPJ0GTLG", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "CLIP embeddings for brain-vision mapping"}
+{"id": "yPgbdOdOPG", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "llm", "topic": "prompt injection detection"}
+{"id": "or767HxS42", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "defense", "target": "reasoning", "topic": "sycophancy in reasoning models"}
+{"id": "xc9gn0fd19", "y": 2026, "rel": 1, "sub": "DECEPTION", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "deception in social deduction games"}
+{"id": "Km4l2Fi2lc", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM hallucination mitigation"}
+{"id": "nqG44kyx4H", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "melody-preserving music adaptation"}
+{"id": "bnrGH0enWQ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DECEPTION", "type": "eval", "target": "multiagent", "topic": "collusion among LLM agents"}
+{"id": "xzJrPSlMS4", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private distributed optimization"}
+{"id": "WcshXkqsb7", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "video anomaly detection"}
+{"id": "rfZU1NLWVl", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM hallucination mitigation"}
+{"id": "V4c1VeXFrZ", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "general", "topic": "domain-agnostic safety guarantee framework"}
+{"id": "Zg9n4ZJAHg", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private contextual bandits"}
+{"id": "PVAoYj7d7x", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "object tracking in robot video world models"}
+{"id": "FagYF4BMzl", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "theory", "target": "classic", "topic": "backdoor trigger recovery query complexity"}

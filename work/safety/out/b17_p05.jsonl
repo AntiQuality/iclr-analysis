@@ -1,0 +1,30 @@
+{"id": "btWHQoSZZ1", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "grounded object referring with abstention"}
+{"id": "ajanuwTJs4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "grokking frequency selection dynamics"}
+{"id": "Wk9CEDXx8m", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "active preference learning with LLM judges"}
+{"id": "R8fFxOs6P7", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "class-wise adversarial robustness disparity"}
+{"id": "TgeY34zxcV", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "pretraining data detection benchmark"}
+{"id": "EyH8Fu3vtZ", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "l9mqzHROGu", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "hX5WtZbmj5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "preference alignment for probabilistic forecasting"}
+{"id": "XQOB9eSz0I", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "personalized preference alignment"}
+{"id": "14dPgTyDhD", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on world-model agents"}
+{"id": "pecCZ4r0qx", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "theory", "target": "agent", "topic": "agent skill library composition guarantees"}
+{"id": "2KgXWnikxR", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "probabilistic robustness training benchmark"}
+{"id": "5hAlvsyzZh", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "activation geometry and steering robustness"}
+{"id": "2qaIvifEI2", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "preference sensitivity of LLM causal predictions"}
+{"id": "HlaAT7YTzg", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differential privacy noise mechanisms"}
+{"id": "R0AX1u5741", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "agent", "topic": "abstention under missing evidence benchmark"}
+{"id": "NhQvQBrt8l", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "image manipulation localization"}
+{"id": "dBLToMdQLD", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "risk-sensitive safe RLHF"}
+{"id": "Txf9GLUo1l", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "personal knowledge injection via steering"}
+{"id": "hEe8IYhyhN", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "non-exemplar continual graph learning"}
+{"id": "Nk1Pwr4veT", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "agent skill registry supply-chain attacks"}
+{"id": "ydKWnK5tjp", "y": 2027, "rel": 2, "sub": "PI", "sub2": "INTERP_SAFE", "type": "analysis", "target": "agent", "topic": "input format effects on prompt injection"}
+{"id": "jUi9UTLeNp", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable adversarial attacks on closed-source MLLMs"}
+{"id": "4rjZXN9rtI", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "theory", "target": "agent", "topic": "composition attack bounds in agent systems"}
+{"id": "6zZGNJRO56", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "weak-to-strong video quality assessment"}
+{"id": "0QXPPsbddF", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense in agents"}
+{"id": "uqsXddQsDQ", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "HALLU", "type": "theory", "target": "classic", "topic": "calibration fragility under covariate shift"}
+{"id": "hS9BJY6CND", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "evidence-state representations in LLMs"}
+{"id": "5fCDEz43ya", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination mitigation via self-checking decoding"}
+{"id": "L4aIoHkOWs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "MoE expert routing mechanisms"}

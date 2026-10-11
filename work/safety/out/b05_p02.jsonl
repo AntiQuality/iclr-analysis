@@ -1,0 +1,30 @@
+{"id": "careMDLhZM", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "general", "topic": "AI governance and policy transfer"}
+{"id": "8nc2hOOEOJ", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "visual jailbreak attacks on MLLMs"}
+{"id": "QCAXD5qKRI", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE feature dictionaries"}
+{"id": "ao9wOFygwn", "y": 2027, "rel": 1, "sub": "DANGER_EVAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM-as-judge reliability"}
+{"id": "xNJG1AxqZF", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "backdoor attacks on multi-agent systems"}
+{"id": "Y8x0hfaJmc", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "safety probes under model compression"}
+{"id": "ZZNWINCZhd", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "memorization in GNNs"}
+{"id": "YHWVJIYEZT", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "harmful objective propagation in agent workflows"}
+{"id": "USyGD0eUod", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE evaluation metrics"}
+{"id": "ymZGMlCpi6", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "GEN_SAFE", "type": "defense", "target": "diffusion", "topic": "backdoor detection in diffusion models"}
+{"id": "uEXElUZri9", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "theory", "target": "reasoning", "topic": "reward hacking in RLVR"}
+{"id": "rZFAAb8lVK", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "defense", "target": "llm", "topic": "emergent misalignment mitigation"}
+{"id": "C7tCsTiaMh", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving federated transfer learning"}
+{"id": "Ykvl1racQI", "y": 2027, "rel": 1, "sub": "INTERP_SAFE", "sub2": "FAIR", "type": "analysis", "target": "reasoning", "topic": "cue-induced bias in CoT reasoning"}
+{"id": "oa7MiNJKnZ", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "peer prediction incentives for LLM agents"}
+{"id": "w7v2VhQ0N0", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "guardrails for mobile GUI agents"}
+{"id": "RabYAscaAT", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "L96I3BAPRW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "retry budgeting in agent orchestration"}
+{"id": "Ndq5JE4YI8", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "reconstruction attacks in split federated learning"}
+{"id": "n8FKO0DIl8", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "less discriminatory algorithm search"}
+{"id": "fgpKZw2ryE", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking efficiency"}
+{"id": "CZAYiyPA34", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "OOD", "type": "theory", "target": "general", "topic": "conformal prediction under contamination"}
+{"id": "NnSLujLSfn", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM failures in cyber threat intelligence"}
+{"id": "uik3mfqaBE", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "dense reward alignment of unified MLLMs"}
+{"id": "fJ1zKvVlsM", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "gj9YrqIi57", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial patches on object trackers"}
+{"id": "qkGhc3l5py", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "llm", "topic": "attacking prompt injection defenses"}
+{"id": "4g1sCnxRlH", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "agent", "topic": "clinical tool agent reliability benchmark"}
+{"id": "ktVblWFWyV", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "RLHF KL control stability"}
+{"id": "75SkYTdtbP", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "ensemble diversity and calibration"}

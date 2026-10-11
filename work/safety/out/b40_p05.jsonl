@@ -1,0 +1,30 @@
+{"id": "AYFjEFxK3U", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "DANGER_EVAL", "type": "analysis", "target": "general", "topic": "company responses to third-party frontier evaluations"}
+{"id": "FWVTbp54LQ", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "transferable adversarial attack mechanisms"}
+{"id": "1F6CMukUFz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "truthful ad feed auctions"}
+{"id": "Y1gt8F85dG", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "theory", "target": "general", "topic": "algorithmic collective action in recommendation"}
+{"id": "J1XC856Kbj", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial example detection"}
+{"id": "P0dQivpbqx", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL"}
+{"id": "qm6pYMJYA5", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "pediatric medication safety benchmark"}
+{"id": "ldYKqmtLm5", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private hashing"}
+{"id": "pgKys8DVOT", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "mllm", "topic": "fairness of medical MLLMs"}
+{"id": "63kjdVZa7H", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "learned circuit discovery"}
+{"id": "tWHhfHzhFk", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "robust audio-visual QA under degradations"}
+{"id": "Q4ooLNOFeR", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE interpretability vs steering utility"}
+{"id": "d0hU57k5Dj", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "physical safety cognition in VLA policies"}
+{"id": "px5l1CFGrL", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "SAE coefficient recovery"}
+{"id": "Dpz2ZxMXgc", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "eKs2l5O05A", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "unsupervised steering vector discovery"}
+{"id": "YDEDQMrKt1", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "steganographic CoT capability"}
+{"id": "AInAlE8Pop", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "private transformer inference MPC"}
+{"id": "BqOmsYIe7M", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "efficient epistemic uncertainty with credal sets"}
+{"id": "wyqgw27MbM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "screenshot-to-HTML generation"}
+{"id": "PS0YpCMzkb", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "general", "topic": "unlearning indistinguishability evaluation"}
+{"id": "nz787edG6X", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO optimization acceleration"}
+{"id": "NAkoYPPfwX", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "agent", "topic": "trusted scientific environments for coding agents"}
+{"id": "sUyw46j75s", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "unlearning in diffusion language models"}
+{"id": "0UvgQxsi7S", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-attribute LLM debiasing"}
+{"id": "uQYpgOMmD4", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "multiagent", "topic": "preference poisoning contagion in multi-agent DPO"}
+{"id": "kSPBbf6aqJ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "conflicting evidence in RAG"}
+{"id": "ZSfgsh43vT", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "full-graph vs mini-batch GNN training"}
+{"id": "cbbCqj0VZO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "mechanistic analysis of large-label reasoning"}
+{"id": "aMz5GiLzrc", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "hallucination in audio-language models"}

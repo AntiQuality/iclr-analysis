@@ -1,0 +1,30 @@
+{"id": "cfxnpmYC7N", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "classic", "topic": "3D Gaussian splatting watermarking for IP"}
+{"id": "7woODZ31zR", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "mllm", "topic": "compositional multimodal harm detection"}
+{"id": "sHtpOTzGhA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "reasoning strategies in LRMs"}
+{"id": "h0ONXA8IFt", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "systematic errors in perturbation models"}
+{"id": "Kxkalt5zT8", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "VLM knowledge unlearning"}
+{"id": "vizO6rD25H", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "attack", "target": "llm", "topic": "multi-turn conversational jailbreak mining"}
+{"id": "0zVboRFeK6", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "distortion-free LLM text watermarking"}
+{"id": "hRFNpEkRF7", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in vertical federated learning"}
+{"id": "Gv2HOWWDGC", "y": 2026, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "client fairness in federated learning"}
+{"id": "a5TEibKZ9z", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM jailbreak defense"}
+{"id": "OVD0ktAz7L", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "visual evidence flow in VLMs"}
+{"id": "tbkbyR3ExP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "anchor images for image-to-video generation"}
+{"id": "e8b3fRYeDt", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "symbolic emoji jailbreak"}
+{"id": "7qB4ByzzX3", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "method", "target": "multiagent", "topic": "private multi-agent collaboration protocol"}
+{"id": "ehgFLHihTw", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "membership inference on diffusion models"}
+{"id": "rEOJmuQQJT", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "sample-efficient safe RL"}
+{"id": "Q1t4GbE54F", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "continuous geometric reasoning in VLMs"}
+{"id": "ATOgX1aPfO", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "llm", "topic": "self-verification for scalable oversight"}
+{"id": "aBEwzbnB1t", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "ADV_ROBUST", "type": "method", "target": "rl_robot", "topic": "verification of neural network controlled systems"}
+{"id": "PdW94Jgg4x", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated audio detection"}
+{"id": "vjdteya8oa", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "graph OOD detection"}
+{"id": "LHVG1HENCR", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "safety probe transfer across checkpoints"}
+{"id": "POdwikYXx4", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "counterfactual demographic bias in alignment"}
+{"id": "Qz9bG2l3C9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "history interference in speech LLMs"}
+{"id": "eCUQDw3DQq", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "position", "target": "general", "topic": "AI deployment governance metrics for Global South"}
+{"id": "mLM5V705VG", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "SOCIETAL", "type": "analysis", "target": "reasoning", "topic": "algorithmic monoculture and model multiplicity"}
+{"id": "pOBuAACEDQ", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "analysis", "target": "mllm", "topic": "harmful meme detection readout gap"}
+{"id": "kUdSgVshAm", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "Socratic tutor collapse under user pressure"}
+{"id": "O0sVuhVTxB", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "jailbreak backdoor training"}
+{"id": "JbbuSqG822", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "group-level near-OOD detection"}

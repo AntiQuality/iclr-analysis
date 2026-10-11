@@ -1,0 +1,30 @@
+{"id": "EC9WWFAukw", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "auditing hidden behaviors after fine-tuning"}
+{"id": "MQYHO0Hxwz", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "safety on-policy distillation"}
+{"id": "bxkLpTSMtD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanisms of latent reasoning"}
+{"id": "fqOhwzfqya", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "eval", "target": "classic", "topic": "model extraction on graph learning"}
+{"id": "VAv1rrPR1A", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context learning mechanism"}
+{"id": "HZ3xKbgdj4", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "theory", "target": "reasoning", "topic": "verifier false negatives in RLVR"}
+{"id": "c6VapnMh4Z", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "semiconductor supply chain control"}
+{"id": "pw1EEofdxJ", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": "OVERSIGHT", "type": "eval", "target": "llm", "topic": "LLM judge rubric trade-off resolution"}
+{"id": "SbdSEtJALs", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "prompt-based LLM output safety control"}
+{"id": "62Q0vpzvta", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "spatial reasoning in MLLMs"}
+{"id": "VbTLgEUocp", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text steganography"}
+{"id": "pWWgdeSWUs", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in flow matching models"}
+{"id": "Cw9Bxpda2h", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "data selection for LLM fine-tuning"}
+{"id": "uljG4Pbn3i", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "decomposition attacks and stateful defenses"}
+{"id": "boO2AJlAND", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "VIl52aHLxN", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "qXYAVXiOcr", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "certified robustness of agent tool selection"}
+{"id": "kd81FO92Qx", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "multi-agent runtime guardrails"}
+{"id": "VqQ1DXEeyo", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "self-play red-teaming safety alignment"}
+{"id": "VK5G3Ff4Ty", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "small models for clinical summarization"}
+{"id": "bzhCJQz35M", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "weak-to-strong generalization theory"}
+{"id": "341ziQD2G9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "efficient multi-turn tool use"}
+{"id": "SPXCXAStbi", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "jailbreak defense for VLA models"}
+{"id": "XdxRSnN7zC", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "last-iterate constrained RL guarantees"}
+{"id": "O7fxz7D6vf", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "classical Chinese jailbreak prompts"}
+{"id": "rXLRyJXSCy", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "FT_ROBUST", "type": "eval", "target": "llm", "topic": "malicious fine-tuning frontier risk"}
+{"id": "mXDeixZEEw", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "multi-evidence integration in VLMs"}
+{"id": "Z7Q0C79mhS", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "ambiguous medical image segmentation"}
+{"id": "7dpPIwcVBX", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "black-box adversarial region discovery"}
+{"id": "nBta7psl5J", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "eval", "target": "llm", "topic": "RAG knowledge poisoning"}

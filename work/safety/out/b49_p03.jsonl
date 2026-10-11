@@ -1,0 +1,30 @@
+{"id": "JZcTBwyyvB", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "diffusion", "topic": "counting hallucination in diffusion models"}
+{"id": "wEXn1WgqjO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "localized reasoning error repair"}
+{"id": "WAk9zw63fO", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "agent", "topic": "row-level access control for LLM SQL agents"}
+{"id": "ahWmeQG3K2", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "emotion hallucination in MLLMs"}
+{"id": "1rEs4pIo62", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "steering during fine-tuning to control learned behaviors"}
+{"id": "vkL8JMjLnX", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "multi-session decomposition attacks on guardrails"}
+{"id": "w7cNRu0Sxh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "memory conflict governance in LLM agents"}
+{"id": "O6Pvsx8i7G", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "compositionality of SAE features"}
+{"id": "zFLCNnKY8U", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "unified SFT-RL alignment optimization"}
+{"id": "F2gOqJNszb", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination in video LLMs"}
+{"id": "KAer2F2bXZ", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM model lineage/provenance inference"}
+{"id": "6JXbtZxi4N", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "WATERMARK", "type": "attack", "target": "mllm", "topic": "data poisoning of AIGC detectors"}
+{"id": "LwhvBZFV8Z", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "memorization mitigation in diffusion models"}
+{"id": "1HzFxSiV9v", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "OOD", "type": "method", "target": "mllm", "topic": "calibration in test-time prompt tuning"}
+{"id": "BNrznHRILy", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "llm", "topic": "multilingual jailbreak robustness benchmark"}
+{"id": "QulujU0Hdt", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-as-a-judge bias correction"}
+{"id": "ebgsbC4x5W", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "rubric-based rewards for RL post-training"}
+{"id": "9lycwRxAOI", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "equivalence of mechanistic interpretations"}
+{"id": "jc0vgOL6NX", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "singer voice deepfake attribution"}
+{"id": "vCvi6faXfo", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "self-refinement in RLVR"}
+{"id": "iwmhPtirsO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "fidelity in diffusion super-resolution"}
+{"id": "ssbwLWPeSy", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "reasoning", "topic": "inference-time safety steering for reasoning models"}
+{"id": "4JjA5GFUUd", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "llm", "topic": "long-context distractor interference"}
+{"id": "7tLdYc0fNT", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "image watermarking for diffusion models"}
+{"id": "Mms8QWnalJ", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "UNLEARN", "type": "method", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "HSPO3IROpz", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "post-hoc harmful span editing guardrail"}
+{"id": "UWi94bRsgm", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM fingerprinting for ownership"}
+{"id": "GlZAxMnMQc", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained RL under finite training budgets"}
+{"id": "mnWmetxuN6", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature stability"}
+{"id": "X7oBvgAeuh", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "mllm", "topic": "fairness in clinical reasoning models"}

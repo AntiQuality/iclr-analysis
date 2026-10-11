@@ -1,0 +1,30 @@
+{"id": "3VCZJn8bF6", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "VALUES", "type": "eval", "target": "llm", "topic": "adolescent LLM safety benchmark"}
+{"id": "rapyZXA7MR", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "speech deepfake detection"}
+{"id": "WtH2JxKJKf", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on speech denoising"}
+{"id": "0ZYbOUFhOq", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "test set contamination detection"}
+{"id": "papImkPLf5", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "probabilistic harmfulness bounds for LLMs"}
+{"id": "UKnijY17zm", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "world-model feature representations in LLMs"}
+{"id": "ex6YsSK0VU", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "adversarial scenario generation for autonomous driving"}
+{"id": "jE1RhLZbMW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agentic neuroimaging data analysis"}
+{"id": "DRg4joWRRN", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "distortion-free semantic watermarking"}
+{"id": "GZUtb8xWwd", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "mllm", "topic": "fine-grained preference optimization for medical VLMs"}
+{"id": "DoLPblAZdE", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "agent", "topic": "eliciting LLM agent beliefs"}
+{"id": "E5jqE2d3TR", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "distributed multi-agent attacks on AI control monitors"}
+{"id": "7bW5ECLy8q", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "8RnvRHTaXF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private continual learning"}
+{"id": "yAApKP1j0E", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "binary vulnerability detection dataset"}
+{"id": "PFbt5pWWh7", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "indirect prompt injection via malicious tools"}
+{"id": "13jDpmF8qo", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention head contextualization mechanisms"}
+{"id": "3l94wspX0F", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "pathology VLM diagnostic reasoning"}
+{"id": "hRRWfFpKRp", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "joint audio-video generation"}
+{"id": "NpQ8QZjL3o", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM hallucination mitigation"}
+{"id": "0yDuLVVVWn", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "agent", "topic": "verifying ML-agent experiment claims"}
+{"id": "QuZJJFFpwj", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor removal in classifiers"}
+{"id": "MjGapmZbid", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward model over-optimization"}
+{"id": "Q038RrNkwv", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "length-constrained RL for LLMs"}
+{"id": "3Bdl1wL1S3", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "mental health counseling LLM evaluation"}
+{"id": "4FHDyMlRYO", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "backdoors in self-evolving agent memory"}
+{"id": "jftJSgj4pU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "PRM serving efficiency for test-time scaling"}
+{"id": "c6GRR7UmzI", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "Byzantine-robust federated learning"}
+{"id": "wPnu90ms5m", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking diffusion language models"}
+{"id": "1a9daUteZn", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "testing most influential data subsets"}

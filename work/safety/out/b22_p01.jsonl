@@ -1,0 +1,30 @@
+{"id": "ovcl6QPROl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "domain-specific architectural layout generation"}
+{"id": "aRgTmYN5Pe", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "agent", "topic": "critics for agent test-time search"}
+{"id": "dLkSBdTHub", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "analysis", "target": "multiagent", "topic": "shared memory poisoning in multi-agent systems"}
+{"id": "6ftOo7pd7x", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "VLM visual computation pruning"}
+{"id": "yB4imIAR0J", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE embeddings for data analysis"}
+{"id": "wTyHpsny23", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM hallucination detection and mitigation"}
+{"id": "dq2aIQs833", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "diffusion", "topic": "sample-level unlearning in diffusion models"}
+{"id": "9dnpDO6LPI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "8PYNWZs7MK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "harmful skill persistence in clinical agents"}
+{"id": "UWOFoNvsnq", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "analysis", "target": "classic", "topic": "unlearning audit blind spots"}
+{"id": "EkUOc8a3YC", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "reliable federated medical model deployment"}
+{"id": "NQ4F7KNHl3", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "representation engineering for safety control and monitoring"}
+{"id": "K42xtH1sqG", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "attack", "target": "general", "topic": "reward poisoning attacks on bandits"}
+{"id": "cFDmNNiNvp", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "input guard risk calibration across targets"}
+{"id": "Sswng2ToR4", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "Fo7wCotRdO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "activation steering causal effects"}
+{"id": "vJM62ASATW", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM visual unlearning"}
+{"id": "wUYRMxrULV", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "RL for text layout generation"}
+{"id": "qfeSpu5FBE", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on neural image compression"}
+{"id": "pLIDmGkVnG", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "theory", "target": "general", "topic": "certified safety preservation under fine-tuning"}
+{"id": "NUVulyawfn", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "mllm", "topic": "VLM jailbreak via image perturbation"}
+{"id": "nIwFge9nW0", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "dense reward GRPO for text-to-image"}
+{"id": "FmyBhnQUck", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "partial identification of pooled AUC"}
+{"id": "9WWt1nUDm2", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "repeated-query attacks on randomized defenses"}
+{"id": "ETe03Iyluy", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "FAIR", "type": "method", "target": "llm", "topic": "concept attribution for auditing LLM responses"}
+{"id": "n7DLoMi2oH", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained RL for autonomous driving"}
+{"id": "fTIXjOurs8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "circuit-guided pretraining data selection"}
+{"id": "C1J4qonboY", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "method", "target": "reasoning", "topic": "unverbalized evaluation awareness"}
+{"id": "q5L5MUSg6V", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "formal verification of neural network robustness"}
+{"id": "eyC4tGF8mQ", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "model extraction defense"}

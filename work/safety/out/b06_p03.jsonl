@@ -1,0 +1,30 @@
+{"id": "TVrSkWHh03", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "local differential privacy statistical inference"}
+{"id": "xn9fS09Yir", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "multi-objective HHH alignment via steering"}
+{"id": "7tvYNB7iMJ", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "defense", "target": "llm", "topic": "activation monitoring of reward hacking"}
+{"id": "3qHILWiEob", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "method", "target": "reasoning", "topic": "safety alignment of reasoning models and over-refusal"}
+{"id": "q4gcFEergT", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial attacks on vision foundation models"}
+{"id": "F6UrWfwxYz", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "cross-modal visible-infrared adversarial patches"}
+{"id": "ncUP4d7qd4", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "KG-grounded LLM reasoning"}
+{"id": "ewM7WmLflm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "scaling of chemical language models"}
+{"id": "5HASBtgMJG", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "evaluation awareness verbalization"}
+{"id": "f9R6eIsGh1", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "safe constrained preference optimization"}
+{"id": "TXofhwr1Y2", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "audio-visual deepfake detection"}
+{"id": "wbnGAHI4Ev", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "UNLEARN", "type": "method", "target": "llm", "topic": "LLM realignment to updated policies"}
+{"id": "ffblZbohRZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM personalization via activation steering"}
+{"id": "RXqDONYL19", "y": 2027, "rel": 2, "sub": "PI", "sub2": "PRIVACY", "type": "attack", "target": "agent", "topic": "data exfiltration via RAG poisoning in agents"}
+{"id": "QHZe9UAJVp", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "text-to-image model merging"}
+{"id": "ONByrhGjgK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "agent trajectory safety monitoring"}
+{"id": "Mtvj9fJ70O", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "conditional activation steering gating"}
+{"id": "ls77Bxw47n", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection"}
+{"id": "mspzQlzMHX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "data-sharing contracts between competitors"}
+{"id": "tm3K2omGNx", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private top-k selection"}
+{"id": "9IzfArmoHq", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "classic", "topic": "unlearning evaluation without retraining"}
+{"id": "vfpdaLnIu8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "structure-aware activation steering"}
+{"id": "habbb09al0", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "credit assignment in multi-LLM agents"}
+{"id": "CzAYjoCb4a", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "consensus collapse in multi-agent RAG"}
+{"id": "sGsZaw88DM", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning utility retention"}
+{"id": "05hNleYOcG", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "multi-turn jailbreak attacks"}
+{"id": "JifEApCwJo", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM hallucination mitigation"}
+{"id": "bkBmN70hcN", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "parameter decomposition interpretability"}
+{"id": "t3FSGlOcsG", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "federated domain generalization"}
+{"id": "bVmK5Grycd", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM watermarking"}

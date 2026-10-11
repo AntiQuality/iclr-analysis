@@ -1,0 +1,30 @@
+{"id": "2r10vpYiti", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM deception in long-horizon interactions"}
+{"id": "A57ZZrmK5F", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "general", "topic": "anthropomorphic AI language and public perception"}
+{"id": "mGtEoLYr9j", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "diffusion", "topic": "SAE concepts in music generators"}
+{"id": "kwWovcOxe6", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "ADV_ROBUST", "type": "eval", "target": "classic", "topic": "speech deepfake detection robustness verification"}
+{"id": "gcT2BCGcZJ", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "classic", "topic": "misinformation-aware content recommendation"}
+{"id": "ZjidJlTOxd", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "abstention under insufficient information"}
+{"id": "uJwBt4BhC1", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "robust GNN community detection"}
+{"id": "pkYv9TO17p", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "SAE feature recovery theory"}
+{"id": "hwFK3ka2BR", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "privacy leakage in multi-agent KV sharing"}
+{"id": "j3ZMptxwLP", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "differentially private graph algorithms"}
+{"id": "usUW4xWoxQ", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "risk-sensitive Nash learning from human feedback"}
+{"id": "l9QJO8BIoE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "perception compute allocation for driving"}
+{"id": "V9fU8Pw9qr", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "adversarial judge feedback in agentic workflows"}
+{"id": "nKWxf15UzX", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "classic", "topic": "certified selective prediction availability"}
+{"id": "d7Y1K5vjMU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward post-training for super-resolution"}
+{"id": "jArVZXgNj0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "reasoning reranking with semantic IDs"}
+{"id": "yrfvyxmuVH", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "multi-bit watermarking of image generators"}
+{"id": "DxAq2F0Sv9", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private federated optimization"}
+{"id": "LQcCkc4OIN", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination mitigation in VLMs"}
+{"id": "LFDHAs1nb4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "classic", "topic": "vision SAE interpretability evaluation"}
+{"id": "n6XbPGStit", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "preference alignment for image inpainting"}
+{"id": "SdNqYzEWkM", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "abstention under insufficient information"}
+{"id": "0pTacUVocL", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "classic", "topic": "predictive multiplicity"}
+{"id": "dRwsN1DvNV", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "mllm", "topic": "MLLM moderation of visually concealed content"}
+{"id": "YbAy1H9MO0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "self-evolving LLM sales agents"}
+{"id": "ByWxxvhg1B", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private transfer learning"}
+{"id": "Rf01ZgPB3q", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "PI", "type": "defense", "target": "agent", "topic": "AI control monitor robustness"}
+{"id": "qlw6nC3BqP", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "7IkH0oITID", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "activation patching validity"}
+{"id": "TTUWMVX6S7", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "malicious skill supply chain in agents"}

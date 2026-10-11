@@ -1,0 +1,30 @@
+{"id": "yWH7Jv8f1t", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "backdoor detection in VLMs via evidence routing"}
+{"id": "8cyuL4cD8E", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "SQL injection detection"}
+{"id": "dLO7MhVbbB", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "safe constrained decoding for robot policies"}
+{"id": "fpo2KEAUhH", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "unsupervised truthfulness probes in LLMs"}
+{"id": "IAoaK80pgX", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on multimodal fusion"}
+{"id": "nK5UCo43d1", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "diffusion", "topic": "watermarking for speech synthesis"}
+{"id": "kK3lLw8KGp", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_GEN", "type": "analysis", "target": "classic", "topic": "attention under adversarial attacks in ViTs"}
+{"id": "8UzUcTtJGR", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "distributional symmetry auditing of generators"}
+{"id": "MaemuXCeKa", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "JB_ATK", "type": "eval", "target": "llm", "topic": "emotional attachment multi-turn safety drift"}
+{"id": "kCChCaXb7h", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "learning-rate transfer in LLM post-training"}
+{"id": "wUa5qK7tI2", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "Byzantine-robust decentralized learning"}
+{"id": "c6VPZwjw3i", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "mllm", "topic": "counterfactual evaluation validity for medical VLMs"}
+{"id": "R6pAyJAP4h", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "hidden-constraint commonsense reasoning benchmark"}
+{"id": "66uemMN3hz", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanisms of in-context classification"}
+{"id": "UTtjJnNk8X", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "causal interventions on code-editing states"}
+{"id": "VBTYgcUn72", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "tvcgDlss1C", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "classic", "topic": "AI-generated image detection evaluation audit"}
+{"id": "SWlCJab9gZ", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "temporal misalignment attacks on driving sensor fusion"}
+{"id": "gbIQpvzziv", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "data poisoning of robot demonstrations"}
+{"id": "IUjwVDKaLA", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "mechanisms of LLM moral judgment"}
+{"id": "MG0Ac3cw2I", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "FAIR", "type": "attack", "target": "llm", "topic": "bias-exploiting jailbreak attacks"}
+{"id": "zutTcXMv8y", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "memory tracing in hybrid language models"}
+{"id": "EG97ljS2uT", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "query decomposition jailbreak attack"}
+{"id": "24joLkfM76", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "process-correct CoT reasoning"}
+{"id": "x4ArMPJBR7", "y": 2026, "rel": 2, "sub": "PI", "sub2": "IP", "type": "defense", "target": "llm", "topic": "system prompt extraction defense"}
+{"id": "QJKgmmL2Ea", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving federated matrix completion"}
+{"id": "soMC0uESuz", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder feature quality"}
+{"id": "mcUWhTcqTx", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "unauthorized distillation detection in LLMs"}
+{"id": "nW3y8wygcR", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks on object detection"}
+{"id": "0pw5Qmfynp", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "regret representations in LLMs"}

@@ -1,0 +1,30 @@
+{"id": "2WhcSQG8L4", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "residual encodings after LLM unlearning"}
+{"id": "YwEh20x8ud", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "scaling RLVR rollouts for reasoning"}
+{"id": "4JCtiKlS5F", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "Gq4yt8pxRo", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "social bias in diffusion language models"}
+{"id": "7XYjeL46co", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "MCP tool security benchmark"}
+{"id": "eXgqpaDkSp", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "purchase safety of shopping agents"}
+{"id": "8pcv7KZH4L", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection in tool agents"}
+{"id": "aBeIFDshvZ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion reward alignment via EM"}
+{"id": "ZIdCf4aXre", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "runtime fairness shields"}
+{"id": "xAlVdfViUC", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "privacy-hallucination tradeoff in DP LMs"}
+{"id": "NTLCr5kVxV", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "circuit discovery in time-series foundation models"}
+{"id": "kxEM2vc7ne", "y": 2026, "rel": 2, "sub": "OTHER", "sub2": null, "type": "attack", "target": "mllm", "topic": "energy-latency attacks on MLLMs"}
+{"id": "JLL4VNVhM9", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "general", "topic": "behavior-regularized RL and RLHF"}
+{"id": "3r3XH0YO2I", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "mllm", "topic": "AI-generated image detection"}
+{"id": "BXzUi2QZ7z", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "concept circuits in vision transformers"}
+{"id": "D0ec1PBylX", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "defense", "target": "llm", "topic": "membership leakage from LLM unlearning"}
+{"id": "vEjX3POPvX", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "sabotage capability against AI control monitors"}
+{"id": "vRp55bNjOd", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention head importance via Jacobians"}
+{"id": "7hRE9Rjr82", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "early generation failure prediction"}
+{"id": "OsrE5DJ9Fu", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "Nash learning from general preferences"}
+{"id": "x3NWwlS5n2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "continual learning for biomedical knowledge graphs"}
+{"id": "kBoutQAl2O", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "llm", "topic": "reward model evaluation for RLHF"}
+{"id": "KS9coFbr9Q", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "3f2j5QOg7N", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "mllm", "topic": "VLM driving decision safety evaluation"}
+{"id": "YpaopH0F9l", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "method", "target": "diffusion", "topic": "unsafe concept compartmentalization in pretraining"}
+{"id": "ibqmVwCN1n", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "post-training confident hallucinations"}
+{"id": "SCwFMC10Pl", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "capability preservation during RLHF"}
+{"id": "Fwc9p8VlfU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "saliency distraction in MLLM VQA"}
+{"id": "qaaQovR8GJ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "preference-guided robot policy steering"}
+{"id": "ljRSQUO06H", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "privacy leakage from speculative tool calls"}

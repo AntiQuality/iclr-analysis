@@ -1,0 +1,30 @@
+{"id": "4bP6tTSih9", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "agent", "topic": "process reward misalignment in scientific agents"}
+{"id": "YYKiot1Zch", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "mllm", "topic": "backdoor defense for VLMs"}
+{"id": "Xa6QRrXrKX", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning via distillation"}
+{"id": "rxwwncarWj", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated learning data heterogeneity"}
+{"id": "gfgvdsOX6v", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "method", "target": "agent", "topic": "GUI agent trajectory verification"}
+{"id": "aAP5qqgzJh", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "BACKDOOR", "type": "eval", "target": "llm", "topic": "concept-conditioned stance auditing in LLMs"}
+{"id": "APifmdPt1A", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private learned Bloom filter"}
+{"id": "pZ0CYeNWhm", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "context manipulation of proactive agents"}
+{"id": "cZGh1iXdq6", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "AI companionship behavior benchmark"}
+{"id": "lL6htAaolp", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "diffusion", "topic": "adversarial training for diffusion models"}
+{"id": "DBFIcHXVE3", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "certified unlearning for distilled models"}
+{"id": "4IKzvK6LFl", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "GUXsvDPEru", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "object hallucination benchmark validity"}
+{"id": "V2TZXGGxgO", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "harmlessness training via latent adversarial training"}
+{"id": "9GZZZ4WfdZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "analogy diversity in LLMs"}
+{"id": "oNRr3O4ZbT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "analysis", "target": "llm", "topic": "code memorization detection"}
+{"id": "aFghaG1KPC", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial robustness of zero-shot CLIP"}
+{"id": "PC9bqhW05Q", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation"}
+{"id": "GqNgK7LXBn", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "differentially private preference alignment"}
+{"id": "L646x51jF8", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "cooperation among self-interested LLM agents"}
+{"id": "Ez2fKIyYoo", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "contextual hallucination detection in RAG"}
+{"id": "KgD32FF1ap", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "defense", "target": "classic", "topic": "privacy risk disparity in federated learning"}
+{"id": "PIsQv6iDXY", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "PRIVACY", "type": "theory", "target": "general", "topic": "zero-knowledge AI oversight"}
+{"id": "sGrrKMK0cn", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL"}
+{"id": "pHZvxtuPkK", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "unembedding-based behavior steering"}
+{"id": "3wxWz5Nnoa", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "ethical decision-making in RL agents"}
+{"id": "pBfyP0gHsJ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "targeted factual unlearning via editing"}
+{"id": "sLPUuev7pQ", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "8YtHcGc4sq", "y": 2027, "rel": 2, "sub": "PI", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "prompt injection defense"}
+{"id": "EcygLrP7je", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective inference-time alignment"}

@@ -1,0 +1,30 @@
+{"id": "oTgjmEuHSw", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "reasoning mechanisms in thinking models"}
+{"id": "mwHX94yqFf", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "cross-model review of coding agents"}
+{"id": "KISW7d0bMv", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination in MLLM visual search"}
+{"id": "U30FO4wae8", "y": 2026, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "client fairness in federated learning"}
+{"id": "a5bFKVtTyF", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "LDP federated quantile inference"}
+{"id": "7nq8cLrifw", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP synthetic longitudinal data"}
+{"id": "X7vtATvMpt", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "multi-shot narrative video generation benchmark"}
+{"id": "d2HXx5CyHx", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "social reasoning benchmark"}
+{"id": "mnPFgmNH7M", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "resource exhaustion attacks on MLLMs"}
+{"id": "S2DezbHPhP", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward model exploitation via adversarial search"}
+{"id": "YeagC09j2K", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "MLLM hallucination benchmark"}
+{"id": "wNcx99cp9D", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "multi-turn multimodal jailbreak detection"}
+{"id": "SqiTOxOtoj", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "evidence readiness in video LLMs"}
+{"id": "sErtvfHuVG", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "point cloud backdoor attack"}
+{"id": "aWKsSKYZUi", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "RAG corpus poisoning defense"}
+{"id": "oql27GfyPD", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "reasoning-based safety alignment"}
+{"id": "cLSXB5JdGZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-based state estimation"}
+{"id": "UMBc0Ky20K", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "noise shift in diffusion sampling"}
+{"id": "8YY1AYIpbu", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "agent memory poisoning defense"}
+{"id": "rceHG93fSU", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "activation steering for sycophancy"}
+{"id": "0rpYxbJGn7", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "token selection for DPO"}
+{"id": "sKnrd8SViL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "classic", "topic": "conic decision geometry"}
+{"id": "40xP4N4VRL", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "calibrated off-policy LLM evaluation"}
+{"id": "aXP6VobXVv", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "resource exhaustion attacks on MLLMs"}
+{"id": "mTkfFRmA7i", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "private RAG retrieval"}
+{"id": "BDSsR4WYnZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "peptide multi-objective optimization"}
+{"id": "yVGzyZ8zMc", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "online monitoring of LLM agents"}
+{"id": "VwCyRQJ51H", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "classic", "topic": "disagreement discrepancy under distribution shift"}
+{"id": "2mXRhL4oPS", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "clinical explanations via SAEs"}
+{"id": "5br7oL5Qdx", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "natural adversarial images for LVLMs"}

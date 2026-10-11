@@ -1,0 +1,23 @@
+{"id": "Fxvv1X99Dz", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "defense", "target": "llm", "topic": "steganography evading CoT monitoring"}
+{"id": "sXPaVl9KU6", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "heterogeneous federated LoRA fine-tuning"}
+{"id": "sIBwirjYlY", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "DECEPTION", "type": "analysis", "target": "reasoning", "topic": "incoherence of misalignment with scale"}
+{"id": "WYOmlBVRse", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "irreversible actions in coding agents"}
+{"id": "Y2TkqyeZyi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "context-memory conflict mechanisms"}
+{"id": "U9WMEU4Zac", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "validation of Jacobian lens instruments"}
+{"id": "s6PCZ8qIlX", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks on GNNs"}
+{"id": "UwzJckmDEV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward modeling for reasoning"}
+{"id": "9v1qicXcrX", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "implicit user model probing"}
+{"id": "bhR00j6Mku", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "evading benchmark contamination detection"}
+{"id": "9LFLH2h0og", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "virtual cell perturbation prediction"}
+{"id": "767Z4LWpKq", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "safety knowledge editing against jailbreaks"}
+{"id": "sFyAxzMlXA", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "safety specification maintenance for tool agents"}
+{"id": "zGgNidf3h0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "private attribute inference from VLM tokens"}
+{"id": "6t9YPOZH0w", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "diffusion", "topic": "secure inference for diffusion models"}
+{"id": "cGdrNalQTj", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "localized image watermarking"}
+{"id": "E8HGf11jTn", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "ML ransomware detection"}
+{"id": "qBcgyxDeMM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "stage-aware RL fine-tuning of VLAs"}
+{"id": "1NbQZX0zFY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "scientific instrument design benchmark"}
+{"id": "5T1U463zvn", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "racial bias in medical facial age estimation"}
+{"id": "1H9bZyPeBy", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "rKh51E9Olt", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "best-of-N aware RLHF"}
+{"id": "UMOUS68i5Z", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}

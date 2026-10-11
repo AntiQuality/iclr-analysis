@@ -1,0 +1,30 @@
+{"id": "ylHBC3layw", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "cross-domain federated unlearning"}
+{"id": "MwO5iZNJrJ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP-SGD noise schedule design"}
+{"id": "7oe1G8wKqA", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "analysis", "target": "mllm", "topic": "visual utilization failures in VLMs"}
+{"id": "uV0rgJTKV7", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "fairness auditing of LLM decisions"}
+{"id": "KyroQoSqjr", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "analysis", "target": "llm", "topic": "multi-turn jailbreak refusal mechanisms"}
+{"id": "xggSxCFQbA", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent safety benchmark with real tools"}
+{"id": "e1TGZCKFiU", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "agent", "topic": "access revocation for agent memory derivatives"}
+{"id": "LIzI22BoPT", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM-as-judge value alignment evaluation"}
+{"id": "9Z9pmYhwZA", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "T2nP2IQasd", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "efficient GRPO for diffusion models"}
+{"id": "oq73QnNnrP", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "hallucination in diffusion training dynamics"}
+{"id": "5ZXeeljKSn", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "LLMs overriding human decision authority"}
+{"id": "4aYh43qOZi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "input-agnostic circuit tracing"}
+{"id": "yeCSw52EAk", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "general", "topic": "geometry-aware post-hoc debiasing"}
+{"id": "vkYKZE0VXz", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "agent", "topic": "black-box fingerprinting of LLM agents"}
+{"id": "KvOSJpfWqE", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "criminal behavior propensity of LLMs"}
+{"id": "7oN5Rjf8vo", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "privacy-aware source selection in agents"}
+{"id": "0Knrw0HVz2", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination in think-with-images models"}
+{"id": "WhbxHyeHIu", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "ALIGN_TRAIN", "type": "theory", "target": "general", "topic": "differentially private RLHF"}
+{"id": "cPlzRMUDV2", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "iB5EwVlfF1", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "AGENT_SAFE", "type": "analysis", "target": "multiagent", "topic": "false belief spread in multi-agent networks"}
+{"id": "gHfklqyEK4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "concept probing in vision transformers"}
+{"id": "kbiUtYlK2F", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "representation-based jailbreak defense"}
+{"id": "mqNKv0brqk", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE interpretability evaluation"}
+{"id": "ElNbbliNdP", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "energy cost of test-time scaling"}
+{"id": "RPC0exv7EG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "feature interactions in grokking"}
+{"id": "6banCM00vU", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "theory", "target": "llm", "topic": "information-theoretic limits of prompt injection detection"}
+{"id": "60WaQ9xjMp", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "adaptive data analysis generalization bounds"}
+{"id": "ztEBx1jRPI", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "multi-turn refusal boundary steering"}
+{"id": "59ZM3vNklp", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "test-time preference alignment"}

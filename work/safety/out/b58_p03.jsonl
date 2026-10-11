@@ -1,0 +1,30 @@
+{"id": "fRNUftg096", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "classic", "topic": "uncertainty quantification in medical imaging"}
+{"id": "rYwQZvwGpq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "mechanisms of neural routing solvers"}
+{"id": "uAv7O4goMB", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "clean-label poisoning of VLA models"}
+{"id": "5uiWbG4P81", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "agent memory misevolution"}
+{"id": "mAG2nMgPOg", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "OOD detector invariance to network symmetries"}
+{"id": "PPwGjzirZc", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "fairness of exposure with unwanted attention"}
+{"id": "NyCt5aiavN", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "verifier filtering in LLM fusion pipelines"}
+{"id": "VXFTF9Je8S", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "reward hacking audit of agent environments"}
+{"id": "uePOSKl6AN", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "credit assignment in RLVR"}
+{"id": "4ivthHHQwO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "counterfactual interventions in sparse MoE models"}
+{"id": "6UF4T1CzoK", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on feed-forward 3DGS"}
+{"id": "y01WnZj2L0", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "mllm", "topic": "safety erosion in video LLMs"}
+{"id": "ZQSZMpsQKj", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "privacy leakage in synthetic oversampling"}
+{"id": "ud8SkvchiI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "INTERP_GEN", "type": "eval", "target": "mllm", "topic": "faithfulness of forensic VLM explanations"}
+{"id": "tKBF2XBXVx", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "audio-visual synchronization reward model"}
+{"id": "Eh9NQzBMRp", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor detection and model repair"}
+{"id": "FuarZrC0Ob", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "MCP tool squatting and rug pulls"}
+{"id": "lYu50yHPpw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "information design learnability"}
+{"id": "kVziPYrz7D", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "clustered contextual bandits with knapsacks"}
+{"id": "QJku1vSXrJ", "y": 2026, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "copyrighted data detection in LLMs"}
+{"id": "Ml9Ha6BgXo", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "classic", "topic": "automated ML application auditing"}
+{"id": "pX0kMHM0Y3", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "LLM agents experimenting on connectome model"}
+{"id": "sbvkcVAWS9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder variants"}
+{"id": "nzMingpyzV", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference via MoE router telemetry"}
+{"id": "lmSBVhSU4E", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "GEN_SAFE", "type": "defense", "target": "mllm", "topic": "streaming video content guardrail"}
+{"id": "l939DWkl8S", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "molecular LLM domain adaptation"}
+{"id": "zcr9Q9HTWQ", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "PI", "type": "eval", "target": "agent", "topic": "retrieval-induced value steering in RAG"}
+{"id": "BXznpYw32K", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "clean-label data poisoning in fine-tuning"}
+{"id": "u5d3kM6ahC", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "training-free AI-generated image detection"}
+{"id": "CFLlRCyqOf", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "inference-time unsafe generation steering"}

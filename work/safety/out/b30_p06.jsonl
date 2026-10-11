@@ -1,0 +1,23 @@
+{"id": "vO20LdmZxT", "y": 2027, "rel": 1, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal implicit harmful content measurement"}
+{"id": "fTscnIoaJx", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "unlearning for masked diffusion LMs"}
+{"id": "K2fFQX3zz6", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "tool call authorization under API drift"}
+{"id": "C3hIHbTRCb", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP of black-box generative models"}
+{"id": "ifBXz7ABV0", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "attribution-guided decoding"}
+{"id": "hKAW8gcnTx", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "llm", "topic": "LoRA watermarking for ownership"}
+{"id": "pc3Ft31CLX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "self-evolving rubric rewards for CoT"}
+{"id": "7S80aOLgzd", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "reasoning", "topic": "certified auditing of process reward models"}
+{"id": "i2EdO6YkEj", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on neural routing solvers"}
+{"id": "57MOec7XQJ", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "benign fine-tuning safety degradation"}
+{"id": "8jUxFIZzvx", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "cultural knowledge preservation in cross-lingual transfer"}
+{"id": "RYUiZagmQM", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair dataset distillation"}
+{"id": "5eoKvWTF0F", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "adversarial robustness of LLM unlearning"}
+{"id": "neaxYXGYd5", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "efficient quantized DP-SGD training"}
+{"id": "XCUzjYwnjo", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "stable DPO for VLMs"}
+{"id": "QWlbJXhVzH", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "conversational entrainment drift steering"}
+{"id": "CyPrhEhBAH", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "constraint-following monitoring for coding agents"}
+{"id": "rk9uMwA83i", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "multiplicative circuits in gated MLPs"}
+{"id": "LLK5KSbaWI", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "HALLU", "type": "defense", "target": "mllm", "topic": "visual token pruning against jailbreaks"}
+{"id": "7rZqpIQPUa", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "PRIVACY", "type": "analysis", "target": "classic", "topic": "certified robustness for vision transformers"}
+{"id": "OM9C8Wjnof", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "verifiably robust RL agents"}
+{"id": "jrY5Sh1pIh", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM detoxification"}
+{"id": "egJdZ6mBZG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "attention vs causal necessity in chemistry transformer"}

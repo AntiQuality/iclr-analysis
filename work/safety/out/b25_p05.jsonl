@@ -1,0 +1,30 @@
+{"id": "xOuXSkoUl1", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "UNLEARN", "type": "analysis", "target": "general", "topic": "suppression vs deletion in concept erasure"}
+{"id": "YchGapqmwe", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM unlearning evaluation artifacts"}
+{"id": "yXeTUSCljr", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "FT_ROBUST", "type": "method", "target": "llm", "topic": "tamper-resistant pretraining-time unlearning"}
+{"id": "D5jxODzWbp", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "data poisoning of generative recommenders"}
+{"id": "YJGZsJxtb3", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "evidence-based coding agent evaluation"}
+{"id": "0oSlYWRJzX", "y": 2027, "rel": 2, "sub": "IP", "sub2": "UNLEARN", "type": "method", "target": "llm", "topic": "erasing brand identity from LLMs"}
+{"id": "YPnOwLdaEi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "macrostate representations of LLM computation"}
+{"id": "nRS87hbAqU", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-aspect preference data selection"}
+{"id": "3NLF20wthr", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "invisible backdoor attacks on image classifiers"}
+{"id": "EIA1tpKYL7", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "externally valid LLM-as-judge evaluation"}
+{"id": "281wXpEoBG", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "Tn83pbGi1Z", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "classic", "topic": "participation incentives in federated learning"}
+{"id": "WCWeFyNDxb", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "general", "topic": "whitened embedding norm as likelihood"}
+{"id": "nnWzggcdgv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "exploration in RLVR"}
+{"id": "HuuCWjlJuQ", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "Mahalanobis OOD detection"}
+{"id": "uEFWvM7DLn", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "efficient LLM safety evaluation"}
+{"id": "yz2EM9EefE", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "reasoning", "topic": "preference optimization for math reasoning"}
+{"id": "SfQEoFqswm", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "circuits behind adversarial suffix jailbreaks"}
+{"id": "YRttX8z1GB", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "analysis", "target": "agent", "topic": "shutdown resistance and corrigibility"}
+{"id": "rhxvrH8glL", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "multi-hop reasoning execution in transformers"}
+{"id": "jiDVPj0SkE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "preference optimization for super-resolution"}
+{"id": "v6NPLqdZiA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "cross-layer transcoder attribution graphs"}
+{"id": "GhX94hapxT", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "conversion-activated backdoors in SNNs"}
+{"id": "MnfQdb5gLO", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "reasoning effect on LLM honesty"}
+{"id": "pHj8gCbiaC", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent authorization revocation compliance"}
+{"id": "KLRc1aj3nd", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "distributed trigger attacks in agents"}
+{"id": "Jz5SA2KoFt", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "AI-generated image detection under distortions"}
+{"id": "KvrIxEu1z3", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "output rewriting jailbreak defense for VLMs"}
+{"id": "IZhPvH4B6B", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "eval", "target": "agent", "topic": "agent behavioral watermarking benchmark"}
+{"id": "UtMayAnGPo", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "cultural alignment of LLMs"}

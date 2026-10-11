@@ -1,0 +1,30 @@
+{"id": "0JYtXNl7ns", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination in long-form generation"}
+{"id": "C7BTmqbra7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "grounding of VLM spatial representations"}
+{"id": "om6j217LX6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward models for world-model video"}
+{"id": "unNPxqbrGx", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "Polyak step sizes for non-smooth optimization"}
+{"id": "Fxm1giAJUr", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "environment injection attacks on GUI agents"}
+{"id": "u7TVLvKhqy", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "reference-free hallucination measurement"}
+{"id": "AYJPbSoAyO", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination in RAG"}
+{"id": "nZVqGkUr1r", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "OTHER", "type": "analysis", "target": "llm", "topic": "package hallucination in code LLMs"}
+{"id": "Kkl3mn6g5W", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference alignment for diffusion models"}
+{"id": "qsl2Sry3B2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "auditing representation erasure"}
+{"id": "lVIQOJRG8W", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "cultural bias in multilingual alignment"}
+{"id": "Q6EvNyNqZO", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "PRIVACY", "type": "attack", "target": "diffusion", "topic": "identity protection against diffusion personalization"}
+{"id": "spoAN16IXS", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "model diffing of post-training"}
+{"id": "ZbCrgKZiAL", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "privacy leakage from agent memory"}
+{"id": "1DFGJQllBZ", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "reward hacking benchmarks for agents"}
+{"id": "vfbeleLBWv", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "OOD", "type": "defense", "target": "llm", "topic": "guardrails as OOD detection"}
+{"id": "ad3oKWpIfA", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "mllm", "topic": "backdoor data filtering in instruction tuning"}
+{"id": "weX7wuCG54", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention heads for translation naturalness"}
+{"id": "Y0GXV3xKCU", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "reliable test-time adaptation under shift"}
+{"id": "jYzW9pyI0N", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "jailbreak attacks on frontier LLMs"}
+{"id": "P38RYdkFLI", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "localizing modules for activation steering"}
+{"id": "6OLytNHr5U", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "physical adversarial patches"}
+{"id": "fjg2pukBZ0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "convergent mechanisms across networks"}
+{"id": "bueqgdoyyD", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning robustness under quantization"}
+{"id": "66o4tzrcXB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "tool-use training data"}
+{"id": "OVlOj6bcY0", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "quantization-conditioned attacks on LLMs"}
+{"id": "qeT92RzitJ", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "LLM simulation of research ecosystems"}
+{"id": "V99zh4LmSd", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy auditing canaries"}
+{"id": "2Td8r7KYK2", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "safety benchmark for scientific misuse"}
+{"id": "AgYE6fmOdI", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "classic", "topic": "zero-knowledge verifiable GNN inference"}

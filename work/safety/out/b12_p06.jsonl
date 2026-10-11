@@ -1,0 +1,23 @@
+{"id": "Da8IpFDpDt", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "diffusion", "topic": "latent-based diffusion watermark robustness"}
+{"id": "WATdZEo4tj", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "safe exploration in constrained MDPs"}
+{"id": "qa1WJQtkJN", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "rl_robot", "topic": "noise-robust preference-based RL"}
+{"id": "V7JtXV1Af7", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "attack", "target": "classic", "topic": "deep learning side-channel attacks"}
+{"id": "y5DliUgRf2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated learning under feature skew"}
+{"id": "6tKMBrSuMW", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "UNLEARN", "type": "attack", "target": "classic", "topic": "unlearning-activated dormant backdoors"}
+{"id": "yrtavje95K", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "runtime failure detection for VLA policies"}
+{"id": "2uikfKJq3r", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "recovery from hallucinated premises"}
+{"id": "lxKH0pnbhS", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-aware state representations in safe RL"}
+{"id": "OutljIofvS", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "real-to-sim VLA benchmarking"}
+{"id": "Wghj9sx3zT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "adaptive clipping under local differential privacy"}
+{"id": "sbEb0Ld6MK", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "independence-based fairness regularization"}
+{"id": "yj2oa4KT0f", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "evaluative axis recruited by RL"}
+{"id": "Uv5GeVUEkP", "y": 2027, "rel": 2, "sub": "PI", "sub2": "INTERP_SAFE", "type": "defense", "target": "agent", "topic": "malicious agent skill detection"}
+{"id": "7dqqDfivCH", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "speech deepfake detection"}
+{"id": "ysT0BCmZ3S", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "reasoning language choice in LRMs"}
+{"id": "1fYQOZovHR", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image watermarking for diffusion models"}
+{"id": "OlidGx8oKr", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "SOCIETAL", "type": "method", "target": "llm", "topic": "truthful multi-source LLM summarization"}
+{"id": "ZbDn4z3C2B", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ALIGN_TRAIN", "type": "attack", "target": "llm", "topic": "multi-stage data poisoning in post-training"}
+{"id": "QqgGE3mvrF", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "inference-time reward guidance for diffusion"}
+{"id": "z0ndGhNLXI", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "distributional reward modeling for RLHF"}
+{"id": "YWBTOdJMVO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "LLM agent causal effect estimation"}
+{"id": "znMqjLstRE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "LLM-driven healthcare policy design"}

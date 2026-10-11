@@ -1,0 +1,30 @@
+{"id": "69KyLKPCol", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "theory", "target": "agent", "topic": "agent invariance to strategic information manipulation"}
+{"id": "Z1jfKDP8uy", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "multiagent", "topic": "privacy leakage in multi-agent pipelines"}
+{"id": "jd6sUOwz3H", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "PI", "type": "attack", "target": "multiagent", "topic": "system prompt extraction in multi-agent systems"}
+{"id": "ChfIF8UZ6X", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "RAG knowledge poisoning attacks"}
+{"id": "JEU4PBaX85", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "general", "topic": "model collapse from cross-model synthetic data"}
+{"id": "48r0roUaVY", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "zero-shot multi-label OOD detection"}
+{"id": "7nBPRLTKqu", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "character profile reconstruction for role-play"}
+{"id": "qt4xgLtZ4N", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "coding agent risky action gating"}
+{"id": "Xl8TZcKWBU", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "benign fine-tuning safety erosion in federated LLMs"}
+{"id": "gIaAuu8UZZ", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private continual release"}
+{"id": "ADmcK1Ocng", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "watermark attribution in coding agent swarms"}
+{"id": "UXN0QdDfDM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "preference optimization for physics forecasting"}
+{"id": "GW9sp1g9qh", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "compute-efficient iterative adversarial attacks"}
+{"id": "0hLuQAT3fV", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image immunization against diffusion editing"}
+{"id": "74utSEqFvr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "activation anisotropy in post-training"}
+{"id": "71PzEiVK7y", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "model stealing auditing"}
+{"id": "Cg9jgEq3lF", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "representation steering for safety alignment"}
+{"id": "BEcwcRFQdu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "forecasting circuit changes from fine-tuning"}
+{"id": "kj93nhq6Fl", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "pluralistic in-context value alignment"}
+{"id": "vpkPCCferA", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "theory", "target": "multiagent", "topic": "error compounding in multi-agent pipelines"}
+{"id": "Yso3MCJM0e", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "theory", "target": "classic", "topic": "undetectable cryptographic backdoors"}
+{"id": "OTOqU3N8nf", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe generative planning with CBFs"}
+{"id": "DJyDfzwTFK", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "layer-wise mechanisms of in-context learning"}
+{"id": "PCIWMnVKTX", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "UvYWl9Jxej", "y": 2027, "rel": 2, "sub": "PI", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "prompt injection instruction-data separation"}
+{"id": "Dsly756yQZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "client contribution valuation in async FL"}
+{"id": "icfyN3skBl", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "test-time adversarial defense for CLIP"}
+{"id": "6khgFgGGnX", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "activation steering side effects"}
+{"id": "iNiU0GdjKM", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "personality steering effects on safety"}
+{"id": "sC9gjsv7p7", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "layer selection for activation steering"}

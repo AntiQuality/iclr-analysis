@@ -1,0 +1,30 @@
+{"id": "NW8ebJTDON", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "mixup-based private collaborative training"}
+{"id": "Q5iYGwAe9W", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "evidence-to-answer residual bottleneck"}
+{"id": "1BGD0eRkik", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "WATERMARK", "type": "eval", "target": "mllm", "topic": "refusing synthetic images in VLM geo-localization"}
+{"id": "6QNW7B0x0h", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "representation-based jailbreak detection"}
+{"id": "kjRTouyolR", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "poisoning defense for 3D Gaussian splatting"}
+{"id": "hXKMuM1zSi", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "verifiable secure aggregation in federated distillation"}
+{"id": "sl6Ko1KOnv", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "SAE concept analysis of CLIP features"}
+{"id": "IbY0Jbfzaf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "RNA design preference optimization"}
+{"id": "bXff5a1ygV", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "Overton pluralism evaluation"}
+{"id": "qBBcdNrVWD", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "analysis", "target": "agent", "topic": "coding agent disclosure in completion reports"}
+{"id": "MQnpiI364y", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM deanonymization evaluation baselines"}
+{"id": "RCGUN3UYRy", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "safety screening of LoRA compositions"}
+{"id": "3NMGV5gAEg", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "rl_robot", "topic": "rule surrogates for deep RL policies"}
+{"id": "R5M3KI81T5", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "conformity capture in multi-agent deliberation"}
+{"id": "SRoURpWGiU", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "Wishart mechanism DP and LoRA"}
+{"id": "fQodlWA3h0", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "image watermark composition to specification"}
+{"id": "4twLWAAHG1", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning via activation distribution alignment"}
+{"id": "W6EJ97HJhy", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "graph backdoor defense robustness"}
+{"id": "TqFvBlwdav", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "private Dirichlet process mixture trajectories"}
+{"id": "4tYM5zUwfA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "certified SAE feature matching"}
+{"id": "3Xnz20BBxj", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "FT_ROBUST", "type": "attack", "target": "llm", "topic": "backdoor transfer via on-policy distillation"}
+{"id": "A5AejTTloS", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "FAIR", "type": "method", "target": "llm", "topic": "LLM detoxification via latent diffusion"}
+{"id": "tunVuLrXNu", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "mllm", "topic": "object hallucination in MLLMs"}
+{"id": "JCK8hUgDbc", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "theory", "target": "classic", "topic": "backdoor attack high-dimensional theory"}
+{"id": "IFmd4fBKfS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "recoverability of self-evolving agent modifications"}
+{"id": "P4erKj5EXN", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private PageRank"}
+{"id": "kuvg2NLWqk", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "least-core attribution computation"}
+{"id": "A716Dv8gqw", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "Pareto calibration for preference learning losses"}
+{"id": "42gfTZzyvV", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "diffusion", "topic": "diffusion model memorization"}
+{"id": "FoM2fpv1gy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "geometric representations in LLM arithmetic"}

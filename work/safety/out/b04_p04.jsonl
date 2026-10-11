@@ -1,0 +1,30 @@
+{"id": "l0kVqpzUOn", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "per-prompt beta in DPO"}
+{"id": "jwf1xHLWpV", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "classic", "topic": "theory of machine unlearning difficulty"}
+{"id": "6er3d7lV7K", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "decoding-time safety control"}
+{"id": "W3OpU3EGx1", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "fairness evaluation in federated ReID"}
+{"id": "SlqwaSYiIk", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "HALLU", "type": "method", "target": "classic", "topic": "misclassification detection in GNNs"}
+{"id": "wSs1Ez3aKl", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "PI", "type": "attack", "target": "agent", "topic": "adaptive attacks on AI control monitors"}
+{"id": "RWgn4FfG5N", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "concept unlearning in multimodal reasoning models"}
+{"id": "CSoTCflQb2", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "statistical safety cases for monitoring"}
+{"id": "DEIMxlPhEG", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "age bias amplified by preference optimization"}
+{"id": "gJOHyD62v9", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "generative reward models for RLHF"}
+{"id": "eOvIYkvz77", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation benchmark"}
+{"id": "dcKQf6jUtr", "y": 2026, "rel": 2, "sub": "PI", "sub2": "ADV_ROBUST", "type": "attack", "target": "agent", "topic": "preference manipulation of web agents"}
+{"id": "jXfDwmcA1U", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable adversarial attacks on VLMs"}
+{"id": "NLLlXXFWJB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "semantic entropy probes for hallucination"}
+{"id": "2GarqLb5a9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "multilingual reasoning preference optimization"}
+{"id": "DzqjXJUOtD", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "poisoning on-policy distillation"}
+{"id": "u5RK5qijwb", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "language bias in LVLMs"}
+{"id": "7mPpK9MelC", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "8DjmmLUDAy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "bilinear autoencoders for feature manifolds"}
+{"id": "H0IfEcElnx", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "social engineering attacks on personal agents"}
+{"id": "4AfWqR3quK", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM watermark robustness analysis"}
+{"id": "MOW9zrKrNx", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "selective generation to control hallucination"}
+{"id": "TyEFjfqgKH", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "RsiSONHtrX", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "natively unlearnable LLM architecture"}
+{"id": "TWCR9kyLpb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "agent", "topic": "failure recovery in mobile agents"}
+{"id": "gQRefH8upx", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "abstention in clinical reasoning"}
+{"id": "52XFLazzqc", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "agent", "topic": "automated behavioral evaluation of agents"}
+{"id": "3OlPOoVHKQ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on LLMs"}
+{"id": "ZPk8kVArJP", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "eval", "target": "agent", "topic": "agent red-teaming benchmark"}
+{"id": "aIkHSqxEGa", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "causal knowledge editing"}

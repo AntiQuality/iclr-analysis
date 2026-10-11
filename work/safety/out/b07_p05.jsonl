@@ -1,0 +1,30 @@
+{"id": "gQHBnfhQ2d", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "defense", "target": "classic", "topic": "Byzantine-robust federated aggregation"}
+{"id": "wYreCmjIGl", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "OOD", "type": "method", "target": "classic", "topic": "failure prediction for vision foundation models"}
+{"id": "3eYTRBGgFL", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "unlearning with limited retain data"}
+{"id": "rhQs3zBlsL", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "eval", "target": "agent", "topic": "agent over-refusal vs unsafe action benchmark"}
+{"id": "MgVNhx5uaa", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal CoT reasoning benchmark"}
+{"id": "0zdlTzGoou", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward models via IRL"}
+{"id": "rn3lb4rrk6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated model aggregation"}
+{"id": "6iZO20TrjG", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "contextual faithfulness under noisy context"}
+{"id": "akbtPEZnDZ", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_ATK", "type": "analysis", "target": "reasoning", "topic": "safety degradation from reasoning training"}
+{"id": "kKTMVXvPUW", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "verifiable LLM incident-response planning"}
+{"id": "cnAKSkr3dS", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "classic", "topic": "model extraction attacks"}
+{"id": "ZxwlQsl9Uj", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "ex4D3HI5ES", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private synthetic tabular data"}
+{"id": "URTnuyQJI1", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "safety alignment of diffusion language models"}
+{"id": "URQZKM8CLa", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "theory", "target": "llm", "topic": "unintended trait shifts in RL post-training"}
+{"id": "wjT8PFdxPi", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "koUcOtZD0e", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "collusion in untrusted monitors"}
+{"id": "vUrZaERt8b", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "efficient reasoning training via SAEs"}
+{"id": "EkJoBgJT1m", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "regional preference learning for text-to-image"}
+{"id": "TIVEp1yJ7c", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness for multimodal fusion"}
+{"id": "SiuA1Sl7mY", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "UNLEARN", "type": "defense", "target": "llm", "topic": "unlearning deceptive behavior"}
+{"id": "ogpYn9RQGY", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "origins of LLM economic preferences"}
+{"id": "JP2R0TaMy1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL for 3D mesh generation"}
+{"id": "FGFl9j5u4a", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "proportional representation in committee voting"}
+{"id": "SJwyMP8Z9d", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "privacy leakage from agent memory"}
+{"id": "Rj66wjUagN", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "sensory advertisement generation"}
+{"id": "Xk6NyTkewj", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "method", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "V3efOI3RqQ", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "hybrid federated learning"}
+{"id": "Xn66SHxOJQ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial purification"}
+{"id": "EG6K7ZWOwQ", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM backdoor poisoning"}

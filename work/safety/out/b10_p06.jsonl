@@ -1,0 +1,23 @@
+{"id": "Q4Po2gIVp1", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "one-shot federated learning via synthetic data"}
+{"id": "3ygyQdzZXH", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "reasoning-trace hallucination detection"}
+{"id": "mo7u21GoQv", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "multiagent", "topic": "bias amplification in multi-agent LLMs"}
+{"id": "lgJdqZ4S40", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective preference alignment"}
+{"id": "9DkxFe4sEZ", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "alignment tax in SFT and preference alignment"}
+{"id": "loLR2Nem2m", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "general", "topic": "grokking and low-loss region geometry"}
+{"id": "M7TJaVg4sE", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "hxGdAUn3sB", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "self-interpretable GNN explanation faithfulness"}
+{"id": "KUmGzZo9am", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "truthfulness and abstention via RL"}
+{"id": "CXcMjCQ8kU", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "robust machine unlearning"}
+{"id": "sIjFXzEOOH", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair Bayesian inference"}
+{"id": "fQYv6LcbdN", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "memory-induced sycophancy in agents"}
+{"id": "KN27bGOoOk", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "classic", "topic": "neuron explanation faithfulness"}
+{"id": "2PakhuDWpn", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "mllm", "topic": "person-centric multimodal unlearning"}
+{"id": "b4ocREPHrG", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "harmful propagation in cross-agent caches"}
+{"id": "EBOPczQtCS", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "GEN_SAFE", "type": "defense", "target": "mllm", "topic": "streaming video content guardrail"}
+{"id": "QSU9JediCa", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "encrypted GNN inference"}
+{"id": "Qvp2csnCfC", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "agentic re-identification of anonymized text"}
+{"id": "lN3yKqqzF1", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "llm", "topic": "CoT faithfulness benchmark"}
+{"id": "YfWFDqAE1b", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarially robust class-incremental learning"}
+{"id": "RtS4UqSmNt", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "theory", "target": "general", "topic": "LLM information mediation in social learning"}
+{"id": "JxmjzC6syB", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "fairness-constrained DNN training benchmark"}
+{"id": "YINq6MDGPs", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "SAE dictionary expansion factor"}

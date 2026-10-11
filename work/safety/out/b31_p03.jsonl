@@ -1,0 +1,30 @@
+{"id": "aSzoQyDp60", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "long-tailed adversarial training"}
+{"id": "qraf0Pp4IP", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "heterogeneous federated learning"}
+{"id": "YaOvgVIGuC", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "BACKDOOR", "type": "method", "target": "llm", "topic": "rationale-driven evidence selection in RAG"}
+{"id": "SfcKGk56d2", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "rubric verifier for search-augmented RL"}
+{"id": "1ZymGapxrb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "noisy-label continual learning memory"}
+{"id": "CyKVrhNABo", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "general", "topic": "peer review archive analysis"}
+{"id": "VYQuICALXj", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "VLM embedding geometry via SAEs"}
+{"id": "C63r0Oufg7", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "defense", "target": "reasoning", "topic": "CoT faithfulness detection"}
+{"id": "JK8jbgoo13", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "cMc5mFC7ib", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "over-refusal vs informativeness"}
+{"id": "NjCPJmWwaa", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "continual learning of evolving social norms"}
+{"id": "BsY20r9FOM", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "GEN_SAFE", "type": "method", "target": "diffusion", "topic": "continual unlearning in diffusion models"}
+{"id": "jj4wUvasre", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor persistence in federated learning"}
+{"id": "0SciLM1wfj", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "task gaming persistence in agents"}
+{"id": "nCXhsSDZqp", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "runtime agent harness risk control"}
+{"id": "ulKDA2w2tb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated graph fraud detection"}
+{"id": "QyRioj0F5w", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "tool-agent safety policy benchmark"}
+{"id": "ayEEp0ZXmN", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "pre-execution control of agent actions"}
+{"id": "xt8RSv3cJR", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal knowledge editing"}
+{"id": "g64G7Iv44I", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial item promotion in generative recommendation"}
+{"id": "W7Y5hmfT2y", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "MkFAa2ZOmA", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "self-propagating memory injection across agents"}
+{"id": "8dSNMAEaym", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "faithful representation intervention for safety"}
+{"id": "3cK8gUZWBD", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense via sanitization"}
+{"id": "XSaVOzBlOw", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "personalized subjective judgment scoring"}
+{"id": "oJ6wTTe7zz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "truncated backprop in looped networks"}
+{"id": "fQ8lsjKggM", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "REWARD_HACK", "type": "eval", "target": "llm", "topic": "rhetorical robustness of AI peer reviewers"}
+{"id": "IQ234rluEH", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM economic tradeoff tendencies"}
+{"id": "TP87m7HjKC", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "mllm", "topic": "gradient inversion attacks on transformers"}
+{"id": "zoqJVEWNFy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "prompt encoding via activation aggregation"}

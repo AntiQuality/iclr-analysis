@@ -1,0 +1,23 @@
+{"id": "eppmmi9jsc", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "parameter-efficient LLM unlearning"}
+{"id": "DqV4dhzMpz", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "safe self-evolving agent skill updates"}
+{"id": "b9NuloepFE", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "method", "target": "agent", "topic": "model vs harness safety defense allocation"}
+{"id": "i8Km9oL5Xl", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "LLM watermark deployment corpus"}
+{"id": "MioRSrhSId", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "citation verification"}
+{"id": "69Vz1tbMkI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "token credit assignment in GRPO"}
+{"id": "j5vRSKOHmO", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "knowledge retrieval mechanisms in transformers"}
+{"id": "rpjh0Fqb2f", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "neurosymbolic interpretability for GNNs"}
+{"id": "1FcpuXhPJU", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "phishing attacks on email agents"}
+{"id": "mprkaqjyrW", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "episodic memory retrieval reliability"}
+{"id": "5OdyLBjUcG", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "private graph learning under LDP"}
+{"id": "Y1pe7MCU5y", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "linguistic features in SAEs"}
+{"id": "BcRwdGPett", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "self-evolving agent experience poisoning"}
+{"id": "fYWvTVPy7t", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM bail preferences and AI welfare"}
+{"id": "IIrPoZ28dN", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "inductive physical reasoning benchmark"}
+{"id": "9p2aSUMDLK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "catastrophic forgetting in continual learning"}
+{"id": "1RSQtIClp7", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "deep safety alignment against prefilling attacks"}
+{"id": "EIMugQyi2B", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on robot handover"}
+{"id": "Z5nlpplBIK", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "mllm", "topic": "adversarial robustness evaluation of CLIP defenses"}
+{"id": "GqZYGOYuF2", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "inference-time reward and cost prediction"}
+{"id": "Iio6islT2Z", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "protein sequence design preference optimization"}
+{"id": "RduOiisl1S", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "off-policy RLVR for reasoning"}
+{"id": "tdqDGwIkHa", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "FHE secure LLM inference"}

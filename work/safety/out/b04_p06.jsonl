@@ -1,0 +1,23 @@
+{"id": "q60JmOhYRt", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "auditing human approval of agent actions"}
+{"id": "BnSJxH7Svc", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "te7wQcN2ef", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "zero-shot constrained RL"}
+{"id": "36e7MJ23EQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "conditional RNA sequence generation"}
+{"id": "Z8enrfBkEw", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "visual instruction data quality auditing"}
+{"id": "4AIImLVpB7", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "general", "topic": "uncertainty quantification in scientific generative models"}
+{"id": "TEKTSCC346", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "low-rank subspaces in vision transformers"}
+{"id": "eeROTBfqG0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "modality collapse in multimodal models"}
+{"id": "x85kiYqL4y", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "LLM and PRM signal aggregation"}
+{"id": "LaXZuSIVWI", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "guideline-grounded clinical diagnosis"}
+{"id": "QWnPjeFog8", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "cumulative attribute inference in text anonymization"}
+{"id": "QN0PplUVdt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "neuro-symbolic LLM planning"}
+{"id": "mWtrbtJhAJ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "repetition effects on model decisions"}
+{"id": "s5NyKM19wr", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "image watermark tamper localization"}
+{"id": "d8YA40OtHW", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM uncertainty calibration benchmark"}
+{"id": "XAnQOoFfBw", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "child safety of LLMs"}
+{"id": "M00dsblYsF", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "black-box uncertainty quantification for reasoning models"}
+{"id": "pOC02CX2A7", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "guardrail robustness under RAG context"}
+{"id": "YUUQwuqvD6", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private prototype classification"}
+{"id": "6YEW4KMfgF", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "Byzantine-robust federated aggregation"}
+{"id": "helYUCSJ7E", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "reasoning", "topic": "safety degradation under CoT reasoning"}
+{"id": "WrqbY1DtFw", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "attack", "target": "agent", "topic": "LLM-agent generation of solver DoS inputs"}
+{"id": "uhX41mYTVu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "automated SAE feature interpretation"}

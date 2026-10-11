@@ -1,0 +1,30 @@
+{"id": "mBTIx8H9yh", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "IP", "type": "attack", "target": "classic", "topic": "manipulating memorization influence scores"}
+{"id": "CzVkRf2QVu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "perceptual priors of MLLMs"}
+{"id": "HMRhA4Gctq", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "safety-helpfulness balance in medical LLMs"}
+{"id": "S8bR4YBN8f", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "iB6ACmX3tM", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "ICL robustness to conflicting demonstrations"}
+{"id": "Hw0np7UxXN", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "unsupported answering and abstention under pressure"}
+{"id": "8HpwL93YtX", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "theory", "target": "classic", "topic": "representation reuse effects on OOD decisions"}
+{"id": "HyZwf1rt4s", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "llm", "topic": "AI-generated peer review detection"}
+{"id": "9pUhrLwSYh", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "hidden-state leakage after LLM unlearning"}
+{"id": "g3j3VHW03J", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "multiclass calibration regularization"}
+{"id": "BZ8I2tXomt", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "sharpness-aware machine unlearning"}
+{"id": "Qc4RLl7t3S", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "modular addition grokking mechanism"}
+{"id": "zzudJhWLFA", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "general", "topic": "latent mechanism recovery in neural dynamics"}
+{"id": "6ZoACjGSLR", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "domain unlearning in CLIP"}
+{"id": "i05MM4h1WZ", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "general", "topic": "image watermark removal attack"}
+{"id": "47Wpv6lpUA", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "circuit analysis of small transformers"}
+{"id": "hoxR1gpwWP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "attention sink functionality"}
+{"id": "cYyf40Z6gt", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "stability-preserving controller switching"}
+{"id": "yFskqfP4mX", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "dataset ownership verification watermarking"}
+{"id": "AB5kRc0EkX", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "agent hallucination under multi-turn perturbations"}
+{"id": "rBAgqd7LCI", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "action authorization for tool-using agents"}
+{"id": "omauAGDEnW", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "RL-trained fact-checking agents"}
+{"id": "VMvxV7Obx9", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "diffusion", "topic": "adversarial attacks on video world models"}
+{"id": "8IRyysSjVR", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "LLM deep search proficiency"}
+{"id": "jyqMYODUvr", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "neural scheduling preference optimization"}
+{"id": "EPBKKSJTu6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "learned reward critics for robot manipulation"}
+{"id": "ckAQ31T4Qv", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "test-time alignment via MCMC sampling"}
+{"id": "3LGjvzYgdt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "zero-shot VLM rewards for RL"}
+{"id": "TjX2K8FFid", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on denoising models"}
+{"id": "emoRnl7BiF", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "few-shot OOD detection with VLM prompts"}

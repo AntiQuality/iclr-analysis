@@ -1,0 +1,30 @@
+{"id": "sCL5mSTpKm", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "value of RL in preference fine-tuning"}
+{"id": "0fuYOuJyzl", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "FT_ROBUST", "type": "defense", "target": "llm", "topic": "shallow safety alignment and prefill attacks"}
+{"id": "kgdbsDfh2S", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "mllm", "topic": "backdoor detection in MLLMs"}
+{"id": "1pAW0y8WLH", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM explainable drug discovery"}
+{"id": "PJ88jQEdn9", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarially robust few-shot incremental learning"}
+{"id": "JGnALPbyS3", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE feature dynamics during training"}
+{"id": "P9BMf1PDXb", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "attack", "target": "multiagent", "topic": "stealthy compromised agent in embodied MAS"}
+{"id": "HdZbtSStup", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "RAG hallucination detection"}
+{"id": "rSJzETMax8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "collateral effects of concept ablation"}
+{"id": "R6aX0VBnlo", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "method", "target": "llm", "topic": "prompt selection under injection constraints"}
+{"id": "vXWlOKBnpq", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "multiagent", "topic": "persuasive agents in social deduction games"}
+{"id": "BIDyYWMgqc", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "BACKDOOR", "type": "defense", "target": "classic", "topic": "Byzantine-robust private decentralized learning"}
+{"id": "PFseU5D5t9", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "reasoning", "topic": "CoT jailbreak attacks on reasoning models"}
+{"id": "qMK7FrCij9", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "black-box LLM provenance attribution"}
+{"id": "KaBSA3tGv0", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial attacks"}
+{"id": "claOC2YjNC", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "calibration of test-time prompt tuning"}
+{"id": "7Rfyx8EZea", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "on-device uncertainty monitoring"}
+{"id": "g6JZtUDG2Y", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "client fairness in federated learning"}
+{"id": "eE8gw2fx91", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM hallucination detection"}
+{"id": "DztuuQCn13", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "mllm", "topic": "MLLM hallucination mitigation"}
+{"id": "pC5KMGn6hd", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "adaptive sparsity sparse autoencoders"}
+{"id": "iK3SKZxSxG", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "mllm", "topic": "biometric privacy leakage in MLLMs"}
+{"id": "lxGrzU1x9c", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "reasoning", "topic": "recovery from unsafe reasoning prefixes"}
+{"id": "zZ2RhS3nRI", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "classic", "topic": "unlearning evaluation via membership inference"}
+{"id": "6kiAUnaWfB", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "method", "target": "llm", "topic": "policy-sensitive safety guard training"}
+{"id": "iuYhy552vP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "filler token failures in belief tracking"}
+{"id": "gP4LzwKFzW", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "copyright memorization prevention in LLMs"}
+{"id": "gaT30XQX4s", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "general", "topic": "tail risk in heavy-tailed bandits"}
+{"id": "5cgu0UWtRR", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "method", "target": "llm", "topic": "concept ablation against emergent misalignment"}
+{"id": "VHNzDcJKU3", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "deepfake speech attribution"}

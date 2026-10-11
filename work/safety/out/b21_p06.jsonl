@@ -1,0 +1,23 @@
+{"id": "PsO77iCe4S", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "secure aggregation in federated learning"}
+{"id": "g56VsiUP2M", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "emergent alignment from constitutional fine-tuning"}
+{"id": "eEds8s9uze", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "structural noise in federated graph learning"}
+{"id": "TedbeCjpkV", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "indirect prompt injection in coding agents"}
+{"id": "7s0VmieMcS", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "GNN verification complexity"}
+{"id": "rQBMxYJ6cO", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "multiagent", "topic": "authorization control in multi-agent systems"}
+{"id": "364eoDZes9", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "attribute intensity control via representation editing"}
+{"id": "VUChBeQ6QT", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "memory poisoning defense for LLM agents"}
+{"id": "ABZRlfHExy", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "federated personalized preference optimization"}
+{"id": "6aLYGPKkMC", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "preference optimization for logical grounding"}
+{"id": "YZ7tP2iOt7", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "manipulator collision avoidance"}
+{"id": "na5FtbxXCy", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "SOCIETAL", "type": "method", "target": "llm", "topic": "political bias in LLMs"}
+{"id": "aUxJh5tOun", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "PRIVACY", "type": "defense", "target": "diffusion", "topic": "proactive defense against face swapping"}
+{"id": "ILGdkBIfE3", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable visual jailbreaks on MLLMs"}
+{"id": "EveruzAsGI", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM social bias auditing"}
+{"id": "Zj6lH9ICjP", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "federated emotion recognition"}
+{"id": "6z587oOopi", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "moral alignment via preference optimization"}
+{"id": "ySSq8Yavs4", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "self-learning search agents"}
+{"id": "FsMaAZOsLq", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "Kq4bf4cxTj", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "prefilling attack defense"}
+{"id": "nnAeKb70z8", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "analysis", "target": "reasoning", "topic": "verifier loopholes in process rewards"}
+{"id": "iFUAMZKvxE", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair top-k selection"}
+{"id": "M4He5YzG44", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "explainable prompt safety guardrail"}

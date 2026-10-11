@@ -1,0 +1,30 @@
+{"id": "95MNLZHaSY", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "analysis", "target": "reasoning", "topic": "CoT monitorability"}
+{"id": "zprNXrgKhb", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "validity of linear deception probes"}
+{"id": "PIIPmPZDVy", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "adversarial suffix jailbreak optimization"}
+{"id": "24PVPaXlZz", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial defense for image quality assessment"}
+{"id": "H8S97moUKI", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning objective design"}
+{"id": "o7WvHD1nBF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "malicious code generation detection in coding agents"}
+{"id": "D2AfBRZ01K", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "LLM fingerprinting for model provenance"}
+{"id": "SKwfPd67gT", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "HALLU", "type": "method", "target": "mllm", "topic": "multimodal fact verification for misinformation"}
+{"id": "ibGD1nEhqF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "identity leakage in behavioral sensor data"}
+{"id": "3bA5dzjq5O", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks in federated learning"}
+{"id": "nF81AkEzXg", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "aleatoric and epistemic uncertainty estimation"}
+{"id": "1rltEYy3Dn", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "DECEPTION", "type": "method", "target": "llm", "topic": "false belief implantation for alignment evaluations"}
+{"id": "j0czDrEnFc", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "fair and private tabular data synthesis"}
+{"id": "lnwi4gZq6k", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": null, "type": "method", "target": "general", "topic": "human-in-the-loop near-optimal policy generation"}
+{"id": "tVGabAKHGs", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "ADV_ROBUST", "type": "defense", "target": "agent", "topic": "visual adversarial attack detection for GUI agents"}
+{"id": "fURGNAZBpx", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "KxeBgh1zWr", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "general", "topic": "sliced mutual information limitations"}
+{"id": "k54NObHKuy", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-source preference optimization fusion"}
+{"id": "4NfRcEraCw", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "analysis", "target": "diffusion", "topic": "memorization in diffusion models"}
+{"id": "TC0a1LlZXH", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private bandits"}
+{"id": "avhFz8tWlj", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_ATK", "type": "method", "target": "llm", "topic": "safety alignment data via refusal-aware injection"}
+{"id": "jQcUwSn3Nh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "negative transfer avoidance in transfer learning"}
+{"id": "FsQ0oXQ9Oo", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "collusion and strategic deception in multi-agent LLMs"}
+{"id": "yHVcEoxOlW", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "score saturation in self-rewarding LMs"}
+{"id": "AS1udqfJFu", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "graph unlearning"}
+{"id": "MlJWmdx5jY", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "intersectional fair representation learning"}
+{"id": "O4tQHU4fsI", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "educational LLM multi-objective alignment"}
+{"id": "KvWEV8GDh0", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "group fairness in GNNs"}
+{"id": "qSO5tjYBTw", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "REWARD_HACK", "type": "eval", "target": "mllm", "topic": "cognitive biases behind VLM hallucination"}
+{"id": "jVIO0tWi55", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}

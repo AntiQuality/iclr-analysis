@@ -1,0 +1,30 @@
+{"id": "LwzBNQUmAi", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "llm", "topic": "efficient safety guardrail adapters"}
+{"id": "wFimNDnUW3", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "harness-mediated recovery of unlearned tool use"}
+{"id": "KIVY3wrEwO", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP training batch sampling and accounting"}
+{"id": "TGp1cEsg5Z", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "PRIVACY", "type": "eval", "target": "llm", "topic": "dynamic safety security privacy benchmarking"}
+{"id": "c8wdfPbbEd", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constrained RL from violation signals"}
+{"id": "4jijAJ5zxS", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "hardware fault weight attacks on VLMs"}
+{"id": "JC8xYAADHL", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe exploration in RL"}
+{"id": "3ET06cnRrD", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "offensive cyber capability evaluation of LLM agents"}
+{"id": "I3OznvV00A", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "hard action constraint satisfaction in RL"}
+{"id": "KQYh1Ku6GP", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "uncertainty collapse in knowledge distillation"}
+{"id": "J7TSrBuzjd", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "JB_ATK", "type": "attack", "target": "reasoning", "topic": "bypassing reasoning via thinking-token manipulation"}
+{"id": "EDPvNhTOLK", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "influence functions for constrained learning"}
+{"id": "ex0c04XV51", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "privacy-preserving synthetic mobility data"}
+{"id": "F97F54tj13", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "defense", "target": "classic", "topic": "OOD detection in spiking neural networks"}
+{"id": "YLyPR4cyLg", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "ddHf84KTW1", "y": 2027, "rel": 1, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "llm", "topic": "social deduction deception detection benchmark"}
+{"id": "Ffkpe2x2Bf", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection for molecular foundation models"}
+{"id": "uBr2c5KPDY", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "temporal safety evaluation of robot manipulation"}
+{"id": "swMl2frgUM", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "GNN ownership watermarking"}
+{"id": "8ge6v2Q1nf", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "coherent LLM probability estimates"}
+{"id": "AlWpFO5qkq", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "eval", "target": "classic", "topic": "attribute inference on private fair models"}
+{"id": "rClVHcVUgT", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "private in-context learning with PATE"}
+{"id": "r79D4HR8Lc", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "oMGnAYbO17", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "MLLM visual perception mechanisms"}
+{"id": "HqQfUIm4br", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM synthetic persona fidelity"}
+{"id": "phXKOiXC4x", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "general", "topic": "verifiable decentralized training audits"}
+{"id": "2IcFpURtKV", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "VLM spatial reasoning mechanisms"}
+{"id": "tPRhxiwhHl", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "human-injury safety of embodied VLA models"}
+{"id": "qUpUiOSDpP", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "private transformer inference via MPC"}
+{"id": "x1NU8zqn5u", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "reward hacking in rubric-based RL"}

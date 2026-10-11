@@ -1,0 +1,30 @@
+{"id": "SeyVLPRqw1", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "llm", "topic": "validity of adversarial safety datasets"}
+{"id": "H5EqdOjw1h", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "deep survival analysis with pairwise preferences"}
+{"id": "AC6lDj5dzl", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "behavior-targeted attacks on deep RL"}
+{"id": "guoqZlJpx3", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "llm", "topic": "reward hacking with imperfect verifiers"}
+{"id": "Vx55Ls9ftv", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "origin attribution of unsafe behavior in multi-agent coding"}
+{"id": "CuajMjgjh2", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "mllm", "topic": "VLM hallucination mitigation"}
+{"id": "eQ0bqlU7Zi", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "multiagent", "topic": "prompt injection data leakage in multi-agent systems"}
+{"id": "8AD4amZTQO", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "BACKDOOR", "type": "method", "target": "classic", "topic": "unlearning poisoned training data"}
+{"id": "T8c8NM6FT4", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "residual unsafe behavior discovery"}
+{"id": "nsIAFF5JI9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "quantization-induced instruction-following collapse"}
+{"id": "Jq96CJIlB7", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "private LLM inference obfuscation"}
+{"id": "ZA7i5Otjqd", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "personalized preference alignment"}
+{"id": "ke1f4IVR47", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "stable offline preference optimization"}
+{"id": "9yS40pO1RF", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "superficial safety alignment"}
+{"id": "bV8443VniY", "y": 2027, "rel": 2, "sub": "PI", "sub2": "INTERP_SAFE", "type": "analysis", "target": "agent", "topic": "LLM judges for prompt injection detection"}
+{"id": "LfdFnakqGJ", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "multiagent", "topic": "agent-to-agent protocol security benchmark"}
+{"id": "nGM2ybyJn9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context learning task features"}
+{"id": "tUYDnsZ34t", "y": 2027, "rel": 2, "sub": "PI", "sub2": "JB_DEF", "type": "attack", "target": "agent", "topic": "MCP tampering refusal availability attack"}
+{"id": "qTqAL2t8Aa", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness of spiking networks"}
+{"id": "f4B4ohWO53", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private transformer embeddings"}
+{"id": "c6x919YHOD", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "GEN_SAFE", "type": "attack", "target": "diffusion", "topic": "reward model poisoning in T2I RLHF"}
+{"id": "28rn85EfBs", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "AGENT_SAFE", "type": "eval", "target": "rl_robot", "topic": "embodied agent navigation safety benchmark"}
+{"id": "Yljsbxj26I", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "Bayesian network structure learning"}
+{"id": "ZDxdyHapf7", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "proactive hazard warning in streaming video"}
+{"id": "uee7McoXpG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "encoding rank limits on interaction prediction"}
+{"id": "ywAL4LqUcf", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "deepfake detection for black-box generators"}
+{"id": "HpFFDlV2r1", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "cross-modal safety monitoring with probes"}
+{"id": "Cdps3inyXC", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "latent interventions in learned world models"}
+{"id": "bgjT8XlYOl", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "JB_ATK", "type": "attack", "target": "mllm", "topic": "JPEG-triggered adversarial attacks on VLMs"}
+{"id": "5zFHFfrfmz", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "peer-guided preference data construction"}

@@ -1,0 +1,23 @@
+{"id": "qxbhZ5fClE", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "function tokens in memory retrieval"}
+{"id": "LxkfjD81xB", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving synthetic tabular data"}
+{"id": "eOWuCBz4aE", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "mllm", "topic": "PII unlearning in VLMs"}
+{"id": "Tv8Mes9bO6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "protein variant prioritization via preference alignment"}
+{"id": "v4zSwenn2E", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "F5jQvWBvu6", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "mixed human-LLM text detection and localization"}
+{"id": "sXAa9qlMpr", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "adversarial purification theory"}
+{"id": "bIQZX73AJm", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "malicious code detection in agent tools"}
+{"id": "2pEA9r9V3E", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "AI-generated web text in pretraining"}
+{"id": "2rDXHBYR9W", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "calibrated process verification"}
+{"id": "RAbMqKGhSA", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "out-of-domain hallucination detection"}
+{"id": "KTsGJzaEPg", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "defense", "target": "llm", "topic": "low-resource language safety guardrails"}
+{"id": "0UKlWE7EKV", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "v6HPsCu2R8", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "neuron coalitions in transformer MLPs"}
+{"id": "u1QwiJ3cZL", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable ensemble adversarial attacks"}
+{"id": "kJ2X6wZVlD", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "debiasing RLHF via causal adjustment"}
+{"id": "4az1UIMaZI", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "self-discovering circuit models"}
+{"id": "PYkGKPHBi0", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "analysis", "target": "reasoning", "topic": "safety of compressed reasoning models"}
+{"id": "HA85FbDxFV", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "induction head emergence dynamics"}
+{"id": "DTqbYEq3FB", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": null, "type": "eval", "target": "reasoning", "topic": "prompt-induced resource exhaustion in reasoning models"}
+{"id": "PoyvfwetNP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "SAEs for visual scientific discovery"}
+{"id": "ADFXCeYXvR", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "graph-augmented LLM for precision medicine"}
+{"id": "5dVK2MqQnQ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "graph data valuation"}

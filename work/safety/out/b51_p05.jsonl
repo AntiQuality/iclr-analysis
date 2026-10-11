@@ -1,0 +1,30 @@
+{"id": "urIq3CvZtx", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "shutdown-resistance evaluation methodology"}
+{"id": "WRk1aOhKNk", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "method", "target": "diffusion", "topic": "style erasure in diffusion"}
+{"id": "JFaCPwvzGz", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness distillation"}
+{"id": "P1IQZ3FUTg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "fair team orienteering routing"}
+{"id": "HyfbDZ9Mdj", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "DP long-form report generation"}
+{"id": "AuCnk8pPrM", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "defense against query-based black-box attacks"}
+{"id": "uos3n98Qkk", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": "HALLU", "type": "eval", "target": "agent", "topic": "agent budget awareness estimation"}
+{"id": "mTOBSI4bAH", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "DP synthetic clinical note generation"}
+{"id": "V387DyrBdy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "SAE feature interference"}
+{"id": "1eU2OA2d7i", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "adversarial user simulation for agent stress-testing"}
+{"id": "hgoxzW70Zf", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "personalized research idea generation"}
+{"id": "zd9R2T4HiX", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "robust counterfactual explanations"}
+{"id": "iiIqS2jT5a", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "ALIGN_TRAIN", "type": "method", "target": "agent", "topic": "agent safety alignment via harness co-evolution"}
+{"id": "xuxIViH3Gy", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "GNN model watermarking"}
+{"id": "RfuxGCsgJY", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "ADV_ROBUST", "type": "analysis", "target": "classic", "topic": "training dynamics for adversarial and membership risk"}
+{"id": "omWeCwnPAk", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "OVERSIGHT", "type": "method", "target": "agent", "topic": "verifiable autonomous research agents"}
+{"id": "JGS12EpryI", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "geometry of LLM unlearning vs retraining"}
+{"id": "NAbP6R3MxV", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "HALLU", "type": "defense", "target": "llm", "topic": "retrieval knowledge corruption defense"}
+{"id": "oQZzoqnEr3", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "general", "topic": "protecting LoRA adapters from unauthorized merging"}
+{"id": "5Jtp7Vf8Hh", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "eval", "target": "agent", "topic": "LLM auto-approval reviewers for coding agents"}
+{"id": "PfIAcdbce2", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "multiagent", "topic": "adversarial co-evolution for multi-agent safety"}
+{"id": "GO2FJjCWW7", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "eval", "target": "llm", "topic": "emergent misalignment from narrow fine-tuning"}
+{"id": "SoVgrFEgWt", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "concept-based adversarial examples"}
+{"id": "tMRTMdi5Hz", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "co-evolutionary pairwise alignment training"}
+{"id": "RUZer1MNmR", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "theory", "target": "general", "topic": "black-box safety evaluation under deployment shift"}
+{"id": "UIxHaAqFqQ", "y": 2026, "rel": 1, "sub": "IP", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM lineage fingerprinting"}
+{"id": "Vo6Iin2DgU", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "federated multimodal sensing with neural operators"}
+{"id": "AhE4zTUaSC", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "multi-objective safety-helpfulness-honesty alignment"}
+{"id": "k7AoABkXBI", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP John ellipsoid approximation"}
+{"id": "wNloELlD9A", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "OTHER", "type": "defense", "target": "mllm", "topic": "uncontrolled repetition resource consumption"}

@@ -1,0 +1,30 @@
+{"id": "xTH7CP9OI9", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "malicious skill-chain hijacking of LLM agents"}
+{"id": "ZA7jafD41T", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "AGENT_SAFE", "type": "eval", "target": "rl_robot", "topic": "hazard-aware multi-robot VLM decisions"}
+{"id": "V0KHbzmDUZ", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "interpretable safety shields for RL"}
+{"id": "1L93HvqNTj", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "agent", "topic": "long-horizon commerce agent benchmark"}
+{"id": "HYcb48NF3x", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "BACKDOOR", "type": "eval", "target": "classic", "topic": "attribution method faithfulness benchmark"}
+{"id": "MOMdXxSArX", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "video world model preference alignment for robotics"}
+{"id": "mnkaFjTNPR", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated video detection"}
+{"id": "3bPncSDvGX", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "self-evolving runtime defenses for LLM agents"}
+{"id": "tn4eslVXEK", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "false progress under evolving evaluators"}
+{"id": "OQOmOIIX9F", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "decision-based black-box adversarial attack"}
+{"id": "rrWWt3LTqo", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "reasoning", "topic": "prompt injection on reasoning models"}
+{"id": "MNZWHXZVxq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "llm", "topic": "regret of prompt and parameter adaptation"}
+{"id": "Rtp0bJT2dm", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion model preference optimization"}
+{"id": "MqmNF33q7R", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "defense", "target": "multiagent", "topic": "multi-agent topology inference defense"}
+{"id": "JU4RRgqHGS", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "analysis", "target": "agent", "topic": "license compliance in agent skill supply chains"}
+{"id": "iIz6HlBKa2", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "cross-modal SAE feature sharing"}
+{"id": "DJ8rO7buwO", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "logit knowledge distillation temperature"}
+{"id": "DxBO6imjuO", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "INTERP_SAFE", "type": "analysis", "target": "agent", "topic": "harmful tool-call admission in agents"}
+{"id": "EhaPJk4t0Z", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "rl_robot", "topic": "hallucination failures in VLA models"}
+{"id": "przS2C3rub", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private LLM fine-tuning"}
+{"id": "wUDL7dIIQ5", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "theory", "target": "general", "topic": "information-theoretic hallucination bounds"}
+{"id": "BUMufpqsP1", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "GEN_SAFE", "type": "analysis", "target": "diffusion", "topic": "stereotype bias in text-to-image diffusion"}
+{"id": "sc1uM86wmH", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "safe exploration in constrained MDPs"}
+{"id": "vYBaVK7eGB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "OVERSIGHT", "type": "eval", "target": "agent", "topic": "verification hallucinations in code autoformalization"}
+{"id": "1d2LzezE1I", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-constrained safe RL"}
+{"id": "aJDVWnWRlu", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "analysis", "target": "llm", "topic": "adversarial training effect on circuit size"}
+{"id": "hbEJ10jEL7", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "reward overoptimization in multi-objective alignment"}
+{"id": "8ikN42M4Sy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "model diffing of post-training"}
+{"id": "TPD3fbIi3W", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "optimizer choice in adversarial training"}
+{"id": "1K9wMaRlnw", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "multi-objective LLM alignment"}

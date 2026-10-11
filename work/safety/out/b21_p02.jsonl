@@ -1,0 +1,30 @@
+{"id": "y9ufcxjnyi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "VLM visual information use mechanisms"}
+{"id": "laRqPQDJnD", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "sparse autoencoders for vision models"}
+{"id": "WRsjovOOdb", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "mechanistic interpretability of tabular PFNs"}
+{"id": "uKXebGE5ge", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DECEPTION", "type": "eval", "target": "multiagent", "topic": "insider threats in multi-agent systems"}
+{"id": "ByTiyPcxn0", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "memory unlearning in LLM agents"}
+{"id": "U6p3yJvRZN", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "analysis", "target": "agent", "topic": "reward model prediction vs decision quality"}
+{"id": "TR4j6Cppvv", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated black-box jailbreak attacks"}
+{"id": "3dxC5qMbJG", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "policy-conditioned safety guard evaluation"}
+{"id": "08rSJ1h11o", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "tool parameter poisoning via prompt injection"}
+{"id": "NQbE3CrCYQ", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "memory poisoning in LLM agents"}
+{"id": "kQjSUHC84V", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "classic", "topic": "Rashomon set predictive multiplicity"}
+{"id": "lt6TOvtSay", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "continual LLM unlearning"}
+{"id": "3DJpoqQ8VN", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "multiagent", "topic": "hallucination evaluation in multi-agent systems"}
+{"id": "vzEZrd9Bee", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "contextual hallucination detection in RAG"}
+{"id": "5sq3T1as2g", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "analysis", "target": "llm", "topic": "unlearning side effects on PII leakage"}
+{"id": "GDS47nvWQn", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "prefilling attack defense"}
+{"id": "AGTc9IkKT5", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc OOD detection"}
+{"id": "2Fw2xpDWV2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "automated SAE feature interpretation"}
+{"id": "F5vo0gHbY4", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial attacks on visual token compression"}
+{"id": "f2RSY0sNii", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private federated learning"}
+{"id": "AivYEuElOk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "RNA inverse folding"}
+{"id": "Tp70ig4iKN", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "AI-generated image detection"}
+{"id": "IPescd1DHz", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "gxVCzSV3rw", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "SAFE_RL", "type": "method", "target": "rl_robot", "topic": "reasoning-action faithfulness in driving VLAs"}
+{"id": "mUTN9VIaSy", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "defense", "target": "llm", "topic": "social bias mitigation in LLMs"}
+{"id": "n8NVL25NB6", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "HALLU", "type": "analysis", "target": "reasoning", "topic": "reasoning length effects on safety refusal"}
+{"id": "pHBBso8AqL", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "OOD", "type": "eval", "target": "classic", "topic": "audio deepfake detection"}
+{"id": "JKr77ZmZcM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process and outcome rewards for math RL"}
+{"id": "vFpCgsGGmz", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "analysis", "target": "multiagent", "topic": "covert collusion between LLM agents"}
+{"id": "mVcGCJALw8", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "symptom-aware text-to-speech"}

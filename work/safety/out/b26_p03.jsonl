@@ -1,0 +1,30 @@
+{"id": "kJiB24fTmw", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "llm", "topic": "ICL demonstration selection under domain shift"}
+{"id": "qkRTCwPCZu", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "LLM peer reviewer robustness to manipulation"}
+{"id": "DjbUzShZX2", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "INTERP_SAFE", "type": "analysis", "target": "diffusion", "topic": "unsafe image editing trajectory analysis"}
+{"id": "74gLFx6JkB", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "gradient-free class unlearning"}
+{"id": "YI8mUYsHTn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "layerwise relational information composition"}
+{"id": "SKTxKHumh3", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "safe text-to-motion generation"}
+{"id": "U7CezlrHy3", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-first multi-objective Q-learning"}
+{"id": "OmyI743c7I", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "training-free concept detection in residual dimensions"}
+{"id": "uJYtHL698n", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM watermark radioactivity in federated learning"}
+{"id": "iksnFm6vFW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "overthinking mitigation via sparse features"}
+{"id": "P3R3S6S5Km", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "principle-based binary reward modeling"}
+{"id": "EjiJmiA6ea", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": "PRIVACY", "type": "method", "target": "reasoning", "topic": "benchmark contamination detection after RL"}
+{"id": "UkIuqcginL", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "gradient inversion defense in federated learning"}
+{"id": "9AKXLV5Jih", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "safety alignment distillation to small models"}
+{"id": "uRPFXPqOqd", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "clinical hallucination detection"}
+{"id": "Qi1rZa4zzl", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "UNLEARN", "type": "defense", "target": "mllm", "topic": "spurious correlations in VLM safety fine-tuning"}
+{"id": "hxrTmEuMrP", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "certified robustness of pruned RL policies"}
+{"id": "tQXWMv8Hr3", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM optimization modeling data synthesis"}
+{"id": "sHC4mK66qw", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection in LLM agents"}
+{"id": "fFxaY1GDaZ", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "eval", "target": "mllm", "topic": "VLM decision attribution for safety behaviours"}
+{"id": "QTjIAyILIf", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "agent", "topic": "unsafe overgeneralization from agent memory"}
+{"id": "NQxZz7qnJv", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "classic", "topic": "knowledge graph unlearning evaluation"}
+{"id": "yTDcIt9mFZ", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "weak-to-strong generalization theory"}
+{"id": "cbYTkER7p3", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-driven latent reasoning algorithm design"}
+{"id": "VUJ863LliH", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "diffusion-based adversarial purification"}
+{"id": "C3FEh03LMO", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "RLHF objective equivalence"}
+{"id": "qlf6y1A4Zu", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "white-box latent-space jailbreak attack"}
+{"id": "Dfse4Co8tA", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": "HALLU", "type": "method", "target": "agent", "topic": "uncertainty-guided agent steering"}
+{"id": "9hM4YRMhfT", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "process reward model for GUI agents"}
+{"id": "kmuOaqCZ9Q", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "linear representation hypothesis for probing and steering"}

@@ -1,0 +1,30 @@
+{"id": "SI5ho5BU9a", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "identifiability via augmentation design"}
+{"id": "LDqqgKrsW5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference post-training for one-step image generators"}
+{"id": "GWpblw5oFB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "abstention training for LLM honesty"}
+{"id": "MYdnxLLW7E", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective LLM unlearning"}
+{"id": "bmoh0i1nqE", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "preference dataset quality analysis"}
+{"id": "9H0gBsNjCv", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "multi-domain process reward models"}
+{"id": "oyE0wlr3hr", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "geolocation privacy protection"}
+{"id": "gy8Tu1Bq4l", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "reasoning", "topic": "prompt injection defense for reasoning models"}
+{"id": "06QOmLZi1V", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "privacy behavior of phone-use agents"}
+{"id": "bDTyJPXGhI", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-turn jailbreak defense"}
+{"id": "xWLxMrqcMB", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "authority sycophancy in LLMs"}
+{"id": "NGGlJVF3JJ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "weight-level concept localization"}
+{"id": "0MxrxYIueT", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "test-time adversarial defense for LVLMs"}
+{"id": "DjxNqXsApM", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "SAE feature consistency"}
+{"id": "5MRKmhp0LM", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "activation monitoring reliability"}
+{"id": "GBTUVO9vkj", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "defense", "target": "llm", "topic": "robust in-context LLM unlearning"}
+{"id": "hkXlFIs4AD", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "nSuJ4OXf0j", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "time-lagged causal discovery"}
+{"id": "iWaWySDI6Z", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "mllm", "topic": "reward hacking in speech translation RL"}
+{"id": "X1OoGtCMCQ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "hallucination in GUI agents"}
+{"id": "ptazA0dhbc", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning for vision transformers"}
+{"id": "J8LcYQLXpY", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "reasoning", "topic": "antidistillation of reasoning models"}
+{"id": "Xrp8mNku6R", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "multimodal global workspace in VLMs"}
+{"id": "9IuHlRQMf4", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "command-conditioned RL for strategy games"}
+{"id": "SnEywLKodN", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "formal verification for agent safety"}
+{"id": "wdZxGtKvh6", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image immunization against malicious editing"}
+{"id": "TctJWv7Suz", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "efficient video reward feedback learning"}
+{"id": "nzzMz40z94", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "LVLM object hallucination evaluation"}
+{"id": "2j4zLhBP2x", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "diffusion", "topic": "backdoor attacks on diffusion models"}
+{"id": "Syl3BQoYFs", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "reasoning critic from expert demonstrations"}

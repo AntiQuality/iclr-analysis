@@ -1,0 +1,30 @@
+{"id": "eb6D884y8x", "y": 2026, "rel": 1, "sub": "FAIR", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "emotion recognition bias in LLMs"}
+{"id": "cFrWRrjqaj", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "JuwuBUnoJk", "y": 2026, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "safeguarding mutating actions in agents"}
+{"id": "4arQdeKkqF", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "PI", "type": "method", "target": "llm", "topic": "temporal sparse autoencoders"}
+{"id": "CGIzZDgcfF", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "steering vector data construction"}
+{"id": "Epd2N9b76r", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "defense", "target": "reasoning", "topic": "auditing hidden reasoning token billing"}
+{"id": "f6WkgHrjhn", "y": 2027, "rel": 1, "sub": "FT_ROBUST", "sub2": "UNLEARN", "type": "method", "target": "llm", "topic": "capability preservation during fine-tuning"}
+{"id": "qK4JKOu0Gx", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "reasoning hop generalization mechanisms"}
+{"id": "fN676M9BM7", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "dead features in attention SAEs"}
+{"id": "YtETX0hVPF", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial ranking manipulation in CLIP retrieval"}
+{"id": "uZKPBAhPtc", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "transfer learning under data separation constraints"}
+{"id": "Wo9x0lKPQk", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "general", "topic": "unlearning evaluation against retraining"}
+{"id": "QkHKaPfRAB", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "over-refusal mitigation in LLMs"}
+{"id": "YMkHmZjJ6B", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "optimizer spectral imprint on weights"}
+{"id": "pHdeURRX0J", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "mllm", "topic": "identity unlearning in VLMs"}
+{"id": "Evxj4EraKB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "RL for perceptual super-resolution"}
+{"id": "UhZ92ST1bV", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "theory", "target": "general", "topic": "data poisoning attacks on bandits"}
+{"id": "f3k5bkcD5o", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "reasoning", "topic": "test-time-scaling-triggered backdoors"}
+{"id": "rpovJ3Apnt", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "minimal task specification languages"}
+{"id": "3KUTq95sXr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "general", "topic": "causal localization benchmark calibration"}
+{"id": "kfeBXUTVDu", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "scientific ML benchmark for nuclear systems"}
+{"id": "Sis2RxedhM", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "stealthy backdoor attacks on image classifiers"}
+{"id": "hl8kmkVpoo", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "AGENT_SAFE", "type": "method", "target": "multiagent", "topic": "unlearning robustness in multi-agent LLMs"}
+{"id": "CH7TfRLqSF", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "auditing LLM objectives via inverse RL"}
+{"id": "FQ0c7oaccp", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "mllm", "topic": "behavioral evaluation of multimodal judges"}
+{"id": "im6cgUcEk8", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private AI usage insights"}
+{"id": "EFOrHqyVJz", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "zero-shot AI-generated text detection"}
+{"id": "rTte3iUsXV", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "DPO generalization with f-divergences"}
+{"id": "8lHWG9Isnc", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "d7AZGUMdgp", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "FT_ROBUST", "type": "analysis", "target": "diffusion", "topic": "concept erasure robustness to model merging"}

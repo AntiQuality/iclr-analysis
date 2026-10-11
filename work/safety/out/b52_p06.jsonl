@@ -1,0 +1,23 @@
+{"id": "rCjDSFK41m", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "backdoor defense in federated learning"}
+{"id": "0HDtLebvI4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "mechanistic analysis of looped transformer search"}
+{"id": "YOPyj6WI6k", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "multi-task learning loss weighting"}
+{"id": "xVO4BqmzVD", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "degenerative repetition detection in agents"}
+{"id": "4DU6ED1z9H", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "test-time adversarial defense for CLIP"}
+{"id": "PFA8W0xyAc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "forgetting in agentic RL"}
+{"id": "GoRUW85YfE", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "ALIGN_TRAIN", "type": "method", "target": "mllm", "topic": "cross-modal safety transfer in MoE MLLMs"}
+{"id": "BHSSV1nHvU", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "zero-violation safe RL"}
+{"id": "FlNRBVxwh6", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private federated clustering"}
+{"id": "9cKlnIMZJ4", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attack on semantic communication"}
+{"id": "lffFL0iK2V", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination repair in LLM optimization modeling"}
+{"id": "ktGmDGoWnB", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "obfuscated activations evading latent monitors"}
+{"id": "rHqzLI2Ti8", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "context dependence of concept vectors"}
+{"id": "4pHTs5KPPL", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "peak-cost constrained robust RL"}
+{"id": "Sr5KlyAnRG", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "membership inference defense"}
+{"id": "FRtKUpgEZ9", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "overconfidence and hallucination detection"}
+{"id": "5ZSfNAvyzB", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "certified model extraction defense"}
+{"id": "kxVHb58g3J", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe exploration in model-free RL"}
+{"id": "NFC6u5mmWN", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "data-free decentralized continual unlearning"}
+{"id": "it2OB6I1LU", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "learning from privacy-masked labels"}
+{"id": "AiT8F6pbfi", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "tracing and reversing malicious knowledge edits"}
+{"id": "JtX6oaaJ2d", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "BACKDOOR", "type": "method", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "dNDavP9cQE", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "membership inference on diffusion models"}

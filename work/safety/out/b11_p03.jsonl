@@ -1,0 +1,30 @@
+{"id": "rjhF7b7n6g", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "eval", "target": "diffusion", "topic": "dataset watermarking for diffusion traceability"}
+{"id": "ghcAgnKC9y", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "structural OOD detection on graphs"}
+{"id": "goTllbmFCL", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal deepfake detection"}
+{"id": "8qnklea4uX", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "OVERSIGHT", "type": "analysis", "target": "llm", "topic": "LLM judge manipulation by unverified claims"}
+{"id": "uLdGZhxlxV", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "gradient inversion in federated learning"}
+{"id": "T0CGMWnJNL", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "watermarking LLM-generated code"}
+{"id": "C6ih0riufa", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "privacy leakage in LLM personalization"}
+{"id": "JlRYVCZLbw", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "method", "target": "classic", "topic": "model ownership watermarking in federated learning"}
+{"id": "vhVUssaO4u", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "LLM crisis support for suicide and self-harm"}
+{"id": "j9h78nIjBc", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "multiagent", "topic": "privacy leakage in multi-agent workflows"}
+{"id": "3z0Fu8sf5R", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "reasoning", "topic": "cost amplification attacks on reasoning models"}
+{"id": "AGWa8whf92", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "activation-based harmful request monitors"}
+{"id": "skoBAkjFAr", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "backdoor attacks on diffusion language models"}
+{"id": "0xSVxgdfHH", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "defense", "target": "llm", "topic": "reward hacking against LLM judges"}
+{"id": "xaOXC9sahX", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "selective refusal via weight editing"}
+{"id": "j46QkEcSt1", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "subliminal transfer of censorship in distillation"}
+{"id": "2OB5wjagd3", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "certified counterfactual explanations"}
+{"id": "DXxip7cMa7", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "financial agent safety benchmark"}
+{"id": "imAlDj7QbF", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "weight perturbation sensitivity measures"}
+{"id": "wQ4LqIWjgG", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "vyZCa2Cxvr", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "verbalized confidence calibration"}
+{"id": "KuPUxWwAQB", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "fairness auditing of human-AI decisions"}
+{"id": "psmPjQmrZ4", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "Lzwkeg2o2z", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "4NtoAVqfhA", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "eval", "target": "llm", "topic": "pluralistic preference alignment"}
+{"id": "gwHCXvPDBd", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "diffusion", "topic": "diffusion image watermarking for authorship"}
+{"id": "0e3DjzUsCa", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "SOCIETAL", "type": "eval", "target": "agent", "topic": "mental-health agent safety evaluation"}
+{"id": "IZ9YfFz6Bm", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "tD4kTBNE20", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "causal fairness learning"}
+{"id": "jlKRX61rho", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "circuit tracing in chess transformers"}

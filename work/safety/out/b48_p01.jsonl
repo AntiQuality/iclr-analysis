@@ -1,0 +1,30 @@
+{"id": "YvQ5m4u92X", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "certified machine unlearning guarantees"}
+{"id": "SADCTyHnsT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "identifiability of learned computations"}
+{"id": "cW6oDsPobl", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "honesty alignment via confidence calibration"}
+{"id": "KG5H9dwM3m", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "multi-objective LLM alignment"}
+{"id": "HEgzQdcyAt", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "FT_ROBUST", "type": "defense", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "kdT0kmfRaA", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "prompt refinement for video generation"}
+{"id": "y1BoQv4gcG", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "T300gu8tJD", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "llm", "topic": "validity of red-teaming success metrics"}
+{"id": "PR6oISgk90", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "RL for LLM-based recommendation"}
+{"id": "alY08iknli", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "policy gradient for text-to-image quality"}
+{"id": "XQv3jegXqt", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "classic", "topic": "grokking and machine unlearning efficacy"}
+{"id": "nEhJ24ywRj", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "classic", "topic": "machine unlearning evaluation metrics"}
+{"id": "Kj4m42pttT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "diffusion", "topic": "privacy-preserving video anonymization"}
+{"id": "lvjmQ5NdHY", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "personalized safety alignment"}
+{"id": "MmN81mAPRY", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "safe skill learning for LLM agents"}
+{"id": "UtbSWdWv0F", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "cognitive load prediction from physiology"}
+{"id": "60pBvPzWfY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "preference optimization for protein inverse folding"}
+{"id": "gs6zKwv1gL", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "data poisoning in federated learning"}
+{"id": "ig3qM6dYiz", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "grounding verification for operations agents"}
+{"id": "jStvWPI3DI", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on RAG"}
+{"id": "fRIys2GjMw", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "trustworthy personalization in MLLMs"}
+{"id": "nYSapQD8Eb", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection detection"}
+{"id": "btEiAfnLsX", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "DPO misspecification"}
+{"id": "SUxaNjKUP8", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection in tool agents"}
+{"id": "GSjDtnjcEM", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "cross-modal safety gaps in unified models"}
+{"id": "GmF5ug8JsI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "task-adaptive multimodal data refinement"}
+{"id": "PJVGe9MqTS", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "collision-safe trajectory planning in driving"}
+{"id": "xxiPZ1jrRv", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in video diffusion"}
+{"id": "t6SEXs3iRS", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "preference alignment via activation steering"}
+{"id": "3c9mBsDi83", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "llm", "topic": "prompt injection detection"}

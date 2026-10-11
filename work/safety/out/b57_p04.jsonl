@@ -1,0 +1,30 @@
+{"id": "iaLfbQ3d7r", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "WlOZ7y8Wrw", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "transferable adversarial attacks on fine-tuned SAM"}
+{"id": "x2EZyzCR4m", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM jailbreak defense"}
+{"id": "aIBFTh2ThF", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "robust fine-tuning from non-robust models"}
+{"id": "THlRC8Lb5I", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "verbose output induction attacks on VLMs"}
+{"id": "mZZgKuVJOI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "personalized federated learning"}
+{"id": "bknuCt8MI7", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "multiagent", "topic": "multi-agent system attack testbed"}
+{"id": "HV45QhzEyl", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "audio watermarking robustness to neural codecs"}
+{"id": "DXGNmcuxJf", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "anxiety-inducing language in health responses"}
+{"id": "oegeqwodj7", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "admission control for self-generated agent guardrails"}
+{"id": "3HZVibYUZe", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "attack", "target": "diffusion", "topic": "concept erasure robustness relearning attack"}
+{"id": "DMlk1RFYx5", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "re-identification privacy in EEG"}
+{"id": "sfW40Gn2r5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "counterexample search for answer selection"}
+{"id": "ddU6ksGdW6", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "circuit analysis ablation methodology"}
+{"id": "Bfuj1qeoOU", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "market manipulation detection in order books"}
+{"id": "snoW03ma9H", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "yt9TW2WtpG", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "llm", "topic": "certifying catastrophic risk in multi-turn conversation"}
+{"id": "J9qGnGOfuY", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adversarial attacks on medical VLMs"}
+{"id": "VRFbLr8Uhv", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "disparate impact in DP-SGD"}
+{"id": "56TM4VUxgU", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "video-based reward learning for manipulation"}
+{"id": "v8lOgaPjqc", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal misinformation detection"}
+{"id": "yGNLtD7VQ2", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "diffusion", "topic": "watermark forgery and removal attacks"}
+{"id": "7TIjw13lf9", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "sq0VMBI7Yg", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "physical adversarial attacks in simulation"}
+{"id": "4d2zPx9UGA", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "agent", "topic": "agent trajectory safety auditing"}
+{"id": "fPd81j2qFv", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "PRIVACY", "type": "method", "target": "general", "topic": "data-level fairness auditing certificates"}
+{"id": "MjJrhfAmRG", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "multidimensional reasoning process reward"}
+{"id": "KtE4Kpl7RS", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "context-faithful hallucination mitigation"}
+{"id": "7KCUTpkPaS", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "private genome model inference with homomorphic encryption"}
+{"id": "WIh2HzWRSj", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "authoritarian assistance safety benchmark"}

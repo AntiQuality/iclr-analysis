@@ -1,0 +1,30 @@
+{"id": "xDAUggwlh7", "y": 2027, "rel": 2, "sub": "IP", "sub2": "FT_ROBUST", "type": "defense", "target": "llm", "topic": "key-locked model capability access control"}
+{"id": "mdrlXvORuM", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "active learning for adversarial training"}
+{"id": "ehBjrUQgya", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "credit assignment in diffusion RL"}
+{"id": "kDPLOHfDvg", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference attacks"}
+{"id": "ShEDWasmDG", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination detection from hidden states"}
+{"id": "wKHYMUDaWO", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "FT_ROBUST", "type": "analysis", "target": "diffusion", "topic": "durability of T2I model edits under fine-tuning"}
+{"id": "9MUpbkeP2Q", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "generated image source attribution"}
+{"id": "V3qpPMoQtG", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "softmax attention as gradient descent"}
+{"id": "oB7TpUvmUt", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box jailbreak attacks on LLMs"}
+{"id": "MMkYLPv7YO", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "evasion of model-diffing audits"}
+{"id": "xKRA2pkUy7", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "moral decision representations in LLMs"}
+{"id": "hLFJwSAjdC", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal generative reward modeling"}
+{"id": "mbmuLCaj41", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "HALLU", "type": "method", "target": "mllm", "topic": "grounded rationales for multimodal safety guards"}
+{"id": "vdDaLgVPzQ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable adversarial images against MLLMs"}
+{"id": "GK1v5whh6d", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "diffusion", "topic": "diffusion preference optimization"}
+{"id": "EEr6cADbZx", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private training error bounds"}
+{"id": "C9ArZzGcwi", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "spatial reasoning supervision for VLMs"}
+{"id": "NB4eU7IvuL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "anatomical plausibility in human image generation"}
+{"id": "oovb0eVN7w", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "agent harness effects on safety evaluation"}
+{"id": "zZj48KOY3M", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "polyp segmentation dataset"}
+{"id": "GpL66XgjjF", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "FT_ROBUST", "type": "analysis", "target": "reasoning", "topic": "reasoning-induced safety misalignment"}
+{"id": "QkaeTea16Y", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "SOCIETAL", "type": "eval", "target": "agent", "topic": "citation reliability of deep research agents"}
+{"id": "wmDA2qRqJe", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "multi-teacher distillation for flow models"}
+{"id": "062tfVzEL5", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "speaker identity erasure in voice cloning"}
+{"id": "vzUixzPIHS", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "AI-generated image detection generalization"}
+{"id": "cRF4is9jKv", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "analysis", "target": "general", "topic": "membership inference for data provenance auditing"}
+{"id": "pavN0RyPR7", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "diffusion", "topic": "red-teaming text-to-image models"}
+{"id": "B80tdjv9e6", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "interpretability-preserving pruning"}
+{"id": "wmz2X03I9F", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "chemical reaction prediction distillation"}
+{"id": "JEkzgeYwIk", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "privacy leakage in dataset distillation"}

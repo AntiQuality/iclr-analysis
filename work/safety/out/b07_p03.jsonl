@@ -1,0 +1,30 @@
+{"id": "W3BvDsi9is", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "context sensitivity of LLM value elicitation"}
+{"id": "XO5SxIbXQ8", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness of object detectors"}
+{"id": "uRG8WQNSzF", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on 3D spatial models"}
+{"id": "m92GKfXnyt", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "refusal representations for safety steering"}
+{"id": "NO2Kt99Q6K", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "catastrophic overfitting in adversarial training"}
+{"id": "gPpkDECaC9", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agentic GraphRAG for cybersecurity QA"}
+{"id": "vmTGpKUQON", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "interpretable LLM probability estimation"}
+{"id": "wKNfBe06vg", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "GEN_SAFE", "type": "defense", "target": "diffusion", "topic": "AI-generated video detection"}
+{"id": "nHW64r5KFG", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "defense", "target": "mllm", "topic": "multimodal misinformation detection"}
+{"id": "Fjq9UIsfYx", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "homomorphic encryption for private inference"}
+{"id": "wyCnT4BUsT", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "llm", "topic": "LLM critique models for math"}
+{"id": "ggycXmhrrG", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "JTUOGo7NFD", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differential privacy in decentralized learning"}
+{"id": "3yT5WhzErz", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "unlearning in continual learning"}
+{"id": "zt7IPzsXrT", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "method", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "jza3UmY6rj", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "prompt injection defense training"}
+{"id": "tifLEoFKw2", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "mllm", "topic": "membership inference on VLMs"}
+{"id": "1vv2CQyLYb", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning via negative preference"}
+{"id": "xAPoscV2Bw", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "eval", "target": "agent", "topic": "behavioral biases of agent consumers"}
+{"id": "F1PdFGnBPa", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "policy-enforcing guardrails for web agents"}
+{"id": "5IHuwRwMHK", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "method", "target": "classic", "topic": "sound neural network verification"}
+{"id": "vUK9lF2A51", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "algorithmic collective action for fairness"}
+{"id": "HaQ5PCJOiU", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "projection maintenance data structures"}
+{"id": "VY9hVzmxg6", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "jailbreak detection via representation disentanglement"}
+{"id": "yeKLUHy9FR", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "classic", "topic": "client fairness in federated learning"}
+{"id": "bIeaWL947E", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "SAFE_RL", "type": "eval", "target": "rl_robot", "topic": "value conflicts in household robots"}
+{"id": "aJaH5Dwqed", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "claim attribution errors in LLM agents"}
+{"id": "1tLDMJM5Pf", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "distributionally robust DPO"}
+{"id": "Ka3HurOGBN", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": "OVERSIGHT", "type": "eval", "target": "mllm", "topic": "MLLM reasoning about visual persuasion"}
+{"id": "dXNjSwdjsv", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "theory", "target": "agent", "topic": "indirect prompt injection defense limits"}

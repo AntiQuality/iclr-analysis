@@ -1,0 +1,30 @@
+{"id": "EbonLCjxKp", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "prompt injection sanitization for tool agents"}
+{"id": "QwTpaSgGaR", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "offline equilibria in convex Markov games"}
+{"id": "2RmTduxO2t", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference for unseen classes"}
+{"id": "7VhSEqDzSt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agentic workflow optimization"}
+{"id": "bRlk20qha5", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "memory exposure privacy in clinical agents"}
+{"id": "xYL04XsiW3", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "CoT monitorability under efficient reasoning training"}
+{"id": "6t9DriPJAa", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "multi-agent communication topology learning"}
+{"id": "b9yDGOKTKv", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "FJePc0DmXn", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "off-policy RL distillation for LLM reasoning"}
+{"id": "zmYx32SSOR", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "classic", "topic": "individual fairness metrics"}
+{"id": "dpVx9wCXAg", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "interleaved multimodal CoT image editing"}
+{"id": "whkb7c1GAV", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "retriever encoder bias in RAG"}
+{"id": "dOxOX4GF1k", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "diffusion", "topic": "image watermark removal and forgery attack"}
+{"id": "zJjespYJGe", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "tool-result replay misbinding in agents"}
+{"id": "3y5IYmERsp", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "VALUES", "type": "defense", "target": "llm", "topic": "dynamic personalized safety in dialogue"}
+{"id": "U7iDHagIz9", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "analysis", "target": "llm", "topic": "pluralistic steerability loss after post-training"}
+{"id": "y5fpdBhhdM", "y": 2026, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "llm", "topic": "prompt injection in LLM peer review"}
+{"id": "d0sYw8EZh6", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "register robustness of LLM bias detection"}
+{"id": "znx9JFvC6E", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "embedding-based safeguard evasion"}
+{"id": "bvnuXYMgjg", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "DANGER_EVAL", "type": "defense", "target": "reasoning", "topic": "harmful knowledge leakage in reasoning traces"}
+{"id": "PSGBG2rBbg", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "uncertainty-driven federated learning"}
+{"id": "gyMMVrB04S", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "heterogeneous federated learning contribution valuation"}
+{"id": "kTKsrreGcy", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "knowledge transfer from visual generation in UMMs"}
+{"id": "ucbT85W9sr", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "unsupervised spurious correlation debiasing"}
+{"id": "ueZOHGh0yB", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "backdoor defense in federated instruction tuning"}
+{"id": "vECe8vpTX7", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "bid privacy in federated learning auctions"}
+{"id": "zqG3IdwJMj", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "classic", "topic": "model stealing in partial model merging"}
+{"id": "MJDrk7kypP", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "general", "topic": "categorical regression loss in REBEL"}
+{"id": "tSy7OtONsg", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "demographic bias in mental health LLM decisions"}
+{"id": "wwUAUputSg", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "context-blind safety under user distress"}

@@ -1,0 +1,30 @@
+{"id": "TMRvp5RVjQ", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "evasion of latent activation monitors"}
+{"id": "BkBXNhY68c", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "ALIGN_TRAIN", "type": "method", "target": "diffusion", "topic": "constitutional policy alignment of generators"}
+{"id": "qcAstxMC0K", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "information-theoretic tracing of transformer representations"}
+{"id": "0IFqBfX7Ak", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "reasoning", "topic": "attributing reasoning behavior to model components"}
+{"id": "8VgRLJU5Gf", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "memory poisoning detection in LLM agents"}
+{"id": "vvqYd6B0M6", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "method", "target": "reasoning", "topic": "steering model goals via value-axis transplant"}
+{"id": "1e9jAnBoYb", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "private verifiable dense retrieval for RAG"}
+{"id": "4ug98Cw9Kj", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "memory consolidation for self-evolving agents"}
+{"id": "N1PhdtojjK", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "generalizable AI-generated image detection"}
+{"id": "aagh5Eschr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "concept representation manifolds in LLMs"}
+{"id": "ZiudQIuzE1", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "methodological hallucination in research agents"}
+{"id": "mhJjOeX7oY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "SMC decoding for diffusion LLMs"}
+{"id": "gc8Ylt0lbm", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "policy-conditioned guardrail models"}
+{"id": "5GVfneFvhq", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "WATERMARK", "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation metric"}
+{"id": "ixk7d0qE0r", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "machine unlearning without retain data"}
+{"id": "yi7Z4AHGsE", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "seed instability of safety preference optimization"}
+{"id": "gCGjyDsQmC", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "reasoning", "topic": "test-time scaling safety under diversity reduction"}
+{"id": "WLStKyK5Qp", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "credit assignment for GUI agent imitation"}
+{"id": "M5Z22pbbL0", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe reinforcement learning"}
+{"id": "duPl83fIhv", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "generated image source attribution"}
+{"id": "bcOD0CLgBb", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "embedding inversion attack defense"}
+{"id": "DR0qHuYqlL", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "DANGER_EVAL", "type": "analysis", "target": "llm", "topic": "safety and fairness costs of model compression"}
+{"id": "GHbuDUW0ZJ", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "reward hacking robustness of reward models and judges"}
+{"id": "Nl50dd67jb", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "strategyproof contextual bandits"}
+{"id": "nr7mU8vdWq", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "evidence-gated retrieval for grounding"}
+{"id": "nV8pZSuGxZ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OOD", "type": "method", "target": "llm", "topic": "robust activation steering under distribution shift"}
+{"id": "2ph3Tnu6lK", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "concept interpretability for biology foundation models"}
+{"id": "klcpX1HxAZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "selective few-shot adaptation for soil prediction"}
+{"id": "lEEaiLxs3E", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "method", "target": "agent", "topic": "evidence-based agent outcome verification"}
+{"id": "P7NUVF6wo4", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "formal verification code benchmark in Lean"}

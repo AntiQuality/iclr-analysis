@@ -1,0 +1,30 @@
+{"id": "ZAGo19Qlq4", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "audio generation watermarking"}
+{"id": "t8K5QVa4lU", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "KV-cache perturbation sensitivity"}
+{"id": "JWW1hhEJTF", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "robust neural architecture search"}
+{"id": "rIWtQoB5NF", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "cloud context anomaly detection benchmark"}
+{"id": "DjA3vVzq12", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "attack", "target": "agent", "topic": "attacker resource capture in LLM agents"}
+{"id": "ppYFgqyUT4", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "memory poisoning attacks on LLM agents"}
+{"id": "AgVtCSanZ5", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "protein optimization via interpretability features"}
+{"id": "ptwWhlPxxD", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "method", "target": "diffusion", "topic": "generative steganography with copyright watermarking"}
+{"id": "ZI9idAGuoL", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "qWAcXNTptu", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "hallucination evaluation metrics"}
+{"id": "y7wojMUx6B", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "agent", "topic": "uncertainty quantification for LLM agents"}
+{"id": "2HGL1Szcp2", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "HALLU", "type": "defense", "target": "mllm", "topic": "data poisoning in LVLM fine-tuning"}
+{"id": "PUF59XbkOv", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": "OVERSIGHT", "type": "method", "target": "rl_robot", "topic": "faithful reasoning in driving VLAs"}
+{"id": "KYqHcVVR92", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "certified robustness via SDP"}
+{"id": "zRvZBHHDpe", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "VALUES", "type": "eval", "target": "llm", "topic": "paternalism in personalized LLMs"}
+{"id": "84DTHAm97R", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-generated code detection"}
+{"id": "zVkL0dx6xz", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "general", "topic": "order-dependent data poisoning backdoors"}
+{"id": "N3tNk52zlJ", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "safety alignment via SFT vs RL"}
+{"id": "5m4uz1NzTg", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "reliability of automated SAE feature labels"}
+{"id": "Ff7IGNEd3I", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe off-policy RL replay sampling"}
+{"id": "aFYfsGf69Z", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "multiview 3D consistency metrics"}
+{"id": "csD5GiGGFc", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "DP synthetic data via foundation model APIs"}
+{"id": "iC8Bmj9kiY", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "document-structure backdoor poisoning"}
+{"id": "FmGV49IXl9", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "memory poisoning attacks on LLM agents"}
+{"id": "xEcUIn81Fp", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "universal weight subspaces"}
+{"id": "rcTBR9J06T", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "weak-to-strong distillation for RL"}
+{"id": "2UVYeupOsM", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "critical question generation for peer review"}
+{"id": "5c9Y6dHKPH", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "theory", "target": "llm", "topic": "intent-hiding compositional jailbreaks"}
+{"id": "frjth7SlNd", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "self-attribution bias in AI monitors"}
+{"id": "1cb4Ma3Xif", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning robustness/relearning"}

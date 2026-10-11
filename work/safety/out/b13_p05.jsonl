@@ -1,0 +1,30 @@
+{"id": "odpjQXCK0j", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "training image extraction from personalized diffusion"}
+{"id": "7pNiMG2uaJ", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "MCQA evaluation via output prefilling"}
+{"id": "HzQOYfOWrA", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "category unlearning in video anomaly detection"}
+{"id": "OXH7eBpgVh", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "group-level differential privacy"}
+{"id": "KPw0kG7WIl", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "classic", "topic": "loss landscape of machine unlearning"}
+{"id": "FreoCzEI82", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "security auditing of agent runtimes"}
+{"id": "aWYYU09BfJ", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "mllm", "topic": "visual prompt injection in VLMs"}
+{"id": "1n01Emedmp", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM self-learning pretraining"}
+{"id": "5orAIBbDen", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "UNLEARN", "type": "defense", "target": "rl_robot", "topic": "corrupted experience purification in vehicle platoons"}
+{"id": "OADUXFCIBo", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "runtime safety guard for long-horizon agents"}
+{"id": "tHcbl0UuxC", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "federated multi-objective preference alignment"}
+{"id": "ph3FlvaE9a", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "safety data curation for fine-tuning"}
+{"id": "xuYAIX5ouE", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "defense", "target": "llm", "topic": "content-use restriction against LLMs"}
+{"id": "sdj9XRJElt", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "worst-group distributionally robust optimization"}
+{"id": "5HxwwXdfD1", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-generated text detection"}
+{"id": "U0Jc1LoPZM", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on world action models"}
+{"id": "E2c5ed5Rew", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "eval", "target": "agent", "topic": "information flow tracking against prompt injection"}
+{"id": "si3mQHv7An", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "representation-based jailbreak attacks"}
+{"id": "oVyMK8YA9w", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "document tampering detection robustness"}
+{"id": "FP81YwxyaC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "on-policy distillation for pathology VLMs"}
+{"id": "b52gOqaSm6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "credit assignment in multi-agent LLM RL"}
+{"id": "0DzeIunmhn", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "jailbreaking agents via malicious skills"}
+{"id": "hsBBYOqph2", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "inference-time reward model search"}
+{"id": "VF5xa8k0G0", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "LVLM object hallucination mitigation"}
+{"id": "NHOLsaHuFv", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "INTERP_GEN", "type": "method", "target": "mllm", "topic": "spurious correlation mitigation in VLMs"}
+{"id": "2jI2w84CQi", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "manipulation of LLM aggregators by false labels"}
+{"id": "yRr7Dq63r1", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "reasoning", "topic": "activation steering for reasoning model safety"}
+{"id": "ztXAd5EZ8G", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "activation patching in VLMs"}
+{"id": "YfzEcMqr05", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "image watermarking"}
+{"id": "UIngjIIVGR", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "verification-guided repair of learned controllers"}

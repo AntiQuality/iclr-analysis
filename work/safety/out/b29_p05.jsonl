@@ -1,0 +1,30 @@
+{"id": "Pg7gwolvo9", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "RAG database extraction attack"}
+{"id": "aLNRyp5ZHz", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation/auditing"}
+{"id": "Wrp7TqBo0s", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "multiagent", "topic": "verifiable release assurance for multi-agent LLMs"}
+{"id": "rcdGXD2dfW", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "VLM-as-judge for visual generation evaluation"}
+{"id": "bYGjVjmGxQ", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "federated backdoor defense"}
+{"id": "yP15n9p1Lr", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "lightweight safety patching of LLMs"}
+{"id": "hG4SkCkDpB", "y": 2027, "rel": 1, "sub": "IP", "sub2": null, "type": "method", "target": "llm", "topic": "training data traceability in LoRA"}
+{"id": "4AsNoESTNC", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "causal concept rule explanations for vision"}
+{"id": "xra4QOTaw6", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "probe readability versus steering writability"}
+{"id": "zj2mI9TSF7", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "associative recall mechanisms in SSMs"}
+{"id": "hCJSjiMlfA", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "diffusion", "topic": "hallucination correction in diffusion models"}
+{"id": "ijOAhcHI7S", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "adversarial perturbation of LLM math reasoning"}
+{"id": "ZfdnZhOP0k", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "eval", "target": "llm", "topic": "LLM memorization study suite"}
+{"id": "o9aYcHbl78", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "multi-concept safety guidance in T2I"}
+{"id": "PJniGkyEsU", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "tool-call capability enforcement for agents"}
+{"id": "raVv5eoGMs", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "label differential privacy utility recovery"}
+{"id": "fCZf20wK6p", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination mitigation via contrastive decoding"}
+{"id": "v8bflLFYm7", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "mllm", "topic": "differentially private in-context learning"}
+{"id": "i4HzrWg6X4", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "ambiguous safety rules in constrained RL"}
+{"id": "TDVvy8Sg7d", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "model poisoning detection in federated learning"}
+{"id": "tuVoXYPM4s", "y": 2027, "rel": 2, "sub": "PI", "sub2": "INTERP_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense via neuron edit"}
+{"id": "9DqJSh2P6I", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "rl_robot", "topic": "unlearning in robot control policies"}
+{"id": "sq6Lc4v80W", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "memorization during supervised fine-tuning"}
+{"id": "Obn1sVtmBL", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal emotion understanding reasoning"}
+{"id": "E57QiLmAUV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM image-text retrieval reranking"}
+{"id": "t5Nd4HiI3E", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "reasoning", "topic": "preference optimization for reasoning models"}
+{"id": "HNXm0btYpn", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "legal RAG QA benchmark"}
+{"id": "Td9Oi4Hhwg", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM value ranking plasticity"}
+{"id": "grzpYuC8aT", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "hallucination detection metric validity"}
+{"id": "Qf8pqpxUwV", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "mllm", "topic": "image preprocessing collisions in VLMs"}

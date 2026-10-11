@@ -1,0 +1,23 @@
+{"id": "2JNLwacLRw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "society-of-thought in VLM reasoning"}
+{"id": "GyFz2Crs57", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "mllm", "topic": "representation-guided image jailbreaks of MLLMs"}
+{"id": "oQrxzSYKfp", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "failure attribution in multi-agent systems"}
+{"id": "VHN51quQHS", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on RAG"}
+{"id": "jgvIFJFrhT", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "llm", "topic": "equitable skill elicitation"}
+{"id": "RlufsTjzWV", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "agent", "topic": "policy-aware agent safeguards"}
+{"id": "cBdVyWs7dC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "rubric rewards for text-to-music"}
+{"id": "5hfFWQ3Joo", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "contextual privacy in multi-party conversations"}
+{"id": "FRTZhAzWRC", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "alignment from in-situ user feedback"}
+{"id": "bso6S1JNOd", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "semantic adversarial attacks on face recognition"}
+{"id": "uOkxHAuqYA", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "WATERMARK", "type": "analysis", "target": "llm", "topic": "membership inference and machine text detection"}
+{"id": "eFsjLjW3Gh", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "OOD detection"}
+{"id": "n7Kbly3UeX", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "automated LLM safety benchmark construction"}
+{"id": "zZu1tOtGDW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "latent world-model RL for driving"}
+{"id": "jLiWZonfbr", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "copy versus compose circuit competition"}
+{"id": "soyon7CvtZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "budgeted reasoning and retrieval control"}
+{"id": "Db5TUogRSM", "y": 2026, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "weak-to-strong generalization theory"}
+{"id": "Fd1jgQQW28", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "risks in self-evolving agents"}
+{"id": "YJHrhwUqIc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "evidence-eliciting prediction markets"}
+{"id": "P6Mj57Y7Ci", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "multiagent", "topic": "implicit social bias in LLM agents"}
+{"id": "JQW9J9Q2gp", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on weather forecasting"}
+{"id": "xdDG7b9ga6", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "cost critic reliability in safe RL"}
+{"id": "3ya9al7egn", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "membership inference on synthetic tabular data"}

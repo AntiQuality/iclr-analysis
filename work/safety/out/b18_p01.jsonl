@@ -1,0 +1,30 @@
+{"id": "zqtvdsU0bO", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "listwise self-play preference optimization"}
+{"id": "PjfQgrbPXy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "computation in looped transformers"}
+{"id": "cI6R4eoqJ4", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "mKWxOEregd", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "UmzQqgrCPV", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "attack", "target": "llm", "topic": "jailbreak attack-defense co-evolution"}
+{"id": "lThESAFDTf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "T2I prompt embedding reward optimization"}
+{"id": "xi4MnsT54J", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "federated data and feature selection"}
+{"id": "CDIe3AfLu9", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "authority separation in coding agents"}
+{"id": "YG9ZxM9QwK", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "sparse autoencoder architecture"}
+{"id": "ITPcS1Qvif", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "LLM unlearning evaluation residual knowledge"}
+{"id": "eQrJcFXkwi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "agent", "topic": "activation steering of tool-call decisions"}
+{"id": "TwwQK9H0oe", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "itemwise vs relational reward modeling"}
+{"id": "9J1wikUlHY", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM personality trait evaluation"}
+{"id": "NVsEqHQb1X", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "emergent misalignment mechanisms"}
+{"id": "DMq0aTrcTh", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "ZrgxU8WMmG", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "process supervision for OR modeling"}
+{"id": "HRX9psvA5T", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "multilingual LLM safety benchmark"}
+{"id": "dtcX6uohfX", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "certified safe policy switching in RL"}
+{"id": "l7Eyl0npKQ", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal reward model text shortcuts"}
+{"id": "p47yPQ477X", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "biomedical RAG retrieval"}
+{"id": "N6uaeMe55R", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety shielding under distribution shift"}
+{"id": "OsBC3WTCcD", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "shallow safety alignment fragility"}
+{"id": "1yXsMYyZVj", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "token-level forgetting in SFT"}
+{"id": "klB3AvQZqJ", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL"}
+{"id": "CSfcpGj48W", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "OOD", "type": "attack", "target": "classic", "topic": "attacks on conformal novelty detection"}
+{"id": "GlVokkOzui", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fairness in federated learning"}
+{"id": "0DHYQPJq89", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "causal ablation methodology"}
+{"id": "BJlDHn1L8T", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "memory pollution in multi-agent systems"}
+{"id": "ABOPBAJFiT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "position", "target": "agent", "topic": "scientific memory evaluation for agents"}
+{"id": "Ix4WA6AXPe", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning utility preservation"}

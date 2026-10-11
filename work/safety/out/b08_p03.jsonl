@@ -1,0 +1,30 @@
+{"id": "ZjTEBV3mT2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "multi-scenario protein design"}
+{"id": "NWZLYFkVkl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "general", "topic": "numerical precision in compiled transformers"}
+{"id": "hTD1h4HNTf", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private federated analytics"}
+{"id": "lciwbzjTuo", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "5sP9M4zD5d", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "distribution-level preference optimization"}
+{"id": "Hf1yFf3rBq", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "factuality reward for medical VLMs"}
+{"id": "tj0n7uzqHe", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "general", "topic": "label-free OOD detection"}
+{"id": "9u9PfpF7Jm", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "test-time adversarial defense"}
+{"id": "4Lop9ReXBP", "y": 2026, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "watermarked image restoration"}
+{"id": "xjrBG9BvCj", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "llm", "topic": "RAG knowledge extraction attack"}
+{"id": "wTMH0baxky", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "RGB-D salient object detection"}
+{"id": "q6kXd8Gpfj", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "NL2SQL task decomposition"}
+{"id": "El37o7iBjX", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "multi-turn jailbreak attacks"}
+{"id": "xPj0mDVUmK", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection from internal signals"}
+{"id": "bSH82qjvtO", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "mllm", "topic": "explainable deepfake detection benchmark"}
+{"id": "zTMq2gKF01", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "general", "topic": "attribution faithfulness evaluation"}
+{"id": "6El44NUEDo", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "visual prompt injection in mobile agents"}
+{"id": "TN72W2lxml", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "GNN ownership verification"}
+{"id": "RmUy70TbFv", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving video anomaly detection"}
+{"id": "x6XP9BjYnY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "cross-domain retention in context distillation"}
+{"id": "kvdWQ7Yl7L", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "computer-use agent safety auditing with OS provenance"}
+{"id": "f89YwUwdZu", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "multimodal graph OOD detection"}
+{"id": "p7wDMVUJ0b", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "context deception attacks on computer-use agents"}
+{"id": "oPw1gxh3Mf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "user simulation from dialogue"}
+{"id": "wPkW7Osy8E", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe RL with control barrier functions"}
+{"id": "RAvm6pwWB1", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL"}
+{"id": "64PMEKVZP1", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial example detection"}
+{"id": "QOQa8LgYc4", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "generalization vs memorization training order"}
+{"id": "qDWCv0xg42", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "classic", "topic": "filter bubbles and polarization in recommenders"}
+{"id": "0pucc5dfN3", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "generalizable deepfake detection"}

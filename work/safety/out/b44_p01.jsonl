@@ -1,0 +1,30 @@
+{"id": "4AP1Glu18E", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "HALLU", "type": "method", "target": "multiagent", "topic": "epistemic trust in multi-agent LLM systems"}
+{"id": "ePhUAgGReu", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM hallucination mitigation"}
+{"id": "f9GKC32rSM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "multiagent", "topic": "latent communication between LLM agents"}
+{"id": "hv6GmFPz8D", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "analysis", "target": "llm", "topic": "behavioral drift after safety alignment"}
+{"id": "TNIFLLzOTo", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private synthetic text generation"}
+{"id": "OWvvdl27CE", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM uncertainty quantification"}
+{"id": "nZw3ZyG6Eh", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "crypto agent safety benchmark"}
+{"id": "kNE7WNxuZK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "stratified architecture for logical reasoning"}
+{"id": "6asCqF7oZo", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "PII extraction from LLMs"}
+{"id": "2rHgthRh2S", "y": 2027, "rel": 2, "sub": "PI", "sub2": "JB_ATK", "type": "attack", "target": "agent", "topic": "indirect prompt injection in computer-use agents"}
+{"id": "QrdC1Pq5Q1", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "SAE feature-brain response correspondence"}
+{"id": "URjuuHqcQw", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "black-box adversarial attack on action recognition"}
+{"id": "qqWPNiig1Q", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "batch-normalization backdoor attack"}
+{"id": "FiRBNBdaZy", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "DECEPTION", "type": "method", "target": "llm", "topic": "inoculation prompting against emergent misalignment"}
+{"id": "xLPmPvbfVX", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "mobile agent safety benchmark"}
+{"id": "ISEhxbuOmt", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "analysis", "target": "agent", "topic": "human approval integrity for coding agents"}
+{"id": "BTSzG0aEyy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM rationale faithfulness in document classification"}
+{"id": "3m7aidZJRa", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "faithful clinical text summarization"}
+{"id": "LmLmhb6GEL", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "function vectors and concept invariance"}
+{"id": "5jGPvVLo1k", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "agent", "topic": "runtime monitoring of tool-using agents"}
+{"id": "EqIJDzMarv", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "psychometric analysis of safety benchmarks"}
+{"id": "gRDe98c41c", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "PI", "type": "defense", "target": "llm", "topic": "system prompt leakage detection"}
+{"id": "OKnM5rEUbg", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "conformal factuality for RAG"}
+{"id": "koh6oSWLXZ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differential privacy against data reconstruction"}
+{"id": "sDlOoXQ8rX", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "steering LLM psychotherapeutic skills"}
+{"id": "RppsCECZvP", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "GRPO negative group reweighting"}
+{"id": "3cUlC7f7tK", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "llm", "topic": "LLM-generated text detection robustness"}
+{"id": "lqVOfD87Mr", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "agent", "topic": "system prompt instructions in coding tools"}
+{"id": "Sq5NKqdg3h", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "causal abstraction in mechanistic interpretability"}
+{"id": "TRoM2RZ1Hn", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}

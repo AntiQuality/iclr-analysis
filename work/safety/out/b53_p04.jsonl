@@ -1,0 +1,30 @@
+{"id": "s9iTCNII1O", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "certified unlearning guarantees"}
+{"id": "uxi7YoZ13b", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "secure code generation via robust reward"}
+{"id": "cWFfCfZQxL", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "INTERP_SAFE", "type": "analysis", "target": "agent", "topic": "contextual integrity privacy leakage in agents"}
+{"id": "FgCI1RlJti", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "training data attribution via SAE features"}
+{"id": "DQMZ05KCXv", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "clarification before irreversible tool calls"}
+{"id": "uPIlK5UOFC", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "mllm", "topic": "speaker-identity unlearning in audio LLMs"}
+{"id": "RVTf5BFDDV", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "diffusion", "topic": "data unlearning in flow matching models"}
+{"id": "nfpWdAobaw", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "classic", "topic": "clinical-signal auditing of medical models"}
+{"id": "4lG3d2QtGR", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "reasoning", "topic": "evaluation awareness representations and steering"}
+{"id": "j4YInPRa9C", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "model inversion defense in collaborative inference"}
+{"id": "eSf8Sz74IG", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "durable algorithmic recourse"}
+{"id": "jJb8QPInoP", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "automated jailbreak skill evolution"}
+{"id": "q9KMXiy7th", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "multiagent", "topic": "safety evaluation of generative agent simulations"}
+{"id": "Gb1zomWB48", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on LLM synthetic tabular data"}
+{"id": "qNlTH4kYJZ", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM value orientation evaluation"}
+{"id": "V0jhErYl9k", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "mllm", "topic": "privacy-preserving video action recognition"}
+{"id": "XAuWxe5L8m", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "llm", "topic": "distributionally robust prompt optimization"}
+{"id": "p4ZXFYp9jK", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "multiagent", "topic": "population diversity in LLM social simulation"}
+{"id": "a1d2smwmBS", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "eval", "target": "multiagent", "topic": "multi-agent collusion in financial fraud"}
+{"id": "loc4QSnO7D", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SOCIETAL", "type": "analysis", "target": "multiagent", "topic": "algorithmic collusion among pricing agents"}
+{"id": "xl5H8WfOMX", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "per-token confidence trustworthiness estimation"}
+{"id": "3j92GUsjuB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "uncertainty quantification for QA"}
+{"id": "iDaJ5AwN6z", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "deconfounded latent world models"}
+{"id": "uAFTCpt4Em", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent safety under benign delegation"}
+{"id": "P3kH8fecLl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "training-data extraction from fine-tuned LLMs"}
+{"id": "iSzblywCOv", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "affective memory for long-horizon agents"}
+{"id": "gfXSfaPGaI", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "PI", "type": "defense", "target": "multiagent", "topic": "privacy-safe disclosure in multi-agent negotiation"}
+{"id": "TQC7icwzBq", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "label noise vs smoothing in DPO"}
+{"id": "IXhIVYI8wP", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "evaluation awareness probing validity"}
+{"id": "IPqUBL4R9x", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "distributional unlearning via data removal"}

@@ -1,0 +1,30 @@
+{"id": "bkQMryGDaf", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "weight-space invariants of attention heads"}
+{"id": "pI57MPBmfK", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "token-cost attacks via malicious agent skills"}
+{"id": "WgQlxdQzwM", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "privacy leakage in GraphRAG evidence"}
+{"id": "EcMbDqixxy", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "malicious agent skill composition attacks"}
+{"id": "VjdJ253Q5f", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "gradient inversion in federated learning"}
+{"id": "Ef5QdlXMNy", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection generalization"}
+{"id": "grIvSXVJ65", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "llm", "topic": "self-preference bias in LLM judges"}
+{"id": "cnC9lw94Q2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "causal controls for activation interventions"}
+{"id": "zmLFhmQq1s", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "circuit discovery faithfulness evaluation"}
+{"id": "PlkzZhqBCd", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "hierarchical planning for long CoT"}
+{"id": "WyGZ0SjThh", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "HALLU", "type": "method", "target": "mllm", "topic": "preference optimization for LMM modality balance"}
+{"id": "VaGg09S192", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "personalized reward models for T2I"}
+{"id": "nhJK05OQne", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial perturbation via functional shrinkage"}
+{"id": "aQedgzn9u8", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "backdoor attacks on driving world models"}
+{"id": "kIAy71V3QR", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PRIVACY", "type": "attack", "target": "classic", "topic": "backdoor attacks in vertical federated learning"}
+{"id": "ARH0jNCV4p", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "particle-filter correction of initial policies"}
+{"id": "zrGIwrRXvL", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "adversarial robustness evaluation of graph transformers"}
+{"id": "oXWVmmiUwn", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "mL3uFW2ME9", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "compositional privacy leakage in multi-agent systems"}
+{"id": "HjU9lEXJDa", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "VLM progress reward modeling for robots"}
+{"id": "OClG6Kns1j", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "analysis", "target": "mllm", "topic": "SAE cross-modal feature interpretability"}
+{"id": "r8PXYyvo0k", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "code hallucination in completion models"}
+{"id": "tjNgRr5kox", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "analysis", "target": "llm", "topic": "safety degradation from benign fine-tuning"}
+{"id": "06EE3I8x2V", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "validating automatic robot policy evaluators"}
+{"id": "KX6IB7lNom", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning for classifiers and generators"}
+{"id": "o10i4HzZ0U", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "textual adversarial example detection"}
+{"id": "hAbpnKE1g0", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "mllm", "topic": "audio-LLM judge reliability"}
+{"id": "pUfnKUhQYN", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "DECEPTION", "type": "eval", "target": "llm", "topic": "LLM steganography capability evaluation"}
+{"id": "4LcAY5Q3z5", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "Kpe8fWgGPf", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy-preserving LLM inference"}

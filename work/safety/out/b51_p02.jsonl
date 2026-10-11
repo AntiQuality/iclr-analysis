@@ -1,0 +1,30 @@
+{"id": "3Y7jslvpCm", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "membership inference on fine-tuned LLMs"}
+{"id": "dbpaZ8Y01l", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "safety retention during task adaptation"}
+{"id": "tZeU77yy7w", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "many-shot jailbreak defense"}
+{"id": "w6g2NYx7q3", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "mllm", "topic": "VLM sensitivity to misleading auxiliary text cues"}
+{"id": "OWHkAJsQ3v", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "rl_robot", "topic": "mechanistic analysis of VLA models"}
+{"id": "KfpQmoI5FM", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "enterprise-like tabular classification benchmark"}
+{"id": "Tr74UMzBdw", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "OOD", "type": "eval", "target": "llm", "topic": "anomaly detection for LLM misalignment"}
+{"id": "ejA3ntGsL2", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "data leakage auditing in federated LLM fine-tuning"}
+{"id": "7zlTaYn6yz", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "multiagent", "topic": "medical text error detection and correction"}
+{"id": "XhOtVNihIJ", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "self-preference bias in LLM judges"}
+{"id": "N6NJJ8TPda", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "diffusion", "topic": "adversarial robustness of autoregressive video generation"}
+{"id": "ETYBD2b5GW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "project state harness for coding agents"}
+{"id": "2NZt0EcaWo", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "theory", "target": "llm", "topic": "strategic confidence misreporting in delegation"}
+{"id": "2OcklgJiU0", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "selective prediction for vision-language models"}
+{"id": "8F0H5aq24A", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "image manipulation localization and recovery"}
+{"id": "gs4ycgFXAB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "non-linear concept manifold discovery"}
+{"id": "S5oOUUKaGX", "y": 2027, "rel": 1, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "curvature-aware capability-preserving adaptation"}
+{"id": "3iGpfhbePX", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "BACKDOOR", "type": "defense", "target": "classic", "topic": "privacy-preserving Byzantine-robust federated learning"}
+{"id": "IkuzdYEZbj", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "lifelong knowledge editing"}
+{"id": "kU3odL8dqz", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "mllm", "topic": "concept erasure recoverability in CLIP"}
+{"id": "dKIRXk4dWQ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy-aware edge-cloud RAG routing"}
+{"id": "wgpR2Y7DnS", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "llm", "topic": "routing side-channel leakage in MoE inference"}
+{"id": "jiNMblSHZd", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "adaptive refusal steering"}
+{"id": "g6tafd2Yfp", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP matrix factorization with learning rate schedules"}
+{"id": "cXMZbIBR1T", "y": 2026, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM-as-judge reward hacking via master keys"}
+{"id": "Fj6LakRHcT", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "safety subspace separability under fine-tuning"}
+{"id": "BPqe5ffGwe", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "atomic units of LLM representations"}
+{"id": "Legxn5dGb3", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "facial privacy against unauthorized recognition"}
+{"id": "qEXbAU67Kh", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "classic", "topic": "4D Gaussian splatting ownership watermarking"}
+{"id": "cnkWuCj6X6", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM recommendation preference optimization"}

@@ -1,0 +1,30 @@
+{"id": "ZFNxFtOtyG", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "attribute control in private synthetic text"}
+{"id": "R4w7JyOVrz", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "backdoor defense in decentralized LLM fine-tuning"}
+{"id": "WL10NscM2M", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "RLVR optimizer for generative classification"}
+{"id": "hgUngr5Oxt", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "quantization-conditioned backdoor defense"}
+{"id": "6xRKNaW0Ld", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial robustness of GNNs"}
+{"id": "tK4yRayph8", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "CoT faithfulness: silent wrong-step detection"}
+{"id": "k5SgTEKdA2", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "federated LoRA aggregation"}
+{"id": "20aqR8E6En", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "INTERP_SAFE", "type": "defense", "target": "agent", "topic": "safety degradation in self-evolving agents"}
+{"id": "jgCaVBmaGb", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "diffusion", "topic": "image watermark forgery attack"}
+{"id": "tiQI0BTKmo", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "attack", "target": "agent", "topic": "resource exhaustion attacks on LLM agents"}
+{"id": "cBhqgPtEqw", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in MLLMs"}
+{"id": "80mbQCXL6S", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanistic interpretability of numerical comparison"}
+{"id": "DfppeDkdq0", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "DANGER_EVAL", "type": "method", "target": "mllm", "topic": "safety process reward models for MLLMs"}
+{"id": "fvUewMH9lG", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "agent memory-use failure testing"}
+{"id": "NdSygrpDPZ", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "omni-modal MLLM jailbreak"}
+{"id": "dKL1v456tE", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO variant for training stability"}
+{"id": "OCkJKMhIzV", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM vs human strategic behavior in games"}
+{"id": "eL8tpHSEYa", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in MLLMs"}
+{"id": "ozBXXB6eWg", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "scalable LLM unlearning"}
+{"id": "UNiucaxtuX", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "inference-time safety steering decoding"}
+{"id": "ewC9iwU1BC", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "ALIGN_TRAIN", "type": "defense", "target": "general", "topic": "biosecurity risk in protein language models"}
+{"id": "S5VpIw9IaO", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "method", "target": "agent", "topic": "secure code generation"}
+{"id": "SFMJPriDVw", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "reasoning", "topic": "antidistillation of reasoning traces"}
+{"id": "dpVhlf13tk", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "jailbreaking code agents"}
+{"id": "rb7rnOSa2g", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "robust semantic watermark for diffusion"}
+{"id": "L90JBqJ4n0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "computation in superposition toy models"}
+{"id": "If1kyrGvYg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "train-test leakage in navigation benchmarks"}
+{"id": "k1eocL5yzL", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM fingerprinting for provenance"}
+{"id": "ZmTTIBqPD2", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "jailbreak optimization for LLM agents"}
+{"id": "om4CzLav4Q", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "RLHF training stability"}

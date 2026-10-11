@@ -1,0 +1,30 @@
+{"id": "6RSvDXoWsF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "personalized agent permission control"}
+{"id": "tmOky2LKAK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "multiagent", "topic": "safety monitoring of latent multi-agent communication"}
+{"id": "yuW4QbC4Dx", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "unlearning transfer without forget set"}
+{"id": "CO9WVNnmW8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "correlated transfer attacks on ensembles"}
+{"id": "KVS1GOjkcu", "y": 2027, "rel": 2, "sub": "PI", "sub2": "PRIVACY", "type": "defense", "target": "agent", "topic": "information-flow control for browser agents"}
+{"id": "hRmt0A4ODZ", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "eval", "target": "classic", "topic": "OOD detection benchmark inflation"}
+{"id": "qbEQie2DAd", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "confident errors evading hallucination detection"}
+{"id": "jln57MIkop", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM unlearning"}
+{"id": "k3F29Z2azs", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "modality preference in MLLMs"}
+{"id": "O25yObdgxa", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "BACKDOOR", "type": "attack", "target": "llm", "topic": "training data extraction via poisoning"}
+{"id": "NzFTAmEL2b", "y": 2027, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "tabular data watermarking"}
+{"id": "yqc1CMXetD", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "reasoning", "topic": "exploration in reasoning post-training"}
+{"id": "EzXzGRngYb", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on GNNs"}
+{"id": "YsS9undoI7", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "length confounds in DPO data selection"}
+{"id": "k2nsulWyQ8", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "adversarially robust image quality assessment"}
+{"id": "oJgNNBNEJM", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "hallucination detection in RAG"}
+{"id": "GuWmlr4NXA", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "JB_ATK", "type": "theory", "target": "llm", "topic": "red-teaming policy selection for hidden behaviors"}
+{"id": "3FLO4hiI8g", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "probe-based factuality screening"}
+{"id": "FxhmJixuID", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "defense", "target": "mllm", "topic": "short-video misinformation detection"}
+{"id": "fH20Dxa5CG", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM-generated text detection"}
+{"id": "fbX0kQtQXs", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "personalized safety alignment"}
+{"id": "Nv8es4jEv9", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "theory", "target": "general", "topic": "formalizing Goodhart's law"}
+{"id": "V727xqBYIW", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "generative process reward models"}
+{"id": "F36FHhtDmx", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "general", "topic": "OOD testing with FDR control"}
+{"id": "t4dfdNdg7y", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "truthful decoding"}
+{"id": "KjpPZFLyEV", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "theory", "target": "general", "topic": "identifiability of authorization counterfactuals"}
+{"id": "IsmwMJCMJP", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "OVERSIGHT", "type": "method", "target": "multiagent", "topic": "agentic misalignment in automated workflows"}
+{"id": "5YWfCcvclm", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "forgery-resistant diffusion watermarking"}
+{"id": "wkMzfEABmr", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "selective forgetting in agent memory"}
+{"id": "WR3yeFWHbJ", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "Wasserstein distributional robustness certificates"}

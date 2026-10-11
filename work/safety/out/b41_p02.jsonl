@@ -1,0 +1,30 @@
+{"id": "Dv97ivGjui", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "text watermarking for diffusion LMs"}
+{"id": "mun6IiBtDh", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "flatness-based robustness certificates"}
+{"id": "GXCiD3ENSJ", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "eval", "target": "rl_robot", "topic": "proposal-level safety auditing in safe RL"}
+{"id": "A3DELRfrKO", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "hidden-state safety guardrail ranking"}
+{"id": "zimuL7ZmIi", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM-generated text detection"}
+{"id": "NAn4qt5nJJ", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": "JB_ATK", "type": "method", "target": "llm", "topic": "statistically reliable model behavior discovery"}
+{"id": "vzXyVNCGAL", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "activation steering for safety"}
+{"id": "vo4Diesi8h", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "classic", "topic": "efficient exact machine unlearning"}
+{"id": "gGJh5AZTG7", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "logical reasoning over SAE features"}
+{"id": "oxktVRQjYg", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "query-efficient local risk estimation"}
+{"id": "mEHBHxHnLO", "y": 2026, "rel": 1, "sub": "GEN_SAFE", "sub2": null, "type": "method", "target": "diffusion", "topic": "vehicle damage image synthesis"}
+{"id": "ziJBgdjfFh", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "best-of-n inference-time alignment"}
+{"id": "nJJXd2cVUk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "self-rewarding RL for audio reasoning"}
+{"id": "5yCSKu2bgz", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable adversarial attacks on MLLMs"}
+{"id": "Gf0PQla3Ii", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "X1q8AF6kiW", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "robust preference optimization under shift"}
+{"id": "1nIT1ryLzw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "learning from synthetic data theory"}
+{"id": "lvkt6OMQWI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "FNwGM9DwqZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "constrained climate emulator evaluation"}
+{"id": "GzvdIo1QiP", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "SOCIETAL", "type": "position", "target": "general", "topic": "AIGC watermarking regulation in Africa"}
+{"id": "jeTiBeW3iZ", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "efficient memorization score estimation"}
+{"id": "acXXwAb7OZ", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "jsshaE1NNK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward models for math"}
+{"id": "AYtAttCH5F", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial purification for VLMs"}
+{"id": "20DsUSauCj", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "method", "target": "llm", "topic": "persona vectors for trait monitoring"}
+{"id": "PjsJiEaWaA", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "certified robustness to physical corruptions"}
+{"id": "ROioaZ45Yz", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "weak LLM preference annotation"}
+{"id": "qIrPFL59Dz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "VLA checkpoint routing"}
+{"id": "2BiIIaLSTx", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "deepfake detector evaluation"}
+{"id": "aPwzjjRItV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "authority-constrained clinical multimodal fusion"}

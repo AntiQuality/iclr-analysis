@@ -1,0 +1,30 @@
+{"id": "O0zOP26whT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "memorization mitigation in diffusion models"}
+{"id": "SQ9jHvtFOh", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "mllm", "topic": "safety benchmark for omni-modal LLMs"}
+{"id": "C4YaezgCEP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "multi-agent traffic simulation RL fine-tuning"}
+{"id": "vSZOEx1QHr", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "OOD detection via outlier synthesis"}
+{"id": "tcsQppcisk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "RL for RTL code optimization"}
+{"id": "2r9ZRCBu9Q", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "private inference with homomorphic encryption"}
+{"id": "PpK4MAbUy1", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "watermarking audio-visual generation"}
+{"id": "NOBzyFqdOi", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "preference optimization for flow models"}
+{"id": "MnCJHVTbSg", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning via preference optimization"}
+{"id": "I6gP9SjL4I", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "LLM memory effects on personalized advice"}
+{"id": "RsDmCz23AJ", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "attack", "target": "classic", "topic": "physical backdoor-adversarial attacks"}
+{"id": "7ITgWCVDlG", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "eval", "target": "llm", "topic": "rare harmful behavior probability estimation"}
+{"id": "m2sITKrlDH", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "pretraining data poisoning"}
+{"id": "gpt1K3Ia4D", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "OVERSIGHT", "type": "defense", "target": "llm", "topic": "deception detection with model organisms"}
+{"id": "E7azog9Nvq", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "HALLU", "type": "eval", "target": "mllm", "topic": "sycophancy in VLMs"}
+{"id": "vGFGNeLSQV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "catastrophic forgetting in domain SFT"}
+{"id": "jTHWqtQuDi", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "LLM honesty and lying benchmark"}
+{"id": "3wixqHvlaj", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "privacy-preserving LLM unlearning"}
+{"id": "Y6s5gQi9lG", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in LVLMs"}
+{"id": "8oChW7j23K", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "classic", "topic": "misinformation detection on social media"}
+{"id": "MOmf9cjGQ2", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "JB_ATK", "type": "eval", "target": "rl_robot", "topic": "refusal robustness of embodied VLM planners"}
+{"id": "xaTmmj47Iu", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "reasoning", "topic": "process reward model generalization"}
+{"id": "3MEKUHbLwg", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context learning mechanisms"}
+{"id": "0MfTMeelT0", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "selective prediction via hidden-state probes"}
+{"id": "YGPQP4LElE", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "exemplar-based explainability"}
+{"id": "tZ8cgf8X4T", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful fine-tuning defense"}
+{"id": "S0D3EFWohd", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": "REWARD_HACK", "type": "method", "target": "llm", "topic": "weight-space steering of model behaviors"}
+{"id": "K3eayrekBA", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "method", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "trBEiQFkxw", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "reasoning", "topic": "RLHF with thinking for chat"}
+{"id": "KG6UT9fjNK", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "WATERMARK", "type": "analysis", "target": "llm", "topic": "economic impact of AI-generated books"}

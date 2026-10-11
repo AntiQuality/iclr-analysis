@@ -1,0 +1,23 @@
+{"id": "oIFOexbtP3", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "memorization mitigation in diffusion models"}
+{"id": "cm0fjA9Pwf", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "factored belief representations in transformers"}
+{"id": "gF31wuYdk7", "y": 2026, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "eval", "target": "multiagent", "topic": "conformity and rapport bias in multi-agent LLMs"}
+{"id": "GPya82gZy7", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "source arbitration circuits under quantization"}
+{"id": "sgJwkKC1rv", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "VLM private attribute inference"}
+{"id": "91b5jtd492", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": "PRIVACY", "type": "method", "target": "llm", "topic": "federated personalized RLHF"}
+{"id": "N8o6YAZcoX", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "hidden-state error detection"}
+{"id": "9KKNiNKgNk", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "RL for factuality hallucination reduction"}
+{"id": "cnHG1yMTSt", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial and typographic robustness of VLMs"}
+{"id": "DdD6lrUDP0", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM SQL rewriting toolkit"}
+{"id": "NDlFU2MnU9", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "knowledge conflict faithfulness in RAG"}
+{"id": "MfNPixduM2", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "DANGER_EVAL", "type": "eval", "target": "agent", "topic": "secure code generation by coding agents"}
+{"id": "bOFu3FimAt", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "LVLM hallucination detection and mitigation"}
+{"id": "udrL0pLIbt", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "SAFE_RL", "type": "theory", "target": "rl_robot", "topic": "evaluation gaming under adaptive adversaries"}
+{"id": "WEqVTcCkHs", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "VLM answer flip robustness"}
+{"id": "QnCOGVyEWv", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "distributional process reward models"}
+{"id": "ETM5cVneOg", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "origin of massive activations"}
+{"id": "tzXBBz5tmq", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "decoding-time transfer of post-training"}
+{"id": "YpsCajku7K", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "turn amplification cost attacks"}
+{"id": "WkqcxXccOE", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "mllm", "topic": "VLM hallucination in prefill representations"}
+{"id": "PHOgz5cVMs", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "federated learning with noisy labels"}
+{"id": "cjt5aH1F63", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "pressure and compliance in tool-using agents"}
+{"id": "HNO16jOXiU", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "general", "topic": "Byzantine-robust hierarchical label aggregation"}

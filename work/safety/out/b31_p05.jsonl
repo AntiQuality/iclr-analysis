@@ -1,0 +1,30 @@
+{"id": "GYm4mg9yGQ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "quantization-induced corrective computation"}
+{"id": "qcz3g6mH3L", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "minmax penalty for safe RL"}
+{"id": "vWOvirZbT7", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "mllm", "topic": "physical memory poisoning in egocentric assistants"}
+{"id": "TSk3cIdIQK", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "reasoning", "topic": "safety alignment of reasoning models"}
+{"id": "1dshss5Z2s", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "item promotion attacks on agentic recommenders"}
+{"id": "sIwKeLns9J", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "federated client incentive mechanism"}
+{"id": "bQqcOEDj7K", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private streaming PCA"}
+{"id": "RaQJnQBy6u", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "agent", "topic": "state-tracking failures in language agents"}
+{"id": "K4I48DWPCG", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "REWARD_HACK", "type": "eval", "target": "llm", "topic": "concealing flaws in LLM-generated reports"}
+{"id": "JfU0pqSzBu", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "classic", "topic": "pruning and adversarial robustness"}
+{"id": "Vo56I4M3eF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "learned checklists for peer review"}
+{"id": "QPgV6OOtIY", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "attack", "target": "mllm", "topic": "multimodal unlearning reactivation attacks"}
+{"id": "mvYeASTcR9", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "0GGzg1dOxx", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "few-shot industrial anomaly detection"}
+{"id": "LBzFm23tt4", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "GRPO zero-variance group objective switching"}
+{"id": "ouzGmqPCvS", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "llm", "topic": "fair in-context demonstration selection"}
+{"id": "mZ3FfjH6Gm", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "classic", "topic": "dataset inference for tabular foundation models"}
+{"id": "s4jpvJv6I8", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "delayed adversarial robustness overestimation"}
+{"id": "p3O3NQjP5W", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "cTWxQ0bFvI", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "llm", "topic": "hyperparameter stealing attacks on LLMs"}
+{"id": "RQwMDUEzSQ", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "sparse binarized debiasing weight edits"}
+{"id": "KOO1cDm2bt", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "mllm", "topic": "clean-robust tradeoff via task vector merging"}
+{"id": "1gBQvv34Wd", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM persuasion benchmark"}
+{"id": "3UmSQSfx0w", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM backdoor removal"}
+{"id": "EbrPXZTVJ9", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "classic", "topic": "multilingual audio-visual deepfake detection"}
+{"id": "VqI7rDJqiI", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "C-to-Rust transpilation benchmark"}
+{"id": "xILL3IzR32", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "BACKDOOR", "type": "defense", "target": "llm", "topic": "hidden behaviors from fine-tuning data"}
+{"id": "J2gI585XDK", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "membership inference defense"}
+{"id": "9vFNz8qhBj", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "idea provenance detection"}
+{"id": "BnrIau5IoS", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving federated deblurring"}

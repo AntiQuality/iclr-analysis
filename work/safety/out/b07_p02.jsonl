@@ -1,0 +1,30 @@
+{"id": "UN31lBlltd", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "privacy-preserving VLM pseudo-labelling"}
+{"id": "IJ1PqnggTH", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning via density ratio"}
+{"id": "1c6Ao3CpKt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "understanding test-time training"}
+{"id": "Jk8g1OxyZY", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "federated continual learning for VLMs"}
+{"id": "87NErJNFzV", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "refusal removal via weight editing"}
+{"id": "zq8KoGAsKk", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "subgroup performance gaps under PEFT"}
+{"id": "Twcq83ljWz", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "eval", "target": "llm", "topic": "social bias in quantized LLMs"}
+{"id": "xq0IT7lFZ2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "circuit discovery methodology"}
+{"id": "LzFhPgbjAp", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "general", "topic": "Byzantine-robust distributed optimization"}
+{"id": "j5rnfemVvx", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "AGENT_SAFE", "type": "position", "target": "agent", "topic": "validity of steering in evolving agents"}
+{"id": "r5YbXV5jtS", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "preventing unauthorized model merging"}
+{"id": "hHCbSeTFYK", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "adversarial example detection in VLMs"}
+{"id": "XG87HKiJ1X", "y": 2027, "rel": 1, "sub": "IP", "sub2": null, "type": "theory", "target": "general", "topic": "manipulation of Shapley data valuation"}
+{"id": "Og5SkVIfuE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "test-time RL for medical QA"}
+{"id": "U7RoB35iyh", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "answer-option effects on LLM decisions"}
+{"id": "Tmrjxq4d7w", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "secure MPC LLM inference"}
+{"id": "1nEsSU1OZT", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "text anonymization against agentic re-identification"}
+{"id": "hSpA4DAoMk", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private optimization"}
+{"id": "pfUfvpI4MM", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "LLM copyright watermarking"}
+{"id": "1YC4qKWlQH", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private training"}
+{"id": "hg56KWrwrA", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial defense for time-series foundation models"}
+{"id": "mObqmnAC0O", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "circuit editing to repair reasoning errors"}
+{"id": "aXeMWg7nFO", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanisms of arithmetic errors"}
+{"id": "vH3g2k4lPB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "SAE features for reasoning preparation"}
+{"id": "AquWB387lc", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "retrieval circuits and working memory"}
+{"id": "WMZ6jD8edI", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "homomorphic encryption for private inference"}
+{"id": "Hw4eZjlhLg", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "AGENT_SAFE", "type": "analysis", "target": "llm", "topic": "refusal bypass via model routing retries"}
+{"id": "Dl1xo5fqnj", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering methods"}
+{"id": "N2p3nCZGx6", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "el0jXlbsg5", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "defense", "target": "agent", "topic": "deception detection probes"}

@@ -1,0 +1,23 @@
+{"id": "bj3Qf2yz7a", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "evaluation of LLM alignment techniques"}
+{"id": "wIq6NZGhGj", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "general", "topic": "multi-objective offline preference optimization"}
+{"id": "IfbN0g3XUQ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "Renyi differential privacy auditing"}
+{"id": "e61YQdLIam", "y": 2026, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "image and video manipulation localization"}
+{"id": "CIUzfMYMfq", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "malicious agent skill detection"}
+{"id": "xQpONolBbQ", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "abstention under insufficient premises"}
+{"id": "uBThjlbzxS", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "mllm", "topic": "geolocation privacy leakage in MLLMs"}
+{"id": "UERyQwQ4zq", "y": 2026, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "defense", "target": "llm", "topic": "dataset usage detection in RAG via canaries"}
+{"id": "OzPAI04hi5", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "JB_DEF", "type": "eval", "target": "mllm", "topic": "joint image-text safety benchmark"}
+{"id": "efPOXi8P8J", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "GUI agent click localization"}
+{"id": "gb0MenIplk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "emotion-cause pair extraction"}
+{"id": "NyqskXTfmI", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "SOCIETAL", "type": "attack", "target": "llm", "topic": "knowledge poisoning of RAG fact-checking"}
+{"id": "RaMA7szt8z", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "theory", "target": "agent", "topic": "limits of agent action guardrails"}
+{"id": "51n0n1Lpdt", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "clean-sample backdoor attacks on LLMs"}
+{"id": "9uZBZDLJUB", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "consistency guardrails against hallucination"}
+{"id": "j4CCWal5Zf", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "instruction data selection"}
+{"id": "UAsmdQsx8d", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "insecure code generation by LLMs"}
+{"id": "HIu0JHeckF", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "collision warnings for robot world-action models"}
+{"id": "Cloa3qEzcw", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "mllm", "topic": "individual-level unlearning in VLMs"}
+{"id": "Qm9l2cYFqE", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "affective representations vs self-report"}
+{"id": "JCL7A13W09", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "linear relational decodability prediction"}
+{"id": "Va2tLzb1NX", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "concept-to-attention-head attribution"}
+{"id": "CZWcDWbs0h", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "audio deepfake detection"}

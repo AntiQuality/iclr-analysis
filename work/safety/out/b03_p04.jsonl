@@ -1,0 +1,30 @@
+{"id": "qZVGWQneRt", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "attack", "target": "mllm", "topic": "multi-turn jailbreaks of full-duplex speech models"}
+{"id": "L4LO2bXgyT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "rubric-based video reward modeling"}
+{"id": "rRsnjOHTKs", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "multiagent", "topic": "privacy-preserving distributed multimodal RAG"}
+{"id": "NzLonFYOH5", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "3D Gaussian splatting watermarking and edit deterrence"}
+{"id": "5E3mQc53gz", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "method", "target": "mllm", "topic": "hallucination mitigation in LVLMs"}
+{"id": "0Ljr1K46o5", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "risk-controlled action gating for computer-use agents"}
+{"id": "97ord3tPeP", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "representation intervention for concept control"}
+{"id": "blmZ2YtXVD", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "long-term LLM personalization"}
+{"id": "aFN7A4aLxe", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "compositional risk video moderation"}
+{"id": "mcts2oO1Og", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanistic account of quantization failures"}
+{"id": "lWNXJFIYXn", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "attack", "target": "general", "topic": "unlearning robustness/relearning via bit flips"}
+{"id": "pV7hqI1fN4", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "analysis", "target": "general", "topic": "causes of representational similarity"}
+{"id": "9qxJ6yIhj3", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "VLA robustness to observation perturbations"}
+{"id": "w9POzRevi9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "rl_robot", "topic": "sparse transcoders for VLA policies"}
+{"id": "jG2932zo44", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "rubric-based self-play post-training"}
+{"id": "uuvpiQaG6k", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": "AGENT_SAFE", "type": "analysis", "target": "agent", "topic": "value statements in self-improving coding agents"}
+{"id": "TRM3GP3u2O", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "reasoning", "topic": "efficient reasoning-based guard models"}
+{"id": "t6qGMRp0Ve", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "geographic representations in LLMs"}
+{"id": "jAKru48dn0", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "RAG knowledge poisoning detection"}
+{"id": "C4dmlY1i54", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "general", "topic": "weak-to-strong generalization data size"}
+{"id": "yNQKyLxXke", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "video super-resolution preference optimization"}
+{"id": "MGjAxd4KsD", "y": 2027, "rel": 1, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "llm", "topic": "robustness of LLM binary semantic recovery"}
+{"id": "58vTsBW6R8", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "political bias in LLMs"}
+{"id": "FbYrlyXr2K", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "LLMs in workplace social communication"}
+{"id": "F1RkMDoiYC", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "3D LMM counterfactual grounding"}
+{"id": "xY1yfXneNH", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "full-duplex speech RL reward auditing"}
+{"id": "eMnRH5Yes3", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "interpretable vision with textual explanations"}
+{"id": "0vhqnnFQ7z", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "FAIR", "type": "analysis", "target": "llm", "topic": "gender bias localization via attribution"}
+{"id": "BxrhsH3uzB", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "backdoor attacks in RLVR training"}
+{"id": "jVsespZtnT", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "circuit discovery for GNNs"}

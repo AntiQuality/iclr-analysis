@@ -1,0 +1,23 @@
+{"id": "bUJ8UGm8ab", "y": 2027, "rel": 2, "sub": "PI", "sub2": "OVERSIGHT", "type": "eval", "target": "agent", "topic": "label choice in tool-call safety monitor evaluation"}
+{"id": "xOQYemwxFM", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "auditable LLM unlearning"}
+{"id": "Cb2Os85OmQ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "safe runtime error healing by LLM agents"}
+{"id": "XuydWZUTRJ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "LLM classification over encrypted text"}
+{"id": "orzX69D5UO", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "6otwl750Yg", "y": 2027, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "defense", "target": "classic", "topic": "global model leakage protection in federated learning"}
+{"id": "bTcFHJo1Zk", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": "ADV_ROBUST", "type": "defense", "target": "llm", "topic": "robust multilingual machine-generated text detection"}
+{"id": "hrB4j5EyrS", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "margin-based DPO variants"}
+{"id": "AmcaiNI92S", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "AGENT_SAFE", "type": "attack", "target": "mllm", "topic": "adversarial attacks on GUI grounding models"}
+{"id": "D8tIL3FNXA", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "AIvW4QpdVI", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "unlearning for diffusion language models"}
+{"id": "HiXe1jYbU2", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "arithmetic strategies learned by transformers"}
+{"id": "C7BBqIYeZA", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "differentially private synthetic text generation"}
+{"id": "HL1HStcZpD", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "cyber-offense capability evaluation of LLM agents"}
+{"id": "SiZ31ZtPmQ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "causally constrained decoding against hallucination"}
+{"id": "XzNp808k7s", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "representation-level jailbreak via transferred directions"}
+{"id": "3GNaXptttK", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "wFFR6uyf52", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "eval", "target": "llm", "topic": "harm-centric multi-turn jailbreak evaluation"}
+{"id": "qof8nrxCGN", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "RL-based LLM unlearning"}
+{"id": "2YvbLQEdYt", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "cyber-offense capability evaluation of LLM agents"}
+{"id": "vgOEJYwlsZ", "y": 2027, "rel": 1, "sub": "IP", "sub2": null, "type": "analysis", "target": "llm", "topic": "weight-space lineage verification of LLMs"}
+{"id": "0UNKgsDFPo", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "PI", "type": "attack", "target": "mllm", "topic": "multimodal RAG knowledge poisoning attacks"}
+{"id": "a4S1nQay3b", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "noisy correspondence in multi-view clustering"}

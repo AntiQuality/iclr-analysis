@@ -1,0 +1,30 @@
+{"id": "ZZGn6GXJDH", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "adversarial robustness distillation"}
+{"id": "92uyXoygDV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "rubric-based rewards for agent RL"}
+{"id": "Wh6WwmzfOb", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safe reset-free reinforcement learning"}
+{"id": "c7mkhvfIBD", "y": 2027, "rel": 1, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "llm", "topic": "language disparity under quantization"}
+{"id": "niUroX9EOd", "y": 2026, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "decoding activations into natural language"}
+{"id": "ND0q3wjNgW", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM fingerprinting for provenance"}
+{"id": "69iBZ4DzXg", "y": 2026, "rel": 1, "sub": "ADV_ROBUST", "sub2": "PRIVACY", "type": "theory", "target": "classic", "topic": "adversarially robust nearest neighbor search"}
+{"id": "srLqdXZHR0", "y": 2026, "rel": 1, "sub": "BACKDOOR", "sub2": null, "type": "method", "target": "classic", "topic": "Byzantine-robust federated LoRA fine-tuning"}
+{"id": "BAiPg5Cs12", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "REWARD_HACK", "type": "analysis", "target": "multiagent", "topic": "collusion among LLM agents"}
+{"id": "jfhIbJ3K8e", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "AGENT_SAFE", "type": "eval", "target": "llm", "topic": "self-preservation misbehavior in LLMs"}
+{"id": "d943RAfDAV", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning method"}
+{"id": "MkGCt28yKg", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "Nash learning from human feedback"}
+{"id": "nAdZPbUFPc", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "sensitive information leakage in multi-turn LLMs"}
+{"id": "o19umAWBsM", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial attacks on explanations"}
+{"id": "ER9BElK8He", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy-preserving LLM inference"}
+{"id": "Kn2mPpj3ZO", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM fingerprinting for provenance"}
+{"id": "T5hD0as3jb", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable VLM jailbreak attacks"}
+{"id": "ZFKZ8dQ1EL", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "gradient inversion defense in federated learning"}
+{"id": "Qs24zqwGRm", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "agent", "topic": "DP synthetic data generation"}
+{"id": "Vzus3IaOtR", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "harmful RL fine-tuning defense"}
+{"id": "zkwxFCsQJO", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "FAIR", "type": "analysis", "target": "mllm", "topic": "OOD generalization in medical imaging"}
+{"id": "EoRL2XPLsE", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "token-level credit assignment in DPO"}
+{"id": "Xpj0yeMhpz", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "class-wise machine unlearning"}
+{"id": "dLdSFKaL3m", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "ADV_ROBUST", "type": "method", "target": "llm", "topic": "formal verification of interpretability faithfulness"}
+{"id": "UrDgYAs0MP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "verifier-guided VLM self-training transfer"}
+{"id": "J7sbjTbOll", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "agent", "topic": "large-small LLM cooperation for web agents"}
+{"id": "ClRV6QBTCx", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "theory", "target": "general", "topic": "anti-distillation and model stealing"}
+{"id": "xDxFiJogwY", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "evaluation criteria coverage of training changes"}
+{"id": "9z9KtDIM4W", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "defense", "target": "llm", "topic": "insecure code generation by LLMs"}
+{"id": "n26pDQZuug", "y": 2027, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "post-hoc adaptation of frozen encoders"}

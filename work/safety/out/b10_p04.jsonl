@@ -1,0 +1,30 @@
+{"id": "nhuYNaAhL4", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "recommendation unlearning"}
+{"id": "o3QTkukxde", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "theory", "target": "llm", "topic": "KL regularization in RLHF"}
+{"id": "JVPXpPbwoT", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "radiology report generation"}
+{"id": "AuhgnMgxWq", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal commonsense knowledge graph"}
+{"id": "JBi622X54S", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "mllm", "topic": "sparse autoencoders for contrastive VLMs"}
+{"id": "KqzkTlxdbm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "conformal chess skill discrepancy screening"}
+{"id": "93khAI4hyF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "safety of self-evolving agent memory updates"}
+{"id": "jZ44VHcySy", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "choreography fingerprinting"}
+{"id": "rxLmqrGCBW", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "llm", "topic": "evasion of AI-generated text detection"}
+{"id": "pjjXcAoQe4", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "hallucination detection in LLM optimization modeling"}
+{"id": "fm79KXJIUQ", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "value alignment benchmarking"}
+{"id": "VLGRYaZ12n", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "analysis", "target": "llm", "topic": "forgetting in sequential preference optimization"}
+{"id": "PvpsStlxwG", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "llm", "topic": "budgeted repeated benchmark evaluation uncertainty"}
+{"id": "RwPHqH8UlK", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "noisy preference data alignment"}
+{"id": "FzmJlwkdlJ", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "reasoning", "topic": "inference-time safe reasoning search"}
+{"id": "9rjQ7GloNO", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "nuZxW6aj5y", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "attention head changes from reasoning distillation"}
+{"id": "HNyMy0d2H0", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "eliciting decision-relevant predictions"}
+{"id": "he7BMZwm8t", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "critique-trained verifiers for test-time scaling"}
+{"id": "MQlrVKfBqX", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "safety-constrained LLM robot planning"}
+{"id": "5KfvJzCWal", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "explanations predicting model changes"}
+{"id": "0IJBxo578w", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "mllm", "topic": "process credit for visual agents"}
+{"id": "VxYue4yapt", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "general", "topic": "certified model replacement under distribution shift"}
+{"id": "CxWnjRy2cg", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward learning from diverse feedback"}
+{"id": "HYiHhe2QoX", "y": 2026, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "reward overgeneralization in monitored MDPs"}
+{"id": "qUXzlLmWS2", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "truthfulness steering direction evaluation"}
+{"id": "PZ8EL3Q1En", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning via self-distillation"}
+{"id": "OeQtWNQdwL", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "privacy-preserving cloud-edge LLM inference"}
+{"id": "pTLQtHJRIW", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": "BACKDOOR", "type": "attack", "target": "llm", "topic": "LLM inference cost amplification attack"}
+{"id": "x9FjsKmsNC", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "multiagent", "topic": "anytime-valid multi-agent failure monitoring"}

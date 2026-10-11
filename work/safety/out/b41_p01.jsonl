@@ -1,0 +1,30 @@
+{"id": "W37fskQnVd", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "exact unlearning for fair federated clustering"}
+{"id": "ao5d1VpleM", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "deceptive interfaces misleading web agents"}
+{"id": "5i72Q8GvLt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "text-image alignment preference optimization"}
+{"id": "qNaZE6FrhA", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "eval", "target": "classic", "topic": "unlearning auditing via membership inference"}
+{"id": "ybivpoFgL7", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "JB_DEF", "type": "eval", "target": "mllm", "topic": "multilingual multimodal safety evaluation"}
+{"id": "T5J1ZZVsJr", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "OVERSIGHT", "type": "method", "target": "llm", "topic": "evidence-path fragility in RAG workflows"}
+{"id": "ItexZ7Xw15", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward modeling from noisy preferences"}
+{"id": "9Hz7XIj7uq", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "adversarial observation robustness in MARL"}
+{"id": "DStFCYLdVC", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "attack", "target": "llm", "topic": "benign fine-tuning removes refusal"}
+{"id": "ZDuyNJI56H", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM unlearning optimization"}
+{"id": "roYDAg8Hve", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "differential privacy of diffusion sampling"}
+{"id": "wvCpXCIcGi", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "general", "topic": "geometrically robust image watermarking"}
+{"id": "EiYkfwyXpt", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "DP tabular synthetic data"}
+{"id": "hPoiz4zaEh", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "classic", "topic": "watermarking tabular generative models"}
+{"id": "XDED9vSNBq", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "DP accounting for synthetic data"}
+{"id": "vDTSGZzRrc", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "failure-trigger tokens in math reasoning"}
+{"id": "aed0IG57wu", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "softmax gradient bandit regret"}
+{"id": "uAeJBSQOH8", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "malicious agent skills detection"}
+{"id": "0n1YcK0yuQ", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "analysis", "target": "llm", "topic": "multilingual moral reasoning in LLMs"}
+{"id": "cEmuTAg4qE", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "exact unlearning in bandits"}
+{"id": "Fbe7OnbkAn", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "safety reasoning alignment training"}
+{"id": "qpnbFwTOEm", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "process rewards for text-to-SQL agents"}
+{"id": "8Z9ecm5Cw0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agent history compression"}
+{"id": "tIa69ILtVq", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety shielding in RL"}
+{"id": "PKIbTtXhu0", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "mechanistic interpretability of clinical classifiers"}
+{"id": "R7ub0QvlFK", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "coding agents under misleading feedback"}
+{"id": "j1LLFYK4lF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PRIVACY", "type": "eval", "target": "agent", "topic": "memory-induced risks in LLM agents"}
+{"id": "CLXuMd70AP", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "mllm", "topic": "cross-modal watermarking for provenance"}
+{"id": "OP1tViIkc9", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "general", "topic": "reward hacking in RL for generators"}
+{"id": "u5NHMdhryk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "classic", "topic": "antibody-antigen interaction prediction"}

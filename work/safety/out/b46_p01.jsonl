@@ -1,0 +1,30 @@
+{"id": "tysSSTIvYM", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "pluralistic value alignment and steering"}
+{"id": "UZknUETu5E", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "secure two-party LLM inference"}
+{"id": "YheEB8Vu7b", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "controllable protein generation with LLMs"}
+{"id": "ZAx4c4ZH5Y", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "anthropomorphic behaviours in LLMs"}
+{"id": "YtWZdwEG5K", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "hallucination mitigation in LVLMs via steering"}
+{"id": "DsS3xRPSs5", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "test-time alignment of LLMs"}
+{"id": "oIjxs733Kp", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "mechanisms of in-context RL in transformers"}
+{"id": "CaLFVlR93U", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "fragile watermark for diffusion language models"}
+{"id": "DHwXiej6Dr", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "reasoning", "topic": "factuality probes under chain-of-thought"}
+{"id": "f3IuZ7rXVD", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "concept erasure in diffusion"}
+{"id": "7FvpHpxyo6", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in audio-visual LLMs"}
+{"id": "zCIq8IzUrR", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "u0UjdCMPLc", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "INTERP_GEN", "type": "method", "target": "general", "topic": "robust feature attribution for certified defenses"}
+{"id": "B64DdgLl1s", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "BACKDOOR", "type": "defense", "target": "mllm", "topic": "test-time adversarial defense for CLIP"}
+{"id": "UXWhVL3iPF", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "hallucination detection in LLMs"}
+{"id": "EO6WtJ0q6G", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "AGENT_SAFE", "type": "analysis", "target": "llm", "topic": "LLM self-knowledge of capabilities"}
+{"id": "DDuF4lpcTl", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "privacy-constrained MoE expert merging"}
+{"id": "N3DesjnN82", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "diffusion", "topic": "membership inference on diffusion models"}
+{"id": "opG4m2U0Oo", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "VALUES", "type": "eval", "target": "diffusion", "topic": "cultural bias in text-to-image models"}
+{"id": "vAPObqMlNZ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "mllm", "topic": "test-time adversarial defense for CLIP"}
+{"id": "1KNMJlj20L", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "theory", "target": "general", "topic": "strategic publishers in generative AI search"}
+{"id": "xJT4fXJr1Q", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "JB_DEF", "type": "defense", "target": "mllm", "topic": "LVLM misbehavior detection via uncertainty"}
+{"id": "T9I5N9GKwZ", "y": 2027, "rel": 1, "sub": "BACKDOOR", "sub2": null, "type": "method", "target": "multiagent", "topic": "Byzantine-robust decentralized RL"}
+{"id": "PC2gPgG5Ts", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "risk-aware robot crowd navigation"}
+{"id": "sokvfawAYu", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "classic", "topic": "physics-constraint-guided spatiotemporal prediction"}
+{"id": "SzEc5fSBXv", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "LLM personalization from preferences"}
+{"id": "KMFotFeGjJ", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "poisoned instruction fine-tuning detection"}
+{"id": "3xENsJ0wQl", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "part-level 3D asset editing"}
+{"id": "zJnPyb2xrp", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM hallucination mitigation via grounding"}
+{"id": "T54WnWvp8W", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "llm", "topic": "backdoor detection in LoRA adapters"}

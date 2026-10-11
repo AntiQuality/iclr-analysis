@@ -1,0 +1,30 @@
+{"id": "B0iUMuZ2R8", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "multiagent", "topic": "RL orchestration for contract metadata extraction"}
+{"id": "G1VPwZsafp", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "model extraction defense for GNNs"}
+{"id": "kimhy2iFYC", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "hallucination mitigation in LVLMs"}
+{"id": "iX2Qj7itxp", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "gradient inversion in federated learning"}
+{"id": "JLTSXY5Jym", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "theory", "target": "general", "topic": "auditing selective prediction risk claims"}
+{"id": "C39AL0J5XI", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "theory-of-mind social action benchmark"}
+{"id": "kd55TEsmFk", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "SAFE_RL", "type": "analysis", "target": "llm", "topic": "physical danger representations in LLM hidden states"}
+{"id": "KSO3ksnXgs", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "mllm", "topic": "RAG failures in medical VLMs"}
+{"id": "bWC6RPsVMF", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "method", "target": "llm", "topic": "activation steering for truthfulness"}
+{"id": "zHXdK0pc6N", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process supervision for math and physics"}
+{"id": "XZhDjhVwma", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "exclusive unlearning of non-target capabilities"}
+{"id": "XeZ5WBIRvz", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "multiagent", "topic": "LLM moral behavior in social dilemmas"}
+{"id": "LZjDAqd6Wu", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "mllm", "topic": "policy-configurable harmful image moderation"}
+{"id": "V50hWDsF5q", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "classic", "topic": "layer-wise explanation of CNNs"}
+{"id": "BSJKBwDhXJ", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "cross-modal jailbreak defense in LVLMs"}
+{"id": "YzhPsgq3CO", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "measuring procedural value of reasoning traces"}
+{"id": "4FNeXikOgt", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "eval", "target": "classic", "topic": "adversarial robustness of neural image compression"}
+{"id": "lXioFCPhcp", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "eval", "target": "classic", "topic": "federated unlearning verification"}
+{"id": "VIMW3eys6x", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM unlearning robustness/relearning"}
+{"id": "wxEvaxbxFl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "post-hoc privacy auditing via membership inference"}
+{"id": "vKZPHJifiQ", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "value trade-offs in LLMs"}
+{"id": "c3hIBz5do2", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "training data extraction from diffusion models"}
+{"id": "XwjF5Ue6MF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "privacy-preserving agent memory state"}
+{"id": "RGEbVZgf4E", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "task vectors in in-context learning"}
+{"id": "0wSlFpMsGb", "y": 2026, "rel": 1, "sub": "IP", "sub2": null, "type": "eval", "target": "llm", "topic": "openly licensed pretraining corpus"}
+{"id": "sWgZPtNbGa", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "VLM jailbreak defense via refusal subspace"}
+{"id": "epu2GrCuVa", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "Nash preference optimization for diffusion"}
+{"id": "h7jjGRtosD", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "PI", "type": "eval", "target": "llm", "topic": "standardized red-teaming threat model benchmark"}
+{"id": "B3Iq9eKyiz", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "SOCIETAL", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "cwhAZN0c1N", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "molecular property prediction encoding"}

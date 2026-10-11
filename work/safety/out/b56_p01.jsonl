@@ -1,0 +1,30 @@
+{"id": "tVFAecXZK9", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "ksA5SnB8s9", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-as-judge reliability"}
+{"id": "RKKGxm7O4L", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "agent", "topic": "DP synthetic benchmark construction for agents"}
+{"id": "17GkLSLtK1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "partial AUC maximization from PU data"}
+{"id": "nupbCYlmEE", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "crosslingual knowledge consistency"}
+{"id": "ELLXjIQ7Im", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "reasoning", "topic": "CoT faithfulness evaluation"}
+{"id": "Q6CAlhcvYn", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "random-reward RL as capability probe"}
+{"id": "yr83U9d0C1", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "multiagent", "topic": "auditing debate-based scalable oversight"}
+{"id": "5ePXVciBEM", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "prompt injection defense for computer-use agents"}
+{"id": "pJZbMECfLP", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "efficient ensemble uncertainty quantification"}
+{"id": "zq40cmz1JD", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "llm", "topic": "side-channel leakage in LLM serving"}
+{"id": "sYmWKvauWu", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "FAIR", "type": "method", "target": "classic", "topic": "worst-group robustness to spurious correlations"}
+{"id": "xRXILtRLtS", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "embedding-based confidence estimation"}
+{"id": "uI9yO6DPIc", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination reduction via training"}
+{"id": "R1LiVnIHID", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "FT_ROBUST", "type": "defense", "target": "diffusion", "topic": "diffusion immunization against malicious fine-tuning"}
+{"id": "ZfOc3khaUn", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "eval", "target": "llm", "topic": "toxicity detection benchmark"}
+{"id": "cn6CNMVBw6", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "method", "target": "reasoning", "topic": "CoT reasoning interpretability"}
+{"id": "aY4nMxI86R", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "DECEPTION", "type": "defense", "target": "llm", "topic": "benign fine-tuning safety degradation"}
+{"id": "U5Fm5ZSbSD", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "memory-efficient DP training"}
+{"id": "TBAx7qCPD3", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "false-premise questions in education"}
+{"id": "kAwm912IjL", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "hallucination in image generation evaluation"}
+{"id": "OqZFfDks0Q", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "on-device high-resolution image editing"}
+{"id": "X4WbRy6BGr", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "compact soft memory for personalization"}
+{"id": "UeTYIHoeCd", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "defense", "target": "classic", "topic": "adversarial patch detection"}
+{"id": "FRXNMF0to7", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": "VALUES", "type": "analysis", "target": "llm", "topic": "LLM personality self-report validity"}
+{"id": "IOoyj8WRqP", "y": 2027, "rel": 1, "sub": "OOD", "sub2": "FAIR", "type": "analysis", "target": "classic", "topic": "worst-group robustness to spurious correlations"}
+{"id": "fcfvkPCzlq", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "nwcjxt1UEP", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "hallucination detection in RAG"}
+{"id": "KUAVCKVIPw", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "sequential machine unlearning"}
+{"id": "blr9Vh3e2a", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "HALLU", "type": "eval", "target": "llm", "topic": "safety-critical domain LLM evaluation"}

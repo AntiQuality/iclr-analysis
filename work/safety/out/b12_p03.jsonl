@@ -1,0 +1,30 @@
+{"id": "hh91yCiqgS", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "optimistic exploration in RLHF"}
+{"id": "WMjEJxiMwX", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "agentic safety RL environments"}
+{"id": "TMZtF7KYkE", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "watermarking protein generative models"}
+{"id": "giorP0oxbH", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "off-policy evaluation for constrained MDPs"}
+{"id": "y3bTy8ao1N", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "unsupervised steering vector discovery"}
+{"id": "3kKbnibuAz", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "defense", "target": "rl_robot", "topic": "adversarial attacks on collaborative perception"}
+{"id": "UxQxf53ZOn", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "mllm", "topic": "guard evasion via video style attacks"}
+{"id": "2e5z57jIPK", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "stale memory in lifelong agents"}
+{"id": "bml0cewR57", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "HALLU", "type": "analysis", "target": "mllm", "topic": "image-prior conflict arbitration in VLMs"}
+{"id": "D3PXRqMvST", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair influence maximization without groups"}
+{"id": "5hTXg11EEv", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "LLM simulation of human survey responses"}
+{"id": "silvZVinbm", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "distribution-relative mechanistic localization"}
+{"id": "i5oJjdQQBk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "clinical decision support agent"}
+{"id": "ZsGQLxOpjt", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "LLM lie detection benchmark"}
+{"id": "8gJuTTY12B", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "text sanitization of private information"}
+{"id": "qyGU7TNqlJ", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "multiagent", "topic": "misinformation propagation in multi-agent systems"}
+{"id": "gCG1W765UW", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "agent", "topic": "specification gaming in coding agents"}
+{"id": "IQGuAW8wBc", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "entangled forget set unlearning"}
+{"id": "9sbcAWly0L", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "constraint inference from demonstrations"}
+{"id": "ml8DrNWCEx", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection"}
+{"id": "4y5gTV5PZL", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "theory", "target": "general", "topic": "low-rank unlearning approximation limits"}
+{"id": "0yYaGuJaFa", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "eval", "target": "llm", "topic": "emergent misalignment defense durability"}
+{"id": "TO4R4c6u7V", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "privilege escalation in coding agent harnesses"}
+{"id": "RWjv2Zg0Wa", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "agent", "topic": "reward hacking from flawed verifiers"}
+{"id": "1gRTeAik4G", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "training CTF cybersecurity agents"}
+{"id": "lBb0GwzllL", "y": 2026, "rel": 1, "sub": "DANGER_EVAL", "sub2": "JB_ATK", "type": "eval", "target": "mllm", "topic": "voice agent capability and safety benchmark"}
+{"id": "WhPENKf5tV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "llm", "topic": "multi-head latent attention geometry"}
+{"id": "P0XgfEmceK", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "analysis", "target": "classic", "topic": "diffusion-based adversarial purification"}
+{"id": "oHdcqOp3Ht", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "diffusion", "topic": "T2I reward model ranking"}
+{"id": "TWUpicQMeS", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "multimodal KV cache compression"}

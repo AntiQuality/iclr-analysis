@@ -1,0 +1,30 @@
+{"id": "bZ0tkzguF0", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "BACKDOOR", "type": "attack", "target": "llm", "topic": "natural backdoor token sequences eliciting harm"}
+{"id": "LAejsDitr3", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "process reward model training"}
+{"id": "NeCATATRUB", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "theory", "target": "diffusion", "topic": "diffusion model memorization mitigation"}
+{"id": "TJDQ59s7Xe", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_SAFE", "type": "method", "target": "llm", "topic": "LLM unlearning via sparse autoencoders"}
+{"id": "sRpurB4TaG", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "drKf5JmqnH", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "reward model generalization in RLAIF"}
+{"id": "QHNVgPxfvi", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward models for image editing RL"}
+{"id": "288sdvBc8j", "y": 2027, "rel": 2, "sub": "OTHER", "sub2": null, "type": "defense", "target": "llm", "topic": "verifiable LLM inference proofs"}
+{"id": "5Vih2mSvOo", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private optimal transport"}
+{"id": "i6lgdgxIre", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": "SOCIETAL", "type": "eval", "target": "llm", "topic": "undisclosed value dependence in LLM advice"}
+{"id": "FjFgIPVp2X", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "REWARD_HACK", "type": "eval", "target": "llm", "topic": "harmful social dynamics in companion LLMs"}
+{"id": "TuFjICawSc", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "SAE-based sparse retrieval"}
+{"id": "tvRLkX1TuI", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "machine unlearning optimization"}
+{"id": "rNWjE2oKPO", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "classic", "topic": "fairness auditing in participatory budgeting"}
+{"id": "pgZflfdvUd", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "llm", "topic": "evaluation methodology for abstention recipes"}
+{"id": "seC2zjI0Ki", "y": 2026, "rel": 2, "sub": "IP", "sub2": "PRIVACY", "type": "attack", "target": "llm", "topic": "copyrighted training data extraction"}
+{"id": "tVe3qmrH2h", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "graph models for human simulation"}
+{"id": "bvAWRDzykH", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "rl_robot", "topic": "adversarial attacks on recurrent visual agents"}
+{"id": "QWopGahUEL", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "llm", "topic": "AI control protocol evaluation"}
+{"id": "DROnjDHq58", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "BACKDOOR", "type": "attack", "target": "mllm", "topic": "privacy-leaking watermarks in unified multimodal models"}
+{"id": "j9HqKbMJEl", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "diffusion", "topic": "privacy-preserving time-series diffusion"}
+{"id": "XGehNPSzqM", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "method", "target": "llm", "topic": "cultural alignment of LLMs"}
+{"id": "FyQPpkASsV", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "code correctness directions in LLMs"}
+{"id": "DkJNSP7YwO", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "hint copying shortcuts in RLVR"}
+{"id": "rlsVuhVFpv", "y": 2026, "rel": 2, "sub": "PI", "sub2": "BACKDOOR", "type": "attack", "target": "llm", "topic": "system prompt poisoning"}
+{"id": "5IrqwIf5aK", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "capability emergence in LLMs"}
+{"id": "0crU7lZV8n", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "OOD", "type": "method", "target": "llm", "topic": "LLM confidence calibration under shift"}
+{"id": "KH8rKp1WyW", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "physical consistency of world-model generation"}
+{"id": "FL98GeTuwf", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": "OOD", "type": "theory", "target": "classic", "topic": "fairness under distribution shift"}
+{"id": "1zNjcKbNM0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "llm", "topic": "privacy leakage in in-context learning"}

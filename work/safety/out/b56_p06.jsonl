@@ -1,0 +1,23 @@
+{"id": "cKJ1CTAk2L", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "audiovisual watermark tamper localization"}
+{"id": "su64l0Rcy9", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "mechanistic analysis of LLM backdoors"}
+{"id": "62nHvQRfaw", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "classic", "topic": "class and objective-level unlearning"}
+{"id": "Y6PLaCHqoc", "y": 2026, "rel": 2, "sub": "DECEPTION", "sub2": null, "type": "eval", "target": "multiagent", "topic": "LLM deception in social deduction games"}
+{"id": "Jea7TbDozk", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fairness in conformal prediction"}
+{"id": "o88RP8Xqy5", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "UNLEARN", "type": "defense", "target": "diffusion", "topic": "concept erasure in text-to-video diffusion"}
+{"id": "mZ81E9nS2s", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "efficient adversarial example generation"}
+{"id": "b6f1g9W1YF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "GEN_SAFE", "type": "eval", "target": "diffusion", "topic": "identity leakage in face swapping"}
+{"id": "ONzfXsihD3", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "subliminal learning trait discovery"}
+{"id": "MLm03UHRyi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "rl_robot", "topic": "feature steering in robot foundation models"}
+{"id": "1vacZJxi56", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "llm", "topic": "DP synthetic text generation"}
+{"id": "UR0bDlybwy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "auditing model-edit interventions"}
+{"id": "wIapDBr7Ev", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "object hallucination mitigation in LVLMs"}
+{"id": "hA8RPH58z1", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "inference-time LLM unlearning"}
+{"id": "k0y2gcDkX6", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE autointerpretability evaluation reliability"}
+{"id": "EUgc49SV2C", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "CoT activation steering for accuracy"}
+{"id": "VkWGnXGsmt", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "VALUES", "type": "method", "target": "llm", "topic": "value trade-off steering in activations"}
+{"id": "w7hGj6pT8d", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "visual preference reward modeling"}
+{"id": "DtBpPZBaZO", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "llm", "topic": "multi-turn decomposition attack defense"}
+{"id": "jbLULUSkrf", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "causal abstraction compositionality tests"}
+{"id": "yNvVKYGJFZ", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "defense", "target": "agent", "topic": "indirect prompt injection defense for agents"}
+{"id": "da7PHWwSSF", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "clean-label backdoor attacks on language models"}
+{"id": "QmHhZio2WJ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "mechanistic interpretability of VLMs"}

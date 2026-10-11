@@ -1,0 +1,30 @@
+{"id": "zzEYNwCqOw", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "ADV_ROBUST", "type": "defense", "target": "diffusion", "topic": "image immunization against image-to-video misuse"}
+{"id": "NWmbeQDCvc", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "AI-edited text detection and localization"}
+{"id": "Y84gsJBTCb", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "outcome reward models for tool calling"}
+{"id": "pglOZvHNVR", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fairness in graph neural networks"}
+{"id": "lle0aGQyQb", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "personalized long-form generation"}
+{"id": "mnfqJQSd6B", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "mllm", "topic": "color naming in VLMs"}
+{"id": "q1jd5DsPfx", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "agent red-teaming platform"}
+{"id": "6sUkV5xfsS", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "audio watermarking for speech provenance"}
+{"id": "5kXox7ovrd", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "HALLU", "type": "method", "target": "llm", "topic": "LLM honesty training"}
+{"id": "6gDZakKYdj", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "PI", "type": "defense", "target": "llm", "topic": "malicious prompt detection guardrail"}
+{"id": "cHILNck9eW", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "mllm", "topic": "MLLM hallucination mitigation via preference optimization"}
+{"id": "gRa5wtmWDF", "y": 2027, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "executable testbeds for frontier agent risks"}
+{"id": "UG830hrcwF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "agent", "topic": "policy compliance consistency in agent authorization"}
+{"id": "8MXsV0KpI0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "llm", "topic": "private data leakage in prompt optimization"}
+{"id": "NvHFk2D2g3", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "membership inference on TTS models"}
+{"id": "QJUxAsmCAP", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "uncertainty-aware LLM CAD drawing completion"}
+{"id": "ZB8caPbjhr", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "multiagent", "topic": "federated multi-agent LLM collaboration"}
+{"id": "4N0isu8VCf", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "memorization in graph neural networks"}
+{"id": "BkyyIfTEgG", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private distance queries"}
+{"id": "Ii4HBlERix", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "multiagent", "topic": "hallucination snowballing in multi-agent VLMs"}
+{"id": "0Vf5trUAVF", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "probabilistic reward modeling"}
+{"id": "q2VKSHWhAS", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "secure federated prompt personalization"}
+{"id": "CFJu2a7ohS", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "adversarial camouflage on driving perception"}
+{"id": "mqy5nGDnra", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "eval", "target": "mllm", "topic": "rubric-based reward for MLLMs"}
+{"id": "mRyQkL2hHA", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "adaptive poisoning in federated learning"}
+{"id": "5av5Fk4OQr", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "general", "topic": "mechanism recovery in continuous-time networks"}
+{"id": "yj9Ua3ruAS", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "answer-token dependence of causal interventions"}
+{"id": "0XEgr94mKk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "informative video generation with text"}
+{"id": "3RYsgXS0uj", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "diffusion", "topic": "audio watermarking for generated audio"}
+{"id": "ptdxxQtsyV", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "automated discovery of LLM watermarks"}

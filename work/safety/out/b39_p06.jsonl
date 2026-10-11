@@ -1,0 +1,23 @@
+{"id": "qpsH7K01gV", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "noisy labels in supervised contrastive learning"}
+{"id": "pAAmSO4iVe", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "VLM step-wise progress rewards for robots"}
+{"id": "b6XZ4N7a1t", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "cross-run variation in causal intervention readouts"}
+{"id": "sOOFMz4Ldk", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "llm", "topic": "auditing deterministic evaluators"}
+{"id": "qmn19MKk7e", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "fabricated actions in video captioning"}
+{"id": "MTQ17MlGCP", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL"}
+{"id": "U3mJbOMWrP", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "data poisoning forensics"}
+{"id": "Id4G8bzzKO", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": "AGENT_SAFE", "type": "defense", "target": "agent", "topic": "reward hacking in self-evolving agents"}
+{"id": "pZ8wBzJ9gX", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "multi-norm certified robustness training"}
+{"id": "A9Ha2CCGYt", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "document structure and style reward model"}
+{"id": "fXn4Rk8B3l", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "eval", "target": "llm", "topic": "harmful fine-tuning tamper resistance benchmark"}
+{"id": "wV3PB7CFsy", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "classic", "topic": "SAE feature dependence on data duplication"}
+{"id": "qvRUQ6e5FC", "y": 2027, "rel": 2, "sub": "IP", "sub2": "WATERMARK", "type": "analysis", "target": "llm", "topic": "LLM output fingerprinting for model attribution"}
+{"id": "BUZoqCgWXn", "y": 2027, "rel": 2, "sub": "REWARD_HACK", "sub2": null, "type": "eval", "target": "llm", "topic": "sycophancy in LLMs"}
+{"id": "5yINvZstcH", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "data-driven safety verification of POMDPs"}
+{"id": "lnubhl4iHx", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "cross-lingual moral reasoning in LLMs"}
+{"id": "jLac2ELo7Z", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "homomorphic encrypted model training"}
+{"id": "6T4LR1oRwA", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "eval", "target": "llm", "topic": "unbiased LLM watermark evaluation"}
+{"id": "JwYC2cDWxZ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "hallucination detection in policy-to-program translation"}
+{"id": "L80W1wtiIo", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "FAIR", "type": "method", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "12rUZuUyQZ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "mllm", "topic": "soft-biometric leakage in VLMs"}
+{"id": "WDdwx0VKGy", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "machine-generated text detection"}
+{"id": "PcxAR5zEZ2", "y": 2027, "rel": 1, "sub": "WATERMARK", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "policy watermarking via randomness modulation"}

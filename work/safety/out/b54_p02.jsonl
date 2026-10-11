@@ -1,0 +1,30 @@
+{"id": "9jRq7MwzVi", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "latent user persona representations in LLMs"}
+{"id": "IsfTWIhKMW", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "causal world model for embodied tracking"}
+{"id": "TKqVnTvqjU", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": "IP", "type": "defense", "target": "diffusion", "topic": "adversarial protection against unauthorized editing"}
+{"id": "yLfRgeLQ36", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "attack", "target": "llm", "topic": "LLM inversion prompt reconstruction"}
+{"id": "YpJHxdxExF", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "general", "topic": "weak-to-strong generalization theory"}
+{"id": "91O198Hgr7", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "test-time adaptation for EEG cross-subject shift"}
+{"id": "6KFATgx7MF", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "edge differential privacy for graph matching"}
+{"id": "O1WKscF3KP", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "scalable 2-WL expressive GNNs"}
+{"id": "4Dg0z4hCoY", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "scaling laws of on-policy distillation"}
+{"id": "q7UNF65j5m", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "DECEPTION", "type": "attack", "target": "reasoning", "topic": "backdoor inducing deceptive chain-of-thought"}
+{"id": "wJcZUmSSpW", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-aware RL for VLA driving"}
+{"id": "BNGtATyhDu", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "AGENT_SAFE", "type": "defense", "target": "multiagent", "topic": "privacy guard placement in agent workflows"}
+{"id": "xcIjhufrNB", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "reasoning", "topic": "jailbreaking large reasoning models"}
+{"id": "djwumu36TX", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "conformal uncertainty for LLM factuality"}
+{"id": "YvbUmLvVOi", "y": 2027, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "side-channel model parameter stealing defense"}
+{"id": "OApbfOYwkl", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated image detection generalization"}
+{"id": "NZ78mRBqgv", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "memory poisoning in LLM agents"}
+{"id": "8GE0wxbmR0", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "UNLEARN", "type": "attack", "target": "classic", "topic": "label inference in federated unlearning"}
+{"id": "LTJZAkRQAz", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "SAE steering for LVLM object hallucination"}
+{"id": "LkWsQ3Tawx", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "diffusion", "topic": "evading deepfake attribution"}
+{"id": "Xxo1hTtT3d", "y": 2027, "rel": 2, "sub": "VALUES", "sub2": null, "type": "eval", "target": "llm", "topic": "context-dependent professional value alignment"}
+{"id": "4fSAi5zFCu", "y": 2026, "rel": 2, "sub": "FT_ROBUST", "sub2": null, "type": "defense", "target": "llm", "topic": "restoring safety after benign fine-tuning"}
+{"id": "F02KXwqFdQ", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "information-theoretic LLM unlearning"}
+{"id": "gYxNUXYgDI", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair representation learning on manifolds"}
+{"id": "iJ2Z079oM2", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "llm", "topic": "extracting decision cruxes from LLM reasoning"}
+{"id": "FvOq7fKaEJ", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "adaptive KL control in RLHF"}
+{"id": "spzlqUcaP2", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "AI-generated image detection generalization"}
+{"id": "AYYxzN8N6y", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "knowledge-structured RAG fine-tuning"}
+{"id": "pXowtcMWzf", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "parameter-efficient unlearning for Transformers"}
+{"id": "ulvp7cbZeU", "y": 2026, "rel": 1, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "distributional alignment and in-context steerability"}

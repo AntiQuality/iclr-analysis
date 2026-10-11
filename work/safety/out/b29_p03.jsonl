@@ -1,0 +1,30 @@
+{"id": "wwXP9eqWeW", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "cross-user poisoning of multi-user agents"}
+{"id": "YPEIKoowoQ", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable adversarial image attacks on MLLMs"}
+{"id": "mxLIkKCAGZ", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "physics-consistent LLM reasoning via DPO"}
+{"id": "3f4Gj6hp4e", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "analysis", "target": "classic", "topic": "parameter-space unlearning feasibility limits"}
+{"id": "ouOGlLsQsA", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "validity of linear deception probes"}
+{"id": "qktHBSbPDN", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "theory", "target": "general", "topic": "certified unlearning theory"}
+{"id": "6Birfvnqm0", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "thinking collapse in on-policy self-distillation"}
+{"id": "57q8qtE5Ih", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "DPO under noisy preferences"}
+{"id": "DQRjN6cKk5", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "general", "topic": "adversarial robustness of in-context learning"}
+{"id": "3ZhFjE6yp1", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "attack", "target": "classic", "topic": "model extraction attacks on GNNs"}
+{"id": "CsSjIxEEhm", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "theory", "target": "llm", "topic": "social choice axioms in RLHF"}
+{"id": "icJc4hf1Tv", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "eval", "target": "mllm", "topic": "MLLM honesty in astronomical classification"}
+{"id": "UlGpm0PjZi", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "llm", "topic": "token-level hallucination detection"}
+{"id": "yjFkeQ2ynQ", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "eval", "target": "llm", "topic": "CoT monitorability under ciphered reasoning"}
+{"id": "WMrH0XOdsL", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "reasoning", "topic": "unlearning hazardous knowledge in reasoning traces"}
+{"id": "BaRswf2yKd", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "REWARD_HACK", "type": "eval", "target": "llm", "topic": "political ideological mimicry in LLMs"}
+{"id": "jWqaYsSiZB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "probe readability versus steering writability"}
+{"id": "m2oQOyeajI", "y": 2026, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "privacy-preserving decentralized embedding"}
+{"id": "3i8YItEh7j", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "mllm", "topic": "MLLM unlearning"}
+{"id": "sZIkXA6pMh", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": "FAIR", "type": "eval", "target": "llm", "topic": "bias of LLM peer reviewers"}
+{"id": "exHJqERNn2", "y": 2027, "rel": 1, "sub": "REWARD_HACK", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward hacking in diffusion RL fine-tuning"}
+{"id": "8YrlCbB1iu", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "defense", "target": "general", "topic": "cross-artifact inconsistency detection in AI science"}
+{"id": "uAwsyUczIL", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": "FAIR", "type": "method", "target": "mllm", "topic": "cross-lingual multimodal fact verification"}
+{"id": "dIzJ5tjHf4", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "llm", "topic": "SAE-based benchmark gap analysis"}
+{"id": "spVodwNNfz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "VLA failure recovery from execution feedback"}
+{"id": "T1UXCI8Izl", "y": 2027, "rel": 2, "sub": "FT_ROBUST", "sub2": "JB_ATK", "type": "attack", "target": "llm", "topic": "test-time training jailbreaks"}
+{"id": "0rD7kN9Brl", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "attack", "target": "agent", "topic": "indirect prompt injection in LLM agents"}
+{"id": "MN1qlAVJLV", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "BACKDOOR", "type": "method", "target": "llm", "topic": "training data attribution for harmful behaviors"}
+{"id": "qEkzamffGT", "y": 2026, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "unlearning training data optimization"}
+{"id": "sy3xeNQ5qU", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": "SAFE_RL", "type": "attack", "target": "rl_robot", "topic": "adversarial policies in multi-agent RL"}

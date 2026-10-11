@@ -1,0 +1,30 @@
+{"id": "gGhcZq5Jy7", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "label-noise-robust DPO"}
+{"id": "cqWa4nYVKQ", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "stance drift in AI-mediated communication"}
+{"id": "Om16g8HVuz", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "HALLU", "type": "analysis", "target": "llm", "topic": "plausibility confound in truth probes"}
+{"id": "guSVafqhrB", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "fine-grained activation steering"}
+{"id": "QwQJmfxvAW", "y": 2027, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "llm", "topic": "emotional reliance on AI companions"}
+{"id": "T61j6dxWC2", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "performative prediction with rational agents"}
+{"id": "USjSdem7WO", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "defense", "target": "classic", "topic": "feature reconstruction attacks in split learning"}
+{"id": "8TfiR1Lcvr", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "observational differential privacy auditing"}
+{"id": "9N7KbefD2i", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "demographic inference for face fairness auditing"}
+{"id": "9ZuIeQQvE1", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "DECEPTION", "type": "analysis", "target": "llm", "topic": "subliminal learning trait transmission"}
+{"id": "L17sEWT586", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "DANGER_EVAL", "type": "eval", "target": "llm", "topic": "jailbreak evaluation validity"}
+{"id": "3COKeXz8ir", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "process supervision from crowd reasoning"}
+{"id": "IYy8h8yq1v", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "eval", "target": "mllm", "topic": "cross-modal conflict in multimodal agents"}
+{"id": "i6SA9rGTAB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "inference-time search for video diffusion"}
+{"id": "zGr73fcSsB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "LLM research hypothesis generation"}
+{"id": "t8ayWXEpA6", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "PRM branch selection at test time"}
+{"id": "IFQ62zm5H8", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "Lyapunov-certified safe RL navigation"}
+{"id": "Hw4INTxVlU", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "sample-efficient online LLM alignment"}
+{"id": "TNjPVp4iFB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "theory", "target": "general", "topic": "SAM hallucinated minimizers"}
+{"id": "FFXWYNO9QF", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "llm", "topic": "reference frame for representation geometry"}
+{"id": "bqXO0RH1cR", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "rl_robot", "topic": "advantage modeling for robot learning"}
+{"id": "lAtFojSanw", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "unified attribution graph for transformers"}
+{"id": "eFt7AX16Hj", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "JB_ATK", "type": "eval", "target": "agent", "topic": "social engineering of policy-governed tool agents"}
+{"id": "koTNDE8hl0", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "process reward for code generation RL"}
+{"id": "MpYSoTK65s", "y": 2026, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "VALUES", "type": "theory", "target": "general", "topic": "social choice axioms in reward modeling"}
+{"id": "amzPotV2RE", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "classic", "topic": "temporal popularity debiasing in recommendation"}
+{"id": "POtbsNUpgz", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": "INTERP_GEN", "type": "analysis", "target": "llm", "topic": "error recognition in advice-seeking LMs"}
+{"id": "h54TBjirmg", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": "FAIR", "type": "analysis", "target": "classic", "topic": "group error in deepfake speech detectors"}
+{"id": "zU8Dro0Won", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "gradient-based jailbreak attack"}
+{"id": "SH7yYNr3NF", "y": 2027, "rel": 1, "sub": "OVERSIGHT", "sub2": null, "type": "theory", "target": "reasoning", "topic": "CoT necessity in transformers"}

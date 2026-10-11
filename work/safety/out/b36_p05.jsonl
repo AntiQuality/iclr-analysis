@@ -1,0 +1,30 @@
+{"id": "9ufS5Jl0O0", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "domain generalization via gradient-ascent unlearning"}
+{"id": "yROv3Fjjev", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "theory", "target": "general", "topic": "proportionally fair clustering"}
+{"id": "Gd2AiWes1J", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "conformal risk control for segmentation"}
+{"id": "WNf7TE78aH", "y": 2027, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "method", "target": "multiagent", "topic": "performative prediction with strategic users"}
+{"id": "ZiN944dXz2", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "mllm", "topic": "unsupervised vision-language reward modeling"}
+{"id": "MBZrQUpsGz", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "miscalibration from on-policy distillation"}
+{"id": "VOfnXx520k", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context learning attention head circuits"}
+{"id": "7QnJ8qdB0L", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "OOD", "type": "method", "target": "classic", "topic": "equalized-odds fairness under feature addition"}
+{"id": "SPgqHr2jiK", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "classic", "topic": "differentially private synthetic tabular data"}
+{"id": "btaaGF3qTq", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "general", "topic": "modal decomposition of training dynamics"}
+{"id": "qF6TyKhc7S", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM text watermarking"}
+{"id": "9QQ3Kc2hj6", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "high-resolution AI-generated image detection"}
+{"id": "jik0oNrrfB", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "classic", "topic": "synthetic speech emotion recognition benchmark"}
+{"id": "nTDn4OMiym", "y": 2026, "rel": 1, "sub": "SOCIETAL", "sub2": null, "type": "analysis", "target": "llm", "topic": "convergence of iterative LLM text processing"}
+{"id": "i7INKmVQYZ", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "reasoning", "topic": "abstention alignment for reasoning model hallucination"}
+{"id": "O26AmnGkFD", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "PI", "type": "attack", "target": "mllm", "topic": "multimodal RAG knowledge poisoning attacks"}
+{"id": "R46sid3aAT", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "classic", "topic": "unsupervised graph OOD detection"}
+{"id": "79uRpJkbxq", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "llm", "topic": "controllable research idea generation"}
+{"id": "kGEuZXaXU6", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "cyber-offense capability evaluation of LLM agents"}
+{"id": "sQVenQ1ejt", "y": 2027, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "rater disagreement in RLHF preference modeling"}
+{"id": "kEgzeGoNQK", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "diffusion", "topic": "hallucination in generative MRI super-resolution"}
+{"id": "Ftxzea79pn", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "method", "target": "agent", "topic": "secure code generation by coding agents"}
+{"id": "0Ck4IyUInh", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "agent", "topic": "record corruption by tool-using agents"}
+{"id": "dzfugtEDpI", "y": 2027, "rel": 1, "sub": "OOD", "sub2": null, "type": "analysis", "target": "classic", "topic": "cross-modality shift in retinal grading"}
+{"id": "3GamjXyGw2", "y": 2026, "rel": 2, "sub": "FAIR", "sub2": null, "type": "method", "target": "classic", "topic": "fair anomaly detection under group imbalance"}
+{"id": "tZVMivkWpv", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "general", "topic": "emergent world representations in transformers"}
+{"id": "VShuGzpK61", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "calibration-aware active learning"}
+{"id": "yLPjl0b88z", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "classic", "topic": "face forgery detection generalization"}
+{"id": "oPvsgwjACm", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "localizing MLP channels for feature directions"}
+{"id": "0SSKmVjj8O", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "sample-efficient preference optimization"}

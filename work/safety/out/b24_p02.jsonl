@@ -1,0 +1,30 @@
+{"id": "1I3yfptfr1", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "classic", "topic": "conformal risk control for object detection"}
+{"id": "bPN1c10U3P", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "classic", "topic": "backdoor attacks on federated learning"}
+{"id": "mkCnmmJC8V", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "eval", "target": "classic", "topic": "fidelity of private synthetic data releases"}
+{"id": "QaXf8anDG3", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "INTERP_SAFE", "type": "eval", "target": "llm", "topic": "LLM unlearning verification audit"}
+{"id": "T244mmc39e", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context world representations in LLMs"}
+{"id": "osnAy1yTHu", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "reward-model RL for image editing"}
+{"id": "Wxf3sOaEe7", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "analysis", "target": "classic", "topic": "AI-generated image detection"}
+{"id": "cDi2IoUNF2", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "harm recognition vs refusal gap in small LLMs"}
+{"id": "hLfhfbNc4O", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "logit-lens intermediate readouts"}
+{"id": "tg19FVh3p1", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "weak-to-strong diffusion sampling"}
+{"id": "gStXkqQmNk", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM-as-judge rubric faithfulness"}
+{"id": "fEnkWSjpPQ", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "llm", "topic": "representation-based LLM unlearning"}
+{"id": "MbA3XriCwJ", "y": 2027, "rel": 2, "sub": "GEN_SAFE", "sub2": "FT_ROBUST", "type": "defense", "target": "diffusion", "topic": "tamper-resistant concept erasure in diffusion"}
+{"id": "dMqt8eh5Ch", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private quantile inference"}
+{"id": "XfbBiBG46D", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "optimization-based jailbreak attack"}
+{"id": "YVFHX1pSXi", "y": 2027, "rel": 2, "sub": "PI", "sub2": null, "type": "analysis", "target": "agent", "topic": "chat-template special-token prompt injection"}
+{"id": "6PTdDAgakU", "y": 2026, "rel": 2, "sub": "OVERSIGHT", "sub2": "ALIGN_TRAIN", "type": "method", "target": "llm", "topic": "unsupervised elicitation of superhuman models"}
+{"id": "O62Fgxb0kd", "y": 2026, "rel": 1, "sub": "OOD", "sub2": null, "type": "method", "target": "mllm", "topic": "spurious correlation mitigation in CLIP"}
+{"id": "vBIxSztG1u", "y": 2027, "rel": 1, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "safety-verified fast-slow robot control"}
+{"id": "obB2UqqzgW", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "diffusion", "topic": "sparse autoencoders for diffusion models"}
+{"id": "y8pg5KaIK8", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": "AGENT_SAFE", "type": "eval", "target": "rl_robot", "topic": "constraint-compliant safe embodied navigation"}
+{"id": "jxxjvzXOdG", "y": 2026, "rel": 1, "sub": "HALLU", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "overconfidence in reasoning models"}
+{"id": "JenMBia97B", "y": 2026, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "unifying SAE interpretation and steering"}
+{"id": "X8VvfP6oxi", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "llm", "topic": "LLM-generated text detection"}
+{"id": "iTEputtMqz", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "theory", "target": "general", "topic": "parameter decomposition faithfulness"}
+{"id": "3GNaNi9xnt", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "LLM text watermarking"}
+{"id": "sACsE6qCYE", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": null, "type": "defense", "target": "mllm", "topic": "video content moderation guardrail"}
+{"id": "lJnMSEBzpa", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "hallucination mitigation in MLLMs"}
+{"id": "JzgNJlUZ5C", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "unsupervised feature dictionaries for LLMs"}
+{"id": "izY9lLDHwF", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "SAFE_RL", "type": "defense", "target": "multiagent", "topic": "compromised agent-to-agent handoff safety"}

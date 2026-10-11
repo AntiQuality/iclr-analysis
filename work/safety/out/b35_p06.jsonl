@@ -1,0 +1,23 @@
+{"id": "EwfPUo0f4x", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "looped transformer mechanistic interpretability"}
+{"id": "iYCfBOgxYJ", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "FT_ROBUST", "type": "analysis", "target": "llm", "topic": "emergent misalignment from narrow fine-tuning"}
+{"id": "nLfZPoJbO7", "y": 2026, "rel": 2, "sub": "DANGER_EVAL", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "offensive cyber capability evaluation of LLM agents"}
+{"id": "7XpGtbIqLk", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "backdoors in GUI agent grounding"}
+{"id": "T7E514tVkN", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": "INTERP_SAFE", "type": "attack", "target": "llm", "topic": "refusal-direction guided jailbreak suffixes"}
+{"id": "b31BOiYdQi", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": null, "type": "analysis", "target": "agent", "topic": "bias displacement under fairness instructions"}
+{"id": "tvFF19XsQq", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "method", "target": "general", "topic": "local differential privacy Bloom filters"}
+{"id": "KZYAaUg9xF", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "observation-adversarial robust RL"}
+{"id": "iuebm4vXuI", "y": 2026, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "llm", "topic": "LLM watermark removal attacks"}
+{"id": "mzpcQFwCfJ", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "eval", "target": "general", "topic": "concept alignment across model representations"}
+{"id": "Cy4uYISAWT", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": "ADV_ROBUST", "type": "defense", "target": "classic", "topic": "robust dataset distillation against poisoning"}
+{"id": "sg3UNWKVFt", "y": 2026, "rel": 2, "sub": "IP", "sub2": null, "type": "defense", "target": "classic", "topic": "DNN fingerprinting for ownership"}
+{"id": "a70W2l4Lxx", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "attack", "target": "diffusion", "topic": "image watermark removal attacks"}
+{"id": "HcytH0HSaG", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "mllm", "topic": "backdoor attacks on speech language models"}
+{"id": "5Wxva1Z8ls", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "attack", "target": "llm", "topic": "backdoors in gated memory modules"}
+{"id": "Bx5hcDZnL3", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in VLMs"}
+{"id": "hZVSKjtaS5", "y": 2026, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "adaptive attacks on CLIP test-time defenses"}
+{"id": "XHU2mSzJfl", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "defense", "target": "diffusion", "topic": "AI-generated video detection"}
+{"id": "LQI6XEDVmk", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "DANGER_EVAL", "type": "eval", "target": "mllm", "topic": "counterfactual image safety benchmark"}
+{"id": "797TiJ6DBv", "y": 2027, "rel": 1, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "inference-time hallucination correction cost"}
+{"id": "IlTgt5IG4s", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "privileged-context self-distillation for logic"}
+{"id": "t5Swwb6Wy1", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "prompt selection for RLVR"}
+{"id": "02NbD16OnA", "y": 2026, "rel": 2, "sub": "SOCIETAL", "sub2": null, "type": "eval", "target": "mllm", "topic": "multimodal misinformation intent detection"}

@@ -1,0 +1,23 @@
+{"id": "y0xfo60SPB", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "in-context learning mechanisms"}
+{"id": "CzA6tW5Zd8", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "method", "target": "classic", "topic": "quantitative sensitivity verification of tree ensembles"}
+{"id": "RiBSIEeIEn", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "theory", "target": "rl_robot", "topic": "offline safe multi-agent RL"}
+{"id": "BjIfaIbXEJ", "y": 2026, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "mllm", "topic": "multimodal jailbreak defense via steering"}
+{"id": "bMrVidVB7h", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "eval", "target": "agent", "topic": "memory-driven unauthorized actions in agents"}
+{"id": "d1fVTnq3c8", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "jailbreaking production prompt guards"}
+{"id": "fRBureH0QB", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "agent self-improvement strategy governance"}
+{"id": "F6DzptrpGI", "y": 2026, "rel": 1, "sub": "OOD", "sub2": "INTERP_SAFE", "type": "analysis", "target": "llm", "topic": "OOD robustness via sparse autoencoders"}
+{"id": "67s0T14qo2", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "eval", "target": "llm", "topic": "hallucination localization taxonomy"}
+{"id": "jKaGpCYheS", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "attack", "target": "agent", "topic": "red-teaming agent skill configurations"}
+{"id": "xrDqOztODC", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "defense", "target": "rl_robot", "topic": "predictive safety filter for embodied agents"}
+{"id": "eloUeXbRvL", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": "PI", "type": "defense", "target": "agent", "topic": "authorization drift in LLM agents"}
+{"id": "spytQOeyFe", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "annotation-free rewards for T2I RL"}
+{"id": "8RyAoLZcXq", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "JB_ATK", "type": "defense", "target": "llm", "topic": "multilingual jailbreak defense"}
+{"id": "ChD3yK6YKk", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "mllm", "topic": "embodied temporal reasoning forecasting"}
+{"id": "jrgXLpa241", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "delayed cost attribution in constrained RL"}
+{"id": "BKDuKefyJz", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": "OOD", "type": "eval", "target": "classic", "topic": "composition of corruptions and adversarial attacks"}
+{"id": "LOSRWzu8Pw", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": null, "type": "method", "target": "general", "topic": "loss reweighting for machine unlearning"}
+{"id": "OvgcxUZyZV", "y": 2026, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "behavioral fidelity evaluation of conversational agents"}
+{"id": "l9N6Mf2M4h", "y": 2027, "rel": 2, "sub": "FAIR", "sub2": "JB_DEF", "type": "defense", "target": "llm", "topic": "social bias mitigation guardrails"}
+{"id": "dT399j1Azv", "y": 2026, "rel": 2, "sub": "VALUES", "sub2": "ALIGN_TRAIN", "type": "analysis", "target": "llm", "topic": "value biases in reward models"}
+{"id": "RbRha9T7by", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "analysis", "target": "llm", "topic": "multi-turn jailbreak dynamics"}
+{"id": "gO6ADJNXMr", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "general", "topic": "membership inference via recursive generation"}

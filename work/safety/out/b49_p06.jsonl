@@ -1,0 +1,23 @@
+{"id": "RVhteEmSYW", "y": 2027, "rel": 2, "sub": "UNLEARN", "sub2": "PRIVACY", "type": "method", "target": "classic", "topic": "federated unlearning"}
+{"id": "5iWb2yVfnC", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "eval", "target": "agent", "topic": "malicious multimodal agent skills"}
+{"id": "lDRqAXf7Cs", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": "GEN_SAFE", "type": "defense", "target": "diffusion", "topic": "facial identity protection against generative editing"}
+{"id": "XZP15EDTvk", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "analysis", "target": "agent", "topic": "behavioral trait profiling of LLM agents"}
+{"id": "wpVOjl3KDV", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "diffusion", "topic": "training data extraction from federated diffusion"}
+{"id": "UpnBugKmfz", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "agent", "topic": "context compression for long-running agents"}
+{"id": "pcHByPaPrk", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "classic", "topic": "natural adversarial examples via black-box editing"}
+{"id": "HdOhBsBmVZ", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "general", "topic": "differentially private trajectory release"}
+{"id": "WJj03oDgh9", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": "OVERSIGHT", "type": "analysis", "target": "reasoning", "topic": "attention circuits in reasoning traces"}
+{"id": "gtijjdgP7T", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": "OVERSIGHT", "type": "defense", "target": "llm", "topic": "harm detection activation probes"}
+{"id": "WOhuufZ0G6", "y": 2027, "rel": 2, "sub": "ALIGN_TRAIN", "sub2": "JB_DEF", "type": "method", "target": "llm", "topic": "on-policy self-distillation safety alignment"}
+{"id": "vkTl53bXMs", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "IP", "type": "eval", "target": "llm", "topic": "LLM memorization detection"}
+{"id": "iOpdWk49ff", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "numerical comparison in rule-following decisions"}
+{"id": "qIUR54yyro", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": "HALLU", "type": "defense", "target": "llm", "topic": "differentially private RAG decoding"}
+{"id": "tmAK9FJr5X", "y": 2026, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "offline safe RL without unsafe data"}
+{"id": "OIxtiAhWGs", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "eval", "target": "llm", "topic": "LLM-as-a-judge bias discovery"}
+{"id": "L9DDSHyo0V", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "training-free quality guidance for diffusion"}
+{"id": "hkZpskx9mL", "y": 2026, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "observation manipulation attacks on agents"}
+{"id": "04isDMfMHi", "y": 2027, "rel": 2, "sub": "BACKDOOR", "sub2": null, "type": "defense", "target": "classic", "topic": "in-training backdoor defense"}
+{"id": "ezRI80NCci", "y": 2026, "rel": 2, "sub": "GEN_SAFE", "sub2": null, "type": "defense", "target": "diffusion", "topic": "safety alignment of text-to-image models"}
+{"id": "VBYPJYZrBF", "y": 2027, "rel": 2, "sub": "ADV_ROBUST", "sub2": null, "type": "attack", "target": "mllm", "topic": "transferable adversarial attacks on MLLMs"}
+{"id": "eEGTs87Fjn", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "object hallucination in LVLMs"}
+{"id": "8csiEcwVsK", "y": 2026, "rel": 2, "sub": "BACKDOOR", "sub2": "FT_ROBUST", "type": "attack", "target": "general", "topic": "backdoors in model merging"}

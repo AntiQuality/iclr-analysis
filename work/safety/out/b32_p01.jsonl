@@ -1,0 +1,30 @@
+{"id": "aRPoy3ahzE", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "INTERP_SAFE", "type": "defense", "target": "llm", "topic": "attention-based jailbreak detection and localization"}
+{"id": "2m5YSJ6z77", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "mllm", "topic": "use-elicitation dissociation in VLMs"}
+{"id": "JolPRdtcdd", "y": 2027, "rel": 2, "sub": "PI", "sub2": "AGENT_SAFE", "type": "attack", "target": "agent", "topic": "indirect prompt injection in proactive agents"}
+{"id": "w2rw7leQSk", "y": 2027, "rel": 1, "sub": "PRIVACY", "sub2": null, "type": "analysis", "target": "classic", "topic": "privacy-aware feature deletion ordering"}
+{"id": "BpNKysi0HN", "y": 2027, "rel": 2, "sub": "SAFE_RL", "sub2": null, "type": "method", "target": "rl_robot", "topic": "reach-avoid probability certification with PAC guarantees"}
+{"id": "YPsRQL9gyI", "y": 2027, "rel": 2, "sub": "WATERMARK", "sub2": null, "type": "method", "target": "llm", "topic": "multi-bit LLM text watermarking"}
+{"id": "ZoEPY8bqJo", "y": 2027, "rel": 2, "sub": "AGENT_SAFE", "sub2": null, "type": "defense", "target": "agent", "topic": "long-horizon agent trajectory safety auditing"}
+{"id": "ykmu6Orow0", "y": 2027, "rel": 2, "sub": "INTERP_SAFE", "sub2": null, "type": "analysis", "target": "llm", "topic": "perturbation sensitivity of LLM safety judgments"}
+{"id": "k3BcJBjXro", "y": 2027, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "attack", "target": "classic", "topic": "identity recovery from privacy-preserving imaging"}
+{"id": "VyEynsoqAl", "y": 2027, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "llm", "topic": "LLM-judge hallucination detection"}
+{"id": "MsX014tAvl", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "agent", "topic": "stale state repair in agent memory"}
+{"id": "CZhFMqtJKF", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "leakage-aware analogy retrieval benchmark"}
+{"id": "DJkQ236C8B", "y": 2026, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "eval", "target": "mllm", "topic": "jailbreak benchmark for audio language models"}
+{"id": "scTahsWXrH", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "eval", "target": "llm", "topic": "structured output consistency metric"}
+{"id": "TWCBAEspBn", "y": 2027, "rel": 2, "sub": "JB_ATK", "sub2": null, "type": "attack", "target": "llm", "topic": "black-box evolutionary jailbreak search"}
+{"id": "ioGQhr1lhZ", "y": 2026, "rel": 2, "sub": "HALLU", "sub2": null, "type": "method", "target": "mllm", "topic": "hallucination mitigation in video LLMs"}
+{"id": "R9ZuD0WvU0", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "training data reconstruction from parameters"}
+{"id": "Zy3CVneeog", "y": 2027, "rel": 2, "sub": "JB_DEF", "sub2": "OOD", "type": "eval", "target": "classic", "topic": "evolving abusive language moderation benchmark"}
+{"id": "4Mg0HWnNSL", "y": 2027, "rel": 2, "sub": "DECEPTION", "sub2": "REWARD_HACK", "type": "analysis", "target": "llm", "topic": "inoculation prompting and emergent misalignment"}
+{"id": "MqAq77hklK", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "analysis", "target": "llm", "topic": "measurement confounds in activation steering"}
+{"id": "1XQKFnGKk4", "y": 2027, "rel": 1, "sub": "VALUES", "sub2": null, "type": "eval", "target": "mllm", "topic": "social and moral reasoning video benchmark"}
+{"id": "pu4jo7RyLw", "y": 2027, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "structural artifacts in video generation"}
+{"id": "a0TVQ1Nrg4", "y": 2027, "rel": 1, "sub": "INTERP_GEN", "sub2": null, "type": "method", "target": "llm", "topic": "data-free activation steering"}
+{"id": "ml4xqcOZny", "y": 2027, "rel": 1, "sub": "AGENT_SAFE", "sub2": null, "type": "analysis", "target": "agent", "topic": "skill library edit validation in agents"}
+{"id": "b92aysjC8D", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "reasoning", "topic": "test-time self-reflective generation"}
+{"id": "zLrqJ7xbMS", "y": 2027, "rel": 1, "sub": "OTHER", "sub2": null, "type": "method", "target": "llm", "topic": "rubric drift in LLM grading"}
+{"id": "Ti8u9Ak6wf", "y": 2026, "rel": 0, "sub": "NONE", "sub2": null, "type": "method", "target": "diffusion", "topic": "identity-preserving image-to-video generation"}
+{"id": "3bKNdyeq05", "y": 2027, "rel": 2, "sub": "OVERSIGHT", "sub2": null, "type": "analysis", "target": "reasoning", "topic": "CoT faithfulness in distilled reasoning models"}
+{"id": "wmi6satsIu", "y": 2026, "rel": 1, "sub": "ALIGN_TRAIN", "sub2": null, "type": "method", "target": "llm", "topic": "likelihood displacement in DPO"}
+{"id": "Jd6lHzaIYU", "y": 2026, "rel": 2, "sub": "PRIVACY", "sub2": null, "type": "theory", "target": "classic", "topic": "feature learning in DP-SGD"}
