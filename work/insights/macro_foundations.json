@@ -1,0 +1,383 @@
+{
+ "key": "foundations",
+ "title_zh": "基础层：理论、表征、可解释性与评测——真实转向与文体泡沫",
+ "headline_zh": "真实的结构变化有三条：优化器研究被 Muon 类矩阵优化器接管（15.6 → 36.0 /万篇），可解释性从“读出特征”（SAE、事后归因）转向“动手干预”（steering、因果干预），评测从聊天和推理榜单转向 agent、多轮对话与 rubric。另一方面，“审计”“探针”“预注册”“效度”这类评测与可解释性措辞的暴涨，大半来自 2027 年新出现的高模板化写作文体：去掉这类论文后，可解释性主题份额与 2026 持平（304 → 291 /万篇），评测主题反而下降（416 → 313）。理论主题受文体影响最小，“下界与极小极大率”在常规文体论文中同样翻倍。",
+ "stats": [
+  {
+   "label_zh": "2027 年高模板文体论文占比（按主题）",
+   "value": "评测 62% · 可解释 57% · 表征 39% · 理论 36%",
+   "note_zh": "全库 2027 为 42.4%，2026 仅 1.0%。文体分来自 style_anomaly.py：摘要中 40 个与主题无关的新兴措辞标记，阈值取 2026 年第 99 百分位。它只度量写作文体，不判定作者身份"
+  },
+  {
+   "label_zh": "可解释性主题份额（全部 / 剔除高模板文体）",
+   "value": "304 → 393 /万篇（剔除后 291）",
+   "note_zh": "主题增量全部来自高模板文体论文；评测主题同样如此：416 → 470，剔除后 313"
+  },
+  {
+   "label_zh": "Muon 及矩阵感知优化器（标题+关键词）",
+   "value": "15.6 → 36.0 /万篇",
+   "note_zh": "31 → 155 篇；剔除高模板文体后为 40.3；2026 年接收率 38.7%（基线 27.0%）"
+  },
+  {
+   "label_zh": "因果干预 / activation patching（标题+关键词）",
+   "value": "8.1 → 80.0 /万篇",
+   "note_zh": "剔除高模板文体后 32.7，仍是 4 倍真实增长；其余约六成增幅属文体，命中论文中 76% 为高模板文体"
+  },
+  {
+   "label_zh": "learning theory 主领域 2026 接收率",
+   "value": "36.8%（21 个主领域中最高）",
+   "note_zh": "份额 260 → 322 /万篇，剔除高模板文体后为 324，说明增长是真实的；transfer/meta/lifelong 主领域接收率仅 20.7%"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Muon 研究的重心从“能否收敛”转到“如何在大规模训练中低成本运行”",
+   "tag": "rising",
+   "body_zh": "Muon、Shampoo、SOAP、Newton–Schulz/polar 等矩阵感知优化器的标题+关键词份额从 15.6 升到 36.0 /万篇（31 → 155 篇）。剔除高模板文体后为 40.3；命中论文的高模板文体比例为 35%，低于全库 42%，可以确认是真实增长。此消彼长很清楚：簇 255（Muon 与矩阵优化器）15.1 → 37.4，Adam 类簇 108 则 33.8 → 15.3；标题中提到 Adam 的份额持平（18.2 → 18.1），新增量全部归矩阵优化器。2026 年的代表作是 oral《The Polar Express》（均分 8.0）和 Muon+NS 收敛性证明。2027 年的论文转向工程与机理三个方向：一是减少 NS 迭代步数（Turbo-Muon、自适应/低精度 NS），二是分布式与通信高效 Muon（MuonMix、StructMuon、RADeMuon），三是用 LMO 统一框架解释 Muon 与 edge of stability、simplicity bias 的关系。2026 年 Muon 相关论文接收率 38.7%（均分 4.65），簇 255 为 40.0%，显著高于基线。",
+   "evidence": [
+    {
+     "id": "yRtgZ1K8hO",
+     "year": 2026,
+     "title": "The Polar Express: Optimal Matrix Sign Methods and their Application to the Muon Algorithm"
+    },
+    {
+     "id": "K4XVD6wq8Q",
+     "year": 2027,
+     "title": "Turbo-Muon: Almost-Orthogonal Pre-Conditioning for Fast Muon Updates"
+    },
+    {
+     "id": "vHt4NzhMfE",
+     "year": 2027,
+     "title": "MuonMix: A Mixed-LMO Block-Periodic Algorithm for Efficient Distributed Muon Training"
+    },
+    {
+     "id": "bzyfCGPcet",
+     "year": 2027,
+     "title": "No-Momentum Muon Sublates the Edge of Stability in LLM Pretraining"
+    }
+   ]
+  },
+  {
+   "title_zh": "理论回到“下界与极小极大率”，研究对象换成注意力、CoT 与 RLHF；ICL 理论退潮",
+   "tag": "shift",
+   "body_zh": "样本复杂度、minimax、下界类标题+关键词从 34.3 升到 71.1 /万篇。剔除高模板文体后为 63.3；在文体分不超过 2026 年中位数的子集里也从 36.3 升到 56.1，说明翻倍是真实的。簇 33 表面上从 8.1 涨到 80.9，但其中 58% 是高模板文体论文，标题多为“The Strategic Cost of …”“Banking Expiring Compute …”这类“X 的代价/极限”句式，因此本章按正则计数估计约 2 倍，不按簇计数的 10 倍。新的下界工作针对的是 LLM 时代的对象：双线性注意力打分、被污染的 CoT 监督、层级推理奖励，以及 KL 正则约束 RLHF 的末次迭代收敛。learning theory 与 optimization 主领域里讨论 RLHF/GRPO/偏好的理论论文从 13.1 升到 26.5 /万篇。与此相对，2026 年最受认可的 ICL 理论正在退潮：ICL 理论簇 226 从 23.2 降到 10.7，ICL 机制簇 103 从 41.9 降到 17.0，而簇 226 在 2026 年的接收率还是 41.3%。",
+   "evidence": [
+    {
+     "id": "nrVS6VheqR",
+     "year": 2027,
+     "title": "Minimax Sample Complexity of Full and Low-Rank Bilinear Attention Score Estimation"
+    },
+    {
+     "id": "Slx0eJPEPj",
+     "year": 2027,
+     "title": "Minimax Learning from Corrupted Chain-of-Thought Supervision"
+    },
+    {
+     "id": "n6Qpf7bz44",
+     "year": 2027,
+     "title": "Last-Iterate Convergence of Optimistic Primal--Dual Methods for KL-Regularized Constrained RLHF"
+    },
+    {
+     "id": "qA42mWsnbl",
+     "year": 2026,
+     "title": "Theory of Scaling Laws for In-Context Regression: Depth, Width, Context and Time"
+    }
+   ]
+  },
+  {
+   "title_zh": "可解释性从“读出特征”转向“动手干预”：steering 与因果干预取代 SAE 和事后归因",
+   "tag": "shift",
+   "body_zh": "按标题+关键词计，activation steering / representation engineering 从 85.3 升到 151.3 /万篇（剔除高模板文体后 125.8），因果干预 / activation patching 从 8.1 升到 80.0（剔除后 32.7，仍是 4 倍）。同期 SAE 只从 49.0 到 53.5，剔除后为 42.3，实际已停滞；transcoder/crosscoder 仍很少（剔除后 2.4 /万篇）。事后 XAI（saliency、反事实解释、特征归因）从 97.4 腰斩到 50.9，Shapley 簇从 16.2 降到 10.7。审稿结果早有预兆：2026 年事后 XAI 接收率 16.1%，Shapley 簇 9.4%；patching 为 37.5%（n=16），注意力头簇 37.9%，steering 簇 35.8%。2026 年的 oral《Addressing divergent representations from causal interventions》已把“干预本身是否把表征推出数据流形”变成研究问题；2027 年的论文继续追问 steering 的数据依赖、massive activation 的因果来源，以及安全电路的定位与修复。",
+   "evidence": [
+    {
+     "id": "cZrTMqYVL6",
+     "year": 2026,
+     "title": "Addressing divergent representations from causal interventions on neural networks"
+    },
+    {
+     "id": "CGIzZDgcfF",
+     "year": 2027,
+     "title": "Activation Steering Is a Data Problem"
+    },
+    {
+     "id": "ETM5cVneOg",
+     "year": 2027,
+     "title": "Where Massive Activations Come From: Causal Evidence from MLP Geometry in Large Language Models"
+    },
+    {
+     "id": "MC82YzfGkA",
+     "year": 2027,
+     "title": "Targeting Duplicate Token Heads: Localizing and Repairing a Safety Circuit in LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "“审计、线性探针、预注册、效度”热潮大半是文体：本章如何区分真实转向与措辞伪影",
+   "tag": "watch",
+   "body_zh": "区分方法分四步。第一，为每篇论文打文体分：摘要中 40 个与主题无关的新兴措辞（evidence、matched、frozen、whether 等）加权求和，超过 2026 年第 99 百分位记为高模板文体；2027 年有 42.4% 的论文属于此类，2026 年为 1.0%。第二，每个子趋势都同时报告全体份额和剔除高模板文体后的份额，必要时再看文体分不超过 2026 年中位数的子集。第三，用标题+作者关键词正则计数，不用 KMeans 簇计数，因为簇会按措辞重新划分：例如通用理论簇 220 从 74.7 跌到 19.1，同时伪影簇 15 和 33 上涨。第四，只有在剔除后仍至少增长 1.5 倍、且高模板文体比例不显著高于 42% 的变化，才判为真实转向。按此标准有四类变化不算真实转向：线性探针 8.6 → 29.1，剔除后仅 10.9（78% 为高模板文体）；全文出现“预注册”的论文从 1 篇变成 391 篇，其中 90% 为高模板文体，剔除后为 15.3 /万篇；效度/心理测量 15.1 → 57.2，剔除后 20.2；“评测方法论”措辞 37.3 → 87.0，剔除后 29.8，甚至低于 2026。簇 137、70、83、15、263 的高模板文体比例分别为 88%、93%、68%、69%、80%，不应作为研究趋势报告。值得注意的是，这些措辞涌入的恰是 2026 年接收率最低的方向：线性探针簇 12.5%，效度类 16.7%。",
+   "evidence": [
+    {
+     "id": "WXjd30H2gJ",
+     "year": 2027,
+     "title": "Content-Matched Is Not Lexically Matched: Text and Untrained-Network Baselines for Evaluation-Awareness Probing"
+    },
+    {
+     "id": "5KJOI7iisw",
+     "year": 2027,
+     "title": "Resolving Power: Whether a Memory Task Can See the Distinction It Claims to Test"
+    },
+    {
+     "id": "MvvZQZQ1NN",
+     "year": 2027,
+     "title": "LOOPED TRANSFORMERS LEARN ONE OF TWO ALGORITHMS, AND TRAINING MOVES THE ODDS"
+    }
+   ]
+  },
+  {
+   "title_zh": "评测对象换代：agent、多轮对话与用户模拟取代聊天榜和推理竞赛题",
+   "tag": "shift",
+   "body_zh": "标题中带 benchmark 名的论文份额基本持平（131 → 147 /万篇），变化的是测什么。agent/工具/SWE 类基准从 88.3 升到 163.9（剔除高模板文体后 130.3）；长程 agent 工作流簇 181 从 22.2 升到 51.4，2026 年接收率 40.9%，是评测类最高。用户模拟器从 2.0 升到 15.6（剔除后 19.4，命中论文中高模板文体只占 28%），说明“LLM 多轮迷失”（2026 oral）之后，被评对象从单轮回答变成了带模拟用户的交互。与此同时，通用、领域和 MLLM 基准簇（3、4、178）从 58.5、83.3、71.2 降到 14.9、14.9、20.0，多语言从 76.2 降到 42.8。全文提及量反映了标尺更替：SWE-bench 18.7 → 63.0，τ-bench 2.0 → 8.8；AlpacaEval 14.6 → 4.6，MT-Bench 10.1 → 4.9；2026 年的推理标尺开始见顶回落，AIME 47.4 → 30.7，GPQA 38.9 → 21.6。“基准饱和”从 2.0 升到 10.0（剔除后 10.5），开始被单独研究。",
+   "evidence": [
+    {
+     "id": "VKGTGGcwl6",
+     "year": 2026,
+     "title": "LLMs Get Lost In Multi-Turn Conversation"
+    },
+    {
+     "id": "9gw03JpKK4",
+     "year": 2026,
+     "title": "Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments"
+    },
+    {
+     "id": "AiesX78Fsi",
+     "year": 2027,
+     "title": "CUEing User Simulators: Calibrated User Embeddings for Multi-Turn Benchmarking"
+    },
+    {
+     "id": "X5SAmNj1Vx",
+     "year": 2027,
+     "title": "Evaluating Model Capabilities After Benchmark Saturation"
+    }
+   ]
+  },
+  {
+   "title_zh": "评测元科学的真实内核：给评委打分、给榜单算置信区间（真实增幅约 1.4 倍，而非表面的 3 倍）",
+   "tag": "rising",
+   "body_zh": "讨论“基准/榜单/排名的可靠性、噪声、效度、污染”的标题从 42.4 升到 127.6 /万篇，表面上翻了三倍。但剔除高模板文体后只有 58.5（约 1.4 倍），在文体分不超过 2026 中位数的子集里持平（40.3 → 35.1）。真实内核集中在三处：第一，LLM-as-a-judge 审计，簇 7 从 18.7 升到 37.7（剔除后 26.2），2026 年接收率 32.4%；第二，rubric 从奖励信号变成评测对象本身，从 11.6 升到 41.8（剔除后 40.3，2026 年接收率 39.1%）；第三，统计上有效的排名方法，例如 anytime-valid 置信序列和基于模型分歧的基准纠错。2026 年两篇 oral（Train-before-Test 使排名一致、micro-benchmarking 可靠性）定义了这条线的标准：拿出可复现的统计修正，而不是空泛地呼吁“我们该审计”。",
+   "evidence": [
+    {
+     "id": "ORv3SAzus1",
+     "year": 2026,
+     "title": "Train-before-Test Harmonizes Language Model Rankings"
+    },
+    {
+     "id": "cReExMQLiK",
+     "year": 2026,
+     "title": "How Reliable is Language Model Micro-Benchmarking?"
+    },
+    {
+     "id": "i4dRfFQJdM",
+     "year": 2027,
+     "title": "Rank Confidence Sequences: Anytime-Valid Leaderboards"
+    },
+    {
+     "id": "Iqq0UGSYyC",
+     "year": 2027,
+     "title": "When the Judge Changes the Verdict: Rank Instability and an Auditing Protocol for LLM-as-a-Judge"
+    }
+   ]
+  },
+  {
+   "title_zh": "表征学习的增长点：测试时训练（fast weights）、JEPA 与表格基础模型",
+   "tag": "rising",
+   "body_zh": "测试时训练 / fast weights 从 17.2 升到 39.8 /万篇（剔除高模板文体后 31.5），2026 年接收率 44.1%，oral《In-Place Test-Time Training》均分 7.33。2027 年出现模块化 TTT、LLM 外挂神经记忆，也出现对“预训练 LLM 的 fast weight 利用率有限”的实证质疑。JEPA 从 7.1 升到 66.5（剔除后 54.4）；全文中 LeJEPA/SIGReg 从 0 篇增至 43 篇，V-JEPA 从 1.0 升到 15.1 /万篇。它的应用大量落在潜空间世界模型（与具身章节交叉），并开始向蛋白质、原子体系、气动场等领域扩散。表格基础模型（TabPFN/TabICL）从 7.1 升到 33.7（剔除后 33.9，基本不受文体影响），但 2026 年接收率只有 14.3%：投稿激增，审稿端认可度低，研究正从“做一个更强的 PFN”转向把它当平台做共形预测、公平性和测试时计算。",
+   "evidence": [
+    {
+     "id": "dTWfCLSoyl",
+     "year": 2026,
+     "title": "In-Place Test-Time Training"
+    },
+    {
+     "id": "x7actWdqhZ",
+     "year": 2027,
+     "title": "Test-Time Training for Pretrained LLMs: An Empirical Study of Limited Fast-Weight Utilization"
+    },
+    {
+     "id": "Y5mutDGK8R",
+     "year": 2027,
+     "title": "ProteinJEPA: Latent prediction improves protein language model pretraining"
+    },
+    {
+     "id": "EiDDxv3BPQ",
+     "year": 2027,
+     "title": "Test-Time Compute for Tabular Foundation Models: Mechanisms, Gains, and Limits"
+    }
+   ]
+  },
+  {
+   "title_zh": "经典表征子领域集体退潮，持续学习被并入“LLM 后训练遗忘”与 agent 自我进化",
+   "tag": "fading",
+   "body_zh": "标题+关键词份额普遍下降：联邦学习 168.1 → 118.1 /万篇（剔除高模板文体后 140.0），元学习/小样本 72.7 → 41.4，迁移/域适应/域泛化 139.8 → 117.2，对比/自监督 261.4 → 222.0，数据集蒸馏 23.7 → 9.1，OOD 泛化簇 26.8 → 11.4。这些方向命中论文的高模板文体比例在 32–46% 之间，接近全库平均，因此下降是真实的。2026 年审稿也不看好它们：联邦学习接收率 17.1%，迁移/DA 17.0%，元学习 20.8%。持续学习的总份额没有降（169 → 216，剔除后 190），但内容在转向：其中提到 LLM/基础模型/微调的比例从 51.7% 升到 57.6%，经典持续学习簇 68 从 69.7 降到 50.4，而 self-evolving/self-improving 措辞从 50.0 升到 191.3（剔除后 140.8）。持续学习的问题意识正在以“agent 自我进化”的名义回归。",
+   "evidence": [
+    {
+     "id": "22hBwIf7OC",
+     "year": 2026,
+     "title": "Plug-and-Play Compositionality for Boosting Continual Learning with Foundation Models"
+    },
+    {
+     "id": "FnaDv6SMd9",
+     "year": 2026,
+     "title": "Non-Convex Federated Optimization under Cost-Aware Client Selection"
+    },
+    {
+     "id": "TUuJjVNlM9",
+     "year": 2027,
+     "title": "Learning to Evolve: Enabling LLM Continual Learning via the Stable Anchor Dynamics"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "Muon / 矩阵感知优化器",
+   "from": 15.6,
+   "to": 36.0,
+   "unit": "per10k",
+   "note_zh": "剔除高模板文体后 40.3；2026 年接收率 38.7%"
+  },
+  {
+   "name_zh": "下界 / 极小极大 / 样本复杂度",
+   "from": 34.3,
+   "to": 71.1,
+   "unit": "per10k",
+   "note_zh": "剔除后 63.3；簇 33 的 10 倍增幅中多数属文体"
+  },
+  {
+   "name_zh": "Activation steering / RepE",
+   "from": 85.3,
+   "to": 151.3,
+   "unit": "per10k",
+   "note_zh": "剔除后 125.8；persona/特质 steering 在 steering 论文中占比从 9.7% 升到 14.8%"
+  },
+  {
+   "name_zh": "因果干预 / activation patching",
+   "from": 8.1,
+   "to": 80.0,
+   "unit": "per10k",
+   "note_zh": "剔除后 32.7（真实约 4 倍），其余为文体"
+  },
+  {
+   "name_zh": "表征几何 / 线性表示",
+   "from": 28.8,
+   "to": 68.1,
+   "unit": "per10k",
+   "note_zh": "剔除后 56.1；簇 83 为文体簇，故按正则计数"
+  },
+  {
+   "name_zh": "测试时训练 / fast weights",
+   "from": 17.2,
+   "to": 39.8,
+   "unit": "per10k",
+   "note_zh": "剔除后 31.5；2026 年接收率 44.1%"
+  },
+  {
+   "name_zh": "JEPA",
+   "from": 7.1,
+   "to": 66.5,
+   "unit": "per10k",
+   "note_zh": "剔除后 54.4；LeJEPA/SIGReg 从 0 篇增至 43 篇"
+  },
+  {
+   "name_zh": "表格基础模型（TabPFN/TabICL）",
+   "from": 7.1,
+   "to": 33.7,
+   "unit": "per10k",
+   "note_zh": "剔除后 33.9；但 2026 年接收率仅 14.3%"
+  },
+  {
+   "name_zh": "Rubric（评测/奖励）",
+   "from": 11.6,
+   "to": 41.8,
+   "unit": "per10k",
+   "note_zh": "剔除后 40.3；2026 年接收率 39.1%"
+  },
+  {
+   "name_zh": "用户模拟器",
+   "from": 2.0,
+   "to": 15.6,
+   "unit": "per10k",
+   "note_zh": "剔除后 19.4；多轮交互评测的基础设施"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "事后 XAI（saliency/反事实/特征归因）",
+   "from": 97.4,
+   "to": 50.9,
+   "unit": "per10k",
+   "note_zh": "剔除后 49.6；2026 年接收率 16.1%"
+  },
+  {
+   "name_zh": "ICL 机制与理论（簇 103+226）",
+   "from": 65.1,
+   "to": 27.7,
+   "unit": "per10k",
+   "note_zh": "剔除后 29.8；而簇 226 在 2026 年接收率为 41.3%"
+  },
+  {
+   "name_zh": "联邦学习",
+   "from": 168.1,
+   "to": 118.1,
+   "unit": "per10k",
+   "note_zh": "剔除后 140.0；2026 年接收率 17.1%"
+  },
+  {
+   "name_zh": "元学习 / 小样本",
+   "from": 72.7,
+   "to": 41.4,
+   "unit": "per10k",
+   "note_zh": "剔除后 39.1"
+  },
+  {
+   "name_zh": "多语言 / 低资源 LLM",
+   "from": 76.2,
+   "to": 42.8,
+   "unit": "per10k",
+   "note_zh": "剔除后 39.1"
+  },
+  {
+   "name_zh": "数据集蒸馏",
+   "from": 23.7,
+   "to": 9.1,
+   "unit": "per10k",
+   "note_zh": "剔除后 10.5"
+  },
+  {
+   "name_zh": "AlpacaEval（全文提及）",
+   "from": 14.6,
+   "to": 4.6,
+   "unit": "per10k",
+   "note_zh": "MT-Bench 10.1 → 4.9；聊天时代的评测标尺退场"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年四个主题的接收率依次为：理论 29.5%（均分 4.30），高于 27.0% 基线；可解释 27.2%（4.15）；评测 26.5%（4.28）；表征最低，22.8%（4.09）。按主领域看，learning theory 以 36.8% 居 21 个主领域之首，transfer/meta/lifelong 只有 20.7%。获奖励的簇偏向“机制清楚、可证明”的工作：learning-augmented 算法 48.5%（均分 4.96），在线学习/regret 42.9%（5.05，本章最高均分），ICL 理论 41.3%，长程 agent 基准 40.9%，Muon 40.0%，隐式偏差 39.1%，注意力头机制 37.9%，训练数据归因 36.8%，电路 36.2%，steering 35.8%。被冷落的是“套用现成工具出结论”的工作：Shapley 归因 9.4%（3.63），线性探针 12.5%，TabPFN 12.5%（3.63），无监督域适应 13.3%，事后 XAI 13.6%（3.59），联邦学习 16.1%，领域 LLM 基准 18.8%。概念层面，TTT 44.1%、Muon 38.7%、rubric 39.1%、patching 37.5% 偏高，效度类 16.7%、可复现性 21.4%、“评测方法论”措辞 23.0% 偏低。需要注意：2026 年的高模板文体本身没有被惩罚（控制领域与长度后每 SD 的 OR 为 0.99），但当年只有 1% 的论文属于这种文体；2027 年这种文体恰好大量涌入 2026 年接收率最低的探针、效度、方法论方向。",
+ "frontline_zh": [
+  "Muon 工程化有三个方向：一是减少 Newton–Schulz 步数，或做低精度、自适应谱估计（Turbo-Muon、Precision-Aware NS），全文 NS/polar 提及从 38.4 升到 58.8 /万篇；二是分布式与通信压缩（MuonMix、StructMuon、RADeMuon）；三是用 LMO（linear minimization oracle）视角统一 Muon、Scion 与 Adam（Chained LMOs）。",
+  "Muon 机理研究开始与经典训练动力学对接，例如 no-momentum Muon 与 edge of stability、Muon 的隐式偏差、“用不用 Muon”与 simplicity bias 的关系。2026 年这条线的焦点还是收敛性证明。",
+  "下界类理论的新对象：双线性注意力打分的 minimax 样本复杂度、被污染的 CoT 监督、层级推理奖励的 minimax 速率、测试时推理的信息率极限、KL 正则约束 RLHF 的末次迭代收敛。",
+  "可解释性的默认实验底座从 Llama 换成 Qwen：在“LLM 可解释性”论文摘要中，Qwen 提及率从 7.1% 升到 21.6%（剔除高模板文体后 16.2%），Llama 从 8.3% 到 11.6%，OLMo 从 0.7% 到 2.6%。",
+  "可解释性的对象从聊天 LLM 扩展到 agent（4.2% → 9.1%）和 VLA/机器人（1.4% → 2.9%）；massive activations / attention sink 主题从 7.1 升到 13.9 /万篇，2026 年接收率 50%（n=14）。",
+  "SAE 进入变体期：temporal SAE（2026 oral）、Matryoshka、binary、spike-and-slab、bilinear autoencoder 等；同时出现“automated interpretability 指标无法区分训练过与随机初始化的 Transformer”这类方法论警示（2026 年被接收）。",
+  "Rubric 本身成为评测研究对象，例如学习 rubric 的选择与排序（GraphRubric）、按重要性给评分准则加权、rubric 质量诊断；LLM-as-a-judge 方向则转向排名不稳定性审计、分位数校准和 preference leakage。",
+  "测试时训练分成两派：一派做架构，即 TTT 层、LaCT、外挂神经记忆，全文提及 3.0 → 8.8 /万篇；另一派针对 agent/推理，即测试时 RL、从失败中学习。后者与 agent 自我进化在用词上已基本无法区分。",
+  "LeJEPA/SIGReg 成为 JEPA 的新默认正则（全文 0 篇 → 43 篇），出现了一批领域 JEPA：ProteinJEPA、Atom-JEPA、AeroJEPA。",
+  "摘要里的统计报告显著增多：bootstrap 从 47.9 升到 111.8 /万篇，置信区间从 16.2 升到 39.1，Bonferroni/多重比较从 1.0 升到 12.8。但其中 65–73% 来自高模板文体论文，属于文体特征，不能说明评测的统计严谨性整体提高了。"
+ ],
+ "watchlist_zh": [
+  "2027 年审稿会如何对待高模板文体的“审计/预注册/探针”论文：如果沿用 2026 年对线性探针（12.5%）和效度类（16.7%）的标准，评测与可解释性的大部分表观增量会在接收层面消失。",
+  "因果干预的有效性之争：继 2026 年 oral 提出干预会产生离流形表征之后，steering 与 patching 的结论能否通过 on-manifold 检验。",
+  "Muon 在拥挤中能否维持约 40% 的接收率：增量主要来自 NS 近似与分布式工程，需要看是否出现超过 AdamW 的大规模公开训练证据。",
+  "表格基础模型投稿 5 倍增长与 2026 年 14% 接收率之间的落差，2027 年能否收窄。",
+  "JEPA 与 TTT 能否从世界模型和长上下文架构中沉淀出通用的预训练配方，而不只是作为 agent 或世界模型的组件。"
+ ]
+}
