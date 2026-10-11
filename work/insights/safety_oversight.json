@@ -78,11 +78,6 @@
      "title": "Monitorability Is Trainable: Post-Training for Chain-of-Thought Monitorability"
     },
     {
-     "id": "LHMokpKYAC",
-     "year": 2027,
-     "title": "Hidden Reasoning Must Leak, but Need Not Be Readable: Fundamental Opportunities and Limits for Chain-of-Thought Monitoring"
-    },
-    {
      "id": "JTX0iqxBjk",
      "year": 2026,
      "title": "Output Supervision Can Obfuscate the Chain of Thought"
@@ -167,11 +162,6 @@
      "id": "mmV9xVxNO5",
      "year": 2027,
      "title": "Benchmark Scores Are Pipeline-Dependent: A Reliability Audit of Cybersecurity LLM Benchmarks"
-    },
-    {
-     "id": "SeyVLPRqw1",
-     "year": 2027,
-     "title": "Intent Laundering: AI Safety Datasets Are Not What They Seem"
     }
    ]
   },
