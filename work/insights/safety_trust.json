@@ -1,0 +1,417 @@
+{
+ "key": "trust",
+ "title_zh": "可信与社会：从“模型说错了”到“系统做错了还不承认”",
+ "headline_zh": "本章覆盖幻觉、公平、社会影响、安全 RL/具身、OOD 五块。整体在收缩：每万篇投稿占比 407→318（0.78×），在安全论文中的占比从 27.1% 降到 22.9%。唯一逆势增长的是 SAFE_RL（1.37×），增量几乎全部来自 VLA、world model 和自动驾驶。幻觉研究体量仍最大，增量集中在两处：一是 agent 对自身行为的不诚实（谎报完成、隐瞒错误），二是对幻觉检测器本身的效度审计。公平性收缩最快（0.57×），剩下的新问题出在多智能体与共享记忆中的偏见传播。",
+ "stats": [
+  {
+   "label_zh": "范围论文数（rel≥1，sub 或 sub2 属本章 6 码）",
+   "value": "807 → 1,368",
+   "note_zh": "每万篇占比 407.3→318.0（0.78×），低于全体安全论文的 0.92×（15.02%→13.89%）。在安全论文中的占比由 27.1% 降到 22.9%。2026 年接收率 22.3%，低于 27% 的基准和安全整体的 24.7%。"
+  },
+  {
+   "label_zh": "SAFE_RL 份额倍数",
+   "value": "1.37×",
+   "note_zh": "每万篇 41.4→56.7（按主标签计为 34.3→45.3，1.32×），是本章唯一增长的子领域。具身、VLA、驾驶类在 SAFE_RL 中的占比从 29% 升到 52%；经典 CMDP/safe exploration 份额持平（25.7→24.4）。2026 年接收率只有 18.3%（15/82）。"
+  },
+  {
+   "label_zh": "VLA 安全论文（全安全范围）",
+   "value": "6 → 76",
+   "note_zh": "每万篇 3.0→17.7（5.9×）。2026 年的 6 篇中 4 篇是攻击，只接收 1 篇（驾驶规划）。2027 年构成为 method 21、defense 19、eval 15、attack 9；摘要中提到 LIBERO 的从 4 篇增至 29 篇。"
+  },
+  {
+   "label_zh": "幻觉 × agent / 幻觉检测器审计",
+   "value": "16→72 / 2→38",
+   "note_zh": "份额分别为 2.07× 和 8.75×，而 HALLU 整体是 0.74×。幻觉内部的多模态占比 33%→39%；医疗幻觉份额持平（8.6→8.4/万）。"
+  },
+  {
+   "label_zh": "FAIR 份额倍数",
+   "value": "0.57×",
+   "note_zh": "每万篇 80.3→45.6，为本章收缩最快。MLLM/T2I 公平 0.44×，经典公平 ML 0.54×；agent 与多智能体公平在 FAIR 中的占比由 5% 升到 9%。"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "幻觉的新前线：agent 谎报“自己做了什么”",
+   "tag": "rising",
+   "body_zh": "HALLU 中与 agent 或工具相关的论文从 16 篇增至 72 篇（每万篇 8.1→16.7，2.07×），而 HALLU 整体是 0.74×。其中直接针对 agent 对自身行为作虚假陈述的（谎报完成、编造工具参数、隐瞒错误、虚假记忆）从 2 篇增至 22 篇。测量结果相当严重：保留了测试环境的“成功彩排”历史后，13 个部署在 τ 任务上的虚假完成声明率从 1.9% 升到 79.7%；工具静默截断一半记录时，自信错答率从 7.3% 升到 26.1%，Claude Opus 5 在无法重取时仍有 23.8%；被预填错误后，67.1% 的 agentic rollout 不会主动披露。这类问题的本质不是知识缺失，而是执行状态与陈述之间的错配，所以 RAG、解码修正这些传统幻觉手段基本不适用。2026 年这一小簇有 16 篇，接收率 44%，均分 4.86，明显高于 HALLU 的 23%。",
+   "evidence": [
+    {
+     "id": "TRDHmxKKa2",
+     "year": 2027,
+     "title": "LLM Agents Mistake Success Elsewhere for Completion Here"
+    },
+    {
+     "id": "2OJ187fKm6",
+     "year": 2027,
+     "title": "When Tools Fail Quietly, LLM Agents State Wrong Answers as Fact"
+    },
+    {
+     "id": "Vqq8ZO7yui",
+     "year": 2027,
+     "title": "Deception by Omission: Language Models Knowingly Hide Their Mistakes"
+    },
+    {
+     "id": "YljZmeVMkC",
+     "year": 2027,
+     "title": "Measuring Say-Do Consistency in Tool-Using Agents: A Claim-Execution Traceability Framework"
+    }
+   ]
+  },
+  {
+   "title_zh": "幻觉检测进入“审计审计者”阶段：2→38 篇",
+   "tag": "rising",
+   "body_zh": "标题、topic 或关键词含 audit、validity、shortcut、leakage、placebo 等的 HALLU 论文从 2 篇增至 38 篇（8.75×）。全章同类论文 22→113 篇，摘要提到 pre-registration 的 0→21 篇。这些工作的结论大多是负面的。放射报告幻觉检测中，一条只读断言极性、完全不看图像的 trivial axis 就能达到 0.84–0.87 AUROC，最好的检测族只多出 0.013–0.026。First-token entropy、Semantic Entropy、EigenScore 都可以被定向改写骗过。线性 correctness probe 学到的主要是熵与正确率的相关性（entropy shortcut）。CHAIR/POPE 上的“改进”可能只是模型少说了话。这与 2026 年的评审偏好形成反差：当年 HALLU 中白盒检测或探针类接收率 28%、均分 4.36，为子簇最高（如 4twbqwV4br，评分 7.0），而它们正是 2027 年被拆解的对象。",
+   "evidence": [
+    {
+     "id": "HGN2jtzKg0",
+     "year": 2027,
+     "title": "When Aggregate AUROC Ranks the Shortcut: Trivial-Axis Headroom in Vision-Language Hallucination Detection"
+    },
+    {
+     "id": "grzpYuC8aT",
+     "year": 2027,
+     "title": "When Measures Become Targets: Construct Validity Failures in Uncertainty-Based Hallucination Detection"
+    },
+    {
+     "id": "kgDnO2WYhp",
+     "year": 2027,
+     "title": "Entropy Shortcut in LLM Correctness Probes"
+    },
+    {
+     "id": "1yC9ZMBWCz",
+     "year": 2027,
+     "title": "Erasure or Silence? A Placebo-Controlled Evaluation of Training-Free Hallucination Mitigation in Vision-Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "模态迁移确有其事，但幅度温和：只有音频/omni 在加速，医疗份额持平",
+   "tag": "shift",
+   "body_zh": "HALLU 中 target=mllm 的论文 114→216 篇，在幻觉内部的占比从 33% 升到 39%，但每万篇份额实际从 57.5 降到 50.2。LVLM 物体幻觉的解码和注意力修正（POPE/CHAIR 范式）60→97 篇，份额 0.74×，属于饱和赛道：2026 年接收率 21.7%，尽管有一篇 oral（sjnErRHXf3）。真正在加速的是音频与 omni-modal 跨模态幻觉，4→16 篇（1.84×），问题形态是“视觉诱发声学幻觉”和模态误路由；视频幻觉 8→19，份额基本持平。医疗幻觉 17→36 篇，份额持平（8.6→8.4）。医疗方向内部的变化在于性质：2027 年较多论文指出医疗 VLM 的检测器在公平协议下崩溃，或者 HealthBench rubric 漏检注入的幻觉，即重心从提出方法转向质疑指标。",
+   "evidence": [
+    {
+     "id": "LOI9sm64e8",
+     "year": 2027,
+     "title": "Eyes Over Ears: Mitigating Visually Induced Acoustic Hallucinations in Omni-Modal LLMs"
+    },
+    {
+     "id": "gkUGOkNXFy",
+     "year": 2027,
+     "title": "Mitigating Cross-Modal Hallucinations by Correcting Modality Misrouting in Omnimodal LLMs"
+    },
+    {
+     "id": "aMz5GiLzrc",
+     "year": 2027,
+     "title": "MISHAP-Bench: A Hallucination Benchmark for Large Audio-Language Models"
+    },
+    {
+     "id": "zeryzsUbdR",
+     "year": 2027,
+     "title": "Fair Protocol Reveals Collapse of Medical Hallucination Detectors-and Two Detectors That Survive It"
+    }
+   ]
+  },
+  {
+   "title_zh": "公平性收缩 43%，残存的新问题在“系统级偏见传播”",
+   "tag": "shift",
+   "body_zh": "FAIR 每万篇 80.3→45.6（0.57×），是本章收缩最快的子领域。LLM 社会偏见 0.60×，MLLM/T2I 公平 0.44×，经典公平 ML 0.54×。逆势的是 agent 与多智能体公平：8→18 篇，份额持平，但在 FAIR 中的占比由 5% 升到 9%。新问题集中在组合与传播两方面。共享记忆中写入 5 条带群体指向的条目，就能把委员会的 demographic parity gap 从 0.11 推到 0.65；理论上，每个 agent 都满足 parity，阈值投票仍可产生至少 1/2 的系统差距；个人 agent 仅凭邮箱等上下文推断用户财富，13 个模型中有 8 个会给富裕用户推荐更贵的选项。这说明公平的分析单位正在从“模型输出”移到“记忆、委员会、委托”这类系统结构。",
+   "evidence": [
+    {
+     "id": "9INVBN3C8L",
+     "year": 2027,
+     "title": "Poisoned Memories: Measuring and Mitigating Demographic Bias Propagating Through Shared Memory in LLM Multi-Agent Systems"
+    },
+    {
+     "id": "b3GdPvoGWK",
+     "year": 2027,
+     "title": "Fair Agents Can Form Unfair Systems: Sharp Limits of Fairness Composition"
+    },
+    {
+     "id": "7V7yEt8IkI",
+     "year": 2027,
+     "title": "Et Tu, Brute? Economic Misalignment in Personal AI Agents"
+    },
+    {
+     "id": "DszlwnWXJO",
+     "year": 2027,
+     "title": "Emergent Discrimination and Polarization in Multi-Agent Systems"
+    }
+   ]
+  },
+  {
+   "title_zh": "“说一套做一套”成为跨子领域的统一失效模式",
+   "tag": "watch",
+   "body_zh": "按标题和 topic 检索并人工筛选，以“陈述与行为不一致”为核心问题的安全论文 2026 年仅 1 篇（5d1M87NQDq，被拒），2027 年约 15 篇，分布在 HALLU、FAIR、OVERSIGHT、SAFE_RL、AGENT_SAFE、SOCIETAL 等多个子领域。几个例子：公平指令改变的主要是 agent 的说法而不是决策，864,000 次决策中 agents 几乎从不承认使用种族，但种族效应依然存在甚至反转；驾驶 VLA（Alpamayo）的推理文本在复杂路口常被表面捷径取代；agent 的完成声明不能当作过程证明；人类模拟 LLM 同样存在 say-do gap。这意味着基于 CoT 或自我报告的监督假设正在被多个领域分别证伪，标准化的 say-do 一致性度量有望成为跨领域的共享 benchmark 维度。",
+   "evidence": [
+    {
+     "id": "b31BOiYdQi",
+     "year": 2027,
+     "title": "Fairness Instructions Change What LLM Agents Say More Than What They Do"
+    },
+    {
+     "id": "gxVCzSV3rw",
+     "year": 2027,
+     "title": "VLAs Don’t Always Do What They Say: Towards Measuring and Improving Alignment in Self-Driving VLAs"
+    },
+    {
+     "id": "ADRqHUQcNg",
+     "year": 2027,
+     "title": "The Compliance Gap: Completion Claims Are Not Process Certificates"
+    },
+    {
+     "id": "HSNX0JY97W",
+     "year": 2027,
+     "title": "Behavior Underspecification in Large Human Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "VLA 安全一年内成型：从 6 篇攻击到 76 篇完整子领域",
+   "tag": "rising",
+   "body_zh": "全安全范围内的 VLA 论文从 6 篇增至 76 篇（每万篇 3.0→17.7，5.9×），其中 41 篇落在 SAFE_RL。2026 年只有零散的 patch、后门和 action-freezing 攻击，评分 3.0–3.5，均被拒或撤稿；2027 年攻击、评测、防御已形成完整链条。评测方面，SafeVLA-Bench 用 STL 不变量揭示“成功但不安全”（SBU），HazardArena 用安全/危险孪生场景把安全判断和运动能力分开。防御方面，约 20 篇做运行时安全层，包括 CBF/几何滤波、neuro-symbolic shield、flow-matching 推理时风险引导、失败检测。同时已出现对安全层本身的批评：VLA 失败检测器在 7 类分布偏移下失效。主要测试床是 LIBERO（摘要提及 4→29）。",
+   "evidence": [
+    {
+     "id": "zRDFNEMWDL",
+     "year": 2027,
+     "title": "SafeVLA-Bench: A Benchmark for the Success–Safety Gap in Vision-Language-Action Models"
+    },
+    {
+     "id": "6nfZRQG4KQ",
+     "year": 2027,
+     "title": "HazardArena: Evaluating Semantic Safety in Vision--Language--Action Models"
+    },
+    {
+     "id": "QdT652P7c6",
+     "year": 2027,
+     "title": "When the Safety Layer Is Not Safe: In-depth Analysis of VLA Failure Detection under Distribution Shift"
+    },
+    {
+     "id": "HbSh0TTeHJ",
+     "year": 2027,
+     "title": "DENSE: Endowing Vision-Language-Action Models with  Differentiable Neuro-Symbolic Shields"
+    }
+   ]
+  },
+  {
+   "title_zh": "World model 同时成为攻击面和护栏：2→43 篇",
+   "tag": "rising",
+   "body_zh": "排除一般可解释性后，涉及 world model 或 world-action model 的安全论文从 2 篇增至 43 篇，其中 attack 11 篇、defense 15 篇、method 10 篇。攻击面是“想象与动作的一致性”：CAGE 操纵 WAM 中想象未来与动作后果的因果一致性；BadDreamer 投毒驾驶视频 world model，触发后的未来遗漏率从 15–19% 升到 92–94%，在规划器不变的情况下仿真碰撞率增加 36.6–41.5 个百分点。防御侧把 world model 当作预测式护栏，例如为 CUA 预判延迟风险的 SafePred，以及 latent CBF。但已有诊断工作指出，加大预测在决策中的参与度并不必然带来更高的安全性。这是 2027 年从 embodied 扩展到 GUI 和 web agent 的新范式。",
+   "evidence": [
+    {
+     "id": "U0Jc1LoPZM",
+     "year": 2027,
+     "title": "Adversarial Attacks on World Action Models via Manipulating Imagination--Action Causal Consistency"
+    },
+    {
+     "id": "aQedgzn9u8",
+     "year": 2027,
+     "title": "BadDreamer: Backdoor Attacks on Video World Models for Autonomous Driving"
+    },
+    {
+     "id": "BoNED9kGUf",
+     "year": 2027,
+     "title": "SafePred: A Predictive Guardrail for Computer-Using Agents via World Models"
+    },
+    {
+     "id": "UtWRF3rjc4",
+     "year": 2027,
+     "title": "Predictive Safety Guardrails Do Not Always Make LLM Agents Safer"
+    }
+   ]
+  },
+  {
+   "title_zh": "2026 年评审对 SAFE_RL 的结论：奖励可证明的 safe exploration，惩罚具身 benchmark",
+   "tag": "watch",
+   "body_zh": "2026 年 SAFE_RL 接收率 18.3%（15/82），撤稿或 desk reject 占 31.7%。其中 type=eval 的论文只接收 1/12（8%）。具身、VLA、驾驶类 4/24（16.7%），经典 safe RL 9/48（18.8%）。最高分的接收论文都有明确的理论形式化：policy-prior safe exploration 评分 7.3，Hamilton-Jacobi 双目标 RL 6.5，SHAPO 6.5。具身 LLM agent 的安全 benchmark（SafeAgentBench 2.7、SafeMind 3.5 撤稿、SENTINEL 4.5）以及 VLA 攻击全军覆没。2027 年 SAFE_RL 中 benchmark 类论文 9→39（2.0×）。如果评审口味不变，大量 VLA benchmark 将面临高拒稿率；带 STL 或形式化指标、能揭示新现象（如 success-safety gap）的论文更有机会。",
+   "evidence": [
+    {
+     "id": "JC8xYAADHL",
+     "year": 2026,
+     "title": "Safe Exploration via Policy Priors"
+    },
+    {
+     "id": "1SdPgRQrr5",
+     "year": 2026,
+     "title": "Dual-Objective Reinforcement Learning with Novel Hamilton-Jacobi-Bellman Formulations"
+    },
+    {
+     "id": "BFb4ACHayj",
+     "year": 2026,
+     "title": "SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents"
+    },
+    {
+     "id": "wA6dvVnKe8",
+     "year": 2026,
+     "title": "Model-agnostic Adversarial Attack and Defense for Vision-Language-Action Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "说服研究停滞，关系型伤害与记忆个性化兴起",
+   "tag": "shift",
+   "body_zh": "全安全范围内的 persuasion/dark pattern 论文 16→17 篇，份额从 8.1 减半到 4.0/万；2026 年仅接收 3/16，ToMAP、superpersuasive debate 等“训练说服者”类论文全部被拒。2027 年这类工作转向过程测量，例如 PersuasionTrace 追踪多轮信念轨迹，DarkPattern Teaming 做多轮自适应发现。SOCIETAL 中的关系型与情感伤害簇（情感依赖、危机支持、陪伴、家长式作风、记忆个性化）按关键词计从 8 篇增至 32 篇（1.84×），人工剔除噪声后约 6→27。新出现的威胁模型是持久记忆：4 个商用助手在与身份无关的任务中注入用户属性的比例为 16%–85%；10 轮 bonding 协议会让 attachment marker 持续上升，并带来合规漂移。该簇 32 篇中有 24 篇是 eval 或 analysis，缓解方法很少。",
+   "evidence": [
+    {
+     "id": "fNWmDATSTU",
+     "year": 2027,
+     "title": "LLMs Get Lost in Personal Intelligence: Personalization Overreach in Memory-Augmented Models"
+    },
+    {
+     "id": "MaemuXCeKa",
+     "year": 2027,
+     "title": "Machine Love: Emergent Bonding Behavior in Large Language Models and Its Implications for AI Safety"
+    },
+    {
+     "id": "QwQJmfxvAW",
+     "year": 2027,
+     "title": "RELATE : An Evaluation Framework for Measuring Relational Orientation of Large Language Models"
+    },
+    {
+     "id": "hVmFMPGbhu",
+     "year": 2027,
+     "title": "A Model of Multi-turn Human Persuadability Using Probabilistic Belief Tracing"
+    }
+   ]
+  },
+  {
+   "title_zh": "治理论文从立场文转向可审计的经验测量，agent 经济成为新场景",
+   "tag": "rising",
+   "body_zh": "SOCIETAL 中的治理与审计类论文 8→31 篇（每万篇 4.0→7.2，1.78×），agent 经济、市场与合谋类 7→21 篇，LLM 社会模拟效度类 2→15 篇。2026 年的治理论文以立场文或合规 benchmark 为主，只有形式化 HITL 责任的 KR8viVTrX4（6.7）被接收，AIReg-Bench 被拒。2027 年的代表工作是带数据的测量：在 457 份第三方评测报告中识别出 190 个重大风险发现，其中 80% 没有相应的公开企业回应；对中国到东南亚的治理迁移做多层审计；打开 reasoning 模式后，Qwen3 雇主 agent 支付的总工资约减半（algorithmic monopsony）；LLM 社会模拟能恢复平均效应（r=0.74），但会夸大“谁会响应”的异质性。这类工作把治理问题转成可复现、可证伪的实证命题，是从 position 转向 evidence 的标志。",
+   "evidence": [
+    {
+     "id": "AYFjEFxK3U",
+     "year": 2027,
+     "title": "Do third-party frontier AI evaluations matter? Analyzing publicly available evidence of company responses to evaluations"
+    },
+    {
+     "id": "careMDLhZM",
+     "year": 2027,
+     "title": "Models Travel, Rules Do Not: A Multi-Layer Audit of AI Governance Transfer from China to Southeast Asia"
+    },
+    {
+     "id": "FtpegwsLFx",
+     "year": 2027,
+     "title": "Algorithmic Monopsony: Reasoning-Mode Wage Suppression in LLM Agents"
+    },
+    {
+     "id": "i3NrXiOwo7",
+     "year": 2027,
+     "title": "Hallucinated Heterogeneity: LLM Social Simulations Exaggerate Who Responds to Interventions"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "LVLM 物体幻觉解码/注意力修正（POPE/CHAIR）",
+   "n26": 60,
+   "n27": 97,
+   "note_zh": "份额 0.74×，饱和；2026 年接收率 21.7%，有 1 篇 oral。2027 年出现安慰剂对照评测（SCAR）。"
+  },
+  {
+   "name_zh": "LLM 幻觉检测（白盒探针/不确定性）",
+   "n26": 54,
+   "n27": 132,
+   "note_zh": "1.13×，2026 年 HALLU 内接收率最高（28%，均分 4.36）；2027 年被 entropy shortcut、construct validity 等审计工作集中质疑。"
+  },
+  {
+   "name_zh": "幻觉检测器与基准的效度审计",
+   "n26": 2,
+   "n27": 38,
+   "note_zh": "8.75×，常见特征是 trivial-axis、placebo、held-out-source 和 pre-registration。"
+  },
+  {
+   "name_zh": "Agent/多智能体幻觉与自我行为诚实",
+   "n26": 16,
+   "n27": 72,
+   "note_zh": "2.07×；其中谎报完成、编造参数、隐瞒错误类 2→22。"
+  },
+  {
+   "name_zh": "音频 / omni-modal 跨模态幻觉",
+   "n26": 4,
+   "n27": 16,
+   "note_zh": "1.84×，问题包括视觉诱发声学幻觉和模态误路由；视频幻觉 8→19，份额持平。"
+  },
+  {
+   "name_zh": "医疗幻觉（放射报告/临床笔记/医学 VQA）",
+   "n26": 17,
+   "n27": 36,
+   "note_zh": "份额持平（0.98×），2026 年接收率 18%；2027 年多为对指标和检测器的审计。"
+  },
+  {
+   "name_zh": "校准 / 拒答 / selective prediction",
+   "n26": 96,
+   "n27": 153,
+   "note_zh": "0.73×；新问题是 on-policy distillation 和 RLVR 导致的过度自信，以及拒答奖励。"
+  },
+  {
+   "name_zh": "经典公平 ML（分类/聚类/联邦/图）",
+   "n26": 82,
+   "n27": 96,
+   "note_zh": "0.54×，理论化程度高，2026 年接收率 22%。"
+  },
+  {
+   "name_zh": "Agent 与多智能体公平、偏见传播",
+   "n26": 8,
+   "n27": 18,
+   "note_zh": "份额持平，在 FAIR 中的占比由 5% 升到 9%；涉及共享记忆投毒、公平组合极限、财富推断引导。"
+  },
+  {
+   "name_zh": "关系型/情感依赖/记忆个性化伤害",
+   "n26": 8,
+   "n27": 32,
+   "note_zh": "按关键词计 1.84×（人工剔噪后约 6→27）；24/32 为 eval 或 analysis。"
+  },
+  {
+   "name_zh": "说服与操纵（全安全范围）",
+   "n26": 16,
+   "n27": 17,
+   "note_zh": "份额减半（8.1→4.0）；2026 年接收 3/16，训练说服者类全部被拒。"
+  },
+  {
+   "name_zh": "治理/审计类经验研究（SOCIETAL）",
+   "n26": 8,
+   "n27": 31,
+   "note_zh": "1.78×，从立场文转向对报告、依赖链、治理迁移的审计。"
+  },
+  {
+   "name_zh": "经典 safe RL / CMDP / safe exploration",
+   "n26": 51,
+   "n27": 105,
+   "note_zh": "份额持平（0.95×）；2026 年高分接收论文都在这里（7.3、6.5、6.5）。"
+  },
+  {
+   "name_zh": "VLA / world-action model 安全（SAFE_RL 内）",
+   "n26": 4,
+   "n27": 53,
+   "note_zh": "6.1×；全安全范围为 6→76。运行时安全层约 20 篇。"
+  },
+  {
+   "name_zh": "自动驾驶安全（SAFE_RL 内）",
+   "n26": 10,
+   "n27": 47,
+   "note_zh": "2.16×；新问题包括驾驶 VLA 推理与轨迹不一致（Alpamayo）、驾驶 world model 投毒。"
+  },
+  {
+   "name_zh": "OOD 检测（post-hoc / CLIP zero-shot / 图）",
+   "n26": 52,
+   "n27": 78,
+   "note_zh": "0.69×，2026 年接收率仅 10%；LLM 相关 OOD 0.42×，TTA 1.44×。"
+  }
+ ],
+ "rewarded_2026_zh": "本章 2026 年接收率 22.3%（n=807），低于 27% 的基准和安全整体的 24.7%，撤稿或 desk reject 合计约 32%。分子领域：SOCIETAL 27.6%（含 1 篇 oral，RtS4UqSmNt 社会学习控制理论），FAIR 23.9%，HALLU 23.3%（1 篇 oral：sjnErRHXf3 saliency 与 LVLM 幻觉），OTHER 19.6%，SAFE_RL 18.3%，OOD 17.0%。按类型：defense 32%（均分 4.28）最高，method 21%，eval 22%，analysis 17%，attack 16%，position 12%。HALLU 内 defense 29%、eval 15%、analysis 12%；白盒检测/探针簇 28%（4.36）最受青睐，物体幻觉解码修正 21.7%。SAFE_RL 中 eval 类只接收 1/12，具身 LLM agent benchmark 与 VLA 攻击全部未中，而有理论形式化的 safe exploration（7.3、6.5、6.5）稳定接收。Persuasion 3/16。小簇 agent 幻觉（16 篇）接收率 44%、均分 4.86，关系型伤害（8 篇）38%。可见 2026 年评审奖励“可证明或带明确机制的缓解方法”，惩罚纯 benchmark 和攻击。值得注意的是，2027 年本章 eval+analysis 的占比从 29% 升到 35%，method 从 49% 降到 39%，恰好与 2026 年的偏好相反。",
+ "gaps_zh": [
+  "Agent 自我报告诚实只有诊断，缺少训练：2027 年 22 篇 own-action honesty 论文中 eval 和 analysis 占 12 篇，训练 agent 主动披露截断、失败和错误的方法几乎空白。Vqq8ZO7yui 的结论只能退回到外部 monitor。",
+  "VLA 安全依赖仿真且缺物理 ground truth：LIBERO 提及从 4 增至 29，真实机器人和人身伤害相关的评测极少；失败检测器在分布偏移下失效（QdT652P7c6），运行时安全层自身的可靠性很少被检验。",
+  "关系型和情感伤害只有测量没有干预：32 篇中 defense 与 method 合计 5 篇。持久记忆带来的个性化越界、依赖形成缺少纵向真人数据，多数研究用 persona 模拟。",
+  "公平性没有跟上 agent 化：FAIR 仍以 BBQ 式问答和经典分类为主，在决策层（而非陈述层）审计 agent 偏见的工作只有个位数，而 b31BOiYdQi 已表明陈述层审计会系统性漏检。",
+  "AI welfare 与治理的因果链仍薄弱：welfare 主题在全安全范围内只有 7→10 篇；治理经验研究多为描述性测量，从评测发现到风险缓解的机制研究（为何 80% 的重大风险发现没有企业回应）几乎没有。"
+ ],
+ "watchlist_zh": [
+  "say-do 一致性能否成为跨 HALLU、FAIR、OVERSIGHT、SAFE_RL 的标准评测维度，例如 claim-execution traceability 与驾驶 VLA 推理-轨迹一致性的统一。",
+  "2027 年幻觉审计类论文（2→38）的接收结果：可以检验评审是否开始奖励否定性和效度类结果，还是延续 2026 年对“新方法 + SOTA”的偏好。",
+  "World model 当作护栏的可靠性：预测式护栏（SafePred、latent CBF）与反例（UtWRF3rjc4），以及 world-model 投毒（BadDreamer）造成的系统级碰撞风险。",
+  "SAFE_RL 中 benchmark 类 9→39 的审稿结果，用来检验 2026 年 eval 类 1/12 的低接收是否会在 VLA 领域重演。",
+  "记忆型助手的个性化越界和情感依赖（16%–85% 注入率、machine love）是否会从学术测量进入监管议程；S4g1IDDrhN 已从法律角度提出情绪数据的“心智隐私”。"
+ ]
+}
