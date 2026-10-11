@@ -1,0 +1,494 @@
+{
+ "title_zh": "2027 年的“程式化文风”：一次全领域的写作语域迁移",
+ "intro_zh": [
+  "2027 年投稿的摘要整体换了一种写法：“evidence / held fixed / matched / frozen / the same … / every …”这类强调对照、控制变量与证据边界的措辞大幅上升，而 2023–25 年常见的“a novel … approach … significantly …”几乎消失（“novel”出现率从每千篇 287 降到 48）。按 2026 年第 99 百分位定阈值后，2027 年有 42.4% 的论文超过阈值（2026 年按构造为 1.0%，2025 年 0.45%）；2027 年的中位数论文（6.2）已接近 2026 年的第 99 百分位（7.2）。这不是少数论文构成的小浪潮，而是整个分布的右移，外加一个更重的尾部。",
+  "方法：在摘要的 unigram/bigram 上用 Monroe et al. (2008) 带信息性 Dirichlet 先验的 log-odds 比较 2026→2027，只保留与主题无关的风格/功能词（在 2027 年 primary area 间分布的 KL < 0.10、剔除手工列出的主题名词、2026 年覆盖率 < 50%、2027/2026 比值 ≥ 2）。取最上升的 40 个标记，论文分数 = Σ ln(r27/r26) × 1[标记出现在摘要中]。标题不参与打分，用作独立旁证。阈值取 2026 年分数的第 99 百分位；用一半数据选词、另一半评估的 split-half 复核得到 44.2%，按摘要长度分层定阈值得到 41.2%。",
+  "该分数度量的是写作语域（register），不是作者身份；它不能、也不被用来判定任何具体论文是否由 AI 生成。"
+ ],
+ "facts": [
+  {
+   "label": "2027 年超过阈值的比例",
+   "value": "42.4%",
+   "note": "阈值 = 2026 年第 99 百分位（score > 7.18）；2025 年 0.45%；split-half 复核 44.2%"
+  },
+  {
+   "label": "“novel” 每千篇出现数",
+   "value": "287 → 48",
+   "note": "2026→2027 的摘要；delve / showcase / comprehensive / intricate 等 2023–25 年典型“LLM 腔”词汇同步下降约 70–90%"
+  },
+  {
+   "label": "近重复摘要（TF-IDF cos > 0.8）",
+   "value": "0.04%",
+   "note": "2027 年 43,013 篇中仅 9 对（2026 年 0.02%）；高分论文几乎没有 → 不是模板批量复制"
+  },
+  {
+   "label": "2026 年录用 OR（每 1 SD 分数）",
+   "value": "0.99",
+   "note": "95% CI 0.96–1.03，控制摘要长度与 primary area，n = 13,811；与平均评分的 Spearman ρ = -0.002"
+  }
+ ],
+ "score_hist": {
+  "bins": [
+   0.0,
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0,
+   11.0,
+   12.0,
+   13.0,
+   14.0,
+   15.0,
+   16.0,
+   17.0,
+   18.0,
+   19.0,
+   20.0,
+   21.0,
+   22.0,
+   23.0,
+   24.0,
+   25.0,
+   26.0,
+   27.0,
+   28.0,
+   29.0,
+   30.0
+  ],
+  "2025": [
+   5322,
+   2996,
+   1723,
+   788,
+   444,
+   234,
+   102,
+   33,
+   15,
+   8,
+   5,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "2026": [
+   8055,
+   4924,
+   3230,
+   1601,
+   960,
+   523,
+   291,
+   116,
+   61,
+   26,
+   15,
+   5,
+   5,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "2027": [
+   3224,
+   3404,
+   3881,
+   3456,
+   3461,
+   3548,
+   3251,
+   2961,
+   2669,
+   2460,
+   2173,
+   1771,
+   1466,
+   1357,
+   1028,
+   828,
+   632,
+   444,
+   332,
+   255,
+   151,
+   98,
+   61,
+   40,
+   32,
+   11,
+   7,
+   6,
+   2,
+   4
+  ]
+ },
+ "hist_caption_zh": "每篇论文的程式化文风分数（每格宽 1，纵轴为论文数）。2025/2026 的分布几乎重合且集中在 0–4；2027 年整体右移，中位数 6.2，第 90 百分位 13.7，尾部延伸到近 30。阈值 7.18（2026 年第 99 百分位）。分布为单峰，没有分离出一个独立的“第二群体”。",
+ "markers": [
+  {
+   "term": "evidence",
+   "r25": 21.9,
+   "r26": 36.9,
+   "r27": 175.2
+  },
+  {
+   "term": "same",
+   "r25": 66.5,
+   "r26": 55.7,
+   "r27": 241.8
+  },
+  {
+   "term": "fixed",
+   "r25": 29.0,
+   "r26": 46.2,
+   "r27": 202.1
+  },
+  {
+   "term": "every",
+   "r25": 13.6,
+   "r26": 13.8,
+   "r27": 156.4
+  },
+  {
+   "term": "one",
+   "r25": 105.0,
+   "r26": 73.4,
+   "r27": 199.6
+  },
+  {
+   "term": "points",
+   "r25": 38.5,
+   "r26": 35.5,
+   "r27": 138.6
+  },
+  {
+   "term": "shared",
+   "r25": 21.4,
+   "r26": 36.5,
+   "r27": 147.1
+  },
+  {
+   "term": "frozen",
+   "r25": 7.5,
+   "r26": 13.5,
+   "r27": 113.1
+  },
+  {
+   "term": "whether",
+   "r25": 41.0,
+   "r26": 44.4,
+   "r27": 148.7
+  },
+  {
+   "term": "no",
+   "r25": 45.1,
+   "r26": 51.3,
+   "r27": 151.3
+  },
+  {
+   "term": "changes",
+   "r25": 28.4,
+   "r26": 27.8,
+   "r27": 121.5
+  },
+  {
+   "term": "does",
+   "r25": 45.2,
+   "r26": 30.0,
+   "r27": 132.5
+  },
+  {
+   "term": "so",
+   "r25": 30.2,
+   "r26": 21.7,
+   "r27": 113.9
+  },
+  {
+   "term": "what",
+   "r25": 22.4,
+   "r26": 22.4,
+   "r27": 102.5
+  },
+  {
+   "term": "from to",
+   "r25": 16.9,
+   "r26": 20.1,
+   "r27": 94.1
+  },
+  {
+   "term": "support",
+   "r25": 35.0,
+   "r26": 53.4,
+   "r27": 145.8
+  },
+  {
+   "term": "before",
+   "r25": 21.2,
+   "r26": 25.5,
+   "r27": 110.4
+  },
+  {
+   "term": "four",
+   "r25": 35.1,
+   "r26": 44.5,
+   "r27": 134.3
+  },
+  {
+   "term": "matched",
+   "r25": 2.6,
+   "r26": 5.5,
+   "r27": 99.2
+  },
+  {
+   "term": "controlled",
+   "r25": 13.9,
+   "r26": 25.5,
+   "r27": 114.4
+  }
+ ],
+ "markers_caption_zh": "2026→2027 上升最显著的 20 个风格标记（按 Monroe log-odds z 排序，只含与主题无关的功能/风格词），数值为每 1,000 篇摘要中出现该词的论文数。这些词在 2025→2026 基本持平，说明这种写法在 2027 年突然出现，而非延续此前的趋势。",
+ "sections": [
+  {
+   "title_zh": "区分信号：同一种语域，而非复制粘贴",
+   "nav": "区分信号",
+   "paras_zh": [
+    "标题不参与打分，但与摘要高度一致：“When does …?”“X Is Not Y”、含 evidence/audit 的标题合计占 2027 年高分论文的 15.1%，2027 年低分论文仅 2.5%，2026 年 2.3%；按 2027 年分数十分位，这一比例从 2.5% 单调升到 21.7%。",
+    "高分摘要更长（平均 223 词，2026 年 185，2027 年低分 173），数字更多（5.3 个 vs 1.7），含百分比的占 50%（2026 年 23%），关键词更多（4.9 vs 3.8），填写 TL;DR 的比例更高（61% vs 2027 年低分 50%；2025/26 的数据里没有 TL;DR，无法跨年比较）。分数与摘要长度相关（2027 年 r = 0.48），但按长度分层定阈值后比例仍为 41.2%。",
+    "没有复制粘贴的痕迹：TF-IDF cos > 0.8 的近重复摘要在 2027 年仅 9 对（0.04%），与 2025/2026 同量级，高分论文中几乎没有。截至 2026-10-07 的快照里，桌拒率在各分数十分位间平稳（0.7–1.3%），撤稿率同样平稳。在 2026 年，分数与录用（OR 0.99/SD）和平均评分（ρ = -0.002）都无关。"
+   ],
+   "evidence": [
+    {
+     "id": "0yDuLVVVWn",
+     "year": 2027,
+     "title": "Matched Twins Show What an Evidence Contract Cannot Carry to a Verifier of ML-Experiment Claims"
+    },
+    {
+     "id": "lR4zW6Vb8x",
+     "year": 2027,
+     "title": "Silence Is Not Absence: A Probe Null Requires More Than Format Competence"
+    },
+    {
+     "id": "2BvVbECpwS",
+     "year": 2027,
+     "title": "Weak Learning Failure Alone is not Gradient Starvation"
+    },
+    {
+     "id": "wvkbSz7VnD",
+     "year": 2027,
+     "title": "Success Is Not Completion: Goal-Closure Monitoring and Corroborated Contracts for Tool-Using Agents"
+    },
+    {
+     "id": "hzOkOeFHYG",
+     "year": 2027,
+     "title": "What You Measure, Ablate, and Pool Decides the Conclusion: Auditing Sensorimotor Pretraining"
+    }
+   ]
+  },
+  {
+   "title_zh": "集中在哪里：全领域右移，加上少数“文风簇”",
+   "nav": "集中位置",
+   "paras_zh": [
+    "21 个 primary area 在 2026 年都 ≤ 1.6%，到 2027 年全部在 32–57% 之间：最高的是可解释性（57%）、迁移/元学习、基础模型和数据集与基准，最低的是优化、生成模型和图学习。按主题看，评测（eval 62%）、可解释性（57%）、智能体（53%）最高，生成模型（31%）、强化学习（31%）最低。",
+    "尾部则集中在少数几乎只出现在 2027 年的簇里：簇 70（评测效度审计，93%）、137（审计式模板摘要，88%）、252（RAG 证据选择，88%）、196（工具智能体运行时治理，85%）。15 个“新簇”（2025+2026 合计 ≤ 10 篇）占 2027 年论文的 9.3%，其中 70% 超过阈值（其余簇为 39%）。不过 85% 的高分论文仍落在已有主题簇中。",
+    "标记在同一篇论文中扎堆出现：按长度分层后，标记计数的方差与“各标记独立出现”时的方差之比在 2026 年为 1.29，2027 年为 2.04。这说明 2027 年的写法存在明显的异质性，有一部分论文几乎“整套”采用这种语域。越晚提交的论文，超过阈值的比例越高（按 submission number 十分位，从 39% 升到 53%）。"
+   ],
+   "evidence": [
+    {
+     "id": "R1QnIz34Ut",
+     "year": 2027,
+     "title": "HOW  MUCH  INDEPENDENT  INFORMATION  DOES  AN  LLM COMMITTEE PROVIDE?"
+    },
+    {
+     "id": "kRtggxSTIi",
+     "year": 2027,
+     "title": "Auditing Size Dependence in Zero-Cost NAS Proxies: Confound-Controlled Discovery and Held-Out Evaluation"
+    },
+    {
+     "id": "tnpnMhdOiW",
+     "year": 2027,
+     "title": "Correct Numbers, Wrong Constructs: Acquisition-Aware Evaluation Across Model Scales"
+    },
+    {
+     "id": "uZENhr0H8D",
+     "year": 2027,
+     "title": "Intervention Success Is Not Mechanism Identification in Tool-Using Agents"
+    },
+    {
+     "id": "22qeQUAXBC",
+     "year": 2027,
+     "title": "Policy Improvement as Decision Revision: Preserving the Incumbent under Executable Feedback"
+    },
+    {
+     "id": "N67rP3UbVx",
+     "year": 2027,
+     "title": "Found but Forgotten: The Evidence Assembly Gap in Retrieval-Augmented Generation"
+    }
+   ]
+  },
+  {
+   "title_zh": "前后对照：从“推销式”修辞到“对照式”修辞",
+   "nav": "词汇对照",
+   "paras_zh": [
+    "2025→2026 年上升最多的风格词是“framework that / strong / consistently / achieves / paradigm / enabling / critical / unified”，属于推销式修辞；这些词在 2027 年全部回落。2027 年上升的是另一套词：evidence、matched、frozen、held fixed、held-out、rather than、whether、does。多数 2027 年标记在 2025→2026 期间几乎没有变化，只有“these results”和“rather than”提前出现了上升。",
+    "2023–25 年文献里被用作“LLM 辅助写作”指标的词（delve、intricate、showcase、underscore、pivotal、comprehensive）在 2027 年降到接近零（如 underscore 每千篇 27 → 2，comprehensive 91 → 17）。因此，旧的词频式 AI 检测指标在 2027 年会给出“AI 使用下降”的结论，与新语域的出现方向相反。仅凭词频，两者都不能识别作者或工具。",
+    "作为对照，右侧列出几篇随机抽取的 2027 年低分论文（分数不高于 2026 年中位数、摘要 150–250 词）。它们采用常规的“问题背景、现有方法的局限、本文方法”结构，几乎不用对照/证据类措辞。所以 2027 年的写法并非整齐划一。"
+   ],
+   "evidence": [
+    {
+     "id": "AeW8zDu5nu",
+     "year": 2027,
+     "title": "Back to the Future: Reverse-Consequence Modeling for Long-Horizon Particle Dynamics"
+    },
+    {
+     "id": "U5zDnvH5JD",
+     "year": 2027,
+     "title": "Quantum Sharpness-Aware Minimization"
+    },
+    {
+     "id": "AuiiWB2mFR",
+     "year": 2027,
+     "title": "Gradient Subspace Dynamics During Supervised Fine-Tuning of LLMs: Input–Output Asymmetry"
+    },
+    {
+     "id": "VUFj5cptA9",
+     "year": 2027,
+     "title": "Textual Environmental Context and Spatial Graphs for LLM-Based Regional SST Forecasting"
+    },
+    {
+     "id": "OIbjUInQex",
+     "year": 2027,
+     "title": "ChartGalaxy++: A Richly Annotated Dataset for Chart Understanding and Generation"
+    }
+   ]
+  },
+  {
+   "title_zh": "对解读 2026→2027 趋势意味着什么",
+   "nav": "如何读趋势",
+   "paras_zh": [
+    "主题聚类部分受到措辞影响：coherence = 1 的簇（如 137、83、15）以及簇 70、196、252 里超过阈值的比例都在 68–93%，而且这些簇在 2025/26 年几乎没有论文。它们的“爆发式增长”应理解为“一种写法 + 若干相近话题”的混合，不宜直接解读为研究方向的兴起。",
+    "主题层面的结论（如评测、智能体治理、可解释性的增长）需要做稳健性检验：只用 keywords 重新计数、在嵌入前去掉标记词，或剔除高分论文后再看增速。反过来，“novel / significantly”等词的消失也会让基于摘要关键词的计数系统性偏低。",
+    "这种写法与 2026 年的录用和评分都无关，所以它本身不能作为论文质量的代理指标。2027 年的评审结果出来之前，也无法判断评审是否会对它作出反应。"
+   ],
+   "evidence": [
+    {
+     "id": "2BvVbECpwS",
+     "year": 2027,
+     "title": "Weak Learning Failure Alone is not Gradient Starvation"
+    },
+    {
+     "id": "qd4q2OE0OE",
+     "year": 2027,
+     "title": "Hidden Tape: Addressable Communication Beneath Identical Text"
+    },
+    {
+     "id": "28hXY8kEKI",
+     "year": 2027,
+     "title": "Identity-Exact Multi-Bias Activations: Breaking Optimization Symmetry Without Changing the Pretrained Function"
+    },
+    {
+     "id": "Cja2oEWHhS",
+     "year": 2027,
+     "title": "Controlled Acquisition and Abstention in Three-Channel Score Conflicts"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "id": "R1QnIz34Ut",
+   "title": "HOW  MUCH  INDEPENDENT  INFORMATION  DOES  AN  LLM COMMITTEE PROVIDE?",
+   "score": 29.93
+  },
+  {
+   "id": "8QGJ2dnd8j",
+   "title": "StrataBench: Expert-Grounded Evaluation for Oil and Gas Land and Title",
+   "score": 29.56
+  },
+  {
+   "id": "90ibjymozF",
+   "title": "Reading and Writing: Testing Natural Language as a Causal Channel for Refusal",
+   "score": 29.1
+  },
+  {
+   "id": "950or2jh05",
+   "title": "Learning a Behavioral Skill Basis for AI Agents",
+   "score": 29.09
+  },
+  {
+   "id": "0yDuLVVVWn",
+   "title": "Matched Twins Show What an Evidence Contract Cannot Carry to a Verifier of ML-Experiment Claims",
+   "score": 28.44
+  },
+  {
+   "id": "aCc0AKg8B4",
+   "title": "What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents",
+   "score": 28.09
+  },
+  {
+   "id": "lSUr28odRy",
+   "title": "Relational Composition as Parallel Transport: What Per-Entity Frames Force in Attention",
+   "score": 27.96
+  },
+  {
+   "id": "iFUFUDHcyH",
+   "title": "SAUNA: Source-Anchored Unsupervised Neural Adaptation for Cross-Subject EEG Decoding",
+   "score": 27.68
+  },
+  {
+   "id": "qd4q2OE0OE",
+   "title": "Hidden Tape: Addressable Communication Beneath Identical Text",
+   "score": 27.33
+  },
+  {
+   "id": "btB6Cx4HsN",
+   "title": "Relic: From Multi-Agent Collaboration to Persistent Organizational Capability",
+   "score": 27.19
+  },
+  {
+   "id": "QsOlwlev7g",
+   "title": "Same Probe, Different Numbers: Are Activation Probes Robust to Inference-Time Numerical Non-Determinism?",
+   "score": 27.13
+  },
+  {
+   "id": "kRtggxSTIi",
+   "title": "Auditing Size Dependence in Zero-Cost NAS Proxies: Confound-Controlled Discovery and Held-Out Evaluation",
+   "score": 27.02
+  }
+ ],
+ "caveat_zh": "数据层面能确认的只有三点：2027 年摘要与标题的措辞发生了大规模、跨领域的语域迁移；这种迁移在部分新簇中最集中；它不表现为文本重复，也与 2026 年的录用和评分无关。它的来源无法从元数据中确定。新一代写作助手的默认文风、自动化研究流水线、社区对“去推销化”写作的规范变化，以及 2027 年新增的 AI 使用声明与 20 篇投稿上限（本数据没有声明内容和作者信息），都与观察结果相容。分数只度量措辞，不度量作者身份，不能、也不应用来判定任何具体论文由 AI 生成；示例论文仅代表措辞上的典型，不代表其来源。2027 年数据是 2026-10-07 的评审前快照，桌拒/撤稿率与 2025/26 的最终状态不可比。"
+}
