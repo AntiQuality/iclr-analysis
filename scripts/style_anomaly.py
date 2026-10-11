@@ -68,6 +68,18 @@ TITLE_TEMPLATES = {
     "ALL-CAPS title": None,
     "Towards ...": r"(?i)^towards?\b",
 }
+WATCHLIST = {
+    "held fixed / holding ... fixed": r"\bheld fixed\b|\bhold(ing)? [a-z\- ]{0,30}fixed\b|\bkept fixed\b",
+    "paired": r"\bpaired\b", "matched": r"\bmatched\b", "exact/exactly": r"\bexact(ly)?\b",
+    "certified/certify/certificate": r"\bcertif", "pre-registration / preregistered": r"\bpre-?regist",
+    "audit/auditing": r"\baudit", "evidence": r"\bevidence\b", "same ... budget/backbone/compute": r"\bsame [a-z\- ]{0,20}(budget|backbone|compute|model|data)\b",
+    "frozen": r"\bfrozen\b", "confound": r"\bconfound", "held-out": r"\bheld[- ]out\b",
+    "is not / are not": r"\b(is|are) not\b", "rather than": r"\brather than\b",
+    # classic 2023-25 LLM-associated vocabulary (Liang et al. 2024; Kobak et al. 2024)
+    "delve/delves": r"\bdelv(e|es|ing)\b", "intricate": r"\bintricate\b", "pivotal": r"\bpivotal\b",
+    "showcase/showcasing": r"\bshowcas", "underscore(s)": r"\bunderscor", "notably": r"\bnotably\b",
+    "comprehensive": r"\bcomprehensive\b", "novel": r"\bnovel\b", "seamless(ly)": r"\bseamless",
+}
 FORMULAIC_TITLE_KEYS = ["When does/do/is/are/can ...", "starts with When/What", "X Is/Are Not Y", "audit/auditing",
                         "evidence", "X Hides/Fails/Breaks/Matters/Collapses"]
 
@@ -217,6 +229,18 @@ def main():
     print("rising markers\n", rising[["term", "z76", "z65", "r25", "r26", "r27", "ratio76", "kl"]].round(3).to_string())
     print("falling markers\n", falling[["term", "z76", "z65", "r25", "r26", "r27", "ratio76", "kl"]].round(3).to_string())
     unfiltered_top = t[(t.r27 >= 0.02)].sort_values("z76", ascending=False).head(25)
+    # same filters, but for the earlier transition 2025 -> 2026 (does the 2027 register already start in 2026?)
+    base65 = (t.kl < KL_MAX) & (t.r26 < 0.5) & t.term.map(is_style)
+    rising65 = dedupe(t[base65 & (t.r26 >= 0.02) & (t.ratio65 >= 1.5)].sort_values("z65", ascending=False).head(60)).head(20)
+    print("rising 2025->2026\n", rising65[["term", "z65", "z76", "r25", "r26", "r27"]].round(3).to_string())
+    # watch-list: phrases named in the observation + classic 2023-25 "LLM-ese" words (title OR abstract, per paper)
+    ta = (d.title.fillna("") + " . " + d.abstract.fillna("")).str.lower()
+    watch = {}
+    for k, pat in WATCHLIST.items():
+        hit = ta.str.contains(pat, regex=True)
+        watch[k] = {int(y): float(hit[yr == y].mean()) for y in YEARS}
+    watch = pd.DataFrame(watch).T
+    print("watch-list per paper\n", (watch * 1000).round(1).to_string())
 
     # title templates
     title = d.title.fillna("").str.strip()
@@ -251,9 +275,11 @@ def main():
     # histogram
     bins = np.arange(0, np.ceil(d.score.max()) + 1, 1.0)
     hist = {"bins": bins.tolist()}
+    hist_counts = {"bins": bins.tolist()}
     for y in YEARS:
         h, _ = np.histogram(d.score[yr == y], bins=bins)
         hist[str(y)] = (h / h.sum()).round(5).tolist()
+        hist_counts[str(y)] = h.astype(int).tolist()
 
     # length
     d["abs_words"] = d.abstract.fillna("").str.split().str.len()
@@ -483,6 +509,10 @@ def main():
         "acceptance_2026_logit": logit,
         "acceptance_2026_logit_legacy_index": logit_legacy,
         "rating_2026": rating,
+        "rising_markers_2025_to_2026": [{"term": r.term, "r25": round(r.r25, 4), "r26": round(r.r26, 4), "r27": round(r.r27, 4),
+                                         "z_25to26": round(r.z65, 1), "z_26to27": round(r.z76, 1)} for r in rising65.itertuples()],
+        "watchlist_per_paper": {k: {int(y): round(v, 5) for y, v in row.items()} for k, row in watch.iterrows()},
+        "score_hist_counts": hist_counts,
         "unfiltered_top_rising": [{"term": r.term, "r26": round(r.r26, 4), "r27": round(r.r27, 4), "z": round(r.z76, 1)}
                                   for r in unfiltered_top.itertuples()],
         "examples": [{"id": r.id, "title": r.title, "score": round(r.score, 2), "n_markers": int(r.n_markers),

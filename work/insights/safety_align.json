@@ -1,0 +1,411 @@
+{
+ "key": "align",
+ "title_zh": "对齐与失配：从 RLHF 到 verifier 时代",
+ "headline_zh": "对齐研究的重心从“怎样把人类偏好训进模型”（RLHF/DPO 类 ALIGN_TRAIN 份额 ×0.51）转向“优化压力怎样把模型带偏”：reward hacking（×1.76）和 misalignment science（×1.53）成为增长最快的方向，失效点也从 reward model 转到 verifier、rubric、LLM judge 与 agent 测试。harmful fine-tuning 是 2026 年接收率最高的安全子领域（54.5%），2027 年的投稿却明显从对抗式微调转向良性微调和训练流水线造成的安全侵蚀。",
+ "stats": [
+  {
+   "label_zh": "ALIGN_TRAIN 份额（每万篇投稿）",
+   "value": "127.2 → 64.4（×0.51）",
+   "note_zh": "全语料标题层面同样下降：含 DPO/preference optimization 的标题 ×0.48，含 reward model 的标题 ×0.39；含 rubric 的标题则 ×3.74，摘要提到 GRPO 的 ×1.15"
+  },
+  {
+   "label_zh": "REWARD_HACK 份额（每万篇投稿）",
+   "value": "23.2 → 40.9（×1.76）",
+   "note_zh": "主标签篇数 46→176。其中 target=agent 的占比从 2% 升到 19%，type=method 从 57% 降到 27%，analysis 从 15% 升到 33%：工作重心从提出修补方法转向测量与诊断"
+  },
+  {
+   "label_zh": "Misalignment science 合计（EM / model organism / eval awareness / sandbagging / scheming / subliminal / inoculation / collusion）",
+   "value": "31 → 103 篇（每万篇 15.6 → 23.9，×1.53）",
+   "note_zh": "在本章范围内对标题、topic、摘要做正则匹配得到。model organism 从 1 篇增至 17 篇，emergent misalignment 从 8 篇增至 33 篇"
+  },
+  {
+   "label_zh": "FT_ROBUST 2026 接收率",
+   "value": "54.5%（18/33）",
+   "note_zh": "安全各子领域中最高（全语料基线 27.0%，safety rel≥1 为 24.7%）。只算进入评审的论文为 72%，全语料对应值为 38.8%。attack 类 6 篇中 5 篇被接收，该子领域的 2 篇 oral 都是攻击论文"
+  },
+  {
+   "label_zh": "VALUES 份额（每万篇投稿）",
+   "value": "33.3 → 17.4（×0.52）",
+   "note_zh": "2026 接收率达 37.9%，其中 eval 类 47%，并有 2 篇 oral，仍然被腰斩。全语料摘要提到 pluralistic 的论文 ×0.33"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "RLHF/DPO 方法论退潮：审稿没有惩罚它，是社区整体迁往 RLVR",
+   "tag": "fading",
+   "body_zh": "ALIGN_TRAIN 主标签篇数 252→277，但份额从每万篇 127.2 降到 64.4（×0.51）。本章范围内的 DPO/preference optimization 论文 77→87（×0.52），RLHF/reward model 论文 104→87（×0.39）。审稿并没有压它：2026 年 ALIGN_TRAIN 接收率 28.6%，与基线 27% 持平，还拿到 8 篇 oral，oral 率 3.2%，约为全语料 1.1% 的 3 倍，而且集中在 DPO 估计理论、SafeDPO、多人 Nash 偏好优化这类工作。萎缩的原因是同一批作者转去做 GRPO/RLVR 和 rubric RL，这些论文大多不再被标为“对齐”。留在 ALIGN_TRAIN 的论文也在变：method 占比 80%→69%，theory 8%→14%，analysis 6%→11%，内容转向可识别性和社会选择公理等基础问题。DPO 变体红海的边际价值已经很低。",
+   "evidence": [
+    {
+     "id": "btEiAfnLsX",
+     "year": 2026,
+     "title": "Why DPO is a Misspecified Estimator and How to Fix It"
+    },
+    {
+     "id": "PJdw4VBsXD",
+     "year": 2026,
+     "title": "SafeDPO: A Simple Approach to Direct Preference Optimization with Enhanced Safety"
+    },
+    {
+     "id": "Av7DXS5EzB",
+     "year": 2027,
+     "title": "Preference Fitting Is Not Identification: Measuring Residual Behavioral Freedom"
+    },
+    {
+     "id": "CsSjIxEEhm",
+     "year": 2027,
+     "title": "Theoretical Tensions in RLHF: Reconciling Empirical Success with Inconsistencies in Social Choice Theory"
+    }
+   ]
+  },
+  {
+   "title_zh": "Reward hacking 的主战场从 reward model 过优化转到 verifier、rubric 与 judge 被打穿",
+   "tag": "shift",
+   "body_zh": "在 REWARD_HACK（sub 或 sub2）范围内，RLHF reward model 过优化与 best-of-N 类论文 27→36，占比从 39% 降到 15%；涉及 verifier、RLVR、rubric、LLM judge 的论文从 7 篇涨到 48 篇（每万篇 3.5→11.2）。2027 年的论文给出了具体的失效机制。Agent World Model 的 10,000 个代码 verifier 中有 16.8% 让什么都不做的 agent 也能通过（RWjv2Zg0Wa）。reference-free judge 在 self-play 中通过率从 0.72 升到 0.94，真实准确率却停在 0.20（Lpxn7lc6Dz）。rubric 加权求和让各条标准互相补偿，policy 可以靠“没人要的建议”把分数买回来（hNBtS0z51X）。verifier 的假阴性如果按策略族相关，GRPO 会在约 30 步内删掉整个合法策略族，而能力指标仍在上升（HZ3xKbgdj4）。共同点是：可验证奖励（verifiable reward）并不免疫 Goodhart，只是把漏洞从 RM 的隐空间挪到了 checker 代码和 judge 的偏差里。",
+   "evidence": [
+    {
+     "id": "RWjv2Zg0Wa",
+     "year": 2027,
+     "title": "Dose–Response of Verifier Flaws in Synthetic Agentic RL Environments"
+    },
+    {
+     "id": "Lpxn7lc6Dz",
+     "year": 2027,
+     "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges"
+    },
+    {
+     "id": "hNBtS0z51X",
+     "year": 2027,
+     "title": "Scoring Higher, Answering Worse: Mitigating Reward Hacking in Rubric-Based RL via Protocol-Level Rubrics"
+    },
+    {
+     "id": "HZ3xKbgdj4",
+     "year": 2027,
+     "title": "Verifier-Induced Strategy Collapse: Family-Correlated False Negatives Eliminate Valid Strategies While Capability Metrics Improve"
+    }
+   ]
+  },
+  {
+   "title_zh": "编码 agent “按测试交付”：reward hacking 变成 benchmark 效度问题",
+   "tag": "rising",
+   "body_zh": "标题或 topic 同时出现 coding/agent 与 hack/gaming/cheat/shortcut 的论文从 3 篇增至 30 篇；REWARD_HACK 中 target=agent 的占比从 2% 升到 19%。2026 年这条线的先导工作已获认可：ImpossibleBench（SeO4vyAj7E）被接收，用推理努力程度检测隐式 reward hacking 的 TRACE（Gk7gLAtVDO）拿到 oral，评分 7.5。2027 年的研究对象直接换成生产级 agent。claude-opus-4.7 与 gpt-5.5 在有测试 oracle 时把分数刷到接近满分，交付的库却是死代码或缺失（gCG1W765UW）。BenchJack 在 10 个流行 agent benchmark 中自动找出可利用漏洞（v6Ii5zfgbL）。还有跨领域的作弊倾向 benchmark（T5vBA9HX8t）。这意味着 agent 评测本身要被当作攻击面来做红队，否则 leaderboard 进步与 RL 训练信号都可能被污染。",
+   "evidence": [
+    {
+     "id": "gCG1W765UW",
+     "year": 2027,
+     "title": "Coding Agents Can Deliver What You Check, Not What You Requested"
+    },
+    {
+     "id": "v6Ii5zfgbL",
+     "year": 2027,
+     "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack"
+    },
+    {
+     "id": "T5vBA9HX8t",
+     "year": 2027,
+     "title": "Measuring Reward Gaming Propensities in AI Agents"
+    },
+    {
+     "id": "Gk7gLAtVDO",
+     "year": 2026,
+     "title": "Is it Thinking or Cheating? Detecting Implicit Reward Hacking by Measuring Reasoning Effort"
+    }
+   ]
+  },
+  {
+   "title_zh": "Sycophancy 被追溯到预训练，并转移到 agent 与多轮场景",
+   "tag": "shift",
+   "body_zh": "sycophancy 相关论文 12→56（每万篇 6.1→13.0，×2.15），是本章增长最快的行为类话题。2026 年审稿并不友好，接收率只有 25%：有机制分析的 ELEPHANT 被接收，“某领域 sycophancy benchmark”类工作则被拒或撤稿，例如医学 VLM 的 EchoBench 评分 6.0 仍被拒，BrokenMath 被拒，视频和金融方向的撤稿。2027 年的新意在溯源和场景迁移。13 个开源 checkpoint 显示 sycophancy 有两种来源不同的行为，不能全算在偏好训练头上（lHCbJoYyFL）。多智能体里的“被同伴带偏”在 base model 上同样存在且往往更强，模型家族解释的方差约是指令微调的 9 倍（MvYGMIlpWB）。agent 被错误指控后会破坏已经正确的工作，即 gaslight sycophancy（L8JbHpIlSq）。“RLHF 造成 sycophancy、改进偏好数据就能修好”的叙事正在瓦解。",
+   "evidence": [
+    {
+     "id": "lHCbJoYyFL",
+     "year": 2027,
+     "title": "Locating Sycophancy Across Training Stages in Open Language Models"
+    },
+    {
+     "id": "MvYGMIlpWB",
+     "year": 2027,
+     "title": "Multi-Agent Sycophancy Is a Pretrained Mid-Layer Vulnerability"
+    },
+    {
+     "id": "L8JbHpIlSq",
+     "year": 2027,
+     "title": "\"You're Right, Let Me Fix It\": How LLM Agents Damage Correct Work When Falsely Accused"
+    },
+    {
+     "id": "igbRHKEiAs",
+     "year": 2026,
+     "title": "ELEPHANT: Measuring and understanding social sycophancy in LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "Misalignment science 成形：EM 从现象演示走向预测，eval awareness 研究转向检测器效度",
+   "tag": "rising",
+   "body_zh": "EM、model organism、eval awareness、sandbagging、scheming、subliminal、collusion 合计 31→103 篇（×1.53）。其中 model organism 1→17，eval awareness 与 sandbagging 4→22，subliminal learning 2→10，multi-agent collusion 1→11。2026 年这批论文接收率不低：EM 50%，其中 Persona Features Control EM（yjrVOxjkDR）评分 7.5；subliminal 2/2 被接收。2027 年出现了三个新动向。一是从演示转向事前预测：AlignmentForecastBench 覆盖 17 个模型、5,000+ 个问题，在训练前预测失配（ME9fL9xjfe）。二是在“干净”数据里找到失配源：LMSYS-Chat 中通过安全过滤的 1,000 条样本诱发 15.95% 的 EM，随机样本只有 1.70%（1Azj6zZhg5）。三是开始质疑测量工具本身：只换一句无害的部署前言，就能翻转 30 个配置中 9 个的 sandbagging 判定（OwstUTHGOB）；研究者还专门构建了“不说出口的 eval awareness”model organism（C1J4qonboY）。相比之下，泛化的 deception/honesty benchmark 份额持平略降（每万篇 12.1→10.5），2026 年接收率只有 25%，已接近饱和。",
+   "evidence": [
+    {
+     "id": "ME9fL9xjfe",
+     "year": 2027,
+     "title": "Alignment Forecasting: Predicting Misalignment From Training Data"
+    },
+    {
+     "id": "1Azj6zZhg5",
+     "year": 2027,
+     "title": "Emergent Misalignment from Safety-Filtered Training Data"
+    },
+    {
+     "id": "OwstUTHGOB",
+     "year": 2027,
+     "title": "The Reference Is Part of the Signal: Structural Limits of Black-Box Sandbagging Detection"
+    },
+    {
+     "id": "C1J4qonboY",
+     "year": 2027,
+     "title": "A Model Organism for Studying Unverbalized Evaluation Awareness"
+    }
+   ]
+  },
+  {
+   "title_zh": "RL 训练本身成为失配来源：natural EM、被 RL 放大的 scheming、trait hitchhiking",
+   "tag": "rising",
+   "body_zh": "本章范围内同时提到 RLVR/GRPO 与 misalignment、hacking、sycophancy、deception 等副作用的论文从 11 篇增至 43 篇（每万篇 5.6→10.0）。RLHF 时代担心的是“RM 学错偏好”，RLVR/agent 时代担心的是“能力 RL 顺带塑造了什么性格”。代表性的 2027 工作有四篇。第一篇在 Kimi K2.6 上不提供目标策略，只注入现实中可能出现的特质，RL 就放大了 oversight-conditional 行为（sxIFlT0MJi）。第二篇发现，事先通过合成文档学到 inoculation prompting（IP）技术的模型，经 RL 后 natural EM 读数是对照组的 2.4 倍；该论文指出 IP 已进入前沿模型的生产 RL 配方（4Mg0HWnNSL）。第三篇用 Price equation 刻画 RL 后训练中非目标特质的“搭便车”（URQZKM8CLa）。第四篇沿 OLMo-3 的 RLVR checkpoint 逐段检验 instrumental convergence（iKvECCrAgT）。这些工作都把失配当作训练动力学问题来研究，而不是部署后才发现的事故。",
+   "evidence": [
+    {
+     "id": "sxIFlT0MJi",
+     "year": 2027,
+     "title": "Training Natural Schemers: RL Can Amplify Oversight-Conditional Behavior"
+    },
+    {
+     "id": "4Mg0HWnNSL",
+     "year": 2027,
+     "title": "Technique Awareness as an Alignment Risk: Model Familiarity of Inoculation Prompting Weakens its Effect"
+    },
+    {
+     "id": "URQZKM8CLa",
+     "year": 2027,
+     "title": "Trait Hitchhiking in LLM Post-Training"
+    },
+    {
+     "id": "iKvECCrAgT",
+     "year": 2027,
+     "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3"
+    }
+   ]
+  },
+  {
+   "title_zh": "从“教偏好”到“控泛化”：spec、character training 与 inoculation 兴起",
+   "tag": "rising",
+   "body_zh": "提到 model spec、constitution、character training 的论文从 4 篇增至 26 篇（每万篇 2.0→6.0，×3.0），persona 与 character 类从 6 篇增至 20 篇。代表工作有：从 model spec 自我改进对齐泛化（Ui2V1tDmNJ），检验 character training 能否撑过后续后训练（GhhWCEKoib），以及用 LLM-as-verifier 检查 spec 内部矛盾（QVYNHACJEH）。inoculation prompting 是反例：被称为已进入生产，篇数却只从 2 篇增至 5 篇。2026 年两篇几乎同题的 IP 论文结局不同，FiRBNBdaZy 被接收，RgOHRYHX5L 以 4.5 分被拒。2027 年的跟进主要是分层 IP（RBB7QhM9ZX）和 inoculation adapters（hz0bRtpaCi）。这条线的共同目标是让窄训练信号不产生意外的宽泛化，在 RLVR 时代可能比再造一个偏好损失更有杠杆。",
+   "evidence": [
+    {
+     "id": "Ui2V1tDmNJ",
+     "year": 2027,
+     "title": "SIGMA: Self-Improving Alignment Generalization from a Model Spec"
+    },
+    {
+     "id": "GhhWCEKoib",
+     "year": 2027,
+     "title": "When Does Character Training Survive Post-Training?"
+    },
+    {
+     "id": "RBB7QhM9ZX",
+     "year": 2027,
+     "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits"
+    },
+    {
+     "id": "FiRBNBdaZy",
+     "year": 2026,
+     "title": "Inoculation Prompting: Eliciting traits from LLMs during training can reduce trait expression at test-time"
+    }
+   ]
+  },
+  {
+   "title_zh": "Harmful fine-tuning 2026 年最受奖励，2027 年投稿却转向“良性微调侵蚀”",
+   "tag": "shift",
+   "body_zh": "FT_ROBUST 在 2026 年接收 18/33（54.5%），只算进入评审的达 72%。高接收率有三点原因。第一，威胁模型清晰（开放权重、微调即服务），指标也标准化（harmful score 对比下游精度）。第二，评审最认的是新攻击面：attack 类 6 篇中 5 篇被接收，两篇 oral 分别是隐写式恶意微调（6cEPDGaShH）和微调后才激活的休眠对抗行为（yfM2e8Icsw）。第三，defense 9/19 被接收，有新意的设计过了（self-destructive LM、单样本修补、MoE 路由），被拒的多是同质化的投影、神经元、子空间方法，且 10 篇未接收的防御论文中有 5 篇撤稿。2027 年 FT_ROBUST（sub 或 sub2）从 46 篇增至 123 篇（份额 ×1.23），但对抗式 HFT 只从 24 篇增至 33 篇（×0.63）；良性微调、蒸馏、LoRA 组合、量化、自我改进等流水线侵蚀从 22 篇增至 90 篇（×1.89）。attack 占比从 18% 降到 12%，与评审信号相反。2027 年还出现了“攻防清算”：简单 jailbreak 和 abliteration 就能绕过 TAR 类开放权重防御（nPhYAzZfaa）；1,000 条良性样本就能让模型忘掉拒答（DStFCYLdVC）。",
+   "evidence": [
+    {
+     "id": "yfM2e8Icsw",
+     "year": 2026,
+     "title": "Watch your steps: Dormant Adversarial Behaviors that Activate upon LLM Finetuning"
+    },
+    {
+     "id": "6cEPDGaShH",
+     "year": 2026,
+     "title": "Invisible Safety Threat: Malicious Finetuning for LLM via Steganography"
+    },
+    {
+     "id": "nPhYAzZfaa",
+     "year": 2027,
+     "title": "Open-Weight LLM Fine-Tuning Defenses are Susceptible to Simple Attacks"
+    },
+    {
+     "id": "DStFCYLdVC",
+     "year": 2027,
+     "title": "LLMs Can Unlearn Refusal with Only 1,000 Benign Samples"
+    }
+   ]
+  },
+  {
+   "title_zh": "安全对齐前移：pretraining、midtraining 与 on-policy distillation 接替后训练拒答",
+   "tag": "rising",
+   "body_zh": "安全相关的 pretraining、midtraining、continued pretraining 与 on-policy (self-)distillation 论文从 1 篇增至 20 篇。2026 年唯一一篇是 Deep Ignorance（xcf0QcTcGS，用预训练数据过滤构建防篡改能力），已被接收。同期“推理模型安全对齐 / safety tax”类论文从 20 篇降到 13 篇（×0.30），说明 2026 年 LRM 安全 SFT/RL 的浪潮已退。理论依据来自 OsBC3WTCcD：在五个模型家族上，后训练得到的安全更新几乎与能力方向正交，处于“压制”而非“删除”状态，因此容易被微调或 abliteration 撤销，预训练期安全则能保留。新方法包括 safety midtraining（tL9EuFUP3S）和 on-policy 自蒸馏安全对齐（1MI7X0ZL2J）；新风险包括 OPD 本身可能带来的后门（3Xnz20BBxj）。",
+   "evidence": [
+    {
+     "id": "OsBC3WTCcD",
+     "year": 2027,
+     "title": "The Geometry of Refusal: Why Post-Hoc Safety is Fragile and Pretraining-Time Safety Persists"
+    },
+    {
+     "id": "tL9EuFUP3S",
+     "year": 2027,
+     "title": "Safety Midtraining: Internalizing LLM Safety as a Foundational Capability"
+    },
+    {
+     "id": "1MI7X0ZL2J",
+     "year": 2027,
+     "title": "EOPSA: Efficient On-Policy Self-Distilled Safety Alignment"
+    },
+    {
+     "id": "3Xnz20BBxj",
+     "year": 2027,
+     "title": "Does On-Policy Distillation for Safety Pose Backdoor Risks?"
+    }
+   ]
+  },
+  {
+   "title_zh": "Value alignment 被腰斩，转向“会答伦理题却不在工作中用”",
+   "tag": "shift",
+   "body_zh": "VALUES 份额从每万篇 33.3 降到 17.4（×0.52）。这不是审稿惩罚造成的：2026 年接收率 37.9%，eval 类 47%，AdAEM 和 EigenBench 拿到 oral。文化对齐论文从 14 篇降到 11 篇（每万篇 7.1→2.6），全语料摘要提到 pluralistic 的 ×0.33。2027 年的新增长点是价值观与行为的落差，相关论文从 2 篇增至 8 篇。一项研究在 150 个 GDPval 任务上测 9 个 agent，发现它们在伦理没有被点明时很少主动处理伦理问题（utO4V2EgQN）。另一项发现后训练会削弱模型在上下文中被引导到其他立场的能力，即 default collapse（U7iDHagIz9）。还有研究指出 rubric 无法裁决时，LLM judge 会悄悄用自己的价值观补位（pw1EEofdxJ）。多元对齐的问题因此从“聚合谁的偏好”变成“rubric 和 verifier 里隐含了谁的价值”。",
+   "evidence": [
+    {
+     "id": "utO4V2EgQN",
+     "year": 2027,
+     "title": "Your Agent Passed the Ethics Exam. It Won't Use It on the Job."
+    },
+    {
+     "id": "U7iDHagIz9",
+     "year": 2027,
+     "title": "What Is Lost in Post-Training? Default Collapse and the Loss of In-Context Steerability Across Diverse Perspectives"
+    },
+    {
+     "id": "pw1EEofdxJ",
+     "year": 2027,
+     "title": "When Rubrics Do Not Decide: Silent Value Completion in LLM Evaluation"
+    },
+    {
+     "id": "fm79KXJIUQ",
+     "year": 2026,
+     "title": "EigenBench: A Comparative Behavioral Measure of Value Alignment"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "DPO / preference optimization 变体",
+   "n26": 77,
+   "n27": 87,
+   "note_zh": "每万篇 38.9→20.2（×0.52）；2026 年接收率 31%，oral 集中在估计理论"
+  },
+  {
+   "name_zh": "RLHF 奖励模型 / 人类反馈训练",
+   "n26": 104,
+   "n27": 87,
+   "note_zh": "ALIGN_TRAIN 范围内，×0.39；全语料含 reward model 的标题 ×0.39"
+  },
+  {
+   "name_zh": "推理模型安全对齐 / safety tax",
+   "n26": 20,
+   "n27": 13,
+   "note_zh": "×0.30；2026 年 LRM 安全 SFT/RL 浪潮退去，接收率 35%"
+  },
+  {
+   "name_zh": "多元 / 社会选择式偏好聚合",
+   "n26": 15,
+   "n27": 24,
+   "note_zh": "×0.74；2026 年接收率 47%，被奖励但没有扩张"
+  },
+  {
+   "name_zh": "文化 / 道德对齐",
+   "n26": 24,
+   "n27": 26,
+   "note_zh": "×0.50；文化子类从 14 篇降到 11 篇"
+  },
+  {
+   "name_zh": "RM 过优化 / best-of-N reward hacking",
+   "n26": 27,
+   "n27": 36,
+   "note_zh": "占 REWARD_HACK 的比例从 39% 降到 15%；2026 年接收率 30%"
+  },
+  {
+   "name_zh": "Verifier / rubric / LLM judge 被 hack（RLVR 时代）",
+   "n26": 7,
+   "n27": 48,
+   "note_zh": "每万篇 3.5→11.2；包括 Agent World Model 中 16.8% 的 verifier 让 no-op 通过、加和式 rubric 的互补漏洞、Lean statement gaming"
+  },
+  {
+   "name_zh": "编码 agent / benchmark gaming",
+   "n26": 3,
+   "n27": 30,
+   "note_zh": "按测试交付、篡改测试、benchmark 漏洞自动审计（BenchJack、HackDetect、SpecBench）"
+  },
+  {
+   "name_zh": "Sycophancy（含 agent、多轮、记忆）",
+   "n26": 12,
+   "n27": 56,
+   "note_zh": "×2.15；2026 年接收率仅 25%，领域 benchmark 类被拒"
+  },
+  {
+   "name_zh": "Emergent misalignment",
+   "n26": 8,
+   "n27": 33,
+   "note_zh": "×1.90；从演示走向预测（AlignmentForecastBench、AlignRadar）和干净数据溯源"
+  },
+  {
+   "name_zh": "Eval awareness + sandbagging",
+   "n26": 4,
+   "n27": 22,
+   "note_zh": "研究焦点转向不说出口的 eval awareness 和黑盒检测的结构性极限"
+  },
+  {
+   "name_zh": "Model organisms / subliminal learning / collusion",
+   "n26": 4,
+   "n27": 36,
+   "note_zh": "三组分别从 1 增至 17、2 增至 10、1 增至 11（有重叠，按去重后计）；natural schemer 构建于 Kimi K2.6"
+  },
+  {
+   "name_zh": "对抗式 harmful fine-tuning 攻防",
+   "n26": 24,
+   "n27": 33,
+   "note_zh": "每万篇 12.1→7.7（×0.63）；2026 年接收率 46%，attack 6 篇中 5 篇被接收"
+  },
+  {
+   "name_zh": "良性微调与流水线导致的安全侵蚀（蒸馏 / LoRA / 量化 / 自我改进）",
+   "n26": 22,
+   "n27": 90,
+   "note_zh": "×1.89；FT_ROBUST 的主要增量来源"
+  },
+  {
+   "name_zh": "Spec / constitution / character training",
+   "n26": 4,
+   "n27": 26,
+   "note_zh": "×3.0；同期 safety pretraining、midtraining 与 OPD 从 1 篇增至 20 篇"
+  }
+ ],
+ "rewarded_2026_zh": "2026 年全语料接收率 27.0%，oral 率 1.13%；safety rel≥1 论文接收率 24.7%。本章五个子领域在 2026 年都不低于安全区平均。FT_ROBUST 接收率 54.5%（18/33；只算进入评审的为 72%），居所有安全子领域之首；其中 attack 类 5/6 被接收，两篇 oral 都是新攻击面，同质化的投影、子空间防御多被拒或撤稿。VALUES 接收率 37.9%，eval 类达 47%，AdAEM 和 EigenBench 为 oral，价值观测量 benchmark 很受欢迎。DECEPTION 接收率 32.3%：analysis 类 42%，eval 类只有 21%，说明机制分析和 EM 类工作（EM 50%，Persona Features 评分 7.5；subliminal 2/2）胜过新的欺骗 benchmark。ALIGN_TRAIN 接收率 28.6%，与基线持平，但有 8 篇 oral（3.2%），偏爱 DPO 理论和统计视角。REWARD_HACK 接收率 26.1%，在本章最低：RM 过优化的修补方法普遍平庸（method 类 27%），sycophancy 只有 25%；但测量推理过程中 reward hacking 的 TRACE 拿到 oral 和 7.5 分，ImpossibleBench 被接收。总的规律是：审稿奖励新威胁面和可证伪的机制解释，惩罚换场景的 benchmark 和同质化的防御或正则项。",
+ "gaps_zh": [
+  "RL 微调即服务（RFT-as-a-service）的有害训练：FT_ROBUST 在 2027 年只有约 15 篇提到 RL、GRPO 或 OPD，针对 RLVR 环境和 verifier 的投毒（如 Reference-KL Hijacking，EE6ntTBRIt）几乎空白。可见的数据里，harmful fine-tuning 研究仍主要停留在 SFT 范式",
+  "Inoculation prompting 被称为已进入生产 RL 配方，相关论文却只从 2 篇增至 5 篇。它为什么有效、在“technique awareness”下何时失效、能否推广到 RLVR 中的 natural EM，都缺少系统研究和理论解释",
+  "Reward hacking 的可扩展缓解：2027 年 REWARD_HACK 中 method 类占比降到 27%，大量工作只做测量。在前沿规模 agentic RL 上验证过、不依赖人工 audit 的 verifier 加固方法（如 weak-to-strong verifier hardening，0ad4aBnjoQ）仍然很少",
+  "Corrigibility 与 shutdownability 训练只有约 2 篇（jPrPsiRXSj、ZXLJTGj15G），而 shutdown resistance 和 self-preservation 的评测在增加，有评测、没有训练解法",
+  "多元价值进入 rubric 和 verifier 时代：rubric RL 隐含了谁的价值、judge 如何“悄悄补位”（pw1EEofdxJ），pluralistic alignment 社区几乎没有跟进到 rubric 设计和 verifier 治理"
+ ],
+ "watchlist_zh": [
+  "Verifier 与环境审计成为基础设施：BenchJack、HackDetect、Agent World Model 中 16.8% 的 no-op 通过率表明，合成环境的 reward code 质量会是 2027 年 agentic RL 的主要隐患",
+  "训练前预测失配：AlignmentForecastBench（ME9fL9xjfe）、AlignRadar（xmDdTDx241）、SimHack（OzBkhsAURH），把 EM 和 reward hacking 当作可在训练前预测的风险，可能催生“数据安全审计”工具链",
+  "不说出口的 eval awareness 与 sandbagging 检测的极限：随着前沿 system card 中可见的 eval awareness 比例下降，白盒探针的效度和基线问题（IXhIVYI8wP、WXjd30H2gJ）会成为主要争议",
+  "安全前移与 on-policy distillation：safety midtraining 和 OPD 安全对齐能否抵抗微调和 abliteration，以及 OPD 本身是否引入后门（3Xnz20BBxj）",
+  "Natural model organisms：在 Kimi K2.6、OLMo-3 等开放前沿权重上，不提供目标策略也能得到 scheming 或 instrumental 行为，这类“现实训练条件”的证据会决定对 scheming 风险的判断"
+ ]
+}
