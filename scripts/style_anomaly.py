@@ -179,12 +179,20 @@ def near_dup_flags(abstracts, idx_sets, thrs=(0.6, 0.7, 0.8), chunk=1500):
 
 
 def logit_with_se(Xm, y):
-    lr = LogisticRegression(penalty=None, max_iter=5000).fit(Xm, y)
+    lr = LogisticRegression(C=1e6, max_iter=5000).fit(Xm, y)
     Xd = np.column_stack([np.ones(len(Xm)), Xm])
     p = lr.predict_proba(Xm)[:, 1]
     H = (Xd * (p * (1 - p))[:, None]).T @ Xd
     se = np.sqrt(np.diag(np.linalg.pinv(H)))
     return np.r_[lr.intercept_, lr.coef_.ravel()], se
+
+
+NOTES = ("score = sum over 40 rising style markers (abstract only) of ln(r27/r26) * presence; threshold = 2026 p99. "
+         "Markers ranked by Monroe et al. (2008) log-odds z (2026->2027, informative Dirichlet prior = 1% of pooled counts), "
+         "restricted to topic-neutral terms (primary-area KL < 0.10), non-topic nouns, r26 < 0.5, r27/r26 >= 2. "
+         "2027 is a pre-review snapshot (status active/withdrawn/desk_rejected as of 2026-10-07), so its desk/withdraw rates are not "
+         "comparable with final 2025/26 rates. TL;DR is empty for 2025/26 in this corpus and rating is empty for all years. "
+         "The score measures a writing register, NOT authorship; it must not be read as AI-detection.")
 
 
 def main():
@@ -259,6 +267,20 @@ def main():
     share_lenadj = {int(y): float(d.high_lenadj[yr == y].mean()) for y in YEARS}
     print("length corr", corr_len, "length-stratified share", share_lenadj)
 
+    # marker co-occurrence: variance of marker count vs. independent-marker (Poisson-binomial) variance,
+    # within 2026-defined abstract-length quintiles. >1 = markers cluster in the same papers.
+    Bm = B[:, rising.col.values]
+    disp = {}
+    for y in YEARS:
+        vals = []
+        for qb in range(5):
+            m = (yr == y) & (d.lenq.values == qb)
+            p_ = np.asarray(Bm[m].mean(0)).ravel()
+            cnt_ = np.asarray(Bm[m].sum(1)).ravel()
+            vals.append(cnt_.var() / (p_ * (1 - p_)).sum())
+        disp[int(y)] = float(np.mean(vals))
+    print("dispersion index (length-stratified)", disp)
+
     # split-half validation
     half = RNG.random(len(d)) < 0.5
     tA = marker_table(X, terms, yr, d.primary_area.values, mask=half)
@@ -320,9 +342,15 @@ def main():
     sig_cols = ["abs_words", "n_sent", "words_per_sent", "n_numerals", "has_percent", "has_we", "n_kw", "title_words",
                 "has_colon_title", "allcaps_title", "formulaic_title", "has_tldr", "legacy_any", "desk_rejected", "withdrawn"]
     agg = {c: "mean" for c in sig_cols}
+    d["grp2"] = np.where(yr == 2027, "2027 all", "")
+    sig_all = d[yr == 2027][sig_cols].mean().to_frame("2027 all").T
+    sig_all.insert(0, "n", int((yr == 2027).sum()))
     signals = d.groupby("grp").agg(n=("id", "size"), **{c: (c, "mean") for c in sig_cols})
     signals["abs_words_median"] = d.groupby("grp").abs_words.median()
     signals["submission_number_median"] = d.groupby("grp").number.median()
+    sig_all["abs_words_median"] = d.abs_words[yr == 2027].median()
+    sig_all["submission_number_median"] = d.number[yr == 2027].median()
+    signals = pd.concat([signals, sig_all])
     print(signals.round(3).T.to_string())
 
     d27 = d[yr == 2027]
@@ -413,6 +441,7 @@ def main():
         "share_above_threshold_length_stratified": share_lenadj,
         "share_above_threshold_split_half": split,
         "split_half_marker_overlap": overlap,
+        "marker_dispersion_index": disp,
         "score_length_corr": corr_len,
         "legacy_marker_any_share": {int(k): v for k, v in legacy_any.items()},
         "by_area": [{"area": a, "share27": round(r.share27, 4), "share26": round(r.share26, 4), "n27": int(r.n27)}
@@ -441,7 +470,8 @@ def main():
         "low_examples": [{"id": r.id, "title": r.title, "score": round(r.score, 2), "n_markers": int(r.n_markers),
                           "status": r.status, "cluster": int(r.cluster)} for r in low.itertuples()],
     }
-    json.dump(res, open(OUT / "style_anomaly_detail.json", "w"), indent=1, ensure_ascii=False, default=float)
+    res["notes"] = NOTES
+    json.dump(res, open(OUT / "style_anomaly.json", "w"), indent=1, ensure_ascii=False, default=float)
     d[["year", "id", "title", "primary_area", "status", "cluster", "score", "n_markers", "high", "legacy", "abs_words",
        "formulaic_title"]].to_parquet(OUT / "style_anomaly_papers.parquet", index=False)
 

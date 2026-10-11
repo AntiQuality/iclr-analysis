@@ -1,0 +1,531 @@
+<title>ICLR 2027 投稿图谱</title>
+<meta name="description" content="ICLR 2027 vs 2026 submission trends and AI-safety deep dive">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field atlas. Left-aligned editorial column (max 1180px) under a sticky section rail;
+   each section = thesis line + evidence (charts / cards); 2027 is always the blue, 2026 the slate dot. */
+:root{
+  --bg:#f5f6f8; --panel:#ffffff; --ink:#111725; --ink2:#465065; --muted:#7f8799; --line:#e2e5eb; --line2:#eef0f4;
+  --accent:#2a5bd7; --accent-ink:#1d47b3; --accent-wash:rgba(42,91,215,.09); --down:#c8434f; --down-wash:rgba(200,67,79,.08);
+  --c26:#97a0b3; --c25:#c9ced8; --amber:#b7791f; --amber-wash:rgba(183,121,31,.10); --ok:#1f8a4c;
+  --font-display:"Bricolage Grotesque","Geist","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",system-ui,sans-serif;
+  --font-body:"Geist","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"Geist Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --r:10px;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#6250d6; --s8:#e34948;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1016; --panel:#151a23; --ink:#e8ebf1; --ink2:#b1b8c6; --muted:#7c8494; --line:#252c38; --line2:#1c222c;
+  --accent:#7097f2; --accent-ink:#9ab5f6; --accent-wash:rgba(112,151,242,.13); --down:#ec6f7c; --down-wash:rgba(236,111,124,.12);
+  --c26:#5f687b; --c25:#3a4150; --amber:#d9a04a; --amber-wash:rgba(217,160,74,.13); --ok:#3fbf73; color-scheme:dark;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;}}
+:root[data-theme="dark"]{
+  --bg:#0d1016; --panel:#151a23; --ink:#e8ebf1; --ink2:#b1b8c6; --muted:#7c8494; --line:#252c38; --line2:#1c222c;
+  --accent:#7097f2; --accent-ink:#9ab5f6; --accent-wash:rgba(112,151,242,.13); --down:#ec6f7c; --down-wash:rgba(236,111,124,.12);
+  --c26:#5f687b; --c25:#3a4150; --amber:#d9a04a; --amber-wash:rgba(217,160,74,.13); --ok:#3fbf73; color-scheme:dark;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.65 var(--font-body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.mono{font-family:var(--font-mono);font-size:.92em}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)} .ink2{color:var(--ink2)}
+h1,h2,h3{font-family:var(--font-display);font-weight:650;letter-spacing:-.01em;text-wrap:balance;margin:0}
+h2{font-size:clamp(26px,3.2vw,36px);line-height:1.15}
+h3{font-size:19px;line-height:1.3}
+p{margin:0}
+.eyebrow{font:500 12px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* header */
+header.top{padding-block:44px 28px;border-bottom:1px solid var(--line)}
+.top h1{font-size:clamp(34px,5.4vw,60px);line-height:1.04;margin-top:14px}
+.top h1 em{font-style:normal;color:var(--accent)}
+.top .lede{max-width:760px;margin-top:16px;color:var(--ink2);font-size:16.5px}
+.src{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:20px;font-size:12.5px;color:var(--muted)}
+.src span b{color:var(--ink2);font-weight:500}
+
+/* nav */
+nav.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.rail .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:8px}
+nav.rail a{flex:none;padding:6px 12px;border-radius:999px;color:var(--ink2);font-size:13.5px;white-space:nowrap}
+nav.rail a:hover{background:var(--line2);text-decoration:none}
+nav.rail a.on{background:var(--ink);color:var(--bg)}
+.theme-btn{margin-left:auto;flex:none;border:1px solid var(--line);background:var(--panel);color:var(--ink2);border-radius:999px;padding:5px 11px;font:inherit;font-size:12.5px;cursor:pointer}
+
+section.sec{padding-block:56px 12px}
+.sec-head{display:grid;gap:10px;margin-bottom:28px;max-width:860px}
+.sec-head .thesis{color:var(--ink2);font-size:16px}
+.block{margin-top:36px}
+.block-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.block-title h3{font-size:18px}
+.block-title .note{font-size:12.5px;color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.grid2>*,.grid3>*{min-width:0}
+
+/* KPI row */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.kpi{background:var(--panel);padding:18px 18px 16px}
+.kpi .v{font:600 30px/1.1 var(--font-display);margin-top:8px}
+.kpi .v small{font:500 13px var(--font-body);color:var(--muted);margin-left:6px}
+.kpi .d{margin-top:6px;font-size:12.5px;color:var(--ink2)}
+
+/* findings */
+.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px}
+.finding{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;display:grid;gap:8px;align-content:start}
+.finding h3{font-size:16.5px;line-height:1.35}
+.finding p{color:var(--ink2);font-size:14px}
+.finding .fig{font:600 13px var(--font-mono);color:var(--accent-ink)}
+.tag{display:inline-flex;align-items:center;gap:6px;font:500 11.5px/1 var(--font-mono);letter-spacing:.04em;text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--line2);color:var(--ink2);width:max-content}
+.tag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.tag.rising{background:var(--accent-wash);color:var(--accent-ink)}
+.tag.fading{background:var(--down-wash);color:var(--down)}
+.tag.shift,.tag.watch,.tag.gap{background:var(--amber-wash);color:var(--amber)}
+.tag.stable{color:var(--muted)}
+
+/* chart chrome */
+svg text{fill:var(--ink2);font-family:var(--font-body);font-size:12px}
+svg .axis line,svg .grid line{stroke:var(--line);shape-rendering:crispEdges}
+svg .axis text{fill:var(--muted);font-size:11px;font-family:var(--font-mono)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2);margin:4px 0 10px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+.tip{position:fixed;z-index:50;pointer-events:none;max-width:320px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:12.5px;line-height:1.5;box-shadow:0 8px 24px rgba(0,0,0,.14);opacity:0;transition:opacity .08s}
+.tip b{font-weight:600}
+.tip .k{color:var(--muted)}
+
+/* lists of movers */
+.movers{display:grid;gap:2px}
+.mv{display:grid;grid-template-columns:minmax(0,1fr) 160px 64px;align-items:center;gap:12px;padding:7px 4px;border-bottom:1px solid var(--line2);font-size:13.5px}
+.mv .name{min-width:0}
+.mv .name small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:var(--muted);font-size:12px;line-height:1.4}
+.mv .val{font:500 12.5px var(--font-mono);text-align:right;color:var(--ink2)}
+@media (max-width:560px){.mv{grid-template-columns:minmax(0,1fr) 100px 54px}}
+
+/* segmented control & inputs */
+.seg{display:inline-flex;flex-wrap:wrap;gap:4px;background:var(--line2);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;color:var(--ink2);font:inherit;font-size:13px;padding:5px 12px;border-radius:999px;cursor:pointer}
+.seg button.on{background:var(--panel);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+input.search,select.sel{font:inherit;font-size:13.5px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0}
+input.search{width:min(100%,320px)}
+.controls{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin-bottom:12px}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--panel)}
+table.t{border-collapse:collapse;width:100%;font-size:13px}
+table.t th{position:sticky;top:0;background:var(--panel);text-align:left;font:500 11.5px var(--font-mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap;cursor:pointer;user-select:none}
+table.t td{padding:9px 12px;border-bottom:1px solid var(--line2);vertical-align:top}
+table.t td.n{font-family:var(--font-mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+table.t tr:hover td{background:var(--line2)}
+.scroll-y{max-height:620px;overflow-y:auto}
+.pill{display:inline-block;font:500 11px/1.6 var(--font-mono);padding:0 7px;border-radius:999px;background:var(--line2);color:var(--ink2);white-space:nowrap}
+.cloud .pill{white-space:normal}
+.pill.blue{background:var(--accent-wash);color:var(--accent-ink)}
+.pill.red{background:var(--down-wash);color:var(--down)}
+.pill.amber{background:var(--amber-wash);color:var(--amber)}
+
+/* chapters */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{border:1px solid var(--line);background:var(--panel);color:var(--ink2);font:inherit;font-size:13.5px;padding:7px 14px;border-radius:999px;cursor:pointer}
+.tabs button.on{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.chapter{display:grid;gap:22px}
+.ch-head{display:grid;gap:10px;max-width:880px}
+.ch-head .headline{font:600 21px/1.45 var(--font-display);color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px}
+.stat{border-left:2px solid var(--accent);padding:2px 0 2px 12px}
+.stat .v{font:600 18px/1.3 var(--font-mono);color:var(--ink)}
+.stat .l{font-size:12.5px;color:var(--ink2)}
+.stat .n2{font-size:12px;color:var(--muted)}
+.insights{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:14px}
+.ins{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:grid;gap:10px;align-content:start}
+.ins h4{margin:0;font:600 16px/1.4 var(--font-body)}
+.ins p{color:var(--ink2);font-size:14px}
+.ev{display:grid;gap:4px;border-top:1px solid var(--line2);padding-top:10px}
+.ev a{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;font-size:12.8px;line-height:1.45;color:var(--ink2)}
+.ev a:hover{color:var(--accent-ink);text-decoration:none}
+.ev a .y{font:500 11px/1.7 var(--font-mono);color:var(--muted)}
+.cols2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px}
+ul.clean{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.clean li{position:relative;padding-left:16px;font-size:14px;color:var(--ink2)}
+ul.clean li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+ul.clean.amber li::before{background:var(--amber)}
+.callout{background:var(--amber-wash);border:1px solid color-mix(in srgb,var(--amber) 30%,transparent);border-radius:var(--r);padding:16px 18px;color:var(--ink);font-size:14px}
+.callout b{color:var(--amber)}
+.quad-note{font-size:12.5px;color:var(--muted);margin-top:6px}
+footer{padding-block:48px 64px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:56px}
+footer h3{color:var(--ink);font-size:17px;margin-bottom:10px}
+footer ol{padding-left:18px;display:grid;gap:6px;margin:0}
+details summary{cursor:pointer;color:var(--accent-ink);font-size:13px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="top"><div class="wrap">
+  <div class="eyebrow">ICLR 2027 · 投稿快照 2026-10-07 · 对照 ICLR 2026 / 2025</div>
+  <h1>ICLR 2027 投稿图谱<br><em>研究重心正在往哪里移</em></h1>
+  <p class="lede" id="lede"></p>
+  <div class="src" id="srcline"></div>
+</div></header>
+
+<nav class="rail" aria-label="章节"><div class="wrap" id="rail">
+  <a href="#overview">一页结论</a><a href="#scale">规模与结构</a><a href="#map">细主题图谱</a><a href="#radar">技术雷达</a>
+  <a href="#ecosystem">模型与基准</a><a href="#domains">领域深挖</a><a href="#signal">去年录用信号</a><a href="#style">写作风格异动</a>
+  <a href="#safety">AI Safety 专题</a><a href="#explorer">论文检索</a><a href="#method">方法与局限</a>
+  <button class="theme-btn" id="themeBtn" type="button">深浅色</button>
+</div></nav>
+
+<main class="wrap">
+  <section class="sec" id="overview">
+    <div class="sec-head"><div class="eyebrow">01 · 一页结论</div><h2>十个最值得知道的变化</h2>
+      <p class="thesis" id="overviewThesis"></p></div>
+    <div class="findings" id="findings"></div>
+  </section>
+
+  <section class="sec" id="scale">
+    <div class="sec-head"><div class="eyebrow">02 · 规模与结构</div><h2 id="scaleTitle"></h2><p class="thesis" id="scaleThesis"></p></div>
+    <div class="kpis" id="kpis"></div>
+    <div class="block"><div class="block-title"><h3>17 个研究大类的份额变化</h3><span class="note">由 300 个细主题聚合；份额 = 该类投稿 / 当年总投稿</span></div>
+      <div class="panel"><div class="legend"><span><i style="background:var(--c25)"></i>2025</span><span><i style="background:var(--c26)"></i>2026</span><span><i style="background:var(--accent)"></i>2027</span></div><div id="themeChart"></div></div></div>
+    <div class="block"><div class="block-title"><h3>作者自选 primary area：2026 → 2027</h3><span class="note">粗粒度，仅作背景；按变化排序。悬停看 2026 录用率</span></div>
+      <div class="panel"><div id="areaChart"></div></div></div>
+  </section>
+
+  <section class="sec" id="map">
+    <div class="sec-head"><div class="eyebrow">03 · 细主题图谱</div><h2>300 个数据驱动的细主题，谁在起飞，谁在退场</h2>
+      <p class="thesis">对 2025–2027 共 74,498 篇投稿做 TF-IDF + KMeans 聚类，再由 6 个分析 agent 逐簇阅读命名。横轴是 2026 份额，纵轴是 2027 份额（每万篇），对角线以上是在变热。</p></div>
+    <div class="panel"><div class="controls"><div class="seg" id="mapTheme"></div></div><div id="clusterScatter"></div>
+      <p class="quad-note">点大小 = 2027 篇数；灰色虚化点为“措辞型”伪簇（coherence=1），不计入趋势解读。</p></div>
+    <div class="grid2 block">
+      <div><div class="block-title"><h3>份额增长最快的细主题</h3><span class="note">每万篇投稿，2026 → 2027</span></div><div class="panel movers" id="riseList"></div></div>
+      <div><div class="block-title"><h3>份额萎缩最多的细主题</h3><span class="note">每万篇投稿，2026 → 2027</span></div><div class="panel movers" id="fallList"></div></div>
+    </div>
+    <div class="block"><div class="block-title"><h3>细主题明细</h3><span class="note">点击表头排序；点击簇名展开 2027 代表论文</span></div>
+      <div class="controls"><input class="search" id="clSearch" placeholder="搜索主题，例如 distillation / 世界模型" aria-label="搜索细主题"><select class="sel" id="clTheme" aria-label="按大类筛选"></select></div>
+      <div class="tbl-wrap scroll-y"><table class="t" id="clTable"></table></div></div>
+  </section>
+
+  <section class="sec" id="radar">
+    <div class="sec-head"><div class="eyebrow">04 · 技术雷达</div><h2>具体技术与范式的提及率（2025 → 2026 → 2027）</h2>
+      <p class="thesis">按正文提及（标题 + 关键词 + 摘要）统计占当年投稿的百分比。2027 摘要中位长度比 2026 长 9%，所以普遍上浮 10% 左右不算信号；看倍数。</p></div>
+    <div class="controls"><div class="seg" id="radarGroup"></div><div class="seg" id="radarSort"></div></div>
+    <div class="panel"><div id="radarGrid"></div></div>
+    <div class="grid3 block" id="kwBlocks"></div>
+  </section>
+
+  <section class="sec" id="ecosystem">
+    <div class="sec-head"><div class="eyebrow">05 · 模型与基准生态</div><h2>论文在用谁的模型，在刷什么榜</h2><p class="thesis" id="ecoThesis"></p></div>
+    <div class="grid2">
+      <div class="panel"><div class="block-title"><h3>基座模型提及率</h3><span class="note">% 投稿</span></div><div id="modelChart"></div></div>
+      <div class="panel"><div class="block-title"><h3>基准提及率</h3><span class="note">% 投稿</span></div><div id="benchChart"></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="domains">
+    <div class="sec-head"><div class="eyebrow">06 · 领域深挖</div><h2>六个领域的一线变化</h2><p class="thesis">每个领域由一个分析 agent 读完相关细主题的论文后撰写，所有数字均由数据复算，所有论文可点开 OpenReview。</p></div>
+    <div class="tabs" id="domainTabs" role="tablist"></div>
+    <div id="domainBody"></div>
+  </section>
+
+  <section class="sec" id="signal">
+    <div class="sec-head"><div class="eyebrow">07 · 去年录用信号</div><h2>拥挤赛道 vs 被奖励的赛道</h2>
+      <p class="thesis" id="signalThesis"></p></div>
+    <div class="panel"><div id="quadChart"></div><p class="quad-note">横轴：2026 → 2027 份额变化倍数（对数）；纵轴：该细主题 2026 投稿的录用率（虚线为全会 27%）。仅含 2026 投稿 ≥ 30 篇的细主题。</p></div>
+  </section>
+
+  <section class="sec" id="style">
+    <div class="sec-head"><div class="eyebrow">08 · 写作风格异动</div><h2 id="styleTitle">2027 出现了一批“模板化”摘要</h2><p class="thesis" id="styleThesis"></p></div>
+    <div id="styleBody"></div>
+  </section>
+
+  <section class="sec" id="safety">
+    <div class="sec-head"><div class="eyebrow">09 · AI Safety 专题</div><h2 id="safetyTitle">AI Safety：从“模型说了什么”转向“智能体做了什么”</h2><p class="thesis" id="safetyThesis"></p></div>
+    <div class="kpis" id="safetyKpis"></div>
+    <div class="block" id="safetyThesisBlock"></div>
+    <div class="block"><div class="block-title"><h3>26 个安全子方向：2026 → 2027</h3><span class="note">每万篇投稿（rel ≥ 1），按变化倍数排序；悬停看 2026 录用率</span></div>
+      <div class="panel"><div class="legend"><span><i style="background:var(--c26)"></i>2026</span><span><i style="background:var(--accent)"></i>2027 上升</span><span><i style="background:var(--down)"></i>2027 下降</span></div><div id="subChart"></div></div></div>
+    <div class="grid2 block">
+      <div class="panel"><div class="block-title"><h3>研究对象：安全研究在研究“谁”</h3><span class="note">占安全论文比例</span></div><div id="targetChart"></div></div>
+      <div class="panel"><div class="block-title"><h3>贡献类型：攻击、防御还是测量</h3><span class="note">占安全论文比例</span></div><div id="typeChart"></div></div>
+    </div>
+    <div class="block"><div class="block-title"><h3>子方向 × 研究对象（2027）</h3><span class="note">格内为论文数；颜色深浅 = 篇数；悬停看 2026 对比</span></div>
+      <div class="tbl-wrap"><div id="heat"></div></div></div>
+    <div class="block"><div class="block-title"><h3>具体问题层面的涨落</h3><span class="note">由六个子领域深挖 agent 把逐篇“具体问题”标注归并成问题簇后计数</span></div>
+      <div class="panel" id="topicCloud"></div></div>
+    <div class="block"><div class="block-title"><h3>六个子领域深挖</h3><span class="note"></span></div>
+      <div class="tabs" id="safetyTabs" role="tablist"></div><div id="safetyBody"></div></div>
+  </section>
+
+  <section class="sec" id="explorer">
+    <div class="sec-head"><div class="eyebrow">10 · 论文检索</div><h2>逐篇标注的安全论文 + 全部 2027 投稿</h2>
+      <p class="thesis">安全论文表含 60 个 agent 的逐篇标注（子方向、贡献类型、研究对象、具体问题）。全量表可按细主题浏览 2027 年全部投稿。</p></div>
+    <div class="seg" id="exMode" style="margin-bottom:12px"></div>
+    <div class="controls" id="exControls"></div>
+    <div class="tbl-wrap scroll-y"><table class="t" id="exTable"></table></div>
+    <p class="quad-note" id="exCount"></p>
+  </section>
+</main>
+
+<footer><div class="wrap" id="method"></div></footer>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script id="data" type="application/json">/*__DATA__*/</script>
+<script>
+(function(){
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = s => document.querySelector(s);
+const el = (tag, attrs={}, ...kids) => { const e = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs)) { if (v==null) continue; if (k==='class') e.className=v; else if (k==='text') e.textContent=v; else if (k==='html') e.innerHTML=v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); }
+  for (const k of kids.flat()) if (k!=null) e.append(k.nodeType ? k : document.createTextNode(k)); return e; };
+const NS='http://www.w3.org/2000/svg';
+const s = (tag, attrs={}) => { const e=document.createElementNS(NS,tag); for (const [k,v] of Object.entries(attrs)) e.setAttribute(k,v); return e; };
+const OR = id => 'https://openreview.net/forum?id=' + encodeURIComponent(id);
+const fmt = (v, d=1) => v==null||isNaN(v) ? '—' : Number(v).toFixed(d);
+const fmtInt = v => Number(v).toLocaleString('en-US');
+const ratio = (a,b,eps=0.5) => (b+eps)/(a+eps);
+const tip = $('#tip');
+function showTip(ev, html){ tip.innerHTML = html; tip.style.opacity = 1; const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = ev.clientX + 14, y = ev.clientY + 14; if (x + w > innerWidth - 8) x = ev.clientX - w - 14; if (y + h > innerHeight - 8) y = ev.clientY - h - 14; tip.style.left = Math.max(8,x)+'px'; tip.style.top = Math.max(8,y)+'px'; }
+function hideTip(){ tip.style.opacity = 0; }
+const esc = t => String(t??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const THEME = D.themeNames;
+
+/* theme toggle */
+$('#themeBtn').addEventListener('click', () => { const r = document.documentElement; const cur = r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); r.setAttribute('data-theme', cur==='dark' ? 'light' : 'dark'); try{localStorage.setItem('theme', r.getAttribute('data-theme'))}catch(e){} });
+try{ const t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); }catch(e){}
+
+/* rail highlight */
+const railLinks=[...document.querySelectorAll('#rail a')];
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) railLinks.forEach(a => a.classList.toggle('on', a.getAttribute('href')==='#'+e.target.id)); }), {rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section.sec').forEach(sct => io.observe(sct));
+
+/* ---------- generic charts ---------- */
+// horizontal dumbbell: rows [{label, sub, a, b, c?, tipHtml}] ; a = 2026, b = 2027, c = 2025 optional
+function dumbbell(host, rows, {unit='', max=null, labelW=210, rowH=26, log=false} = {}){
+  host.innerHTML=''; const W = Math.max(320, host.clientWidth || 800); const narrow = W < 560; const lw = narrow ? Math.min(150, W*0.42) : labelW;
+  const H = rows.length*rowH + 30; const x0 = lw + 10, x1 = W - 56;
+  const vmax = max ?? Math.max(...rows.flatMap(r => [r.a, r.b, r.c ?? 0])) * 1.05;
+  const X = v => x0 + (x1-x0) * (v / vmax);
+  const svg = s('svg',{viewBox:`0 0 ${W} ${H}`, width:'100%', role:'img'});
+  const g = s('g',{class:'axis'}); const ticks = niceTicks(vmax, narrow?3:5);
+  ticks.forEach(t => { g.append(s('line',{x1:X(t),x2:X(t),y1:4,y2:H-22})); const tx=s('text',{x:X(t),y:H-6,'text-anchor':'middle'}); tx.textContent = t + unit; g.append(tx); });
+  svg.append(g);
+  rows.forEach((r,i) => { const y = 14 + i*rowH; const up = r.b >= r.a;
+    const row = s('g',{});
+    const lab = s('text',{x:lw,y:y+4,'text-anchor':'end'}); lab.textContent = trunc(r.label, narrow?14:30); lab.style.fill='var(--ink)'; row.append(lab);
+    row.append(s('line',{x1:X(Math.min(r.a,r.b)),x2:X(Math.max(r.a,r.b)),y1:y,y2:y,stroke: up?'var(--accent)':'var(--down)','stroke-width':2,'stroke-linecap':'round',opacity:.55}));
+    if (r.c!=null) row.append(s('circle',{cx:X(r.c),cy:y,r:3.2,fill:'var(--c25)'}));
+    row.append(s('circle',{cx:X(r.a),cy:y,r:4.5,fill:'var(--c26)',stroke:'var(--panel)','stroke-width':2}));
+    row.append(s('circle',{cx:X(r.b),cy:y,r:5,fill: up?'var(--accent)':'var(--down)',stroke:'var(--panel)','stroke-width':2}));
+    const vt = s('text',{y:y+4,'font-family':'var(--font-mono)','font-size':11}); vt.textContent = fmt(r.b, r.b<10?2:1); vt.style.fill='var(--ink2)';
+    if (up) { vt.setAttribute('x', Math.min(W-4, X(r.b)+10)); if (X(r.b)+10 > W-40) vt.setAttribute('text-anchor','end'); }
+    else { const lx = X(r.b)-10; if (lx - 34 > x0 && (r.c==null || Math.abs(X(r.c)-X(r.b)) > 44 || X(r.c) > X(r.b))) { vt.setAttribute('x', lx); vt.setAttribute('text-anchor','end'); } else { vt.setAttribute('x', Math.min(W-4, X(r.a)+10)); } }
+    row.append(vt);
+    const hit = s('rect',{x:0,y:y-rowH/2,width:W,height:rowH,fill:'transparent'});
+    hit.addEventListener('mousemove', ev => showTip(ev, r.tipHtml || `<b>${esc(r.label)}</b><br>${r.c!=null?`2025 ${fmt(r.c,2)}${unit} · `:''}2026 ${fmt(r.a,2)}${unit} → 2027 <b>${fmt(r.b,2)}${unit}</b>`));
+    hit.addEventListener('mouseleave', hideTip); row.append(hit); svg.append(row); });
+  host.append(svg);
+}
+function niceTicks(max, n){ const step0 = max / n; const mag = Math.pow(10, Math.floor(Math.log10(step0))); const st = [1,2,2.5,5,10].map(m=>m*mag).find(v => v >= step0) || step0; const out=[]; for (let v=0; v<=max+1e-9; v+=st) out.push(+v.toFixed(6)); return out; }
+const trunc = (t,n) => t.length>n ? t.slice(0,n-1)+'…' : t;
+function spark(vals, {w=88,h=26,color='var(--accent)'}={}){ const svg = s('svg',{viewBox:`0 0 ${w} ${h}`,width:w,height:h}); const mx = Math.max(...vals, 1e-9);
+  const pts = vals.map((v,i) => [4 + i*(w-8)/(vals.length-1), h-4 - (h-8)*v/mx]);
+  svg.append(s('path',{d:`M${pts.map(p=>p.join(',')).join('L')}L${pts.at(-1)[0]},${h-2}L${pts[0][0]},${h-2}Z`,fill:color,opacity:.10}));
+  svg.append(s('polyline',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:color,'stroke-width':1.8,'stroke-linejoin':'round','stroke-linecap':'round'}));
+  svg.append(s('circle',{cx:pts.at(-1)[0],cy:pts.at(-1)[1],r:3,fill:color})); return svg; }
+function bar(v, max, up=true){ const w=160, h=8; const svg = s('svg',{viewBox:`0 0 ${w} ${h}`,width:'100%',height:h,preserveAspectRatio:'none'}); svg.append(s('rect',{x:0,y:0,width:w,height:h,rx:4,fill:'var(--line2)'})); svg.append(s('rect',{x:0,y:0,width:Math.max(3,w*Math.min(1,v/max)),height:h,rx:4,fill: up?'var(--accent)':'var(--down)'})); return svg; }
+function evidenceList(ev){ if (!ev || !ev.length) return null; return el('div',{class:'ev'}, ev.map(p => el('a',{href:OR(p.id),target:'_blank',rel:'noopener'}, el('span',{class:'y',text:String(p.year||'')}), el('span',{text:p.title||p.id})))); }
+
+/* ---------- header ---------- */
+const T = D.meta.totals;
+$('#lede').textContent = D.text.lede;
+$('#srcline').append(...D.text.sources.map(x => el('span',{html:x})));
+$('#overviewThesis').textContent = D.text.overviewThesis;
+$('#findings').append(...D.text.findings.map(f => el('article',{class:'finding'}, el('span',{class:'tag '+(f.tag||''),text:f.tagText||f.tag}), el('h3',{text:f.title}), el('p',{text:f.body}), f.fig?el('div',{class:'fig',text:f.fig}):null, f.link?el('a',{href:f.link,text:'→ '+(f.linkText||'看详情')}):null)));
+
+/* ---------- scale ---------- */
+$('#scaleTitle').textContent = D.text.scaleTitle; $('#scaleThesis').textContent = D.text.scaleThesis;
+$('#kpis').append(...D.text.kpis.map(k => el('div',{class:'kpi'}, el('div',{class:'eyebrow',text:k.label}), el('div',{class:'v',html:esc(k.value)+(k.unit?`<small>${esc(k.unit)}</small>`:'')}), el('div',{class:'d',text:k.note||''}))));
+function drawThemes(){ const rows = D.themes.filter(t=>t.theme).map(t => ({label: THEME[t.theme]||t.theme, c:t.share[0], a:t.share[1], b:t.share[2]})).sort((p,q)=>q.b-p.b); dumbbell($('#themeChart'), rows, {unit:'%', labelW:230}); }
+function drawAreas(){ const rows = D.areas.map(a => ({label:a.zh||a.area, c:a.share[0], a:a.share[1], b:a.share[2], tipHtml:`<b>${esc(a.area)}</b><br>2025 ${a.share[0]}% · 2026 ${a.share[1]}% → 2027 <b>${a.share[2]}%</b><br><span class="k">2027 篇数</span> ${fmtInt(a.n[2])} · <span class="k">2026 录用率</span> ${(a.acc26*100).toFixed(0)}%`})).sort((p,q)=>(q.b-q.a)-(p.b-p.a)); dumbbell($('#areaChart'), rows, {unit:'%', labelW:250}); }
+
+/* ---------- cluster map ---------- */
+const CL = D.clusters;
+const themeKeys = Object.keys(THEME);
+let mapTheme = 'all';
+const segMap = $('#mapTheme'); [['all','全部'], ...themeKeys.map(k=>[k,THEME[k]])].forEach(([k,n]) => segMap.append(el('button',{type:'button',class:k===mapTheme?'on':'',onclick:()=>{mapTheme=k; [...segMap.children].forEach(b=>b.classList.toggle('on', b.textContent===n)); drawScatter();}}, n)));
+function drawScatter(){ const host = $('#clusterScatter'); host.innerHTML=''; const W = Math.max(320, host.clientWidth||900), H = Math.min(560, Math.max(360, W*0.55)); const m = {l:46,r:16,t:12,b:36};
+  const L = v => Math.log10(v + 2); const vmax = Math.max(...CL.map(c=>Math.max(c.share[1],c.share[2]))); const lo = L(0), hi = L(vmax*1.1);
+  const X = v => m.l + (W-m.l-m.r)*(L(v)-lo)/(hi-lo), Y = v => H-m.b - (H-m.t-m.b)*(L(v)-lo)/(hi-lo);
+  const svg = s('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'细主题份额散点图'});
+  const ax = s('g',{class:'axis'}); [0,5,10,20,50,100,200].filter(t=>t<=vmax*1.1).forEach(t => { ax.append(s('line',{x1:X(t),x2:X(t),y1:m.t,y2:H-m.b})); ax.append(s('line',{x1:m.l,x2:W-m.r,y1:Y(t),y2:Y(t)})); const a=s('text',{x:X(t),y:H-m.b+16,'text-anchor':'middle'}); a.textContent=t; ax.append(a); const b=s('text',{x:m.l-6,y:Y(t)+4,'text-anchor':'end'}); b.textContent=t; ax.append(b); });
+  svg.append(ax); svg.append(s('line',{x1:X(0),y1:Y(0),x2:X(vmax*1.1),y2:Y(vmax*1.1),stroke:'var(--muted)','stroke-dasharray':'4 4',opacity:.6}));
+  const xl=s('text',{x:W-m.r,y:H-4,'text-anchor':'end'}); xl.textContent='2026 每万篇 →'; svg.append(xl); const yl=s('text',{x:m.l+4,y:m.t+12}); yl.textContent='↑ 2027 每万篇'; svg.append(yl);
+  const nmax = Math.max(...CL.map(c=>c.n[2]));
+  [...CL].sort((a,b)=>b.n[2]-a.n[2]).forEach(c => { const on = (mapTheme==='all' || c.theme===mapTheme) && c.coherence!==1; const up = c.share[2] >= c.share[1];
+    const r = 2.5 + 9*Math.sqrt(c.n[2]/nmax); const dot = s('circle',{cx:X(c.share[1]),cy:Y(c.share[2]),r, fill: c.coherence===1?'var(--c26)':(up?'var(--accent)':'var(--down)'), 'fill-opacity': on?0.72:0.10, stroke:'var(--panel)','stroke-width':1.5});
+    dot.addEventListener('mousemove', ev => showTip(ev, `<b>${esc(c.name_zh)}</b> <span class="k">#${c.cluster} · ${esc(THEME[c.theme]||'')}</span><br>${esc(c.name_en||'')}<br>每万篇：2025 ${c.share[0]} · 2026 ${c.share[1]} → 2027 <b>${c.share[2]}</b><br><span class="k">2027 篇数</span> ${c.n[2]}${c.acc26!=null?` · <span class="k">2026 录用率</span> ${(c.acc26*100).toFixed(0)}%`:''}<br>${esc(c.trend_zh||'')}`));
+    dot.addEventListener('mouseleave', hideTip); svg.append(dot); });
+  const lab = CL.filter(c => c.coherence!==1 && (mapTheme==='all'||c.theme===mapTheme)).sort((a,b)=>ratio(b.share[1],b.share[2],3)-ratio(a.share[1],a.share[2],3)).slice(0, mapTheme==='all'?16:10);
+  const boxes=[]; lab.forEach(c => { const tw = c.name_zh.length*11.5 + 4; let x = X(c.share[1])+8, y = Y(c.share[2])-6, anchor='start'; if (x + tw > W - m.r) { x = X(c.share[1]) - 8; anchor='end'; }
+    const bx = anchor==='start' ? [x, y-12, x+tw, y+2] : [x-tw, y-12, x, y+2]; if (boxes.some(b => !(bx[2]<b[0]||bx[0]>b[2]||bx[3]<b[1]||bx[1]>b[3]))) return; boxes.push(bx);
+    const t = s('text',{x,y,'font-size':11.5,'text-anchor':anchor}); t.textContent=c.name_zh; t.style.fill='var(--ink)'; t.style.paintOrder='stroke'; t.style.stroke='var(--panel)'; t.style.strokeWidth='3px'; svg.append(t); });
+  host.append(svg); }
+function moversList(host, rows){ host.innerHTML=''; const mx = Math.max(...rows.map(r=>Math.max(r.a,r.b)));
+  rows.forEach(r => host.append(el('div',{class:'mv'}, el('div',{class:'name'}, r.link?el('a',{href:r.link,target:'_blank',rel:'noopener',text:r.name}):el('span',{text:r.name}), r.sub?el('small',{text:r.sub}):null), bar(r.b, mx, r.b>=r.a), el('div',{class:'val',text:`${fmt(r.a)}→${fmt(r.b)}`})))); }
+const good = CL.filter(c => c.coherence !== 1);
+moversList($('#riseList'), [...good].sort((a,b)=>(b.share[2]-b.share[1])-(a.share[2]-a.share[1])).slice(0,15).map(c=>({name:c.name_zh, sub:c.trend_zh, a:c.share[1], b:c.share[2]})));
+moversList($('#fallList'), [...good].sort((a,b)=>(a.share[2]-a.share[1])-(b.share[2]-b.share[1])).slice(0,15).map(c=>({name:c.name_zh, sub:c.trend_zh, a:c.share[1], b:c.share[2]})));
+// cluster table
+const clThemeSel = $('#clTheme'); clThemeSel.append(el('option',{value:'all',text:'全部大类'}), ...themeKeys.map(k => el('option',{value:k,text:THEME[k]})));
+let clSort = {k:'d', dir:-1};
+const clCols = [['name','细主题'],['theme','大类'],['s26','2026 /万'],['s27','2027 /万'],['d','变化 /万'],['x','倍数'],['n27','2027 篇'],['acc','2026 录用率'],['trend','三年']];
+function drawClTable(){ const q = $('#clSearch').value.trim().toLowerCase(), th = clThemeSel.value;
+  let rows = CL.filter(c => (th==='all'||c.theme===th) && (!q || (c.name_zh+c.name_en+(c.desc_zh||'')+(c.trend_zh||'')).toLowerCase().includes(q)));
+  const key = c => ({name:c.name_zh, theme:c.theme, s26:c.share[1], s27:c.share[2], d:c.share[2]-c.share[1], x:ratio(c.share[1],c.share[2],1), n27:c.n[2], acc:c.acc26??-1, trend:c.share[2]})[clSort.k];
+  rows.sort((a,b)=> (key(a)>key(b)?1:-1)*clSort.dir);
+  const t = $('#clTable'); t.innerHTML='';
+  t.append(el('thead',{}, el('tr',{}, clCols.map(([k,n]) => el('th',{onclick:()=>{clSort = {k, dir: clSort.k===k? -clSort.dir : -1}; drawClTable();}}, n + (clSort.k===k?(clSort.dir<0?' ↓':' ↑'):''))))));
+  const tb = el('tbody'); rows.forEach(c => { const tr = el('tr',{}); const det = el('details',{}, el('summary',{text:c.name_zh+(c.coherence===1?'（措辞型伪簇）':'')}), el('div',{class:'muted',style:'font-size:12.5px;margin:6px 0',text:(c.name_en||'')+' — '+(c.desc_zh||'')}), el('div',{style:'font-size:12.5px;margin-bottom:6px',text:c.trend_zh||''}), evidenceList((c.examples||[]).map(e=>({id:e.id,year:2027,title:e.title})) ));
+    tr.append(el('td',{style:'min-width:260px;max-width:440px'}, det), el('td',{}, el('span',{class:'pill',text:THEME[c.theme]||c.theme})), el('td',{class:'n',text:fmt(c.share[1])}), el('td',{class:'n',text:fmt(c.share[2])}), el('td',{class:'n',html:`<span style="color:${c.share[2]>=c.share[1]?'var(--accent-ink)':'var(--down)'}">${c.share[2]>=c.share[1]?'+':''}${fmt(c.share[2]-c.share[1])}</span>`}), el('td',{class:'n',text:fmt(ratio(c.share[1],c.share[2],1),2)+'×'}), el('td',{class:'n',text:c.n[2]}), el('td',{class:'n',text:c.acc26!=null?(c.acc26*100).toFixed(0)+'%':'—'}), el('td',{}, spark(c.share,{w:72,h:22,color:c.share[2]>=c.share[1]?'var(--accent)':'var(--down)'})));
+    tb.append(tr); }); t.append(tb); }
+$('#clSearch').addEventListener('input', drawClTable); clThemeSel.addEventListener('change', drawClTable);
+
+/* ---------- radar ---------- */
+const CO = D.concepts; const groups = [...new Set(CO.map(c=>c.group))]; let rGroup = groups[0], rSort='x';
+const segR = $('#radarGroup'); groups.forEach(g => segR.append(el('button',{type:'button',class:g===rGroup?'on':'',onclick:e=>{rGroup=g;[...segR.children].forEach(b=>b.classList.toggle('on',b===e.target));drawRadar();}}, g)));
+const segS = $('#radarSort'); [['x','按增长倍数'],['v','按 2027 提及率']].forEach(([k,n]) => segS.append(el('button',{type:'button',class:k===rSort?'on':'',onclick:e=>{rSort=k;[...segS.children].forEach(b=>b.classList.toggle('on',b===e.target));drawRadar();}}, n)));
+function drawRadar(){ const host = $('#radarGrid'); host.innerHTML=''; let rows = CO.filter(c=>c.group===rGroup);
+  rows.sort((a,b)=> rSort==='x' ? ratio(b.share[1],b.share[2],0.05)-ratio(a.share[1],a.share[2],0.05) : b.share[2]-a.share[2]);
+  const t = el('table',{class:'t'}); t.append(el('thead',{}, el('tr',{}, ['技术 / 范式','2025','2026','2027','倍数 26→27','三年走势','2026 录用率'].map(h=>el('th',{style:'cursor:default',text:h})))));
+  const tb = el('tbody'); rows.forEach(c => { const x = ratio(c.share[1],c.share[2],0.05); const up = x>=1.15, dn = x<0.9;
+    tb.append(el('tr',{}, el('td',{}, el('div',{text:c.zh}), el('div',{class:'muted',style:'font-size:12px',text:c.en})), ...c.share.map(v=>el('td',{class:'n',text:v<1?v.toFixed(2)+'%':v.toFixed(1)+'%'})), el('td',{class:'n'}, el('span',{class:'pill '+(up?'blue':dn?'red':''),text:x.toFixed(2)+'×'})), el('td',{}, spark(c.share,{color: dn?'var(--down)':'var(--accent)'})), el('td',{class:'n',text: c.acc26!=null? (c.acc26*100).toFixed(0)+'%':'—'}))); });
+  t.append(tb); host.append(el('div',{class:'tbl-wrap',style:'border:0'}, t)); }
+const kwB = $('#kwBlocks'); [['kw_new','2027 新出现的作者关键词','2026 ≤ 2 篇，2027 ≥ 25 篇'],['kw_rise','升温最快的关键词','log-odds（2026→2027）'],['kw_fall','降温最快的关键词','log-odds（2026→2027）']].forEach(([k,title,note]) => {
+  const box = el('div',{class:'panel'}, el('div',{class:'block-title'}, el('h3',{text:title}), el('span',{class:'note',text:note})));
+  const list = el('div',{class:'movers'}); (D.kw[k]||[]).slice(0,18).forEach(r => list.append(el('div',{class:'mv',style:'grid-template-columns:minmax(0,1fr) 90px'}, el('div',{class:'name mono',text:r.kw}), el('div',{class:'val',text:`${r.n[1]} → ${r.n[2]}`}))));
+  box.append(list); kwB.append(box); });
+
+/* ---------- ecosystem ---------- */
+$('#ecoThesis').textContent = D.text.ecoThesis;
+function drawEco(){ dumbbell($('#modelChart'), D.models.map(m=>({label:m.name,c:m.share[0],a:m.share[1],b:m.share[2]})).sort((a,b)=>b.b-a.b), {unit:'%', labelW:120}); dumbbell($('#benchChart'), D.benchmarks.map(m=>({label:m.name,c:m.share[0],a:m.share[1],b:m.share[2]})).sort((a,b)=>b.b-a.b), {unit:'%', labelW:120}); }
+
+/* ---------- chapters (domains & safety) ---------- */
+function chapter(ch){ if (!ch) return el('p',{class:'muted',text:'该章节暂缺。'});
+  const wrap = el('div',{class:'chapter'});
+  wrap.append(el('div',{class:'ch-head'}, el('div',{class:'headline',text:ch.headline_zh||''})));
+  if (ch.stats?.length) wrap.append(el('div',{class:'stats'}, ch.stats.map(st => el('div',{class:'stat'}, el('div',{class:'v',text:st.value}), el('div',{class:'l',text:st.label_zh}), st.note_zh?el('div',{class:'n2',text:st.note_zh}):null))));
+  wrap.append(el('div',{class:'insights'}, (ch.insights||[]).map(i => el('article',{class:'ins'}, el('span',{class:'tag '+(i.tag||''),text:({rising:'上升',fading:'退潮',shift:'范式转移',stable:'稳定',watch:'值得关注',gap:'空白'})[i.tag]||i.tag}), el('h4',{text:i.title_zh}), el('p',{text:i.body_zh}), evidenceList(i.evidence)))));
+  const side = el('div',{class:'cols2'});
+  if (ch.rising?.length || ch.fading?.length) { const mk = (title, rows) => { const p = el('div',{class:'panel'}, el('div',{class:'block-title'}, el('h3',{text:title}), el('span',{class:'note',text:'每万篇'}))); const l = el('div',{class:'movers'}); moversList(l, rows.map(r=>({name:r.name_zh, sub:r.note_zh, a:+r.from, b:+r.to}))); p.append(l); return p; };
+    if (ch.rising?.length) side.append(mk('上升', ch.rising)); if (ch.fading?.length) side.append(mk('退潮', ch.fading)); }
+  if (ch.microtopics?.length) { const p = el('div',{class:'panel'}, el('div',{class:'block-title'}, el('h3',{text:'具体问题簇'}), el('span',{class:'note',text:'篇数 2026 → 2027'}))); const l = el('div',{class:'movers'}); moversList(l, ch.microtopics.map(r=>({name:r.name_zh, sub:r.note_zh, a:+r.n26, b:+r.n27}))); l.querySelectorAll('.val').forEach((v,i)=>v.textContent = `${ch.microtopics[i].n26}→${ch.microtopics[i].n27}`); p.append(l); side.append(p); }
+  if (side.children.length) wrap.append(side);
+  const lists = el('div',{class:'cols2'});
+  if (ch.frontline_zh?.length) lists.append(el('div',{class:'panel'}, el('h3',{text:'一线观察',style:'margin-bottom:12px'}), el('ul',{class:'clean'}, ch.frontline_zh.map(t=>el('li',{text:t})))));
+  if (ch.gaps_zh?.length) lists.append(el('div',{class:'panel'}, el('h3',{text:'空白与开放问题',style:'margin-bottom:12px'}), el('ul',{class:'clean amber'}, ch.gaps_zh.map(t=>el('li',{text:t})))));
+  const rw = el('div',{class:'panel'}); if (ch.rewarded_2026_zh) rw.append(el('h3',{text:'2026 评审奖励了什么',style:'margin-bottom:8px'}), el('p',{class:'ink2',style:'font-size:14px',text:ch.rewarded_2026_zh}));
+  if (ch.watchlist_zh?.length) rw.append(el('h3',{text:'接下来值得盯的',style:'margin:16px 0 10px'}), el('ul',{class:'clean amber'}, ch.watchlist_zh.map(t=>el('li',{text:t}))));
+  if (rw.children.length) lists.append(rw);
+  wrap.append(lists); return wrap; }
+function tabs(tabHost, bodyHost, chapters){ tabHost.innerHTML=''; let cur = chapters[0]?.key;
+  const render = () => { bodyHost.innerHTML=''; bodyHost.append(chapter(chapters.find(c=>c.key===cur))); [...tabHost.children].forEach(b => b.classList.toggle('on', b.dataset.k===cur)); };
+  chapters.forEach(c => tabHost.append(el('button',{type:'button',role:'tab','data-k':c.key,onclick:()=>{cur=c.key; render();}}, c.title_zh))); render(); }
+tabs($('#domainTabs'), $('#domainBody'), D.domains);
+
+/* ---------- signal quadrant ---------- */
+$('#signalThesis').textContent = D.text.signalThesis;
+function drawQuad(){ const host=$('#quadChart'); host.innerHTML=''; const pts = CL.filter(c=>c.coherence!==1 && c.acc26!=null && c.n[1]>=30); const W=Math.max(320,host.clientWidth||900), H=Math.min(520,Math.max(340,W*0.5)), m={l:46,r:16,t:14,b:36};
+  const xs = pts.map(c=>Math.log2(ratio(c.share[1],c.share[2],1))); const xmn=Math.min(...xs,-2), xmx=Math.max(...xs,2); const ymn=0.05, ymx=Math.max(...pts.map(c=>c.acc26))+0.03;
+  const X=v=>m.l+(W-m.l-m.r)*(v-xmn)/(xmx-xmn), Y=v=>H-m.b-(H-m.t-m.b)*(v-ymn)/(ymx-ymn);
+  const svg=s('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%'}); const ax=s('g',{class:'axis'});
+  [-2,-1,0,1,2,3,4,5].filter(v=>v>=xmn&&v<=xmx).forEach(v=>{ax.append(s('line',{x1:X(v),x2:X(v),y1:m.t,y2:H-m.b})); const t=s('text',{x:X(v),y:H-m.b+16,'text-anchor':'middle'}); t.textContent=(2**v>=1?(2**v)+'×':'1/'+(2**-v)); ax.append(t);});
+  [0.1,0.2,0.3,0.4,0.5,0.6].filter(v=>v<=ymx).forEach(v=>{ax.append(s('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v)})); const t=s('text',{x:m.l-6,y:Y(v)+4,'text-anchor':'end'}); t.textContent=(v*100)+'%'; ax.append(t);}); svg.append(ax);
+  svg.append(s('line',{x1:m.l,x2:W-m.r,y1:Y(D.meta.acc_base26),y2:Y(D.meta.acc_base26),stroke:'var(--muted)','stroke-dasharray':'4 4'})); svg.append(s('line',{x1:X(0),x2:X(0),y1:m.t,y2:H-m.b,stroke:'var(--muted)','stroke-dasharray':'4 4'}));
+  [['拥挤且门槛高',W-m.r-6,m.t+14,'end'],['被奖励的小众',m.l+6,m.t+14,'start'],['涌入但未被奖励',W-m.r-6,H-m.b-8,'end'],['退潮',m.l+6,H-m.b-8,'start']].forEach(([t,x,y,a])=>{const e=s('text',{x,y,'text-anchor':a,'font-size':11.5}); e.textContent=t; e.style.fill='var(--muted)'; svg.append(e);});
+  pts.forEach(c=>{const x=Math.log2(ratio(c.share[1],c.share[2],1)); const d=s('circle',{cx:X(x),cy:Y(c.acc26),r:4.5,fill:x>=0?'var(--accent)':'var(--down)','fill-opacity':.7,stroke:'var(--panel)','stroke-width':1.5});
+    d.addEventListener('mousemove',ev=>showTip(ev,`<b>${esc(c.name_zh)}</b><br>2026 录用率 <b>${(c.acc26*100).toFixed(0)}%</b>（${c.n[1]} 篇）${c.rating26?` · 均分 ${c.rating26}`:''}<br>份额 ${c.share[1]} → ${c.share[2]} /万（${ratio(c.share[1],c.share[2],1).toFixed(2)}×）`)); d.addEventListener('mouseleave',hideTip); svg.append(d);});
+  const lab=[...pts].sort((a,b)=>Math.abs(b.acc26-D.meta.acc_base26)*Math.abs(Math.log2(ratio(b.share[1],b.share[2],1)))-Math.abs(a.acc26-D.meta.acc_base26)*Math.abs(Math.log2(ratio(a.share[1],a.share[2],1)))).slice(0,14);
+  const qb=[[W-m.r-90,m.t,W-m.r,m.t+18],[m.l,m.t,m.l+90,m.t+18],[W-m.r-100,H-m.b-22,W-m.r,H-m.b],[m.l,H-m.b-22,m.l+40,H-m.b]]; lab.forEach(c=>{const xv=Math.log2(ratio(c.share[1],c.share[2],1)); const tw=c.name_zh.length*11+4; let x=X(xv)+7, y=Y(c.acc26)-6, an='start'; if (x+tw>W-m.r){x=X(xv)-7; an='end';} const bx = an==='start'?[x,y-11,x+tw,y+2]:[x-tw,y-11,x,y+2]; if (qb.some(b=>!(bx[2]<b[0]||bx[0]>b[2]||bx[3]<b[1]||bx[1]>b[3]))) return; qb.push(bx);
+    const t=s('text',{x,y,'font-size':11,'text-anchor':an}); t.textContent=c.name_zh; t.style.fill='var(--ink)'; t.style.paintOrder='stroke'; t.style.stroke='var(--panel)'; t.style.strokeWidth='3px'; svg.append(t);});
+  host.append(svg); }
+
+/* ---------- style anomaly ---------- */
+function drawStyle(){ const S = D.style; const host = $('#styleBody'); host.innerHTML=''; if (!S) { host.append(el('p',{class:'muted',text:'分析暂缺。'})); return; }
+  $('#styleTitle').textContent = S.title_zh || $('#styleTitle').textContent; $('#styleThesis').textContent = S.headline_zh || '';
+  const g = el('div',{class:'grid2'});
+  if (S.score_hist) { const p = el('div',{class:'panel'}, el('div',{class:'block-title'}, el('h3',{text:'“模板化风格分”分布'}), el('span',{class:'note',text:'每篇摘要的风格标记密度'}))); const host2 = el('div'); p.append(el('div',{class:'legend'}, el('span',{html:'<i style="background:var(--c26)"></i>2026'}), el('span',{html:'<i style="background:var(--accent)"></i>2027'}))); p.append(host2); g.append(p);
+    requestAnimationFrame(()=>{ const bins=S.score_hist.bins, a=S.score_hist['2026'], b=S.score_hist['2027']; const sa=a.reduce((x,y)=>x+y,0), sb=b.reduce((x,y)=>x+y,0); const pa=a.map(v=>v/sa), pb=b.map(v=>v/sb); const W=Math.max(300,host2.clientWidth||500),H=240,m={l:40,r:10,t:10,b:30}; const n=pa.length, mx=Math.max(...pa,...pb);
+      const svg=s('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%'}); const bw=(W-m.l-m.r)/n; const ax=s('g',{class:'axis'}); niceTicks(mx*100,4).forEach(t=>{const y=H-m.b-(H-m.t-m.b)*(t/100)/mx; ax.append(s('line',{x1:m.l,x2:W-m.r,y1:y,y2:y})); const tx=s('text',{x:m.l-6,y:y+4,'text-anchor':'end'}); tx.textContent=t+'%'; ax.append(tx);}); svg.append(ax);
+      for(let i=0;i<n;i++){ const x=m.l+i*bw; [[pa[i],'var(--c26)',0],[pb[i],'var(--accent)',1]].forEach(([v,c,k])=>{const h=(H-m.t-m.b)*v/mx; const r=s('rect',{x:x+1+k*(bw-2)/2,y:H-m.b-h,width:Math.max(1,(bw-2)/2-1),height:h,fill:c,rx:1.5}); r.addEventListener('mousemove',ev=>showTip(ev,`分数区间 ${esc(bins[i])}–${esc(bins[i+1]??'')}<br>2026 ${(pa[i]*100).toFixed(2)}% · 2027 <b>${(pb[i]*100).toFixed(2)}%</b>`)); r.addEventListener('mouseleave',hideTip); svg.append(r);}); }
+      const lx=s('text',{x:W-m.r,y:H-6,'text-anchor':'end'}); lx.textContent='风格分 →'; svg.append(lx); host2.append(svg); }); }
+  if (S.markers?.length) { const p = el('div',{class:'panel'}, el('div',{class:'block-title'}, el('h3',{text:'变化最大的风格标记词'}), el('span',{class:'note',text:'每千篇出现率 2025 · 2026 · 2027'}))); const t = el('table',{class:'t'}); t.append(el('thead',{}, el('tr',{}, ['标记','2025','2026','2027'].map(h=>el('th',{style:'cursor:default',text:h})))));
+    const tb=el('tbody'); S.markers.slice(0,16).forEach(mk=>tb.append(el('tr',{}, el('td',{class:'mono',text:mk.term}), ...[mk.r25,mk.r26,mk.r27].map(v=>el('td',{class:'n',text:fmt(v,1)}))))); t.append(tb); p.append(el('div',{class:'scroll-y',style:'max-height:340px'}, t)); g.append(p); }
+  host.append(g);
+  const facts = el('div',{class:'grid3 block'}); (S.facts||[]).forEach(f => facts.append(el('div',{class:'panel'}, el('div',{class:'eyebrow',text:f.label}), el('div',{style:'font:600 22px/1.3 var(--font-display);margin:8px 0 4px',text:f.value}), el('p',{class:'ink2',style:'font-size:13px',text:f.note||''})))); if (facts.children.length) host.append(facts);
+  if (S.examples?.length) host.append(el('div',{class:'block'}, el('div',{class:'block-title'}, el('h3',{text:'高分样例（风格信号，不等于判定为 AI 生成）'})), el('div',{class:'panel'}, evidenceList(S.examples.slice(0,10).map(e=>({id:e.id,year:2027,title:e.title}))))));
+  if (S.caveat_zh) host.append(el('div',{class:'callout block',html:'<b>解读边界</b>　'+esc(S.caveat_zh)})); }
+
+/* ---------- safety ---------- */
+const SF = D.safety; const SUBZH = SF.sub_zh;
+$('#safetyTitle').textContent = D.text.safetyTitle || $('#safetyTitle').textContent; $('#safetyThesis').textContent = D.text.safetyThesis || '';
+$('#safetyKpis').append(...D.text.safetyKpis.map(k => el('div',{class:'kpi'}, el('div',{class:'eyebrow',text:k.label}), el('div',{class:'v',html:esc(k.value)+(k.unit?`<small>${esc(k.unit)}</small>`:'')}), el('div',{class:'d',text:k.note||''}))));
+if (D.safetyThesis) { const th = D.safetyThesis; const b = $('#safetyThesisBlock'); b.append(el('div',{class:'block-title'}, el('h3',{text:th.title_zh||'跨子领域的大趋势'}), el('span',{class:'note',text:'综合 60 批逐篇标注 + 6 个子领域深挖'})));
+  b.append(el('div',{class:'insights'}, (th.theses||[]).map(i => el('article',{class:'ins'}, el('span',{class:'tag '+(i.tag||'shift'),text:i.label||'趋势'}), el('h4',{text:i.title_zh}), el('p',{text:i.body_zh}), i.fig?el('div',{class:'mono',style:'font-size:12.5px;color:var(--accent-ink)',text:i.fig}):null, evidenceList(i.evidence))))); }
+function drawSubs(){ const rows = SF.subs.filter(r=>r.n[0]+r.n[1]>=12).map(r => ({label:r.zh+(['INTERP_GEN','OOD'].includes(r.sub)?'（相邻）':''), a:r.share[0], b:r.share[1], tipHtml:`<b>${esc(r.zh)}</b> <span class="k">${r.sub}</span><br>每万篇 ${r.share[0]} → <b>${r.share[1]}</b>（${ratio(r.share[0],r.share[1],0.5).toFixed(2)}×）<br>篇数 ${r.n[0]} → ${r.n[1]}（核心 ${r.n_core[0]} → ${r.n_core[1]}）<br><span class="k">2026 录用率</span> ${r.acc26!=null?(r.acc26*100).toFixed(0)+'%':'—'}${r.rating26?` · 均分 ${r.rating26}`:''}`}));
+  rows.sort((a,b)=>ratio(b.a,b.b,0.5)-ratio(a.a,a.b,0.5)); dumbbell($('#subChart'), rows, {unit:'', labelW:230}); }
+function stack100(host, obj, order, names){ host.innerHTML=''; const yrs=[0,1]; const tot = yrs.map(i => order.reduce((s,k)=>s+(obj[k]?.[i]||0),0));
+  const W=Math.max(300,host.clientWidth||500), rowH=40, H=rowH*2+16; const lw=44; const svg=s('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%'});
+  const pal=['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--s5)','var(--s6)','var(--s7)','var(--s8)','var(--c26)'];
+  yrs.forEach(i => { let x=lw; const y=6+i*(rowH+4); const t=s('text',{x:0,y:y+rowH/2+4}); t.textContent=['2026','2027'][i]; svg.append(t);
+    order.forEach((k,j) => { const v=(obj[k]?.[i]||0)/tot[i]; const w=(W-lw)*v; if (w<=0) return; const r=s('rect',{x:x,y:y,width:Math.max(0,w-2),height:rowH,fill:pal[j%pal.length],rx:3}); r.addEventListener('mousemove',ev=>showTip(ev,`<b>${esc(names[k]||k)}</b><br>2026 ${(obj[k][0]/tot[0]*100).toFixed(1)}% → 2027 <b>${(obj[k][1]/tot[1]*100).toFixed(1)}%</b><br><span class="k">篇数</span> ${obj[k][0]} → ${obj[k][1]}`)); r.addEventListener('mouseleave',hideTip); svg.append(r);
+      if (w>46){ const lt=s('text',{x:x+6,y:y+rowH/2+4,'font-size':11}); lt.textContent=(v*100).toFixed(0)+'%'; lt.style.fill=[0,1,5,6,7].includes(j)?'#fff':'#111'; svg.append(lt);} x+=w; }); });
+  host.append(svg); host.append(el('div',{class:'legend',style:'margin-top:8px'}, order.map((k,j)=>el('span',{html:`<i style="background:${pal[j%pal.length]}"></i>${esc(names[k]||k)}`})))); }
+const TGT = {llm:'文本 LLM',reasoning:'推理模型',mllm:'多模态 LLM',agent:'单智能体',multiagent:'多智能体',diffusion:'图像/视频生成',rl_robot:'RL / 机器人',classic:'传统模型',general:'通用 / 理论'};
+const TYP = {attack:'攻击',defense:'防御 / 检测',eval:'评测 / 基准',analysis:'分析 / 测量',method:'方法',theory:'理论',position:'立场 / 综述'};
+function drawHeat(){ const host=$('#heat'); host.innerHTML=''; const h27=SF.heat['2027'], h26=SF.heat['2026']; const subs=SF.subs.filter(r=>r.n[1]>=15).map(r=>r.sub); const tg=Object.keys(TGT);
+  const mx=Math.max(...subs.flatMap(sb=>tg.map(t=>h27[sb]?.[t]||0)));
+  const t=el('table',{class:'t'}); t.append(el('thead',{}, el('tr',{}, el('th',{style:'cursor:default',text:'子方向'}), tg.map(k=>el('th',{style:'cursor:default;text-align:center',text:TGT[k]})))));
+  const tb=el('tbody'); subs.forEach(sb=>{ const tr=el('tr',{}, el('td',{style:'white-space:nowrap',text:SUBZH[sb]})); tg.forEach(k=>{ const v=h27[sb]?.[k]||0, v6=h26[sb]?.[k]||0; const a=v?0.08+0.85*Math.sqrt(v/mx):0; const td=el('td',{class:'n',style:`text-align:center;background:color-mix(in srgb,var(--accent) ${Math.round(a*100)}%,transparent);color:${a>0.5?'#fff':'var(--ink2)'}`,text:v||''}); td.addEventListener('mousemove',ev=>showTip(ev,`<b>${esc(SUBZH[sb])}</b> × ${esc(TGT[k])}<br>2026 ${v6} 篇 → 2027 <b>${v}</b> 篇`)); td.addEventListener('mouseleave',hideTip); tr.append(td); }); tb.append(tr); }); t.append(tb); host.append(t); }
+function drawTopics(){ const host=$('#topicCloud'); host.innerHTML=''; const rows=[]; (D.safetyChapters||[]).forEach(ch => (ch.microtopics||[]).forEach(m => rows.push({...m, ch: ch.title_zh})));
+  if (!rows.length) { host.append(el('p',{class:'muted',text:'暂缺'})); return; }
+  rows.forEach(r => { r.s26 = +r.n26 / D.meta.totals['2026'] * 1e4; r.s27 = +r.n27 / D.meta.totals['2027'] * 1e4; });
+  rows.sort((a,b) => (b.s27 - b.s26) - (a.s27 - a.s26));
+  const mk = (title, list, note) => { const p = el('div',{}, el('div',{class:'block-title'}, el('h3',{text:title}), el('span',{class:'note',text:note}))); const l = el('div',{class:'movers'}); moversList(l, list.map(r=>({name:r.name_zh, sub:(r.ch?r.ch+' · ':'')+(r.note_zh||''), a:r.s26, b:r.s27}))); l.querySelectorAll('.val').forEach((v,i)=>v.textContent = `${list[i].n26}→${list[i].n27} 篇`); p.append(l); return p; };
+  host.append(el('div',{class:'grid2'}, mk('增长最快的具体问题', rows.slice(0,14), '条长 = 2027 每万篇；数字为篇数'), mk('收缩的具体问题', [...rows].reverse().filter(r=>r.s27<r.s26).slice(0,14), '条长 = 2027 每万篇；数字为篇数'))); }
+tabs($('#safetyTabs'), $('#safetyBody'), D.safetyChapters);
+
+/* ---------- explorer ---------- */
+let exMode='safety'; const segE=$('#exMode'); [['safety','安全论文（逐篇标注）'],['all27','全部 2027 投稿']].forEach(([k,n])=>segE.append(el('button',{type:'button',class:k===exMode?'on':'',onclick:e=>{exMode=k;[...segE.children].forEach(b=>b.classList.toggle('on',b===e.target)); buildExControls(); drawEx();}}, n)));
+const SP = D.safetyPapers; const P27 = D.papers27; const clName = Object.fromEntries(CL.map(c=>[c.cluster,c.name_zh]));
+function buildExControls(){ const c=$('#exControls'); c.innerHTML='';
+  c.append(el('input',{class:'search',id:'exQ',placeholder: exMode==='safety'?'搜索标题或具体问题，例如 memory poisoning':'搜索标题，例如 world model','aria-label':'搜索论文',oninput:drawEx}));
+  if (exMode==='safety'){ c.append(el('select',{class:'sel',id:'exYear',onchange:drawEx,'aria-label':'年份'}, el('option',{value:'all',text:'两年'}), el('option',{value:'2027',text:'2027'}), el('option',{value:'2026',text:'2026'})));
+    c.append(el('select',{class:'sel',id:'exSub',onchange:drawEx,'aria-label':'子方向'}, el('option',{value:'all',text:'全部子方向'}), ...Object.keys(SUBZH).map(k=>el('option',{value:k,text:SUBZH[k]}))));
+    c.append(el('select',{class:'sel',id:'exTgt',onchange:drawEx,'aria-label':'研究对象'}, el('option',{value:'all',text:'全部研究对象'}), ...Object.keys(TGT).map(k=>el('option',{value:k,text:TGT[k]}))));
+    c.append(el('select',{class:'sel',id:'exType',onchange:drawEx,'aria-label':'贡献类型'}, el('option',{value:'all',text:'全部贡献类型'}), ...Object.keys(TYP).map(k=>el('option',{value:k,text:TYP[k]}))));
+    c.append(el('select',{class:'sel',id:'exRel',onchange:drawEx,'aria-label':'相关度'}, el('option',{value:'2',text:'核心安全论文'}), el('option',{value:'1',text:'含相邻方向'}))); }
+  else { c.append(el('select',{class:'sel',id:'exCl',onchange:drawEx,'aria-label':'细主题'}, el('option',{value:'all',text:'全部细主题'}), ...[...CL].sort((a,b)=>b.n[2]-a.n[2]).map(cl=>el('option',{value:cl.cluster,text:`${cl.name_zh}（${cl.n[2]}）`})))); } }
+const STATUS = {accept_oral:'Oral',accept_spotlight:'Spotlight',accept_poster:'Poster',reject:'Reject',withdrawn:'Withdrawn',desk_rejected:'Desk reject',active:''};
+function drawEx(){ const q=($('#exQ')?.value||'').trim().toLowerCase(); const t=$('#exTable'); t.innerHTML=''; let rows, n=0; const tb=el('tbody'); const LIM=400;
+  if (exMode==='safety'){ const y=$('#exYear').value, sb=$('#exSub').value, tg=$('#exTgt').value, ty=$('#exType').value, rel=+$('#exRel').value;
+    rows = SP.filter(p => (y==='all'||String(p[1])===y) && (sb==='all'||p[3]===sb||p[4]===sb) && (tg==='all'||p[6]===tg) && (ty==='all'||p[5]===ty) && p[7]>=rel && (!q || (p[2]+' '+p[8]).toLowerCase().includes(q)));
+    t.append(el('thead',{}, el('tr',{}, ['年份','论文','子方向','对象','类型','具体问题','2026 结果'].map(h=>el('th',{style:'cursor:default',text:h})))));
+    rows.slice(0,LIM).forEach(p => tb.append(el('tr',{}, el('td',{class:'n',text:p[1]}), el('td',{style:'min-width:280px'}, el('a',{href:OR(p[0]),target:'_blank',rel:'noopener',text:p[2]})), el('td',{}, el('span',{class:'pill',text:SUBZH[p[3]]||p[3]})), el('td',{class:'ink2',style:'white-space:nowrap',text:TGT[p[6]]||p[6]}), el('td',{class:'ink2',style:'white-space:nowrap',text:TYP[p[5]]||p[5]}), el('td',{class:'ink2',style:'min-width:180px',text:p[8]}), el('td',{}, p[9]&&STATUS[p[9]]?el('span',{class:'pill '+(p[9].startsWith('accept')?'blue':''),text:STATUS[p[9]]}):null))));
+  } else { const cl=$('#exCl').value; rows = P27.filter(p => (cl==='all'||String(p[2])===cl) && (!q || p[1].toLowerCase().includes(q)));
+    t.append(el('thead',{}, el('tr',{}, ['论文','细主题'].map(h=>el('th',{style:'cursor:default',text:h})))));
+    rows.slice(0,LIM).forEach(p => tb.append(el('tr',{}, el('td',{}, el('a',{href:OR(p[0]),target:'_blank',rel:'noopener',text:p[1]})), el('td',{}, el('span',{class:'pill',text:clName[p[2]]||p[2]}))))); }
+  t.append(tb); $('#exCount').textContent = `共 ${rows.length.toLocaleString()} 篇${rows.length>LIM?`，显示前 ${LIM} 篇，请用搜索或筛选缩小范围`:''}。`; }
+buildExControls(); drawEx();
+
+/* ---------- method ---------- */
+$('#method').append(el('h3',{text:'方法与局限'}), el('ol',{}, D.text.method.map(m=>el('li',{html:m}))));
+
+/* ---------- responsive redraw ---------- */
+function drawAll(){ drawThemes(); drawAreas(); drawScatter(); drawClTable(); drawRadar(); drawEco(); drawQuad(); drawStyle(); drawSubs(); stack100($('#targetChart'), SF.target, Object.keys(TGT).filter(k=>SF.target[k]), TGT); stack100($('#typeChart'), SF.type, Object.keys(TYP).filter(k=>SF.type[k]), TYP); drawHeat(); drawTopics(); }
+drawAll(); let rt; let lastW = innerWidth; addEventListener('resize', () => { if (Math.abs(innerWidth-lastW)<40) return; lastW=innerWidth; clearTimeout(rt); rt=setTimeout(()=>{ drawThemes(); drawAreas(); drawScatter(); drawEco(); drawQuad(); drawSubs(); stack100($('#targetChart'), SF.target, Object.keys(TGT).filter(k=>SF.target[k]), TGT); stack100($('#typeChart'), SF.type, Object.keys(TYP).filter(k=>SF.type[k]), TYP); }, 150); });
+})();
+</script>
