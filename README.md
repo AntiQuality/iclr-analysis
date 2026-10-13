@@ -3,6 +3,7 @@
 ICLR 2027（43,013 篇）与 ICLR 2026 / 2025 投稿的对比分析，重点是细粒度主题变化与 AI Safety。
 
 - 成品：`dashboard/index.html`（单文件，直接用浏览器打开）
+- 可公开数据：`release/`（三年全部投稿 + 细主题 + 安全标注 + 汇总统计，说明见 `release/README.md`，由 `scripts/export_release.py` 生成）
 - 流水线：
   1. `scripts/build_corpus.py` — 从公开镜像组装三年投稿（2027：yzc-666/iclr2027-explorer，OpenReview API 快照 2026-10-07；2025/26：papercopilot/paperlists）
   2. `scripts/cluster_topics.py` — TF-IDF + SVD + KMeans 300 个细主题；`work/clusters/labels/` 为 agent 命名
