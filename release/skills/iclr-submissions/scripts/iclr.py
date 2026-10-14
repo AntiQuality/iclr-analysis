@@ -242,7 +242,10 @@ def cmd_batch(a):
     full = load_papers(root, sorted(pop.year.unique()))
     pop = pop[["year", "id"]].merge(full, on=["year", "id"])
     if a.sample_per_year:
-        pop = pop.sample(frac=1, random_state=a.seed).groupby("year").head(a.sample_per_year)
+        spec = dict(x.split("=") for x in a.sample_per_year.split(",")) if "=" in a.sample_per_year else None
+        n_for = (lambda y: int(spec.get(str(y), 10**9))) if spec else (lambda y: int(a.sample_per_year))
+        pop = pop.sample(frac=1, random_state=a.seed)
+        pop = pop[pop.groupby("year").cumcount() < pop.year.map(n_for)]
         print("sampled per year:", per_year(pop, sorted(pop.year.unique())))
     out = Path(a.out_dir)
     out.mkdir(parents=True, exist_ok=True)
@@ -364,9 +367,18 @@ def cmd_tally(a):
             p, q = r[years[-2]] / max(size[years[-2]], 1), r[years[-1]] / max(size[years[-1]], 1)
             row["share ratio"] = fmt_ratio(p, q)
         rows.append(row)
+    if a.population_per10k:  # scale sample shares to field size: share in population x population per 10k
+        tot = totals(data_root(a.data), years)
+        popf = read_population(a.population_per10k)
+        pn = per_year(popf, years)
+        for row, (v, r) in zip(rows, ct.iterrows()):
+            for y in years:
+                if size[y]:
+                    row[f"{y} per10k"] = f"{1e4 * pn[y] / tot[y] * r[y] / size[y]:.1f}"
     print(f"papers per year: {size}  (percent = share of papers that year; a paper can count under several values)"
           + ("; [95% interval]" if a.ci else ""))
-    print_table(rows, [col] + [str(y) for y in years] + (["share ratio"] if len(years) >= 2 else []))
+    extra = [f"{y} per10k" for y in years] if a.population_per10k else []
+    print_table(rows, [col] + [str(y) for y in years] + (["share ratio"] if len(years) >= 2 else []) + extra)
 
 
 # ---------------------------------------------------------------- rate
@@ -461,7 +473,7 @@ def main():
     s.add_argument("--area", nargs="+", help="substring of the author-chosen primary area")
     s.add_argument("--status", nargs="+")
     s.add_argument("--active-only", action="store_true", help="drop withdrawn and desk-rejected papers")
-    s.add_argument("--regex", nargs="+", help="case-insensitive regex on title+keywords+tldr+abstract (all must match)")
+    s.add_argument("--regex", nargs="+", help="case-insensitive regex on title+keywords+abstract (all must match; add --with-tldr before the subcommand to include TL;DR)")
     s.add_argument("--not-regex", nargs="+")
     s.add_argument("--safety-only", action="store_true", help="restrict to papers with a safety label")
     s.add_argument("--relevance", type=int, help="minimum safety relevance (1 or 2); implies 2026-2027 only")
@@ -487,7 +499,7 @@ def main():
     b.add_argument("--out-dir", required=True)
     b.add_argument("--size", type=int, default=40)
     b.add_argument("--abstract-chars", type=int, default=2500)
-    b.add_argument("--sample-per-year", type=int, help="read a random sample of N papers per year instead of all")
+    b.add_argument("--sample-per-year", help="read a random sample instead of all: N for every year, or e.g. 2026=200,2027=200 (years not listed are read in full)")
     b.add_argument("--seed", type=int, default=0)
     b.set_defaults(fn=cmd_batch)
 
@@ -508,6 +520,8 @@ def main():
     t.add_argument("--where", help="pandas query applied first, e.g. \"relevance == 2\"")
     t.add_argument("--top", type=int, default=40)
     t.add_argument("--ci", action="store_true", help="add 95%% Wilson intervals (use for sampled years)")
+    t.add_argument("--population-per10k", metavar="POPULATION",
+                   help="full population the table was sampled from; adds estimated per-10k-submission columns")
     t.set_defaults(fn=cmd_tally)
 
     r = sub.add_parser("rate", help="rate of a yes/no outcome by group")

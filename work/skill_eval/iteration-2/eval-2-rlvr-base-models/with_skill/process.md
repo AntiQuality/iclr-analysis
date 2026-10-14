@@ -1,0 +1,25 @@
+# Process log — RLVR/GRPO base models, ICLR 2026 vs 2027
+
+## Steps
+1. Read SKILL.md, references/data.md, references/reading.md, references/example-agent-environments.md, `iclr.py -h`. Checked aggregates/macro.json `models` (whole-conference model mentions; not population-specific, so only used as context).
+2. Measurable question: population = 2026–27 LLM RL post-training papers (RLVR/GRPO family); unit = paper; attribute = open-weight base-model family named in title/keywords/abstract; comparison = share among papers that name ≥1 open base family (with pop-share and stating rate also reported).
+3. Population (work/build_pop.py): (RLVR/GRPO term regex AND LLM/VLM regex) OR (clusters 47/213/148/258/111 AND RL regex), minus diffusion/flow image-video generation without LLM terms. 2026: 852, 2027: 1,804. Strict variant = clusters 47/213/148/258 (452 / 641). First tried pure core regex (775/1770) and saw ~190 cluster papers missing ("LLM reinforcement learning" without RLVR/GRPO words) and many diffusion-GRPO / VLA / OPD papers, so combined.
+   Precision check: `show -n 20` on pop (~17/20 clearly on topic) plus theme-wise random titles.
+4. Lexicon pass (`count --lexicon work/lex_models.json`, then `work/lex_open_families.json` with `--among-matched` and `--exclude-formulaic`). Checked recall by extracting "<Name>-<size>B" tokens in papers not matching any family: nothing missed (unmatched papers say "a 7B model" etc.).
+5. Mention-vs-use check (no subagents available → I read context snippets myself, ~400 snippets): all DeepSeek non-distill (2026 51 / 2027 7 at the time), all R1-Distill (32), all Llama (112), all OLMo/Gemma/gpt-oss/Kimi/GLM/Mistral/Nemotron/MiMo/SmolLM/Falcon, and 30 random Qwen per year. Files: work/snip_*.txt. Findings: DeepSeek-R1/V3, GPT, Kimi, GLM mostly motivation/comparison → kept out of main table; Qwen/Llama/Distill ~90–95% real use; OLMo/Gemma ~80–85%; gpt-oss ~50%.
+6. Snippet reads revealed new 2027 names not in my first lexicon split (Qwen3.5/3.6/3.8, Gemma 4, OLMo-3, Nemotron 3, DeepSeek V4, MiMo-V2.5). Rebuilt final tally (work/tally_families.py) with Qwen generation buckets; ran main / non-formulaic / strict variants → work/family_table_{main,nf,strict}.csv. Extra: checkpoint counts (work/top_checkpoints.txt), size buckets (work/sizes.txt).
+7. Representative papers via `show --ids`.
+
+## Who read what
+All reading by me (single agent). No Agent/Task tool was available in this session; the remote `create_session` tool exists but spawns separate cloud sessions without this local dataset, so I did not use it. Followed the skill's "without subagents" spirit, but did context-snippet reading rather than batch→merge per-paper labelling (population 2,656 too large; attribute is a named entity, so lexicon + context checks seemed the right fit per the method table).
+
+## Friction / confusion with the skill
+- The method table says named things → lexicon, but "Mentioned is not used" matters a lot here (DeepSeek-R1 is named in 6.7% of 2026 papers almost purely as motivation). The skill says "read their contexts (`show --abstract 800`)" — showing whole abstracts is clumsy for 100+ papers; a `count --context N` / KWIC option that prints the ±N chars around each match would have saved me writing snips.py.
+- `show` with `-n` appears to return the first N rows (sorted by id?) rather than a random sample; the skill says "skim 15–20 random titles". A `--random`/`--seed` flag would help (I used pandas sample instead).
+- `count --unmatched` / ANY TERM coverage includes every term in the lexicon; when the lexicon mixes "base model" families with closed models and size-only patterns, coverage is misleading. Had to make a second lexicon. Maybe recommend in SKILL.md: keep the denominator lexicon to the attribute's own categories.
+- `count --among-matched` denominator = papers matching any term in that lexicon; I needed denominator = "core" families only while still listing others (DeepSeek-non-distill, Kimi), so wrote my own tally script. A `--denominator-terms` option, or letting `tally` run on the per-paper `--out` matches, would avoid this.
+- `--out` from `count` writes a `matched` string column; there is no per-term boolean table, so cross-tabs (e.g. "Qwen-only") required re-implementing regexes.
+- Regex lookbehind for "not R1-Distill-Qwen" needed — worth a lexicon note in the skill (families nested in other model names: R1-Distill-Qwen, Nemotron-Research-Reasoning-Qwen, OpenThinker etc.).
+- No population/cluster guidance for "RLVR" specifically beyond "47 and 213 share a name"; recall checks showed clusters 148, 258, 111 also central. Could list "RL for LLM post-training" clusters in data.md.
+- pandas UserWarning about match groups in str.contains (cosmetic).
+- 2027 data contains future model names (Qwen3.5/3.6/3.8, Gemma 4, GLM-5.x, Kimi-K3, DeepSeek V4); a static lexicon written from prior knowledge would miss the new generations' split — the snippet read was what surfaced them. Worth a SKILL note: "after the lexicon pass, grep version strings to discover new generations".

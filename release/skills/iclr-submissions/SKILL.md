@@ -42,7 +42,7 @@ python3 skills/iclr-submissions/scripts/iclr.py show --population work/pop.parqu
 
 Prefer existing labels (safety labels, clusters, themes) over ad-hoc regex. Labels were assigned by reading each abstract, so they have far better recall than keywords. Use `--regex` to narrow a labelled set or for subjects with no label. Then check the set from both sides:
 - **precision**: skim 15–20 random titles (`show --random`). Are they on topic?
-- **recall**: run a regex for the subject across *all* papers, then look at what falls outside your population. Which clusters or subfields hold the misses?
+- **recall**: run a regex for the subject across *all* papers, then look at what falls outside your population. Which clusters or subfields hold the misses? Also look inside the subject's main clusters for papers your regex missed: new sub-communities often coin their own term ("world action model" instead of "world model"). Watch for false hits too, such as "real-world model".
 
 Adjust and say what you chose. Safety labels cover only 2026 and 2027. For 2025, or for subjects outside safety, use clusters (`topics/clusters.csv`, `--cluster`), themes or regex.
 

@@ -75,4 +75,5 @@ python3 skills/iclr-submissions/scripts/iclr.py tally --table work/labels.parque
 
 - **Spot check.** Open about 20 random labelled papers (`show --ids ... --abstract 600`) and compare against the labels. If more than ~3 disagree, tighten the definitions and relabel.
 - **Sampled reading.** When you read a sample instead of the whole population, give a 95% interval for key shares: ±1.96·sqrt(p(1−p)/n).
+- **From sample shares to field size.** A category's papers per 10k submissions ≈ its share in the read sample × the population's per-10k size. `tally --population-per10k <full population file>` adds these columns.
 - **Report two measures.** Use the share of papers with at least one value in a category, and also the share of `none_stated`.

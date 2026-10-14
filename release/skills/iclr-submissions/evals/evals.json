@@ -43,6 +43,20 @@
         "Flags small-sample subfields (e.g. FT_ROBUST n≈33, DECEPTION n≈31)",
         "States how withdrawn/desk-rejected papers were handled in the acceptance denominator"
       ]
+    },
+    {
+      "id": 4,
+      "name": "world-models",
+      "prompt": "从 ICLR 2025 到 2027，world model 相关的投稿涨了多少？主要是哪些具体方向在推动这波增长？有没有哪些方向其实在降温？",
+      "expected_output": "Three-year population with per-10k shares; growth drivers as sub-directions with shares; cooling directions; recall check for adjacent terms (e.g. world action model); formulaic robustness; links.",
+      "assertions": [
+        "Reports per-10k (or share) for 2025, 2026 and 2027",
+        "Names concrete sub-directions driving growth with numbers",
+        "Identifies at least one cooling direction with numbers",
+        "Checks recall beyond the literal phrase 'world model'",
+        "Checks the 2027 jump against formulaic_style",
+        "Gives representative OpenReview links"
+      ]
     }
   ]
 }
