@@ -30,19 +30,19 @@ python3 $S count --population work/agent_safety.parquet --lexicon skills/iclr-su
 Pilot result (abridged):
 
 ```
-[tool_api_mcp]        35 (19.8%)  289 (32.4%)
-[multi_agent_social]  41 (23.2%)  132 (14.8%)
+[tool_api_mcp]        35 (19.8%)  288 (32.3%)
+[multi_agent_social]  41 (23.2%)  131 (14.7%)
 [coding_terminal]      9 (5.1%)    77 (8.6%)
 AgentDojo             10 (5.6%)    64 (7.2%)
 Agent Skills           0 (0.0%)    42 (4.7%)
-ANY TERM (coverage)  103 (58.2%)  554 (62.2%)
+ANY TERM (coverage)  103 (58.2%)  551 (61.8%)
 ```
 
 Coverage is about 60%, and much of it comes from generic phrases such as "tool-use agent". A named benchmark appears in only about 15% of abstracts. The lexicon alone cannot give the distribution. It is still useful, because it shows the vocabulary (AgentDojo, MCP, Agent Skills, SWE-bench, Claude Code...) for the codebook.
 
 ## 4. Read every paper
 
-1,068 papers is small enough to read in full: `batch --size 40` gives 27 files, so 6–7 subagents with 4 files each. Codebook:
+1,068 papers is small enough to read in full: `batch --size 40` gives 27 files, so 6–7 subagents with 4 files each. Without subagents, read all 177 papers from 2026 and a sample of about 200 from 2027 (`batch --sample-per-year 200`, then `tally --ci`). That gives 2027 shares within about ±6 points. Codebook:
 
 | category | definition |
 |---|---|
@@ -67,7 +67,7 @@ Then `merge`, repair, and `tally` both fields.
 
 ## 5. Robustness and report
 
-- Rerun the population with `--exclude-formulaic` and recompute the 2027 shares from the merged labels on that subset. Report the result if it changes a conclusion.
+- Recompute the 2027 shares on non-formulaic papers: `tally --where "not formulaic_style"` on the merged labels. Report the result if it changes a conclusion. In a test run this mattered: `tool_api` rose from 24% to 38% overall, but only to 28% among non-formulaic 2027 abstracts. The rises of memory, MCP/skills and coding settings held.
 - Report the category table with n and % for each year, the top named environments in each year, and which named environments are new in 2027.
 - Add the share of `none_stated`. It is itself a finding: many agent-safety abstracts never say where the agent runs.
 - Give representative papers per rising category, with links.

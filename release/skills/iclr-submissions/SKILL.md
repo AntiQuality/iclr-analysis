@@ -17,7 +17,7 @@ Paths below are relative to the dataset root, the folder that contains `submissi
 | `topics/clusters.csv` | 300 | find clusters for a subject, and their per-year shares |
 | `safety/labels.csv` | 10,381 (2026–27) | AI-safety populations: `relevance`, `subfield`, `subfield_2`, `contribution_type`, `target_system`, `topic` |
 | `safety/TAXONOMY.md` | | definitions of the 26 safety subfield codes |
-| `aggregates/*.json` | | precomputed statistics behind the dashboard |
+| `aggregates/*.json` | | precomputed statistics behind the dashboard (per-subfield, per-cluster and per-concept shares, 2026 acceptance); check here first for standard numbers |
 
 Column details, value lists and known quirks are in `references/data.md`. Read it before the first query in a session.
 
@@ -53,6 +53,7 @@ Adjust and say what you chose. Safety labels cover only 2026 and 2027. For 2025,
 | a named thing with a stable spelling (model, benchmark, library, method name) | lexicon count: `count --lexicon file.json` |
 | a judgment or described in varied words (environment type, threat model, evaluation setup, data source, claimed contribution) | read each paper: `batch` → subagents → `merge` → `tally` |
 | already a label column | `tally` on the population file |
+| a rate of an outcome by group (acceptance by subfield or cluster) | `rate --group <col>`; it gives Wilson intervals and both acceptance denominators |
 
 Run a lexicon pass first even when you plan to read: it costs seconds, shows the vocabulary, and gives you categories for the codebook. Look at the `ANY TERM (coverage)` line.
 - **Coverage well below ~80%.** The unmatched papers are unknown, not "none". They need reading.
@@ -69,14 +70,27 @@ Follow `references/reading.md`. In short:
 5. Re-batch the missing papers, fix invalid values, then `tally`.
 6. Spot-check about 20 labels yourself before trusting the distribution.
 
-If your environment has no subagents, read the batches yourself in sequence. If that is too many, read a per-year sample and say so.
+**Without subagents.** Read the batches yourself. If the population is too large to read alone (more than about 400 papers), read all of the smaller year and a random sample of the larger:
+1. Run `batch --sample-per-year N`. It writes `population.parquet` listing the sampled papers; pass that file to `merge --population`.
+2. Run `tally --ci` to put intervals on the shares.
+3. For named items, combine the sample with a lexicon count over the full population.
 
 ### 5. Compare fairly
+
+These are the traps that the people who built the dataset know about and a newcomer usually does not.
 
 - **Shares, not counts.** 2027 has 2.17× the submissions of 2026, so counts always rise. Use percent of the population for within-population distributions and per-10k submissions for field size (`select` prints both).
 - **Mentions are not usage.** Abstracts mention only some of a paper's setup. Phrase results as "named in the abstract" and treat "none stated" as its own category.
 - **2027 writing shift.** 42% of 2027 abstracts use a new formulaic wording style (`formulaic_style`). For any 2027 trend that rests on vocabulary, rerun the selection with `--exclude-formulaic` and report whether the result holds.
-- **Small numbers.** Avoid ratios when the earlier year has fewer than about 10 papers. Report both counts instead.
+- **Pick the denominator on purpose.** You have three choices:
+  - **The population**, e.g. % of agent-safety papers.
+  - **The papers that state the attribute at all**, e.g. % of RLVR papers that name a base model. Use `count --among-matched` for this. It matters when the stating rate itself changes between years; 2027 abstracts name models more often, partly because of the writing shift.
+  - **All submissions** (per 10k) for field size.
+  Say which one you used.
+- **Mentioned is not used.** A model or benchmark named in an abstract may be the trained model, a baseline, or just motivation ("inspired by DeepSeek-R1"). For the few names that drive a conclusion, read their contexts (`show --abstract 800`) and drop non-uses.
+- **TL;DR exists only in 2027** (56% of papers). The helper leaves it out of search and batches so years stay comparable. Do the same in your own scripts.
+- **Acceptance has two denominators.** All submissions, including withdrawn and desk-rejected papers (27.0% overall in 2026), or decided papers only (38.8%). `rate` uses the first by default and takes `--decided-only` for the second. State which you report. A field with a high withdrawal rate can look weak under the first.
+- **Small numbers.** Avoid ratios when the earlier year has fewer than about 10 papers. Report both counts instead. For rates, compare intervals (`rate` prints them) and do not rank groups whose intervals overlap.
 - **2027 has no decisions yet.** `rating` and `accepted` are empty for 2027; 2026 acceptance can serve as a signal of what reviewers rewarded.
 
 ### 6. Report
@@ -85,7 +99,7 @@ Lead with the answer, then the evidence:
 1. one or two sentences answering the question;
 2. a table: category, n and % per year, change;
 3. two to four observations, each tied to numbers;
-4. three to six representative papers with OpenReview links (use `show`);
+4. three to six representative papers with OpenReview links (`show`). Readers use these to check your categories, so do not skip them;
 5. a short method note: population definition and size, how the attribute was measured (lexicon, read all, or sample), and caveats that apply.
 
 Keep method detail out of the main answer; put it in the method note.

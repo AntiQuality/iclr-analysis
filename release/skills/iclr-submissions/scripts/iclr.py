@@ -7,7 +7,11 @@ Subcommands (run `iclr.py <cmd> -h` for options):
   batch    split a population into JSONL batches for reading by subagents
   merge    validate subagent outputs against a codebook and merge them
   tally    distribution of a labelled field per year, with shares and ratios
+  rate     rate of a yes/no outcome (e.g. accepted) by group, with 95% intervals
   show     print papers (year, title, link) from a population or id list
+
+Text search and batches use title, keywords and abstract. TL;DR is left out
+by default because only 2027 has it (56% of papers); add --with-tldr to use it.
 
 Requires pandas and pyarrow. The data folder is found from --data, the
 ICLR_DATA environment variable, or by walking up from this file until a
@@ -26,7 +30,7 @@ import pandas as pd
 
 YEARS = (2025, 2026, 2027)
 warnings.filterwarnings("ignore", message="This pattern is interpreted as a regular expression")
-TEXT_COLS = ("title", "keywords", "tldr", "abstract")
+WITH_TLDR = False  # set by --with-tldr
 
 
 # ---------------------------------------------------------------- loading
@@ -45,7 +49,9 @@ def data_root(arg=None):
 def load_papers(root, years=YEARS):
     df = pd.concat([pd.read_parquet(root / f"submissions/iclr{y}.parquet") for y in years], ignore_index=True)
     kw = df.keywords.map(lambda k: "; ".join(k) if k is not None and len(k) else "")
-    df["text"] = df.title + "\n" + kw + "\n" + df.tldr.fillna("") + "\n" + df.abstract.fillna("")
+    df["text"] = df.title + "\n" + kw + "\n" + df.abstract.fillna("")
+    if WITH_TLDR:
+        df["text"] += "\n" + df.tldr.fillna("")
     return df
 
 
@@ -91,6 +97,17 @@ def print_table(rows, cols):
     print("  ".join(str(c).ljust(widths[c]) for c in cols))
     for r in rows:
         print("  ".join(str(r.get(c, "")).ljust(widths[c]) for c in cols))
+
+
+def wilson(k, n, z=1.96):
+    """95% Wilson interval for k successes out of n, as (low, high) proportions."""
+    if not n:
+        return (0.0, 0.0)
+    p = k / n
+    d = 1 + z * z / n
+    c = (p + z * z / (2 * n)) / d
+    h = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / d
+    return (max(0.0, c - h), min(1.0, c + h))
 
 
 def fmt_ratio(a, b):
@@ -171,8 +188,13 @@ def cmd_count(a):
     pop = read_population(a.population)
     if "text" not in pop:
         pop = pop[["year", "id"]].merge(load_papers(root, sorted(pop.year.unique())), on=["year", "id"])
+    if a.exclude_formulaic:
+        pop = pop[~pop.formulaic_style.astype(bool)]
     items = load_lexicon(a.lexicon)
     hits = match_lexicon(pop, items)
+    if a.among_matched:  # denominator = papers naming at least one term
+        keep = hits.any(axis=1)
+        pop, hits = pop[keep], hits[keep]
     years = sorted(int(y) for y in pop.year.unique())
     size = per_year(pop, years)
 
@@ -191,7 +213,8 @@ def cmd_count(a):
     cat_rows = [row(f"[{c}]", hits[[n for cc, n, _ in items if cc == c]].any(axis=1)) for c in cats]
     rows = sorted(rows, key=lambda r: -r[f"_{years[-1]}"])
     cols = ["term"] + [str(y) for y in years] + (["share ratio"] if len(years) >= 2 else [])
-    print(f"population: {size}  (percent = share of population that year)")
+    what = "papers matching any term" if a.among_matched else "population"
+    print(f"{what}: {size}  (percent = share of {what} that year)")
     if cat_rows:
         print_table(cat_rows, cols)
         print()
@@ -222,11 +245,13 @@ def cmd_batch(a):
         print("sampled per year:", per_year(pop, sorted(pop.year.unique())))
     out = Path(a.out_dir)
     out.mkdir(parents=True, exist_ok=True)
+    # the papers actually batched: pass this file to `merge --population`
+    pop[["year", "id"]].to_parquet(out / "population.parquet", index=False)
     recs = []
     for r in pop.itertuples():
         kw = list(r.keywords) if r.keywords is not None else []
         abs_ = (r.abstract or "")[: a.abstract_chars]
-        if r.tldr:
+        if WITH_TLDR and r.tldr:
             abs_ += "\nTL;DR: " + r.tldr
         recs.append({"id": r.id, "y": int(r.year), "t": r.title, "k": kw, "area": r.primary_area, "a": abs_})
     files = []
@@ -236,6 +261,7 @@ def cmd_batch(a):
         files.append(f.name)
     (out / "manifest.json").write_text(json.dumps({"papers": len(recs), "batch_size": a.size, "files": files}, indent=1))
     print(f"{len(recs)} papers -> {len(files)} batches of <= {a.size} in {out}")
+    print(f"use --population {out / 'population.parquet'} when merging")
 
 
 # ---------------------------------------------------------------- merge
@@ -292,6 +318,10 @@ def cmd_merge(a):
     if a.out and len(df):
         df = df.drop_duplicates(["year", "id"], keep="last")
         df = df[[(y, i) in want for y, i in zip(df.year, df.id)]]
+        ctx = load_papers(data_root(a.data), sorted(int(y) for y in df.year.unique()))
+        ctx = ctx[["year", "id", "title", "status", "accepted", "formulaic_style", "topic_cluster"]]
+        df = df.drop(columns=[c for c in ctx.columns if c in df and c not in ("year", "id")])
+        df = df.merge(ctx, on=["year", "id"], how="left")  # for --where filters in tally
         for name, spec in fields.items():  # parquet needs consistent list columns
             if spec.get("type") == "list" and name in df:
                 df[name] = df[name].map(lambda v: v if isinstance(v, list) else ([] if v is None else [v]))
@@ -326,12 +356,49 @@ def cmd_tally(a):
         row = {col: v}
         for y in years:
             row[str(y)] = f"{r[y]} ({100 * r[y] / size[y]:.1f}%)" if size[y] else "0"
+            if a.ci and size[y]:
+                lo, hi = wilson(r[y], size[y])
+                row[str(y)] += f" [{100 * lo:.0f}-{100 * hi:.0f}]"
         if len(years) >= 2:
             p, q = r[years[-2]] / max(size[years[-2]], 1), r[years[-1]] / max(size[years[-1]], 1)
             row["share ratio"] = fmt_ratio(p, q)
         rows.append(row)
-    print(f"papers per year: {size}  (percent = share of papers that year; a paper can count under several values)")
+    print(f"papers per year: {size}  (percent = share of papers that year; a paper can count under several values)"
+          + ("; [95% interval]" if a.ci else ""))
     print_table(rows, [col] + [str(y) for y in years] + (["share ratio"] if len(years) >= 2 else []))
+
+
+# ---------------------------------------------------------------- rate
+
+def cmd_rate(a):
+    df = read_population(a.table)
+    if a.where:
+        df = df.query(a.where)
+    if a.decided_only:  # accept + reject only: drop withdrawn and desk-rejected
+        df = df[~df.status.isin(["withdrawn", "desk_rejected"])]
+    df = df[df[a.outcome].notna()]
+    y = df[a.outcome].astype(bool)
+    col = a.group
+    vals = df[col]
+    if vals.map(lambda v: isinstance(v, (list, tuple)) or hasattr(v, "tolist")).any():
+        df = df.assign(**{col: vals.map(list)}).explode(col)
+        y = df[a.outcome].astype(bool)
+    k_all, n_all = int(y.sum()), len(set(zip(df.year, df.id)))
+    base = df.drop_duplicates(["year", "id"])[a.outcome].astype(bool).mean()
+    g = df.assign(_y=y).groupby(col)._y.agg(["sum", "count"])
+    g = g[g["count"] >= a.min_n].sort_values("sum", ascending=False)
+    g["rate"] = g["sum"] / g["count"]
+    g = g.sort_values("rate", ascending=False)
+    rows = []
+    for v, r in g.iterrows():
+        lo, hi = wilson(int(r["sum"]), int(r["count"]))
+        flag = "above" if lo > base else ("below" if hi < base else "")
+        rows.append({col: v, "n": int(r["count"]), a.outcome: int(r["sum"]), "rate": f"{100 * r['rate']:.1f}%",
+                     "95% interval": f"{100 * lo:.0f}-{100 * hi:.0f}%", "vs overall": flag})
+    print(f"overall {a.outcome} rate {100 * base:.1f}% over {n_all} papers"
+          + (" (decided papers only)" if a.decided_only else " (all papers, incl. withdrawn/desk-rejected)")
+          + f"; groups with n < {a.min_n} hidden; 'vs overall' marks intervals that exclude the overall rate")
+    print_table(rows, [col, "n", a.outcome, "rate", "95% interval", "vs overall"])
 
 
 # ---------------------------------------------------------------- show
@@ -358,6 +425,7 @@ def cmd_show(a):
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--data", help="dataset folder (contains submissions/)")
+    p.add_argument("--with-tldr", action="store_true", help="include TL;DR in text search and batches (2027 only has it)")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     s = sub.add_parser("select", help="filter papers into a population")
@@ -383,6 +451,9 @@ def main():
     c.add_argument("--lexicon", required=True, help='JSON {"name": "regex"} or {"category": {"name": "regex"}}')
     c.add_argument("--out", help="write per-paper matched terms")
     c.add_argument("--unmatched", help="write papers matching no term (candidates for subagent reading)")
+    c.add_argument("--exclude-formulaic", action="store_true", help="drop formulaic_style papers first")
+    c.add_argument("--among-matched", action="store_true",
+                   help="percent among papers matching any term (e.g. among papers that name a model)")
     c.set_defaults(fn=cmd_count)
 
     b = sub.add_parser("batch", help="write JSONL batches for subagents")
@@ -410,7 +481,17 @@ def main():
     t.add_argument("--split", help="separator for multi-valued text columns, e.g. ';'")
     t.add_argument("--where", help="pandas query applied first, e.g. \"relevance == 2\"")
     t.add_argument("--top", type=int, default=40)
+    t.add_argument("--ci", action="store_true", help="add 95%% Wilson intervals (use for sampled years)")
     t.set_defaults(fn=cmd_tally)
+
+    r = sub.add_parser("rate", help="rate of a yes/no outcome by group")
+    r.add_argument("--table", required=True, help="population from `select` or labels from `merge`")
+    r.add_argument("--group", required=True, help="column to group by, e.g. subfield or topic_name_en")
+    r.add_argument("--outcome", default="accepted")
+    r.add_argument("--where", help="pandas query applied first, e.g. \"year == 2026\"")
+    r.add_argument("--decided-only", action="store_true", help="denominator = accepted + rejected")
+    r.add_argument("--min-n", type=int, default=20)
+    r.set_defaults(fn=cmd_rate)
 
     w = sub.add_parser("show", help="print papers with links")
     w.add_argument("--population")
@@ -421,6 +502,8 @@ def main():
     w.set_defaults(fn=cmd_show)
 
     a = p.parse_args()
+    global WITH_TLDR
+    WITH_TLDR = a.with_tldr
     a.fn(a)
 
 

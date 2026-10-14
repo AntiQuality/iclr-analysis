@@ -16,7 +16,7 @@ One row per submission. Join key across files: `(year, id)`.
 | `year` | 2025, 2026, 2027 |
 | `id` | OpenReview forum id; link is `https://openreview.net/forum?id=<id>` (also in `openreview_url`) |
 | `number` | submission number |
-| `title`, `abstract`, `tldr`, `keywords` | as submitted; `keywords` is a list; `tldr` may be empty |
+| `title`, `abstract`, `tldr`, `keywords` | as submitted; `keywords` is a list. `tldr` is filled only in 2027 (56% of papers) and empty in 2025–26; leave it out of cross-year text searches |
 | `primary_area` | author-chosen ICLR area (21 values, e.g. `alignment, fairness, safety, privacy, and societal considerations`, `reinforcement learning`, `datasets and benchmarks`) |
 | `status` | 2025–26: `accept_oral`, `accept_spotlight` (2025 only), `accept_poster`, `reject`, `withdrawn`, `desk_rejected`. 2027: `active`, `withdrawn`, `desk_rejected` |
 | `rating`, `accepted` | mean reviewer score and decision, 2025–26 only |
@@ -32,8 +32,17 @@ Withdrawn and desk-rejected papers are included. Keep them for questions about w
 Columns: `cluster`, `name_en`, `name_zh`, `theme`, `theme_zh`, `desc_zh`, `trend_zh`, `coherence`, `n_<year>`, `per10k_<year>`, `per10k_excl_formulaic_<year>`, `accept_rate_2026`, `mean_rating_2026`, `example_ids`.
 
 - To find clusters for a subject, grep `name_en` and `desc_zh`, then confirm with `select --cluster <ids>` and `show`.
+- Two clusters share a name: 47 and 213 are both "RLVR for LLM reasoning". Treat them as one subject.
 - `coherence` 1 marks 15 clusters grouped by shared wording rather than subject. Do not base trend claims on them.
 - Clusters are coarse (~250 papers each in 2027). A subject often spans several clusters, and a cluster can mix subjects. For a precise population, combine clusters with regex or with reading.
+
+## Aggregates: `aggregates/*.json`
+
+Precomputed numbers behind the dashboard. Shares are per 10,000 submissions per year, in the order [2025, 2026, 2027]; `share_r` is the same share excluding `formulaic_style` papers. `acc26` is the 2026 acceptance rate with all submissions as denominator, and `rating26` is the mean 2026 rating.
+- `macro.json`: totals, statuses, primary areas, all 300 clusters, 17 themes, rising and falling author keywords, model and benchmark mentions.
+- `concepts.json`: about 110 technique concepts matched by regex. This file included TL;DR text, which inflates 2027 counts by a median 0.5% (at most 6%).
+- `safety.json`: per-subfield counts, shares, `acc26` and `rating26`, plus type, target and subfield cross-tabs.
+- `style.json`: the wording-style analysis.
 
 ## Safety labels: `safety/labels.csv`
 
@@ -65,5 +74,7 @@ Use `relevance >= 1` for "safety-related" and `relevance == 2` for "safety paper
 - **Volume.** Submissions grew from 11.7k to 19.8k to 43.0k. Always compare shares.
 - **2027 snapshot.** Taken on 2026-10-07, after both deadlines and before reviews.
 - **2027 wording.** Abstracts shifted toward a formulaic style: hedged claims, "matched/held fixed" phrasing, fewer "novel". Word-frequency trends on 2027 can reflect wording rather than topic, so check them with `--exclude-formulaic`.
+- **TL;DR.** Only 2027 has it, so including it inflates 2027 text matches.
+- **Withdrawals.** 30% of 2026 papers were withdrawn or desk-rejected, and the rate differs by subfield.
 - **Abstracts only.** Full texts are not included. Anything not stated in title, keywords, TL;DR or abstract is invisible.
 - **Label noise.** Topic and safety labels were produced by language models from abstracts and are suited to aggregate analysis. Verify individual labels before citing a specific paper as an example of a category.
