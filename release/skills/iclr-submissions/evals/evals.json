@@ -1,0 +1,48 @@
+{
+  "skill_name": "iclr-submissions",
+  "evals": [
+    {
+      "id": 1,
+      "name": "agent-safety-envs",
+      "prompt": "我希望了解 2026 和 2027 年中 agent safety 的工作中，它们用的是什么 environment 的 distributions",
+      "expected_output": "Population from safety labels (AGENT_SAFE/PI and/or agent targets), environment categories and named environments per year as shares, a none-stated share, papers read beyond keyword hits, representative links, abstract-only caveat.",
+      "assertions": [
+        "Population is defined from the safety labels (subfield AGENT_SAFE/PI or target_system agent), not from regex alone, and its size per year is reported",
+        "Environment distribution is reported as shares within each year, not only raw counts",
+        "Papers whose abstracts name no environment are reported as their own category rather than dropped",
+        "Environments are measured beyond keyword matching (papers read by the agent or subagents, or a sample), or keyword coverage is quantified and stated",
+        "Named environments/benchmarks (e.g. AgentDojo) are listed and those new in 2027 are identified",
+        "At least three OpenReview links to representative papers are given",
+        "States that the evidence comes from abstracts only"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "rlvr-base-models",
+      "prompt": "ICLR 2027 和 2026 比，做 RLVR / GRPO 这类 LLM 强化学习后训练的论文，用的 base model 有什么变化？哪些模型家族在涨、哪些在跌？",
+      "expected_output": "Regex/cluster-defined RLVR population (~700 vs ~1,650), model-family lexicon shares within population; Qwen up (~18%→32%), Llama/DeepSeek/GPT down; mention-rate caveat.",
+      "assertions": [
+        "Population size per year is reported and the definition is stated",
+        "Model-family shares are computed within the population per year (percent), not raw counts",
+        "Finds Qwen's share rising and Llama's share falling",
+        "Notes that many abstracts name no base model, or reports the no-mention share",
+        "Gives representative paper links",
+        "Avoids ratio claims on families with fewer than ~10 papers in 2026, or flags the small numbers"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "safety-acceptance",
+      "prompt": "2026 年 AI safety 投稿里，哪些子方向录用率最高、哪些最低？这些方向在 2027 年的投稿热度是涨还是跌？评审偏好和作者流向一致吗？",
+      "expected_output": "2026 acceptance per subfield with n and base rate 27%; 2027 share change per subfield normalised; correlation or comparison answering the alignment question; small-n caution.",
+      "assertions": [
+        "Acceptance rate per safety subfield in 2026 is reported with the number of papers",
+        "Compares against the 2026 overall acceptance rate (about 27%)",
+        "2027 change per subfield is normalised (share of submissions or of safety papers), not raw counts",
+        "Directly answers whether reviewer preference and author flow agree, with evidence (e.g. a correlation or a quadrant table)",
+        "Flags small-sample subfields (e.g. FT_ROBUST n≈33, DECEPTION n≈31)",
+        "States how withdrawn/desk-rejected papers were handled in the acceptance denominator"
+      ]
+    }
+  ]
+}

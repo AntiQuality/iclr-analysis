@@ -1,0 +1,47 @@
+{
+  "web": {
+    "WebArena": "\\bwebarena\\b",
+    "VisualWebArena": "visualwebarena",
+    "Mind2Web": "mind2web",
+    "WebShop": "webshop",
+    "BrowserGym": "browsergym",
+    "WorkArena": "workarena",
+    "WASP": "\\bWASP\\b",
+    "generic web/browser agent": "\\b(web|browser|browsing) agents?\\b"
+  },
+  "os_desktop_mobile": {
+    "OSWorld": "osworld",
+    "AndroidWorld": "androidworld",
+    "WindowsAgentArena": "windows ?agent ?arena",
+    "generic GUI/computer-use agent": "\\b(gui|computer[- ]use|desktop|mobile|smartphone) agents?\\b"
+  },
+  "coding_terminal": {
+    "SWE-bench": "swe-?bench",
+    "Terminal-Bench": "terminal-?bench",
+    "RedCode": "\\bredcode\\b",
+    "OpenHands": "openhands",
+    "Claude Code / Cursor / Codex CLI": "claude code|\\bcursor\\b|codex cli",
+    "generic coding agent": "\\b(coding|code|software(-engineering)?|terminal) agents?\\b"
+  },
+  "tool_api_mcp": {
+    "AgentDojo": "agentdojo",
+    "InjecAgent": "injecagent",
+    "ToolEmu": "toolemu",
+    "tau-bench": "(?:τ|tau)[\\s-]?(?:2-)?bench",
+    "Agent Security Bench (ASB)": "agent security bench|\\bASB\\b",
+    "AgentHarm": "agentharm",
+    "R-Judge": "r-judge",
+    "MCP": "\\bMCP\\b|model context protocol",
+    "Agent Skills": "\\bagent skills?\\b|skill\\.md",
+    "generic tool-use agent": "\\btool[- ](use|using|calling|augmented)\\b"
+  },
+  "embodied_games": {
+    "ALFWorld": "alfworld",
+    "Minecraft": "minecraft",
+    "embodied / robot": "\\bembodied\\b|\\brobot(ic|s)?\\b"
+  },
+  "multi_agent_social": {
+    "multi-agent system": "\\bmulti-?agent (system|llm|framework|debate|collaboration)s?\\b",
+    "social simulation": "social simulation|generative agents"
+  }
+}

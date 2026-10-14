@@ -17,6 +17,7 @@ submissions/iclr{2025,2026,2027}.parquet   one row per submission
 topics/clusters.csv                        300 topic clusters with names and per-year counts
 safety/labels.csv                          10,381 safety labels (2026, 2027)
 safety/TAXONOMY.md                         labelling guide and code definitions
+skills/iclr-submissions/                   agent skill for answering questions with this data
 aggregates/*.json                          statistics shown in the dashboard
 ```
 
@@ -58,6 +59,10 @@ Themes: `agents`, `llm_post`, `llm_core`, `mm`, `gen`, `vision`, `embodied`, `rl
 
 Definitions are in `safety/TAXONOMY.md`.
 
+## Asking questions with a coding agent
+
+`skills/iclr-submissions/` is an agent skill for answering questions with this data, such as "what environments do 2026–27 agent-safety papers use?" or "which base models do RLVR papers train on?". It shows a coding agent how to turn the question into a measurable definition and build the paper set from the labels. The agent counts with the bundled `scripts/iclr.py` when keywords suffice, and hands per-paper reading to subagents when they do not. It reports shares with links and caveats. Claude Code picks it up automatically from `.claude/skills/`. Other agents can be pointed at `skills/iclr-submissions/SKILL.md`.
+
 ## How it was made
 
 - **Submissions.** 2027 comes from an OpenReview API snapshot taken on 2026-10-07, after the abstract (Sept 18) and full-paper (Sept 25) deadlines. 2025 and 2026 come from the paperlists collection, including rejected and withdrawn papers. We fetched both on 2026-10-11.
@@ -75,4 +80,6 @@ The pipeline is in the parent repository's `scripts/`, and this folder is regene
 
 ## Provenance and license
 
-Paper titles, abstracts, keywords and reviews originate from [OpenReview](https://openreview.net) and remain the work of their authors. The submission tables were assembled from two public GitHub mirrors: [yzc-666/iclr2027-explorer](https://github.com/yzc-666/iclr2027-explorer) (2027) and [papercopilot/paperlists](https://github.com/papercopilot/paperlists) (2025, 2026). As of 2026-10-11, neither mirror carries a license file. A license for the derived labels (topic clusters, safety labels, style scores) has not yet been chosen.
+Paper titles, abstracts, keywords and reviews originate from [OpenReview](https://openreview.net) and remain the work of their authors. The submission tables were assembled from two public GitHub mirrors: [yzc-666/iclr2027-explorer](https://github.com/yzc-666/iclr2027-explorer) (2027) and [papercopilot/paperlists](https://github.com/papercopilot/paperlists) (2025, 2026). As of 2026-10-11, neither mirror carries a license file.
+
+This dataset is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (see `LICENSE`). The license covers what this project adds: topic clusters and their names, safety labels, style scores, aggregate statistics, documentation and the analysis skill. It cannot grant rights to the paper text itself; please also credit OpenReview and the original authors when you reuse titles or abstracts.
