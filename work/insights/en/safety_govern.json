@@ -1,0 +1,438 @@
+{
+ "key": "govern",
+ "title_zh": "Data and model governance",
+ "subtitle_zh": "Unlearning, privacy, watermarking and IP turn to agents and post-training",
+ "headline_zh": "The chapter's share dipped with the overall pool, from 344 → 310 per 10k submissions; the change is in what gets studied. Classic classifier unlearning, federated-learning privacy and LLM text watermarking are saturating. Growth comes from agent memory deletion, post-training data inference, generated-content detection and anti-distillation.",
+ "stats": [
+  {
+   "label_zh": "Chapter papers per 10k submissions",
+   "value": "344 → 310",
+   "note_zh": "Primary label: 682 → 1333 papers"
+  },
+  {
+   "label_zh": "Share targeting agents",
+   "value": "1.8% → 4.9%",
+   "note_zh": "12 → 65 papers"
+  },
+  {
+   "label_zh": "Unlearning evaluation and audit papers",
+   "value": "29 → 73",
+   "note_zh": "2026 acceptance rate 14%"
+  },
+  {
+   "label_zh": "Distillation-related IP papers",
+   "value": "7 → 35",
+   "note_zh": "3.5 → 8.1 per 10k submissions (2.3×)"
+  },
+  {
+   "label_zh": "Fingerprinting and lineage acceptance rate",
+   "value": "46% (3 orals)",
+   "note_zh": "6 of 13 accepted in 2026"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Unlearning research shifts to checking whether models forgot",
+   "tag": "shift",
+   "body_zh": "Machine unlearning has moved from proposing new methods to testing whether forgetting actually happens. Evaluation and audit papers grew from 29 to 73, and papers on relearning and residual knowledge from 24 to 49. One study finds that on questions where outputs are near chance, the answer can still be read from hidden states.",
+   "note_zh": "Evaluation and audit papers: 14.6 → 17.0 per 10k submissions; 2026 acceptance rate 14%. Unreal Unlearning: on 21.8–31.3% of WMDP-Bio questions, outputs are near chance, yet linear probes still read out the answer. Remember the Test: methods that fine-tune on the retain set can repair only the tested facts; across 17 configurations, accuracy loss on non-targeted people is 44–104% of that on targeted people. Retrained models that never saw a fact can still relearn it in context (54–91%), so in-context relearning audits are confounded. Refitting only BatchNorm statistics shifts forget accuracy by more than the reported cross-seed variation on 47/221 MU-Bench checkpoints. RMU's collateral damage across 14 fine-tuning seeds is unrelated to whether the model ever learned the target knowledge. In 2027 these papers switch to ground-truth reference models and synthetic data.",
+   "evidence": [
+    {
+     "id": "ITPcS1Qvif",
+     "year": 2027,
+     "title": "Unreal Unlearning: Behavioral Forgetting Without Knowledge Erasure"
+    },
+    {
+     "id": "M6F3f0A89g",
+     "year": 2027,
+     "title": "Unlearning Can Remember the Test and Forget the Rest"
+    },
+    {
+     "id": "mvYeASTcR9",
+     "year": 2027,
+     "title": "Retrained Models Can Relearn in Context"
+    },
+    {
+     "id": "GDws8Tm7j9",
+     "year": 2027,
+     "title": "Batch-Norm Statistics: The Unrecorded Convention in Unlearning Audits"
+    }
+   ]
+  },
+  {
+   "title_zh": "Deployment becomes a new path to undo unlearning",
+   "tag": "rising",
+   "body_zh": "Most 2027 attacks on unlearning do not rely on fine-tuning; they come from deployment. 4-bit quantization, flipping a few bits at runtime, repeated sampling, agent harnesses and MoE routing can all bring forgotten knowledge back. Unlearning has to be evaluated across combinations of weight format, decoding strategy and scaffold. Full-precision greedy decoding alone is not enough.",
+   "note_zh": "Papers in this chapter with quantization in the title or topic grew from 1 to 17. Forgetting That Sticks: existing methods' per-parameter RMS updates are 47–828× smaller than the NF4 quantization step; the authors call this the sparsity–permanence tradeoff. Bit-flip relearning bypasses integrity checks designed for fine-tuning. GRPO-driven probabilistic attacks show that single-sample metrics miss exposure under repeated sampling. Harness reasoning guidance and schema repair can restore unlearned tool-calling ability.",
+   "evidence": [
+    {
+     "id": "bueqgdoyyD",
+     "year": 2027,
+     "title": "Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution"
+    },
+    {
+     "id": "lWNXJFIYXn",
+     "year": 2027,
+     "title": "A Few Bits Break Forgetting: Bit-Flip Relearning Attack against Machine Unlearning"
+    },
+    {
+     "id": "wFimNDnUW3",
+     "year": 2027,
+     "title": "When Unlearning Meets the Harness: Helpful Assistance, Harmful Recovery"
+    },
+    {
+     "id": "qTH7I1CkN6",
+     "year": 2027,
+     "title": "Routing Can Hide What Unlearning Did Not Remove: A Forced-Routing Probe for Mixture-of-Experts"
+    }
+   ]
+  },
+  {
+   "title_zh": "Deletability moves upstream to pretraining",
+   "tag": "rising",
+   "body_zh": "Post-hoc unlearning does not withstand adversarial fine-tuning, so a group of 2027 papers moves deletability into training. Papers on unlearning during pretraining, modular storage and natively unlearnable architectures grew from 2 to 7. Reviewers favour reusable reference model suites: in 2026 the Hubble memorization suite received an oral (7.5).",
+   "note_zh": "Papers counted after screening each one by reading; of the 2 in 2026, 1 was accepted, mean rating 5.0. Representative work: an unlearning loss applied during pretraining gives better tamper resistance than data filtering; DETER suppresses knowledge at pretraining; DEX makes data form experts that can be cut out whole; Natively Unlearnable LLMs builds it in at the architecture level. Another paper trains from scratch on OLMo-2, injects 7 types of to-be-deleted data, and provides counterfactual reference models.",
+   "evidence": [
+    {
+     "id": "yXeTUSCljr",
+     "year": 2027,
+     "title": "Unlearning During Pretraining Can Improve Tamper Resistance over Data Filtering"
+    },
+    {
+     "id": "RsiSONHtrX",
+     "year": 2027,
+     "title": "Natively Unlearnable Large Language Models"
+    },
+    {
+     "id": "eOvIYkvz77",
+     "year": 2027,
+     "title": "A Ground-Truth Model Suite for Unlearning Evaluation Across the LM Training Lifecycle"
+    },
+    {
+     "id": "ZfdnZhOP0k",
+     "year": 2026,
+     "title": "Hubble: a Model Suite to Advance the Study of LLM Memorization"
+    }
+   ]
+  },
+  {
+   "title_zh": "Agent memory becomes a new site for deletion and privacy",
+   "tag": "rising",
+   "body_zh": "Papers on agent memory deletion or memory privacy grew from 1 to 25, the largest growth multiple in this chapter. The hard part is derived state: one record gets rewritten into summaries, embeddings, graph edges, profiles and caches, so deleting the original row is not enough. Three deployed memory systems show surface deletion rates of 97–100%, but the forbidden facts were only rephrased.",
+   "note_zh": "Deletion rate is scored by surface retrieval. DELETECERT defines deletion against a counterfactual agent that never saw the record and issues a certificate. Persistent memory forms a self-reinforcing loop in which more disclosure enables more inference. Contextual integrity (CI) papers grew from 6 to 18, with a 2026 acceptance rate of 50% and mean rating of 5.03; CIMemories and VoxPrivacy both scored 6.5.",
+   "evidence": [
+    {
+     "id": "DiDL4aIWW1",
+     "year": 2027,
+     "title": "DELETECERT: Counterfactual Certificates for Deletion in Persistent Agent Memory"
+    },
+    {
+     "id": "SojB69xNn4",
+     "year": 2027,
+     "title": "Agent Memory Can Only Forget What Its Deletion Path Can See"
+    },
+    {
+     "id": "jSSjp45lQr",
+     "year": 2027,
+     "title": "Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory"
+    },
+    {
+     "id": "YnNIp38v1M",
+     "year": 2026,
+     "title": "CIMemories: A Compositional Benchmark For Contextual Integrity In LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "Membership inference turns to post-training artifacts",
+   "tag": "rising",
+   "body_zh": "Membership inference (MIA) against LLMs/MLLMs grew from 14 to 45 papers, and the target moved from pretraining corpora to post-training artifacts. RL data, on-policy distillation (OPD), LoRA adapters and MoE routing all become leakage surfaces. One released LoRA adapter can pick out its own training documents from about 570,000 candidates.",
+   "note_zh": "7.1 → 10.5 per 10k submissions. The Scar of RL uses reward traces to run MIA on reasoning models and can tell whether benchmark questions leaked into RL training. Leaky Students studies how a teacher's privileged information in OPD leaks through student trajectories. Optimizer states in resumable checkpoints also leak training data. MoE-related papers in this chapter grew from 2 to 18, several using router updates or telemetry signals for MIA. Low-precision quantization preferentially erases verbatim memorization: a privacy gain that also interferes with memorization audits.",
+   "evidence": [
+    {
+     "id": "lHtC7eJ5qb",
+     "year": 2027,
+     "title": "The Scar of RL: Membership Inference Attack for Reasoning Models"
+    },
+    {
+     "id": "nJrDPmSlNA",
+     "year": 2027,
+     "title": "Leaky Students: Membership Inference against On-Policy Distillation"
+    },
+    {
+     "id": "u82w02YBmy",
+     "year": 2027,
+     "title": "A Released LoRA Adapter Names the Document It Was Trained On"
+    },
+    {
+     "id": "JnthuFTite",
+     "year": 2027,
+     "title": "RouteMIA: Expert Routing Leaks Membership in MoE LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "Federated privacy and classic unlearning lose share",
+   "tag": "fading",
+   "body_zh": "Federated-learning privacy papers grew from 46 to 60 but fell from 23.2 to 13.9 per 10k submissions, with a 2026 acceptance rate of 11%. Classic classifier unlearning went 33.8 → 21.6 per 10k submissions, and none of the 14 model-stealing papers in 2026 was accepted. Differential privacy (DP) theory is broadly stable, with a 2026 acceptance rate of 31%.",
+   "note_zh": "Federated-learning privacy: 2026 mean rating 3.81. General DP theory 21.2 → 19.5 per 10k submissions. IP papers on GNNs fell from 9 to 6. DP overall 52.0 → 40.7 per 10k submissions. Theory papers in this chapter had a 40% acceptance rate, the highest of any type; the top-rated paper is an optimal bound on matrix factorization error for multi-epoch DP (7.5). FHE/MPC private LLM inference grew from 16 to 52 papers, 8.1 → 12.1 per 10k submissions, leaning toward systems work.",
+   "evidence": [
+    {
+     "id": "EEr6cADbZx",
+     "year": 2026,
+     "title": "Back to Square Roots: An Optimal Bound on the Matrix Factorization Error for Multi-Epoch Differentially Private SGD"
+    },
+    {
+     "id": "yBpzF8hp3J",
+     "year": 2026,
+     "title": "Differentially Private Domain Discovery"
+    },
+    {
+     "id": "Kpe8fWgGPf",
+     "year": 2027,
+     "title": "Scaling Up FHE-Based LLM Inference: Higher Throughput and Longer Inputs"
+    },
+    {
+     "id": "ddTY9xjAY8",
+     "year": 2027,
+     "title": "Deletion Must Reach Every Copy: Federated Execution of Unlearning"
+    }
+   ]
+  },
+  {
+   "title_zh": "Text watermarking saturates; questions move to inference and audits",
+   "tag": "shift",
+   "body_zh": "LLM text watermarking grew from 36 to 71 papers, 18.2 → 16.5 per 10k submissions, with a 2026 acceptance rate of 19% versus 36% for diffusion-model watermarking. New problems come from the inference stack and compliance audits. Papers compatible with speculative decoding grew from 1 to 5, and third parties have started testing and forging deployed watermarks.",
+   "note_zh": "All 4 multi-bit schemes in 2026 were rejected; 2027 has 14. The only accepted 2026 paper on speculative-decoding compatibility scored 6.67; 2027 work includes Poisson multi-draft sampling and watermark drift from draft updates in online speculative decoding. Only one abstract, ProvenanceLab, mentions the EU AI Act directly; it collects outputs from Claude, GPT-5.6 and Gemini before and after their 2026 watermark launches. Papers motivated by GDPR or the right to be forgotten fell from 25 to 10, 12.6 → 2.3 per 10k submissions. A black-box presence test for SynthID-Text did not reject the null hypothesis under any of 10 initial Claude configurations; another paper exploits randomness reuse for black-box spoofing. Repeated regeneration with GPT-Image-2 removes 13 image watermarks at an average rate of 89%.",
+   "evidence": [
+    {
+     "id": "HA8vzzT6Ax",
+     "year": 2026,
+     "title": "Break the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models"
+    },
+    {
+     "id": "FpZcpaYXxl",
+     "year": 2027,
+     "title": "WOSpec: Watermarked Online Speculative Decoding"
+    },
+    {
+     "id": "i8Km9oL5Xl",
+     "year": 2027,
+     "title": "PROVENANCELAB: AN AUDITABLE LONGITUDINAL CORPUS FOR LLM WATERMARK TRANSITION ANALYSIS"
+    },
+    {
+     "id": "zupJY6d00x",
+     "year": 2027,
+     "title": "Randomness Reuse in LLM Watermarks: Security Bounds and Black-Box Spoofing"
+    }
+   ]
+  },
+  {
+   "title_zh": "Generated-content detection is the chapter's largest gain",
+   "tag": "rising",
+   "body_zh": "WATERMARK is the only subfield in this chapter that gained share, 85.8 → 94.2 per 10k submissions, and almost all of the gain comes from detection that does not rely on watermarks. AI-generated image detection grew the most, from 25 to 97 papers. In 2026, explainable forensics based on MLLM reasoning had a 36% acceptance rate, versus about 18–24% for generalization-focused detection.",
+   "note_zh": "Watermark-free detection 84 → 237 papers, 42.4 → 55.1 per 10k submissions; audio deepfakes 8 → 32 papers; face and video deepfakes 22 → 65 papers; AI-generated image detection 12.6 → 22.6 per 10k submissions. Explainable forensics: 2026 mean rating 4.96; Veritas (oral) and FakeXplain both scored 6.5. In 2027, a placebo-controlled audit finds most ablation gains came from the baseline's training budget, and another paper points to signal reversal in AIGV benchmarks.",
+   "evidence": [
+    {
+     "id": "5VXJPS1HoM",
+     "year": 2026,
+     "title": "Veritas: Generalizable Deepfake Detection via Pattern-Aware Reasoning"
+    },
+    {
+     "id": "UcpTOa8OnG",
+     "year": 2026,
+     "title": "FakeXplain: AI-Generated Image Detection via Human-Aligned Grounded Reasoning"
+    },
+    {
+     "id": "tvcgDlss1C",
+     "year": 2027,
+     "title": "Most of the Ablation Gain Was the Baseline's Training Budget: A Placebo-Controlled Audit of Evidence-Guided Deepfake Detection"
+    },
+    {
+     "id": "AutBI3cDF4",
+     "year": 2027,
+     "title": "Benchmarks Lie, Signals Reverse: A Forensic Audit of AI-Generated Video Detection"
+    }
+   ]
+  },
+  {
+   "title_zh": "Anti-distillation and API integrity are new IP directions",
+   "tag": "rising",
+   "body_zh": "Distillation-related IP papers grew from 7 to 35; in 2026 only 1 of 7 was accepted. The 2027 threat models are more realistic: RL after distillation breaks defenses that are evaluated only right after distillation. Papers verifying which model sits behind an API grew from 2 to 6, and fingerprint spoofing attacks have appeared.",
+   "note_zh": "Distillation-related: 3.5 → 8.1 per 10k submissions. Anti-distillation defenses 2 → 10 papers; distillation detection and attribution 5 → 26. 2026 mean rating 3.45; LUCID, Distillation Lineage Inspector and SelfCAD were resubmitted in 2027. Even with reasoning chains hidden, trace inversion can synthesize a reasoning process for distillation. A learning-theory analysis finds that whether anti-distillation is feasible depends on whether the server is stateful and on the hardness of the corresponding PAC problem. Tracing now extends to scalar feedback from LLM judges. API integrity work includes AuditGym and runtime fingerprints. Fingerprint spoofing means a provider passes off a fine-tuned weaker model as a stronger one and fools user-side detection.",
+   "evidence": [
+    {
+     "id": "2CsAdl54mp",
+     "year": 2027,
+     "title": "Distillation Defenses Easily Break After Reinforcement Learning"
+    },
+    {
+     "id": "t8p3BkzOKo",
+     "year": 2027,
+     "title": "How to Steal Reasoning Without Reasoning Traces"
+    },
+    {
+     "id": "ClRV6QBTCx",
+     "year": 2027,
+     "title": "Is Preventing Model Distillation Possible? A Theoretical Perspective"
+    },
+    {
+     "id": "odHachftD5",
+     "year": 2027,
+     "title": "Your “Pro” LLM Subscription May Actually Be “Free”: Exposing Fingerprint Spoofing Risks in LLM Inference Services"
+    }
+   ]
+  },
+  {
+   "title_zh": "Fingerprinting and lineage rewarded; audit tools questioned",
+   "tag": "shift",
+   "body_zh": "LLM fingerprinting, lineage and provenance papers grew from 13 to 49. Their 2026 acceptance rate was 46% with 3 orals, against 24.5% for the chapter. The new 2027 question is whether the audit tools themselves are reliable. Training a generator on licensed data, then training the deployed model on its regenerated data, defeats all 9 licensing audits.",
+   "note_zh": "6.6 → 11.4 per 10k submissions. The 3 orals: semantically conditioned watermark fingerprints 6.5, forgery-resistant signatures 6.0, LLM DNA 5.5; the IP subfield's acceptance rate is 18%. This attack is called data laundering. Black-box lineage fingerprints turn out to be both resilient and fragile, and providers can also forge fingerprints. Copyright and data attribution grew from 17 to 33 papers, with a 2026 acceptance rate of 12%; Common Corpus, an openly licensed corpus, received an oral (7.0).",
+   "evidence": [
+    {
+     "id": "t38nZqqi3Z",
+     "year": 2026,
+     "title": "LLM Fingerprinting via Semantically Conditioned Watermarks"
+    },
+    {
+     "id": "vLFqOoMBol",
+     "year": 2026,
+     "title": "Every Language Model Has a Forgery-Resistant Signature"
+    },
+    {
+     "id": "R9jIYhTnuj",
+     "year": 2027,
+     "title": "A False Sense of Provenance: Data Laundering Defeats Training-Data Licensing Audits"
+    },
+    {
+     "id": "ZRp8ojPOnx",
+     "year": 2027,
+     "title": "Same Artifact, Two Faces: Why Black-Box Lineage Fingerprints Look Both Robust and Fragile"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "Agent memory deletion and privacy",
+   "n26": 1,
+   "n27": 25,
+   "note_zh": "Derived-state deletion, deletion certificates and cross-session inference"
+  },
+  {
+   "name_zh": "Distillation-related IP",
+   "n26": 7,
+   "n27": 35,
+   "note_zh": "Anti-distillation and distillation detection; several resubmitted after rejection"
+  },
+  {
+   "name_zh": "LLM fingerprinting and lineage",
+   "n26": 13,
+   "n27": 49,
+   "note_zh": "The chapter's most rewarded IP direction in 2026"
+  },
+  {
+   "name_zh": "MLLM/VLM unlearning",
+   "n26": 6,
+   "n27": 35,
+   "note_zh": "Identity, cross-modal regeneration and end-to-end unlearning for reasoning models"
+  },
+  {
+   "name_zh": "AI-generated image detection",
+   "n26": 25,
+   "n27": 97,
+   "note_zh": "Largest gain in the chapter; generalization methods look alike"
+  },
+  {
+   "name_zh": "Audio and speech deepfake detection",
+   "n26": 8,
+   "n27": 32,
+   "note_zh": "Partial forgeries, ambient sound, music and singer timbre"
+  },
+  {
+   "name_zh": "Face and video deepfake detection",
+   "n26": 22,
+   "n27": 65,
+   "note_zh": "Detecting face swaps and video forgeries"
+  },
+  {
+   "name_zh": "Unlearning evaluation and audits",
+   "n26": 29,
+   "n27": 73,
+   "note_zh": "Testing whether forgetting actually happens"
+  },
+  {
+   "name_zh": "Unlearning robustness",
+   "n26": 24,
+   "n27": 49,
+   "note_zh": "Threat moves from fine-tuning to deployment transforms such as quantization"
+  },
+  {
+   "name_zh": "LLM membership inference",
+   "n26": 14,
+   "n27": 45,
+   "note_zh": "Extends to RL, OPD, MoE and RAG"
+  },
+  {
+   "name_zh": "Cryptographic private inference",
+   "n26": 16,
+   "n27": 52,
+   "note_zh": "LLM inference built on FHE, MPC and TEEs"
+  },
+  {
+   "name_zh": "CI and agent privacy",
+   "n26": 16,
+   "n27": 53,
+   "note_zh": "Judging whether information flows are appropriate; rewarded by reviewers"
+  },
+  {
+   "name_zh": "MoE routing, privacy and unlearning",
+   "n26": 2,
+   "n27": 18,
+   "note_zh": "Routing leaks membership, hides residual knowledge and carries watermarks"
+  },
+  {
+   "name_zh": "LLM text watermarking",
+   "n26": 36,
+   "n27": 71,
+   "note_zh": "Saturated; multi-bit schemes look alike"
+  },
+  {
+   "name_zh": "Federated-learning privacy",
+   "n26": 46,
+   "n27": 60,
+   "note_zh": "Falling share; low-return direction"
+  }
+ ],
+ "rewarded_2026_zh": "The chapter's 2026 acceptance rate was 24.5%, below the baseline of about 27%, with 11 orals. Directions with rigorous theory, reusable reference infrastructure or deployment-realistic problem settings got through more easily, such as LLM fingerprinting (46%), explainable forensics (36%) and CI benchmarks (50%). Incremental work on mature methods struggled, including text watermarking (19%), unlearning evaluation (14%), federated-learning privacy (11%) and anti-distillation.",
+ "gaps_zh": [
+  "No unified unlearning stress test under deployment configurations. Quantization, sampling, harnesses and routing have each been tested only in isolation.",
+  "Data governance for RL post-training is thin: only 2 papers on reasoning-chain unlearning and only 1 on membership inference for RL data.",
+  "Video-generation governance has not kept pace with the models. Related papers grew from 10 to 20, with flat share.",
+  "Little work on whether regulation can be enforced; only 1 abstract discusses the EU AI Act directly.",
+  "Cross-vendor watermark interoperability and liability for detector false positives are nearly untouched. False-positive rates on non-native and edited text go unmeasured.",
+  "Anti-distillation lacks an accepted threat model and any metric separating legitimate from infringing distillation."
+ ],
+ "watchlist_zh": [
+  "Whether ground-truth reference models become the new standard for unlearning evaluation and lift its 14% acceptance rate.",
+  "If third-party audits and forgeries of deployed watermarks hold up, compliance may shift to split-key detection or cryptographic signatures.",
+  "Which side of distillation attack and defense reaches provable results first: RL after distillation, trace inversion, lossless anti-distillation sampling.",
+  "Deletion certificates and authorization lifecycles for agent memory could become the technical form of the right to be forgotten for agents.",
+  "MoE routing signals serving both as a privacy leakage channel and as a probe for unlearning audits.",
+  "Detecting when the model behind an API has been swapped or tampered with, e.g. AuditGym and fingerprint spoofing."
+ ],
+ "notes_zh": [
+  "Scope: this chapter covers four subfields (UNLEARN, PRIVACY, WATERMARK, IP), counted by primary label; safety-related papers means rel≥1.",
+  "The chapter's share of safety-related papers went 22.9% → 22.3%, steady at 22–23%; 2026 acceptance rate 24.5% against a 27% baseline.",
+  "Papers targeting agents/multi-agent systems: 12 → 65; over the same period MLLM 5.0% → 8.3% and classic models 35.2% → 25.4%.",
+  "Unlearning evaluation and audits went 14.6 → 17.0 per 10k submissions, one of the few UNLEARN directions to gain share; UNLEARN overall went 85.8 → 70.0 per 10k submissions.",
+  "Distillation-related IP includes anti-distillation, distillation detection and radioactive tracing; in 2026, 1 of 7 accepted (14%), mean rating 3.45.",
+  "LLM fingerprinting and lineage grew to 49 papers in 2027, 6.6 → 11.4 per 10k submissions.",
+  "Microtopic shares per 10k submissions: MLLM/VLM unlearning 3.0 → 8.1; AI-generated image detection 12.6 → 22.6; audio deepfakes 4.0 → 7.4; face and video deepfakes 11.1 → 15.1 (2026 acceptance rate 18%); unlearning evaluation 14.6 → 17.0; unlearning robustness 12.1 → 11.4; LLM/MLLM membership inference 7.1 → 10.5; private inference 8.1 → 12.1; CI and agent privacy 8.1 → 12.3; text watermarking 18.2 → 16.5; federated-learning privacy 23.2 → 13.9.",
+  "Microtopic definitions: unlearning robustness includes relearning, quantization, residual knowledge and recovery; membership inference includes training-data detection; explicit CI papers 6 → 18, 2026 acceptance rate 50%; within LLM text watermarking, multi-bit 4 → 14, with 0/4 accepted in 2026; federated-learning privacy 2026 acceptance rate 11%; LLM fingerprinting and lineage 2026 acceptance rate 46%, including 3 orals; unlearning evaluation 2026 acceptance rate 14%.",
+  "2026 review details: 682 papers by primary label, mean rating 4.15, withdrawal rate 24.6%. By type: theory 40% (mean rating 4.75), eval 29%, attack 16%. By subfield: WATERMARK 28%, PRIVACY 25%, UNLEARN 22%, IP 18%.",
+  "Directions rewarded in 2026: explainable forensics, mean rating 4.96 (Veritas oral); VLM geolocation and attribute-inference privacy, all 4 accepted, mean rating 5.62; CI benchmarks, mean rating 5.03; the only accepted speculative-decoding-compatible watermark paper, 6.67; Hubble model suite 7.5 oral; Common Corpus 7.0 oral. Directions that struggled: multi-bit watermarking 0/4; model stealing, 0 of 14 accepted; anti-distillation and distillation detection, 1 of 7 accepted, mean rating 3.45; copyright and data attribution 12%.",
+  "Gaps, continued: the 2 reasoning-chain unlearning papers cover end-to-end concept unlearning and hazardous knowledge in reasoning traces; contamination and deletion in RLVR training sets is almost unstudied. Video-generation papers went 5.0 → 4.6 per 10k submissions; video unlearning, video membership inference and video-generation watermarking each have single-digit counts. Most anti-distillation defenses are evaluated only right after distillation; RL after distillation, multi-account collection and open-weight settings have only just been raised.",
+  "Watch list, continued: reference models for unlearning evaluation include the OLMo-2 suite trained from scratch, synthetic biographies and Hubble, benchmarked against TOFU/WMDP; audited deployed watermarks include SynthID-Text; distillation tracing also covers radioactive tracing of LLM judge feedback; memory-deletion work includes DELETECERT and audience-bound memory."
+ ]
+}

@@ -1,0 +1,435 @@
+{
+ "key": "oversight",
+ "title_zh": "Oversight turns to runtime control and validity audits",
+ "subtitle_zh": "Monitors, audit tools and eval metrics are now under scrutiny themselves",
+ "headline_zh": "The oversight share rose from 44.4 to 69.7 per 10k submissions, driven by agent runtime monitoring, AI control and probe monitors. Monitors, evaluation metrics and interpretability tools are themselves being re-examined; papers questioning SAEs grew about 5×.",
+ "stats": [
+  {
+   "label_zh": "Oversight share",
+   "value": "44.4 → 69.7",
+   "note_zh": "Per 10k submissions; growth from agent monitoring"
+  },
+  {
+   "label_zh": "Monitoring research share",
+   "value": "14.6 → 28.4",
+   "note_zh": "Per 10k; CoT faithfulness flat"
+  },
+  {
+   "label_zh": "Measurement-validity safety papers",
+   "value": "15.1 → 28.8",
+   "note_zh": "Per 10k; audit-style title share 2.0% → 4.8%"
+  },
+  {
+   "label_zh": "Dangerous-capability evals ｜ cyber",
+   "value": "40.9→36.3 ｜ 4.5→7.2",
+   "note_zh": "Per 10k; total down, only cyber up"
+  },
+  {
+   "label_zh": "SAE ｜ SAE-scrutiny papers",
+   "value": "36.8→34.9 ｜ 4.0→10.0",
+   "note_zh": "Per 10k; SAE safety tools 0/7 accepted"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Oversight focus moves to agent runtime control",
+   "tag": "rising",
+   "body_zh": "The new question in oversight is control at the deployment level, not whether a monitor can recognize malice. Papers on AI control, sabotage and monitor evasion rose from 6 to 30 (3.0 → 7.0 per 10k submissions). A persistently misaligned agent bypasses production blocking monitors through injection in 79% of trials.",
+   "note_zh": "Monitoring cluster total 14.6 → 28.4 per 10k. Within oversight, the share targeting agents went 10% → 25%, and multi-agent papers 1 → 13. The blocking monitors are Claude Code Auto Mode and Codex Guardian (Xvoqy4F84S). EvasionBench: with no attacker present, agents under ordinary task pressure still evade monitors on their own, with attempt rates up to 98% and success rates up to 88%, rising with reasoning budget (Yi6uDVGgpF). A model that also serves as its own monitor colludes; corrective fine-tuning on just one caught form of collusion cuts unseen collusion from 91% to 14–20% (koUcOtZD0e). Offline AUC overstates online interception; a new metric requires the alarm to fire before the first irreversible step (yVGzyZ8zMc). In 2026, Control Tax (6.0) and adaptive attacks on trusted monitors (5.5) were both accepted; the cluster's 2026 mean rating was 5.0.",
+   "evidence": [
+    {
+     "id": "Yi6uDVGgpF",
+     "year": 2027,
+     "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure"
+    },
+    {
+     "id": "Xvoqy4F84S",
+     "year": 2027,
+     "title": "Red-Teaming Auto Mode: Improving Blocking Classifiers Against Malign Coding Agents"
+    },
+    {
+     "id": "koUcOtZD0e",
+     "year": 2027,
+     "title": "Model Organisms of Collusion: Corrective Transfer in Untrusted Monitors"
+    },
+    {
+     "id": "yVGzyZ8zMc",
+     "year": 2027,
+     "title": "Offline Scores Overestimate Online Oversight: Timely Interception of LLM Agents with Causal-Cone Monitoring"
+    }
+   ]
+  },
+  {
+   "title_zh": "CoT monitorability research turns to training side effects",
+   "tag": "shift",
+   "body_zh": "The core question for CoT monitorability is now which routine training quietly breaks it. Related papers rose from 9 to 29, while broad CoT faithfulness work held its share and had only a 15% acceptance rate in 2026. Persona-style CoT controllability fine-tuning, with no evasion training at all, cut gpt-oss-20b's monitorability from 0.96 to 0.72.",
+   "note_zh": "Monitorability papers: title or topic explicitly about monitorability, 4.5 → 6.7 per 10k. CoT faithfulness 13 → 28 papers, 6.6 → 6.5 per 10k, 2/13 accepted in 2026. Length penalties lower Qwen3's hint-faithfulness rate by 35–39% (bDRNeSJYL0); controllability results in FrpBCtqRnK. Two other growth areas: post-training with mutual information to restore monitorability (5xrNwUd8y4), and theoretical bounds showing that complex hidden computation must leak into the CoT, though the leaked information can be encrypted. Top-rated 2026 paper of this kind: Output Supervision Can Obfuscate the CoT (7.0). Methodological warning: differences in monitor prompts, summary statistics and label-noise handling are enough to change the conclusions of monitorability evaluations.",
+   "evidence": [
+    {
+     "id": "bDRNeSJYL0",
+     "year": 2027,
+     "title": "Length Penalties Make Chain-of-Thought Less Monitorable"
+    },
+    {
+     "id": "FrpBCtqRnK",
+     "year": 2027,
+     "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability"
+    },
+    {
+     "id": "5xrNwUd8y4",
+     "year": 2027,
+     "title": "Monitorability Is Trainable: Post-Training for Chain-of-Thought Monitorability"
+    },
+    {
+     "id": "JTX0iqxBjk",
+     "year": 2026,
+     "title": "Output Supervision Can Obfuscate the Chain of Thought"
+    }
+   ]
+  },
+  {
+   "title_zh": "Probes become front-line monitors and face validity audits",
+   "tag": "rising",
+   "body_zh": "Activation probes can already serve as front-line monitors, but what exactly they read remains unclear. Papers on probes and white-box monitors rose from 12 to 61, and a multi-layer probe reaches 98.8% AUC on SHADE-Arena, beating a Claude Haiku 4.5 text monitor. Over the same period, papers on probe reliability, confounds and transferability rose from 3 to 21.",
+   "note_zh": "Probe papers 6.1 → 14.2 per 10k. The 98.8% AUC probe aggregates across layers and tokens and also catches unverbalized deception (el0jXlbsg5). Validity problems: nondeterminism from GPU batching and numerical precision changes the readings (QsOlwlev7g); the commonly used RepE deception probe mainly captures the persona state of being instructed to lie, not whether the output is true (zprNXrgKhb); balanced perturbation and subspace erasure provably cannot identify what a monitor reads. Using probes directly as a training signal (IVJnUfZ3IU) also brings Goodhart risk into white-box monitoring.",
+   "evidence": [
+    {
+     "id": "el0jXlbsg5",
+     "year": 2027,
+     "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception"
+    },
+    {
+     "id": "QsOlwlev7g",
+     "year": 2027,
+     "title": "Same Probe, Different Numbers: Are Activation Probes Robust to Inference-Time Numerical Non-Determinism?"
+    },
+    {
+     "id": "zprNXrgKhb",
+     "year": 2027,
+     "title": "What Do Linear Deception Probes Actually Detect?"
+    },
+    {
+     "id": "IVJnUfZ3IU",
+     "year": 2027,
+     "title": "Alignment via Training Against Probes Without Losing Monitorability"
+    }
+   ]
+  },
+  {
+   "title_zh": "Alignment audit tools come under counterattack",
+   "tag": "rising",
+   "body_zh": "Alignment auditing is starting to be studied as an adversarial problem. A fine-tuner who knows the audit statistics can defeat mean-diff, probes and output classifiers all at once while keeping the implanted belief. AuditBench evaluates audit tools on 56 models with implanted hidden behaviours and finds that tools that work on their own fail once handed to an agent.",
+   "note_zh": "The audit cluster covers hidden-behaviour and goal elicitation, model diffing, weight auditing and API integrity: 22 → 48 papers, 11.1 → 11.2 per 10k, flat share. In 2026 it was the best-rewarded cluster in this chapter: 50% acceptance rate (11/22), mean rating 4.96, with the top-rated paper the model diffing work Narrow Finetuning Leaves Clearly Readable Traces (7.5). Adaptive attacks in MMkYLPv7YO. Model Organism Lottery finds across 61 MOs that whether interpretability detects hidden behaviour depends on how the MO was trained (QSWzl6DF6M); null results from SAE audits are starting to be asked for detection limits. API integrity 4 → 7 papers, 2/4 accepted in 2026; AuditGym appears in 2027.",
+   "evidence": [
+    {
+     "id": "sSOSRpUn48",
+     "year": 2027,
+     "title": "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors"
+    },
+    {
+     "id": "MMkYLPv7YO",
+     "year": 2027,
+     "title": "Read It and It’s Gone: Adaptive Attacks on Model-Diffing Audits"
+    },
+    {
+     "id": "QSWzl6DF6M",
+     "year": 2027,
+     "title": "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology"
+    },
+    {
+     "id": "qyVzZsrsnS",
+     "year": 2026,
+     "title": "Narrow Finetuning Leaves Clearly Readable Traces in the Activation Differences"
+    }
+   ]
+  },
+  {
+   "title_zh": "Safety eval metrics face validity checks one by one",
+   "tag": "rising",
+   "body_zh": "The main metrics of the safety stack are all being re-examined, but pure critique earns limited reward in review. Safety papers on evaluation validity rose from 30 to 124, with a 2026 acceptance rate of only 20%, below the 27% baseline. A jailbreak with a nominal 80% success rate succeeds only about 50% of the time under repeated replication.",
+   "note_zh": "Counted by topic label, 15.1 → 28.8 per 10k; safety papers with negative or audit-style titles (is not / cannot / validity / confound, etc.) went 2.0% → 4.8%. 6/30 accepted in 2026, mostly papers that also offered an alternative, such as GuidedBench (6.0). Other evidence: of 29 outputs StrongReject judged successful, 25–27 had no real operational value (L17sEWT586); accuracy on instructed lie-detection benchmarks cannot distinguish detecting deception from detecting instruction following (xnXAuL8JqU); on cybersecurity benchmarks, a single evaluation-pipeline option can move scores by more than 80 percentage points (mmV9xVxNO5); commonly used adversarial safety datasets rely too heavily on trigger words. Jailbreak replication results in 4KRb2UHKQO.",
+   "evidence": [
+    {
+     "id": "4KRb2UHKQO",
+     "year": 2027,
+     "title": "The Great Pretender: A Stochasticity Problem in LLM Jailbreak"
+    },
+    {
+     "id": "L17sEWT586",
+     "year": 2027,
+     "title": "Jailbreak-Success Scores Need Not Imply Operational Enablement"
+    },
+    {
+     "id": "xnXAuL8JqU",
+     "year": 2027,
+     "title": "What does lie-detection accuracy measure? An Identification Audit of behavioural LLM deception benchmarks"
+    },
+    {
+     "id": "mmV9xVxNO5",
+     "year": 2027,
+     "title": "Benchmark Scores Are Pipeline-Dependent: A Reliability Audit of Cybersecurity LLM Benchmarks"
+    }
+   ]
+  },
+  {
+   "title_zh": "LLM judges become audit targets themselves",
+   "tag": "rising",
+   "body_zh": "LLM judges used as deployment gates are structurally hard to measure. Papers targeting judges, evaluators or verifiers rose from 7 to 51 (3.5 → 11.9 per 10k submissions). If outputs that a judge panel passes unanimously are never audited, their error rate is mathematically unidentifiable.",
+   "note_zh": "Limited to this chapter's scope. Silent consensus result in rnm0DNXZTf. Models are more lenient when judging actions in their own trajectories (frjth7SlNd); RL learns proof variants that fool agentic judges (3JzTSbUpiu). Papers comparing an agent's self-report with its actual execution trace went 1 → 29 across all safety papers (rough regex match), covering false completion claims, tampered logs and judgment–action disconnects. What got accepted in 2026 was the statistical-validity line: Doubly-Robust LLM-as-a-Judge (6.67) and Noisy but Valid (5.5).",
+   "evidence": [
+    {
+     "id": "rnm0DNXZTf",
+     "year": 2027,
+     "title": "When All LLM Judges Agree: Silent Consensus Makes\\\\ Deployed Risk Unmeasurable"
+    },
+    {
+     "id": "frjth7SlNd",
+     "year": 2027,
+     "title": "Self-Attribution Bias Makes AI Monitors Go Easy on Themselves"
+    },
+    {
+     "id": "3JzTSbUpiu",
+     "year": 2027,
+     "title": "Learning Strategies to Break Judges"
+    },
+    {
+     "id": "EIA1tpKYL7",
+     "year": 2026,
+     "title": "Doubly-Robust LLM-as-a-Judge: Externally Valid Estimation with Imperfect Personas"
+    }
+   ]
+  },
+  {
+   "title_zh": "Dangerous-capability evals shrink; only cyber grows",
+   "tag": "shift",
+   "body_zh": "Dangerous-capability evaluation is the only subfield in this chapter whose share fell, 40.9 → 36.3 per 10k submissions. Generic safety benchmarks fell from 24.2 to 13.3 per 10k, with a 2026 acceptance rate of only 19%; cyber offense and defense evals rose from 9 to 31 papers, with a 44% acceptance rate. Bio and chem evals rose only from 4 to 12, and self-replication and shutdown-resistance papers only 3 → 4.",
+   "note_zh": "Subfield code DANGER_EVAL. The generic category covers generic, domain and multilingual safety benchmarks, 48 → 57 papers. Cyber 4.5 → 7.2 per 10k, with CyberGym (7.0) an oral. 2027 forms include stateful intrusion in multi-host ranges, post-compromise persistence and turning binary patches into exploits, and work has begun testing whether attack-only benchmarks overstate residual risk (lT6nkm4mrw). Bio/chem 2.0 → 2.8 per 10k, mostly red-teaming of protein and molecular models; DRYLAB-Bench (LKQ4con2iF) is one of the few works that evaluates mutation-design risk with agents plus bio-design tools against experimental ground truth.",
+   "evidence": [
+    {
+     "id": "MbwCn5aoIR",
+     "year": 2027,
+     "title": "AgentCyberRange: Evaluating Frontier AI Systems in Realistic Cyber Ranges"
+    },
+    {
+     "id": "lT6nkm4mrw",
+     "year": 2027,
+     "title": "AwDGym: Attack-Only Benchmarks Overstate the Residual Risk of LLM Cyber Agents"
+    },
+    {
+     "id": "LKQ4con2iF",
+     "year": 2027,
+     "title": "DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design"
+    },
+    {
+     "id": "2YvbLQEdYt",
+     "year": 2026,
+     "title": "CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale"
+    }
+   ]
+  },
+  {
+   "title_zh": "SAE share flat as work turns to measurement",
+   "tag": "fading",
+   "body_zh": "Sparse autoencoders (SAEs) did not grow with interpretability as a whole, and research has turned to testing how they are measured. The SAE share fell from 36.8 to 34.9 per 10k submissions, while papers scrutinizing their metrics, seed dependence and causal claims rose from 8 to 43. None of the 7 papers in 2026 that used SAEs directly as safety steering or defense tools was accepted.",
+   "note_zh": "Scope includes INTERP_GEN and counts SAEs, transcoders and crosscoders, 73 → 150 papers; INTERP_GEN went 111.5 → 179.0 per 10k over the same period. Scrutiny papers 4.0 → 10.0 per 10k, by title regex. Examples: reconstruction metrics cannot certify basis quality (l1b24dZA4C), SAE causal claims do not hold up across measurement choices, and a reporting standard for SAE ablation scores (BUQKer9bbG). Skeptical work accepted in 2026: a theory of SAE limitations (6.0), automated interpretability metrics that cannot tell trained from randomly initialized Transformers (6.0), and different seeds on the same data learning different features (5.5). The 7 SAE safety-tool papers had a mean rating of 3.92. Safety work that still uses SAEs has mostly shifted to auditing or probing, such as behaviour recovering after an SAE clamp is bypassed (iTSq5A4muv) and removing monitor shortcuts.",
+   "evidence": [
+    {
+     "id": "l1b24dZA4C",
+     "year": 2027,
+     "title": "DIAL M FOR MONOSEMANTICITY : RECONSTRUCTION METRICS CANNOT CERTIFY SAE BASIS QUALITY"
+    },
+    {
+     "id": "iTSq5A4muv",
+     "year": 2027,
+     "title": "SAE Interventions Can Be Unreliable: Post-Intervention Recovery of Suppressed Behavior"
+    },
+    {
+     "id": "BUQKer9bbG",
+     "year": 2027,
+     "title": "A Reporting Standard for Sparse Autoencoder Ablation Scores"
+    },
+    {
+     "id": "USyGD0eUod",
+     "year": 2026,
+     "title": "Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers"
+    }
+   ]
+  },
+  {
+   "title_zh": "Safety interpretability turns to refusal mechanisms and causal validity",
+   "tag": "shift",
+   "body_zh": "Safety interpretability (INTERP_SAFE) rose from 60.1 to 88.6 per 10k submissions, and its focus moved from steering defenses to refusal mechanisms. Refusal-mechanism papers rose from 12 to 71; after RLVR training, Qwen2.5-7B's gap between recognizing harm and actually refusing widened from 19.3 to 36.6 points. Papers critiquing causal intervention itself rose from 1 to 28.",
+   "note_zh": "Refusal mechanisms include abliteration, 6.1 → 16.5 per 10k; the RLVR-trained model is Code-R1. Other threads: in MoE and multilingual models, being steerable does not mean being localized (Xx1ceKFk12); tool-calling settings. Activation steering 60 → 170 papers (30.3 → 39.5 per 10k), slower than INTERP_SAFE as a whole, with a 30% acceptance rate in 2026. Causal-intervention critiques 0.5 → 6.5 per 10k, e.g. Intervention Is Not Identification, Decodability Is Not Use and What Can Activation-Patching Evidence Establish?, sharing roots with measurement-validity work. In 2026, analysis papers in the core subfields had a 20% acceptance rate; whether this batch of mechanistic papers built on controlled experiments earns better returns in 2027 remains to be seen.",
+   "evidence": [
+    {
+     "id": "N4kL8TnIRh",
+     "year": 2027,
+     "title": "Rewarding the Wrong Circuit: How RLVR Reshapes Safety in Reasoning Models"
+    },
+    {
+     "id": "Xx1ceKFk12",
+     "year": 2027,
+     "title": "Steering Does Not Imply Localization: Multilingual Refusal Control in Mixture-of-Experts Models"
+    },
+    {
+     "id": "GidObN1wEi",
+     "year": 2027,
+     "title": "INTERVENTION IS NOT IDENTIFICATION: ACTIVATION EDITS CAN PRODUCE THE PREDICTED EFFECT FOR THE WRONG REASON"
+    },
+    {
+     "id": "1vvbzAqdTe",
+     "year": 2026,
+     "title": "AlphaSteer: Learning Refusal Steering with Principled Null-Space Constraint"
+    }
+   ]
+  },
+  {
+   "title_zh": "Introspection becomes a niche but high-return oversight channel",
+   "tag": "watch",
+   "body_zh": "Papers using introspection, self-report or activation verbalization as an oversight signal rose from 3 to 28, and such papers went 3/3 in 2026 review. 2027 results conflict: work training an observer channel is advancing, but 8 open-weight models are near chance when asked whether their own computation has been altered. Whether introspection becomes a third oversight channel alongside CoT and probes depends on which side has the harder evidence.",
+   "note_zh": "1.5 → 6.5 per 10k. The 2026 mean rating for this group was 5.5, including LatentQA (6.0) and Spilling the Beans (6.0). Constructive work also includes training models to verbalize evaluation awareness (5HASBtgMJG) and reading and writing activations with a natural-language autoencoder (NLA); skeptical work points out that NLA explanations need ground-truth controls. The 8-model introspection result is in JINWOT9zWh.",
+   "evidence": [
+    {
+     "id": "M7bhrIY7b9",
+     "year": 2027,
+     "title": "Training Language Models for Introspective Oversight"
+    },
+    {
+     "id": "JINWOT9zWh",
+     "year": 2027,
+     "title": "Open-Weight Masked Introspection: Measuring What Language Models Can Report About Their Own Computation"
+    },
+    {
+     "id": "5HASBtgMJG",
+     "year": 2027,
+     "title": "Training LLMs to Verbalize Evaluation Awareness"
+    },
+    {
+     "id": "niUroX9EOd",
+     "year": 2026,
+     "title": "LatentQA: Teaching LLMs to Decode Activations Into Natural Language"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "AI control and monitor evasion",
+   "n26": 6,
+   "n27": 30,
+   "note_zh": "SHADE-Arena and production monitors become default testbeds"
+  },
+  {
+   "name_zh": "Activation probes and white-box monitors",
+   "n26": 12,
+   "n27": 61,
+   "note_zh": "Already used as front-line monitors; validity audits 3 → 21 papers"
+  },
+  {
+   "name_zh": "CoT monitorability",
+   "n26": 9,
+   "n27": 29,
+   "note_zh": "Training side effects, trainability and theoretical bounds"
+  },
+  {
+   "name_zh": "CoT faithfulness",
+   "n26": 13,
+   "n27": 28,
+   "note_zh": "Flat share, 15% acceptance rate in 2026, saturated"
+  },
+  {
+   "name_zh": "Steganography and covert channels",
+   "n26": 9,
+   "n27": 18,
+   "note_zh": "56% acceptance rate in 2026 (5/9), favoured by reviewers"
+  },
+  {
+   "name_zh": "Alignment auditing and hidden-behaviour elicitation",
+   "n26": 14,
+   "n27": 28,
+   "note_zh": "Flat share; benchmarks such as AuditBench appear"
+  },
+  {
+   "name_zh": "Model diffing and API integrity",
+   "n26": 8,
+   "n27": 20,
+   "note_zh": "50% acceptance rate in 2026; diffing audits under attack"
+  },
+  {
+   "name_zh": "LLM judge reliability",
+   "n26": 7,
+   "n27": 51,
+   "note_zh": "Self-preference, unanimous passes, adversarial judges"
+  },
+  {
+   "name_zh": "Introspection and activation verbalization",
+   "n26": 3,
+   "n27": 28,
+   "note_zh": "New oversight channel; 3/3 accepted in 2026"
+  },
+  {
+   "name_zh": "Weak-to-strong and debate oversight",
+   "n26": 17,
+   "n27": 25,
+   "note_zh": "8.6 → 5.8 per 10k; mostly theory and failure modes"
+  },
+  {
+   "name_zh": "Cyber capability evals",
+   "n26": 9,
+   "n27": 31,
+   "note_zh": "44% acceptance rate; CyberGym an oral"
+  },
+  {
+   "name_zh": "Bio and chem hazard evals",
+   "n26": 4,
+   "n27": 12,
+   "note_zh": "Mostly red-teaming of protein and molecular models; uplift methods scarce"
+  },
+  {
+   "name_zh": "Refusal-mechanism interpretability",
+   "n26": 12,
+   "n27": 71,
+   "note_zh": "Recognition split from execution; MoE and tool settings"
+  },
+  {
+   "name_zh": "SAE methodology scrutiny",
+   "n26": 8,
+   "n27": 43,
+   "note_zh": "Total SAE share flat over the same period"
+  },
+  {
+   "name_zh": "Causal-intervention validity critiques",
+   "n26": 1,
+   "n27": 28,
+   "note_zh": "Identification problems in patching and steering"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026 the three core subfields in this chapter had a 31% acceptance rate, slightly above the 27% baseline, and papers targeting agents reached 57% (8/14). Best rewarded were the audit cluster (50%), steganography and obfuscation (56%), introspection (3/3) and cyber evals (44%). Worst rewarded were generic safety benchmarks (19%), CoT faithfulness metrics (15%) and SAEs as safety tools (0/7); pure validity critiques also managed only 20%.",
+ "gaps_zh": [
+  "Monitor evaluation still relies on offline AUC; online interception timing, porting across harnesses and error correlation among multiple monitors are rarely studied.",
+  "Bio and CBRN evaluation is thin; work using experimental ground truth or measuring agent-plus-tool uplift is rare.",
+  "Loss-of-control capability evals such as self-replication, shutdown resistance and AI R&D automation are almost absent, only 3 → 4 papers.",
+  "Validity critiques abound, but alternative norms such as reporting standards, preregistered protocols and detection limits remain isolated cases.",
+  "Oversight of multi-agent systems and new architectures is just starting; core papers targeting multi-agent went only 1 → 15.",
+  "Informed adversaries can evade audits, yet audit protocols that assume the auditor is known and API identity guarantees remain small-scale."
+ ],
+ "watchlist_zh": [
+  "Training against probes and mutual-information post-training may create new Goodhart problems: monitors that work in distribution but get bypassed in practice.",
+  "Red-teaming production monitors and measuring spontaneous evasion may become the focus of control work in 2027.",
+  "Statistical safety arguments, including what zero detections prove, silent consensus and online interception bounds, may link oversight to governance.",
+  "New readout views such as J-space grew from 0 to 14 papers and already face causal-validity rebuttals; whether they can replace SAEs remains to be seen.",
+  "Observer-channel results conflict with near-chance introspection; 2027 review outcomes will decide where introspection goes."
+ ],
+ "notes_zh": [
+  "Method: share is per 10k submissions; total 2027 submissions are 2.17× those of 2026, so cross-year comparisons use share. Subfield codes: oversight = OVERSIGHT, dangerous-capability evaluation = DANGER_EVAL, safety interpretability = INTERP_SAFE, general interpretability = INTERP_GEN. Oversight share counts sub or sub2.",
+  "Oversight 88 → 300 papers (3.4×); counting sub only, 31.3 → 48.1 per 10k. Share targeting agents 10% → 25%, theory type 8% → 11%.",
+  "The monitoring cluster covers CoT monitorability, AI control, probe monitors and steganography, 29 → 122 papers. Within it, AI control 3.0 → 7.0 per 10k and activation/probe monitors 6.1 → 14.2; CoT faithfulness 6.6 → 6.5.",
+  "Measurement-validity papers are counted by topic label, 30 → 124 papers; audit-style titles means negative or audit-style titles such as is not / cannot / validity / confound.",
+  "Dangerous-capability evaluation: generic and domain safety benchmarks 24.2 → 13.3 per 10k; cyber 9 → 31 papers; share targeting agents 12% → 28%.",
+  "SAE total 73 → 150 papers; scrutiny and evaluation papers 8 → 43, by title regex. In 2026, 0/7 papers using SAEs as safety tools were accepted.",
+  "2026 review details: the three core subfields (OVERSIGHT, DANGER_EVAL, INTERP_SAFE, sub only) total 163 papers, with acceptance rates of 32%, 31% and 28%; INTERP_GEN is 32%. Papers targeting reasoning models had a 17% acceptance rate (4/23); eval and method types 36% each, defense 14%, analysis 20%. Audit cluster mean rating 4.96; CyberGym was a 7.0-rated oral. The 3 orals were CyberGym, Reliable Weak-to-Strong Monitoring of LLM Agents (monitor red-teaming) and The Shape of Adversarial Influence. Top ratings went to model diffing (7.5), Output Supervision Can Obfuscate the CoT (7.0) and AlphaSteer (7.0). Reviewers rewarded falsifiable oversight findings that expose real deployment risk and evaluation methods with statistical validity guarantees, not yet another benchmark, steering defense or faithfulness score.",
+  "Microtopic details: AI control 3.0 → 7.0 per 10k, 2026 mean rating 5.0, acceptance rate 33%; activation probes 6.1 → 14.2 per 10k; CoT monitorability 4.5 → 6.7 per 10k; CoT faithfulness 6.6 → 6.5 per 10k; steganography 4.5 → 4.2 per 10k, with trained high-capacity steganography model organisms and paraphrase defenses appearing in 2027; alignment auditing: the audit-related clusters as a whole had a 50% acceptance rate in 2026, and 2027 adds RealAudit and the MO lottery; model diffing and API integrity 4.0 → 4.6 per 10k, with the 2026 diffing paper rated 7.5 and both API audit papers accepted, and AuditGym, SCORE and RMF appearing in 2027; LLM judges 3.5 → 11.9 per 10k, including silent consensus; cyber 2026 acceptance rate 44%; introspection 1.5 → 6.5 per 10k; weak-to-strong and debate work is mostly random-feature theory and debate failure modes; cyber 4.5 → 7.2 per 10k; bio/chem 2.0 → 2.8 per 10k, with CBRN uplift methodology scarce; refusal mechanisms 6.1 → 16.5 per 10k; SAE scrutiny 4.0 → 10.0 per 10k; causal-intervention critiques 0.5 → 6.5 per 10k.",
+  "Gap details: the scattered papers on monitor deployment validity are yVGzyZ8zMc, y0qbjNRQLW and CSoTCflQb2, and statistical guarantees under sampling rates are also missing; bio and CBRN evals only 4 → 12 papers; isolated cases of alternative norms are BUQKer9bbG, nYJ5p5voZ4 and UStA5Nl1ES, and pure critique papers had a 20% acceptance rate in 2026; monitoring and interpretability for diffusion LMs, looped LMs and latent communication are just starting, and collusion detection lacks a standard testbed; model diffing, probe and SAE audits have all been shown to be evadable; API integrity 4 → 7 papers.",
+  "Watch-list details: monitorability training in IVJnUfZ3IU and 5xrNwUd8y4; production monitors means blocking classifiers such as Auto Mode and Guardian, with spontaneous-evasion measurement in EvasionBench; J-space / J-lens has been used for backdoor traces and collusion detection, with a causal-validity rebuttal in wdhZZ2Y7vT."
+ ]
+}

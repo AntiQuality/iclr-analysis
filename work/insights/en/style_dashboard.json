@@ -1,0 +1,508 @@
+{
+ "title_zh": "2027 abstracts adopt a new writing style",
+ "intro_zh": [
+  "2027 submission abstracts are written in a different way. Words that stress controls and the limits of evidence rose sharply, such as evidence, held fixed and matched. Promotional words nearly vanished: novel fell from 287 to 48 per thousand papers. 42.4% of 2027 papers have a style score above 99% of 2026 papers.",
+  "The whole distribution shifted right; this is not a few papers. The median 2027 paper (6.2) is already close to the 2026 99th percentile (7.2). Read 2026 → 2027 topic trends only after discounting this change in wording. The score measures wording only. It does not identify authors, and it does not decide whether a paper was AI-generated."
+ ],
+ "facts": [
+  {
+   "label": "Share above threshold in 2027",
+   "value": "42.4%",
+   "note": "1.0% in 2026, 0.45% in 2025"
+  },
+  {
+   "label": "novel per thousand papers",
+   "value": "287 → 48",
+   "note": "Older LLM-flavored words such as delve fell about 70–90%"
+  },
+  {
+   "label": "Near-duplicate abstracts",
+   "value": "0.04%",
+   "note": "Only 9 pairs; not bulk template copying"
+  },
+  {
+   "label": "2026 acceptance odds ratio",
+   "value": "0.99",
+   "note": "Acceptance odds unchanged per 1 SD higher score"
+  }
+ ],
+ "score_hist": {
+  "bins": [
+   0.0,
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0,
+   11.0,
+   12.0,
+   13.0,
+   14.0,
+   15.0,
+   16.0,
+   17.0,
+   18.0,
+   19.0,
+   20.0,
+   21.0,
+   22.0,
+   23.0,
+   24.0,
+   25.0,
+   26.0,
+   27.0,
+   28.0,
+   29.0,
+   30.0
+  ],
+  "2025": [
+   5322,
+   2996,
+   1723,
+   788,
+   444,
+   234,
+   102,
+   33,
+   15,
+   8,
+   5,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "2026": [
+   8055,
+   4924,
+   3230,
+   1601,
+   960,
+   523,
+   291,
+   116,
+   61,
+   26,
+   15,
+   5,
+   5,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "2027": [
+   3224,
+   3404,
+   3881,
+   3456,
+   3461,
+   3548,
+   3251,
+   2961,
+   2669,
+   2460,
+   2173,
+   1771,
+   1466,
+   1357,
+   1028,
+   828,
+   632,
+   444,
+   332,
+   255,
+   151,
+   98,
+   61,
+   40,
+   32,
+   11,
+   7,
+   6,
+   2,
+   4
+  ]
+ },
+ "hist_caption_zh": "Distribution of per-paper style scores; bin width 1, y-axis is paper count. 2025 and 2026 nearly overlap and sit at 0–4. 2027 shifts right as a whole, with median 6.2, 90th percentile 13.7 and a tail reaching nearly 30. The distribution is unimodal; no second population separates out. The threshold 7.18 is the 2026 99th percentile.",
+ "markers": [
+  {
+   "term": "evidence",
+   "r25": 21.9,
+   "r26": 36.9,
+   "r27": 175.2
+  },
+  {
+   "term": "same",
+   "r25": 66.5,
+   "r26": 55.7,
+   "r27": 241.8
+  },
+  {
+   "term": "fixed",
+   "r25": 29.0,
+   "r26": 46.2,
+   "r27": 202.1
+  },
+  {
+   "term": "every",
+   "r25": 13.6,
+   "r26": 13.8,
+   "r27": 156.4
+  },
+  {
+   "term": "one",
+   "r25": 105.0,
+   "r26": 73.4,
+   "r27": 199.6
+  },
+  {
+   "term": "points",
+   "r25": 38.5,
+   "r26": 35.5,
+   "r27": 138.6
+  },
+  {
+   "term": "shared",
+   "r25": 21.4,
+   "r26": 36.5,
+   "r27": 147.1
+  },
+  {
+   "term": "frozen",
+   "r25": 7.5,
+   "r26": 13.5,
+   "r27": 113.1
+  },
+  {
+   "term": "whether",
+   "r25": 41.0,
+   "r26": 44.4,
+   "r27": 148.7
+  },
+  {
+   "term": "no",
+   "r25": 45.1,
+   "r26": 51.3,
+   "r27": 151.3
+  },
+  {
+   "term": "changes",
+   "r25": 28.4,
+   "r26": 27.8,
+   "r27": 121.5
+  },
+  {
+   "term": "does",
+   "r25": 45.2,
+   "r26": 30.0,
+   "r27": 132.5
+  },
+  {
+   "term": "so",
+   "r25": 30.2,
+   "r26": 21.7,
+   "r27": 113.9
+  },
+  {
+   "term": "what",
+   "r25": 22.4,
+   "r26": 22.4,
+   "r27": 102.5
+  },
+  {
+   "term": "from to",
+   "r25": 16.9,
+   "r26": 20.1,
+   "r27": 94.1
+  },
+  {
+   "term": "support",
+   "r25": 35.0,
+   "r26": 53.4,
+   "r27": 145.8
+  },
+  {
+   "term": "before",
+   "r25": 21.2,
+   "r26": 25.5,
+   "r27": 110.4
+  },
+  {
+   "term": "four",
+   "r25": 35.1,
+   "r26": 44.5,
+   "r27": 134.3
+  },
+  {
+   "term": "matched",
+   "r25": 2.6,
+   "r26": 5.5,
+   "r27": 99.2
+  },
+  {
+   "term": "controlled",
+   "r25": 13.9,
+   "r26": 25.5,
+   "r27": 114.4
+  }
+ ],
+ "markers_caption_zh": "The 20 style words that rose most, 2026 → 2027; values are papers per thousand abstracts that contain the word. These words were roughly flat from 2025 → 2026, so the style appeared suddenly in 2027 rather than continuing an earlier trend.",
+ "sections": [
+  {
+   "title_zh": "Same style, not copy-paste",
+   "nav": "Telling signals",
+   "paras_zh": [
+    "Titles of high-scoring papers changed too, even though titles are not scored. Titles of the form When does …?, X Is Not Y, or containing evidence/audit make up 15.1% of high-scoring 2027 papers, versus 2.5% of low-scoring ones and 2.3% in 2026. High-scoring abstracts are also longer and contain more numbers: 223 words on average, versus 185 in 2026.",
+    "There is no sign of bulk copying. 2027 has only 9 near-duplicate abstract pairs (0.04%), the same order as 2025/2026, and almost none among high-scoring papers. Desk-rejection and withdrawal rates are flat across score bands, and the score is unrelated to 2026 acceptance and ratings."
+   ],
+   "evidence": [
+    {
+     "id": "0yDuLVVVWn",
+     "year": 2027,
+     "title": "Matched Twins Show What an Evidence Contract Cannot Carry to a Verifier of ML-Experiment Claims"
+    },
+    {
+     "id": "lR4zW6Vb8x",
+     "year": 2027,
+     "title": "Silence Is Not Absence: A Probe Null Requires More Than Format Competence"
+    },
+    {
+     "id": "2BvVbECpwS",
+     "year": 2027,
+     "title": "Weak Learning Failure Alone is not Gradient Starvation"
+    },
+    {
+     "id": "wvkbSz7VnD",
+     "year": 2027,
+     "title": "Success Is Not Completion: Goal-Closure Monitoring and Corroborated Contracts for Tool-Using Agents"
+    },
+    {
+     "id": "hzOkOeFHYG",
+     "year": 2027,
+     "title": "What You Measure, Ablate, and Pool Decides the Conclusion: Auditing Sensorimotor Pretraining"
+    }
+   ]
+  },
+  {
+   "title_zh": "The whole field shifts; the tail sits in new clusters",
+   "nav": "Where it concentrates",
+   "paras_zh": [
+    "Every area is affected. All 21 primary areas were at ≤ 1.6% above threshold in 2026 and are all at 32–57% in 2027. The highest is interpretability (57%); the lowest are optimization, generative models and graph learning. By theme: evaluation 62%, agents 53%, generative models and reinforcement learning both 31%.",
+    "The highest-scoring papers concentrate in clusters that exist almost only in 2027, such as the evaluation-validity audit cluster (93%). 15 new clusters hold 9.3% of 2027 papers; 70% of their papers are above threshold, versus 39% in other clusters. But 85% of high-scoring papers still fall in existing clusters."
+   ],
+   "evidence": [
+    {
+     "id": "R1QnIz34Ut",
+     "year": 2027,
+     "title": "HOW  MUCH  INDEPENDENT  INFORMATION  DOES  AN  LLM COMMITTEE PROVIDE?"
+    },
+    {
+     "id": "kRtggxSTIi",
+     "year": 2027,
+     "title": "Auditing Size Dependence in Zero-Cost NAS Proxies: Confound-Controlled Discovery and Held-Out Evaluation"
+    },
+    {
+     "id": "tnpnMhdOiW",
+     "year": 2027,
+     "title": "Correct Numbers, Wrong Constructs: Acquisition-Aware Evaluation Across Model Scales"
+    },
+    {
+     "id": "uZENhr0H8D",
+     "year": 2027,
+     "title": "Intervention Success Is Not Mechanism Identification in Tool-Using Agents"
+    },
+    {
+     "id": "22qeQUAXBC",
+     "year": 2027,
+     "title": "Policy Improvement as Decision Revision: Preserving the Incumbent under Executable Feedback"
+    },
+    {
+     "id": "N67rP3UbVx",
+     "year": 2027,
+     "title": "Found but Forgotten: The Evidence Assembly Gap in Retrieval-Augmented Generation"
+    }
+   ]
+  },
+  {
+   "title_zh": "Promotional words exit, contrastive words rise",
+   "nav": "Vocabulary",
+   "paras_zh": [
+    "From 2025 → 2026 the rising words were promotional, such as framework that, strong, paradigm and unified; all of them fell back in 2027. What rose in 2027 were contrastive words such as evidence, matched, frozen, held-out, rather than and whether. On the right are randomly sampled low-scoring 2027 papers. They still use the usual background, limitation, method structure, so 2027 writing is not uniform.",
+    "Old AI-writing marker words fell to near zero in 2027: underscore 27 → 2 per thousand papers, comprehensive 91 → 17. Old word-frequency indicators would therefore conclude that AI use fell in 2027, the opposite direction to the new style. From word frequencies alone, neither indicator can identify authors or tools."
+   ],
+   "evidence": [
+    {
+     "id": "AeW8zDu5nu",
+     "year": 2027,
+     "title": "Back to the Future: Reverse-Consequence Modeling for Long-Horizon Particle Dynamics"
+    },
+    {
+     "id": "U5zDnvH5JD",
+     "year": 2027,
+     "title": "Quantum Sharpness-Aware Minimization"
+    },
+    {
+     "id": "AuiiWB2mFR",
+     "year": 2027,
+     "title": "Gradient Subspace Dynamics During Supervised Fine-Tuning of LLMs: Input–Output Asymmetry"
+    },
+    {
+     "id": "VUFj5cptA9",
+     "year": 2027,
+     "title": "Textual Environmental Context and Spatial Graphs for LLM-Based Regional SST Forecasting"
+    },
+    {
+     "id": "OIbjUInQex",
+     "year": 2027,
+     "title": "ChartGalaxy++: A Richly Annotated Dataset for Chart Understanding and Generation"
+    }
+   ]
+  },
+  {
+   "title_zh": "Discount wording before reading topic trends",
+   "nav": "Reading trends",
+   "paras_zh": [
+    "Topic clustering is partly driven by wording. Clusters 70, 196, 252 and others had almost no papers in 2025/26; in 2027, 68–93% of their papers are above threshold. Growth in these clusters should be read as one writing style plus a few related topics, not directly as new directions emerging.",
+    "Growth in themes such as evaluation, agent governance and interpretability needs a robustness check before any conclusion. Conversely, the disappearance of words like novel and significantly biases counts based on abstract keywords downward. This style is unrelated to 2026 acceptance and ratings, so it cannot serve as a quality signal. Whether reviewers react to it will be known only from 2027 outcomes."
+   ],
+   "evidence": [
+    {
+     "id": "2BvVbECpwS",
+     "year": 2027,
+     "title": "Weak Learning Failure Alone is not Gradient Starvation"
+    },
+    {
+     "id": "qd4q2OE0OE",
+     "year": 2027,
+     "title": "Hidden Tape: Addressable Communication Beneath Identical Text"
+    },
+    {
+     "id": "28hXY8kEKI",
+     "year": 2027,
+     "title": "Identity-Exact Multi-Bias Activations: Breaking Optimization Symmetry Without Changing the Pretrained Function"
+    },
+    {
+     "id": "Cja2oEWHhS",
+     "year": 2027,
+     "title": "Controlled Acquisition and Abstention in Three-Channel Score Conflicts"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "id": "R1QnIz34Ut",
+   "title": "HOW  MUCH  INDEPENDENT  INFORMATION  DOES  AN  LLM COMMITTEE PROVIDE?",
+   "score": 29.93
+  },
+  {
+   "id": "8QGJ2dnd8j",
+   "title": "StrataBench: Expert-Grounded Evaluation for Oil and Gas Land and Title",
+   "score": 29.56
+  },
+  {
+   "id": "90ibjymozF",
+   "title": "Reading and Writing: Testing Natural Language as a Causal Channel for Refusal",
+   "score": 29.1
+  },
+  {
+   "id": "950or2jh05",
+   "title": "Learning a Behavioral Skill Basis for AI Agents",
+   "score": 29.09
+  },
+  {
+   "id": "0yDuLVVVWn",
+   "title": "Matched Twins Show What an Evidence Contract Cannot Carry to a Verifier of ML-Experiment Claims",
+   "score": 28.44
+  },
+  {
+   "id": "aCc0AKg8B4",
+   "title": "What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents",
+   "score": 28.09
+  },
+  {
+   "id": "lSUr28odRy",
+   "title": "Relational Composition as Parallel Transport: What Per-Entity Frames Force in Attention",
+   "score": 27.96
+  },
+  {
+   "id": "iFUFUDHcyH",
+   "title": "SAUNA: Source-Anchored Unsupervised Neural Adaptation for Cross-Subject EEG Decoding",
+   "score": 27.68
+  },
+  {
+   "id": "qd4q2OE0OE",
+   "title": "Hidden Tape: Addressable Communication Beneath Identical Text",
+   "score": 27.33
+  },
+  {
+   "id": "btB6Cx4HsN",
+   "title": "Relic: From Multi-Agent Collaboration to Persistent Organizational Capability",
+   "score": 27.19
+  },
+  {
+   "id": "QsOlwlev7g",
+   "title": "Same Probe, Different Numbers: Are Activation Probes Robust to Inference-Time Numerical Non-Determinism?",
+   "score": 27.13
+  },
+  {
+   "id": "kRtggxSTIi",
+   "title": "Auditing Size Dependence in Zero-Cost NAS Proxies: Confound-Controlled Discovery and Held-Out Evaluation",
+   "score": 27.02
+  }
+ ],
+ "caveat_zh": "The data confirm three things. Wording in 2027 abstracts and titles shifted at large scale and across fields. The shift is most concentrated in some new clusters. It is not text duplication, and it is unrelated to 2026 acceptance and ratings. The source cannot be determined from metadata. The default style of a new generation of writing assistants, automated research pipelines, community norms against promotional writing, and the AI-use disclosure and 20-submission cap new in 2027 are all consistent with the observations; this data has no disclosure content or author information. The score cannot be used to decide that any specific paper was AI-generated. Example papers are typical only in wording, not in origin.",
+ "notes_zh": [
+  "Scoring: log-odds with an informative Dirichlet prior (Monroe et al. (2008)) over abstract unigrams/bigrams, comparing 2026 → 2027.",
+  "Only topic-independent style/function words are kept: KL < 0.10 across 2027 primary areas, hand-listed topic nouns removed, 2026 coverage < 50%, and 2027/2026 ratio ≥ 2.",
+  "The 40 markers that rose most are kept; paper score = Σ ln(r27/r26) × 1[marker appears in the abstract]. Titles are not scored and serve as independent corroboration.",
+  "The threshold is the 2026 99th percentile (score > 7.18); by construction, 1.0% of 2026 papers exceed it.",
+  "Robustness: a split-half check, selecting words on one half and evaluating on the other, gives 44.2%; length-stratified thresholds give 41.2%. The score correlates with abstract length, r = 0.48 in 2027.",
+  "Near-duplicate means TF-IDF cosine similarity > 0.8: 9 pairs among 43,013 papers in 2027 (0.04%), 0.02% in 2026.",
+  "Acceptance analysis: OR per 1 SD of score = 0.99, 95% CI 0.96–1.03, controlling for abstract length and primary area, n = 13,811; Spearman ρ with mean rating = -0.002.",
+  "Old LLM-flavored words are those that 2023–25 literature used as markers of LLM-assisted writing, such as delve, showcase, comprehensive, intricate, underscore and pivotal.",
+  "Title corroboration: across 2027 score deciles, the share of characteristic titles rises monotonically from 2.5% to 21.7%. Other features of high-scoring abstracts: 5.3 numbers vs 1.7; 50% contain a percentage (23% in 2026); 4.9 keywords vs 3.8; 61% fill in a TL;DR (50% for low-scoring 2027 papers; 2025/26 data have no TL;DR, so there is no cross-year comparison). Low-scoring 2027 abstracts average 173 words.",
+  "Desk-rejection rates are 0.7–1.3% across score deciles. 2027 data are a pre-review snapshot from 2026-10-07, so desk-rejection and withdrawal rates are not comparable with the final status of 2025/26.",
+  "Other primary areas with high above-threshold shares: transfer/meta-learning, foundation models, and datasets and benchmarks.",
+  "New clusters are those with ≤ 10 papers in 2025+2026 combined. Above-threshold shares in high-scoring clusters: cluster 70 (evaluation-validity audits) 93%, 137 (audit-style template abstracts) 88%, 252 (RAG evidence selection) 88%, 196 (runtime governance for tool agents) 85%. Clusters with coherence = 1 (such as 137, 83, 15) and clusters 70, 196, 252 have above-threshold shares of 68–93%.",
+  "Marker co-occurrence: after length stratification, the ratio of the variance of marker counts to the variance expected if markers occurred independently is 1.29 in 2026 and 2.04 in 2027, so some papers adopt the style almost wholesale. Across submission-number deciles, the above-threshold share rises from 39% to 53%: later submissions score higher.",
+  "More vocabulary: other promotional words that rose 2025 → 2026 include consistently, achieves, enabling and critical; other words rising in 2027 include held fixed and does. Most 2027 markers were almost unchanged 2025 → 2026; only these results and rather than started rising earlier.",
+  "Low-scoring comparison sample: randomly drawn 2027 papers scoring no higher than the 2026 median, with abstracts of 150–250 words.",
+  "Three options for topic robustness checks: recount using keywords only; remove marker words before embedding; recheck growth rates after excluding high-scoring papers.",
+  "The style-marker chart is sorted by Monroe log-odds z and includes only topic-independent function/style words."
+ ]
+}

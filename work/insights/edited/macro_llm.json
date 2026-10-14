@@ -175,7 +175,7 @@
    "title_zh": "R1 时代的推理与过度思考话题降温",
    "tag": "fading",
    "body_zh": "DeepSeek-R1 提及率每万篇 83.8 → 17.2，过度思考（overthinking）43.4 → 9.8，数学推理方向 95.4 → 26.7。高效推理的占比持平，问题从压缩 CoT 长度转向何时停止与逐 token 自适应计算。潜空间推理每万篇 45.9 → 75.1，开始与 looped 架构合流。",
-   "note_zh": "数学推理方向为 LLM mathematical reasoning 簇。高效推理概念占比 1.20% → 1.22%。Chain-of-thought and latent reasoning 簇每万篇 87.3 → 40.5；test-time scaling 165.5 → 130.0。2026 年 overthinking 簇接收率 0.252，胜出的是少数机制清晰的工作，如解耦奖励加课程调度的 oral。自适应计算代表作 PonderLM-3。",
+   "note_zh": "数学推理方向为 LLM mathematical reasoning 簇。高效推理概念占比 1.20% → 1.18%。Chain-of-thought and latent reasoning 簇每万篇 87.3 → 40.5；test-time scaling 165.5 → 130.0。2026 年 overthinking 簇接收率 0.252，胜出的是少数机制清晰的工作，如解耦奖励加课程调度的 oral。自适应计算代表作 PonderLM-3。",
    "evidence": [
     {
      "id": "kdeiRledV6",
@@ -253,7 +253,7 @@
   {
    "title_zh": "效率研究跟随推理与 agent 负载",
    "tag": "shift",
-   "body_zh": "KV cache 研究占比 1.03% → 1.84%，增长来自长推理解码与多轮 agent 场景。训练侧 Muon 每万篇 24.2 → 51.4 并开始用于 RL 与微调，FP4 训练 6.6 → 16.5。结构化剪枝与 LoRA 退潮，2026 年接收率仅 0.198 与 0.192，为全领域最低。",
+   "body_zh": "KV cache 研究占比 1.03% → 1.83%，增长来自长推理解码与多轮 agent 场景。训练侧 Muon 每万篇 24.2 → 51.4 并开始用于 RL 与微调，FP4 训练 6.6 → 16.5。结构化剪枝与 LoRA 退潮，2026 年接收率仅 0.198 与 0.192，为全领域最低。",
    "note_zh": "KV 细分（每万篇）：长推理解码 16.7 → 29.3，多轮/agent 7.6 → 21.9，prefix/KV 复用 5.0 → 25.3，KV 量化 3.5 → 12.6。Muon 2026 年接收率 0.354、均分 4.76，Polar Express 获 oral。FP4 指 NVFP4/MXFP4，2026 年接收率 0.538。剪枝与 LoRA 为簇口径：结构化剪枝每万篇 63.6 → 28.1，LoRA 63.1 → 47.2。scaling law 提及率 87.3 → 60.9。投机解码簇 35.8 → 53.2，EAGLE 12.6 → 8.4，新意来自 agent 动作级投机和混合模型上的验证。",
    "evidence": [
     {

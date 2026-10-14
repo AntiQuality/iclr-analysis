@@ -1,0 +1,79 @@
+<header class="paper wrap">
+  <div class="kicker">{{t:kicker}}</div>
+  <h1>{{t:title}}</h1>
+  <div class="dek">{{t:dek}}</div>
+  <div class="byline" id="byline"></div>
+  <div class="links" id="links"></div>
+</header>
+<nav class="toc wrap" id="toc" aria-label="{{t:tocAria}}"></nav>
+<nav class="section-nav" id="sectionNav" aria-label="{{t:sectionNav}}"></nav>
+<main class="wrap">
+  <section class="part" id="p-summary" data-part="{{t:pSummary}}">
+    <div class="part-head"><span class="pno">1</span><h2>{{t:pSummary}}</h2></div>
+    <div class="prose" id="summary"></div>
+    <div class="kpis" id="kpis"></div>
+    <ol class="findings" id="findings"></ol>
+  </section>
+
+  <section class="part" id="p-landscape" data-part="{{t:pLandscape}}">
+    <div class="part-head"><span class="pno">2</span><h2>{{t:pLandscape}}</h2></div>
+    <p class="prose lead" id="landIntro"></p>
+    <div class="scope"><span class="scope-l">{{t:scope}}</span><div class="seg robustSeg"></div><span class="scope-n" id="robustNote1"></span></div>
+    <h3 id="l-themes" data-nav="{{t:hThemes}}">{{t:hThemes}}</h3>
+    <div class="figure"><div class="legend"><span><i style="background:var(--y25)"></i>2025</span><span><i style="background:var(--y26)"></i>2026</span><span><i style="background:var(--hot)"></i>{{t:legRise}}</span><span><i style="background:var(--down)"></i>{{t:legFall}}</span></div><div id="themeChart"></div>
+      <div class="figure-caption"><b>{{t:fig}} 1.</b> {{t:capThemes}}</div></div>
+    <h3 id="l-map" data-nav="{{t:hMap}}">{{t:hMap}}</h3>
+    <p class="prose" id="mapIntro"></p>
+    <div class="controls"><div class="seg" id="mapTheme"></div></div>
+    <div class="figure"><div id="clusterScatter"></div><div class="figure-caption"><b>{{t:fig}} 2.</b> {{t:capMap}}</div></div>
+    <h3 id="l-movers" data-nav="{{t:navMovers}}">{{t:hMovers}}</h3>
+    <div class="grid2"><div class="table-wrap"><table class="rt" id="riseTable"></table></div><div class="table-wrap"><table class="rt" id="fallTable"></table></div></div>
+    <h3 id="l-signal" data-nav="{{t:hSignal}}">{{t:hSignal}}</h3>
+    <p class="prose" id="signalIntro"></p>
+    <div class="figure"><div id="quadChart"></div><div class="figure-caption"><b>{{t:fig}} 3.</b> {{t:capSignal}}</div></div>
+    <h3 id="l-table" data-nav="{{t:hTable}}">{{t:hTable}}</h3>
+    <div class="controls"><input class="search" id="clSearch" placeholder="{{t:searchClusters}}" aria-label="{{t:searchClusters}}"><select class="sel" id="clTheme" aria-label="{{t:colTheme}}"></select></div>
+    <div class="table-wrap tall"><table class="rt" id="clTable"></table></div><p class="table-caption">{{t:tableHint}}</p>
+    <h3 id="l-areas" data-nav="{{t:navAreas}}">{{t:hAreas}}</h3>
+    <div class="figure"><div id="areaChart"></div><div class="figure-caption"><b>{{t:fig}} 4.</b> {{t:capAreas}}</div></div>
+  </section>
+
+  <section class="part" id="p-radar" data-part="{{t:pRadar}}">
+    <div class="part-head"><span class="pno">3</span><h2>{{t:pRadar}}</h2></div>
+    <p class="prose lead" id="radarIntro"></p>
+    <div class="scope"><span class="scope-l">{{t:scope}}</span><div class="seg robustSeg"></div><span class="scope-n" id="robustNote2"></span></div>
+    <h3 id="r-concepts" data-nav="{{t:navConcepts}}">{{t:hConcepts}}</h3>
+    <div class="controls"><div class="seg" id="radarGroup"></div></div><div class="controls"><div class="seg" id="radarSort"></div></div>
+    <div class="table-wrap"><table class="rt" id="radarTable"></table></div>
+    <h3 id="r-eco" data-nav="{{t:navEco}}">{{t:hEco}}</h3><p class="prose" id="ecoIntro"></p>
+    <div class="grid2"><div class="figure"><div id="modelChart"></div><div class="figure-caption"><b>{{t:fig}} 5.</b> {{t:capModels}}</div></div>
+      <div class="figure"><div id="benchChart"></div><div class="figure-caption"><b>{{t:fig}} 6.</b> {{t:capBench}}</div></div></div>
+    <h3 id="r-kw" data-nav="{{t:hKw}}">{{t:hKw}}</h3><div class="grid3" id="kwBlocks"></div>
+  </section>
+
+  <section class="part" id="p-domains" data-part="{{t:pDomains}}">
+    <div class="part-head"><span class="pno">4</span><h2>{{t:pDomains}}</h2></div>
+    <p class="prose lead" id="domainsIntro"></p>
+    <div class="subtabs" id="domainTabs" role="tablist"></div>
+    <div id="domainBody"></div>
+  </section>
+
+  <section class="part" id="p-style" data-part="{{t:pStyle}}">
+    <div class="part-head"><span class="pno">5</span><h2 id="styleTitle">{{t:pStyle}}</h2></div>
+    <div class="prose lead" id="styleIntro"></div>
+    <div id="styleBody"></div>
+  </section>
+
+  <section class="part" id="p-papers" data-part="{{t:pPapers}}">
+    <div class="part-head"><span class="pno">6</span><h2>{{t:pPapers}}</h2></div>
+    <p class="prose lead" id="papersIntro"></p>
+    <div class="controls" id="exControls"></div>
+    <div class="table-wrap tall"><table class="rt" id="exTable"></table></div><p class="table-caption" id="exCount"></p>
+  </section>
+
+  <section class="part notes" id="p-notes" data-part="{{t:pNotes}}">
+    <div class="part-head"><span class="pno"></span><h2>{{t:pNotes}}</h2></div>
+    <div id="methodBody"></div>
+    <ol class="fnlist" id="fnList"></ol>
+  </section>
+</main>

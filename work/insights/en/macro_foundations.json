@@ -1,0 +1,396 @@
+{
+ "key": "foundations",
+ "title_zh": "Theory, representations, interpretability and evaluation",
+ "subtitle_zh": "Three real shifts; most other wording growth comes from formulaic writing",
+ "headline_zh": "There are three real structural changes. Muon-style matrix optimizers rose from 15.6 to 36.0 per 10k submissions. Interpretability moved from reading out features to intervening. Evaluation moved from chat and reasoning leaderboards to agents, multi-turn dialogue and rubrics. Most of the growth in wording such as audit, probe, preregistration and validity comes from 2027 formulaic papers. Excluding formulaic papers, the interpretability share is flat (304 → 291) and evaluation actually falls (416 → 313).",
+ "stats": [
+  {
+   "label_zh": "Share of formulaic papers in 2027",
+   "value": "Evaluation 62% · interpretability 57% · representations 39% · theory 36%",
+   "note_zh": "Corpus-wide: 42.4% in 2027, 1.0% in 2026"
+  },
+  {
+   "label_zh": "Interpretability theme share",
+   "value": "304 → 393 per 10k (291 excluding formulaic papers)",
+   "note_zh": "All of the increase comes from formulaic papers"
+  },
+  {
+   "label_zh": "Muon-style matrix optimizers",
+   "value": "15.6 → 36.0 per 10k",
+   "note_zh": "2026 acceptance rate 38.7%, vs. 27.0% baseline"
+  },
+  {
+   "label_zh": "Causal intervention and patching",
+   "value": "8.1 → 80.0 per 10k",
+   "note_zh": "32.7 excluding formulaic papers, still 4×"
+  },
+  {
+   "label_zh": "learning theory acceptance rate",
+   "value": "36.8% (highest of 21 primary areas)",
+   "note_zh": "Share 260 → 322; 324 excluding formulaic papers"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Muon research turns to cheap runs at scale",
+   "tag": "rising",
+   "body_zh": "The share of matrix-aware optimizers rose from 15.6 to 36.0 per 10k, and the rise holds excluding formulaic papers. All new growth goes to matrix optimizers: Muon cluster 15.1 → 37.4, Adam-style cluster 33.8 → 15.3. 2027 papers concentrate on fewer Newton–Schulz (NS) iterations, distributed communication and a unified LMO theory.",
+   "note_zh": "Scope covers Muon, Shampoo, SOAP and Newton–Schulz/polar, counted by title + keywords, 31 → 155 papers; 40.3 excluding formulaic papers. 35% of matching papers are formulaic, below the corpus-wide 42%. Muon is cluster 255, Adam-style is cluster 108; the share of titles mentioning Adam is flat (18.2 → 18.1). Representative 2026 work: the oral “The Polar Express” (mean rating 8.0) and a convergence proof for Muon+NS. Muon-related papers had a 2026 acceptance rate of 38.7% (mean rating 4.65); cluster 255 had 40.0%. Three 2027 directions: fewer NS steps or low precision, and adaptive spectral estimation (Turbo-Muon, Precision-Aware NS), with full-text NS/polar mentions 38.4 → 58.8 per 10k; distributed training and communication compression (MuonMix, StructMuon, RADeMuon); unifying Muon, Scion and Adam through LMOs (linear minimization oracles) (Chained LMOs). Mechanistic work is starting to connect to classic training dynamics: no-momentum Muon and the edge of stability, Muon's implicit bias, Muon and simplicity bias.",
+   "evidence": [
+    {
+     "id": "yRtgZ1K8hO",
+     "year": 2026,
+     "title": "The Polar Express: Optimal Matrix Sign Methods and their Application to the Muon Algorithm"
+    },
+    {
+     "id": "K4XVD6wq8Q",
+     "year": 2027,
+     "title": "Turbo-Muon: Almost-Orthogonal Pre-Conditioning for Fast Muon Updates"
+    },
+    {
+     "id": "vHt4NzhMfE",
+     "year": 2027,
+     "title": "MuonMix: A Mixed-LMO Block-Periodic Algorithm for Efficient Distributed Muon Training"
+    },
+    {
+     "id": "bzyfCGPcet",
+     "year": 2027,
+     "title": "No-Momentum Muon Sublates the Edge of Stability in LLM Pretraining"
+    }
+   ]
+  },
+  {
+   "title_zh": "Theory returns to lower bounds, now for attention and RLHF",
+   "tag": "shift",
+   "body_zh": "Papers on sample complexity, minimax rates and lower bounds rose from 34.3 to 71.1 per 10k, and the rise holds excluding formulaic papers. The new lower bounds target LLM-era objects: bilinear attention scores, corrupted CoT supervision, last-iterate convergence of KL-regularized constrained RLHF. In-context learning (ICL) theory is shrinking: the ICL theory cluster fell from 23.2 to 10.7, even though its 2026 acceptance rate was 41.3%.",
+   "note_zh": "Counted by title + keyword regex. 63.3 excluding formulaic papers; in the subset with style scores at or below the 2026 median, 36.3 → 56.1. Cluster 33 appears to go 8.1 → 80.9, but 58% of it is formulaic papers with titles mostly of the form “the cost/limits of X”. We therefore estimate about 2× from regex counts, not the cluster count's 10×. Additional data: theory papers on RLHF/GRPO/preferences in the learning theory and optimization primary areas 13.1 → 26.5; ICL theory is cluster 226, and the ICL mechanism cluster 103 went 41.9 → 17.0. New objects also include minimax rates for hierarchical reasoning rewards and information-rate limits of test-time reasoning. The theory theme is the least affected by writing style.",
+   "evidence": [
+    {
+     "id": "nrVS6VheqR",
+     "year": 2027,
+     "title": "Minimax Sample Complexity of Full and Low-Rank Bilinear Attention Score Estimation"
+    },
+    {
+     "id": "Slx0eJPEPj",
+     "year": 2027,
+     "title": "Minimax Learning from Corrupted Chain-of-Thought Supervision"
+    },
+    {
+     "id": "n6Qpf7bz44",
+     "year": 2027,
+     "title": "Last-Iterate Convergence of Optimistic Primal--Dual Methods for KL-Regularized Constrained RLHF"
+    },
+    {
+     "id": "qA42mWsnbl",
+     "year": 2026,
+     "title": "Theory of Scaling Laws for In-Context Regression: Depth, Width, Context and Time"
+    }
+   ]
+  },
+  {
+   "title_zh": "Interpretability moves from reading features to intervening",
+   "tag": "shift",
+   "body_zh": "Activation steering rose from 85.3 to 151.3 per 10k and causal intervention from 8.1 to 80.0; both hold excluding formulaic papers. Sparse autoencoders (SAEs) stalled at 49.0 → 53.5, and post-hoc XAI fell from 97.4 to 50.9. 2026 reviewers already favored intervention: patching had an acceptance rate of 37.5%, post-hoc XAI 16.1%.",
+   "note_zh": "Counted by title + keywords. Activation steering includes representation engineering; post-hoc XAI includes saliency, counterfactual explanations and feature attribution. Excluding formulaic papers: steering 125.8, causal intervention 32.7 (still 4×), SAE 42.3, transcoder/crosscoder 2.4. Shapley cluster 16.2 → 10.7, 2026 acceptance rate 9.4%. Patching sample n=16; attention head cluster 37.9%, steering cluster 35.8%. The 2026 oral “Addressing divergent representations from causal interventions” asks whether interventions push representations off the data manifold. 2027 papers examine the data dependence of steering, the causal origin of massive activations, and localizing and repairing safety circuits. Massive activations / attention sink 7.1 → 13.9 per 10k, 2026 acceptance rate 50% (n=14). SAE variants include temporal SAE (2026 oral), Matryoshka, binary, spike-and-slab and bilinear autoencoders. Another accepted 2026 paper shows that automated interpretability metrics cannot tell trained Transformers from randomly initialized ones.",
+   "evidence": [
+    {
+     "id": "cZrTMqYVL6",
+     "year": 2026,
+     "title": "Addressing divergent representations from causal interventions on neural networks"
+    },
+    {
+     "id": "CGIzZDgcfF",
+     "year": 2027,
+     "title": "Activation Steering Is a Data Problem"
+    },
+    {
+     "id": "ETM5cVneOg",
+     "year": 2027,
+     "title": "Where Massive Activations Come From: Causal Evidence from MLP Geometry in Large Language Models"
+    },
+    {
+     "id": "MC82YzfGkA",
+     "year": 2027,
+     "title": "Targeting Duplicate Token Heads: Localizing and Repairing a Safety Circuit in LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "Most growth in audits, probes and preregistration is stylistic",
+   "tag": "watch",
+   "body_zh": "Growth in wording on linear probes, preregistration, validity and evaluation methodology disappears once formulaic papers are excluded. Linear probes rose from 8.6 to 29.1 per 10k, but are only 10.9 excluding formulaic papers. Evaluation-methodology wording is 29.8 excluding formulaic papers, below 2026's 37.3. This wording floods exactly the directions with the lowest 2026 acceptance rates: linear probe cluster 12.5%, validity 16.7%.",
+   "note_zh": "See the chapter footnote for the detection method. Additional data: 78% of papers matching linear probes are formulaic papers. Papers mentioning preregistration in the full text grew from 1 to 391, 90% of them formulaic; excluding formulaic papers, 15.3 per 10k. Validity/psychometrics 15.1 → 57.2, 20.2 excluding formulaic papers; evaluation-methodology wording 37.3 → 87.0. Clusters 137, 70, 83, 15 and 263 are 88%, 93%, 68%, 69% and 80% formulaic respectively and are not reported as research trends.",
+   "evidence": [
+    {
+     "id": "WXjd30H2gJ",
+     "year": 2027,
+     "title": "Content-Matched Is Not Lexically Matched: Text and Untrained-Network Baselines for Evaluation-Awareness Probing"
+    },
+    {
+     "id": "5KJOI7iisw",
+     "year": 2027,
+     "title": "Resolving Power: Whether a Memory Task Can See the Distinction It Claims to Test"
+    },
+    {
+     "id": "MvvZQZQ1NN",
+     "year": 2027,
+     "title": "LOOPED TRANSFORMERS LEARN ONE OF TWO ALGORITHMS, AND TRAINING MOVES THE ODDS"
+    }
+   ]
+  },
+  {
+   "title_zh": "Evaluation turns to agents and multi-turn interaction",
+   "tag": "shift",
+   "body_zh": "The share of papers naming a benchmark is roughly flat (131 → 147 per 10k); what changed is what gets measured. Agent, tool and SWE benchmarks rose from 88.3 to 163.9, and user simulators from 2.0 to 15.6; both hold excluding formulaic papers. Chat- and reasoning-era yardsticks are falling: AlpacaEval 14.6 → 4.6, AIME 47.4 → 30.7.",
+   "note_zh": "Excluding formulaic papers: agent benchmarks 130.3, user simulators 19.4 (only 28% of matching papers are formulaic), benchmark saturation 10.5. Long-horizon agent workflow cluster 181 22.2 → 51.4, 2026 acceptance rate 40.9%, the highest among evaluation clusters. General, domain and MLLM benchmark clusters (3, 4, 178) fell from 58.5, 83.3 and 71.2 to 14.9, 14.9 and 20.0; multilingual 76.2 → 42.8. Full-text mentions: SWE-bench 18.7 → 63.0, τ-bench 2.0 → 8.8, MT-Bench 10.1 → 4.9, GPQA 38.9 → 21.6. Benchmark saturation (2.0 → 10.0) is starting to be studied in its own right. After the 2026 oral “LLMs Get Lost In Multi-Turn Conversation”, the object of evaluation moved from single-turn answers to interaction with simulated users.",
+   "evidence": [
+    {
+     "id": "VKGTGGcwl6",
+     "year": 2026,
+     "title": "LLMs Get Lost In Multi-Turn Conversation"
+    },
+    {
+     "id": "9gw03JpKK4",
+     "year": 2026,
+     "title": "Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments"
+    },
+    {
+     "id": "AiesX78Fsi",
+     "year": 2027,
+     "title": "CUEing User Simulators: Calibrated User Embeddings for Multi-Turn Benchmarking"
+    },
+    {
+     "id": "X5SAmNj1Vx",
+     "year": 2027,
+     "title": "Evaluating Model Capabilities After Benchmark Saturation"
+    }
+   ]
+  },
+  {
+   "title_zh": "Evaluation meta-science really grows about 1.4×",
+   "tag": "rising",
+   "body_zh": "Papers on benchmark reliability, noise, validity and contamination rose from 42.4 to 127.6 per 10k, but reach only 58.5 excluding formulaic papers. Real growth is in LLM-as-a-judge audits, rubric evaluation and statistically valid ranking methods. Two 2026 orals set the standard: deliver reproducible statistical corrections, not calls for audits.",
+   "note_zh": "The apparent increase is about 3×, about 1.4× excluding formulaic papers. The subset with style scores at or below the 2026 median is flat (40.3 → 35.1). LLM-as-a-judge is cluster 7, 18.7 → 37.7 (26.2 excluding formulaic papers), 2026 acceptance rate 32.4%; rubric 11.6 → 41.8 (40.3 excluding formulaic papers), 2026 acceptance rate 39.1%. Ranking methods include anytime-valid confidence sequences and benchmark error correction from model disagreement. The two orals are Train-before-Test and a study of micro-benchmarking reliability. Rubric work includes learned rubric selection and ordering (GraphRubric), importance-weighted scoring criteria and rubric quality diagnostics. LLM-as-a-judge work is turning to ranking instability audits, quantile calibration and preference leakage.",
+   "evidence": [
+    {
+     "id": "ORv3SAzus1",
+     "year": 2026,
+     "title": "Train-before-Test Harmonizes Language Model Rankings"
+    },
+    {
+     "id": "cReExMQLiK",
+     "year": 2026,
+     "title": "How Reliable is Language Model Micro-Benchmarking?"
+    },
+    {
+     "id": "i4dRfFQJdM",
+     "year": 2027,
+     "title": "Rank Confidence Sequences: Anytime-Valid Leaderboards"
+    },
+    {
+     "id": "Iqq0UGSYyC",
+     "year": 2027,
+     "title": "When the Judge Changes the Verdict: Rank Instability and an Auditing Protocol for LLM-as-a-Judge"
+    }
+   ]
+  },
+  {
+   "title_zh": "Representation learning growth comes from TTT, JEPA and tabular models",
+   "tag": "rising",
+   "body_zh": "Test-time training (TTT) rose from 17.2 to 39.8 per 10k, with a 2026 acceptance rate of 44.1%. JEPA rose from 7.1 to 66.5. It is mostly used for latent-space world models and has spread to proteins, atomic systems and aerodynamic fields. Tabular foundation models rose from 7.1 to 33.7 and hold excluding formulaic papers, but their 2026 acceptance rate was only 14.3%.",
+   "note_zh": "TTT and fast weights are counted together. Excluding formulaic papers: TTT 31.5, JEPA 54.4, tabular foundation models 33.9. The 2026 oral “In-Place Test-Time Training” had mean rating 7.33. 2027 brings modular TTT and external neural memory for LLMs, plus a paper finding limited fast-weight utilization in pretrained LLMs. TTT splits into two camps. The architecture camp builds TTT layers, LaCT and external neural memory, with full-text mentions 3.0 → 8.8. The agent camp does test-time RL and learning from failure. Full-text LeJEPA/SIGReg went from 0 to 43 papers and became JEPA's new default regularizer; V-JEPA 1.0 → 15.1; domain JEPAs include ProteinJEPA, Atom-JEPA and AeroJEPA. JEPA overlaps with the embodied AI chapter. Tabular foundation models means TabPFN/TabICL; research is turning to using them as a platform for conformal prediction, fairness and test-time compute.",
+   "evidence": [
+    {
+     "id": "dTWfCLSoyl",
+     "year": 2026,
+     "title": "In-Place Test-Time Training"
+    },
+    {
+     "id": "x7actWdqhZ",
+     "year": 2027,
+     "title": "Test-Time Training for Pretrained LLMs: An Empirical Study of Limited Fast-Weight Utilization"
+    },
+    {
+     "id": "Y5mutDGK8R",
+     "year": 2027,
+     "title": "ProteinJEPA: Latent prediction improves protein language model pretraining"
+    },
+    {
+     "id": "EiDDxv3BPQ",
+     "year": 2027,
+     "title": "Test-Time Compute for Tabular Foundation Models: Mechanisms, Gains, and Limits"
+    }
+   ]
+  },
+  {
+   "title_zh": "Classic representation subfields shrink; continual learning turns to LLMs",
+   "tag": "fading",
+   "body_zh": "Federated learning fell from 168.1 to 118.1 per 10k, meta-learning 72.7 → 41.4 and dataset distillation 23.7 → 9.1; all hold excluding formulaic papers. The total continual learning share rose (169 → 216), but the classic continual learning cluster fell from 69.7 to 50.4. The problem has moved to forgetting in LLM post-training and agent self-evolution: self-evolving wording rose from 50.0 to 191.3.",
+   "note_zh": "Counted by title + keywords. Excluding formulaic papers: federated learning 140.0, continual learning 190, self-evolving 140.8. Additional data: transfer/domain adaptation/domain generalization 139.8 → 117.2, contrastive/self-supervised 261.4 → 222.0, OOD generalization cluster 26.8 → 11.4; 32–46% of matching papers in these directions are formulaic, close to the corpus rate. 2026 acceptance rates: federated learning 17.1%, transfer/DA 17.0%, meta-learning 20.8%. The share of continual learning papers mentioning LLMs/foundation models/fine-tuning went 51.7% → 57.6%. Classic continual learning is cluster 68.",
+   "evidence": [
+    {
+     "id": "22hBwIf7OC",
+     "year": 2026,
+     "title": "Plug-and-Play Compositionality for Boosting Continual Learning with Foundation Models"
+    },
+    {
+     "id": "FnaDv6SMd9",
+     "year": 2026,
+     "title": "Non-Convex Federated Optimization under Cost-Aware Client Selection"
+    },
+    {
+     "id": "TUuJjVNlM9",
+     "year": 2027,
+     "title": "Learning to Evolve: Enabling LLM Continual Learning via the Stable Anchor Dynamics"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "Muon / matrix-aware optimizers",
+   "from": 15.6,
+   "to": 36.0,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 38.7%"
+  },
+  {
+   "name_zh": "Lower bounds / minimax / sample complexity",
+   "from": 34.3,
+   "to": 71.1,
+   "unit": "per10k",
+   "note_zh": "Targets shift to attention, CoT and RLHF"
+  },
+  {
+   "name_zh": "Activation steering",
+   "from": 85.3,
+   "to": 151.3,
+   "unit": "per10k",
+   "note_zh": "Persona steering share 9.7% → 14.8%"
+  },
+  {
+   "name_zh": "Causal intervention / patching",
+   "from": 8.1,
+   "to": 80.0,
+   "unit": "per10k",
+   "note_zh": "Interpretability shifts from readout to intervention"
+  },
+  {
+   "name_zh": "Representation geometry / linear representations",
+   "from": 28.8,
+   "to": 68.1,
+   "unit": "per10k",
+   "note_zh": "Studies the geometry and linear structure of representations"
+  },
+  {
+   "name_zh": "Test-time training / fast weights",
+   "from": 17.2,
+   "to": 39.8,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 44.1%"
+  },
+  {
+   "name_zh": "JEPA",
+   "from": 7.1,
+   "to": 66.5,
+   "unit": "per10k",
+   "note_zh": "LeJEPA/SIGReg from 0 to 43 papers"
+  },
+  {
+   "name_zh": "Tabular foundation models",
+   "from": 7.1,
+   "to": 33.7,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate only 14.3%"
+  },
+  {
+   "name_zh": "Rubrics (evaluation/reward)",
+   "from": 11.6,
+   "to": 41.8,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 39.1%"
+  },
+  {
+   "name_zh": "User simulators",
+   "from": 2.0,
+   "to": 15.6,
+   "unit": "per10k",
+   "note_zh": "Infrastructure for multi-turn interaction evaluation"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "Post-hoc XAI",
+   "from": 97.4,
+   "to": 50.9,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 16.1%"
+  },
+  {
+   "name_zh": "ICL mechanisms and theory",
+   "from": 65.1,
+   "to": 27.7,
+   "unit": "per10k",
+   "note_zh": "ICL theory still had a 41.3% acceptance rate in 2026"
+  },
+  {
+   "name_zh": "Federated learning",
+   "from": 168.1,
+   "to": 118.1,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 17.1%"
+  },
+  {
+   "name_zh": "Meta-learning / few-shot",
+   "from": 72.7,
+   "to": 41.4,
+   "unit": "per10k",
+   "note_zh": "Still falling excluding formulaic papers"
+  },
+  {
+   "name_zh": "Multilingual / low-resource LLMs",
+   "from": 76.2,
+   "to": 42.8,
+   "unit": "per10k",
+   "note_zh": "Still falling excluding formulaic papers"
+  },
+  {
+   "name_zh": "Dataset distillation",
+   "from": 23.7,
+   "to": 9.1,
+   "unit": "per10k",
+   "note_zh": "Still falling excluding formulaic papers"
+  },
+  {
+   "name_zh": "AlpacaEval mentions",
+   "from": 14.6,
+   "to": 4.6,
+   "unit": "per10k",
+   "note_zh": "MT-Bench 10.1 → 4.9; chat-era yardsticks exit"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026 the theory theme had an acceptance rate of 29.5%, above the 27.0% baseline; the representations theme was lowest at 22.8%. Reviewers rewarded work with clear, provable mechanisms: learning-augmented algorithms 48.5%, online learning/regret 42.9% (mean rating 5.05, highest in this chapter), ICL theory 41.3%. Work that applies off-the-shelf tools to draw conclusions was passed over: Shapley attribution 9.4%, linear probes 12.5%, post-hoc XAI 13.6%.",
+ "frontline_zh": [
+  "Muon engineering concentrates in three places: fewer NS steps, compressed distributed communication, and an LMO view that unifies Muon, Scion and Adam.",
+  "The default model in interpretability experiments switched from Llama to Qwen: Qwen mention rate 7.1% → 21.6%, Llama 8.3% → 11.6%.",
+  "Interpretability targets are expanding from chat LLMs to agents (4.2% → 9.1%) and VLAs/robots (1.4% → 2.9%).",
+  "SAEs have entered a phase of variants, while one paper shows automated interpretability metrics cannot tell trained Transformers from randomly initialized ones.",
+  "Test-time training has split into an architecture camp and an agent camp. The agent camp does test-time RL, and its wording is now hard to tell apart from agent self-evolution.",
+  "Abstracts report more statistics: bootstrap went 47.9 → 111.8 per 10k, but 65–73% of that comes from formulaic papers."
+ ],
+ "watchlist_zh": [
+  "If 2027 reviewers keep 2026's standards for probes (12.5%) and validity (16.7%), most of the growth in evaluation and interpretability will not turn into acceptances.",
+  "Whether steering and patching conclusions pass on-manifold tests.",
+  "Whether Muon keeps an acceptance rate of about 40%, and whether public large-scale training evidence shows it beating AdamW.",
+  "Tabular foundation model submissions grew 5×, yet the 2026 acceptance rate was only 14%. Will this gap narrow?",
+  "Whether JEPA and TTT become general pretraining recipes rather than components of agents or world models."
+ ],
+ "notes_zh": [
+  "Shares are per 10k submissions, counted by title + keywords unless marked full text. Two-value series without a stated year are 2026 → 2027; acceptance rates and mean ratings are 2026 data.",
+  "Formulaic papers are identified in four steps. (1) The style score comes from style_anomaly.py: a weighted sum of 40 off-topic emerging terms in the abstract (evidence, matched, frozen, whether, etc.). Papers above the 2026 99th percentile are flagged formulaic; that is 42.4% of 2027 and 1.0% of 2026. The style score measures writing style only and does not determine authorship. (2) Each sub-trend reports both the full share and the share excluding formulaic papers, and where needed the subset with style scores at or below the 2026 median. (3) Counts use title + author keyword regexes, not KMeans cluster counts, because clusters regroup by wording: general theory cluster 220 fell from 74.7 to 19.1 while artifact clusters 15 and 33 rose. (4) A change counts as a real shift only if it still grows at least 1.5× excluding formulaic papers and its formulaic share is not clearly above 42%.",
+  "Theme shares: all of the interpretability increase comes from formulaic papers. The evaluation theme went 416 → 470 per 10k, 313 excluding formulaic papers. 76% of papers matching causal intervention are formulaic, so roughly three-fifths of its increase is stylistic. The learning theory primary area share went 260 → 322 per 10k, 324 excluding formulaic papers; that growth is real.",
+  "Shares excluding formulaic papers (rising/fading tables): representation geometry/linear representations 56.1 (cluster 83 is a style cluster, so regex counts are used); post-hoc XAI 49.6; ICL mechanisms and theory (clusters 103+226) 29.8; meta-learning/few-shot 39.1; multilingual/low-resource LLMs 39.1; dataset distillation 10.5.",
+  "2026 acceptance rate breakdown: interpretability 27.2% (mean rating 4.15), evaluation 26.5% (4.28), theory mean rating 4.30, representations mean rating 4.09; transfer/meta/lifelong primary area 20.7%. Rewarded clusters: learning-augmented algorithms mean rating 4.96, long-horizon agent benchmarks 40.9%, Muon 40.0%, implicit bias 39.1%, attention head mechanisms 37.9%, training data attribution 36.8%, circuits 36.2%, steering 35.8%. Passed-over clusters: Shapley attribution mean rating 3.63, TabPFN 12.5% (3.63), unsupervised domain adaptation 13.3%, post-hoc XAI mean rating 3.59, federated learning 16.1%, domain LLM benchmarks 18.8%. At the concept level, TTT 44.1%, Muon 38.7%, rubric 39.1% and patching 37.5% run high; validity 16.7%, reproducibility 21.4% and evaluation-methodology wording 23.0% run low. In 2026 the formulaic style itself was not penalized (OR per SD 0.99, controlling for area and length), but only 1% of papers that year were written in this style.",
+  "On-the-ground details: excluding formulaic papers, the Qwen mention rate in LLM interpretability abstracts is 16.2%; OLMo 0.7% → 2.6%. Confidence intervals 16.2 → 39.1 per 10k, Bonferroni/multiple comparisons 1.0 → 12.8."
+ ]
+}

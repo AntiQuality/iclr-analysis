@@ -1,0 +1,447 @@
+{
+ "key": "mmgen",
+ "title_zh": "Visual generation and multimodal understanding",
+ "subtitle_zh": "Share flat; default methods changed in generation, video, 3D and understanding",
+ "headline_zh": "The three vision themes went from 21.4% → 19.3% of submissions. They did not grow, but the default method changed on every line. Generation moved to flow matching and few-step distillation, video to autoregressive streaming generation, 3D to feed-forward reconstruction, and multimodal LLMs (MLLMs) to spatial reasoning and streaming video on a Qwen-VL base.",
+ "stats": [
+  {
+   "label_zh": "Share of the three vision themes",
+   "value": "21.4% → 19.3%",
+   "note_zh": "20.3% in 2025"
+  },
+  {
+   "label_zh": "Flow matching vs diffusion mentions",
+   "value": "200 → 317 vs 998 → 730 per 10k",
+   "note_zh": "Ratio 0.20 → 0.43"
+  },
+  {
+   "label_zh": "Autoregressive streaming video generation",
+   "value": "12.6 → 38.4 per 10k",
+   "note_zh": "2026 acceptance rate 0.52, highest in this section"
+  },
+  {
+   "label_zh": "Specialized vs general MLLMs",
+   "value": "120.6 → 207.8 vs 124.2 → 48.1 per 10k",
+   "note_zh": "Acceptance rate 0.364 vs 0.321"
+  },
+  {
+   "label_zh": "Feed-forward 3D reconstruction",
+   "value": "12.6 → 35.8 per 10k",
+   "note_zh": "2026 acceptance rate 0.60"
+  }
+ ],
+ "insights": [
+  {
+   "tag": "shift",
+   "title_zh": "Flow matching replaces diffusion as the default generative framework",
+   "body_zh": "Flow matching is now the default framework for generation papers. Papers mentioning flow matching went from 200 → 317 per 10k submissions; those mentioning diffusion models went from 998 → 730. The ratio rose 0.20 → 0.43. In 2026, flow matching papers had an acceptance rate of 0.383, above 0.313 for diffusion.",
+   "note_zh": "Method: full-text matches for flow matching/rectified flow and diffusion model/denoising. Additional data: the author keyword diffusion model fell 409 → 271 (z=-12.5), the largest drop of any term in this area. Diffusion theory/sampling cluster 16 went 83 → 44 → 36.5; DDPM/score-based wording 68.6 → 51.6. Flow matching applications cluster 169 went 28 → 55, with applications extending to Lie groups, Finsler geometry, single-cell trajectories, reaction mechanisms and continuous flow language models. FALCON received a 2026 oral. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "FbssShlI4N",
+     "year": 2026,
+     "title": "FALCON: Few-step Accurate Likelihoods for Continuous Flows"
+    },
+    {
+     "id": "URZcHDHt6i",
+     "year": 2027,
+     "title": "Validity-Aware Flow Matching on Lie Groups: What Transfers to Target-Free Generators?"
+    },
+    {
+     "id": "CvdXzwOP6G",
+     "year": 2027,
+     "title": "Finsler Flow Matching: Dynamics-Aware Geodesic Interpolation for Single-Snapshot Trajectory Inference"
+    },
+    {
+     "id": "jJZQk8lFh4",
+     "year": 2027,
+     "title": "Rectified Language Flow"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "Few-step generation moves to MeanFlow and DMD",
+   "body_zh": "The main line in few-step generation moved from consistency models to MeanFlow and distribution matching distillation (DMD). MeanFlow/flow map went from 16.7 → 26.7 per 10k submissions and DMD from 12.1 → 22.6, with 2026 acceptance rates of 0.52 and 0.50 against a baseline of 0.27. The new move in 2027 is bringing on-policy distillation and reward-tilted distribution matching into diffusion distillation.",
+   "note_zh": "Method: the two few-step clusters are 207 (flow maps) and 266 (distillation), together 39.4 → 53.2, acceptance rate 0.436. Additional data: consistency models 28.8 → 16.5; one-step/few-step wording 146 → 270; on-policy wording in diffusion contexts 3.0 → 22.3; distillation-free one-step generation such as drifting models 0.5 → 6.7. 2027 also has theory work on flow map composability and the cost of consistency. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "2B8GkGTgmY",
+     "year": 2026,
+     "title": "CMT: Mid-Training for Efficient Learning of Consistency, Mean Flow, and Flow-Map Models"
+    },
+    {
+     "id": "adacb4JTIv",
+     "year": 2026,
+     "title": "AlphaFlow: Understanding and Improving MeanFlow Models"
+    },
+    {
+     "id": "TN82xNpc9g",
+     "year": 2027,
+     "title": "Reinforcing Few-step Generators via Reward-Tilted Distribution Matching"
+    },
+    {
+     "id": "5pn56kXIZb",
+     "year": 2027,
+     "title": "Flow Maps That Compose Exactly: When Consistency Costs Accuracy"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "Video generation moves to autoregressive streaming",
+   "body_zh": "The main line in video generation moved to Self-Forcing-style autoregressive streaming generation. This direction went from 12.6 → 38.4 per 10k submissions, with a 2026 acceptance rate of 0.52 and mean rating of 5.06, the highest in this section. Task-specific controllable video diffusion and human animation halved their share. Once open-source base models shipped with reference and camera conditioning, these pipelines lost their room.",
+   "note_zh": "Method: cluster 112 (autoregressive/streaming video generation), cluster 160 (controllable video diffusion, 65.6 → 32.8), cluster 146 (human animation, 30.8 → 11.4). Additional data: X Forcing family wording 5.6 → 23.5 (Prospective/Local/Speculative/Delta/Pyramid/Trace Forcing); KV cache wording in video generation contexts 3.5 → 19.1, focused on long-horizon consistent memory and autoregressive DMD; video world model and related wording 14.6 → 60.7; camera control 16.2 → 39.3. Base model mentions: Wan2.1/2.2 combined 20.7 → 33.0 (Wan2.2 3.5 → 11.4), HunyuanVideo 5.0 → 10.5, CogVideoX 6.6 → 4.4, closed-source Sora/Veo/Kling 10.1 → 2.8. In 2026, Self-Forcing++ had a mean rating of 7.33 and LongLive 6.67; MotionStream received an oral. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "DzvPiqh23f",
+     "year": 2026,
+     "title": "Self-Forcing++: Towards Minute-Scale High-Quality Video Generation"
+    },
+    {
+     "id": "nCAODkpsPJ",
+     "year": 2026,
+     "title": "LongLive: Real-time Interactive Long Video Generation"
+    },
+    {
+     "id": "7nPfzKKfZ4",
+     "year": 2027,
+     "title": "Pyramid Forcing: Head-Aware Pyramid KV Cache Policy for High-Quality Long Video Generation"
+    },
+    {
+     "id": "sduHZ2U3Fx",
+     "year": 2027,
+     "title": "Latent Spatial Memory for Video World Models"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "VAE is no longer the default for latent diffusion",
+   "body_zh": "Replacing the VAE is the fastest-growing direction in latent diffusion research. Pixel-space diffusion wording went from 4.5 → 20.9 per 10k submissions and representation autoencoders (RAE) from 1.5 → 8.4. 2026 reviewers rewarded changing the latent space itself: RAE and pixel-space papers had an acceptance rate of 0.57, generic REPA-style alignment tricks only 0.233.",
+   "note_zh": "Method: pixel-space diffusion includes JiT-style x-prediction and latent-free methods; the RAE/pixel-space acceptance rate rests on n=7. Additional data: the two generic DiT/latent diffusion clusters (163, 203) 88.8 → 63.0; REPA in generation contexts 15.1 → 23.5. Representative accepted 2026 papers are Diffusion Transformers with RAE, PixNerd and Latent Diffusion Model without VAE. 2027 extends this to video (pixel-space video DiT, V-RAE) and includes critiques such as Pixel Space Doesn't Save You. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "0u1LigJaab",
+     "year": 2026,
+     "title": "Diffusion Transformers with Representation Autoencoders"
+    },
+    {
+     "id": "BDnOrExHmt",
+     "year": 2026,
+     "title": "PixNerd: Pixel Neural Field Diffusion"
+    },
+    {
+     "id": "b8x2cV9LSD",
+     "year": 2027,
+     "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple"
+    },
+    {
+     "id": "2gTJxRGxQV",
+     "year": 2027,
+     "title": "Pixel Space Doesn't Save You: Two Mechanisms of Conditioning Homogenization in Diffusion Transformers"
+    }
+   ]
+  },
+  {
+   "tag": "fading",
+   "title_zh": "Fewer new unified-model and visual AR architectures",
+   "body_zh": "Fewer papers propose new architectures for unified understanding-and-generation models (UMMs) and visual autoregressive generation. UMMs went from 39.4 → 23.0 per 10k submissions, visual autoregressive generation from 41.9 → 13.9. Image generation converged on FLUX and Qwen-Image base models, with post-training dominated by Flow-GRPO-style online RL, which had a 2026 acceptance rate of 0.556.",
+   "note_zh": "Method: cluster 50 (unified multimodal), cluster 271 (visual autoregressive, VAR/MAR), cluster 187 (text-to-image alignment, 59 → 34), cluster 210 (subject-driven controllable generation, 52 → 25); online RL means Flow-GRPO/DanceGRPO/DiffusionNFT, with related wording 4.5 → 7.0 and a 2026 mean rating of 5.63. Additional data: VAR/MAR wording 36.3 → 18.6. In 2026, cluster 50 had an acceptance rate of 0.41 and mean rating of 4.74; Generative Universal Verifier received an oral at 8.0. In 2027 the question became whether generation helps understanding (UniG2U-Bench). Base model mentions: FLUX 45.9 → 53.9, Qwen-Image 8.1 → 18.1 (2026 acceptance rate 0.375), SD3/3.5 14.1 → 27.7; the SDXL/SD1.5 family had a 2026 acceptance rate of 0.185. In 2027, Imago systematically studies the online RL recipe. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "DM0Y0oL33T",
+     "year": 2026,
+     "title": "Generative Universal Verifier as Multimodal Meta-Reasoner"
+    },
+    {
+     "id": "VJZ477R89F",
+     "year": 2026,
+     "title": "DiffusionNFT: Online Diffusion Reinforcement with Forward Process"
+    },
+    {
+     "id": "JtHSh9TrHJ",
+     "year": 2027,
+     "title": "UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?"
+    },
+    {
+     "id": "O0Ct8qn2td",
+     "year": 2027,
+     "title": "Imago: Studying the Online RL Recipe for Visual Generation"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "General MLLM research gives way to specialized topics",
+   "body_zh": "MLLM research moved from general capability to specific topics. General MLLMs went from 124.2 → 48.1 per 10k submissions and specialized directions from 120.6 → 207.8. The 2026 acceptance rate for specialized work was 0.364, above 0.321 for general work. The default base model became Qwen3-VL, and the evaluation judge switched from GPT-4o to GPT-5.",
+   "note_zh": "Method: general clusters are 130 (visual understanding) and 64 (VLM analysis); specialized clusters are spatial reasoning, streaming video, two kinds of token compression, visual grounding and multimodal RL (82, 236, 154, 189, 45, 218). Additional data: Qwen3-VL 0.5 → 74.9; GPT-4o/4V 148.9 → 28.1, GPT-5 78.7 → 126.5; author keyword large multimodal model 24.7 → 3.7, multimodal llm 24.7 → 9.1; full Qwen-VL family 73.2 → 124.6, LLaVA 55.0 → 42.8, InternVL 15.1 → 22.8; multimodal R1/GRPO-style RL 101.4 → 92.1, reaching a plateau; on-policy distillation in VLM contexts 0.5 → 31.9; reasoning with latent visual tokens is a new direction. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "3gM6HwHvnc",
+     "year": 2026,
+     "title": "RL makes MLLMs see better than SFT"
+    },
+    {
+     "id": "xUyMXkI958",
+     "year": 2026,
+     "title": "DeepEyes: Incentivizing \"Thinking with Images\" via Reinforcement Learning"
+    },
+    {
+     "id": "74lhxSxrOC",
+     "year": 2027,
+     "title": "LatentOPD: On-Policy Distillation for Multimodal Reasoning with Visual Latents"
+    },
+    {
+     "id": "bVxCfXbctt",
+     "year": 2027,
+     "title": "Understand, Imagine, then Reason: Thinking with Foresight in Unified Latent Space"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "Video understanding moves to always-on streaming assistants",
+   "body_zh": "Growth in video understanding comes from streaming settings; offline long-video QA has stalled. Streaming video understanding went from 7.1 → 31.2 per 10k submissions, with a 2026 acceptance rate of 0.414. Offline long-video understanding went 42.4 → 45.1, acceptance rate 0.25. Papers evaluated mainly on offline QA benchmarks had a 2026 acceptance rate of only 0.209.",
+   "note_zh": "Method: cluster 236 (streaming video understanding, 4.4× growth), cluster 275 (offline long-video understanding); offline QA benchmarks means Video-MME/MVBench/MLVU. Additional data: streaming/online/proactive wording in MLLM contexts 14.6 → 41.8; long-video/streaming memory wording 4.0 → 17.2 (2026 mean rating 5.04); omni-modal (audio-video) wording 32.3 → 63.2, Qwen-Omni family 4.0 → 18.4. 2027 topics include proactive responses (Proact-VL2), automatic discovery of streaming memory mechanisms (MemEvo), full-duplex interaction benchmarks and diagnosing streaming intelligence illusions (StreamAct). Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "gVbPWbA97s",
+     "year": 2026,
+     "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams"
+    },
+    {
+     "id": "YTrpy3uYxb",
+     "year": 2027,
+     "title": "Proact-VL2: Reinforcement Learning for Open-Ended Proactive Real-Time Streaming Interaction"
+    },
+    {
+     "id": "QqcZ3QTdR2",
+     "year": 2027,
+     "title": "MemEvo: Automatic Discovery of Streaming Video Memory Mechanisms"
+    },
+    {
+     "id": "nCeJglsRSA",
+     "year": 2027,
+     "title": "StreamAct: Streaming or Just Answering? Diagnosing Streaming Intelligence Illusions in Video-Language Models"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "Spatial reasoning becomes the main test for MLLMs",
+   "body_zh": "Spatial reasoning is the fastest-growing MLLM topic. VLM spatial reasoning went from 31.8 → 47.4 per 10k submissions, with a 2026 acceptance rate of 0.46, in the top three across the area. 2027 work moved from building benchmarks to fixing weaknesses, training spatial reasoning with geometric process rewards and latent world simulation.",
+   "note_zh": "Method: cluster 82 (VLM spatial reasoning); spatial benchmarks are matched strictly by name, including VSI-Bench/MMSI/SPAR/MindCube/ViewSpatial/OmniSpatial/CV-Bench/BLINK. Additional data: spatial benchmark papers 8.1 → 16.3, 2026 acceptance rate 0.438; mental rotation/perspective-taking 0.524. In 2026, MMSI-Bench and Theory of Space were accepted, and a paper on how MLLM spatial intelligence generalizes received an oral. Representative 2027 work: VERSE, WorldMind, reasoning aided by rendered novel views, and SpatialChain, which audits the faithfulness of reasoning chains. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "gHRoX4vXm3",
+     "year": 2026,
+     "title": "MMSI-Bench: A Benchmark for Multi-Image Spatial Intelligence"
+    },
+    {
+     "id": "DE5ZJtR4bg",
+     "year": 2026,
+     "title": "On the Generalization Capacities of MLLMs for Spatial Intelligence"
+    },
+    {
+     "id": "4XgQCTTHEP",
+     "year": 2027,
+     "title": "VERSE: Verifiable Spatial Self-Evolution with Geometric Process Rewards"
+    },
+    {
+     "id": "7qezAf7EM8",
+     "year": 2027,
+     "title": "WorldMind: Test-Time Scaling for Visual Spatial Reasoning through Latent World Simulation"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "Feed-forward 3D reconstruction replaces per-scene optimization",
+   "body_zh": "The main line in 3D vision moved from per-scene optimization to feed-forward geometry foundation models. Feed-forward 3D reconstruction wording went from 12.6 → 35.8 per 10k submissions, with a 2026 acceptance rate of 0.60; NeRF fell 26.2 → 12.6. Per-scene 3DGS densification and compression papers had a 2026 acceptance rate of only 0.217.",
+   "note_zh": "Method: feed-forward reconstruction wording matches feed-forward 3D/GS/reconstruction; cluster 145 (feed-forward 3D/4D reconstruction) 27.3 → 49.8, 2026 acceptance rate 0.407. Additional data: feed-forward wording papers had a 2026 mean rating of 4.87; named models such as VGGT/π3/MapAnything 12.1 → 17.9; implicit neural representation cluster 260 24.2 → 13.9, novel view synthesis cluster 291 24.7 → 16.0; 3DGS total 115.6 → 105.3. Vision backbones: CLIP 198.9 → 166.9, DINOv3 6.1 → 30.0, SAM 3 0.5 → 12.6. Depth Anything 3 received a 2026 oral. 2027 continues the TTT3R idea with test-time training on feed-forward backbones (TTT4D, Anderson acceleration), and latent bundle adjustment appears. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "yirunib8l8",
+     "year": 2026,
+     "title": "Depth Anything 3: Recovering the Visual Space from Any Views"
+    },
+    {
+     "id": "5APgTKsnx8",
+     "year": 2026,
+     "title": "Streaming Visual Geometry Transformer"
+    },
+    {
+     "id": "wfDNKydk14",
+     "year": 2027,
+     "title": "Latent Bundle Adjustment"
+    },
+    {
+     "id": "OIgDOSbZoH",
+     "year": 2027,
+     "title": "Anderson Acceleration of Test-Time Training for Feed-Forward 3D Reconstruction"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "Autoregressive streaming video generation",
+   "from": 12.6,
+   "to": 38.4,
+   "unit": "per10k",
+   "note_zh": "Self-Forcing family, acceptance rate 0.52"
+  },
+  {
+   "name_zh": "Streaming video understanding",
+   "from": 7.1,
+   "to": 31.2,
+   "unit": "per10k",
+   "note_zh": "Always-on assistants, proactive responses, streaming memory"
+  },
+  {
+   "name_zh": "Video world models",
+   "from": 14.6,
+   "to": 60.7,
+   "unit": "per10k",
+   "note_zh": "Video generation moving toward interactive world simulators"
+  },
+  {
+   "name_zh": "Feed-forward 3D reconstruction",
+   "from": 12.6,
+   "to": 35.8,
+   "unit": "per10k",
+   "note_zh": "VGGT/π3/DA3 family, acceptance rate 0.60"
+  },
+  {
+   "name_zh": "Qwen3-VL mentions",
+   "from": 0.5,
+   "to": 74.9,
+   "unit": "per10k",
+   "note_zh": "Now the default VLM base model"
+  },
+  {
+   "name_zh": "VLM on-policy distillation",
+   "from": 0.5,
+   "to": 31.9,
+   "unit": "per10k",
+   "note_zh": "LLM post-training practice enters multimodal work"
+  },
+  {
+   "name_zh": "Visual token compression and pruning",
+   "from": 31.3,
+   "to": 54.9,
+   "unit": "per10k",
+   "note_zh": "Video-LLM compression acceptance rate 0.433"
+  },
+  {
+   "name_zh": "Pixel-space diffusion",
+   "from": 4.5,
+   "to": 20.9,
+   "unit": "per10k",
+   "note_zh": "RAE rises in step, 1.5 → 8.4"
+  },
+  {
+   "name_zh": "DMD distribution matching distillation",
+   "from": 12.1,
+   "to": 22.6,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 0.50; extended to video"
+  },
+  {
+   "name_zh": "DINOv3 mentions",
+   "from": 6.1,
+   "to": 30.0,
+   "unit": "per10k",
+   "note_zh": "DINOv2/v3 combined 44.4 → 85.6"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "General MLLMs",
+   "from": 124.2,
+   "to": 48.1,
+   "unit": "per10k",
+   "note_zh": "Split off into spatial, streaming, efficiency and other topics"
+  },
+  {
+   "name_zh": "Controllable image and video generation",
+   "from": 207.4,
+   "to": 103.0,
+   "unit": "per10k",
+   "note_zh": "Custom pipelines absorbed by base models; acceptance rate 0.236"
+  },
+  {
+   "name_zh": "GPT-4o/4V mentions",
+   "from": 148.9,
+   "to": 28.1,
+   "unit": "per10k",
+   "note_zh": "Judge switched to GPT-5 (78.7 → 126.5)"
+  },
+  {
+   "name_zh": "Visual autoregressive generation",
+   "from": 41.9,
+   "to": 13.9,
+   "unit": "per10k",
+   "note_zh": "Absorbed by unified models, diffusion and flow matching"
+  },
+  {
+   "name_zh": "Unified understanding and generation",
+   "from": 39.4,
+   "to": 23.0,
+   "unit": "per10k",
+   "note_zh": "Fewer new architectures; shift to synergy analysis"
+  },
+  {
+   "name_zh": "Diffusion model as author keyword",
+   "from": 409.3,
+   "to": 270.6,
+   "unit": "per10k",
+   "note_zh": "Generation papers now say flow matching"
+  },
+  {
+   "name_zh": "Consistency models",
+   "from": 28.8,
+   "to": 16.5,
+   "unit": "per10k",
+   "note_zh": "Few-step main line gave way to MeanFlow and DMD"
+  },
+  {
+   "name_zh": "NeRF",
+   "from": 26.2,
+   "to": 12.6,
+   "unit": "per10k",
+   "note_zh": "54.0 in 2025; down 77% in two years"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026, generation had an acceptance rate of 0.317, above the 0.270 baseline; multimodal (0.282) and vision (0.266) were near baseline. Reviewers rewarded new methods and efficiency: feed-forward 3D reconstruction 0.60, online RL for diffusion 0.556, autoregressive streaming video generation 0.52, MeanFlow 0.52, VLM spatial reasoning 0.46. They marked down module stacking, old base models and saturated benchmarks: text-to-image alignment 0.171, SDXL/SD1.5 base models 0.185, offline video QA 0.209, per-scene 3DGS 0.217.",
+ "frontline_zh": [
+  "The standard stack for autoregressive video generation is Self-Forcing training, a rolling KV cache and autoregressive DMD.",
+  "MeanFlow has spread beyond images to one-step robot policies, single-cell synthesis, protein backbones and language models.",
+  "On-policy distillation has entered VLM reasoning and diffusion distillation; image RL is moving from Flow-GRPO to forward-process RL.",
+  "Visual token compression has extended to omni-modal models and VLAs, and papers have started to flag evaluation selection bias from difficulty filtering.",
+  "Vision encoders are moving from CLIP to DINO; DINOv2/v3 went from 44.4 → 85.6 per 10k submissions.",
+  "Video generation evaluation is turning to physical plausibility; related wording went from 53.0 → 78.8 per 10k submissions."
+ ],
+ "watchlist_zh": [
+  "Whether video world models can become robot policy backbones while meeting real-time generation and action-conditioned control.",
+  "Whether combining pixel-space DiT, RAE and one-step generation pushes the VAE out of mainstream 2027 recipes.",
+  "Whether distillation-free one-step generation can directly replace DMD and MeanFlow distillation pipelines.",
+  "Research leans heavily on Qwen3-VL and Qwen3-Omni; whether evaluation conclusions transfer to other base models.",
+  "When standardized benchmarks for streaming full-duplex assistants will appear.",
+  "Whether geometric process rewards and latent world simulation deliver cross-benchmark generalization rather than a new round of benchmark overfitting."
+ ],
+ "notes_zh": [
+  "Units: unless noted, shares are papers per 10k submissions; acceptance rates and mean ratings come from 2026 review outcomes.",
+  "The three vision themes are mm, gen and vision. 2026 acceptance rates: gen 0.317 (mean rating 4.39), mm 0.282, vision 0.266, baseline 0.270. The area had 58 orals in total.",
+  "Flow matching and diffusion are counted by full-text wording. Author keywords: diffusion model 409 → 271, flow matching 101 → 176.",
+  "Autoregressive streaming video generation means cluster 112; specialized MLLMs means clusters 82, 236, 154, 189, 45, 218; general MLLMs means clusters 130, 64. Feed-forward 3D reconstruction counts use full-text wording.",
+  "The four controllable image and video generation clusters are 210 (subject-driven), 187 (text-to-image alignment), 146 (human animation) and 160 (controllable video diffusion). The two visual token compression clusters are 154 (video-LLM, acceptance rate 0.433) and 189 (general VLM pruning, acceptance rate 0.188). The visual autoregressive cluster is 271; the unified understanding and generation cluster is 50.",
+  "Clusters with higher 2026 acceptance rates: 112 (0.52, mean rating 5.06), 240 DiT inference acceleration/feature caching (0.465), 82 (0.46), 77 diffusion language models (0.444), 207 (0.438), 266 (0.433), 154 (0.433), 50 (0.41), 145 (0.407). Concept level: Flow-GRPO-style online RL for diffusion 0.556 (mean rating 5.63), feed-forward 3D 0.60, MeanFlow 0.52, DMD 0.50, spatial benchmarks 0.438, streaming video understanding 0.414, FM 0.383 vs diffusion 0.313.",
+  "Clusters with lower 2026 acceptance rates: 52 feature-fusion grab bag (0.147), 187 (0.171), 10 VLM reasoning diagnostics (0.173), 146 (0.18), 45 2D/3D grounding (0.185), 273 CLIP zero-shot anomaly detection (0.186), 189 (0.188), 67 ViT architectures (0.189). Concept level: SDXL/SD1.5 base models 0.185, agentic video production 0.182, generic REPA tricks 0.233, Video-MME-style offline video QA 0.209, per-scene 3DGS densification/compression 0.217.",
+  "Representative 2026 orals: Depth Anything 3, Generative Universal Verifier (8.0), Text-to-3D that stitches a video generator to multi-view reconstruction (8.0), SANA-Video, Stable Video Infinity, MotionStream, FlashWorld, FlashVID, FALCON.",
+  "Cluster 52 (feature-fusion grab bag) and cluster 46 (miscellaneous generative modeling) have coherence=1. They are wording-driven or mixed clusters, and their rises and falls do not reflect research trends.",
+  "Diffusion language models (cluster 77, theme gen) went 59.1 → 76.5 with a 2026 acceptance rate of 0.444. This is an LLM architecture topic and is not covered here.",
+  "Other frontier data: VBench 37.3 → 55.1; on-policy wording in diffusion contexts 3.0 → 22.3; SigLIP 11.1 → 14.2, SAM 3/Perception Encoder 1.0 → 13.5, promptable segmentation cluster 283 37.3 → 28.8; multi-agent video production 11.1 → 34.9 (2026 acceptance rate 0.182); egocentric wording 35.3 → 70.7, joint audio-video generation 11.1 → 18.6, Qwen-Omni family (Qwen2.5-Omni/Qwen3-Omni) 4.0 → 18.4."
+ ]
+}

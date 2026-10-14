@@ -40,7 +40,7 @@ Columns: `cluster`, `name_en`, `name_zh`, `theme`, `theme_zh`, `desc_zh`, `trend
 
 Precomputed numbers behind the dashboard. Shares are per 10,000 submissions per year, in the order [2025, 2026, 2027]; `share_r` is the same share excluding `formulaic_style` papers. `acc26` is the 2026 acceptance rate with all submissions as denominator, and `rating26` is the mean 2026 rating.
 - `macro.json`: totals, statuses, primary areas, all 300 clusters, 17 themes, rising and falling author keywords, model and benchmark mentions.
-- `concepts.json`: about 110 technique concepts matched by regex. This file included TL;DR text, which inflates 2027 counts by a median 0.5% (at most 6%).
+- `concepts.json`: 114 technique concepts matched by regex over title, keywords and abstract (TL;DR excluded).
 - `safety.json`: per-subfield counts, shares, `acc26` and `rating26`, plus type, target and subfield cross-tabs.
 - `style.json`: the wording-style analysis.
 

@@ -146,10 +146,15 @@ CONCEPTS = {
 }
 
 
+def concept_text(df):
+    """Searchable text: title, keywords and abstract. TL;DR is left out because only 2027 has it."""
+    tk = (df.title + " | " + df.keywords.map("; ".join)).str.lower()
+    return (tk + " | " + df.abstract.str.lower()), tk
+
+
 def main():
     df = pd.read_parquet(ROOT / "data" / "corpus.parquet")
-    text = (df.title + " | " + df.keywords.map("; ".join) + " | " + df.abstract + " " + df.tldr.fillna("")).str.lower()
-    tk = (df.title + " | " + df.keywords.map("; ".join)).str.lower()
+    text, tk = concept_text(df)
     tot = df.groupby("year").size()
     y26 = df.year == 2026
     acc_base = df[y26].accepted.mean()

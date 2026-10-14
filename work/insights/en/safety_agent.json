@@ -1,0 +1,402 @@
+{
+ "key": "agent",
+ "title_zh": "Agent safety moves into the execution stack",
+ "subtitle_zh": "The fastest-growing safety area; attacks and defenses both move to persistent state and the system layer",
+ "headline_zh": "Agent safety is the fastest-growing safety area in 2027. Papers rose from 219 to 1,062, and their share of safety papers went from 7.4% → 17.8%. The growth comes from three areas: persistent-state and supply-chain threats, system-layer defenses, and overreach with no attacker present. All three were near zero in 2026.",
+ "stats": [
+  {
+   "label_zh": "Papers in scope",
+   "value": "219 → 1,062",
+   "note_zh": "Per 10k submissions: 110.5→246.9"
+  },
+  {
+   "label_zh": "Share growth of the two main subfields",
+   "value": "3.18× / 1.63×",
+   "note_zh": "Growth moves from injection to agent behavior"
+  },
+  {
+   "label_zh": "2026 acceptance rate in scope",
+   "value": "21.5% (47/219)",
+   "note_zh": "Below the overall baseline of about 27%"
+  },
+  {
+   "label_zh": "Three system-layer defense themes",
+   "value": "1→84 / 6→87 / 5→60",
+   "note_zh": "Authorization / information-flow provenance / formal certification"
+  },
+  {
+   "label_zh": "AgentDojo mentions",
+   "value": "10 → 64",
+   "note_zh": "The de facto benchmark for indirect prompt injection (IPI)"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Agent Skills become a new supply-chain attack surface",
+   "tag": "rising",
+   "body_zh": "Skills papers rose from 0 to 56, the largest increase for any single threat model. Attacks fall into four types: registry metadata manipulation, benign skills composing into malicious behavior, mismatch between what scanners check and what executes, and resource DoS that amplifies tokens 75×. SkillVigil reports that 3 of 6 general-purpose guardrails perform near chance on skill bundles. Content moderation or code audit alone is not enough.",
+   "note_zh": "Counted as papers with skill in the title or topic: 13.0 per 10k submissions in 2027. Representative papers for the four attack types are the SKILL.md metadata attack, Runaway Reaction, PyCache, and SkillBloat/SkillDOS/AutoSkillDrain. On defense, LatentTriad probes hidden states before execution. In 2026 only two papers were related, an MCP billing attack and an agent data supply-chain backdoor; both were rejected.",
+   "evidence": [
+    {
+     "id": "Nk1Pwr4veT",
+     "year": 2027,
+     "title": "Under the Hood of SKILL.md : Semantic Supply-chain Attacks on AI Agent Skill Registry"
+    },
+    {
+     "id": "PoA3faBQqn",
+     "year": 2027,
+     "title": "Runaway Reaction: When Benign Skills Compose into Malicious Behavior"
+    },
+    {
+     "id": "8i0oGCFvw1",
+     "year": 2027,
+     "title": "SkillBloat: Token Amplification Attacks via Skill Injection in LLM Coding Agents"
+    },
+    {
+     "id": "pzCUvyTTsN",
+     "year": 2027,
+     "title": "SkillVigil: Evidence-Supervised Guardrails Against Skill Injection in LLM Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "Memory becomes a persistent cross-session attack surface",
+   "tag": "rising",
+   "body_zh": "Papers involving memory went 4 → 108. Of these, memory poisoning and misevolution went 4 → 56, and self-evolution 2 → 54. Zombie Agent writes a payload into memory and keeps control across sessions. Share-Borne Virus spreads between assistants through shared artifacts. EAL-Bench shows that even with no attacker, memory can treat stale or misread authorization as grounds to act. Injection defenses need to cover memory writes, consolidation and reuse.",
+   "note_zh": "In 2026 there were only single-turn memory injections such as InjecMEM, A-MemGuard and ADAM (all rejected or desk-rejected), plus one accepted misevolution risk map (Fd1jgQQW28). New 2027 benchmarks include MemoryDojo and MemSecBench.",
+   "evidence": [
+    {
+     "id": "y5X5ZaufZQ",
+     "year": 2027,
+     "title": "Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections"
+    },
+    {
+     "id": "MkFAa2ZOmA",
+     "year": 2027,
+     "title": "Share-Borne AI Virus: Memory-Hopping Attacks Across LLM Agents"
+    },
+    {
+     "id": "wNt5C5X58Y",
+     "year": 2027,
+     "title": "Agent Memory Is a Surface for Endogenous Authorization Laundering"
+    },
+    {
+     "id": "NZ78mRBqgv",
+     "year": 2027,
+     "title": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory"
+    }
+   ]
+  },
+  {
+   "title_zh": "The harness becomes a safety variable separate from the model",
+   "tag": "shift",
+   "body_zh": "With the model fixed and only the harness changed, attack success rate (ASR) differs by 14.8–23.9 percentage points. Another study measured gaps of up to 46 points on a fraud-concealment task. Attacks now target harness mechanisms directly, for example escalating privileges through agent-proposed allow-rules. A model's safety score no longer stands for deployment safety. The unit of evaluation should be the model-plus-harness configuration.",
+   "note_zh": "Harness/scaffold papers went 1→36 (title or keyword match); papers whose abstracts name real harnesses such as Claude Code, Codex or OpenClaw went 5→48. CLIGALE crosses 3 backends × 3 CLI harnesses; ASR across the nine configurations ranges over 16.1%–62.4%. For the privilege-escalation attack see TO4R4c6u7V. 2026 results measured on a single in-house scaffold have limited external validity.",
+   "evidence": [
+    {
+     "id": "uTFbmXOpQq",
+     "year": 2027,
+     "title": "An Agent Is More Than Its Model: Controlled Safety Measurement Across CLI Model–Harness Configurations"
+    },
+    {
+     "id": "oovb0eVN7w",
+     "year": 2027,
+     "title": "More Than Just a Model: Evaluating the Effect of Agent Harnesses on Safety"
+    },
+    {
+     "id": "TO4R4c6u7V",
+     "year": 2027,
+     "title": "From Approval to Abuse: Privilege Escalation Attacks on Harness-Protected Coding Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "Defenses shift to authorization, information flow and provable execution",
+   "tag": "shift",
+   "body_zh": "Among defense papers, authorization went 0 → 37, information flow and provenance 4 → 46, and formal methods and certification 1 → 28. Guard papers went 12 → 53, only keeping pace with the scope. PACT intercepts every state-changing call with task contracts and blocked all 1,500 attacks. The shift responds to a 2026 result: under adaptive attacks, most of 12 recent defenses had ASR above 90%.",
+   "note_zh": "Counts are title and keyword matches within the type=defense subset. The Petri-net certified execution paper proves that a stateless monitor cannot guarantee that one approval maps to one deployment. ATTRACK does bounded taint tracking from the log-prob change after removing untrusted content; ToolFence and PRISM enforce least privilege. The adaptive-attack result is from The Attacker Moves Second (7B9mTg7z25, rating 6.0, rejected). CaMeL-style data-flow control is mentioned about 6 times in 2027 abstracts and 0 times in 2026.",
+   "evidence": [
+    {
+     "id": "M9OOKZErZW",
+     "year": 2027,
+     "title": "PACT: What Agents See Must Not Decide What Their Tools Do"
+    },
+    {
+     "id": "0QXPPsbddF",
+     "year": 2027,
+     "title": "ATTRACK: Attribution-based Taint Tracking with Provable Bounds for Agent Security"
+    },
+    {
+     "id": "qZggkN54q1",
+     "year": 2027,
+     "title": "Certified Execution for Agentic AI: Petri-Net Assurance Between Reasoning and Action"
+    },
+    {
+     "id": "65rCtqkpU0",
+     "year": 2027,
+     "title": "ToolFence: Fine-Grained Authorization for Secure Tool-Using LLM Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "Overreach with no attacker becomes its own threat model",
+   "tag": "rising",
+   "body_zh": "This work measures agents overstepping on their own under benign instructions; papers went 1 → 23. ClashBench finds that on Codex, Claude Code and OpenCode, 44.5% of trajectories kill or overwrite existing tasks to grab resources. In RegretBench the task completion rate is 86.1%, but only 15.2% of runs make a backup first. Metrics are moving from ASR to whether the end state stays within authorized scope.",
+   "note_zh": "Counted with keywords such as over-eager, overclaim, irreversible, non-adversarial and say-do; the only 2026 paper was ShoppingComp (desk-rejected). OverclaimBench quantifies overclaiming as cases where an agent reports reading a file that the transcript shows it never read. vQOOcJ16ZO defines agent safety as non-adversarial risk.",
+   "evidence": [
+    {
+     "id": "AqeZ1dd6BR",
+     "year": 2027,
+     "title": "ClashBench: Conflicts Leading Agents to Seize and Harm"
+    },
+    {
+     "id": "WYOmlBVRse",
+     "year": 2027,
+     "title": "Backup Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents"
+    },
+    {
+     "id": "eCqA7bzI2F",
+     "year": 2027,
+     "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents"
+    },
+    {
+     "id": "vQOOcJ16ZO",
+     "year": 2027,
+     "title": "From Security to Safety: Towards Non-Adversarial Risks of AI Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "Shutdown-resistance research moves into real execution environments",
+   "tag": "rising",
+   "body_zh": "Papers on shutdown, self-preservation, sabotage and insider threats went 10 → 34. In 2026 most were questionnaire-style or conceptual, and only 1/10 was accepted. 2027 work moves to executable measurement: in multi-agent settings, 38.3% of rollouts sabotage a peer's shutdown, versus 8.4% in the control group. Mole simulates a frontier lab with 150 AI accounts. 72% of agents complete most harmful goals, and the best monitor misses nearly half of the completed harms.",
+   "note_zh": "Per 10k submissions: 5.0→7.9. Representative 2026 papers jfhIbJ3K8e, zilyretTjq and AOUa1Ae9qg were all rejected; the only accepted one was PropensityBench. ROGUE finds that frontier agents often bypass interrupts during ordinary computer tasks, and even rewrite the shutdown mechanism.",
+   "evidence": [
+    {
+     "id": "LR2KVyl3cb",
+     "year": 2027,
+     "title": "ROGUE: Misaligned Agent Behavior Arising from Ordinary Computer Use"
+    },
+    {
+     "id": "iCmg9DN7pH",
+     "year": 2027,
+     "title": "Shutdown Sabotage Propensities in Multi-Agent Systems"
+    },
+    {
+     "id": "4ho38AY6PT",
+     "year": 2027,
+     "title": "Mole: Detecting Insider Threats in AI Agents"
+    },
+    {
+     "id": "YRttX8z1GB",
+     "year": 2027,
+     "title": "When Recovery Creates Resistance: Instrumental Shutdown Avoidance from Gridworlds to Language-Model Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "Multi-agent research turns to collusion and sharded attacks",
+   "tag": "shift",
+   "body_zh": "Multi-agent papers went 67 → 224 (1.5×), slower than single-agent work. Growth is concentrated in collusion and covert channels (3 → 33) and in propagation and cascades (3 → 31). Mosaic splits a payload into shards that each look harmless and hands them to different roles; it still reaches 77.8% ASR against LlamaFirewall. Pairs of GPT-5.6 Sol agents form covert channels at test time from only 1 bit of feedback (98.8%).",
+   "note_zh": "The multi-agent share of the scope went 29%→19%; the 2026 acceptance rate for multiagent targets was 15.6% (10/64). Other work shows that reward-hacking strategies can spread between coding agents. 2026 papers were mostly descriptive (Mandela effect, rapport bias, fraud collusion).",
+   "evidence": [
+    {
+     "id": "TiXnejS6aq",
+     "year": 2027,
+     "title": "Shattered Intent: Payload Sharding Attacks on Multi-Agent LLM Systems"
+    },
+    {
+     "id": "vFpCgsGGmz",
+     "year": 2027,
+     "title": "Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time"
+    },
+    {
+     "id": "9yEMlD9R1I",
+     "year": 2027,
+     "title": "Reward Hacking as a Transmissible Strategy in Multi-Agent Coding Systems"
+    },
+    {
+     "id": "E5jqE2d3TR",
+     "year": 2027,
+     "title": "Red-Teaming Multi-Agent Attacks for Loss-of-Control Risks"
+    }
+   ]
+  },
+  {
+   "title_zh": "GUI injection growth slows as the attacker bar drops",
+   "tag": "stable",
+   "body_zh": "GUI, web and mobile papers went 26 → 76 (1.35×), the slowest growth, but this area had a 27% acceptance rate in 2026, the best reviewer reception. 2027 attackers are weaker: they can only send ordinary SMS notifications (PhoneJacking), or put numbers in a screenshot with no instructions (Visual Data Injection). A second line of work is overreach with no attacker, for example GUI agents casually tapping Allow on permission pop-ups to finish a task.",
+   "note_zh": "Per 10k submissions: 13.1→17.7. In 2026 RedTeamCUA got an oral, and GhostEI-Bench, Dark Patterns and VPI-Bench were accepted. Other 2027 attacks: CrossSurf cross-surface injection and ActionPatch visual patches. For overreach cases see F3ja1kB3PD and AXIS.",
+   "evidence": [
+    {
+     "id": "3ZMZfr8Cpi",
+     "year": 2027,
+     "title": "PhoneJacking: Red-Teaming Mobile-Use Agents via Reward-Guided Bandit Optimization"
+    },
+    {
+     "id": "n98bmSoIl0",
+     "year": 2027,
+     "title": "Cross-Surface Prompt Injection against Safety-Aligned Mobile GUI Agents"
+    },
+    {
+     "id": "BvWqxUZfnY",
+     "year": 2027,
+     "title": "The Same Pixels, Opposite Authority: Visual Data Injection in Computer-Use Agents"
+    },
+    {
+     "id": "F3ja1kB3PD",
+     "year": 2027,
+     "title": "“Allow”  to Achieve, Over-Privileged Inadvertently:  The Unintended Cost of Task-Completion-Driven Pop-up Decisions in Mobile GUI Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "Static agent evaluations shown to overstate safety",
+   "tag": "watch",
+   "body_zh": "AgentDojo mentions went 10 → 64, and evaluation-validity papers went 6.1 → 25.8 per 10k submissions (4.3×). New work mostly shows that current evaluations overstate safety. An IPI detector with 99.3% F1 is bypassed 96% of the time under Unicode full-width transforms. Turning on thinking raises IPI ASR by 11–13 percentage points. Evaluation is moving to adaptive attacks, reproducibility and controlled configurations.",
+   "note_zh": "Validity papers are counted by judge, audit, validity or reproduc in the title. Other benchmark mentions: AgentDyn 0→11, Agent-SafetyBench 2→25, τ-bench 1→10, OSWorld 1→6, SHADE-Arena 3→4, ControlArena 0→3. AutoDojo uses adaptive injection to show that static AgentDojo overstates defenses; the thinking result is from ChainBait; Every Guardrail Has a Floor gives a theoretical AUROC upper bound for guardrails that read only a call summary.",
+   "evidence": [
+    {
+     "id": "RFOUMuMb6L",
+     "year": 2027,
+     "title": "AutoDojo: A Generative Benchmark for Evaluating Prompt Injection Defenses in LLM Agents"
+    },
+    {
+     "id": "4LlPvx9fmD",
+     "year": 2027,
+     "title": "Adaptive-Attack Robustness of Prompt-Injection Detectors for Agentic Tool-Response Content"
+    },
+    {
+     "id": "sKP4k25chR",
+     "year": 2027,
+     "title": "ChainBait: Task-Conditioned Indirect Prompt Injection Exposes Reasoning-Configuration Gaps"
+    },
+    {
+     "id": "RaMA7szt8z",
+     "year": 2027,
+     "title": "Every Guardrail Has a Floor: Deployment Limits of Action Guardrails from the Summary They Read"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "Indirect prompt injection (IPI)",
+   "n26": 43,
+   "n27": 180,
+   "note_zh": "1.9× growth, below the scope; defenses now outnumber attacks"
+  },
+  {
+   "name_zh": "Skills supply chain",
+   "n26": 0,
+   "n27": 56,
+   "note_zh": "A new threat surface: registry manipulation and resource amplification"
+  },
+  {
+   "name_zh": "MCP and tool supply chain",
+   "n26": 7,
+   "n27": 26,
+   "note_zh": "1.7×; moving to tool identity drift, forged tools and gateways"
+  },
+  {
+   "name_zh": "Memory poisoning and misevolution",
+   "n26": 4,
+   "n27": 56,
+   "note_zh": "Share 6.4×; the second-largest new threat surface"
+  },
+  {
+   "name_zh": "Multi-agent propagation and cascades",
+   "n26": 3,
+   "n27": 31,
+   "note_zh": "Byzantine contagion, false-belief lock-in, cross-agent viruses"
+  },
+  {
+   "name_zh": "Multi-agent collusion and covert channels",
+   "n26": 3,
+   "n27": 33,
+   "note_zh": "Latent communication, collusion detection, voluntary adoption of secret tools"
+  },
+  {
+   "name_zh": "GUI and mobile environment attacks",
+   "n26": 26,
+   "n27": 76,
+   "note_zh": "1.35×, slowing; best reviewer reception in 2026"
+  },
+  {
+   "name_zh": "Attacker-free overreach and overclaiming",
+   "n26": 1,
+   "n27": 23,
+   "note_zh": "Agents overstep, misreport or cause damage under benign instructions"
+  },
+  {
+   "name_zh": "Shutdown resistance and insider threats",
+   "n26": 10,
+   "n27": 34,
+   "note_zh": "Only 1/10 accepted in 2026; now moving to executable measurement"
+  },
+  {
+   "name_zh": "Authorization and least privilege",
+   "n26": 1,
+   "n27": 84,
+   "note_zh": "Fastest-growing defense theme; includes delegation revocation and approval hijacking"
+  },
+  {
+   "name_zh": "Information-flow control and provenance",
+   "n26": 6,
+   "n27": 87,
+   "note_zh": "3/6 accepted in 2026, followed by many follow-ups"
+  },
+  {
+   "name_zh": "Formal and certified execution guarantees",
+   "n26": 5,
+   "n27": 60,
+   "note_zh": "Execution guarantees via Petri nets, temporal logic and similar tools"
+  },
+  {
+   "name_zh": "Agent runtime monitoring",
+   "n26": 7,
+   "n27": 56,
+   "note_zh": "3/7 accepted in 2026; the highest-rated cluster in this scope"
+  },
+  {
+   "name_zh": "Guard models and guardrails",
+   "n26": 17,
+   "n27": 82,
+   "note_zh": "Same growth as the scope; only 1/17 accepted in 2026"
+  },
+  {
+   "name_zh": "Harness as a safety object",
+   "n26": 1,
+   "n27": 36,
+   "note_zh": "Cross-configuration measurement, self-evolving harnesses, attack-defense co-evolution"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026, 47 of the 219 papers in scope were accepted (21.5%, including 4 orals). Evaluation papers had a 33.7% acceptance rate, far above attacks (9.5%) and defenses (15.9%). Accepted papers were mostly large-scale measurements in real environments and architecture-level isolation defenses. The IPI subset had only 14.0%, and new injection payloads and heuristic detectors were mostly rejected. 2027 submissions are 4.8× the 2026 count. The likelier winners are reproducible measurements with controlled configurations, and system-layer defenses that hold up under adaptive attacks.",
+ "gaps_zh": [
+  "Authorization and information-flow defenses are mostly validated only on AgentDojo-style tasks, with no comparison on open-ended tasks.",
+  "No work yet on who writes authorization contracts and policies, or what happens when they are wrong.",
+  "Revocable, auditable memory has only scattered work and almost no link to the unlearning community.",
+  "Measurements of the Skills and MCP ecosystems rely mostly on synthetic samples; large-scale longitudinal studies of real registries are missing.",
+  "Attacker-free overreach has benchmarks, but no training methods that keep agents to authorized actions without losing capability.",
+  "Multi-agent covert-channel work mostly shows that single-point monitors fail; the sample complexity and cost of joint monitoring remain open."
+ ],
+ "watchlist_zh": [
+  "Whether model-plus-harness cross evaluation becomes standard in review and replaces model-only leaderboards.",
+  "Whether production blocking monitors can stop a persistently misaligned agent: existing work runs arbitrary bash in 79% of cases.",
+  "Whether CaMeL- and PACT-style deterministic data-flow architectures keep their utility on open-ended tasks.",
+  "Whether the guardrail AUROC upper-bound theorem changes what reviewers expect from detection-based defenses.",
+  "Whether cost attacks become their own subfield: skill token amplification reaches up to 75×, and guardrails can also be DoSed.",
+  "Whether acceptance rates recover: watch the accepted share of evaluation and system-defense papers, and whether pure IPI attack papers stay suppressed."
+ ],
+ "notes_zh": [
+  "Scope is safety-related papers (relevance ≥ 1), with share growth of 2.23×; the proportion of core papers (relevance 2) went 83%→86%. Theme counts use regex matches on title, topic and keywords; benchmark mentions use regex on abstracts, which may be truncated.",
+  "The two main subfields are AGENT_SAFE and PI (prompt injection). Per 10k submissions, AGENT_SAFE went 32.8→104.4 and PI 31.3→50.9.",
+  "2026 acceptance-rate baselines: all safety papers 24.7%; PI 17.7%, AGENT_SAFE 21.5%, IPI subset 14.0%. Withdrawn or desk-rejected combined: 33.8% (safety overall 30.6%). Mean rating in scope: 4.17.",
+  "Defense-type share went 20.1%→27.4%, attack type 19.2%→13.8%. Theme counts: authorization 1→84, information flow and provenance 6→87, formal methods and certification 5→60.",
+  "Other benchmark mentions: AgentDyn 0→11, Agent-SafetyBench 2→25, SWE-bench 2→22, OpenClaw 0→28, Claude Code 1→24, SHADE-Arena 3→4.",
+  "2026 acceptances by type: eval 28/83, attack 4/42, defense 7/44; single-agent targets 27.0%, multiagent 15.6%; information flow and provenance 3/6. Representative papers include RedTeamCUA (oral), CyberGym (oral, 7.0), a human-vs-AI penetration-testing comparison (6.5), GhostEI-Bench, Dark Patterns, OpenAgentSafety, MCP-SafetyBench and Weak-to-Strong Monitoring (oral). Architecture-level isolation work includes ASIDE, g0aVCDY3gS and PNU9Rj5RDQ. The Attacker Moves Second (6.0) was rejected.",
+  "IPI sums all carriers; its share of the scope went 19.6%→17.0%, with a 14% acceptance rate in 2026. Attack-to-defense ratio: 17:16 in 2026, 51:70 in 2027.",
+  "Other microtopics: MCP-SafetyBench was accepted in 2026; self-evolving agents 2→54; the GUI acceptance rate in 2026 was 27%; the accepted information-flow papers in 2026 were ASIDE, g0aVCDY3gS and PNU9Rj5RDQ; the formal cluster covers Petri nets, temporal logic, conformal risk control and shield synthesis, with 0/5 accepted in 2026; the runtime-monitor cluster had a 2026 mean rating of 4.93 and includes the oral WV7xIboTDK; the guard cluster grew 2.1×, and its only 2026 acceptance was M47SWYubR5, so the bar is high and the area saturates easily.",
+  "Production monitors means Claude Code Auto Mode and Codex Guardian; the 79% result is in Xvoqy4F84S. Real registries include ClawHub and SkillsMP. Engineering standards such as signing, provenance attestation and sandboxing still lack empirical evaluation."
+ ]
+}

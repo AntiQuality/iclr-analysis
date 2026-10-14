@@ -1,0 +1,443 @@
+{
+ "key": "science",
+ "title_zh": "Science, structured learning and systems",
+ "subtitle_zh": "Domain foundation models get frozen and then studied; agents take hold in only a few areas",
+ "headline_zh": "The combined share of four themes, science, structured learning, applications and systems, went 19.1% → 17.0% → 15.4% (2025 → 2027). The main cause is shrinking structured learning: mentions of graph neural networks (GNNs) more than halved in two years. Growth takes two forms: pretrain a domain foundation model and build research around the frozen model, or have an agent wrap existing scientific tools.",
+ "stats": [
+  {
+   "label_zh": "Combined submission share of the four themes",
+   "value": "19.1% → 17.0% → 15.4%",
+   "note_zh": "Structured learning 10.3% → 8.3% → 6.5%"
+  },
+  {
+   "label_zh": "GNN full-text mentions",
+   "value": "465 → 332 → 203 per 10k",
+   "note_zh": "2026 acceptance rate 0.201, vs. 0.249 for the rest"
+  },
+  {
+   "label_zh": "Single-cell perturbation prediction",
+   "value": "3.4 → 5.6 → 24.9 per 10k",
+   "note_zh": "Single-cell pretrained models 24.7 → 21.9"
+  },
+  {
+   "label_zh": "KV cache reuse and serving",
+   "value": "7.7 → 11.1 → 39.5 per 10k",
+   "note_zh": "2026 acceptance rate 0.455, mean rating 4.72"
+  },
+  {
+   "label_zh": "Agent mention rate in science · systems",
+   "value": "5.5% → 8.1% · 5.4% → 18.3%",
+   "note_zh": "LLM mention rate 25.3% → 23.9%"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "GNNs become a building block for science models",
+   "tag": "fading",
+   "body_zh": "The three general graph-learning clusters fell combined from 204.0 to 116.6 per 10k submissions. Classic topics and LLM graph reasoning shrank together: node classification 42.4 → 26.5, GNN×LLM co-occurrence 40.9 → 20.2. The GNN papers that remain are used more in science settings: the share falling in the science theme rose from 16.4% to 19.5%.",
+   "note_zh": "The three general graph-learning clusters are 285, 114 and 9; the general GNN cluster 114 went 49.0 → 18.1 per 10k. Additional data: over-smoothing/over-squashing 26.2 → 14.6, graph transformer 28.3 → 19.1; KG+LLM reasoning cluster 200 42.4 → 23.7; graph foundation model 13.1 → 15.1. An example of the science setting is a receptive-field analysis of message passing in MLIPs. Node-level tasks are also being handed to TabPFN-style tabular foundation models.",
+   "evidence": [
+    {
+     "id": "OLVBsMicDW",
+     "year": 2027,
+     "title": "Graphs are Evidence, Not Circuits"
+    },
+    {
+     "id": "xr0kvrZVVb",
+     "year": 2027,
+     "title": "Graph Reach Sets the Remote-Response Limit of Local Interatomic Potentials"
+    },
+    {
+     "id": "NecNp6Nbmw",
+     "year": 2027,
+     "title": "Adapting Tabular Foundation Models for Graph Node-Level Tasks"
+    },
+    {
+     "id": "MgJUj9Sk3C",
+     "year": 2026,
+     "title": "Actions Speak Louder than Prompts: A Large-Scale Study of LLMs for Graph Inference"
+    }
+   ]
+  },
+  {
+   "title_zh": "Time-series research turns to frozen TSFMs",
+   "tag": "shift",
+   "body_zh": "The total time-series share is flat. Growth is concentrated in time-series foundation models (TSFMs): the TSFM cluster went 18.7 → 53.0 per 10k. The classic forecasting cluster fell from 99.9 to 77.9. Turning LLMs into forecasters is also shrinking: LLM and time-series co-occurrence fell from 35.3 to 24.2. In 2026 the TSFM acceptance rate was 0.333, vs. 0.196 for general time-series forecasting.",
+   "note_zh": "The total time-series share is counted by title + keywords, 250.3 → 253.9 per 10k. TSFM is cluster 117; the share of papers in the cluster mentioning foundation model went 16% → 36%. Classic forecasting is cluster 23; the representation/generation cluster 144 went 71.2 → 41.6. Additional data: Chronos 3.5 → 11.4, TimesFM 2.0 → 6.3, Moirai 1.5 → 4.4; TSFM×frozen/adaptation/test-time 14.6 → 26.7; Time-LLM-style reprogramming 5.0 → 3.5; PatchTST/iTransformer have become comparison baselines (9.1). The research agenda follows LLMs: test-time compute allocation, interpretability (PRISM), recursive self-improvement on frozen forecasters (GateCorrect). In cluster 117, 61% of 2027 papers are formulaic papers, but regex counts rise as well.",
+   "evidence": [
+    {
+     "id": "92LzwAEo0Z",
+     "year": 2027,
+     "title": "Forecasting the Forecasters: Training-Free Two-Phase Aggregation of Frozen Time-Series Foundation Models"
+    },
+    {
+     "id": "iaMmGPCgNV",
+     "year": 2027,
+     "title": "Recursive Inference for Test-Time Compute Allocation in Time-Series Foundation Models"
+    },
+    {
+     "id": "feG3zFbXRr",
+     "year": 2027,
+     "title": "What Does Text Add to Forecasting? A Controlled Audit"
+    },
+    {
+     "id": "EUAXc9Hlvm",
+     "year": 2026,
+     "title": "Context parroting: A simple but tough-to-beat baseline for foundation models in scientific machine learning"
+    }
+   ]
+  },
+  {
+   "title_zh": "Tabular foundation models extend to causal and graph tasks",
+   "tag": "rising",
+   "body_zh": "Mentions of the prior-data fitted network (PFN) family rose from 13.1 to 31.9 per 10k. Uses extended from tables to causal effect estimation, semi-parametric Bayesian inference and graph node tasks. Reviewers are not yet convinced: in 2026 the tabular foundation model cluster had an acceptance rate of 0.125 and the PFN family 0.192, in the lowest tier of this chapter. In 2027 papers already compare directly when training beats in-context prompting.",
+   "note_zh": "The PFN family is matched by TabPFN/TabICL/prior-data fitted. Tabular foundation models are cluster 104, 28.3 → 42.8 per 10k. Additional data: the author keyword tabular foundation model grew from 8 to 126 papers (0.4 → 29.3 per 10k); the share of the treatment effect cluster mentioning FMs went 3% → 14% (CausaBridge, ProximalFM); for semi-parametric inference see Debiased PFN; SBI/amortized inference 14.1 → 17.4, 2026 acceptance rate 0.357.",
+   "evidence": [
+    {
+     "id": "Qxy35e3AZh",
+     "year": 2027,
+     "title": "Learning Heterogeneous Tabular Tasks through Multiregime Pretraining of Prior-Data Fitted Networks"
+    },
+    {
+     "id": "TAB04ApfaZ",
+     "year": 2027,
+     "title": "CausaBridge: An Identification-Gated Causal Foundation Model for Transferable Effect Estimation"
+    },
+    {
+     "id": "IhddmioLtO",
+     "year": 2027,
+     "title": "Debiased Prior-Data Fitted Networks for Amortized Bayesian Semi-Parametric Inference"
+    },
+    {
+     "id": "DtmtCHOOkz",
+     "year": 2027,
+     "title": "When Does Training Beat Prompting on Tabular Data?"
+    }
+   ]
+  },
+  {
+   "title_zh": "Single-cell research shifts to perturbation prediction",
+   "tag": "rising",
+   "body_zh": "The single-cell perturbation prediction cluster rose from 5.6 to 24.9 per 10k (4.4×), while the single-cell pretrained model cluster fell from 24.7 to 21.9. The goal moved from training bigger pretrained models to predicting cell states under arbitrary interventions. The main approaches are world models and agents that iteratively revise models. In the same period several papers question whether these models beat learning-free baselines.",
+   "note_zh": "Perturbation prediction is cluster 205; single-cell pretrained models (scGPT, Geneformer, etc.) are cluster 79. Additional data: perturbation prediction regex 13.1 → 35.1, virtual cell wording 4.0 → 8.8, papers with Virtual Cell in the title grew from 4 to 13; single-cell×agent co-occurrence 3.0 → 5.3. World-model route: VCWorld, DynamicVC, VCLMU. Agent route: CellCanon, CellScientist. Baseline challenges: pseudobulk predictors, FalsifyVC, a systematic error analysis.",
+   "evidence": [
+    {
+     "id": "FyycZNGwsC",
+     "year": 2027,
+     "title": "CellCanon: An Agentic Cellular World Model for Prediction, Explanation, and Observation-Driven Updating"
+    },
+    {
+     "id": "0SpLnCrROA",
+     "year": 2027,
+     "title": "CellScientist: From Execution Feedback to Auditable Model-Revision Trajectories for Cellular Perturbation Prediction"
+    },
+    {
+     "id": "DVGHFaScK9",
+     "year": 2027,
+     "title": "Why Do Sophisticated Perturbation Prediction Models Not Outperform Learning-Free Baselines?"
+    },
+    {
+     "id": "hhq89Hs7T3",
+     "year": 2026,
+     "title": "VCWorld: A Biological World Model for Virtual Cell Simulation"
+    }
+   ]
+  },
+  {
+   "title_zh": "Drug discovery shrinks; molecular generation moves to flow matching",
+   "tag": "shift",
+   "body_zh": "Drug discovery/design mentions fell from 70.2 to 42.5 per 10k. Papers applying diffusion to molecules, proteins and materials fell from 70.7 to 48.6, while flow matching on the same basis rose from 29.3 to 36.3. Reviewers reward structure generation: in 2026 flow matching×molecules/proteins had an acceptance rate of 0.431 and the generative protein design cluster 0.362. Agents are entering the field but score low: molecule×agent co-occurrence rose from 18.7 to 32.3, with a 2026 acceptance rate of 0.216 and mean rating 3.75.",
+   "note_zh": "Drug discovery/design was 105.4 per 10k in 2025. The diffusion count covers molecules, proteins, materials and conformations; molecule×agent uses strict co-occurrence. Additional data: molecular property prediction 17.7 → 14.6, 2026 acceptance rate 0.143; structure-based drug design (SBDD) cluster 257 26.8 → 18.1, agent mention rate in the cluster 13% → 21%; protein language model cluster 248 37.3 → 31.4; co-folding (AF3/Boltz/Chai-1) 21.2 → 25.1, acceptance rate 0.381; the generative protein design cluster has the highest acceptance rate in the science theme. MOLFRA aligns molecular flows directly with RL. A 2026 binder-design oral combines generative pretraining with test-time compute. Evaluation is moving to synthesizability and real-world settings, e.g. BRIDGE-bench and PROTAC synthetic accessibility. MolViBench evaluates LLMs on molecular vibe coding.",
+   "evidence": [
+    {
+     "id": "qmCpJtFZra",
+     "year": 2026,
+     "title": "Scaling Atomistic Protein Binder Design with Generative Pretraining and Test-Time Compute"
+    },
+    {
+     "id": "6vY3Q5B0Mi",
+     "year": 2027,
+     "title": "MOLFRA: Online Alignment of Multimodal Molecular Flows via Forward-Process Reinforcement Learning"
+    },
+    {
+     "id": "5EU3kPRhPN",
+     "year": 2027,
+     "title": "Multi-Pose Structural Evidence for LLM Agent Molecular Optimization in Structure-Based Drug Design"
+    },
+    {
+     "id": "mky3ZgWBgx",
+     "year": 2027,
+     "title": "MolViBench: Evaluating LLMs on Molecular Vibe Coding"
+    }
+   ]
+  },
+  {
+   "title_zh": "PINNs give way to neural operators and physics surrogates",
+   "tag": "shift",
+   "body_zh": "The neural operator cluster rose from 33.8 to 57.9 per 10k. The physics-informed neural network (PINN) solver cluster fell from 52.5 to 29.8, with a 2026 acceptance rate of only 0.173. In 2026 reviewers rewarded real data and falsification: RealPDEBench got an oral with mean rating 7.5, and a paper questioning zero-shot super-resolution scored 6.0. This line barely uses agents: the agent mention rate in the neural operator cluster is about 1%.",
+   "note_zh": "Neural operators are cluster 84, 59.1 → 79.5 per 10k by regex; PINN solvers are cluster 174. Additional data: scientific machine learning wording 23.2 → 66.0, KAN 22.2 → 9.3; learned physics simulation cluster 242 29.8 → 39.1, 2026 mean rating 4.53, second in this chapter only to KV cache; weather cluster 0 29.8 → 42.3, 2026 acceptance rate 0.136. New routes in 2027: low-fidelity pretraining transferred to high fidelity, and PDE foundation models transferred to global weather forecasting.",
+   "evidence": [
+    {
+     "id": "y3oHMcoItR",
+     "year": 2026,
+     "title": "RealPDEBench: A Benchmark for Complex Physical Systems with Real-World Data"
+    },
+    {
+     "id": "hkF7ZM7fEp",
+     "year": 2026,
+     "title": "The False Promise of Zero-Shot Super-Resolution in Machine-Learned Operators"
+    },
+    {
+     "id": "ztlzkA9RvM",
+     "year": 2027,
+     "title": "Scaling 3D Physics Surrogates: Low-Fidelity Pretraining for High-Fidelity Transfer"
+    },
+    {
+     "id": "730CXGXE0s",
+     "year": 2027,
+     "title": "Tadpole-2D: From PDE Foundation Model to Global Weather Forecasting"
+    }
+   ]
+  },
+  {
+   "title_zh": "Medical work turns to clinical agents and biosignal models",
+   "tag": "shift",
+   "body_zh": "Medical LLM QA is shrinking: LLM×clinical co-occurrence fell from 133.2 to 110.9 per 10k. Growth comes from two lines: agent×clinical co-occurrence rose from 39.9 to 63.9, and biosignal×foundation model from 22.2 to 33.5. This is the most harshly reviewed direction in the chapter: in 2026 electronic health records (EHR) had an acceptance rate of 0.158 and mean rating 3.47; clinical agents had 0.190.",
+   "note_zh": "Biosignals means EEG/ECG/PPG/wearable×foundation model; the EHR acceptance rate is by regex. Additional data: medical imaging MLLM/report generation cluster 126 59.1 → 42.8, MedQA-style benchmarks 16.2 → 14.6; explicit clinical/medical agent 2.5 → 10.0; EHR cluster 296 23.2 → 38.6, agent mention rate in the cluster 9% → 26%; PPG/ECG/wearable 28.3 → 47.9, EEG 57.5 → 81.6; EEG cluster 2026 acceptance rate 0.207, mean rating 3.61. Clinical agent benchmarks are moving to full patient trajectories and computer use (SHIFT). PPG/BCG now have foundation model families with language alignment (PPG-LM, BCG-FM).",
+   "evidence": [
+    {
+     "id": "8QhDkLlwUE",
+     "year": 2027,
+     "title": "SHIFT: Benchmarking Clinical Computer-Use Agents over Full Patient Trajectories"
+    },
+    {
+     "id": "y74JUWpBGO",
+     "year": 2027,
+     "title": "MedMDT: Self-Evolving Multidisciplinary Agent Teams for Clinical Reasoning"
+    },
+    {
+     "id": "EvigzD2Hze",
+     "year": 2027,
+     "title": "BCG-FM: A Foundation Model for Ambient Cardiac Health Sensing"
+    },
+    {
+     "id": "5Xwm8e6vbh",
+     "year": 2026,
+     "title": "Are EEG Foundation Models Worth It? Comparative Evaluation with Traditional Decoders in Diverse BCI Tasks"
+    }
+   ]
+  },
+  {
+   "title_zh": "Systems research turns to LLM serving and agent workloads",
+   "tag": "rising",
+   "body_zh": "The infra primary area rose from 89.8 to 164.1 per 10k, and the KV cache reuse cluster from 11.1 to 39.5. Agents are both a new workload and a new GPU kernel writer: agent serving rose from 1.0 to 10.9, agent×GPU kernel from 1.5 to 13.7. Pushed out: federated learning 177.7 → 122.1, ANN retrieval 9.6 → 5.3.",
+   "note_zh": "KV cache reuse is cluster 229. Cluster 193 mixes GPU kernels with NTK, a wording artifact, so the related numbers use regex counts. Additional data: LLM serving/prefill/disaggregation wording 55.0 → 140.0; LLM mention rate in the systems theme 37.5% → 55.2%, agent mention rate 5.4% → 18.3%; GPU kernel generation 19.2 → 42.8, compiler/autotuning 15.1 → 47.4; federated learning 2026 acceptance rate 0.17; spiking 57.0 → 46.5. New problems include KV compression for agentic RL rollouts, safety incompatibility in cross-model KV reuse, and mutation testing of KernelBench-style checkers. GPU kernel agents use shape-aware search and dispatch-aware tuning (KernelWeaver, KernelOPT) plus multi-agent evidence chains (Evok).",
+   "evidence": [
+    {
+     "id": "Jb1WkNSfUB",
+     "year": 2026,
+     "title": "TileLang: Bridge Programmability and Performance in Modern Neural Kernels"
+    },
+    {
+     "id": "bl2A41q92N",
+     "year": 2027,
+     "title": "AgentServeSim: Simulation-Driven Policy Design for Agent Serving"
+    },
+    {
+     "id": "SaboBZsQiW",
+     "year": 2027,
+     "title": "KernelWeaver: A Shape-Aware Kernel Agent for GPU Kernel Optimization"
+    },
+    {
+     "id": "Hdwn4xkEHp",
+     "year": 2027,
+     "title": "Measuring the Checker: Mutation Analysis for GPU-Kernel Benchmark Oracles"
+    }
+   ]
+  },
+  {
+   "title_zh": "Formal proofs reach research level; program search starts auditing itself",
+   "tag": "watch",
+   "body_zh": "In 2026 the Lean theorem proving cluster had an acceptance rate of 0.422 and autoformalization 0.478, the highest group in this chapter. The target moved from competition problems to research-level formalization: agent×Lean rose from 6.1 to 20.2 per 10k, while olympiad/IMO mentions fell from 26.2 to 14.2. The LLM-driven algorithm discovery cluster rose from 31.8 to 50.2. In 2027 several papers test whether its discoveries are just selection noise.",
+   "note_zh": "Lean theorem proving is cluster 66, 32.3 → 35.1 per 10k; algorithm/heuristic discovery is cluster 74. Additional data: AlphaEvolve/OpenEvolve/ShinkaEvolve mentions 2.0 → 7.0, FunSearch 2.5 → 1.2; traditional neural combinatorial optimization solver cluster 93 52.5 → 39.8; symbolic regression cluster 2026 acceptance rate 0.091, the lowest in this chapter. Research-level formalization includes converting whole papers to Lean (Paper2Lean), a research-level TCS proof benchmark (TCSAlgBench), AutoformBench and formal library reuse (LIFT). The 2026 Lean Hammer premise selection paper got an oral. Self-auditing examples include Mirage Discoveries, Noise Floor, and an analysis showing equation discovery is limited by its proposal space.",
+   "evidence": [
+    {
+     "id": "m04JJNeRK6",
+     "year": 2026,
+     "title": "Premise Selection for a Lean Hammer"
+    },
+    {
+     "id": "HFyldZiJ7Z",
+     "year": 2027,
+     "title": "Paper2Lean: Agentic Autoformalization of Mathematical Research Papers at Scale"
+    },
+    {
+     "id": "da1Czy7foS",
+     "year": 2027,
+     "title": "Mirage Discoveries: Separating Signal From Selection Noise in LLM-Driven Program Search"
+    },
+    {
+     "id": "gb3n5lRwjw",
+     "year": 2027,
+     "title": "Outside the Dictionary: LLM-Guided Equation Discovery Is Limited by What It Proposes"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "Single-cell perturbation prediction",
+   "from": 5.6,
+   "to": 24.9,
+   "unit": "per10k",
+   "note_zh": "Goal shifts to predicting cell states after intervention"
+  },
+  {
+   "name_zh": "KV cache reuse and serving",
+   "from": 11.1,
+   "to": 39.5,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 0.455, highest in this chapter"
+  },
+  {
+   "name_zh": "LLM serving wording",
+   "from": 55.0,
+   "to": 140.0,
+   "unit": "per10k",
+   "note_zh": "agent serving 1.0 → 10.9"
+  },
+  {
+   "name_zh": "Time-series foundation models (TSFMs)",
+   "from": 18.7,
+   "to": 53.0,
+   "unit": "per10k",
+   "note_zh": "Chronos 3.5 → 11.4; frozen/adaptation 14.6 → 26.7"
+  },
+  {
+   "name_zh": "Neural operators",
+   "from": 33.8,
+   "to": 57.9,
+   "unit": "per10k",
+   "note_zh": "PINN 52.5 → 29.8 over the same period"
+  },
+  {
+   "name_zh": "PFN / tabular foundation models",
+   "from": 13.1,
+   "to": 31.9,
+   "unit": "per10k",
+   "note_zh": "Extends to causal effects, graph nodes and semi-parametric inference"
+  },
+  {
+   "name_zh": "GPU kernel generation and optimization",
+   "from": 19.2,
+   "to": 42.8,
+   "unit": "per10k",
+   "note_zh": "agent×kernel 1.5 → 13.7; 2026 acceptance rate 0.368"
+  },
+  {
+   "name_zh": "EHR clinical prediction and reasoning",
+   "from": 23.2,
+   "to": 38.6,
+   "unit": "per10k",
+   "note_zh": "Agent mention rate 9% → 26%"
+  },
+  {
+   "name_zh": "Biosignal foundation models",
+   "from": 22.2,
+   "to": 33.5,
+   "unit": "per10k",
+   "note_zh": "EEG mean rating only 3.61 in 2026"
+  },
+  {
+   "name_zh": "agent × Lean theorem proving",
+   "from": 6.1,
+   "to": 20.2,
+   "unit": "per10k",
+   "note_zh": "olympiad/IMO 26.2 → 14.2 over the same period"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "GNN topic cluster",
+   "from": 95.9,
+   "to": 54.6,
+   "unit": "per10k",
+   "note_zh": "180.8 in 2025; under a third of that after two years"
+  },
+  {
+   "name_zh": "General graph neural networks",
+   "from": 49.0,
+   "to": 18.1,
+   "unit": "per10k",
+   "note_zh": "Node classification 42.4 → 26.5, over-smoothing 26.2 → 14.6"
+  },
+  {
+   "name_zh": "PINN neural PDE solvers",
+   "from": 52.5,
+   "to": 29.8,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 0.173"
+  },
+  {
+   "name_zh": "Drug discovery and design",
+   "from": 70.2,
+   "to": 42.5,
+   "unit": "per10k",
+   "note_zh": "105.4 in 2025; molecular property prediction 17.7 → 14.6"
+  },
+  {
+   "name_zh": "KG + LLM reasoning",
+   "from": 42.4,
+   "to": 23.7,
+   "unit": "per10k",
+   "note_zh": "GNN×LLM co-occurrence 40.9 → 20.2"
+  },
+  {
+   "name_zh": "Medical imaging MLLMs and report generation",
+   "from": 59.1,
+   "to": 42.8,
+   "unit": "per10k",
+   "note_zh": "LLM×clinical co-occurrence 133.2 → 110.9"
+  },
+  {
+   "name_zh": "Federated learning",
+   "from": 177.7,
+   "to": 122.1,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 0.170"
+  },
+  {
+   "name_zh": "diffusion × molecules/proteins/materials",
+   "from": 70.7,
+   "to": 48.6,
+   "unit": "per10k",
+   "note_zh": "flow matching 29.3 → 36.3 over the same period"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026 the four themes in this chapter had an acceptance rate of 0.243, below the corpus baseline of 0.270. The science theme's mean rating of 3.95 was the lowest of all themes. Reviewers rewarded scaled structure generation, verifiable formalization and low-level systems: KV cache reuse cluster 0.455, autoformalization 0.478, flow matching×molecules/proteins 0.431. Wrapping a science task in an agent or LLM earned nothing: the acceptance rate was 0.241 with an LLM mention vs. 0.243 without, and papers mentioning agents did worse, 0.219 vs. 0.244.",
+ "frontline_zh": [
+  "Virtual cells follow two approaches: mechanism-conditioned flows plus world models (CellWright, DynamicVC), and agents that revise models from execution feedback (CellScientist).",
+  "Training-free methods for frozen TSFMs are multiplying: ensemble aggregation, external context retrieval, patch boundary correction (One More Token), test-time compute allocation.",
+  "PFNs are treated as general amortized inference engines. TabPFN's prior design is carried over to causal effect estimation (CausaBridge) and semi-parametric inference.",
+  "Causal vocabulary has moved to interpretability: causal intervention/activation patching 22.7 → 106.9 per 10k, causal discovery 48.5 → 42.3.",
+  "Uncertainty quantification is moving from Bayesian to guarantee-based methods: BNN 15.6 → 6.0 per 10k, conformal 64.6 → 77.0.",
+  "Machine-learned interatomic potentials (MLIPs) have become the main application of GNN theory; universal potential mentions 4.5 → 7.2 per 10k."
+ ],
+ "watchlist_zh": [
+  "Whether virtual-cell world models reliably beat learning-free baselines will decide if the 4.4× growth holds.",
+  "Tabular foundation models had an acceptance rate of only 0.125 in 2026. Review outcomes are pending for the 2027 papers expanding into causal and graph tasks.",
+  "Whether agent workloads (agentic RL rollouts, agent serving) replace single-request LLM serving as the main systems problem.",
+  "Molecular, clinical and single-cell agent papers are numerous and score low. Will 2027 reviews change if they bring wet-lab or closed-loop clinical evidence?"
+ ],
+ "notes_zh": [
+  "Shares are per 10k submissions. Two-value series without a stated year are 2026 → 2027; acceptance rates and mean ratings are 2026 data.",
+  "The four themes are science, struct (structured learning), apps and systems. struct went 834 → 651 per 10k. The science theme share went 6.45% → 6.29% → 6.51%, roughly flat; the total AI for Science share went 629 → 651 per 10k. struct is among the themes with the largest decline in the corpus.",
+  "GNN full-text mentions match graph neural network / GNN / message passing. By title + keywords the series is 338 → 218 → 154 per 10k.",
+  "Cluster ids: single-cell perturbation prediction 205 (3.4 → 5.6 → 24.9 for 2025 → 2027), single-cell pretrained models 79, KV cache reuse 229, GNN topic cluster 285 (95.9 → 54.6 per 10k), general graph neural networks 114, PINN solvers 174, KG+LLM reasoning 200, medical imaging MLLM 126, TSFM 117, neural operators 84, EHR 296.",
+  "The KV cache reuse cluster had the highest 2026 acceptance rate of the 48 clusters in this chapter. The infra primary area share went 89.8 → 164.1 per 10k.",
+  "Clusters with the highest agent mention rates: KV cache 36%, GPU kernel 30%, EHR 26%, symbolic regression 25%, SBDD 21%.",
+  "Formulaic papers: in TSFM cluster 117 and KV cache cluster 229, 61% and 54% of 2027 papers respectively are flagged formulaic (42.4% corpus-wide). The trends were cross-checked with regex counts, but cluster sizes are overstated.",
+  "2026 acceptance rate breakdown: science 0.236, struct 0.244, apps 0.204, systems 0.299. Rewarded: KV cache reuse cluster mean rating 4.72, Lean theorem proving cluster 0.422, co-folding 0.381, GPU kernel generation 0.368, generative protein design cluster 0.362, learned physics simulation 0.339 (mean rating 4.53), amortized Bayesian inference cluster 0.338 (mean rating 4.44), TSFM 0.333 (frozen/adaptation 0.414). Passed over: symbolic regression cluster 0.091, tabular FM cluster 0.125, quantum ML cluster 0.129, weather cluster 0.136, molecular property prediction 0.143, EHR 0.158 (mean rating 3.47), federated learning 0.170, PINN cluster 0.173, GNN 0.201–0.205. Within-domain comparisons: molecule×agent 0.216 (mean rating 3.75), clinical×agent 0.190; mentioning foundation model 0.279 vs. 0.240, mentioning diffusion/flow 0.294 vs. 0.237.",
+  "On-the-ground details: causal reasoning primary area 98.4 → 82.8 per 10k; a 2026 paper using SAEs for exploratory causal inference got an oral with mean rating 7.0. GP 35.8 → 24.2, normalizing flow 29.8 → 15.1, conformal×LLM 10.6 → 16.7, conformal risk control cluster 180 7.1 → 27.9 (65% of it formulaic papers). Conformal targets now include agent runtime vulnerabilities and LLM committee screening. identifiability wording 65.1 → 138.8. In the MLIP line, one paper analyzes the receptive-field limit that local message passing places on remote response. universal potential (MACE/UMA) had a 2026 acceptance rate of 0.556 (small sample, n=9)."
+ ]
+}

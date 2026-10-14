@@ -1,0 +1,1502 @@
+[
+ {
+  "cluster": 0,
+  "desc_en": "Data-driven global and regional weather forecasting, subseasonal-to-seasonal prediction, precipitation nowcasting and traffic spatiotemporal forecasting, plus a few LLM event-forecasting papers.",
+  "trend_en": "Share up 29.8 → 42.3: AI weather models are moving to probabilistic forecasts and extreme-event evaluation (tropical cyclones, S2S), and a new branch trains LLM event-forecasting agents with RL."
+ },
+ {
+  "cluster": 1,
+  "desc_en": "General-purpose non-LLM deep RL methods: representations and auxiliary tasks, plasticity loss, sample efficiency, offline-to-online, and large-scale parallel off-policy training.",
+  "trend_en": "Share collapsed 65.1 → 17.7: RL attention has moved to RLVR and agentic RL for LLMs; the remaining work centres on replay-ratio scaling, plasticity and parallel training dynamics."
+ },
+ {
+  "cluster": 2,
+  "desc_en": "Linear probes that read truth, beliefs, length planning and similar information from LLM hidden states, and tests of the probes' own reliability and confounders.",
+  "trend_en": "Share up 16.2 → 26.0: probing has shifted from \"what is in the representation\" to safety uses: white-box activation monitoring, monitors that transfer across models, and detecting hidden bias and \"knowing but not saying\"."
+ },
+ {
+  "cluster": 3,
+  "desc_en": "Cross-domain papers grouped by the \"we introduce a large-scale dataset/benchmark\" phrasing (precipitation, cat vocalisations, counting, mass spectrometry); the topics do not cohere, so this is a wording cluster.",
+  "trend_en": "Share fell sharply 58.5 → 14.9: dataset papers were absorbed by topic-specific clusters, diluting the generic-wording cluster; 2027 adds a meta-analysis of what makes a dataset paper valuable."
+ },
+ {
+  "cluster": 4,
+  "desc_en": "Evaluation sets that test LLMs on one profession or skill: meteorology, law, materials, licensing exams, cultural norms, competitive programming.",
+  "trend_en": "Share shrank 83.3 → 14.9: yet another domain-X QA benchmark adds little; evaluation is moving to LLM judges, agent benchmarks and evaluation platforms such as MathArena."
+ },
+ {
+  "cluster": 5,
+  "desc_en": "Transformers with shared weights and looped layer blocks that use variable depth for latent reasoning and test-time compute scaling.",
+  "trend_en": "Share up about 5× (7.1 → 34.9): after Huginn's recurrent depth and looped language models such as Ouro, this became a popular architecture; 2027 work tackles parallelism, memory, depth extrapolation and looped attention design."
+ },
+ {
+  "cluster": 6,
+  "desc_en": "Improvements to PPO's clipped objective, trust regions, KL regularisation and policy-gradient variance, across continuous control, auction bidding and RLHF.",
+  "trend_en": "Share up 31.3 → 40.9: instability in LLM RL has revived work on PPO clipping and trust-region surrogates, with variants such as power-law surrogates, α-divergences and directional clipping."
+ },
+ {
+  "cluster": 7,
+  "desc_en": "Biases of LLMs acting as judges, their agreement with humans, rubric design and judge-panel selection.",
+  "trend_en": "Share doubled 18.7 → 37.7: the focus moved from building better judges to psychometric-style audits (generalisability theory, rubric failure, tests without shared annotators) and rubric rewards for RL."
+ },
+ {
+  "cluster": 8,
+  "desc_en": "World models built on video generators that accept camera or action control and generate explorable worlds in real time, along with their memory mechanisms.",
+  "trend_en": "Share up more than 3× (15.6 → 52.8): driven by Genie 3-style playable world models; the 2027 focus is long-horizon spatial consistency through trajectory-indexed memory, persistent 3D Gaussian state and dedicated benchmarks."
+ },
+ {
+  "cluster": 9,
+  "desc_en": "Graph representation learning, graph generation, link prediction, graph foundation models on text-attributed graphs, and LLMs reading graphs.",
+  "trend_en": "Share down 59.1 → 43.9: classic GNN node classification is fading; growth is in foundation models for text-attributed graphs, graph vocabularies and graph tokens, and serialising neighbourhoods for LLMs."
+ },
+ {
+  "cluster": 10,
+  "desc_en": "Evaluating and diagnosing perception and reasoning failures of vision-language models (counting, multi-image, long-tail, specialist imagery), with targeted fixes.",
+  "trend_en": "Roughly stable, slightly down (52.5 → 45.3): fewer general VLM benchmarks and more diagnostic work on the gap between VLMs and specialist vision models, multi-image position bias and numerosity mechanisms."
+ },
+ {
+  "cluster": 11,
+  "desc_en": "Removing specific knowledge, entities or hazardous capabilities from LLMs while preserving utility, and rigorous evaluation of whether unlearning worked.",
+  "trend_en": "Share down 37.3 → 26.3: cooling after the 2026 peak; methods moved to layer- and subspace-localised unlearning and preventive capability locking, and evaluation now asks whether knowledge stays gone under relearning attacks."
+ },
+ {
+  "cluster": 12,
+  "desc_en": "Low-bit quantization of LLM weights, activations and KV cache, quantization-aware training, vector quantization and low-precision (FP4) training.",
+  "trend_en": "Share down 42.9 → 32.8: 4-bit PTQ is saturated; new work pushes 2-bit vector-quantization QAT, outlier analysis for NVFP4 pretraining and KV-quantization distillation for reasoning models."
+ },
+ {
+  "cluster": 13,
+  "desc_en": "A mixed bag grouped by generic \"neural network/architecture\" wording: local and forward-only learning, width adaptation, optimizer reparameterisation and scattered applications.",
+  "trend_en": "Share fell sharply 44.4 → 13.7: finer topic clusters split this generic-wording cluster in 2027; the most coherent remainder is local or forward learning as an alternative to backpropagation."
+ },
+ {
+  "cluster": 14,
+  "desc_en": "Classical statistical learning theory: random matrices, ridge regression and sketching, covariance estimation, and asymptotics of heavy-tailed ERM.",
+  "trend_en": "Share down 49.5 → 31.4: counts still grew but were diluted by the 2027 submission surge; new topics include explaining grokking through minimum-norm interpolation and theory for MAE."
+ },
+ {
+  "cluster": 15,
+  "desc_en": "Scattered optimisation topics (multi-task gradient conflict, curvature proxies, loss normalisation) grouped by shared wording such as \"exact/fixed/When does…\"; a style cluster.",
+  "trend_en": "Share jumped 20× (3.0 → 62.1): almost all are new 2027 papers with titles on the \"When Does X Preserve Y?\" template, likely homogenised writing from AI-assisted or automated research rather than a real new direction."
+ },
+ {
+  "cluster": 16,
+  "desc_en": "Noise schedules, few-step samplers, score approximation and curse-of-dimensionality theory, and memorisation versus generalisation in diffusion models.",
+  "trend_en": "Share down slightly 43.9 → 36.5: applied diffusion work moved to flow matching and application clusters, leaving few-step reverse-dynamics learning and statistical theory on low-dimensional structure."
+ },
+ {
+  "cluster": 17,
+  "desc_en": "A loose group on AI's effects on labour, peer review, regulation and public perception, plus meta-research on AI scientists and AI reviewing.",
+  "trend_en": "Share down 36.3 → 22.3: the 2026 interest in AI scientists and the social impact of agents was diluted; 2027 adds conference meta-research on the submission surge and AI reviewers replacing humans."
+ },
+ {
+  "cluster": 18,
+  "desc_en": "Constructing jailbreak attacks on LLMs and VLMs, automated red-teaming and guardrail defences.",
+  "trend_en": "Share halved 70.2 → 34.9: text-prompt jailbreak recipes are saturating; growth moved to decomposition attacks on agents, jailbreaks of embodied and full-duplex speech models, and the validity of red-teaming metrics."
+ },
+ {
+  "cluster": 19,
+  "desc_en": "Multimodal fusion without large models: missing modalities, modality imbalance, sentiment analysis and multimodal medical diagnosis.",
+  "trend_en": "Stable (49.5 → 46.7): still dominated by reliability-weighted modalities and imbalance correction, with applications spreading to brain-disease diagnosis and cancer survival prediction."
+ },
+ {
+  "cluster": 20,
+  "desc_en": "Molecular representation learning, property prediction, force fields and quantum-chemistry functionals, and evaluation of molecular foundation models.",
+  "trend_en": "Share down 38.4 → 29.5: pure graph representations are fading in favour of physics-informed representations such as electron density and molecular orbitals, and rigorous evaluation of molecular foundation models and LLM chemical reasoning."
+ },
+ {
+  "cluster": 21,
+  "desc_en": "Linear attention, gated DeltaNet, associative memory, hybrid linear/softmax layers, and linearising pretrained LLMs.",
+  "trend_en": "Share up 17.7 → 26.7: interest rose after Gated DeltaNet hybrids shipped in production models such as Qwen3-Next and Kimi Linear; 2027 work compensates for limited state memory and does on-policy linearisation."
+ },
+ {
+  "cluster": 22,
+  "desc_en": "KV cache eviction, quantization, sparse reads and budget allocation for long-context inference.",
+  "trend_en": "Share up 47.9 → 67.4: long chains of thought and agents made the KV cache the main bottleneck; 2027 turns to joint rate-distortion optimisation of eviction and quantization, decode-time budgets for reasoning models, and MLA/FP4 latent caches."
+ },
+ {
+  "cluster": 23,
+  "desc_en": "Multivariate and long-horizon time series forecasting models, time series foundation models and evaluation protocols.",
+  "trend_en": "Share down 99.9 → 77.9 but still the largest classic cluster in this packet: lightweight plug-in modules keep appearing, alongside rethinks of evaluation on irregular series and of whether foundation models are truly general."
+ },
+ {
+  "cluster": 24,
+  "desc_en": "Client heterogeneity, personalisation, communication efficiency, asynchronous and split federated learning.",
+  "trend_en": "Share keeps falling 93.9 → 61.4: classic heterogeneity-aware aggregation shows diminishing returns; remaining growth is in split FL, one-shot FL with pretrained models, and federated unlearning."
+ },
+ {
+  "cluster": 25,
+  "desc_en": "Debate, collaboration topologies and communication protocols among LLM agents, including latent-space and KV-level communication.",
+  "trend_en": "Share doubled 16.7 → 34.2: the focus moved from multi-agent debate to communication itself: latent communication, end-to-end learned communication, communication audits and collaboration on shared codebases."
+ },
+ {
+  "cluster": 26,
+  "desc_en": "Self-supervised pretraining (MAE, JEPA, contrastive learning) and its transfer to ECG, wearables, 3D shapes and audio.",
+  "trend_en": "Share recovered 30.3 → 43.5: LeJEPA and related work revived JEPA, and self-supervision is spreading into domain foundation models for wearable and medical signals and 3D shapes."
+ },
+ {
+  "cluster": 27,
+  "desc_en": "RAG pipelines, graph RAG, multi-hop retrieval reasoning, and retrieval-poisoning attacks and defences.",
+  "trend_en": "Share plunged 89.8 → 24.9: classic RAG-pipeline papers gave way to deep-research and search agents; what remains is graph-RAG poisoning, on-device RAG and speculative retrieval."
+ },
+ {
+  "cluster": 28,
+  "desc_en": "Training tool-using and long-horizon LLM agents with multi-turn RL, including environment synthesis, credit assignment and training frameworks.",
+  "trend_en": "Share up 20.2 → 36.3: the question moved from whether agents can be trained to scaling environments (synthesised executable environments, Claw-style general agents), asynchronous rollout frameworks and multi-turn critics."
+ },
+ {
+  "cluster": 29,
+  "desc_en": "3DGS-based novel view synthesis, feed-forward reconstruction, inverse rendering and dynamic or driving-scene reconstruction.",
+  "trend_en": "Stable (31.8 → 29.8): the centre of gravity keeps moving from per-scene optimisation to pose-free feed-forward GS and surround-view 4D driving reconstruction; relighting and volumetric scattering are new niches."
+ },
+ {
+  "cluster": 30,
+  "desc_en": "World Action Models (WAMs) that jointly predict future video or latent states and robot actions, using video-generation priors as policies.",
+  "trend_en": "Share up 16× (4.5 → 73.7): \"WAM\" became the name of a new paradigm replacing VLM-backbone VLAs; 2027 work studies the action-world interface, latent futures and 3D-native WAMs."
+ },
+ {
+  "cluster": 31,
+  "desc_en": "Distillation in which a student receives per-token teacher supervision on its own sampled trajectories (OPD), used for reasoning and agent post-training.",
+  "trend_en": "Share 0.5 → 108.3, the largest increase in this packet: after Thinking Machines' 2025 OPD blog post it became standard in post-training; 2027 work calibrates teacher-student mismatch, unifies OPD with GRPO and studies black-box OPD."
+ },
+ {
+  "cluster": 32,
+  "desc_en": "Text- and audio-driven human motion generation, human-object and human-human interaction, and motion editing and retargeting.",
+  "trend_en": "Stable (44.4 → 45.1): methods are moving to flow matching and Riemannian-manifold representations, with new camera-aware and streaming spatial-audio generation and interaction policies for humanoid robots."
+ },
+ {
+  "cluster": 33,
+  "desc_en": "Learning-theory results on PAC and query complexity, minimax rates, identifiability and lower bounds, written in highly formulaic language.",
+  "trend_en": "Share up 10× (8.1 → 80.9): almost entirely new in 2027, with prominent \"log/fixed/exact\" wording; this may partly reflect AI-assisted proofs lowering the cost of theory papers, and partly style clustering."
+ },
+ {
+  "cluster": 34,
+  "desc_en": "MoE routing and load balancing, expert pruning and skipping, expert offloading and expert-parallel inference.",
+  "trend_en": "Share up 38.4 → 58.1: fine-grained MoE is now the default for open large models, and research moved from routing design to deployment: training-free reduction of active experts, expert prefetching and EP decoding."
+ },
+ {
+  "cluster": 35,
+  "desc_en": "Invariant learning, generalisation under distribution shift, and predicting OOD performance without target data.",
+  "trend_en": "Share more than halved 26.8 → 11.4: the classic invariant-risk-minimisation line is fading, with scattered moves to ARC-style rule induction and compositional generalisation in world models."
+ },
+ {
+  "cluster": 36,
+  "desc_en": "Low-level restoration with diffusion priors: real-world image and video super-resolution, dehazing and low-light enhancement.",
+  "trend_en": "Share down 30.3 → 19.8: one-step diffusion SR is mature and homogeneous; novelty lies in distribution-shift one-step SR and preserving key regions in video SR."
+ },
+ {
+  "cluster": 37,
+  "desc_en": "Lp adversarial training, adversarial purification, certified robustness and analysis of adversarial-example features.",
+  "trend_en": "Share fell sharply 52.0 → 22.1: adversarial training of image classifiers keeps fading, with a little movement to test-time defences for LVLMs and data-free adversarial training."
+ },
+ {
+  "cluster": 38,
+  "desc_en": "Improvements to flow matching and rectified flow objectives, sampling step sizes and one-step generation, and variants on manifolds and scientific data.",
+  "trend_en": "Share down slightly 36.3 → 29.1: now a standard tool spread across application clusters, this cluster keeps methodological refinements such as second-order flow matching, curvature-adaptive step sizes and one-step generation."
+ },
+ {
+  "cluster": 39,
+  "desc_en": "Detecting and localising anomalies in multivariate time series by modelling normality through reconstruction, prediction or time-frequency features.",
+  "trend_en": "Stable (17.7 → 14.2): still mostly reconstruction and time-frequency modelling, with new multi-agent LLM analysers and anomaly prediction rather than after-the-fact detection."
+ },
+ {
+  "cluster": 40,
+  "desc_en": "Temporal grounding, dense captioning, spatiotemporal grounding and long-video reasoning in video MLLMs.",
+  "trend_en": "Stable (33.8 → 36.3): RL fine-tuning is now standard for temporal grounding, with new frame-level time awareness, audio-visual omni-modal evidence grounding and forgetting prevention in long videos."
+ },
+ {
+  "cluster": 41,
+  "desc_en": "Convergence rates of SGD, momentum and adaptive methods under heavy-tailed noise, generalised smoothness and nonconvex nonsmooth objectives.",
+  "trend_en": "Share down 31.3 → 20.7: classic convergence analysis was diluted, with new convergence theory for matrix optimizers such as Muon (Schatten momentum)."
+ },
+ {
+  "cluster": 42,
+  "desc_en": "Human values in LLMs, pluralistic alignment, moral profiles and how post-training shapes value preferences.",
+  "trend_en": "Share halved 23.2 → 10.9: fewer value benchmarks; remaining work formalises value theory, studies how post-training shapes value preferences, and examines anchors from narrow fine-tuning."
+ },
+ {
+  "cluster": 43,
+  "desc_en": "Distribution-free conformal prediction sets: conditional and class-wise coverage, covariate and label shift, and online conformal.",
+  "trend_en": "Share down slightly 39.9 → 30.5: methods are being refined (class-wise coverage, finite-sample geometry, in-context full conformal); LLM applications have not gone mainstream."
+ },
+ {
+  "cluster": 44,
+  "desc_en": "Visual and video QA datasets and benchmarks for charts, documents, driving, science and emergency response.",
+  "trend_en": "Share down slightly 52.0 → 43.2: fewer general VQA methods and more vertical diagnostic benchmarks (solar-panel inspection, long-tail driving, disaster-damage assessment)."
+ },
+ {
+  "cluster": 45,
+  "desc_en": "Referring expression comprehension, visual grounding in 3D scenes and fine-grained region alignment in VLMs.",
+  "trend_en": "Share doubled 13.6 → 27.0: grounding is treated as the evidence step of VLM reasoning, with training-free 3D grounding agents, render-and-verify methods and polygon-level grounding benchmarks."
+ },
+ {
+  "cluster": 46,
+  "desc_en": "A mixed cluster grouped by \"generative modeling\" wording: GANs, one-step generation via Wasserstein gradient flows, and crystal, CAD and dental-crown generation.",
+  "trend_en": "Share down 43.4 → 28.4: finer topic clusters absorbed this generic-wording cluster; the recognisable new threads are one-step generation from Wasserstein gradient flows and reward alignment for few-step models."
+ },
+ {
+  "cluster": 47,
+  "desc_en": "Training LLM reasoning with verifiable rewards (RLVR/GRPO): exploration, rollout diversity, advantage shaping and stability.",
+  "trend_en": "Share up slightly 44.9 → 51.1, with growth slowing: after the wave of GRPO variants, work moved to exploration and prior lock-in and asynchronous off-policy training, and on-policy distillation drew away some attention."
+ },
+ {
+  "cluster": 48,
+  "desc_en": "Direct training of SNNs, ANN-to-SNN conversion, spiking Transformers and energy-efficient neuromorphic inference.",
+  "trend_en": "Share down 50.0 → 37.9: spiking Transformers and neuron-dynamics improvements remain common, but growth lags overall submissions."
+ },
+ {
+  "cluster": 49,
+  "desc_en": "Zero-shot TTS, speech tokenizers and neural audio codecs, voice conversion and conversational speech generation.",
+  "trend_en": "Share down 27.3 → 15.8: speech tokenizers are maturing; growth moved to multi-speaker dialogue generation and streaming causal-diffusion TTS, and speech is increasingly studied inside omni-modal models."
+ },
+ {
+  "cluster": 50,
+  "desc_en": "Unified multimodal models (UMMs) that both understand and generate or edit images in a single model, studying visual tokenizers, architectures and synergy between the two abilities.",
+  "trend_en": "Share down 39.4 → 23.0: after the 2026 burst of BAGEL/Janus/MetaQueries-style architectures, 2027 turns to analysing understanding-generation synergy, self-teaching and reflective correction, and closed-loop evaluation, with fewer new architectures."
+ },
+ {
+  "cluster": 51,
+  "desc_en": "Protein sequence and structure design with diffusion, flow matching and protein language models, including inverse folding, antibody and peptide design, and generation of protein dynamics.",
+  "trend_en": "Stable (34.8 → 36.3): the focus is moving from single-chain backbone generation to all-atom, multi-conformation and protein-complex design, cryo-EM-guided generation and test-time design."
+ },
+ {
+  "cluster": 52,
+  "desc_en": "A mixed set grouped by abstract wording such as \"feature/fusion/module\": infrared-visible fusion, person re-identification, occupancy prediction, deraining and pathology; the topics are scattered, so this is a style cluster.",
+  "trend_en": "Share diluted 47.9 → 35.8: module-stacking application papers lost share as total submissions surged, with no clear new paradigm in the content."
+ },
+ {
+  "cluster": 53,
+  "desc_en": "Estimating average and heterogeneous treatment effects from observational data, with orthogonal and doubly robust meta-learners, unobserved confounding, partial identification and instrumental variables.",
+  "trend_en": "Share down 36.8 → 27.4 though counts grew: the method line advances steadily to long-term effects, distributional outcomes, proximal causal inference and coupling with downstream decisions, untouched by the LLM wave."
+ },
+ {
+  "cluster": 54,
+  "desc_en": "Multi-fingered dexterous grasping and manipulation, hand-object reconstruction and tactile sensing, with emphasis on turning human video and demonstrations into robot-usable data.",
+  "trend_en": "Share up 16.7 → 27.4: the data bottleneck has produced many data engines that turn egocentric human video into dexterous-hand demonstrations, plus HOI generation for augmentation and tactile-field estimation."
+ },
+ {
+  "cluster": 55,
+  "desc_en": "Computer-use and GUI agents that complete tasks on desktop, mobile and web interfaces, plus their training environments and benchmarks.",
+  "trend_en": "Share down 21.7 → 13.0 though counts still grew: work moved from GUI grounding and general OS benchmarks to verifiable synthetic software environments and long-horizon tasks in professional software, and some moved to the memory and skills clusters."
+ },
+ {
+  "cluster": 56,
+  "desc_en": "Long-term and external memory for LLM agents (writing, consolidation, retrieval, revision and conflict resolution) and security issues such as memory poisoning and provenance.",
+  "trend_en": "Surged about 8× (7.6 → 64.2): memory went from a RAG add-on to the agent's core state, with many papers on memory governance, belief revision, experience reuse and diagnosing memory utility."
+ },
+ {
+  "cluster": 57,
+  "desc_en": "Building, retrieving, composing and evolving reusable skills (skill files and procedural workflows) for LLM agents, plus security evaluations of skill overreach and malicious skills.",
+  "trend_en": "A new cluster, from zero to 37.9: after Agent Skills became the standard interface of mainstream agent harnesses in late 2025, skill compilation, composition failures, skill staleness and skill supply-chain attacks quickly became their own direction."
+ },
+ {
+  "cluster": 58,
+  "desc_en": "Training dynamics and generalisation of deep networks: loss-landscape geometry, sharpness-aware minimisation (SAM), grokking, mode connectivity and memorisation.",
+  "trend_en": "Share down 30.8 → 21.2: classic small-model dynamics work was diluted; new papers give finer theoretical accounts such as Adam stability phase diagrams and curvature diagnostics."
+ },
+ {
+  "cluster": 59,
+  "desc_en": "Classifier-free guidance and training-free guidance in diffusion and flow sampling: guidance-strength schedules, spatial adaptivity, theory and alternatives.",
+  "trend_en": "Share down slightly 25.7 → 20.9: empirical CFG tweaks are saturated; 2027 work explains mode collapse and overshoot through optimal control, optimal transport and information theory."
+ },
+ {
+  "cluster": 60,
+  "desc_en": "Game theory and multi-agent learning: equilibrium computation in zero-sum and Markov games, CFR, imperfect-information games, last-iterate convergence and contract design.",
+  "trend_en": "Stable (40.9 → 41.4): the theory core is unchanged, with new work on symmetry reduction in Markov games, correlated equilibria and test-time RL for imperfect-information games."
+ },
+ {
+  "cluster": 61,
+  "desc_en": "VLA policies that output robot actions from a VLM backbone, studying action chunking, flow-matching action heads, real-time inference and online RL fine-tuning.",
+  "trend_en": "Share keeps rising 42.9 → 67.0: the question moved from how to build a VLA to deployment: real-time inference on consumer GPUs, action-chunk switching, robustness to camera viewpoint and real-world RL for streaming VLAs."
+ },
+ {
+  "cluster": 62,
+  "desc_en": "Process reward models that score each step of a reasoning chain, and step-level verifiers, used for test-time search and RL training.",
+  "trend_en": "Share halved 23.2 → 12.1: the post-o1 PRM wave gave way to outcome-based RLVR; remaining work covers unsupervised PRMs, deriving process supervision from outcome rewards and auditing PRM bias."
+ },
+ {
+  "cluster": 63,
+  "desc_en": "Multi-view and deep clustering, focusing on missing and unaligned views and anchor graphs, with spectral clustering, contrastive learning and granular-ball representations.",
+  "trend_en": "Stable, slightly up (31.8 → 37.7): a small traditional area that keeps publishing; novelty lies in fully unaligned views, budget-limited acquisition and federated multi-view clustering."
+ },
+ {
+  "cluster": 64,
+  "desc_en": "Capability analysis, bias diagnosis, visual-encoder design and small benchmarks for general VLMs; the content is loose.",
+  "trend_en": "Share fell sharply 54.5 → 19.5: general VLM research was split off into specialised clusters such as spatial reasoning, video and unified models, leaving native VLMs and visual-encoder training recipes."
+ },
+ {
+  "cluster": 65,
+  "desc_en": "Differential privacy mechanism design, privacy accounting, DP-SGD, privacy auditing and DP synthetic data.",
+  "trend_en": "Share down 52.0 → 36.7: this theory-heavy area did not grow with the submission surge; new work centres on one-run privacy auditing, end-to-end accounting for synthetic data and privacy amplification in LLM inference."
+ },
+ {
+  "cluster": 66,
+  "desc_en": "LLM-based automated theorem proving in Lean 4 and similar systems, autoformalisation and formal-verification benchmarks.",
+  "trend_en": "Stable, slightly up (32.3 → 35.1): moving from single-model provers to agentic proof development and revisable proof construction, plus checks on semantic fidelity of autoformalisation and frontier benchmarks."
+ },
+ {
+  "cluster": 67,
+  "desc_en": "Architectural changes to ViTs: token allocation and merging, attention replacements, positional encoding, efficient inference and training recipes.",
+  "trend_en": "Share halved 45.4 → 23.2: room for backbone innovation has narrowed; most remaining work is theoretical bounds for token merging, adaptive tokenisation and ViT-5-style modernised recipes."
+ },
+ {
+  "cluster": 68,
+  "desc_en": "Catastrophic forgetting and loss of plasticity in continual and lifelong learning: replay, regularisation, modularity and continual learning for LLMs.",
+  "trend_en": "Share down 69.7 → 50.4: classic class-incremental benchmark papers are fading; growth comes from continual learning for LLMs and mechanistic analysis of the stability-plasticity trade-off."
+ },
+ {
+  "cluster": 69,
+  "desc_en": "Using LLMs for symbolic and numeric planning, robot task planning and long-horizon agent planning, often combined with classical search and behaviour trees.",
+  "trend_en": "Share down 49.0 → 35.1: standalone planning work was drawn off by the agent memory and skills clusters; new questions are whether agents follow the plans they state and how to enforce safety constraints on planning."
+ },
+ {
+  "cluster": 70,
+  "desc_en": "Methodology papers that audit evaluation itself: answer-extraction and scoring errors, benchmark leakage and shortcuts, measurement validity, preregistration and reproducibility; titles are highly similar in style.",
+  "trend_en": "A large new cluster, from zero to 85.3: almost entirely from 2027, with concentrated keywords such as preregistration and measurement validity; it looks like a new evaluation-methodology submission category or batches of audit papers from automated research, and needs further checking."
+ },
+ {
+  "cluster": 71,
+  "desc_en": "Methods and theory of teacher-student knowledge distillation, covering LLM reasoning distillation, multi-teacher distillation and compression of vision and medical models.",
+  "trend_en": "Share down slightly 62.6 → 51.6: general KD was diluted; on the LLM side work moved to mid-training distillation, circuit-level distillation and analysis of how distillation works."
+ },
+ {
+  "cluster": 72,
+  "desc_en": "Analysing LLM internal features and circuits with sparse autoencoders, activation patching and activation steering.",
+  "trend_en": "Stable (18.7 → 17.9): the field moved from stacking SAE variants to methodological questions such as identifiability and whether steering reflects real mechanisms, and links to safety problems such as emergent misalignment."
+ },
+ {
+  "cluster": 73,
+  "desc_en": "Learning robot manipulation policies: behaviour cloning, diffusion policies, action chunking, world-action models (WAMs) and policy reward evaluation.",
+  "trend_en": "Share surged 15.1 → 53.9: world-action models and closed-loop policy improvement from deployment rollouts became hot topics, and humanoid whole-body control and offline RL methods such as Q-chunking joined the cluster."
+ },
+ {
+  "cluster": 74,
+  "desc_en": "Evolutionary search with LLMs as mutation operators to design heuristics, solvers and programs automatically, for combinatorial optimisation, chip design and more.",
+  "trend_en": "Share up 31.8 → 50.2: the AlphaEvolve/FunSearch paradigm has been widely reproduced; attention moved to using failure feedback, when to reflect, uncertainty calibration and runtime-aware solver design."
+ },
+ {
+  "cluster": 75,
+  "desc_en": "Concept-based interpretable models (CBMs): concept discovery, interventions, information leakage, and concepts generated by CLIP or LLMs.",
+  "trend_en": "Stable (24.2 → 23.2): continued work on unsupervised concept sparsity, spatially grounded concepts and the harms of partial interventions, extending to pathology and robotics."
+ },
+ {
+  "cluster": 76,
+  "desc_en": "Planning, perception and simulation for end-to-end autonomous driving, including driving VLAs, world models, closed-loop benchmarks and traffic simulation.",
+  "trend_en": "Share up 62.1 → 75.6: driving VLAs merging with world-action models became mainstream, with more closed-loop evaluation (the Bench2Drive family) and self-play policies trained without expert demonstrations."
+ },
+ {
+  "cluster": 77,
+  "desc_en": "Training, parallel decoding, remasking strategies and reasoning ability of masked and discrete diffusion language models (dLLMs).",
+  "trend_en": "Share keeps growing 59.1 → 76.5: after LLaDA, Mercury and Gemini Diffusion the area entered an engineering phase, focused on block diffusion, dependency-aware parallel decoding and inference-time search and repair."
+ },
+ {
+  "cluster": 78,
+  "desc_en": "MCTS planning and sequential Monte Carlo methods for RL, LLM reasoning search, combinatorial optimisation and diffusion sampling, with some sampling theory mixed in.",
+  "trend_en": "Share halved 36.8 → 17.9: the 2024–25 wave of tree search for LLM reasoning has receded as RL post-training replaced explicit search; what remains improves MCTS algorithms themselves."
+ },
+ {
+  "cluster": 79,
+  "desc_en": "Representation learning and foundation models for single-cell transcriptomics and gene expression, including multi-omics, perturbation prediction and cell annotation.",
+  "trend_en": "Stable (24.7 → 21.9): the focus moved from training larger scFMs to questioning their value through in-vivo evaluation, a modality-translation view and combination with LLM-retrieved evidence."
+ },
+ {
+  "cluster": 80,
+  "desc_en": "Structured and layer pruning of neural networks and LLMs, sparsity allocation and retraining-free compression.",
+  "trend_en": "Share more than halved 63.6 → 28.1: pruning gains lose out to quantization and small-model distillation; 2027 work is mostly incremental, on cross-layer sparsity allocation and on-device dynamic pruning."
+ },
+ {
+  "cluster": 81,
+  "desc_en": "Variational quantum circuits, quantum neural networks, barren plateaus, quantum error-correction decoding and hybrid quantum-classical models.",
+  "trend_en": "Stable (35.3 → 36.5): the main line is still mitigating barren plateaus and improving trainability, with new hybrid applications such as quantum adapters for LLMs and quantum RAG."
+ },
+ {
+  "cluster": 82,
+  "desc_en": "Evaluating and improving 3D spatial reasoning and spatial intelligence in VLMs and MLLMs: multi-view, reference frames, mental rotation and egocentric reasoning.",
+  "trend_en": "Share up 31.8 → 47.4: spatial intelligence became the biggest weakness of MLLMs, with a flood of benchmarks (multi-view, panoramic, predictive spatial reasoning) and the start of training with RL and auxiliary-view distillation."
+ },
+ {
+  "cluster": 83,
+  "desc_en": "Analysis papers grouped by wording such as \"representation geometry/local structure/diagnostic\", ranging from LoRA geometry to Fisher information to typographic art; a style cluster.",
+  "trend_en": "Jumped from 3.5 to 57.7: almost all from 2027 with highly uniform title style, likely batch-produced analysis papers similar to the evaluation-audit cluster rather than one new research direction."
+ },
+ {
+  "cluster": 84,
+  "desc_en": "Neural operators such as FNO that learn PDE solution operators, as surrogates for fluid dynamics, finite elements and other scientific computing.",
+  "trend_en": "Share up sharply 33.8 → 57.9: scientific ML submissions expanded, with new operator architectures (Radon, Green's-function and latent-space operators), moving interfaces and stable long rollouts as selling points."
+ },
+ {
+  "cluster": 85,
+  "desc_en": "Mechanisms, compression and efficiency of chain-of-thought reasoning, implicit and latent-space reasoning, and CoT faithfulness and monitorability.",
+  "trend_en": "Share halved 87.3 → 40.5: after the 2026 wave of efficient reasoning and CoT compression, 2027 turns to CoT monitorability and faithfulness and to non-autoregressive latent reasoning with looped Transformers."
+ },
+ {
+  "cluster": 86,
+  "desc_en": "Mostly instruction-based image, video and 3D editing with diffusion and flow models, with some LLM knowledge-editing (model editing) papers mixed in.",
+  "trend_en": "Stable (80.3 → 72.1): image editing has moved to multi-turn long-horizon editing, canvas interaction and MLLM planning with DiT execution, while the share of LLM knowledge editing shrinks."
+ },
+ {
+  "cluster": 87,
+  "desc_en": "Memory inside the model: associative memory, recurrent memory, test-time-trained memory layers and pluggable parametric memory modules.",
+  "trend_en": "Share up 17.2 → 30.9: driven by Titans-style test-time learning and memory decoders, research moved from external retrieval to writable parametric and associative memory and its forgetting."
+ },
+ {
+  "cluster": 88,
+  "desc_en": "Segmentation, change detection, change captioning and multispectral foundation models for remote-sensing imagery.",
+  "trend_en": "Share up 21.2 → 32.3: remote-sensing tasks are being recast for MLLMs, with instruction-driven segmentation, reasoning-based change detection and any-band foundation models as the new main line."
+ },
+ {
+  "cluster": 89,
+  "desc_en": "Safe RL under constrained MDPs: Lagrangian methods, hard constraints, chance constraints, control barrier functions and offline safe RL.",
+  "trend_en": "Share down slightly 21.2 → 18.6: methods are stable; novelty lies in tail-risk controllability, variance-optimal replay and LLM-assisted synthesis of barrier functions."
+ },
+ {
+  "cluster": 90,
+  "desc_en": "LLM safety alignment: over-refusal, alignment degradation from harmful fine-tuning, safety patches, steering and safety of reasoning models.",
+  "trend_en": "Share down 63.6 → 50.9: interest in jailbreak defences fell; the focus moved to benign fine-tuning that breaks alignment, transferable safety patches and self-recovery within reasoning traces."
+ },
+ {
+  "cluster": 91,
+  "desc_en": "Reward design for RL post-training: rubric rewards, reward shaping and reward models, and detecting and mitigating reward hacking.",
+  "trend_en": "Share up 42.9 → 49.5: once RLVR extended to non-verifiable tasks, rubric-based RL became mainstream, followed by many studies of its reward hacking and over-optimisation."
+ },
+ {
+  "cluster": 92,
+  "desc_en": "Systems, environments and benchmarks for recursive self-improvement (RSI), in which LLM agents improve by rewriting their own harness, data or workflows.",
+  "trend_en": "A new cluster, from 1.0 to 37.4: RSI moved from thought experiment to an experimental topic, with dedicated environments (RSI-Env), code-level benchmarks and attribution-guided self-improvement of multi-agent workflows."
+ },
+ {
+  "cluster": 93,
+  "desc_en": "Learning to solve TSP, VRP, MILP and other combinatorial optimisation problems with GNNs, RL and diffusion, and generalising across problem scales.",
+  "trend_en": "Share down 52.5 → 39.8: pure neural solvers lost ground to LLM-generated heuristics (see the evolutionary algorithm-design cluster); remaining work targets scale generalisation and problem-duality augmentation."
+ },
+ {
+  "cluster": 94,
+  "desc_en": "Modelling working memory, neural dynamics and cognitive mechanisms with recurrent networks, including reservoir computing and identifiability analysis.",
+  "trend_en": "Share down slightly 24.7 → 20.5: a stable small community focused on aligning small RNNs with cognitive mechanisms and on phase transitions in learning dynamics."
+ },
+ {
+  "cluster": 95,
+  "desc_en": "Regret bounds and algorithms for multi-armed, linear and generalised linear, and contextual bandits, including Thompson sampling and best-arm identification.",
+  "trend_en": "Stable (36.8 → 37.4): this classic theory area holds its share, with new variants such as single-index models, semiparametric model selection and strategic agents."
+ },
+ {
+  "cluster": 96,
+  "desc_en": "Zero-shot and trained detection of machine-generated text, attribution to source models, and paraphrase attacks that evade detection.",
+  "trend_en": "Share down 26.2 → 17.9: detection performance is hitting a ceiling; research moved to length obfuscation, text from mixed models, Chinese detection benchmarks and theory of detector reliability."
+ },
+ {
+  "cluster": 97,
+  "desc_en": "Reworking LLM supervised fine-tuning objectives, data selection, and post-training pipelines that unify or connect SFT and RL.",
+  "trend_en": "Share down 48.5 → 34.4: after a burst of SFT-RL unification methods in 2026, 2027 focuses on RL-ready initialisation problems such as SFT-induced diversity collapse and preserving plasticity."
+ },
+ {
+  "cluster": 98,
+  "desc_en": "Merging several fine-tuned models with no or light training: task vectors, interference removal, subspace alignment and continual merging.",
+  "trend_en": "Share down slightly 30.3 → 23.0: task-interference models are converging; new directions are continual merging, on-device LoRA merging and preventing unauthorised merging."
+ },
+ {
+  "cluster": 99,
+  "desc_en": "Discovering symbolic expressions and governing equations (ODEs/PDEs) from data, combining genetic programming with LLM-guided search.",
+  "trend_en": "Stable (16.7 → 18.4): LLM-guided symbolic regression is now the default setup, and new work centres on search control, residual guidance and multi-objective evolution."
+ },
+ {
+  "cluster": 100,
+  "desc_en": "A miscellany grouped by \"LLM/large language model\" wording: fingerprinting and provenance, knowledge gaps, code generation, routing and synthetic data; the topics do not cohere, so this is a wording cluster.",
+  "trend_en": "Share plunged 98 → 25: generic \"use an LLM for X\" papers were drawn into new 2027 clusters (coding agents, OPSD, steering and others), leaving scattered topics such as model fingerprints and lineage."
+ },
+ {
+  "cluster": 101,
+  "desc_en": "Architecture papers that modify softmax, linear or higher-order attention, multi-head structure and attention sinks, including complexity and expressivity analysis.",
+  "trend_en": "Share down 42 → 28: counts still grow, but novelty is in details such as higher-order attention, sink removal and FP8 or quantized softmax, while generic new-attention proposals are diluted."
+ },
+ {
+  "cluster": 102,
+  "desc_en": "Deep-network models of fMRI responses in visual cortex: brain-model representational alignment, visual reconstruction decoding, cross-subject alignment and connectome foundation models.",
+  "trend_en": "Share down slightly 50 → 41: moving from image reconstruction to cross-subject alignable representations, in-silico interventions and questioning the reliability of encoding models (low-rank brains)."
+ },
+ {
+  "cluster": 103,
+  "desc_en": "In-context learning in LLMs: demonstration selection and ordering, task vectors, hypothesis selection in ICL and attention-based explanations, with a few extensions to VLAs and medical vision.",
+  "trend_en": "Share fell sharply 42 → 17: prompt engineering such as demonstration retrieval and ordering is fading; remaining work turns to task vectors and mechanistic explanation as the reasoning and RL paradigm sidelines the topic."
+ },
+ {
+  "cluster": 104,
+  "desc_en": "TabPFN-style prior-fitted networks and tabular foundation models: in-context prediction, scaling to large tables, tabular data generation and adapting to distribution shift.",
+  "trend_en": "Share recovered 28 → 43: TabPFN v2 and later open models became the new base; papers moved from asking whether fine-tuning helps to extending context (Mixture-of-Contexts), mechanisms and relational data."
+ },
+ {
+  "cluster": 105,
+  "desc_en": "De novo 2D and 3D molecule generation, fragment-based generation and structure-based drug design with diffusion, flow matching, BFNs and chemical language models.",
+  "trend_en": "Share roughly stable (23 → 22): new trends are reward design and post-training for molecular generators, and fragment-level, multiscale 3D generation."
+ },
+ {
+  "cluster": 106,
+  "desc_en": "New parameter-efficient fine-tuning structures and initialisations: LoRA variants, spectral and directional decompositions, block composition and rank adaptation, for LLMs and vision models.",
+  "trend_en": "Share down 26 → 21: LoRA variants are saturating, prompting \"are PEFT methods really different?\" critiques and theoretical attempts such as function-space and curvature-based initialisation."
+ },
+ {
+  "cluster": 107,
+  "desc_en": "Learning causal graphs and DAGs from observational data: constraint- and score-based methods, latent confounding, identifiability, and Bayesian and differentiable causal discovery.",
+  "trend_en": "Share slowly down 33 → 26: the main line is stable, with new work on LLMs as priors or experts guiding causal discovery, target-centred subgraphs and high-dimensional Bayesian extensions."
+ },
+ {
+  "cluster": 108,
+  "desc_en": "Design and convergence analysis of deep-learning optimizers: Adam variants, momentum, parameter-free adaptive methods and the orthogonalising Muon optimizer.",
+  "trend_en": "Share halved 34 → 15: after the 2026 Muon wave the area is digesting, with papers filling in theory such as Muon generalisation analysis and Adam regret bounds, and new-optimizer proposals diluted."
+ },
+ {
+  "cluster": 109,
+  "desc_en": "Mostly multimodal emotion recognition, mixed with action recognition, face recognition, wearable activity recognition and fine-grained recognition.",
+  "trend_en": "Share down slightly 33 → 29: emotion recognition is now done with MLLMs plus cross-modal chain of thought or reward injection, with emphasis on interpretability and open vocabularies."
+ },
+ {
+  "cluster": 110,
+  "desc_en": "Detecting and mitigating LLM hallucination: detectors based on internal representations, uncertainty, attention-head interventions and SAE features, plus hallucination benchmarks.",
+  "trend_en": "Share down 39 → 25: methods have become homogeneous; 2027 brings meta-analyses of what hallucination benchmarks actually measure and debunking of topological detectors."
+ },
+ {
+  "cluster": 111,
+  "desc_en": "Credit assignment in RL for long-horizon multi-turn LLM agents: step- and action-level advantage estimation, hindsight credit and dependency-aware policy optimisation.",
+  "trend_en": "Share up sevenfold (12 → 87): RL training moved from single-turn maths reasoning to long-horizon agents in terminals and search, making step-wise credit assignment under sparse outcome rewards the core problem."
+ },
+ {
+  "cluster": 112,
+  "desc_en": "Autoregressive and streaming long-video diffusion: Self Forcing-style training, KV cache management, real-time interactive generation and long-horizon consistency.",
+  "trend_en": "Share tripled 13 → 38: Self Forcing, Rolling Forcing and LongLive opened the real-time long-video paradigm, followed in 2027 by many \"X Forcing\" variants and KV-cache and memory-compression work."
+ },
+ {
+  "cluster": 113,
+  "desc_en": "Sample selection under labelling budgets: batch active learning, active feature acquisition, Bayesian experimental design and cost-aware annotation.",
+  "trend_en": "Stable (18 → 20): new details include combining with prediction-powered inference (PPI) and zero-pool or metadata-only selection, settings closer to real budget constraints."
+ },
+ {
+  "cluster": 114,
+  "desc_en": "GNN architectures and theory: message passing, directed graphs, memorisation and expressivity analysis, mixed with molecular and spatial-network applications.",
+  "trend_en": "Share halved 49 → 18: general GNN architecture innovation is fading as graph learning is drawn off by graph foundation models, LLMs and specific scientific applications."
+ },
+ {
+  "cluster": 115,
+  "desc_en": "ASR, speech-LLM bridging, full-duplex spoken dialogue models, TTS evaluation and paralinguistic understanding.",
+  "trend_en": "Stable (32 → 32): the focus moved from ASR datasets to real-time full-duplex speech models and interaction problems such as routing and self-listening."
+ },
+ {
+  "cluster": 116,
+  "desc_en": "Mutual information estimation, the information bottleneck and information-theoretic generalisation bounds, with applications to representation learning and privacy.",
+  "trend_en": "Share down 20 → 13: this established theoretical tool keeps drifting to the margins; remaining work centres on discrete-bridge and diffusion-based MI estimation and change-of-measure inequalities."
+ },
+ {
+  "cluster": 117,
+  "desc_en": "Time series forecasting: zero-shot prediction and ensembling with time series foundation models, retrieval-augmented forecasting, online correction under delayed feedback and forecasting agents.",
+  "trend_en": "Share jumped 19 → 53: partly because forecasting split off from the general time-series cluster (144), and partly because ensembling and correcting frozen TSFMs and LLM-agent forecasting became new hot spots."
+ },
+ {
+  "cluster": 118,
+  "desc_en": "Grouped by the word \"event\": temporal point processes and Hawkes modelling, neuromorphic event-camera vision and document event extraction; the topics are disjoint.",
+  "trend_en": "Share roughly stable (14 → 17): on the point-process side, foundation models across event logs appeared; on the event-camera side, work moved to distilling encoders from RGB foundation models."
+ },
+ {
+  "cluster": 119,
+  "desc_en": "Loss design, negative sampling, geometric properties and theory of InfoNCE/CLIP-style contrastive learning, including graph and multimodal contrastive learning.",
+  "trend_en": "Share halved 41 → 21: fewer new contrastive methods, with a shift to explanatory work on CLIP geometry, hard-negative theory and limits of identifiability."
+ },
+ {
+  "cluster": 120,
+  "desc_en": "Grouped by \"neural network\" wording: network verification, Lipschitz estimation, initialisation and wide-network theory, Hamiltonian networks and more; the topics are scattered.",
+  "trend_en": "Share down 41 → 24: general network theory and verification work was diluted by large-model topics; verification moved to tighter bounds such as scalable Lipschitz estimation."
+ },
+ {
+  "cluster": 121,
+  "desc_en": "RLHF from human preferences: reward-model training, reward over-optimisation and reward hacking, noisy feedback and interpretable rewards.",
+  "trend_en": "Share collapsed 44 → 13: classic preference RLHF was replaced by verifiable rewards (RLVR), rubric rewards and on-policy self-distillation; remaining work centres on mitigating reward hacking."
+ },
+ {
+  "cluster": 122,
+  "desc_en": "Repository-level software-engineering agents: SWE-bench-style long-horizon benchmarks, build-from-scratch and migration tasks, context compression and failure prediction.",
+  "trend_en": "Share up ninefold (7 → 66): with Claude Code and Codex-style products in wide use, SWE-bench is saturated and many new \"SWE-X\" benchmarks move to million-line legacy codebases, long multi-turn work and building repositories from scratch."
+ },
+ {
+  "cluster": 123,
+  "desc_en": "Group-equivariant networks, symmetry breaking and discovery, geometric-algebra networks, and scientific applications such as interatomic potentials and crystal generation.",
+  "trend_en": "Share down 29 → 22: equivariant architectures keep being refined (geometric algebra, Weyl algebra), but critical benchmarks on \"symmetry slippage\" and calibrated equivariance have started to appear."
+ },
+ {
+  "cluster": 124,
+  "desc_en": "Per-token distillation in which a model, on its own rollouts, uses itself with privileged information (reference answers or reflections) as teacher, replacing or supplementing RLVR.",
+  "trend_en": "A new cluster, from 0 to 52: after on-policy distillation and OPSD were proposed in late 2025, many 2027 papers study selective distillation, entropy overshoot and privileged-information interventions, and extend the method to VLMs and cross-lingual settings."
+ },
+ {
+  "cluster": 125,
+  "desc_en": "Continual learning with low-rank adapters: subspace protection, adapter routing and merging, to reduce catastrophic forgetting in LLMs and VLMs.",
+  "trend_en": "Share up 12 → 18: the main arena of continual learning moved from rehearsal to LoRA libraries and subspace geometry, with new settings such as adapter routing and arbitration."
+ },
+ {
+  "cluster": 126,
+  "desc_en": "Medical vision-language models: radiology report generation, CT and X-ray understanding, medical VQA benchmarks and clinical diagnostic reasoning.",
+  "trend_en": "Share down 59 → 43: counts still grow, but the focus moved from 2D chest X-ray reports to 3D CT, multi-tool medical agents and evidence-aligned diagnosis."
+ },
+ {
+  "cluster": 127,
+  "desc_en": "Selecting instruction-tuning data (coresets, gradient and information-gain selection) and evaluating instruction following, including visual instruction tuning.",
+  "trend_en": "Share down 24 from 33: SFT data selection still produces papers but is squeezed by RL and distillation post-training; instruction-following evaluation moved to multi-turn constraints and omni-modal settings."
+ },
+ {
+  "cluster": 128,
+  "desc_en": "Web and deep-search agents trained with RL: evidence filtering and verification, process rewards, synthesis of shortcut-resistant training tasks and multimodal search.",
+  "trend_en": "Share up 18 → 26: the Search-R1/DeepResearch line has matured, and the focus moved from whether agents can search to admitting evidence, resolving conflicts and rubric-based process rewards."
+ },
+ {
+  "cluster": 129,
+  "desc_en": "Non-LLM deep RL: actor-critic, distributional RL, model-based control such as TD-MPC, and analysis of Q-learning bias.",
+  "trend_en": "Share up slightly (23 → 27): classic control RL holds its ground, with action chunking and TD-MPC improvements as new hot spots."
+ },
+ {
+  "cluster": 130,
+  "desc_en": "General multimodal LLMs: visual encoders and projectors, information flow between modalities, text dominance and a range of understanding benchmarks.",
+  "trend_en": "Share plunged 70 → 29: generic MLLM architecture and perception papers were drawn off by finer clusters such as video understanding, multimodal reasoning and OPSD."
+ },
+ {
+  "cluster": 131,
+  "desc_en": "Self-supervised foundation models for EEG, cross-subject transfer and BCI decoding such as motor imagery, including EEG-fNIRS fusion and benchmarks.",
+  "trend_en": "Share up 44 → 56: EEG foundation models (after LaBraM and CBraMod) are now standard; 2027 focuses on tokenizer design, layer-wise interpretability and EEG benchmarks for LLMs."
+ },
+ {
+  "cluster": 132,
+  "desc_en": "Retrieval-augmented generation and multi-hop QA: evidence-chain retrieval, GraphRAG, parametric RAG and domain QA.",
+  "trend_en": "Stable (23 → 21): the focus moved from passage relevance to evidence sufficiency and budgeted retrieval, and the boundary with the search-agent cluster is blurring."
+ },
+ {
+  "cluster": 133,
+  "desc_en": "Discovering circuits and algorithmic mechanisms inside Transformers (arithmetic, toy tasks), including transcoders and training dynamics.",
+  "trend_en": "Share up slightly (29 → 33): the field moved from finding single circuits to testing the consistency and faithfulness metrics themselves, with critiques of circuit benchmarks."
+ },
+ {
+  "cluster": 134,
+  "desc_en": "Evaluating multi-turn LLM interaction: user simulators, multi-turn sycophancy and intent drift, role-play and benchmarks of conversational naturalness.",
+  "trend_en": "Share up slightly (30 → 34): \"LLMs get lost in multi-turn conversation\" prompted follow-ups, and the realism and validity of user simulators became a research topic in their own right."
+ },
+ {
+  "cluster": 135,
+  "desc_en": "ANN search for vector databases: graph indexes, IVF partition routing, hashing, filtered search and MIPS.",
+  "trend_en": "Share halved 10 → 5: a small stable community whose counts are flat and diluted by the total; new topics are stability of filtered and multi-vector search and hubness analysis."
+ },
+ {
+  "cluster": 136,
+  "desc_en": "Filtering, rewriting and synthesising LLM pretraining data, curriculum ordering, repetition and continued pretraining, and low-cost pretraining of small models.",
+  "trend_en": "Share down slightly 31 → 25: the main line became generative curation that rewrites and recycles low-quality web text, replacing classifier-based quality filtering."
+ },
+ {
+  "cluster": 137,
+  "desc_en": "A wording cluster: many abstracts use the same stock phrases (\"evidence/audit/held fixed/paired/matched\") across selective prediction, model selection and medical case studies; not a single research direction.",
+  "trend_en": "561 papers (130 per 10k) appeared from nothing in 2027: the highly formulaic \"audit/evidence\" writing likely comes from a wave of AI-assisted or automatically generated submissions and deserves a separate quality check."
+ },
+ {
+  "cluster": 138,
+  "desc_en": "Mitigating shortcut learning and spurious correlations: worst-group robustness, debiasing without group labels, feature geometry and masking SAE concepts.",
+  "trend_en": "Share down 12 → 7: classic Waterbirds-style debiasing is fading; new work uses SAEs and weight editing to handle spurious features in LLM reasoning."
+ },
+ {
+  "cluster": 139,
+  "desc_en": "Speculative decoding for faster LLM inference: draft-model training, parallel drafting, relaxed acceptance rules, batching and edge-cloud collaboration.",
+  "trend_en": "Share up 36 → 53: inference cost became the deployment bottleneck, and parallel drafting, lenient verification and self-speculation in diffusion language models became new directions."
+ },
+ {
+  "cluster": 140,
+  "desc_en": "Wasserstein and group DRO and their applications to regression, survival analysis and decision learning, with a few miscellaneous robustness papers.",
+  "trend_en": "Stable (12 → 11): new details combine DRO with decision-focused learning and with missing-data mask spaces."
+ },
+ {
+  "cluster": 141,
+  "desc_en": "Personalising LLMs and agents to user preferences: user-profile modelling, personalised rewards and evaluation, and long-term interaction memory.",
+  "trend_en": "Stable (27 → 28): moving from single-turn preference adaptation to evolving long-term user state and memory benchmarks for personal assistants."
+ },
+ {
+  "cluster": 142,
+  "desc_en": "TCS-style papers on learning-augmented algorithms with predictions, approximation and online algorithms, submodular maximisation and fair clustering.",
+  "trend_en": "Share down 34 → 19: pure algorithms papers are flat in number and diluted; learning-augmented settings extend to new problems such as facility location and dense subgraphs."
+ },
+ {
+  "cluster": 143,
+  "desc_en": "Controlling LLM behaviour at inference by adding direction vectors to the residual stream: multi-attribute steering, prefix steering, safety and sycophancy control, and representation engineering.",
+  "trend_en": "Share doubled 27 → 59: steering became a lightweight tool for alignment and control; 2027 work looks at a data perspective, minimum-KL steering and learning steering vectors from scalar rewards alone."
+ },
+ {
+  "cluster": 144,
+  "desc_en": "General time series analysis: classification, irregular multivariate series, generation and imputation, time-series-language alignment and pretraining time series foundation models.",
+  "trend_en": "Share down 71 → 42: forecasting split off into cluster 117, and new directions in the remainder include time-series-language alignment and caption generation."
+ },
+ {
+  "cluster": 145,
+  "desc_en": "DUSt3R/VGGT-style feed-forward multi-view and monocular 3D/4D reconstruction, including long sequences, metric scale, articulated objects and human-scene reconstruction.",
+  "trend_en": "Share nearly doubled 27 → 50: feed-forward geometric foundation models such as VGGT replaced per-scene optimisation, and 2027 builds on them with long sequences, view graphs and post-optimisation."
+ },
+ {
+  "cluster": 146,
+  "desc_en": "Identity-preserving human video generation: audio-driven talking heads, portrait and dance animation, multi-person references and virtual try-on.",
+  "trend_en": "Share lost two-thirds 31 → 11: once open video base models (Wan and others) shipped with reference conditioning, dedicated digital-human pipelines were absorbed by general video generation and autoregressive streaming generation."
+ },
+ {
+  "cluster": 147,
+  "desc_en": "Generative flow-matching and diffusion policies for online and offline RL: Q-guidance, critic gradients, one-step and MeanFlow policies, and fine-tuning.",
+  "trend_en": "Share up 13 → 20: flow policies became the new default policy class in RL and robot control, with focus on test-time Q-guidance and training under multi-step budgets."
+ },
+ {
+  "cluster": 148,
+  "desc_en": "General RL post-training for LLM reasoning: GRPO variants, off-policy RL, the exploration-stability trade-off, reward saturation and training efficiency.",
+  "trend_en": "Share down 80 → 25: the 2026 GRPO wave has split into finer clusters such as credit assignment and OPSD; remaining work argues RL is mere \"sparse policy selection\" and turns to off-policy training and numerical stability."
+ },
+ {
+  "cluster": 149,
+  "desc_en": "Generalising to unseen target domains: domain-invariant representations, style augmentation, MoE subset invariance and domain-generalisation theory.",
+  "trend_en": "Share down 20 → 12: classic DG benchmark work is fading; remaining papers lean theoretical (Rademacher bounds, identifiability) or federated."
+ },
+ {
+  "cluster": 150,
+  "desc_en": "Object and relation hallucination in LVLMs and MLLMs, mostly addressed by training-free contrastive decoding, attention reallocation and representation editing to strengthen visual evidence.",
+  "trend_en": "Stable (31 → 29); training-free decoding interventions still dominate, but 2027 brings placebo-controlled re-checks and \"hallucination routing\" diagnostic benchmarks that question the real gains of existing methods."
+ },
+ {
+  "cluster": 151,
+  "desc_en": "Variational inference, Bayesian neural networks, Gaussian processes and simulation-based inference, centred on neural posterior estimation and amortised inference.",
+  "trend_en": "Share keeps falling (36 → 24); classic VI and BNNs are fading, and remaining growth comes from amortised inference and in-context, prior-fitted Bayesian inference."
+ },
+ {
+  "cluster": 152,
+  "desc_en": "Shortening the chains of thought of large reasoning models: length rewards, early stopping, reflection control, reasoning compression and latent reasoning.",
+  "trend_en": "Down after the 2026 o1/R1 surge (58 → 34); coarse length penalties are saturated, and 2027 turns to early stopping by convergence detection, entropy-aware reflection rewards and metacognitive controllers."
+ },
+ {
+  "cluster": 153,
+  "desc_en": "Unsupervised skill discovery and hierarchical RL based on mutual information and empowerment, learning reusable, composable behaviour primitives.",
+  "trend_en": "Stable (9.6 → 10.0); methods are converging on trajectory-level objectives and capacity scaling, with new LLM-guided hierarchical skills and parameterised motor skills discovered for VLAs."
+ },
+ {
+  "cluster": 154,
+  "desc_en": "Merging, selecting or resampling visual tokens in video and multimodal LLMs to cut long-video inference cost, mostly training-free.",
+  "trend_en": "Share nearly doubled (15 → 27); driven by inference cost of long-video and omni-modal LLMs, with global codebooks, joint frame-budget allocation and audio-visual token compression, and one paper pointing to selection bias in evaluation."
+ },
+ {
+  "cluster": 155,
+  "desc_en": "Low-level restoration such as denoising, deblurring, deraining and low-light enhancement, centred on all-in-one models that handle many degradations.",
+  "trend_en": "Stable (30 → 32); all-in-one remains the main axis, with new one-step flow restorers, MoE routing and agentic RL restoration, extending to infrared, polarisation and surgical images."
+ },
+ {
+  "cluster": 156,
+  "desc_en": "Evaluation of multilingual LLMs, cross-lingual transfer, low-resource language benchmarks and cultural bias.",
+  "trend_en": "Share halved (52 → 23); general multilingual benchmarks saturated after the 2026 boom, and 2027 turns to benchmarks for minority languages (Yi), flaws in translation evaluation and cross-lingual RL and self-distillation."
+ },
+ {
+  "cluster": 157,
+  "desc_en": "Collaboration topologies, role assignment, orchestration and training of LLM multi-agent systems, plus MAS benchmarks and fault tolerance.",
+  "trend_en": "Stable at a high level (56 → 58); moving from hand-designed collaboration structures to self-evolving MAS, capability-aware orchestration and joint post-training of heterogeneous agents."
+ },
+ {
+  "cluster": 158,
+  "desc_en": "LLM agents for research ideation, paper reproduction, algorithm discovery and research evaluation, including studies of peer review.",
+  "trend_en": "Nearly doubled (36 → 65); amid the AI Scientist/AlphaEvolve wave, evaluation expanded from single-point reproduction to full research trajectories as evidence evolves, open problems and paper reconstruction."
+ },
+ {
+  "cluster": 159,
+  "desc_en": "Scaling laws for pretraining and fine-tuning: compute-optimal allocation, batch size and step count, hyperparameter transfer and theoretical explanations of scaling laws.",
+  "trend_en": "Share down (43 → 34); moving from parameter-data laws to new scaling axes such as training steps and batch size, fitting performance from configuration, and \"data-task alignment\"."
+ },
+ {
+  "cluster": 160,
+  "desc_en": "Camera and motion control, video editing, and temporal and geometric consistency in video diffusion models.",
+  "trend_en": "Share halved (66 → 33); video generation was drawn off by world models, 4D and embodied work, leaving unified camera and motion control and consistency via geometry distillation."
+ },
+ {
+  "cluster": 161,
+  "desc_en": "Model-based RL and latent world models (including JEPA-style ones) for imagined rollouts, MPC and long-horizon planning.",
+  "trend_en": "Up 3.4× (21 → 72); world models became a mainstream topic, and 2027 work studies audits of action identifiability, variable-length latent prediction, language world models and decision certification."
+ },
+ {
+  "cluster": 162,
+  "desc_en": "Theory of implicit bias in GD and SGD, the edge of stability, saddle-to-saddle dynamics, large step sizes and feature learning.",
+  "trend_en": "Share down (35 → 27); the problem set is stable (EoS, flat minima, diagonal linear networks), with new analyses of in-context learning dynamics in softmax attention."
+ },
+ {
+  "cluster": 163,
+  "desc_en": "Architecture and training of image diffusion models: DiT, representation alignment (REPA-style), pixel-space diffusion and faster sampling.",
+  "trend_en": "Keeps falling (45 → 31); general diffusion methods are drawn off by flow matching, and the hot spots inside the cluster are VAE-free pixel-space DiTs and representation guidance."
+ },
+ {
+  "cluster": 164,
+  "desc_en": "Monocular, video and stereo depth estimation and depth completion, with emphasis on metric scale and depth foundation models.",
+  "trend_en": "Down slightly (21 → 17); fewer new foundation models after Depth Anything 3, with work moving to calibration from sparse measurements, temporal consistency in long videos and heterogeneous cameras."
+ },
+ {
+  "cluster": 165,
+  "desc_en": "Safety and failures of LLM multi-agent systems: denial of service, defection, privacy leakage, spread of adversarial influence, role integrity and failure attribution.",
+  "trend_en": "An emerging direction (5 → 44, about 9×); as MAS are deployed, research moved from whether agents can collaborate to how system-level risks grow with scale and how to calibrate shared memory."
+ },
+ {
+  "cluster": 166,
+  "desc_en": "Group and counterfactual fairness, debiasing sensitive attributes, fairness audits and measuring social bias.",
+  "trend_en": "Share halved (40 → 18); traditional debiasing methods are fading, and remaining work turns to impossibility theory, methodology for bias evaluation and instruction-style bias in LLM agents."
+ },
+ {
+  "cluster": 167,
+  "desc_en": "Inference-time compute scaling with parallel sampling, self-consistency voting, verifiers and sequential revision.",
+  "trend_en": "Down slightly from a high level (59 → 52); moving from best-of-N and voting to coordinated sequential and parallel planning, modelling verifier flaws and attributing gains to coverage versus selection."
+ },
+ {
+  "cluster": 168,
+  "desc_en": "Using LLM agents to simulate human and social behaviour, user simulators, and evaluating theory of mind and social reasoning.",
+  "trend_en": "Share down (44 → 31); moving from \"can LLMs simulate humans\" benchmarks to audits of simulation validity (identifiability, testing behavioural hypotheses, persona grounding)."
+ },
+ {
+  "cluster": 169,
+  "desc_en": "Conditional, discrete and geometric flow matching and applications to deblurring, single-cell trajectories, RNA and physical fields.",
+  "trend_en": "Nearly doubled (28 → 55); flow matching replaced diffusion as the default generative framework, with many extensions to Lie groups, geometric manifolds and scientific data."
+ },
+ {
+  "cluster": 170,
+  "desc_en": "Posterior sampling with diffusion and flow models as priors for computational imaging and scientific inverse problems.",
+  "trend_en": "Roughly stable (37 → 34); extending DPS-style guidance to PnP-ADMM with flow priors, few-step MCMC, nonlinear blind inverse problems and evaluation protocols."
+ },
+ {
+  "cluster": 171,
+  "desc_en": "Classic XAI: Shapley/SHAP feature attribution, interaction attribution and evaluation of attribution methods.",
+  "trend_en": "Keeps receding (16 → 11); classic XAI is squeezed by mechanistic interpretability, and remaining work centres on Shapley interaction structure, amortised estimation and the methodological point that attribution evaluation needs ablations."
+ },
+ {
+  "cluster": 172,
+  "desc_en": "VLA policies for robot manipulation: execution correction, failure recovery, RL fine-tuning, inference speed-up and robustness diagnosis.",
+  "trend_en": "Exploded (6 → 55, about 10×); after π0 and OpenVLA spread, VLAs became the main line in robotics, and 2027 focuses on inference-time correction and backtracking for frozen VLAs and flaws in benchmarks."
+ },
+ {
+  "cluster": 173,
+  "desc_en": "Environments, benchmarks, reliability and safety guardrails for LLM agents, including deception, asynchronous execution and robustness on long-horizon tasks.",
+  "trend_en": "More than doubled (32 → 71); evaluation moved from task success rates to behavioural properties such as certifying evaluability under nondeterminism, deception under pressure and interference from user revisions."
+ },
+ {
+  "cluster": 174,
+  "desc_en": "Improvements to training, representations and spectral structure of PINNs and neural PDE solvers.",
+  "trend_en": "Share down (53 → 30); PINN training tricks are saturating, with new PDE-solving agents and benchmarks for solver generation."
+ },
+ {
+  "cluster": 175,
+  "desc_en": "Behaviour cloning, adversarial imitation, inverse RL and learning rewards and policies from (suboptimal) demonstrations.",
+  "trend_en": "Share halved (19 → 8); classic IRL and adversarial imitation were drawn off by VLAs and LLM preference learning, and remaining work turns to suboptimal demonstrations, language critiques and theoretical rates."
+ },
+ {
+  "cluster": 176,
+  "desc_en": "Turning agent experience into reusable skills (text, code or parameters), studying skill evolution, composition, hierarchical organisation and continual internalisation.",
+  "trend_en": "Exploded from zero in 2027 (2 → 56); once the Agent Skills paradigm spread, skills replaced raw trajectories as the basic unit of self-evolution, and work began on skill overfitting and access failures."
+ },
+ {
+  "cluster": 177,
+  "desc_en": "Theory of disentangled and identifiable representation learning and representational similarity analysis; some papers are a grab-bag under a generic \"representation learning\" label.",
+  "trend_en": "Stable (27 → 27); identifiability theory extends to relational data, task sparsity and multi-level hierarchies."
+ },
+ {
+  "cluster": 178,
+  "desc_en": "Benchmarks of MLLM perception and reasoning: charts, maths, spatial, multi-image and domain knowledge.",
+  "trend_en": "Plunged (71 → 20); general multimodal reasoning benchmarks saturated after the 2026 boom, and what remains in 2027 is mostly vertical-domain benchmarks (finance, species, floods) and failure diagnosis."
+ },
+ {
+  "cluster": 179,
+  "desc_en": "Watermarking text and image generations, multi-bit watermarks, model fingerprints, and removal and forgery attacks on them.",
+  "trend_en": "Down slightly (49 → 39); the focus moved from building new watermarks to forgery and removal attacks, public detectability and proofs of undetectability."
+ },
+ {
+  "cluster": 180,
+  "desc_en": "Conformal prediction, risk control, selective prediction and anytime-valid inference, used to give finite-sample guarantees on model and agent outputs.",
+  "trend_en": "Grew 4× (7 → 28); conformal risk control is being widely grafted onto auditing LLM reasoning, certifying agent trajectories and selectively delivering generated content."
+ },
+ {
+  "cluster": 181,
+  "desc_en": "Benchmarks and evaluation frameworks for AI agents in terminal, web, office and professional workflows.",
+  "trend_en": "Surged (22 → 51); after Terminal-Bench, benchmarks moved to professional workflows, company environments and end-to-end projects, with critiques arguing that \"an agent is a system, not a model\"."
+ },
+ {
+  "cluster": 182,
+  "desc_en": "Generative and sequential recommendation: semantic-ID item encoding, generative retrieval, cold start and LLM-based recommendation.",
+  "trend_en": "Rising (43 → 50); generative recommendation replaced ID embeddings as the main line, with attention to SID learnability, parallel SID decoding and conflicting RL rewards."
+ },
+ {
+  "cluster": 183,
+  "desc_en": "3D human and hand pose, category-level and unseen-object 6D pose, and camera pose estimation.",
+  "trend_en": "Stable (21 → 21); new work covers VLM-based 6DoF pose, single-reference unseen objects and event-camera pose."
+ },
+ {
+  "cluster": 184,
+  "desc_en": "LLM weight quantization, vector and codebook quantization, and joint quantization-pruning-low-rank compression.",
+  "trend_en": "Falling (21 → 12); gains from weight quantization alone are shrinking, and the focus moved to joint quantization, sparsity and low-rank methods and the details of rotation-based quantization."
+ },
+ {
+  "cluster": 185,
+  "desc_en": "Indoor 3D scene generation and layout, scene-graph generation and manipulation, and building 3D scenes from a single image.",
+  "trend_en": "Stable (32 → 31); moving from text-driven layout to compositional single-image construction, physical-feasibility correction and behavioural and functional grounding."
+ },
+ {
+  "cluster": 186,
+  "desc_en": "Multi-agent RL, game theory, social dilemmas, opponent modelling and self-play.",
+  "trend_en": "Share halved (27 → 14); classic MARL was drawn off by LLM multi-agent work, and remaining work covers social dilemmas, mean-field extensions and post-training effects on LLM cooperation."
+ },
+ {
+  "cluster": 187,
+  "desc_en": "Prompt alignment, compositional generation, text rendering and aesthetic alignment in text-to-image generation, and evaluation benchmarks.",
+  "trend_en": "Share nearly halved (59 → 34); T2I was drawn off by unified multimodal generation, and remaining work turns to fine-grained faithfulness such as counting, metaphors and implicit co-occurring objects."
+ },
+ {
+  "cluster": 188,
+  "desc_en": "Indirect prompt injection against tool-using agents: attacks, defences, red-teaming and execution-boundary protection.",
+  "trend_en": "Rising (25 → 39); moving from attacks and benchmarks to execution-boundary protection, memory-hijacking attacks and co-evolution of attack and defence."
+ },
+ {
+  "cluster": 189,
+  "desc_en": "Pruning redundant visual tokens during VLM and MLLM inference, selected by attention, similarity or task relevance.",
+  "trend_en": "Rising (16 → 28); methods moved from attention scoring to coverage, relational redundancy and sample-adaptive routing, and spilled over to VLAs."
+ },
+ {
+  "cluster": 190,
+  "desc_en": "A miscellany grouped by the keyword \"natural language processing\"; the only coherent subtopics are text-to-SQL and formalising natural language.",
+  "trend_en": "Plunged (40 → 11); generic papers self-labelled as \"NLP\" have nearly vanished, leaving interactive text-to-SQL reasoning and formal translation."
+ },
+ {
+  "cluster": 191,
+  "desc_en": "Expressivity, memory and parallel training of sequence architectures such as Mamba/SSMs and linear RNNs.",
+  "trend_en": "Falling (25 → 15); the \"replace the Transformer\" narrative has cooled, with work moving to state-tracking expressivity (non-abelian groups, quaternions) and parallelising nonlinear RNNs."
+ },
+ {
+  "cluster": 192,
+  "desc_en": "Convergence and complexity lower bounds for stochastic, nonconvex and nonsmooth optimisation, and for bilevel and minimax optimisation.",
+  "trend_en": "Stable (34 → 34); generalised smoothness, unbounded variance and bilevel optimisation with nonconvex lower levels remain the topics."
+ },
+ {
+  "cluster": 193,
+  "desc_en": "A surface-level cluster grouped by the word \"kernel\": LLMs generating and optimising GPU kernels, mixed with NTK and kernel-method theory.",
+  "trend_en": "Share recovered (25 → 28); almost all growth comes from agentic GPU-kernel optimisation and production-grade kernel benchmarks, while NTK and kernel methods themselves are shrinking."
+ },
+ {
+  "cluster": 194,
+  "desc_en": "Stability, reward degradation, over-optimisation and heterogeneous-preference modelling for DPO and its variants, including preference alignment of diffusion models.",
+  "trend_en": "Falling (54 → 33); offline DPO gave way to RLVR and online RL, and remaining work mostly patches DPO stability and over-optimisation theory."
+ },
+ {
+  "cluster": 195,
+  "desc_en": "Vision-and-language navigation (VLN), embodied navigation benchmarks, and memory and reasoning supervision.",
+  "trend_en": "Rising (35 → 56); VLN extends to air-ground collaboration, streaming constant-memory navigation and intent-driven long-horizon tasks, and adds reasoning supervision and self-improving harnesses."
+ },
+ {
+  "cluster": 196,
+  "desc_en": "Authorisation, provenance, contracts, completion checks and state hand-off in the execution layer of tool-using agents; titles are highly uniform in wording, so part of this may be style clustering.",
+  "trend_en": "From nothing to the largest cluster in this group (0.5 → 78); 2027 saw the rise of \"agent runtime governance\": authorisation and evidence checks for state-changing actions, monitoring that success ≠ completion, and patching harness flaws."
+ },
+ {
+  "cluster": 197,
+  "desc_en": "MCMC, Langevin, importance and sequential Monte Carlo, and neural samplers driven by diffusion or transport.",
+  "trend_en": "Recovering (20 → 28); Boltzmann sampling, replica exchange and amortised annealing driven by diffusion and transport maps are reviving."
+ },
+ {
+  "cluster": 198,
+  "desc_en": "Building, retrieving and managing long-term memory for dialogue and LLM agents, with benchmarks such as LoCoMo.",
+  "trend_en": "Grew 5× (10 → 48); memory became its own track, moving from memory construction to access policies, isolating interference across representations and evidence recall."
+ },
+ {
+  "cluster": 199,
+  "desc_en": "Detecting AI-generated images and videos and deepfakes, with emphasis on generalisation across generators and interpretable forensics.",
+  "trend_en": "Rising (32 → 44); focus on removing cross-generator shortcuts, with interpretable MLLM-based detection and AI-video detection on the rise."
+ },
+ {
+  "cluster": 200,
+  "desc_en": "Knowledge graph completion, complex logical query answering, KG construction, and using KGs to constrain or augment LLM reasoning and factuality.",
+  "trend_en": "Share nearly halved 42.4 → 23.7: growth in KG-RAG-style QA was drawn off by GraphRAG and agentic retrieval, and remaining work turns to KG foundation models (MERIT, ChainGram) and zero-shot queries of arbitrary structure."
+ },
+ {
+  "cluster": 201,
+  "desc_en": "Constructing, detecting and purifying data-poisoning and trigger backdoors in image classification, federated learning, diffusion models and LLMs.",
+  "trend_en": "Share down 47.4 → 33.9: backdoors in image classifiers are saturated, and new work centres on new attack surfaces such as LLM backdoor purification, quantization-conditioned backdoors and vertical federated learning."
+ },
+ {
+  "cluster": 202,
+  "desc_en": "Association, identity memory and motion modelling in single- and multi-object tracking, tracking any point, and RGB-T and aerial tracking.",
+  "trend_en": "Stable (14.1 → 15.1); novelty lies in memory-based resolution of identity conflicts, scaling open-vocabulary tracking with SSMs, and using tracking to probe object permanence in video world models."
+ },
+ {
+  "cluster": 203,
+  "desc_en": "Designing VAEs and representation autoencoders for latent diffusion: diffusability, semantic alignment, and the link between reconstruction and generation quality; a few other \"latent\" papers are mixed in.",
+  "trend_en": "Share down 43.9 → 32.3: the topic moved from \"removing the VAE\" and semantically disentangled VAEs to representation autoencoders (RAE), noise-aligned latent spaces and joint end-to-end training of the latent space."
+ },
+ {
+  "cluster": 204,
+  "desc_en": "Removing the influence of specified data from trained models: approximate and certified unlearning, unlearning in federated and diffusion models, and evaluating unlearning.",
+  "trend_en": "Share down 50.5 → 33.2: algorithmic innovation has slowed and the focus moved to rigorous evaluation: rethinking retraining as the gold standard, shadow-model-free evaluation, idempotent requests and uncertain forget sets."
+ },
+ {
+  "cluster": 205,
+  "desc_en": "Predicting single-cell transcriptomic responses to genetic and drug perturbations to build \"virtual cell\" models, mostly with flow matching, Schrödinger bridges and graph models.",
+  "trend_en": "Share grew about 4× (5.6 → 24.9): the Virtual Cell Challenge and large Perturb-seq datasets sparked a boom, alongside baseline critiques showing simple linear models can match and work on generalising to combinatorial perturbations."
+ },
+ {
+  "cluster": 206,
+  "desc_en": "Open-vocabulary semantic, panoptic and 3D segmentation built on CLIP and VLMs, plus multimodal fusion and weakly supervised segmentation.",
+  "trend_en": "Share up slightly 18.2 → 23.0: training-free OVSS (residuals, concept denoising) keeps being refined and extends to open-vocabulary segmentation of 3D point clouds and 3DGS scenes."
+ },
+ {
+  "cluster": 207,
+  "desc_en": "Training and sampling of flow matching and rectified flow models: few-step and one-step generation, MeanFlow and flow maps, integrators and trajectory-drift correction.",
+  "trend_en": "Share up 24.2 → 30.7: MeanFlow and flow maps became the main line for few-step generation, extending to pixel-space generation and continuous \"flow language models\" (self-conditioning)."
+ },
+ {
+  "cluster": 208,
+  "desc_en": "Membership inference attacks, dataset inference and training-data extraction, used to audit privacy leakage in LLMs, diffusion models and tabular generators.",
+  "trend_en": "Share down 30.8 → 17.9: the community has started to question the reliability of MIA evaluation (confounding by distribution shift), and new targets are RL reasoning models and attention signals."
+ },
+ {
+  "cluster": 209,
+  "desc_en": "Automatic prompt optimisation and prompt-sensitivity analysis for LLMs, mixed with older prompt-tuning work such as VLM prompt learning and visual reprogramming.",
+  "trend_en": "Share halved 44.4 → 19.3: VLM soft-prompt learning is fading; remaining work diagnoses GEPA-style reflective prompt optimisation (what the reflector looks at, fixing saturation)."
+ },
+ {
+  "cluster": 210,
+  "desc_en": "Controllable diffusion-based image generation: style transfer, identity preservation, multi-subject reference generation, and layout and layer decomposition.",
+  "trend_en": "Share halved 52.0 → 24.9: general MMDiT and unified editing models took over the space for task-specific adapters, leaving niches such as layer decomposition, panoramas and graphic design."
+ },
+ {
+  "cluster": 211,
+  "desc_en": "MoE routing, load balancing, expert specialisation and sparsity control, and MoE in LoRA, diffusion and multimodal models.",
+  "trend_en": "Share halved 45.9 → 20.2: small routing and load-balancing tweaks are saturated; new work moves to elastic compute, cross-layer expert sharing and bringing MoE to pixel diffusion and video editing."
+ },
+ {
+  "cluster": 212,
+  "desc_en": "3DGS/4DGS scene reconstruction, rendering, compression, relighting and editing, including feed-forward reconstruction and dynamic human avatars.",
+  "trend_en": "Stable (64.6 → 60.4) and still one of the largest vision clusters; the focus moved from densification and speed to feed-forward relighting, cross-scale compression and structured latent spaces for 3D generation."
+ },
+ {
+  "cluster": 213,
+  "desc_en": "Training LLM reasoning with verifiable rewards (RLVR/GRPO): reward design, advantage estimation, extension to non-verifiable domains and reward hacking.",
+  "trend_en": "Share down 49.0 → 30.7: RLVR is now the default and has spread across subclusters; this cluster moved from \"extending RLVR to open-ended tasks\" to reward hacking, unreliable specifications and diagnosing gradient geometry."
+ },
+ {
+  "cluster": 214,
+  "desc_en": "Post-hoc explanations such as SHAP and saliency maps, counterfactual and contrastive explanations, concept explanations, and evaluation of their faithfulness and robustness.",
+  "trend_en": "Share fell to a third 40.9 → 13.5: classic XAI was replaced by mechanistic interpretability and SAEs, and the remainder leans toward formal explanation theory and benchmarks."
+ },
+ {
+  "cluster": 215,
+  "desc_en": "Catastrophic forgetting in class-incremental and few-shot class-incremental learning: exemplar-free replay, prototypes, and incremental learning on CLIP-style pretrained models.",
+  "trend_en": "Stable (18.7 → 17.9); nearly all methods build on frozen pretrained representations, with attention to exemplar-free drift compensation and neural-collapse geometry."
+ },
+ {
+  "cluster": 216,
+  "desc_en": "Repository-level SWE agents and benchmarks: issue resolution, test generation, CI maintenance, whole-repository generation and harness design.",
+  "trend_en": "Counts +50% but share 30.8 → 21.4: SWE-bench-style bug fixing is saturated, and benchmarks moved to continuous CI maintenance, generating whole repositories from scratch, tasks mined from vibe-coding sessions, and harness engineering."
+ },
+ {
+  "cluster": 217,
+  "desc_en": "Confidence calibration of classifiers and LLMs/VLMs, verbalised confidence, selective prediction and uncertainty quantification over reasoning.",
+  "trend_en": "Stable, slightly up (25.7 → 27.9); the focus moved to calibration loss caused by reasoning models and post-training (the \"post-training tax\") and calibrating verbalised confidence with rubrics and distillation."
+ },
+ {
+  "cluster": 218,
+  "desc_en": "Visual reasoning in MLLMs and VLMs: R1-style RL, grounding in visual evidence, latent visual reasoning and \"thinking with images\".",
+  "trend_en": "Share keeps growing 36.8 → 47.4: moving from copying GRPO to visual-evidence rewards, visual imagination and latent visual tokens, and native multimodal reasoning."
+ },
+ {
+  "cluster": 219,
+  "desc_en": "Structural causal models, identifiability of causal representations, counterfactual inference, causal abstraction and root-cause analysis.",
+  "trend_en": "Share down slightly 29.8 → 24.4; new trends are causal foundation models (amortised structure and effect prediction) and learning identifiable world models from pretrained diffusion representations."
+ },
+ {
+  "cluster": 220,
+  "desc_en": "A mixed cluster grouped by generic \"deep neural networks\" wording: network theory, activation functions, hypergraph networks, CNN feature learning and more.",
+  "trend_en": "Share collapsed 74.7 → 19.1: likely a wording artefact, since 2027 papers use LLM and Transformer vocabulary rather than \"DNN\"; what remains is mostly classic theory such as width/depth separation."
+ },
+ {
+  "cluster": 221,
+  "desc_en": "Context compression, folding, memory and state management for long-horizon LLM agents, so that evidence is not lost over long trajectories.",
+  "trend_en": "Share up 5× (7.1 → 37.0): after ACON and Context Folding, context compression became its own subfield, now studying verification of compression, semantic hand-off and task-progress mismatch."
+ },
+ {
+  "cluster": 222,
+  "desc_en": "Autoregressive mesh generation, text- and sketch-to-CAD, part-aware and simulation-ready articulated asset generation, with a few avatar and geometric-graph generation papers.",
+  "trend_en": "Share up 22.2 → 33.2: moving from artist-mesh generation to executable CAD (LLM code plus RL from execution feedback) and part-based, articulated assets for simulation."
+ },
+ {
+  "cluster": 223,
+  "desc_en": "Updating parameters at inference: test-time training and fast weights for LLMs, test-time RL, world models and online continual adaptation.",
+  "trend_en": "Share up nearly 10× (3.5 → 33.0): TTT went from a branch of vision TTA to an inference-time learning paradigm for LLMs (in-place TTT, fast weights, test-time RL)."
+ },
+ {
+  "cluster": 224,
+  "desc_en": "Classic TTA: entropy minimisation, whitening, continual TTA, and test-time prompt and feature adaptation for VLMs such as CLIP.",
+  "trend_en": "Stable (28.8 → 28.6); new questions are when TTA fails (failure prediction, gain gating) and poisoning attacks against TTA."
+ },
+ {
+  "cluster": 225,
+  "desc_en": "LLM agents that accumulate experience, skills and memory from past trajectories to keep self-evolving without weight updates.",
+  "trend_en": "Share grew about 9× (5.6 → 50.7), the largest increase in this group: agent memory systems boomed, and critiques have already appeared (\"more experience makes agents worse\", \"is a predefined optimisation pipeline still needed?\")."
+ },
+ {
+  "cluster": 226,
+  "desc_en": "Theory and mechanisms of in-context learning in Transformers: ICL for linear regression, training dynamics, multi-head specialisation and algorithmic implementations.",
+  "trend_en": "Share halved 23.2 → 10.7: linear-regression ICL theory is saturating, with moves to attention-versus-SSM comparisons, HMM prediction and ICL in closed-loop interaction."
+ },
+ {
+  "cluster": 227,
+  "desc_en": "Function and tool calling by LLM agents, MCP server benchmarks, tool selection and training tool-integrated reasoning.",
+  "trend_en": "Stable (31.8 → 31.9); moving from building MCP benchmarks to silent tool failures, probing tool outputs and credit assignment at the level of tool calls."
+ },
+ {
+  "cluster": 228,
+  "desc_en": "Learning latent world models with joint-embedding predictive architectures (JEPA) for planning, MPC and representation learning, studying collapse and representation geometry.",
+  "trend_en": "Share 1.0 → 47.4, a jump from 2 papers to 204: V-JEPA 2 and LeJEPA (isotropic Gaussian regularisation) drove the latent-space planning line, with many papers on representation geometry and collapse prevention."
+ },
+ {
+  "cluster": 229,
+  "desc_en": "KV cache reuse in LLM serving: prefix and non-prefix caching, cross-model sharing, migration and storage-tier management.",
+  "trend_en": "Share up 3.5× (11.1 → 39.5): multi-turn and multi-agent workloads made KV reuse central, with non-prefix reuse, sharing across model families and SSD-level cache management."
+ },
+ {
+  "cluster": 230,
+  "desc_en": "Unsupervised and source-free domain adaptation: feature alignment, adversarial and contrastive learning, including graph domain adaptation and open-set adaptation.",
+  "trend_en": "Share nearly halved 41.9 → 23.5: foundation models reduce the need for classic UDA, and the remaining activity is in graph domain adaptation and open-set cross-network node classification."
+ },
+ {
+  "cluster": 231,
+  "desc_en": "Evaluation methods and domain benchmarks for LLMs and VLMs: psychometrics and IRT, text-evaluation metrics, and vertical evaluations such as creative writing and education.",
+  "trend_en": "Share down 42.4 → 31.9: general evaluation methodology was diluted by vertical-domain benchmarks (screenplays, creativity, education, scientific figures), and large-scale behavioural studies in a \"science of capabilities\" style appeared."
+ },
+ {
+  "cluster": 232,
+  "desc_en": "Learning nonlinear and chaotic dynamical systems from data: Koopman operators, neural ODEs, switching linear systems and neural population dynamics.",
+  "trend_en": "Stable (31.8 → 33.5); prominent directions are statistically faithful training on chaotic systems, reconstructing neural dynamics with switching state-space models, and identifiability guarantees."
+ },
+ {
+  "cluster": 233,
+  "desc_en": "Black-box optimisation with Gaussian-process surrogates: acquisition functions, high-dimensional BO, hyperparameter optimisation and experimental design.",
+  "trend_en": "Share down 32.3 → 23.9; two main lines: LLMs entering the BO loop (priors, in-context compilation, calibrated acquisition choice) and re-examining whether vanilla BO works in high dimensions after all."
+ },
+ {
+  "cluster": 234,
+  "desc_en": "Alignment from human preferences: RLHF, DPO and its variants, pluralistic preference alignment and preference optimisation for diffusion models.",
+  "trend_en": "Share fell to a quarter 42.9 → 10.5: the DPO-variant wave is over, replaced by RLVR and rubric rewards; remaining work turns to preference alignment for text-to-image and pluralistic alignment."
+ },
+ {
+  "cluster": 235,
+  "desc_en": "Physical plausibility, controllability and evaluation benchmarks for text-to-video generation, plus multi-agent video generation pipelines.",
+  "trend_en": "Share up 29.8 → 34.2: physical consistency moved from \"can we tell\" to distilling physical knowledge and diagnosing blind spots in physical attributes, and agentic video production appeared."
+ },
+ {
+  "cluster": 236,
+  "desc_en": "MLLMs for real-time video streams: online memory, token pruning, proactive responses and always-on egocentric assistants.",
+  "trend_en": "Share up 4× (7.1 → 31.2): moving from offline long-video QA to always-on assistants, with emphasis on persistent memory across sessions, when to respond proactively and causal token pruning."
+ },
+ {
+  "cluster": 237,
+  "desc_en": "Attributing model behaviour to training examples with influence functions and related methods, for data valuation, data selection and behaviour diagnosis.",
+  "trend_en": "Share down slightly 19.2 → 15.1; methods move toward exact attribution (MAGIC) and clarifying the counterfactual setting, and are applied to locating and controlling emergent misalignment."
+ },
+ {
+  "cluster": 238,
+  "desc_en": "An umbrella cluster sharing the word \"agentic\": automatic design and configuration of agent workflows, runtime auditing and agent applications in vertical domains.",
+  "trend_en": "Share up 27.3 → 44.4: \"agentic\" became a generic selling point, and work moved from hand-built workflows to automatically configuring and redesigning agent systems, with new attention to energy use and auditability."
+ },
+ {
+  "cluster": 239,
+  "desc_en": "Segmentation of CT, MRI and other medical images: semi-supervised and few-shot segmentation, SAM/SAM2 adaptation and Mamba/U-Net architecture tweaks.",
+  "trend_en": "Stable (29.3 → 26.5); SAM2 auto-prompting and semi-supervised consistency are now standard, and growth is mostly cross-domain few-shot and sparse-annotation work."
+ },
+ {
+  "cluster": 240,
+  "desc_en": "Training-free acceleration of diffusion Transformers, especially video DiTs: feature and timestep caching, sparse attention and linear attention.",
+  "trend_en": "Share up slightly 21.7 → 24.4: caching moved from fixed intervals to error-controlled and solver-aware schemes, and is starting to target few-step distilled models and reuse across requests."
+ },
+ {
+  "cluster": 241,
+  "desc_en": "Multi-objective optimisation, Pareto-set learning and multi-objective RL, applied to molecular design, diffusion models and multi-objective LLM alignment.",
+  "trend_en": "Stable (23.7 → 24.9); novelty lies in better scalarisation for Pareto-set learning and applying Pareto fronts to diffusion models and LLM arena evaluation."
+ },
+ {
+  "cluster": 242,
+  "desc_en": "Neural simulation of fluids, fracture, elastic and rigid bodies, and identifying physical parameters from video, for simulation and world models.",
+  "trend_en": "Share up 29.8 → 39.1: merging with world models and physics-aware video generation, with work on identifying physical properties from video, differentiable coupled simulation and \"simulate first, then generate video\"."
+ },
+ {
+  "cluster": 243,
+  "desc_en": "Theory of Markov decision processes: POMDPs, constrained MDPs, state abstraction, regret bounds and sample complexity.",
+  "trend_en": "Share diluted 25.7 → 18.8: classic RL theory grows far more slowly than total submissions, and topics are getting narrower (terminal states, average-reward CMDPs, causal MDPs)."
+ },
+ {
+  "cluster": 244,
+  "desc_en": "Post-training quantization of LLMs and VLMs: extremely low-bit weight quantization, mixed precision, Hessian-based error compensation and MoE quantization.",
+  "trend_en": "Share up 34.8 → 50.7 and counts tripled: competition centres on 2-bit and below, backprop-free mixed precision and MoE bit allocation, and privacy-leakage analysis of quantization has appeared."
+ },
+ {
+  "cluster": 245,
+  "desc_en": "General work on LLM mathematical and logical reasoning: reasoning benchmarks, robustness tests, self-critique and data synthesis.",
+  "trend_en": "Share fell to about 1/4 (95.4 → 26.7): generic \"improve LLM reasoning\" papers were absorbed by dedicated clusters such as RLVR, test-time scaling and agents, leaving robustness benchmarks and analysis of self-verification."
+ },
+ {
+  "cluster": 246,
+  "desc_en": "Adversarial attacks and defences: black-box transfer attacks, universal perturbations, physical-world attacks and adversarial attacks on VLMs.",
+  "trend_en": "Share nearly halved 59.6 → 32.1: transfer attacks on classifiers show diminishing returns, and targets moved to infrared and remote-sensing VLMs, personalised generation and image-quality-assessment models."
+ },
+ {
+  "cluster": 247,
+  "desc_en": "2D and 3D object detection: open-vocabulary and open-world detection, small objects, camouflage, and specific settings such as SAR, underwater and low-altitude imagery.",
+  "trend_en": "Share down 43.4 → 33.0: improvements to general detectors are rare; growth is mostly in vertical settings such as low-altitude RGB-IR, SAR and underwater, and in open-world objectness."
+ },
+ {
+  "cluster": 248,
+  "desc_en": "Protein language models and structure representation learning: function and mutation-effect prediction, binding affinity and RNA structure.",
+  "trend_en": "Share down slightly 37.3 → 31.4; work is moving to variant-effect and epistasis prediction and conformational-ensemble representations, and adopting JEPA-style latent pretraining."
+ },
+ {
+  "cluster": 249,
+  "desc_en": "Exploration in non-LLM RL: intrinsic rewards, novelty, empowerment, sparse rewards and GFlowNet exploration.",
+  "trend_en": "Share down 22.2 → 13.5: classic exploration research is shrinking as the topic migrates to the LLM-RL clusters (entropy, diversity); only a little work here measures exploration by LM agents."
+ },
+ {
+  "cluster": 250,
+  "desc_en": "Online convex optimisation and regret analysis under bandit feedback, applied to market making, bilateral trade, autobidding, congestion routing and other economics and OR settings.",
+  "trend_en": "Share recovered 14.1 → 24.9: 2027 leans toward market mechanisms (limit-order-book market making, bilateral trade with one-bit feedback, autobidding in first-price auctions), with new OCO settings such as delayed feedback and warm starts."
+ },
+ {
+  "cluster": 251,
+  "desc_en": "Deep-research agents that retrieve, read and write reports over many steps, and benchmarks of their report quality, evidence coverage and synthesis.",
+  "trend_en": "Share halved 25.7 → 11.9 (paper count flat 51 → 51): the 2026 wave of general DR benchmarks (DeepResearch Bench, BrowseComp-Plus) has passed, and 2027 turns to vertical and professional settings (Wiki Live, everyday scenarios, video DR, biomedicine) and diagnosing post-retrieval synthesis."
+ },
+ {
+  "cluster": 252,
+  "desc_en": "Evidence filtering, sufficiency judgement, multi-hop evidence assembly and context compression in RAG, plus defences against RAG poisoning.",
+  "trend_en": "Share 0.5 → 30.2, appearing from nothing: RAG itself is not new; rather, 2027 papers widely use \"evidence\" as their core term (evidence-assembly gaps, evidence sufficiency, budgeted selection), so this work forms its own cluster; part of this is down to wording style."
+ },
+ {
+  "cluster": 253,
+  "desc_en": "LoRA and its variants (rank growth, manifold optimisation, normalisation, routing and composition), adapter placement and other parameter-efficient fine-tuning methods, including federated LoRA.",
+  "trend_en": "Share keeps falling 76.3 → 63.1 → 47.2: LoRA improvements have hit diminishing returns, and 2027 novelty centres on raising effective rank (Boosting, RBF nonlinearity), geometric optimisation and instance-level LoRA generation."
+ },
+ {
+  "cluster": 254,
+  "desc_en": "LLM weight compression and delta compression mainly via SVD and tensor decomposition, mixed with learned image and video codecs and lossless compression.",
+  "trend_en": "Share down 43.9 → 31.6: SVD-style LLM compression is still the mainstay but saturating, and 2027 turns to checkpoints \"trained for truncation\" and generation-aware SVD; learned image compression now stresses practical CPU deployment."
+ },
+ {
+  "cluster": 255,
+  "desc_en": "Spectral and orthogonalising optimizers led by Muon: Newton–Schulz iterations, comparisons with Adam, convergence analysis and scaling to LLM and DiT pretraining.",
+  "trend_en": "Share more than doubled 15.1 → 37.4: after Kimi and others adopted Muon in large-scale pretraining it became the default object of study, and 2027 moves from speeding up Muon to explaining why it beats Adam (spectral allocation, smoothing effects) and to tensorised and curvature-enhanced variants."
+ },
+ {
+  "cluster": 256,
+  "desc_en": "Predicting spatial gene expression from H&E pathology slides, pretraining representations of spatial omics, super-resolution and decontamination, linking computational pathology and single-cell omics.",
+  "trend_en": "Share up 11.1 → 17.2: the task moved from spot-level regression to single-cell-resolution prediction and \"field reconstruction\" modelling, with agents that curate large public spatial-omics data using single-cell references."
+ },
+ {
+  "cluster": 257,
+  "desc_en": "Target-structure-based molecule generation, virtual screening, docking and molecular optimisation, including PROTAC, peptide and fragment-based drug design.",
+  "trend_en": "Share down 26.8 → 18.1: pure pocket-conditioned generation is fading; 2027 brings more billion-scale screening, SBDD foundation models, LLM-guided medicinal-chemistry knowledge and molecular-optimisation agents."
+ },
+ {
+  "cluster": 258,
+  "desc_en": "Group-relative advantage estimation, reward reweighting, use of failed samples and stability improvements around GRPO, for maths reasoning and multi-reward post-training.",
+  "trend_en": "Share down 54.0 → 42.1: the burst of GRPO variants triggered by DeepSeek-R1 has peaked; 2027 focuses on details such as sparse success, multi-reward saturation and using failure signals, and spills over to non-maths tasks such as regression, drug design and agent derivation."
+ },
+ {
+  "cluster": 259,
+  "desc_en": "D4RL-style offline RL: conservative value estimation, policy extraction, trajectory stitching, offline-to-online fine-tuning and goal-conditioned RL.",
+  "trend_en": "Share keeps halving 85.7 → 60.1 → 33.0: classic offline RL researchers are moving to LLM-RL and embodied work, and the 2027 remainder is mostly simplification (one-step policy improvement, planning instead of tuning) and diffusion and flow policy extraction."
+ },
+ {
+  "cluster": 260,
+  "desc_en": "Activation functions, initialisation, spectral bias and regularisation of INRs and neural fields, for representing and compressing images, medical and neuroimaging signals, and weight-space learning.",
+  "trend_en": "Share down 24.2 → 13.9: INRs are squeezed by 3DGS and feed-forward reconstruction; 2027 is dominated by initialisation and sampling theory and niche applications such as neuroimaging, with some moving to explicit 2D Gaussian fields."
+ },
+ {
+  "cluster": 261,
+  "desc_en": "Dynamic and block-sparse attention, cross-layer shared indices and KV selection for long-context prefill and decoding, also used to speed up diffusion language models.",
+  "trend_en": "Share up 23.2 → 33.2: trainable sparse attention in the style of DeepSeek NSA/DSA and the lightning indexer spurred work on indexer design (cross-layer shared routing, head-routing indices), extending to dLLM acceleration."
+ },
+ {
+  "cluster": 262,
+  "desc_en": "Dictionary learning that decomposes LLM activations with SAEs and transcoders: feature absorption, dead neurons, seed dependence, hierarchical SAEs and evaluating explanations.",
+  "trend_en": "Stable (33.8 → 32.5): moving from proposing new SAE architectures to diagnosing reliability (seed instability, fixing absorption, reporting standards for ablation scores) and comparisons with transcoders."
+ },
+ {
+  "cluster": 263,
+  "desc_en": "Testing internal mechanisms of LLMs and VLMs with activation patching, causal interventions and representation geometry, and questioning the identifiability of the intervention methods themselves.",
+  "trend_en": "Share 2.5 → 62.3, an explosive new cluster (268 papers): mechanistic interpretability expanded from circuit discovery into a widely used \"causal testing\" paradigm; many 2027 papers argue that intervention ≠ identification and discuss failures of component ranking, making methodological self-scrutiny the main line."
+ },
+ {
+  "cluster": 264,
+  "desc_en": "Classic classification settings: generalised category discovery (GCD), open-set recognition, long-tail and class-imbalanced semi-supervised learning, and few-shot classification.",
+  "trend_en": "Share down 32.8 → 22.1: traditional CV classification settings keep fading; the main 2027 novelty is category-discovery loops verified or guided by LLMs."
+ },
+ {
+  "cluster": 265,
+  "desc_en": "OOD detection scores, training regularisers and theory for image classifiers and VLMs, covering multi-label, graph, LiDAR and federated settings.",
+  "trend_en": "Share halved twice 53.1 → 28.8 → 13.3: OOD detection is shrinking as a standalone direction; the 2027 remainder leans toward tuning without OOD data, density-ratio theory and CLIP negative labels."
+ },
+ {
+  "cluster": 266,
+  "desc_en": "Distilling diffusion and flow models into one- or few-step generators: distribution matching distillation (DMD), adversarial distillation and score distillation, for images and video.",
+  "trend_en": "Share recovered 15.1 → 22.6: the DMD family became mainstream; 2027 borrows on-policy distillation and reward tilting from LLMs, and focuses on preserving diversity and distilling video diffusion."
+ },
+ {
+  "cluster": 267,
+  "desc_en": "Locating and explaining attention heads with specific functions in LLMs and VLMs (retrieval heads, in-context learning heads, attention sinks), and using them for steering and reranking.",
+  "trend_en": "Share up slightly 14.6 → 19.1: moving from discovering one type of functional head to systematic censuses of functional heads and causal head selection, and using such heads directly to analyse persuasion mechanisms and train rerankers."
+ },
+ {
+  "cluster": 268,
+  "desc_en": "A mixed cluster grouped by the word \"decision\": auditing beliefs and decisions of LLM agents, decision-focused learning, decision-tree learning and even vehicle dispatch.",
+  "trend_en": "Share up 23.7 → 40.2: growth comes mainly from decision-theoretic audits of LLM agents (belief-behaviour consistency, diagnosing evidence gathering), not from one methodological paradigm."
+ },
+ {
+  "cluster": 269,
+  "desc_en": "Robot manipulation learning: bimanual, dexterous and deformable-object manipulation, imitation learning and VLA policies, latent actions, and many simulated and real-robot benchmarks.",
+  "trend_en": "Share up 42.4 → 48.6: 2027 brings a dense wave of manipulation benchmarks (bimanual, industrial constraints, biology labs, cloth, memory, value models), and low-cost reproducible hardware platforms are starting to reach ICLR."
+ },
+ {
+  "cluster": 270,
+  "desc_en": "MeZO-style zeroth-order optimisation, low-rank optimizer states and subspace gradient methods for fine-tuning and training LLMs under tight GPU memory.",
+  "trend_en": "Share down 20.7 → 11.4: interest in zeroth-order fine-tuning has faded, and 2027 work refines ternary and sparse perturbations, edge fine-tuning for BitNet and subspace maintenance."
+ },
+ {
+  "cluster": 271,
+  "desc_en": "Visual autoregressive generation such as VAR and MAR, its 1D and 2D visual tokenizers, generation order and high-resolution acceleration.",
+  "trend_en": "Share fell sharply 41.9 → 13.9: the 2026 VAR/MAR wave was absorbed by unified multimodal models and diffusion, and the 2027 remainder centres on tokenizer structure (nested, quadtree, hybrid 1D+2D)."
+ },
+ {
+  "cluster": 272,
+  "desc_en": "Understanding and reasoning in large audio-language models, spatial audio and long audio, plus text- and video-to-audio and music generation.",
+  "trend_en": "Roughly stable (42.9 → 38.1): evaluation takes a larger share in 2027, focused on long-duration audio understanding, spatial auditory scenes and source alignment in multi-shot audio-visual generation."
+ },
+ {
+  "cluster": 273,
+  "desc_en": "Anomaly detection in industrial vision, video, graphs, time series and tabular data, especially CLIP-based zero- and few-shot anomaly detection.",
+  "trend_en": "Share up 51.5 → 60.4: zero-shot industrial anomaly detection with CLIP is the main battleground, and 2027 adds statistical angles such as diagnosing \"definition blind spots\" in open-world video anomalies and Type I error guarantees."
+ },
+ {
+  "cluster": 274,
+  "desc_en": "LLM serving: scheduling, prefill-decode disaggregation, parallelism and communication overlap, and privacy-preserving inference under homomorphic encryption and MPC.",
+  "trend_en": "Stable (36.3 → 35.6): 2027 pays more attention to bottleneck scheduling in disaggregated serving, geo-distributed deployment and queueing-theory analysis, and HE/MPC private inference is getting cost simulators and benchmarks."
+ },
+ {
+  "cluster": 275,
+  "desc_en": "Long-video QA, keyframe selection, video memory and multi-turn reasoning in multimodal LLMs, plus many video-understanding benchmarks.",
+  "trend_en": "Stable, slightly up (42.4 → 45.1): after the 2026 multi-turn RL frame-selection methods, 2027 is mostly benchmarks that target harder settings such as very long series, panoramic video, multi-stream audio-visual input and incomplete observations."
+ },
+ {
+  "cluster": 276,
+  "desc_en": "Decomposing epistemic and aleatoric uncertainty, evidential deep learning, ensembles and Bayesian methods, and uncertainty estimation for LLMs and agents.",
+  "trend_en": "Roughly stable (55.0 → 49.3): the target moved from classifiers to chained LLM actions and agent memory, alongside ground-truth evaluation frameworks for uncertainty decomposition."
+ },
+ {
+  "cluster": 277,
+  "desc_en": "Training, compression and geometric analysis of sentence and text embedding models, Matryoshka embeddings, embedding translation and similarity measures.",
+  "trend_en": "Share down 36.3 → 22.3: some retrieval work moved to the retrieval cluster (292), leaving a scattered set of analyses of embedding-space geometry and compression."
+ },
+ {
+  "cluster": 278,
+  "desc_en": "Compositional zero-shot learning (attribute-object), mechanisms of systematic and compositional generalisation in Transformers, and neuroscience-inspired representation recombination.",
+  "trend_en": "Stable (19.7 → 20.5): 2027 adds work on how task composition affects generalisation and compositionality in self-improvement, while CZSL methods still make up half."
+ },
+ {
+  "cluster": 279,
+  "desc_en": "Byzantine-robust aggregation, gradient inversion and data leakage, and homomorphic-encryption and differential-privacy protection in federated learning.",
+  "trend_en": "Share down 25.2 → 14.4: classic FL security is fading; the new 2027 angle is leakage auditing and membership inference for federated LLMs, RLHF and diffusion models."
+ },
+ {
+  "cluster": 280,
+  "desc_en": "Data synthesis, mid-training, test-time training, context compression and long-context reasoning benchmarks for long-context LLMs.",
+  "trend_en": "Share fell then levelled 54.0 → 24.2 → 20.9: window extension is largely solved, and 2027 focuses on characterising long-context reasoning difficulty, measuring the attention span data requires and mid-training on agent trajectories."
+ },
+ {
+  "cluster": 281,
+  "desc_en": "VLM-based GUI, mobile and computer-use agents: grounding interface elements, online RL training, memory and long-horizon task planning.",
+  "trend_en": "Share up 30.3 → 34.4: 2026 centred on base GUI models plus online RL, while 2027 starts to bypass pixel-level operation (deeplinks, CLI-style interfaces, \"do agents need a screen?\") and introduces GUI world models based on image generation."
+ },
+ {
+  "cluster": 282,
+  "desc_en": "Optimising and automatically evolving the harness around LLM agents (prompts, tools, memory, control flow) so that agents rewrite their own scaffolding from failures.",
+  "trend_en": "Share 0 → 0 → 53.0, entirely new (228 papers): after Claude Code and Codex-style coding agents spread, the \"harness\" replaced the prompt or workflow as the object of optimisation, and self-evolving harnesses and gain attribution became one of the main agent lines of 2027."
+ },
+ {
+  "cluster": 283,
+  "desc_en": "Referring expression segmentation, video object segmentation, SAM-family promptable segmentation and 3D/4D instance segmentation.",
+  "trend_en": "Share down 37.3 → 28.8: general segmentation is converging after the release of SAM 3, and 2027 turns to niches such as streaming 3D/4D segmentation and decoupling referring evidence from boundaries."
+ },
+ {
+  "cluster": 284,
+  "desc_en": "AI control protocols for frontier models, LLM monitors, scalable oversight and debate, sabotage and deception evaluations, and safety position papers.",
+  "trend_en": "Stable (37.3 → 37.4): the focus moved from evaluating deception and observer effects to monitoring agent workflows, detecting sabotage in automated AI R&D and cryptographic guarantees for debate."
+ },
+ {
+  "cluster": 285,
+  "desc_en": "Expressivity (WL tests), heterophily, over-smoothing, graph rewiring, and node classification and link prediction for message-passing GNNs.",
+  "trend_en": "Share halved twice 180.8 → 95.9 → 54.6: GNNs, long a staple of ICLR, keep giving way to LLM topics, and 2027 leans toward reflective work on expressivity theory and the statistical resolution of benchmarks."
+ },
+ {
+  "cluster": 286,
+  "desc_en": "Compressing large datasets into a few synthetic samples (gradient and distribution matching, diffusion-based generative distillation) and coreset selection.",
+  "trend_en": "Share fell sharply 19.7 → 7.2: less attractive in the foundation-model era; 2027 work centres on parameterisations (codebooks, masks), multimodal distillation and reuse across budgets."
+ },
+ {
+  "cluster": 287,
+  "desc_en": "Erasing unsafe or copyrighted concepts and styles from text-to-image diffusion models while preserving other abilities and resisting adversarial prompts.",
+  "trend_en": "Share down 18.7 → 12.8: methods have become homogeneous; 2027 turns to cross-attention sparsity and erasure that is robust in subspaces and to initial noise, and extends to image-to-video."
+ },
+ {
+  "cluster": 288,
+  "desc_en": "Subgraph explainers, counterfactual explanations, Shapley attribution and self-explaining GNNs, and evaluation of their faithfulness.",
+  "trend_en": "Share fell sharply 16.2 → 6.3: as GNNs shrink overall, the 2027 remainder leans toward theory (complexity of explanation) and evaluation (compilable benchmarks, intervention-aware faithfulness)."
+ },
+ {
+  "cluster": 289,
+  "desc_en": "Learning robustly with noisy labels, partial-label, multi-label and label-distribution learning, weak supervision and detecting annotation errors.",
+  "trend_en": "Share down 29.3 → 21.6: classic noisy-label methods are fading; the new 2027 angle is detecting errors in LLM-annotated data and statistical guarantees for human-in-the-loop correction."
+ },
+ {
+  "cluster": 290,
+  "desc_en": "Entropic, unbalanced and sliced OT, Wasserstein distances, Monge maps and Gromov–Wasserstein, with applications to generation and matching.",
+  "trend_en": "Roughly stable (42.4 → 40.0): 2027 leans toward algorithms and theory (an O(NlogN) algorithm for partial OT on the circle, stability of Monge maps), with continued overlap with flow matching."
+ },
+ {
+  "cluster": 291,
+  "desc_en": "Novel view synthesis from sparse views or a single image: multi-view diffusion, video diffusion priors, feed-forward reconstruction and rendering.",
+  "trend_en": "Share down 24.7 → 16.0: per-scene optimisation NVS was drawn off by feed-forward 3D reconstruction and world models, and 2027 mainly turns video diffusion models into multi-view generators."
+ },
+ {
+  "cluster": 292,
+  "desc_en": "Dense and multi-vector retrieval, visual document retrieval, composed image retrieval and LLM reranking, studying embeddings, late interaction and efficient encoding.",
+  "trend_en": "Share up 37.3 → 56.7: demand from RAG and agentic search is reviving retrieval, and 2027 centres on multi-vector compression (FDE), visual document retrieval and low-cost LLM reranking of long lists."
+ },
+ {
+  "cluster": 293,
+  "desc_en": "Building networks, kernels and generative models on Riemannian manifolds such as SPD, Grassmann and hyperbolic spaces, and testing the manifold hypothesis.",
+  "trend_en": "Share down slightly 25.2 → 20.5: the topic is stable, and 2027 adds flow and bridge generative models on manifolds (Riemannian MeanFlow, Schrödinger bridges) and challenges to the manifold hypothesis."
+ },
+ {
+  "cluster": 294,
+  "desc_en": "Neural architecture search: zero-cost proxies, multi-objective and hardware-aware NAS, and LLM-driven evolutionary architecture discovery.",
+  "trend_en": "Share down 11.1 → 7.0: traditional NAS keeps drifting to the margins, and nearly all remaining work now uses LLMs as evolutionary proposers or agents to search architectures."
+ },
+ {
+  "cluster": 295,
+  "desc_en": "Basic architectural changes and theory for Transformers: layer, depth and width shape, alternatives to residuals and normalisation, and expressivity of head count.",
+  "trend_en": "Share keeps falling 55.7 → 36.8 → 24.2: general architecture changes were drawn into finer clusters such as sparse attention and positional encoding, and 2027 work is mostly small changes such as shape conventions, variable width and LayerNorm replacements."
+ },
+ {
+  "cluster": 296,
+  "desc_en": "Longitudinal clinical prediction from electronic health records, disease-progression modelling, EHR foundation models and benchmarks of LLM clinical reasoning.",
+  "trend_en": "Share up markedly 23.2 → 38.6: growth comes from promptable EHR foundation models, physician-validated synthetic longitudinal EHR benchmarks, and RL and agent skill evolution for treatment planning."
+ },
+ {
+  "cluster": 297,
+  "desc_en": "Frequency analysis of RoPE, length extrapolation, data-aware and gated positional encodings, and multi-dimensional positional encodings for video diffusion and similar settings.",
+  "trend_en": "Stable (22.7 → 20.0): 2027 brings critical theory such as \"RoPE provably fails at long context\" and RoPE alternatives, extending to compressed tokens and video DiTs."
+ },
+ {
+  "cluster": 298,
+  "desc_en": "Point cloud registration, completion, denoising, segmentation and representation learning, including cross-source and image-to-point-cloud registration and CAD reconstruction.",
+  "trend_en": "Share down slightly 28.3 → 24.6: registration remains the core, and 2027 brings registration recast as 3D reconstruction, frequency-domain representations and generative CAD/B-Rep construction."
+ },
+ {
+  "cluster": 299,
+  "desc_en": "Cooperative MARL: value decomposition, communication, decentralised training, zero-shot coordination and robustness.",
+  "trend_en": "Share down 46.4 → 34.9: classic SMAC-style value decomposition is fading, and 2027 focuses on decentralised modelling, the cost of communication delay and LLM-era techniques such as on-policy distillation."
+ }
+]

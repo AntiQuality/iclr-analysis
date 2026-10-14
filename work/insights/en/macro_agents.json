@@ -1,0 +1,451 @@
+{
+ "key": "agents",
+ "title_zh": "Agent research turns to self-evolution",
+ "subtitle_zh": "Harnesses, skills and memory each become research objects",
+ "headline_zh": "The agent theme grew from 626 → 1155 per 10k, 11.6% of all 2027 submissions and the largest theme. The growth comes from component research on harnesses, skills, memory, context and credit assignment. The 2026 mainstays, RAG and general multi-agent frameworks, fell from 42.3% → 13.9% of the theme.",
+ "stats": [
+  {
+   "label_zh": "Agent theme share",
+   "value": "626 → 1155 per 10k",
+   "note_zh": "11.6% of all submissions in 2027"
+  },
+  {
+   "label_zh": "Self-evolution family share",
+   "value": "9.1 → 234.6 per 10k",
+   "note_zh": "Share within the theme 1.5% → 20.3%"
+  },
+  {
+   "label_zh": "Harness mention rate",
+   "value": "0.5 → 111.8 per 10k",
+   "note_zh": "Only 1 paper across all 2026 submissions"
+  },
+  {
+   "label_zh": "Classic application clusters, share of theme",
+   "value": "42.3% → 13.9%",
+   "note_zh": "RAG cluster 89.8 → 24.9 per 10k"
+  },
+  {
+   "label_zh": "Mention rate of older text environments",
+   "value": "12.6 → 80.4 · 8.6 → 53.7 per 10k",
+   "note_zh": "ALFWorld and WebShop, respectively"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Harnesses replace prompts as the main optimization target",
+   "tag": "rising",
+   "body_zh": "The agent harness optimization cluster had 0 papers in 2025 and 2026, then 228 in 2027 (53.0 per 10k). Researchers treat the system prompt, tool set, memory and control flow as an evolvable program and rewrite it from failure trajectories. Prompt-optimization wording held flat over the same period. Recursive self-improvement (RSI) went 0.5 → 53.2 per 10k. It now has dedicated environments, along with counter-evidence of self-improvement turning into self-degradation.",
+   "note_zh": "Cluster 282, \"agent harness optimization and evolution\". Papers whose full text matches agent harness / harness optimization and similar wording went 1 → 481, or 0.5 → 111.8 per 10k. Prompt-optimization wording means DSPy/TextGrad/GEPA and similar, 41.4 → 41.2 per 10k. The targets are Claude Code/Codex/OpenClaw-style products; Claude Code mentions 4.0 → 28.4 per 10k, Codex 2.5 → 27.0. Representative methods: HGM-Dual, JET, EvoRule; other work measures model–harness fit and attributes harness gains. The only 2026 precursor was the oral Huxley-Gödel Machine (coding-agent self-improvement); 2027 adds dedicated environments such as RSI-Env and regularized methods such as RRSI.",
+   "evidence": [
+    {
+     "id": "g96VKH95HC",
+     "year": 2027,
+     "title": "How Well Do Models and Harnesses Work Together: Measuring Model–Harness Fit Beyond Task Scores"
+    },
+    {
+     "id": "6YRJH50sAy",
+     "year": 2027,
+     "title": "HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning"
+    },
+    {
+     "id": "PwLSweAzxz",
+     "year": 2027,
+     "title": "RSI-Env: An Open-Ended Environment for Recursive Self-Improvement of Agents"
+    },
+    {
+     "id": "T0EiEuhOOL",
+     "year": 2026,
+     "title": "Huxley-G\\\"odel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine"
+    }
+   ]
+  },
+  {
+   "title_zh": "Skill files become the basic unit of self-evolution",
+   "tag": "rising",
+   "body_zh": "Skill-related papers grew from 5 in 2026 to 402 in 2027, 2.5 → 93.5 per 10k. Once SKILL.md-style skills became the standard interface of mainstream harnesses, the research object moved up from raw trajectories to reusable skill files. Work covers cross-framework compilation, transfer between strong and weak agents, and skill adherence. A set of failure studies appeared at the same time: skills going stale silently, retirement lock-in in skill libraries, and traps in skill–policy co-evolution.",
+   "note_zh": "Skill-related means clusters 57 (skill libraries) and 176 (skill self-evolution) combined. Full-text agent skill(s)/skill library wording 1.5 → 74.4 per 10k. SKILL.md-style Agent Skills became a standard interface in late 2025. Experience memory in 2026 is represented by ReasoningBank. Representative work: SkCC, SkillIF, Repo2Skill-Evo, Skill Lock-In; other work studies the marginal utility of skills. Malicious skills and skill-chain hijacking are covered in the safety section.",
+   "evidence": [
+    {
+     "id": "EgaT7aRhoK",
+     "year": 2027,
+     "title": "SkCC: A Compiler for Cross-Framework Agent Skills"
+    },
+    {
+     "id": "JYd8XvwMkg",
+     "year": 2027,
+     "title": "Repo2Skill-Evo: Repository Skills Go Stale in Silence"
+    },
+    {
+     "id": "ICOKmwn5U1",
+     "year": 2027,
+     "title": "Skill Lock-In: Silent Retirement Failures in Self-Evolving LLM Skill Libraries"
+    },
+    {
+     "id": "tMv5dDcgM9",
+     "year": 2027,
+     "title": "SkillIF: Do Agents Follow Their Skills?"
+    }
+   ]
+  },
+  {
+   "title_zh": "Memory moves from retrieval add-on to core agent state",
+   "tag": "shift",
+   "body_zh": "The memory and context clusters went 24.2 → 149.0 per 10k, and the memory benchmark LongMemEval 2.5 → 27.2. The 2026 question was how to build memory. In 2027 it is memory governance: whether write and delete paths are visible, state arbitration, and whether memory helps coding agents at all. Negative results also appeared: more memory, worse agents.",
+   "note_zh": "The memory/context clusters are 56, 198 and 221, a 6× increase. Full-text agent memory/long-term memory wording 84.3 → 220.2 per 10k; LoCoMo 35.8 → 64.9. MemGen, ReasoningBank and MEM1 were all accepted in 2026. 2027 representative work: Evidence Is Not Authority, MemDev-Bench, More Memory, Worse Agents (error reproduction). 2026 acceptance rates are polarized: the long-term dialogue memory cluster 198 at 0.421, full-text agent memory overall at 0.240.",
+   "evidence": [
+    {
+     "id": "U3rsNjPZu2",
+     "year": 2027,
+     "title": "More Memory, Worse Agents: Error Reproduction and Anti-Persistence in LLM Agents"
+    },
+    {
+     "id": "Wne2AYfvqG",
+     "year": 2027,
+     "title": "Evidence Is Not Authority: A Causal Study of State Arbitration in Long-Horizon Agent Memory"
+    },
+    {
+     "id": "nyjeTpcRHY",
+     "year": 2027,
+     "title": "MemDev-Bench: Does Memory Help Code Agents? Benchmarking Memory Systems over Real Repository Histories"
+    },
+    {
+     "id": "jL7fwchScm",
+     "year": 2026,
+     "title": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory"
+    }
+   ]
+  },
+  {
+   "title_zh": "Context compression becomes a measurable engineering problem",
+   "tag": "shift",
+   "body_zh": "The term context engineering went 9.1 → 5.8 per 10k, while concrete compression and folding wording went 22.7 → 68.6. In 2026, ACON and Context Folding were rejected and AgentFold was accepted. 2027 brings characterization and cost optimization of compaction in production coding agents. The boundaries between context management, memory and harnesses are disappearing; all three are optimizable state layers in the harness.",
+   "note_zh": "Compression wording includes context compression/folding/compaction and similar. Cluster 221, \"long-horizon context management\", 7.1 → 37.0 per 10k. 2027 representative work: CliffCompaction, reversible folding, ScrubAgent (context scrubbing). Evaluation is shifting to task progress and semantic handoff rather than token count.",
+   "evidence": [
+    {
+     "id": "NWYYYlWJhJ",
+     "year": 2027,
+     "title": "Characterizing and Optimizing Context Compaction in Production Coding Agents"
+    },
+    {
+     "id": "9xIhJWqfbr",
+     "year": 2027,
+     "title": "CliffCompaction: Cost-Efficient Compaction for Long-Horizon Coding Agents"
+    },
+    {
+     "id": "AVuTydEF9R",
+     "year": 2027,
+     "title": "ScrubAgent: Context Scrubbing for Scalable Long-Horizon LLM Agents"
+    },
+    {
+     "id": "IuZoTgsUws",
+     "year": 2026,
+     "title": "AgentFold: Long-Horizon Web Agents with Proactive Context Folding"
+    }
+   ]
+  },
+  {
+   "title_zh": "Agentic RL's bottleneck moves to credit assignment",
+   "tag": "rising",
+   "body_zh": "Credit assignment went 45.9 → 159.3 per 10k, agentic RL 19.2 → 68.1. Training targets moved from single-turn math to multi-turn tasks such as terminal use and search. On-policy distillation (OPD) has also entered agent training: OPD papers in the agent clusters went 0 → 35. This was one of the best-rewarded directions in 2026; the agentic RL cluster had an acceptance rate of 0.400.",
+   "note_zh": "Full-text wording basis. Environment synthesis/scaling 6.1 → 22.1 per 10k; turn/step-level rewards 52.0 → 79.3 per 10k; cluster 111, \"credit assignment for agentic RL\", under the llm_post theme 12.1 → 86.5. OPD includes OPSD with privileged information; representative work: PR-OPD. On the environment side: EnvCraft (executable environment synthesis for Claw-like general agents) and data scaling for terminal agents. Multi-turn tasks include ALFWorld/WebShop. The agentic RL cluster is cluster 28, mean rating 4.62; AgentFlow (7.33) and AgentGym-RL were both orals.",
+   "evidence": [
+    {
+     "id": "89fbb1anXr",
+     "year": 2027,
+     "title": "EnvCraft: Synthesizing Executable Environments in Agentic RL for Claw-like Agent"
+    },
+    {
+     "id": "UOwYasdeqY",
+     "year": 2027,
+     "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence"
+    },
+    {
+     "id": "JZJgzbuurd",
+     "year": 2027,
+     "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning"
+    },
+    {
+     "id": "ZgCCDwcGwn",
+     "year": 2026,
+     "title": "AgentGym-RL: An Open-Source Framework to Train LLM Agents for Long-Horizon Decision Making via Multi-Turn RL"
+    }
+   ]
+  },
+  {
+   "title_zh": "Coding-agent evaluation shifts to migration and terminal tasks",
+   "tag": "rising",
+   "body_zh": "Mentions of all SWE-bench variants went 18.7 → 63.2 per 10k, including Verified 9.6 → 40.2; Terminal-Bench went 0.5 → 29.3. SWE-bench is near saturation. New 2027 benchmarks target whole-repository migration, evolving workspaces and coding evaluation on harnesses. 2026 reviewers rewarded training recipes over new benchmarks: new SWE-* benchmarks had an acceptance rate of only 0.071 (1/14).",
+   "note_zh": "Pro 0.5 → 9.8 per 10k; newly launched SWE-* benchmarks 7.1 → 19.8. Cluster 122, \"coding agents and SWE benchmarks\", 7.1 → 65.6 (9×), while the older issue-fixing cluster 216 fell 30.8 → 21.4. Saturation follows the spread of Claude Code/Codex. Representative new benchmarks: SWE Refactor Bench, SWE-Shift, Claw-SWE-Bench (OpenClaw-style harnesses); other work asks what process evaluation actually measures. Recipes rewarded in 2026: Kimi-Dev (Agentless training as a skill prior for SWE-agents, 7.0) and Agent Data Protocol (oral).",
+   "evidence": [
+    {
+     "id": "MOenIuYptM",
+     "year": 2027,
+     "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?"
+    },
+    {
+     "id": "DiTHJCF9XI",
+     "year": 2027,
+     "title": "SWE-Shift: Evaluating Coding Agents in Evolving Workspaces"
+    },
+    {
+     "id": "Ek5ip3L1o8",
+     "year": 2027,
+     "title": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks"
+    },
+    {
+     "id": "tYppHuGhxJ",
+     "year": 2026,
+     "title": "Kimi-Dev: Agentless Training as Skill Prior for SWE-agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "GUI agents shrink, hybrid CLI interfaces emerge",
+   "tag": "fading",
+   "body_zh": "The two GUI clusters fell from 8.3% → 4.1% of the agent theme, and ScreenSpot mentions 10.6 → 3.7 per 10k. The new 2027 question is whether phone agents need to see the screen at all. The approaches turn apps into agent-native CLIs or jump directly via deeplinks. 2026 reviews already signaled this: the data and environment scaling cluster had an acceptance rate of 0.512, while the GUI grounding plus small RL recipe cluster had only 0.133, the lowest in the theme.",
+   "note_zh": "The two GUI clusters are clusters 55 and 281, 52.0 → 47.4 per 10k. OSWorld 11.1 → 15.6 and AndroidWorld 8.1 → 8.8 are roughly flat. GUI/CLI/MCP hybrid orchestration and deeplink wording in agent clusters 1.0 → 10.5 per 10k. ScaleCUA in cluster 55 was an oral.",
+   "evidence": [
+    {
+     "id": "mMC3GtOPeB",
+     "year": 2027,
+     "title": "Do Mobile Agents Need the Phone Screen?"
+    },
+    {
+     "id": "CGBqZE8aoq",
+     "year": 2027,
+     "title": "Built for Humans, Not yet for Agents: Turning Apps into Agent-Native CLIs at scale"
+    },
+    {
+     "id": "O8NDs4fj5O",
+     "year": 2027,
+     "title": "HybridCUA: Learning to Orchestrate GUI and CLI for Computer-Use Agents"
+    },
+    {
+     "id": "yBFUqdJFZn",
+     "year": 2026,
+     "title": "ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data"
+    }
+   ]
+  },
+  {
+   "title_zh": "Classic RAG and general deep research benchmarks recede together",
+   "tag": "fading",
+   "body_zh": "The RAG cluster went 89.8 → 24.9 per 10k, GAIA 18.2 → 8.4, and the deep research benchmark cluster's share halved. Retrieval has not disappeared: search-agent wording went 45.9 → 82.1 per 10k, and retrieval has become one kind of environment for agentic RL. The RAG cluster's 2026 acceptance rate was only 0.191, and general deep research benchmarks have no room left.",
+   "note_zh": "Full-text RAG wording 239.2 → 181.8 per 10k, GraphRAG 23.2 → 11.4; deep research wording 42.4 → 24.2; HLE 10.6 → 6.5, BrowseComp flat at 15.6 → 16.5; cluster 251 (DR benchmarks) 25.7 → 11.9. Search-agent focus: evidence admission, rubric process rewards, co-cheating in self-evolving search agents (False Frontiers). DR benchmarks are moving to vertical settings: Wiki Live, life/productivity, video DR. General benchmarks accepted in 2026 include DeepResearch Bench.",
+   "evidence": [
+    {
+     "id": "c8uQADFMRC",
+     "year": 2027,
+     "title": "Wiki Live Challenge: Challenging Deep Research Agents with Expert-Level Wikipedia Articles"
+    },
+    {
+     "id": "Id4G8bzzKO",
+     "year": 2027,
+     "title": "False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents"
+    },
+    {
+     "id": "Zh4k6rhTD7",
+     "year": 2027,
+     "title": "RubricAtlas: Decoupling Rubric Discovery from Fact Validation to Optimize Generalist Deep Research Agents"
+    },
+    {
+     "id": "hQ0K2Hhq7H",
+     "year": 2026,
+     "title": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents"
+    }
+   ]
+  },
+  {
+   "title_zh": "Agent evaluation turns to whether execution is legitimate",
+   "tag": "watch",
+   "body_zh": "The runtime governance cluster for tool agents went 0.5 → 78.3 per 10k, the largest cluster in the theme. It asks whether state changes are authorized, what side effects batch calls have, and whether human approval actually happens. The AI scientist cluster went 35.8 → 64.6, and evaluation moved from reproduction to whether a success is valid. Titles in the runtime governance cluster are highly homogeneous, so part of the growth may come from formulaic submissions.",
+   "note_zh": "Runtime governance is cluster 196; cluster 173 (agent evaluation and reliability) 32.3 → 71.1 per 10k. Evidence of homogeneity: the share of agent-cluster titles containing evidence rose 0.8% → 5.4%, and question titles 4.2% → 8.2%; discount accordingly. AI scientist is cluster 158; in 2026 AstaBench was an oral and AI scientist wording had an acceptance rate of 0.373. 2027 also has verifiable discoveries on open math problems. Correct outputs do not mean safe execution; see SINGED. Agent safety itself is covered in the safety section.",
+   "evidence": [
+    {
+     "id": "40R626leak",
+     "year": 2027,
+     "title": "SINGED: Correct Outputs Do Not Certify Safe Execution in LLM Agents"
+    },
+    {
+     "id": "7OKLuaaaqv",
+     "year": 2027,
+     "title": "EffectSet: A Batch Tool Call Is More Than One Outcome"
+    },
+    {
+     "id": "nZZ1V2yP0j",
+     "year": 2027,
+     "title": "When Success Is Invalid: Latent Validity in AI-Guided Machine Learning Research"
+    },
+    {
+     "id": "M7TNf5J26u",
+     "year": 2026,
+     "title": "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "Harness optimization",
+   "from": 0.5,
+   "to": 111.8,
+   "unit": "per10k",
+   "note_zh": "Treat the scaffold as an evolvable program"
+  },
+  {
+   "name_zh": "Agent Skills",
+   "from": 1.5,
+   "to": 74.4,
+   "unit": "per10k",
+   "note_zh": "The basic unit of self-evolution"
+  },
+  {
+   "name_zh": "Recursive self-improvement (RSI)",
+   "from": 0.5,
+   "to": 53.2,
+   "unit": "per10k",
+   "note_zh": "Dedicated environments exist, and so does counter-evidence"
+  },
+  {
+   "name_zh": "Agent long-term memory",
+   "from": 84.3,
+   "to": 220.2,
+   "unit": "per10k",
+   "note_zh": "From RAG add-on to core state"
+  },
+  {
+   "name_zh": "Context compression and folding",
+   "from": 22.7,
+   "to": 68.6,
+   "unit": "per10k",
+   "note_zh": "Concrete techniques up, the slogan down"
+  },
+  {
+   "name_zh": "Credit assignment",
+   "from": 45.9,
+   "to": 159.3,
+   "unit": "per10k",
+   "note_zh": "The core problem under multi-turn sparse rewards"
+  },
+  {
+   "name_zh": "SWE-bench variants",
+   "from": 18.7,
+   "to": 63.2,
+   "unit": "per10k",
+   "note_zh": "The general benchmark for coding agents"
+  },
+  {
+   "name_zh": "Terminal-Bench",
+   "from": 0.5,
+   "to": 29.3,
+   "unit": "per10k",
+   "note_zh": "New benchmark for terminal agents"
+  },
+  {
+   "name_zh": "ALFWorld",
+   "from": 12.6,
+   "to": 80.4,
+   "unit": "per10k",
+   "note_zh": "Default testbed for self-evolution papers"
+  },
+  {
+   "name_zh": "Runtime governance for tool agents",
+   "from": 0.5,
+   "to": 78.3,
+   "unit": "per10k",
+   "note_zh": "Controls state changes and side effects"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "RAG (retrieval-augmented generation)",
+   "from": 89.8,
+   "to": 24.9,
+   "unit": "per10k",
+   "note_zh": "Retrieval folds into RL training of search agents"
+  },
+  {
+   "name_zh": "Classic application clusters, share of theme",
+   "from": 42.3,
+   "to": 13.9,
+   "unit": "%",
+   "note_zh": "Fewer general framework papers"
+  },
+  {
+   "name_zh": "Deep research",
+   "from": 42.4,
+   "to": 24.2,
+   "unit": "per10k",
+   "note_zh": "General benchmarks saturated; moving to vertical settings"
+  },
+  {
+   "name_zh": "GAIA benchmark",
+   "from": 18.2,
+   "to": 8.4,
+   "unit": "per10k",
+   "note_zh": "General-assistant benchmarks recede"
+  },
+  {
+   "name_zh": "ScreenSpot",
+   "from": 10.6,
+   "to": 3.7,
+   "unit": "per10k",
+   "note_zh": "Pixel-level grounding recedes"
+  },
+  {
+   "name_zh": "GraphRAG",
+   "from": 23.2,
+   "to": 11.4,
+   "unit": "per10k",
+   "note_zh": "Receding along with RAG"
+  },
+  {
+   "name_zh": "LLM social simulation and theory of mind",
+   "from": 44.4,
+   "to": 30.5,
+   "unit": "per10k",
+   "note_zh": "General application directions shrink"
+  },
+  {
+   "name_zh": "GPT-4o backbone share",
+   "from": 3.1,
+   "to": 0.9,
+   "unit": "%",
+   "note_zh": "Open agentic RL defaults to Qwen3"
+  }
+ ],
+ "rewarded_2026_zh": "The agent theme's 2026 acceptance rate was 0.269 (1240 papers), level with the 0.270 baseline for all submissions. Environment and data scaling and trainability were rewarded most: computer-use data and environment cluster 0.512, agentic RL cluster 0.400. Building yet another framework paid off poorly: papers with framework in the title 0.194, the GUI grounding plus small RL recipe cluster only 0.133.",
+ "frontline_zh": [
+  "New default recipe: harness plus skill library plus writable memory, self-evolving from failure trajectories without weight updates.",
+  "Claw-like general agents are a new term, with black-box RL on harnesses and always-on assistant benchmarks to match.",
+  "Multi-agent communication moves to latent space; latent communication 1.0 → 12.6 per 10k.",
+  "Terminal-Bench, τ-bench and BFCL are rising; GAIA and HLE are falling; MCP has stalled.",
+  "Within agent clusters, Qwen3 as backbone 1.9% → 9.2%, GPT-4o 3.1% → 0.9%.",
+  "Negative results on self-evolution are now a publishable category; AI scientists are turning to verifiable discovery."
+ ],
+ "watchlist_zh": [
+  "Attributing harness gains: if swapping the harness moves results more than swapping the model, leaderboards must report the harness too.",
+  "Safety valves for RSI: whether regularized self-improvement can give reproducible bounds on improvement and degradation.",
+  "Skill supply chain: whether staleness detection, cross-framework compilation and malicious-skill auditing converge into a package-manager-style standard.",
+  "Whether credit assignment methods beat GRPO plus environment scaling on long-horizon tasks such as Terminal-Bench.",
+  "Once apps widely expose agent-native interfaces, whether screenshot-based computer-use shrinks to a niche."
+ ],
+ "notes_zh": [
+  "\"Per 10k\" is the number of matching papers per 10k submissions. \"Full-text wording\" means the keyword appears in the paper body; a \"cluster\" is a topic cluster, numbered as in the clustering output.",
+  "The agent theme is the sum of 27 agent clusters: 6.3% of all submissions in 2026, 11.6% in 2027. It includes 1 wording-artifact cluster (268, 40 per 10k).",
+  "The self-evolution family is clusters 282/57/176/92/225 (harness, skills, RSI, experience memory). It was only 1.5% of the theme in 2026 and 20.3% in 2027, the largest structural change in this section.",
+  "Classic application clusters are RAG, planning, social simulation, MAS orchestration and DR benchmarks: 264.5 → 160.2 per 10k, 42% → 14% of the theme. 197 papers mention both ALFWorld and WebShop; WebShop 8.6 → 53.7 per 10k.",
+  "2026 acceptance-rate details: computer-use data and environments is cluster 55; long-term memory cluster 198 0.421; agentic RL cluster 28 mean rating 4.62. Full-text computer-use wording 0.488 (mean rating 4.70), credit assignment 0.385, agentic RL 0.368, AI scientist 0.373, rubric 0.364; agent papers with scale/scaling in the title 0.339 (mean rating 4.55).",
+  "Low-payoff directions: multi-agent in the title 0.212, RAG cluster 0.191, MAS orchestration cluster 157 0.227, small GUI recipes (cluster 281), new SWE-* benchmarks 1/14. Agent papers with benchmark in the title/keywords 0.326, non-benchmark papers 0.260.",
+  "The 18 orals of 2026 center on AgentFlow (7.33), AstaBench, AgentGym-RL, ScaleCUA, MedAgentGym, Agent Data Protocol and Huxley-Gödel Machine: training environments, data protocols and self-improvement, consistent with the 2027 directions.",
+  "Additions to the rising/falling lists: RSI cluster 92 1.0 → 37.4 per 10k; terminal-agent wording 1.0 → 32.8; ScienceWorld 2.5 → 20.0, AppWorld 3.5 → 25.1; RAG is cluster 27; deep research paper count flat at 51 → 51; GraphRAG 2026 acceptance rate 0.174; social simulation is cluster 168, role-play wording 18.7 → 12.3; Llama within agent clusters 2.7% → 1.0%; the runtime governance cluster has clearly homogeneous wording and should be discounted.",
+  "The new default recipe appears in OpenClaw/Claude Code-style harnesses plus SKILL.md, reporting gains on ALFWorld/WebShop/AppWorld without weight updates. OpenClaw/claw-style wording 0 → about 54 papers (12.6 per 10k, including a few unrelated uses of the same acronym), with ClawGym II, ClawForge (executable benchmark generation for command-line agents) and Claw-Anything alongside.",
+  "Representative latent-communication work: Thought Blocks, Draft-KV, CacheCodec (task-oriented KV compression); there is already work detecting covert collusion in latent communication. Multi-agent debate share is flat, 12.1 → 14.2 per 10k.",
+  "OPD/OPSD full-text wording across all submissions 0.5 → 204.8 per 10k. The agent clusters include PR-OPD and self-distillation driven by trajectory memory; alongside GRPO, OPD is the second training line for agentic RL.",
+  "Benchmarks (per 10k): SWE-bench Verified 9.6 → 40.2, Terminal-Bench 0.5 → 29.3, τ-bench 2.0 → 12.3, BFCL 6.1 → 21.6, AgentDojo 5.6 → 16.0, OSWorld 11.1 → 15.6; MCP wording 19.7 → 19.3, MCP-specific benchmarks 4.0 → 3.5; MCP is now infrastructure. Backbones (within agent clusters): GPT-5 2.8% → 4.7%, Claude 3.5% → 4.6%, Llama 2.7% → 1.0%, o3/o4 1.9% → 0.1%.",
+  "Pixel-free GUI subline: MobiCLI, PhoneCLI, HybridCUA and PhoneHarness replace coordinate clicks with hybrid CLI/deeplink/MCP action spaces. One Pixel Wider shows that a one-pixel difference in image preprocessing changes grounding clicks.",
+  "Negative results: More Memory, Worse Agents; Skill Lock-In; Skill-Policy Co-evolution Trap; Recursive Hypercompression (a self-improvement → self-degradation phase transition); False Frontiers. AI scientists: from rediscovery to discovery on open math problems, SoundnessBench, latent invalid success in AI-guided ML research; AlphaEvolve-style evolutionary search cluster 74 31.8 → 50.2 per 10k.",
+  "Wording caveat: clusters 196/268 share an origin with the formulaic clusters across all submissions (137 and others); exclude or discount them when measuring interest in runtime governance and decision auditing.",
+  "Watch-list additions: for RSI, also see RRSI and recursively verified verifiers. Credit assignment methods include turn-level critics, counterfactual experience valuation and OPD fusion. Harness differences will challenge the comparability of SWE-bench/Terminal-Bench results. Real long-horizon tests of credit assignment include Terminal-Bench and SWE-bench Pro. ScreenSpot is another falling benchmark."
+ ]
+}

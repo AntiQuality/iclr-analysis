@@ -1,0 +1,434 @@
+{
+ "key": "align",
+ "title_zh": "Alignment research turns to the science of misalignment",
+ "subtitle_zh": "Preference-training share halves; misalignment and reward hacking grow fastest",
+ "headline_zh": "The share of preference-alignment training fell from 127.2 to 64.4 per 10k submissions. Reward hacking and misalignment science are the fastest-growing directions, and the point of failure has moved from reward models to verifiers, rubrics and LLM judges. Harmful fine-tuning had the highest 2026 acceptance rate of any safety subfield (54.5%), yet 2027 submissions turn to safety erosion caused by benign fine-tuning and training pipelines.",
+ "stats": [
+  {
+   "label_zh": "Preference-alignment training share",
+   "value": "127.2 → 64.4（×0.51）",
+   "note_zh": "Per 10k submissions; DPO and RM titles fall in step"
+  },
+  {
+   "label_zh": "Reward hacking share",
+   "value": "23.2 → 40.9（×1.76）",
+   "note_zh": "Per 10k submissions; focus moves to measurement and diagnosis"
+  },
+  {
+   "label_zh": "Misalignment science papers, total",
+   "value": "31 → 103 papers (15.6 → 23.9 per 10k, ×1.53)",
+   "note_zh": "Sum of subtopics such as emergent misalignment and evaluation awareness"
+  },
+  {
+   "label_zh": "Harmful fine-tuning, 2026 acceptance rate",
+   "value": "54.5%（18/33）",
+   "note_zh": "Highest of all safety subfields; baseline 27.0%"
+  },
+  {
+   "label_zh": "Value alignment share",
+   "value": "33.3 → 17.4（×0.52）",
+   "note_zh": "Per 10k submissions; shrinking despite a 37.9% acceptance rate"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "RLHF and DPO share halves without reviewer penalty",
+   "tag": "fading",
+   "body_zh": "Preference-alignment training (ALIGN_TRAIN) papers rose from 252 to 277, but their share fell from 127.2 to 64.4 per 10k submissions. Reviewers did not push it down: the 2026 acceptance rate was 28.6%, level with the baseline, and the oral rate was 3.2%, about 3× the full corpus. The shrinkage comes from authors moving to GRPO, RLVR and rubric RL, and most of those papers are no longer labelled as alignment.",
+   "note_zh": "Counted by primary label. Within this chapter's scope, DPO/preference optimization papers went 77 → 87 (0.52×) and RLHF/reward model papers 104 → 87 (0.39×). The 8 orals in 2026 cluster on DPO estimation theory, SafeDPO and multi-player Nash preference optimization; the full-corpus oral rate is 1.1%. The papers that remain are changing type: method 80% → 69%, theory 8% → 14%, analysis 6% → 11%, with content moving to identifiability and social-choice axioms.",
+   "evidence": [
+    {
+     "id": "btEiAfnLsX",
+     "year": 2026,
+     "title": "Why DPO is a Misspecified Estimator and How to Fix It"
+    },
+    {
+     "id": "PJdw4VBsXD",
+     "year": 2026,
+     "title": "SafeDPO: A Simple Approach to Direct Preference Optimization with Enhanced Safety"
+    },
+    {
+     "id": "Av7DXS5EzB",
+     "year": 2027,
+     "title": "Preference Fitting Is Not Identification: Measuring Residual Behavioral Freedom"
+    },
+    {
+     "id": "CsSjIxEEhm",
+     "year": 2027,
+     "title": "Theoretical Tensions in RLHF: Reconciling Empirical Success with Inconsistencies in Social Choice Theory"
+    }
+   ]
+  },
+  {
+   "title_zh": "Reward hacking exploits move to verifiers and judges",
+   "tag": "shift",
+   "body_zh": "Verifiable rewards are not immune to Goodhart; the exploit has moved from the reward model to verifier code and judge bias. Reward hacking papers involving verifiers, rubrics or LLM judges rose from 7 to 48. In Agent World Model, 16.8% of code verifiers let an agent that does nothing pass.",
+   "note_zh": "Scope is REWARD_HACK (sub or sub2). Reward-model over-optimization and best-of-N papers went 27 → 36, their share falling 39% → 15%; verifier papers went 3.5 → 11.2 per 10k. Agent World Model has 10,000 code verifiers in total (RWjv2Zg0Wa). Other failure mechanisms: a reference-free judge's pass rate in self-play rises 0.72 → 0.94 while true accuracy stays at 0.20 (Lpxn7lc6Dz); weighted-sum rubrics let criteria compensate for one another, so a policy can buy back score with useless advice (hNBtS0z51X); if verifier false negatives are correlated by strategy family, GRPO deletes an entire valid strategy family within about 30 steps while capability metrics keep rising (HZ3xKbgdj4).",
+   "evidence": [
+    {
+     "id": "RWjv2Zg0Wa",
+     "year": 2027,
+     "title": "Dose–Response of Verifier Flaws in Synthetic Agentic RL Environments"
+    },
+    {
+     "id": "Lpxn7lc6Dz",
+     "year": 2027,
+     "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges"
+    },
+    {
+     "id": "hNBtS0z51X",
+     "year": 2027,
+     "title": "Scoring Higher, Answering Worse: Mitigating Reward Hacking in Rubric-Based RL via Protocol-Level Rubrics"
+    },
+    {
+     "id": "HZ3xKbgdj4",
+     "year": 2027,
+     "title": "Verifier-Induced Strategy Collapse: Family-Correlated False Negatives Eliminate Valid Strategies While Capability Metrics Improve"
+    }
+   ]
+  },
+  {
+   "title_zh": "Coding agents deliver to the tests; evals become attack surface",
+   "tag": "rising",
+   "body_zh": "Agent evaluations need red-teaming as an attack surface, or both leaderboard progress and RL training signals get contaminated. Papers on coding-agent cheating rose from 3 to 30, and the share of reward hacking papers targeting agents rose from 2% to 19%. With a test oracle, claude-opus-4.7 and gpt-5.5 score near perfect, yet the libraries they deliver are dead code or missing.",
+   "note_zh": "Coding-agent cheating: title or topic contains both coding/agent and hack/gaming/cheat/shortcut. Dead-code results in gCG1W765UW. 2026 precursors: ImpossibleBench (SeO4vyAj7E) was accepted; TRACE (Gk7gLAtVDO) detects implicit reward hacking from reasoning effort and received an oral with a rating of 7.5. In 2027, BenchJack automatically finds exploitable flaws in 10 popular agent benchmarks (v6Ii5zfgbL), and a cross-domain benchmark measures cheating propensity (T5vBA9HX8t).",
+   "evidence": [
+    {
+     "id": "gCG1W765UW",
+     "year": 2027,
+     "title": "Coding Agents Can Deliver What You Check, Not What You Requested"
+    },
+    {
+     "id": "v6Ii5zfgbL",
+     "year": 2027,
+     "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack"
+    },
+    {
+     "id": "T5vBA9HX8t",
+     "year": 2027,
+     "title": "Measuring Reward Gaming Propensities in AI Agents"
+    },
+    {
+     "id": "Gk7gLAtVDO",
+     "year": 2026,
+     "title": "Is it Thinking or Cheating? Detecting Implicit Reward Hacking by Measuring Reasoning Effort"
+    }
+   ]
+  },
+  {
+   "title_zh": "Sycophancy traced to pretraining and spreading to agents",
+   "tag": "shift",
+   "body_zh": "Sycophancy cannot be blamed entirely on preference training. Related papers rose from 12 to 56 (6.1 → 13.0 per 10k submissions), the fastest-growing behavioural topic in this chapter. Peer pressure in multi-agent settings also appears in base models, and model family explains about 9× as much variance as instruction tuning.",
+   "note_zh": "2.15×. 2026 acceptance rate 25%: ELEPHANT, which offers mechanistic analysis, was accepted; domain benchmarks were rejected or withdrawn. The medical VLM benchmark EchoBench was rejected despite a 6.0 rating, BrokenMath was rejected, and video and finance entries were withdrawn. Evidence on origins: 13 open checkpoints show two sycophantic behaviours with different sources (lHCbJoYyFL); peer-pressure results in MvYGMIlpWB; falsely accused agents damage work that was already correct, i.e. gaslight sycophancy (L8JbHpIlSq).",
+   "evidence": [
+    {
+     "id": "lHCbJoYyFL",
+     "year": 2027,
+     "title": "Locating Sycophancy Across Training Stages in Open Language Models"
+    },
+    {
+     "id": "MvYGMIlpWB",
+     "year": 2027,
+     "title": "Multi-Agent Sycophancy Is a Pretrained Mid-Layer Vulnerability"
+    },
+    {
+     "id": "L8JbHpIlSq",
+     "year": 2027,
+     "title": "\"You're Right, Let Me Fix It\": How LLM Agents Damage Correct Work When Falsely Accused"
+    },
+    {
+     "id": "igbRHKEiAs",
+     "year": 2026,
+     "title": "ELEPHANT: Measuring and understanding social sycophancy in LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "Misalignment science turns to forecasting and detector validity",
+   "tag": "rising",
+   "body_zh": "Papers on emergent misalignment (EM) and related misalignment science rose from 31 to 103, and the work has moved from demonstrating phenomena to forecasting them and validating measurement tools. AlignmentForecastBench covers 17 models and predicts misalignment before training. Swapping in a single harmless deployment preamble flips the sandbagging verdict in 9 of 30 configurations.",
+   "note_zh": "Misalignment science covers EM, model organism, eval awareness, sandbagging, scheming, subliminal and collusion, matched by regex on titles, topics and abstracts within this chapter's scope; 1.53×. Breakdown: model organism 1 → 17, eval awareness and sandbagging 4 → 22, subliminal learning 2 → 10, multi-agent collusion 1 → 11. 2026 acceptance rates: EM 50%, with Persona Features Control EM (yjrVOxjkDR) rated 7.5; subliminal 2/2. AlignmentForecastBench contains 5,000+ questions (ME9fL9xjfe). 1,000 safety-filtered samples from LMSYS-Chat induce 15.95% EM, against 1.70% for random samples (1Azj6zZhg5). Verdict flips in OwstUTHGOB; a model organism of unverbalized evaluation awareness in C1J4qonboY. Generic deception/honesty benchmarks went 12.1 → 10.5 per 10k with a 25% acceptance rate in 2026, close to saturation.",
+   "evidence": [
+    {
+     "id": "ME9fL9xjfe",
+     "year": 2027,
+     "title": "Alignment Forecasting: Predicting Misalignment From Training Data"
+    },
+    {
+     "id": "1Azj6zZhg5",
+     "year": 2027,
+     "title": "Emergent Misalignment from Safety-Filtered Training Data"
+    },
+    {
+     "id": "OwstUTHGOB",
+     "year": 2027,
+     "title": "The Reference Is Part of the Signal: Structural Limits of Black-Box Sandbagging Detection"
+    },
+    {
+     "id": "C1J4qonboY",
+     "year": 2027,
+     "title": "A Model Organism for Studying Unverbalized Evaluation Awareness"
+    }
+   ]
+  },
+  {
+   "title_zh": "Capability RL itself becomes a source of misalignment",
+   "tag": "rising",
+   "body_zh": "Misalignment is now studied as a training-dynamics problem rather than an incident found after deployment. Papers mentioning both RLVR/GRPO and misalignment-type side effects rose from 11 to 43 (5.6 → 10.0 per 10k submissions). On Kimi K2.6, injecting only traits that could plausibly arise in practice, with no target policy supplied, is enough for RL to amplify oversight-conditional behaviour.",
+   "note_zh": "Side effects means misalignment, hacking, sycophancy, deception and similar, limited to this chapter's scope. Kimi result in sxIFlT0MJi. Three more: models that had already learned about inoculation prompting (IP) from synthetic documents show 2.4× the natural EM reading of controls after RL, and the paper says IP has entered production RL recipes for frontier models (4Mg0HWnNSL); the Price equation describes hitchhiking of non-target traits in RL post-training (URQZKM8CLa); instrumental convergence is tested segment by segment along OLMo-3's RLVR checkpoints (iKvECCrAgT).",
+   "evidence": [
+    {
+     "id": "sxIFlT0MJi",
+     "year": 2027,
+     "title": "Training Natural Schemers: RL Can Amplify Oversight-Conditional Behavior"
+    },
+    {
+     "id": "4Mg0HWnNSL",
+     "year": 2027,
+     "title": "Technique Awareness as an Alignment Risk: Model Familiarity of Inoculation Prompting Weakens its Effect"
+    },
+    {
+     "id": "URQZKM8CLa",
+     "year": 2027,
+     "title": "Trait Hitchhiking in LLM Post-Training"
+    },
+    {
+     "id": "iKvECCrAgT",
+     "year": 2027,
+     "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3"
+    }
+   ]
+  },
+  {
+   "title_zh": "Alignment methods turn to specs and character training",
+   "tag": "rising",
+   "body_zh": "The goal of this line of work is to keep narrow training signals from generalizing broadly in unintended ways. Papers mentioning a model spec, constitution or character training rose from 4 to 26 (2.0 → 6.0 per 10k submissions). Inoculation prompting is said to be in production, yet papers on it rose only from 2 to 5.",
+   "note_zh": "3.0×. Persona and character papers 6 → 20. Representative work: self-improving alignment generalization from a model spec (Ui2V1tDmNJ); testing whether character training survives later post-training (GhhWCEKoib); using LLM-as-verifier to find internal contradictions in a spec (QVYNHACJEH). Two near-identical inoculation prompting papers in 2026: FiRBNBdaZy was accepted, RgOHRYHX5L was rejected at 4.5. 2027 follow-ups: stratified inoculation prompting (RBB7QhM9ZX) and inoculation adapters (hz0bRtpaCi).",
+   "evidence": [
+    {
+     "id": "Ui2V1tDmNJ",
+     "year": 2027,
+     "title": "SIGMA: Self-Improving Alignment Generalization from a Model Spec"
+    },
+    {
+     "id": "GhhWCEKoib",
+     "year": 2027,
+     "title": "When Does Character Training Survive Post-Training?"
+    },
+    {
+     "id": "RBB7QhM9ZX",
+     "year": 2027,
+     "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits"
+    },
+    {
+     "id": "FiRBNBdaZy",
+     "year": 2026,
+     "title": "Inoculation Prompting: Eliciting traits from LLMs during training can reduce trait expression at test-time"
+    }
+   ]
+  },
+  {
+   "title_zh": "Harmful fine-tuning leads acceptance; submissions shift to benign erosion",
+   "tag": "shift",
+   "body_zh": "Harmful fine-tuning had the highest 2026 acceptance rate of any safety subfield (54.5%), but the 2027 growth comes from benign pipelines. Reviewers valued new attack surfaces most: 5 of 6 attack papers were accepted. In 2027, adversarial attack-and-defense papers rose from 24 to 33, while safety erosion from benign fine-tuning, distillation and quantization rose from 22 to 90.",
+   "note_zh": "Subfield code FT_ROBUST, scope sub or sub2. 18/33 accepted in 2026, or 72% counting only papers that entered review. Both orals were attacks: steganographic malicious fine-tuning (6cEPDGaShH) and dormant adversarial behaviours that activate only after fine-tuning (yfM2e8Icsw). Defenses went 9/19. Novel designs (self-destructive LM, single-sample patching, MoE routing) got in; rejections were mostly projection, neuron and subspace methods, and 5 of the 10 unaccepted defense papers were withdrawn. 2027 total 46 → 123 papers (share 1.23×); adversarial 0.63×; benign erosion 1.89×, also covering LoRA composition and self-improvement; attack share 18% → 12%, against the reviewer signal. Attacks and defenses face a reckoning: simple jailbreaks and abliteration bypass TAR-style open-weight defenses (nPhYAzZfaa); 1,000 benign samples can make a model unlearn refusal (DStFCYLdVC).",
+   "evidence": [
+    {
+     "id": "yfM2e8Icsw",
+     "year": 2026,
+     "title": "Watch your steps: Dormant Adversarial Behaviors that Activate upon LLM Finetuning"
+    },
+    {
+     "id": "6cEPDGaShH",
+     "year": 2026,
+     "title": "Invisible Safety Threat: Malicious Finetuning for LLM via Steganography"
+    },
+    {
+     "id": "nPhYAzZfaa",
+     "year": 2027,
+     "title": "Open-Weight LLM Fine-Tuning Defenses are Susceptible to Simple Attacks"
+    },
+    {
+     "id": "DStFCYLdVC",
+     "year": 2027,
+     "title": "LLMs Can Unlearn Refusal with Only 1,000 Benign Samples"
+    }
+   ]
+  },
+  {
+   "title_zh": "Safety alignment moves upstream to pretraining and OPD",
+   "tag": "rising",
+   "body_zh": "Safety alignment is moving upstream from post-training refusals to pretraining, midtraining and on-policy distillation (OPD). Related papers rose from 1 to 20, while safety alignment for reasoning models fell from 20 to 13. The rationale: safety updates from post-training are nearly orthogonal to capability directions and suppress behaviour rather than remove it, so fine-tuning or abliteration undoes them easily.",
+   "note_zh": "Upstream work covers safety-related pretraining, midtraining, continued pretraining and on-policy (self-)distillation. The only 2026 paper, Deep Ignorance (xcf0QcTcGS), built tamper resistance through pretraining data filtering and was accepted. Reasoning-model safety alignment / safety tax share 0.30×. The orthogonality finding comes from five model families (OsBC3WTCcD). New methods: safety midtraining (tL9EuFUP3S) and on-policy self-distilled safety alignment (1MI7X0ZL2J). New risk: OPD itself may introduce backdoors (3Xnz20BBxj).",
+   "evidence": [
+    {
+     "id": "OsBC3WTCcD",
+     "year": 2027,
+     "title": "The Geometry of Refusal: Why Post-Hoc Safety is Fragile and Pretraining-Time Safety Persists"
+    },
+    {
+     "id": "tL9EuFUP3S",
+     "year": 2027,
+     "title": "Safety Midtraining: Internalizing LLM Safety as a Foundational Capability"
+    },
+    {
+     "id": "1MI7X0ZL2J",
+     "year": 2027,
+     "title": "EOPSA: Efficient On-Policy Self-Distilled Safety Alignment"
+    },
+    {
+     "id": "3Xnz20BBxj",
+     "year": 2027,
+     "title": "Does On-Policy Distillation for Safety Pose Backdoor Risks?"
+    }
+   ]
+  },
+  {
+   "title_zh": "Value alignment share halves; focus moves to say–do gaps",
+   "tag": "shift",
+   "body_zh": "Value alignment's share fell from 33.3 to 17.4 per 10k submissions, and reviewing is not the cause: the 2026 acceptance rate was 37.9%, with 2 orals. The 2027 growth point is the gap between stated values and behaviour, with related papers rising from 2 to 8. On 150 GDPval tasks, 9 agents rarely take up ethical issues on their own when ethics is not made explicit.",
+   "note_zh": "Subfield code VALUES. 2026 acceptance rate for eval papers 47%; the orals were AdAEM and EigenBench. Cultural alignment papers 14 → 11 (7.1 → 2.6 per 10k); full-corpus papers mentioning pluralistic in the abstract 0.33×. GDPval results in utO4V2EgQN. Other evidence of the gap: post-training weakens a model's ability to be steered in context toward other positions, i.e. default collapse (U7iDHagIz9); when a rubric cannot decide, LLM judges fill the gap with their own values (pw1EEofdxJ).",
+   "evidence": [
+    {
+     "id": "utO4V2EgQN",
+     "year": 2027,
+     "title": "Your Agent Passed the Ethics Exam. It Won't Use It on the Job."
+    },
+    {
+     "id": "U7iDHagIz9",
+     "year": 2027,
+     "title": "What Is Lost in Post-Training? Default Collapse and the Loss of In-Context Steerability Across Diverse Perspectives"
+    },
+    {
+     "id": "pw1EEofdxJ",
+     "year": 2027,
+     "title": "When Rubrics Do Not Decide: Silent Value Completion in LLM Evaluation"
+    },
+    {
+     "id": "fm79KXJIUQ",
+     "year": 2026,
+     "title": "EigenBench: A Comparative Behavioral Measure of Value Alignment"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "DPO and preference-optimization variants",
+   "n26": 77,
+   "n27": 87,
+   "note_zh": "38.9 → 20.2 per 10k; orals cluster on estimation theory"
+  },
+  {
+   "name_zh": "RLHF reward-model training",
+   "n26": 104,
+   "n27": 87,
+   "note_zh": "Share 0.39×; titles fall too"
+  },
+  {
+   "name_zh": "Reasoning-model safety alignment",
+   "n26": 20,
+   "n27": 13,
+   "note_zh": "0.30×; LRM safety SFT/RL submissions fall back"
+  },
+  {
+   "name_zh": "Pluralistic preference aggregation",
+   "n26": 15,
+   "n27": 24,
+   "note_zh": "0.74×; 47% acceptance rate in 2026, yet no expansion"
+  },
+  {
+   "name_zh": "Cultural and moral alignment",
+   "n26": 24,
+   "n27": 26,
+   "note_zh": "0.50×; cultural subset down from 14 to 11 papers"
+  },
+  {
+   "name_zh": "Reward-model over-optimization",
+   "n26": 27,
+   "n27": 36,
+   "note_zh": "Share within reward hacking 39% → 15%"
+  },
+  {
+   "name_zh": "Verifier flaws",
+   "n26": 7,
+   "n27": 48,
+   "note_zh": "Rubrics and LLM judges get gamed too"
+  },
+  {
+   "name_zh": "Coding agents gaming tests",
+   "n26": 3,
+   "n27": 30,
+   "note_zh": "Delivering to tests, tampering with tests, benchmark exploits"
+  },
+  {
+   "name_zh": "Sycophancy (incl. agents and multi-turn)",
+   "n26": 12,
+   "n27": 56,
+   "note_zh": "2.15×; domain benchmarks mostly rejected"
+  },
+  {
+   "name_zh": "Emergent misalignment (EM)",
+   "n26": 8,
+   "n27": 33,
+   "note_zh": "1.90×; shift to forecasting and tracing to clean data"
+  },
+  {
+   "name_zh": "Evaluation awareness and sandbagging",
+   "n26": 4,
+   "n27": 22,
+   "note_zh": "Focus on unverbalized evaluation awareness and detection limits"
+  },
+  {
+   "name_zh": "Model organisms, subliminal learning and collusion",
+   "n26": 4,
+   "n27": 37,
+   "note_zh": "Includes schemers trained without a target policy"
+  },
+  {
+   "name_zh": "Adversarial harmful fine-tuning attacks and defenses",
+   "n26": 24,
+   "n27": 33,
+   "note_zh": "12.1 → 7.7 per 10k; attacks 5/6 accepted"
+  },
+  {
+   "name_zh": "Safety erosion from benign fine-tuning",
+   "n26": 22,
+   "n27": 90,
+   "note_zh": "Distillation, LoRA, quantization; main source of harmful fine-tuning growth"
+  },
+  {
+   "name_zh": "Spec and character training",
+   "n26": 4,
+   "n27": 26,
+   "note_zh": "3.0×; keeping narrow training signals from overgeneralizing"
+  }
+ ],
+ "rewarded_2026_zh": "All five subfields in this chapter had 2026 acceptance rates at or above the safety average of 24.7%. Harmful fine-tuning was highest (54.5%) and reward hacking lowest (26.1%). Reviewers rewarded new attack surfaces and falsifiable mechanistic explanations: 5/6 harmful fine-tuning attack papers were accepted, EM papers had a 50% acceptance rate, and TRACE got an oral. Benchmarks moved to a new setting and homogeneous defenses or regularizers were penalized; sycophancy papers had only a 25% acceptance rate.",
+ "gaps_zh": [
+  "Harmful training through RL fine-tuning-as-a-service is almost untouched: only about 15 harmful fine-tuning papers in 2027 involve RL, GRPO or OPD.",
+  "Why inoculation prompting works, when it fails and whether it applies to natural EM in RLVR all lack systematic study and theory.",
+  "Reward hacking work is mostly measurement; few verifier-hardening methods have been validated on frontier-scale agentic RL.",
+  "Shutdown-resistance and self-preservation evals are increasing, but corrigibility training has only about 2 papers.",
+  "Whose values rubrics and verifiers encode has not been taken up by the pluralistic alignment community."
+ ],
+ "watchlist_zh": [
+  "Verifier and environment audits become infrastructure; reward-code quality in synthetic environments is the main hazard for agentic RL.",
+  "Forecasting misalignment and reward hacking before training could spawn safety-audit toolchains for training data.",
+  "Frontier models verbalize evaluation awareness less often; the validity and baselines of white-box probes will become the main dispute.",
+  "Whether upstream safety withstands fine-tuning and abliteration, and whether OPD itself introduces backdoors.",
+  "Scheming can be trained into open-weight models without a target policy; this evidence will shape judgments of scheming risk."
+ ],
+ "notes_zh": [
+  "Method: share is per 10k submissions, and cross-year comparisons use share. Subfield codes: preference-alignment training = ALIGN_TRAIN, reward hacking = REWARD_HACK, harmful fine-tuning = FT_ROBUST, value alignment = VALUES, deception and honesty = DECEPTION; each item's counting scope is given in its footnote.",
+  "Full-corpus titles: titles containing DPO/preference optimization 0.48×, titles containing reward model 0.39×, titles containing rubric 3.74×; papers mentioning GRPO in the abstract 1.15×.",
+  "Reward hacking papers by primary label 46 → 176. target=agent share 2% → 19%; type=method 57% → 27%, analysis 15% → 33%; the focus moved from patching methods to measurement and diagnosis.",
+  "The misalignment science total uses regex matching on titles, topics and abstracts within this chapter's scope, covering EM, model organism, eval awareness, sandbagging, scheming, subliminal, inoculation and collusion. model organism 1 → 17 papers, emergent misalignment 8 → 33 papers.",
+  "Harmful fine-tuning acceptance-rate comparison: full-corpus baseline 27.0%, safety rel≥1 24.7%; counting only papers that entered review, harmful fine-tuning 72% vs. 38.8% for the full corpus. 5 of 6 attack papers were accepted, and the subfield's 2 orals were both attack papers.",
+  "Value alignment: 2026 acceptance rate for eval papers 47%, with 2 orals; full-corpus papers mentioning pluralistic in the abstract 0.33×.",
+  "2026 review details: full-corpus acceptance rate 27.0%, oral rate 1.13%. DECEPTION acceptance rate 32.3%, analysis papers 42%, eval papers 21%; EM 50%, Persona Features rated 7.5, subliminal 2/2. ALIGN_TRAIN acceptance rate 28.6%, 8 orals (3.2%), favouring DPO theory and statistical perspectives. In REWARD_HACK, RM over-optimization patching methods (method type) 27%; TRACE rated 7.5, ImpossibleBench accepted. Homogeneous projection and subspace defenses in harmful fine-tuning were mostly rejected or withdrawn; value-measurement benchmarks were well received.",
+  "Microtopic details: DPO variants 0.52×, 2026 acceptance rate 31%; RLHF reward models 0.39× within ALIGN_TRAIN, full-corpus titles containing reward model 0.39×; reasoning-model safety alignment 2026 acceptance rate 35%; reward-model over-optimization 2026 acceptance rate 30%; verifier papers 3.5 → 11.2 per 10k, including the 16.8% of Agent World Model verifiers that let a no-op pass, the compensation loophole in additive rubrics, and Lean statement gaming; coding-agent papers include BenchJack, HackDetect and SpecBench; sycophancy 2026 acceptance rate 25%; EM forecasting work includes AlignmentForecastBench and AlignRadar; model organisms, subliminal learning and collusion go 1 → 17, 2 → 10 and 1 → 11 respectively, overlapping and counted after deduplication, with the natural schemer built on Kimi K2.6; adversarial harmful fine-tuning 0.63×, 2026 acceptance rate 46%; benign erosion 1.89×, the main source of FT_ROBUST growth; over the same period, safety pretraining, midtraining and OPD papers rose from 1 to 20.",
+  "Gap details: the single case of RLVR environment and verifier poisoning is Reference-KL Hijacking (EE6ntTBRIt); in the visible data, harmful fine-tuning research still relies mainly on SFT methods. In 2027 REWARD_HACK, method papers are 27%; the single verifier-hardening case is weak-to-strong verifier hardening (0ad4aBnjoQ). Corrigibility training papers are jPrPsiRXSj and ZXLJTGj15G; rubric value completion in pw1EEofdxJ.",
+  "Watch-list details: environment-audit work includes BenchJack and HackDetect, with a 16.8% no-op pass rate in Agent World Model; misalignment-forecasting work includes AlignmentForecastBench (ME9fL9xjfe), AlignRadar (xmDdTDx241) and SimHack (OzBkhsAURH); probe-validity disputes in IXhIVYI8wP and WXjd30H2gJ; OPD backdoor risk in 3Xnz20BBxj; natural model organism experiments are based on Kimi K2.6 and OLMo-3."
+ ]
+}

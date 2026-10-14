@@ -1,0 +1,51 @@
+<header class="paper wrap">
+  <div class="kicker">{{t:kickerSafety}}</div>
+  <h1>{{t:titleSafety}}</h1>
+  <div class="dek">{{t:dekSafety}}</div>
+  <div class="byline" id="byline"></div>
+  <div class="links" id="links"></div>
+</header>
+<nav class="toc wrap" id="toc" aria-label="{{t:tocAria}}"></nav>
+<nav class="section-nav" id="sectionNav" aria-label="{{t:sectionNav}}"></nav>
+<main class="wrap">
+  <section class="part" id="p-summary" data-part="{{t:pSafetySummary}}">
+    <div class="part-head"><span class="pno">1</span><h2>{{t:pSafetySummary}}</h2></div>
+    <div class="prose lead" id="safetyIntro"></div>
+    <div class="nest" id="nest"></div><div class="figure-caption" id="nestCap"></div>
+    <div class="kpis" id="safetyKpis"></div>
+  </section>
+
+  <section class="part" id="sf-thesis" data-part="{{t:pThesis}}">
+    <div class="part-head"><span class="pno">2</span><h2>{{t:pThesis}}</h2></div>
+    <div id="thesisBody"></div>
+  </section>
+
+  <section class="part" id="sf-subs" data-part="{{t:pSubs}}">
+    <div class="part-head"><span class="pno">3</span><h2>{{t:pSubs}}</h2></div>
+    <h3 id="s-subs" data-nav="{{t:hSubs}}">{{t:hSubs}}</h3>
+    <div class="figure"><div class="legend"><span><i style="background:var(--y26)"></i>2026</span><span><i style="background:var(--hot)"></i>{{t:legRise}}</span><span><i style="background:var(--down)"></i>{{t:legFall}}</span></div><div id="subChart"></div>
+      <div class="figure-caption"><b>{{t:fig}} 1.</b> {{t:capSubs}}</div></div>
+    <div class="table-wrap"><table class="rt" id="subTable"></table></div><p class="table-caption">{{t:subHl}}</p>
+    <h3 id="s-mix" data-nav="{{t:hMix}}">{{t:hMix}}</h3>
+    <div class="grid2"><div class="figure"><div id="targetChart"></div><div class="figure-caption"><b>{{t:fig}} 2.</b> {{t:capTarget}}</div></div><div class="figure"><div id="typeChart"></div><div class="figure-caption"><b>{{t:fig}} 3.</b> {{t:capType}}</div></div></div>
+    <div class="table-wrap" id="heat"></div><p class="table-caption">{{t:capHeat}}</p>
+    <h3 id="s-micro" data-nav="{{t:navMicro}}">{{t:hMicro}}</h3><div class="grid2" id="microBody"></div>
+  </section>
+
+  <section class="part" id="sf-ch" data-part="{{t:pChapters}}">
+    <div class="part-head"><span class="pno">4</span><h2>{{t:pChapters}}</h2></div>
+    <div class="subtabs" id="safetyTabs" role="tablist"></div><div id="safetyBody"></div>
+  </section>
+
+  <section class="part" id="p-papers" data-part="{{t:pSafetyPapers}}">
+    <div class="part-head"><span class="pno">5</span><h2>{{t:pSafetyPapers}}</h2></div>
+    <div class="controls" id="exControls"></div>
+    <div class="table-wrap tall"><table class="rt" id="exTable"></table></div><p class="table-caption" id="exCount"></p>
+  </section>
+
+  <section class="part notes" id="p-notes" data-part="{{t:pNotes}}">
+    <div class="part-head"><span class="pno"></span><h2>{{t:pNotes}}</h2></div>
+    <div id="methodBody"></div>
+    <ol class="fnlist" id="fnList"></ol>
+  </section>
+</main>

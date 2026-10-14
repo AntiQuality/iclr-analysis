@@ -1,0 +1,432 @@
+{
+ "key": "attack",
+ "title_zh": "Jailbreaks, guardrails, backdoors and generator safety",
+ "subtitle_zh": "Chat jailbreaks stall; the attack surface moves to weights, the deployment chain and agents",
+ "headline_zh": "Chat-style jailbreak attacks stalled in 2027: papers went 118 → 116, and per 10k submissions 59.6 → 27.0. Research moved to non-prompt attack surfaces, session-level layered guardrails and backdoors along the deployment chain. 2026 reviewers had already marked down such attack papers: the acceptance rate was 20% for jailbreak attacks and 9% for backdoor attacks.",
+ "stats": [
+  {
+   "label_zh": "Jailbreak attacks per 10k submissions",
+   "value": "59.6 → 27.0",
+   "note_zh": "Absolute count 118→116: stalled, not gone"
+  },
+  {
+   "label_zh": "Jailbreak defense-to-attack paper ratio",
+   "value": "0.98 → 1.59",
+   "note_zh": "Defense share fell less than attack share"
+  },
+  {
+   "label_zh": "Backdoor acceptance rate, 2026",
+   "value": "13% (baseline 27%)",
+   "note_zh": "Attack papers 9%, LLM targets 20%"
+  },
+  {
+   "label_zh": "This chapter's share of safety papers",
+   "value": "22.7% → 15.9%",
+   "note_zh": "Gave ground to agents, prompt injection and oversight"
+  },
+  {
+   "label_zh": "Multi-turn jailbreak defense papers",
+   "value": "3 → 18",
+   "note_zh": "In 2027 defenses outnumber attacks for the first time"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Jailbreak attacks stall and migrate to other areas",
+   "tag": "fading",
+   "body_zh": "Jailbreak attack papers went 118 → 116 while total submissions grew 2.17×, so the share fell from 59.6 to 27.0 per 10k submissions. Among papers that mention jailbreak or red-team, the share outside the jailbreak subfields went 17% → 31%; jailbreaks are increasingly a tool for interpretability and agent research. In 2026 the acceptance rate was 21% for jailbreak attacks and 33% for analysis papers. The Attacker Moves Second, which broke 12 defenses with adaptive attacks, scored 6.0 and was still rejected.",
+   "note_zh": "Counted by jailbreak/red-team in the title or topic: 178→236 papers in total, including interpretability safety 3→17, prompt injection 3→15 and agent safety 4→12. In 2026 the jailbreak-attack subfield had a 34% withdrawal rate, and the attack type had a 20% acceptance rate. The top-rated analysis paper was a mechanistic paper explaining transferability (6.5).",
+   "evidence": [
+    {
+     "id": "UQK3tUsouK",
+     "year": 2026,
+     "title": "Jailbreak Transferability Emerges from Shared Representations"
+    },
+    {
+     "id": "7B9mTg7z25",
+     "year": 2026,
+     "title": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections"
+    },
+    {
+     "id": "jJb8QPInoP",
+     "year": 2027,
+     "title": "RedDarwin: Evolving Jailbreak Skills against Frontier LLMs"
+    },
+    {
+     "id": "SoOfGBn7bw",
+     "year": 2027,
+     "title": "JailbreakSkill: Scaling Automated Red-Teaming with Reusable and Ever-Evolving Skills"
+    }
+   ]
+  },
+  {
+   "title_zh": "The jailbreak attack surface moves from prompts to weights and the decoding stack",
+   "tag": "shift",
+   "body_zh": "The most novel 2027 jailbreak attacks bypass the input text. PrisonBreak jailbreaks billion-parameter models with 5–25 bit-flips. Other work attacks speculative decoding by poisoning the draft model, or silences the safety experts in MoE. Diffusion language model attack and defense papers went 5 → 11; 4 of the 5 in 2026 were accepted. Reasoning-model jailbreaks cooled, 8.1 → 3.3 per 10k submissions.",
+   "note_zh": "PrisonBreak is paired with Rowhammer; for the speculative-decoding attack see Never Sampled, Always Accepted. COMBAT transfers refusal directions across models; Large Language Lobotomy locates MoE safety experts. Accepted dLLM papers include a priming-vulnerability paper rated 7.0. Among safety-related subfields, speech/audio LM papers went 7→26, including multi-turn jailbreaks of full-duplex live calls; MoE went 6→10 (share 3.0→2.3). Reasoning-model jailbreaks went 16→14, with a 12% acceptance rate in 2026.",
+   "evidence": [
+    {
+     "id": "71aW30lVpo",
+     "year": 2027,
+     "title": "PrisonBreak: Jailbreaking LLMs with at Most Twenty-Five Targeted Bit-flips"
+    },
+    {
+     "id": "QekNiN2I9H",
+     "year": 2027,
+     "title": "Never Sampled, Always Accepted: Commitment Injection Through Top-$k$ Verification in Speculative Decoding"
+    },
+    {
+     "id": "xrFfJpuS2b",
+     "year": 2027,
+     "title": "Harmful Responses Are Jailbreak Templates: Transferring Autoregressive Jailbreaks to Diffusion Language Models"
+    },
+    {
+     "id": "qZVGWQneRt",
+     "year": 2027,
+     "title": "Crescendo-Live: Multi-Turn Jailbreaks of Full-Duplex Speech Models in Live Calls and Their Defense with Daimonion"
+    }
+   ]
+  },
+  {
+   "title_zh": "Multi-turn jailbreak defenses outnumber attacks for the first time",
+   "tag": "rising",
+   "body_zh": "Multi-turn jailbreak papers went 15 → 37, one of the few jailbreak clusters gaining share. Defenses rose from 3 in 2026 to 15 in 2027, against 14 attacks. New defenses model session state instead of applying a single-turn guardrail turn by turn. A representation analysis finds that the multi-turn drift direction lies almost entirely outside the single-turn refusal plane; this lets it flag 76–86% of attacks before the first harmful reply.",
+   "note_zh": "Per 10k submissions: 7.6→8.6. For the representation analysis see RtTJM8mETC. Other defenses learn when to intervene (mg8ETguyGt), use conformal detection (vtM1llTAOn) or certify adaptive multi-turn conversations (JY5txJu5Ge).",
+   "evidence": [
+    {
+     "id": "RtTJM8mETC",
+     "year": 2027,
+     "title": "Multi-Turn Jailbreaks Steer Along Directions Single-Turn Safety Did Not Shape"
+    },
+    {
+     "id": "mg8ETguyGt",
+     "year": 2027,
+     "title": "One Turn Too Late: Learning When to Intervene Against Multi-Turn Malicious Intent"
+    },
+    {
+     "id": "vtM1llTAOn",
+     "year": 2027,
+     "title": "Conf-Guard: Dynamic Multi-Turn Jailbreak Detection with Conformal Guarantees"
+    },
+    {
+     "id": "JY5txJu5Ge",
+     "year": 2027,
+     "title": "Certifying LLM Safety Across Adaptive Multi-Turn Conversations"
+    }
+   ]
+  },
+  {
+   "title_zh": "Guardrails move to internal probes, streaming state and cascades",
+   "tag": "shift",
+   "body_zh": "Among jailbreak defenses, monitors that read internal state grew the most, 26 → 49; external guards went 53 → 79 and session-state defenses 3 → 18. The template accepted in 2026 was cascaded classifiers plus activation monitoring; Constitutional Classifiers++ has a 0.036% refusal rate on production traffic. Configurable-policy guards have not delivered: verdicts from open-source policy-conditioned guards follow the harmfulness direction, not the enabled policy.",
+   "note_zh": "Classified by mechanism keywords: internal state covers activations, probes, hidden states and trajectories; streaming and decode-time intervention went 5→11, certification and guarantees 2→10. CC++ screens all traffic with a lightweight classifier, then escalates suspicious conversations to a full-exchange classifier. Activation-monitoring examples are AGWa8whf92 and GAVEL; new in 2027 are qvVph9ziyG (hidden-state trajectories), HysGuard (streaming) and dedicated defenses for dLLMs, looped LMs and MoE routing. For the policy-guard finding see Oeu8HotX83.",
+   "evidence": [
+    {
+     "id": "eNvsH5Ye2V",
+     "year": 2026,
+     "title": "Constitutional Classifiers++: Production-Grade Defenses against Universal Jailbreaks"
+    },
+    {
+     "id": "AGWa8whf92",
+     "year": 2026,
+     "title": "Beyond Linear Probes: Dynamic Safety Monitoring for Language Models"
+    },
+    {
+     "id": "IjpLkj9Fn9",
+     "year": 2027,
+     "title": "HYSGUARD: RESETTING SAFETY STATE, NOT GENERATION, FOR STREAMING LLM SAFEGUARDS"
+    },
+    {
+     "id": "Oeu8HotX83",
+     "year": 2027,
+     "title": "Safety Guards Judge Harmfulness, Not Policy Violation"
+    }
+   ]
+  },
+  {
+   "title_zh": "Guardrails and evaluation metrics come under audit",
+   "tag": "rising",
+   "body_zh": "The jailbreak evaluation-validity cluster went 12 → 42, and its main finding is that current numbers are unreliable. One study finds that monitors flag requests the model would refuse anyway at 1.1–6.4× the rate of requests it would answer, while AUROC stays above 0.85. SuperRed changes only the attacker model and access scope, and attack success rate (ASR) ranges from 2.7% to 67%. Attackers also target guardrails, for example ProbeFool evading activation probes.",
+   "note_zh": "The validity cluster covers judges, ASR reliability and randomness: 6.1→9.8 per 10k submissions; eval/analysis-type jailbreak defense papers went 11→34. For the monitor hit-rate result see 75zQg9DH4L. Vsaf2j1MdT runs an exact Shapley analysis over 8 guards plus the model's own refusal: the harmful side is fully saturated, and the leave-one-out table reflects only over-refusal cost. For poisoning of self-updating guards see Twenty-Five Samples. In 2026 GuidedBench (6.0) was accepted.",
+   "evidence": [
+    {
+     "id": "75zQg9DH4L",
+     "year": 2027,
+     "title": "Safety Monitors Mostly Catch What the Model Already Refuses"
+    },
+    {
+     "id": "Vsaf2j1MdT",
+     "year": 2027,
+     "title": "Saturated Screening, Concentrated Cost: What a Full-Stack Ablation Table Reads in a Redundant Refusal Stack"
+    },
+    {
+     "id": "h7jjGRtosD",
+     "year": 2027,
+     "title": "SuperRed: AI Red-Teaming and Security Benchmarking with a Fine-grained Threat Model"
+    },
+    {
+     "id": "bLGeIyOpEo",
+     "year": 2027,
+     "title": "Twenty-Five Samples to Blind a Guardrail: Stealthy Benign-Side Poisoning of Self-Adapting Safety Filters"
+    }
+   ]
+  },
+  {
+   "title_zh": "Over-refusal becomes a first-class optimization target",
+   "tag": "rising",
+   "body_zh": "Over-refusal papers went 19 → 43, with a 37% acceptance rate in 2026, the highest of any jailbreak cluster. New work exposes gaps caused by output form: the same harmful request posed as grounding gets a refusal rate 31–59 percentage points lower than when posed as VQA. The marginal value of a guardrail depends more on false-refusal cost than on blocking a few more harmful requests.",
+   "note_zh": "Counted by over-refusal/false refusal in the abstract: 9.6→10.0 per 10k submissions. The representative 2026 paper is Contrastive Refinement (6.0). In 2027 PJ3ZdImcJM builds safety-as-discernment into reasoning-model training, and PROOF routes by traffic profile; the grounding result is from zQZVpPwjbo.",
+   "evidence": [
+    {
+     "id": "GXcN0MuN1q",
+     "year": 2026,
+     "title": "Discern Truth from Falsehood: Reducing Over-Refusal via Contrastive Refinement"
+    },
+    {
+     "id": "PJ3ZdImcJM",
+     "year": 2027,
+     "title": "Safety Is Discernment, Not Refusal: Teaching Large Reasoning Models to Judge Before They Act"
+    },
+    {
+     "id": "YF1dlISxNG",
+     "year": 2027,
+     "title": "PROOF: Mixed-Traffic Jailbreak Defense via Profile Routing in Frozen LLMs"
+    },
+    {
+     "id": "zQZVpPwjbo",
+     "year": 2027,
+     "title": "Visual Grounding Safety in Vision-Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "Backdoors move to agents, distillation and the deployment chain",
+   "tag": "shift",
+   "body_zh": "Backdoor share went 69.7 → 56.5 per 10k submissions, with large internal change: agent-targeted backdoors 4 → 20, RAG poisoning 10 → 25, distillation propagation 3 → 11. Deployment-transform-triggered backdoors went 2 → 12; they activate only after quantization, benign fine-tuning, an unlearning request or ANN→SNN conversion. The threat model has expanded from a poisoned training set to any link in the supply chain.",
+   "note_zh": "Agent, memory and skill clusters went 9→28; in 2027 there were 20 attacks and only 3 defenses. RAG had 12 papers each on attack and defense. Distillation case: on-policy distillation propagates backdoors, and diluting the poisoned data can even strengthen the transmitted behavior. Deployment-transform papers were checked by hand; the 2 in 2026 covered pruning and merging. For benign-fine-tuning triggers see FTTrap.",
+   "evidence": [
+    {
+     "id": "PwlYzqIzOb",
+     "year": 2027,
+     "title": "BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning"
+    },
+    {
+     "id": "yg0Wa2OH5s",
+     "year": 2027,
+     "title": "FTTrap: Downstream Fine-Tuning Walks into a Backdoor Trap"
+    },
+    {
+     "id": "T1fUcoIg6z",
+     "year": 2027,
+     "title": "GhostQuant: The Ghost that Appears Only After Quantization"
+    },
+    {
+     "id": "j9uWANGL9k",
+     "year": 2027,
+     "title": "On-policy distillation as a Backdoor Propagation Channel"
+    }
+   ]
+  },
+  {
+   "title_zh": "Rejected poisoning experiments spawn poisoning theory",
+   "tag": "rising",
+   "body_zh": "A 2026 paper showed that poisoning needs a near-constant number of documents, about 250, regardless of data scale, but it scored 4.4 and was rejected. In 2027 theory papers in the backdoor area went 1 → 9, several giving solvable models and scaling exponents for this effect. SAILS shows that with model, data and poison count all fixed, changing only the poison set moves ASR between 3% and 80%. Randomly sampled benchmarks underestimate the worst case.",
+   "note_zh": "The original experiment is ryYQQuAeCu, covering 600M–13B pretraining; theory work includes i1ZhDfhKAN and 2XH9Pc5030 (regime-dependent scaling exponents).",
+   "evidence": [
+    {
+     "id": "ryYQQuAeCu",
+     "year": 2026,
+     "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples"
+    },
+    {
+     "id": "i1ZhDfhKAN",
+     "year": 2027,
+     "title": "A Solvable Model of Near-Constant-Count Data Poisoning"
+    },
+    {
+     "id": "2XH9Pc5030",
+     "year": 2027,
+     "title": "A Solvable Theory of Pre-training Data Poisoning: Regime-Dependent Scaling Exponents"
+    },
+    {
+     "id": "Dmh1NL7Nes",
+     "year": 2027,
+     "title": "Pick Your Poison: Learning to Select Poison Sets for Stronger LLM Backdoor Attacks"
+    }
+   ]
+  },
+  {
+   "title_zh": "Concept erasure saturates and moves to DiT and video",
+   "tag": "shift",
+   "body_zh": "Concept erasure is still the largest cluster in generative safety, 38 → 55 papers, but it fell from 19.2 to 12.8 per 10k submissions. Research moves to flow/DiT architectures (6 → 21) and to erasure durability: quantization, model merging and initial-noise optimization can all undo erasure. SGF (6.5), the only oral in the whole set, unifies negative guidance with control barrier functions. Reviewers rewarded a theoretical framework, not a new erasure loss.",
+   "note_zh": "Generative-safety subfield share went 32.8→25.8 per 10k submissions; concept erasure had a 26% acceptance rate and a 45% withdrawal rate in 2026. Flow/DiT is counted by mention of flow matching, DiT or rectified flow; video, 3D and autoregressive generators went 9→18. SAE probes can expose erasure residue. Image immunization, anti-editing and anti-personalization went 9→26; none of the 9 in 2026 was accepted.",
+   "evidence": [
+    {
+     "id": "EA80Zib9UI",
+     "year": 2026,
+     "title": "SAFETY-GUIDED FLOW (SGF): A UNIFIED FRAMEWORK FOR NEGATIVE GUIDANCE IN SAFE GENERATION"
+    },
+    {
+     "id": "xwnYE6MomD",
+     "year": 2027,
+     "title": "BEM: Learning Bregman Divergences for Concept Erasure in Flow Matching Models"
+    },
+    {
+     "id": "GDTAORcpJ3",
+     "year": 2027,
+     "title": "When Weight Fidelity Misleads: Concept-Erasure Safety Edits Under Diffusion-Model Quantization"
+    },
+    {
+     "id": "d7AZGUMdgp",
+     "year": 2027,
+     "title": "Erased But Not Gone: How Model Merging Weakens Concept Erasure in Diffusion Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "Adversarial robustness growth moves to embodied targets and closed MLLMs",
+   "tag": "shift",
+   "body_zh": "Adversarial robustness share went 119.6 → 68.8 per 10k submissions, down 42%; classic targets still make up 57% in 2027. Growth is concentrated in embodied targets such as VLAs and world models (13 → 34) and in adversarial attacks on MLLMs (16 → 37), mostly transfer or black-box attacks on closed models. In 2026 LLM-targeted papers had only a 6% acceptance rate; high scores went to scalable certification (LipNeXt 6.7) and mechanistic analysis.",
+   "note_zh": "Classic targets: 169/296. About three in five MLLM attacks (22/37) are transfer or black-box attacks on closed commercial models. CLIP/VLM defenses went 20→13, despite a 35% acceptance rate in 2026. The LLM-target sample is 18 papers; the rl_robot target acceptance rate is 36%. Embodied cases: physical patch attacks on VLAs, and BadWAM attacking the imagination-action consistency of world-action models.",
+   "evidence": [
+    {
+     "id": "hPdzz302eJ",
+     "year": 2027,
+     "title": "Rethinking Adversarial Patch Attacks on VLA: From Pixel Space to Physical Reality"
+    },
+    {
+     "id": "fCPdxfZtDn",
+     "year": 2027,
+     "title": "BadWAM: When World Action Models Dream Right but Act Wrong"
+    },
+    {
+     "id": "5yCSKu2bgz",
+     "year": 2027,
+     "title": "Enhancing Transferable Targeted Attacks on Closed-Source MLLMs with Progressive Semantic Chain"
+    },
+    {
+     "id": "2fgzEJPH02",
+     "year": 2026,
+     "title": "LipNeXt: Scaling up Lipschitz-based Certified Robustness to Billion-parameter Models"
+    }
+   ]
+  }
+ ],
+ "microtopics": [
+  {
+   "name_zh": "Multi-turn jailbreak attack and defense",
+   "n26": 15,
+   "n27": 37,
+   "note_zh": "Defenses 3→18; in 2027 defenses outnumber attacks for the first time"
+  },
+  {
+   "name_zh": "Automated red-teaming",
+   "n26": 30,
+   "n27": 43,
+   "note_zh": "From RL reward design to reusable skill libraries and self-evolution"
+  },
+  {
+   "name_zh": "Representation-level jailbreak attack and defense",
+   "n26": 37,
+   "n27": 62,
+   "note_zh": "Attacks use refusal directions; defenses read hidden-state trajectories"
+  },
+  {
+   "name_zh": "Over-refusal and usability tradeoff",
+   "n26": 19,
+   "n27": 43,
+   "note_zh": "37% acceptance rate in 2026, the highest among jailbreak clusters"
+  },
+  {
+   "name_zh": "Jailbreak evaluation validity",
+   "n26": 12,
+   "n27": 42,
+   "note_zh": "Judge reliability, ASR randomness, threat-model standards"
+  },
+  {
+   "name_zh": "Reasoning-model jailbreaks",
+   "n26": 16,
+   "n27": 14,
+   "note_zh": "8.1→3.3 per 10k submissions; 12% acceptance rate in 2026"
+  },
+  {
+   "name_zh": "Diffusion language model safety",
+   "n26": 5,
+   "n27": 11,
+   "note_zh": "4 of 5 accepted in 2026"
+  },
+  {
+   "name_zh": "Multimodal content-moderation guardrails",
+   "n26": 12,
+   "n27": 26,
+   "note_zh": "Memes, compositional video risks, code-rendered images"
+  },
+  {
+   "name_zh": "Federated learning poisoning",
+   "n26": 26,
+   "n27": 43,
+   "note_zh": "13.1→10.0 per 10k submissions; 8% acceptance rate in 2026"
+  },
+  {
+   "name_zh": "RAG and knowledge-base poisoning",
+   "n26": 10,
+   "n27": 25,
+   "note_zh": "GraphRAG and structured RAG become new targets"
+  },
+  {
+   "name_zh": "Agent skill and memory backdoors",
+   "n26": 9,
+   "n27": 28,
+   "note_zh": "20 attacks vs only 3 defenses in 2027"
+  },
+  {
+   "name_zh": "Distillation-propagated backdoors",
+   "n26": 3,
+   "n27": 11,
+   "note_zh": "Spread via on-policy distillation; dilution makes them stronger"
+  },
+  {
+   "name_zh": "Deployment-transform-triggered backdoors",
+   "n26": 2,
+   "n27": 12,
+   "note_zh": "Activate only after quantization, fine-tuning, merging or conversion"
+  },
+  {
+   "name_zh": "T2I/T2V concept erasure",
+   "n26": 38,
+   "n27": 55,
+   "note_zh": "19.2→12.8 per 10k submissions; moving to DiT and video"
+  },
+  {
+   "name_zh": "Image immunization and anti-editing",
+   "n26": 9,
+   "n27": 26,
+   "note_zh": "0/9 accepted in 2026; extending to I2V"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026 all five subfields in this chapter had acceptance rates below the 27% baseline; backdoors and data poisoning was lowest at 13%. Accepted backdoor papers almost all had deployment-realistic threat models, such as shared LoRA platforms, vLLM load-time pruning, untrusted simulators and embodied VLM agents; the classic new-trigger-plus-new-CV-task paper was mostly rejected. The jailbreak area rewarded mechanism and evaluation: 33% acceptance for analysis papers, 20% for attacks. The 250-document poisoning paper (4.4) and The Attacker Moves Second (6.0) were influential but were rejected for lacking methodological novelty or theoretical support.",
+ "gaps_zh": [
+  "Agent backdoor defense lags: 20 attacks vs 3 defenses in 2027, with no verification of skill packages or memory writes.",
+  "Almost no one measures the real capability uplift that jailbreaks provide; benchmarks weighted by harm and uplift are still missing.",
+  "Guardrails remain chat-centric: only 2 of 184 jailbreak defense papers target agents.",
+  "No one has yet built a unified guardrail that constrains text and actions with the same policy.",
+  "Safety durability under deployment transforms lacks a unified cross-transform, cross-modality benchmark; each existing paper studies only one transform.",
+  "Speech guardrails are nearly absent: the speech attack surface went 7→26 papers, but only 4 jailbreak defenses address audio."
+ ],
+ "watchlist_zh": [
+  "Inference-stack attacks (speculative decoding, Rowhammer, KV compression, template backdoors) turn jailbreaks into a systems-security problem.",
+  "The guardrail's own attack surface: guard data poisoning, DoS and probe evasion may become standard items in adaptive evaluation.",
+  "Distillation and subliminal transfer: the open-source ecosystem relies heavily on on-policy distillation, so the spread and removal of backdoors and biases deserve tracking.",
+  "Re-validating safety on new architectures: dLLMs, looped models, MoE routing and flow/DiT are all rebuilding defenses.",
+  "Scaling-law theory for poisoning and jailbreaks may replace empirical ASR tables as the new review bar."
+ ],
+ "notes_zh": [
+  "Subfield codes: jailbreak attacks JB_ATK, jailbreak defenses JB_DEF, adversarial robustness ADV_ROBUST, generative safety GEN_SAFE, backdoors and data poisoning BACKDOOR, interpretability safety INTERP_SAFE, prompt injection PI, agent safety AGENT_SAFE. Shares are per 10k submissions; total 2027 submissions are 2.17× the 2026 count.",
+  "Jailbreak defenses went 116→184 papers, share 58.5→42.8 per 10k submissions, down 27%. The five subfields in this chapter total 674→950 papers (340→221 per 10k submissions).",
+  "Multi-turn and session-level attack and defense total 15→37 papers; in 2027 there were 15 defenses and 14 attacks. The 3→18 stat counts session and state mechanisms within jailbreak defenses.",
+  "2026 acceptance rates and mean ratings: jailbreak attacks 21% (3.96), jailbreak defenses 26% (4.16), adversarial robustness 21%, generative safety 20% (withdrawal rate 45%), backdoors and data poisoning 13% (3.95). Backdoor attack papers 9% (74 papers), defense papers 20%; classic CV, graph and federated settings 5% (55 papers), federated learning poisoning 8%, LLM targets 20%.",
+  "Other 2026 acceptance signals: dLLM safety 4/5, over-refusal 37%, reasoning-model jailbreaks 12%, MoE 0/5. Accepted backdoor papers include JailbreakLoRA, vLLM load-time pruning (6.0), untrusted simulators (6.5), BEAT, and LLM purification without priors or clean references. The only oral in the whole set is SGF. Follow-up theory and standardization work on the two rejected papers appeared in 2027.",
+  "Microtopic details: automated red-teaming share 15.1→10.0 per 10k submissions; multimodal moderation guardrails had a 17% acceptance rate in 2026; T2I/T2V erasure moved to flow/DiT and video in 2027; image immunization extended to I2V and DiT editing in 2027; RAG poisoning had 10 papers and no acceptances in 2026, and 12 papers each on attack and defense in 2027; deployment-transform-triggered backdoors were checked by hand, and safety-related papers containing quantiz went 2→14.",
+  "For one of the few exceptions on uplift see L17sEWT586. For guard DoS see 2ieHfp0vhO; for subliminal-signal removal see the Moonshine protocol; for looped and recursive model safety see SafeLoop and EAhhvhCKgs. Poisoning scaling results include the near-constant poison count, BoN jailbreaks and a polynomial-exponential crossover."
+ ]
+}

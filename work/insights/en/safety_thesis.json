@@ -1,0 +1,220 @@
+{
+ "title_zh": "Safety research turns to systems and optimization pressure",
+ "intro_zh": "In 2027 there are 5,974 safety-related papers. Per 10k submissions they went 1,501 → 1,389: the share dipped slightly, but the internal structure changed a lot. Each of the 7 claims below spans at least three subfields. The first four hold after excluding formulaic papers. Half of the measurement shift does not hold. Reviewer preferences and author flows are largely decoupled. Catastrophic-risk evaluation and root-cause training remain gaps.",
+ "notes_zh": [
+  "Safety-related papers means rel ≥ 1; shares are per 10k submissions.",
+  "Formulaic papers are those labelled as highly formulaic in style, 46% of 2027 safety papers. The robustness check recomputes after excluding them; every “excluding formulaic papers” figure and every value in parentheses is the post-exclusion result."
+ ],
+ "theses": [
+  {
+   "title_zh": "Every safety subfield is turning to agent systems",
+   "tag": "shift",
+   "label": "Shift",
+   "fig": "Agent-target share 6.3% → 16.4% (13.8% excluding formulaic papers); non-agent safety subfields 2.6% → 5.9% (4.8%)",
+   "body_zh": "Papers that study agents are increasing in every safety subfield; in alignment they rose from 2.8% to 10.1%. The reason is that safety properties of a single output do not compose at the system level. With the model fixed and only the CLI harness swapped, attack success rate (ASR) differs by 14.8–23.9 percentage points (uTFbmXOpQq). Safety has to be evaluated on actions and final states, and the unit of evaluation should be the combination of model, harness, tool permissions and memory.",
+   "note_zh": "Agent target means target is agent or multiagent; non-agent safety subfields are those other than AGENT_SAFE and PI. Shares by section (excluding formulaic papers in parentheses): alignment 2.8% → 10.1% (8.0%), oversight and evaluation 4.4% → 9.1% (9.1%), data governance 1.8% → 4.9% (3.7%), trust and society 3.7% → 6.3% (4.8%), attack and defense 1.5% → 3.8% (3.5%). Pure chat-LLM targets 42.9% → 38.4% (36.2%). Papers with trajectory in the title, topic or keywords 4.4% → 10.7% (10.7%); with harness/scaffold 0.7% → 2.7% (2.4%). Other examples: in Hw4eZjlhLg, router retries add 61–161 unsafe answers; b31BOiYdQi is based on 864,000 decisions; in Yi6uDVGgpF, monitor evasion succeeds up to 88% of the time.",
+   "evidence": [
+    {
+     "id": "uTFbmXOpQq",
+     "year": 2027,
+     "title": "An Agent Is More Than Its Model: Controlled Safety Measurement Across CLI Model–Harness Configurations"
+    },
+    {
+     "id": "Hw4eZjlhLg",
+     "year": 2027,
+     "title": "Refusal Is Not Failure: From Model Responses to Safe System Traces"
+    },
+    {
+     "id": "b31BOiYdQi",
+     "year": 2027,
+     "title": "Fairness Instructions Change What LLM Agents Say More Than What They Do"
+    },
+    {
+     "id": "Yi6uDVGgpF",
+     "year": 2027,
+     "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure"
+    }
+   ]
+  },
+  {
+   "title_zh": "Persistent state becomes a cross-subfield attack surface",
+   "tag": "rising",
+   "label": "New risk",
+   "fig": "Memory, Skills/MCP and self-evolution papers 16 → 206, share 0.5% → 3.4% (2.8% excluding formulaic papers); subfields covered 8 → 19",
+   "body_zh": "Papers on memory, Skills and self-evolution grew from 16 to 206, and 78 of them fall outside agent safety and prompt injection (PI). The shared mechanism is a trust mismatch between write and read: content written from untrusted input is later read back as trusted context, so a single injection becomes persistent control. The direction is still attack-heavy (in 2027, 59 attack and 51 defense papers). What is missing is write-path authorization, provenance tracking and revocable memory.",
+   "note_zh": "Matched on title, topic and keywords. Memory-related 5 → 113 papers (still 7× per 10k submissions excluding formulaic papers); Skills/MCP/supply-chain 6 → 76. Outside agent safety: BACKDOOR 17 (e.g. BadSkill), PRIVACY 18 (e.g. jSSjp45lQr), UNLEARN 7, REWARD_HACK 7 (e.g. MemSyco-Bench), and 9INVBN3C8L in FAIR. 2027 has 42 eval papers. Of the 16 papers in 2026, 3 were accepted; every single-turn memory-injection paper was rejected.",
+   "evidence": [
+    {
+     "id": "y5X5ZaufZQ",
+     "year": 2027,
+     "title": "Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections"
+    },
+    {
+     "id": "PwlYzqIzOb",
+     "year": 2027,
+     "title": "BadSkill: Backdoor Attacks on Agent Skills via Model-in-Skill Poisoning"
+    },
+    {
+     "id": "jSSjp45lQr",
+     "year": 2027,
+     "title": "Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory"
+    },
+    {
+     "id": "JpAUDL6zJn",
+     "year": 2027,
+     "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory"
+    }
+   ]
+  },
+  {
+   "title_zh": "Misalignment now comes mainly from optimization pressure",
+   "tag": "shift",
+   "label": "Shift",
+   "fig": "Mention ratio of verifier/rubric/judge to RM/RLHF 0.82 → 3.19 (2.27 excluding formulaic papers); paper ratio of misalignment to alignment training 0.31 → 0.96 (0.76)",
+   "body_zh": "Focus moved from how to train preferences in to where optimization pushes the model: reward hacking and deception per 10k submissions 60.6 → 92.5, alignment training 165.0 → 81.6. Once rewards come from verifiers, rubrics and judges, misalignment no longer needs an attacker. Correlated false negatives in a verifier delete an entire family of valid strategies in about 30 steps, while capability metrics still rise (HZ3xKbgdj4). Remedies have not kept up: the share of CoT monitorability papers went 0.6% → 0.8%, and inoculation only 2 → 5 papers.",
+   "note_zh": "Reward hacking and deception means REWARD_HACK+DECEPTION, 79.1 excluding formulaic papers; alignment training means ALIGN_TRAIN (sub or sub2), 85.9 after exclusion. Safety papers mentioning verifier, rubric, RLVR/GRPO or judge 6.7% → 12.8% (9.2%); those mentioning RM/RLHF 8.2% → 4.0% (4.1%). Agent targets within REWARD_HACK 2.2% → 18.8% (19.2%). Other examples: in Lpxn7lc6Dz, judge pass rate 0.72 → 0.94 while true accuracy is 0.20; in FrpBCtqRnK, g-mean² 0.96 → 0.72; URQZKM8CLa uses the Price equation to predict amplification of non-target traits; bDRNeSJYL0 studies length penalty.",
+   "evidence": [
+    {
+     "id": "HZ3xKbgdj4",
+     "year": 2027,
+     "title": "Verifier-Induced Strategy Collapse: Family-Correlated False Negatives Eliminate Valid Strategies While Capability Metrics Improve"
+    },
+    {
+     "id": "Lpxn7lc6Dz",
+     "year": 2027,
+     "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges"
+    },
+    {
+     "id": "URQZKM8CLa",
+     "year": 2027,
+     "title": "Trait Hitchhiking in LLM Post-Training"
+    },
+    {
+     "id": "FrpBCtqRnK",
+     "year": 2027,
+     "title": "Chain-of-Thought Controllability Can Reduce Chain-of-Thought Monitorability"
+    }
+   ]
+  },
+  {
+   "title_zh": "Quantization, distillation and merging undo safety",
+   "tag": "rising",
+   "label": "New risk",
+   "fig": "Deployment transform × safety property papers 42 → 188, share 1.4% → 3.1% (3.3% excluding formulaic papers); quantization 0 → 27, distillation 16 → 90, of which on-policy distillation 0 → 30",
+   "body_zh": "Deployment transforms such as quantization, distillation and merging undo alignment, unlearning and concept erasure, yet safety is usually verified on a single fp16 checkpoint. Safety interventions are mostly low-norm parameter edits in narrow subspaces, which is exactly what these transforms erase most easily; GhostQuant's backdoor appears only after quantization. This is the only one of the seven claims whose share still rises after excluding formulaic papers. Its 2026 acceptance rate was 31%, above the 27% baseline.",
+   "note_zh": "A paper counts only if it meets both conditions: its title, topic or keywords mention a deployment transform (quantization, pruning, merging, distillation, speculative decoding, KV cache, bit-flip, MoE routing) and a safety property. Classical classifiers and FHE are excluded. Subfields covered 14 → 25; subfields with ≥2 papers 10 → 21. The cluster's 2027 formulaic flag rate is 43%, versus 46% for safety papers overall. In 2026, yfM2e8Icsw got an oral and YRwe9fP7j5 (6.0) was accepted. Other examples: j9uWANGL9k, lWNXJFIYXn, d7AZGUMdgp, JnthuFTite.",
+   "evidence": [
+    {
+     "id": "T1fUcoIg6z",
+     "year": 2027,
+     "title": "GhostQuant: The Ghost that Appears Only After Quantization"
+    },
+    {
+     "id": "j9uWANGL9k",
+     "year": 2027,
+     "title": "On-policy distillation as a Backdoor Propagation Channel"
+    },
+    {
+     "id": "lWNXJFIYXn",
+     "year": 2027,
+     "title": "A Few Bits Break Forgetting: Bit-Flip Relearning Attack against Machine Unlearning"
+    },
+    {
+     "id": "d7AZGUMdgp",
+     "year": 2027,
+     "title": "Erased But Not Gone: How Model Merging Weakens Concept Erasure in Diffusion Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "Validity audits grow; a field-wide measurement shift does not hold",
+   "tag": "watch",
+   "label": "To watch",
+   "fig": "Metric-validity papers 5.6% → 8.7% (7.2% excluding formulaic papers); eval+analysis share 25% → 34% (25% excluding formulaic papers)",
+   "body_zh": "Validity audits of safety tools themselves are growing in several subfields: HALLU 24 → 69 papers, OVERSIGHT 7 → 51. For example, one jailbreak paper reports 80% ASR, but a replication gets only 50% consecutive success (4KRb2UHKQO). The claim of a field-wide turn to measurement no longer holds after excluding formulaic papers. These papers had only a 22% acceptance rate in 2026, so 2027 reviews are the key thing to watch.",
+   "note_zh": "Other growth: AGENT_SAFE 9 → 41, REWARD_HACK 1 → 36, WATERMARK 6 → 30. A narrower tool-audit cluster (eval/analysis papers that target judges, monitors, detectors or benchmarks and report failures) went 2.1% → 3.3%, or 2.0% excluding formulaic papers; 67% of it is flagged. The exclusion is harsh on measurement papers: the marker words whether, same, fixed, matched and evidence are standard in controlled measurement, and in 2026 the mean style score was already 2.49 for analysis papers versus 1.71 for method papers. Other examples: Oeu8HotX83; v6Ii5zfgbL audits 10 agent benchmarks; in 75zQg9DH4L, monitor hit rates differ by 1.1–6.4×.",
+   "evidence": [
+    {
+     "id": "4KRb2UHKQO",
+     "year": 2027,
+     "title": "The Great Pretender: A Stochasticity Problem in LLM Jailbreak"
+    },
+    {
+     "id": "Oeu8HotX83",
+     "year": 2027,
+     "title": "Safety Guards Judge Harmfulness, Not Policy Violation"
+    },
+    {
+     "id": "v6Ii5zfgbL",
+     "year": 2027,
+     "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack"
+    },
+    {
+     "id": "75zQg9DH4L",
+     "year": 2027,
+     "title": "Safety Monitors Mostly Catch What the Model Already Refuses"
+    }
+   ]
+  },
+  {
+   "title_zh": "2026 acceptance rates do not explain 2027 growth",
+   "tag": "shift",
+   "label": "Mismatch",
+   "fig": "Acceptance rate vs. share growth across 26 subfields ρ = 0.16 (0.04 excluding formulaic papers); in agent work, eval acceptance 30%, attack 7%; eval share 42% → 29% (25%)",
+   "body_zh": "What reviewers rewarded and where authors flocked are almost unrelated, with correlation ρ = 0.16. Harmful fine-tuning (FT_ROBUST) had the highest acceptance rate, 55%, yet its share grew only 1.07×. Agent safety had a 22% acceptance rate, but its share grew 3.18×. In agent work, only system-level defenses that survive adaptive attacks, or measurements in real harnesses, stood out, and 2027 submissions in this direction are 4.8× those of 2026.",
+   "note_zh": "Subfields with ≥30 papers in 2026; p = 0.43. The 2 FT_ROBUST orals both present new attack surfaces. VALUES had a 38% acceptance rate (including two orals, AdAEM and EigenBench) and a share of 0.52×; AGENT_SAFE is 2.26× excluding formulaic papers; PI 18%, 1.63× (1.59×); SAFE_RL 18%, 1.32× (1.43×). In 2026 AGENT_SAFE+PI, eval acceptance was 30% (53 papers), defense 15%, attack 7% (28 papers). In 2027, eval share went 41.7% → 28.7% (25.4%), defense 26.0% → 34.4% (32.9%), attack 22.0% → 15.4%, or 23.1% after exclusion. Field-wide, attack papers had a 17.6% acceptance rate in 2026, the lowest apart from position papers; after exclusion their share went 12.8% → 12.2%. The Attacker Moves Second was rejected despite a 6.0 rating.",
+   "evidence": [
+    {
+     "id": "6cEPDGaShH",
+     "year": 2026,
+     "title": "Invisible Safety Threat: Malicious Finetuning for LLM via Steganography"
+    },
+    {
+     "id": "qNlTH4kYJZ",
+     "year": 2026,
+     "title": "AdAEM: An Adaptively and Automated Extensible Evaluation Method of LLMs' Value Difference"
+    },
+    {
+     "id": "yWwrgcBoK3",
+     "year": 2026,
+     "title": "RedTeamCUA: Realistic Adversarial Testing of Computer-Use Agents in Hybrid Web-OS Environments"
+    },
+    {
+     "id": "7B9mTg7z25",
+     "year": 2026,
+     "title": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections"
+    }
+   ]
+  },
+  {
+   "title_zh": "Catastrophic-risk evals and root-cause training have not grown",
+   "tag": "gap",
+   "label": "Gap",
+   "fig": "Bio/chem risk 4 → 9 papers, loss of control 5 → 11, each about 0.2% of safety papers; inoculation 2 → 5; memory/Skills 16 → 206 over the same period",
+   "body_zh": "Safety papers doubled in number, yet catastrophic-risk research barely grew: bio/chem per 10k submissions 2.0 → 2.1, loss of control 2.5 → 2.6. Root-cause training methods are rarer still: only 2 papers on shutdownability training, and inoculation 2 → 5. For teams with domain partners, bio-uplift evaluations with controlled ground truth, and loss-of-control evaluations paired with training fixes, may be underrated directions.",
+   "note_zh": "Loss of control means shutdown resistance, self-replication and AI R&D sabotage. Bio/chem is 2.0 excluding formulaic papers; DANGER_EVAL share 0.77× (0.69×). Cyber offense and defense evaluations are 0.7% of safety papers; CyberGym got an oral in 2026. All 5 loss-of-control papers in 2026 were rejected; in 2027 the work began moving to real agents (ROGUE, ShutdownMod, ResearchArena). YM0ErJt9Ij: pretraining data filtering for a 3B protein model can be undone by fine-tuning with about $80 of H100 compute. jPrPsiRXSj's LNPO cuts shutdown resistance by 40–71% in a gridworld; another such paper is ZXLJTGj15G. FiRBNBdaZy is an inoculation paper accepted in 2026; RBB7QhM9ZX studies stratified inoculation. Among deception, reward hacking, shutdown and overclaiming papers, the defense+method share went 48% → 35%, or 45% after exclusion.",
+   "evidence": [
+    {
+     "id": "LKQ4con2iF",
+     "year": 2027,
+     "title": "DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design"
+    },
+    {
+     "id": "YM0ErJt9Ij",
+     "year": 2027,
+     "title": "The Effectiveness and Durability of Pretraining Data Filtering in Protein Language Models"
+    },
+    {
+     "id": "jPrPsiRXSj",
+     "year": 2027,
+     "title": "Shutdownable Agents through Length-Neutral Policy Optimization"
+    },
+    {
+     "id": "RBB7QhM9ZX",
+     "year": 2027,
+     "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits"
+    }
+   ]
+  }
+ ]
+}

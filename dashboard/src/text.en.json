@@ -1,0 +1,226 @@
+{
+ "byline": "Based on 74,498 ICLR submissions, 2025–2027",
+ "links": [
+  {
+   "text": "ICLR 2027 OpenReview",
+   "href": "https://openreview.net/group?id=ICLR.cc/2027/Conference"
+  },
+  {
+   "text": "Code and data",
+   "href": "https://github.com/AntiQuality/iclr-analysis"
+  },
+  {
+   "text": "2027 data source",
+   "href": "https://github.com/yzc-666/iclr2027-explorer"
+  },
+  {
+   "text": "2025–26 data source",
+   "href": "https://github.com/papercopilot/paperlists"
+  }
+ ],
+ "footer": "Data come from public OpenReview mirrors. Paper copyrights belong to the original authors.",
+ "summary": [
+  "ICLR 2027 received 43,013 submissions, 2.17× the 2026 count.{{fn:2027 data are an OpenReview snapshot from 2026-10-07, taken after the abstract (September 18) and full-paper (September 25) deadlines, and include 216 withdrawn and 419 desk-rejected submissions. 2026 data cover all submissions, including rejected and withdrawn ones. All cross-year comparisons use shares.}} Beyond the doubling in size, research focus moved in four clear ways.",
+  "Agents became one of the largest research directions, and new work concentrates on agent components: harnesses, skill libraries, memory and self-improvement. Post-training gained on-policy distillation alongside GRPO/RLVR. World models and embodied AI more than doubled their share. RAG, RLHF/DPO and general multimodal evaluation shrank sharply.",
+  "The overall share of AI Safety fell slightly, but its internal structure changed a lot. The object of study moved from model outputs to agent behavior. Chat-style jailbreaks halved, while agent safety grew 2–3×. Memory and skill libraries, RLVR optimization pressure, and deployment steps such as quantization and distillation became new failure points."
+ ],
+ "nest": [
+  {
+   "n": "43,013",
+   "t": "ICLR 2027 submissions"
+  },
+  {
+   "n": "5,974",
+   "t": "Related to AI Safety"
+  },
+  {
+   "n": "982",
+   "t": "Study agents"
+  },
+  {
+   "n": "56",
+   "t": "Agent Skills supply-chain attacks, 0 in 2026"
+  }
+ ],
+ "nestCaption": "<b>Figure 0.</b> Each layer narrows the one outside it.{{fn:“Related to AI Safety” means papers with relevance ≥ 1 in the per-paper labels (see the appendix, “Safety paper labels”). “Study agents” means the labelled target is a single agent or a multi-agent system.}}",
+ "kpis": [
+  {
+   "label": "2027 submissions",
+   "value": "43,013",
+   "unit": "papers",
+   "note": "19,813 in 2026"
+  },
+  {
+   "label": "2026 acceptance rate",
+   "value": "27.0%",
+   "note": "5,358 / 19,813"
+  },
+  {
+   "label": "Topic clusters",
+   "value": "300",
+   "unit": "clusters",
+   "note": "Cover all submissions across three years"
+  },
+  {
+   "label": "Safety papers labelled one by one",
+   "value": "10,381",
+   "unit": "papers",
+   "note": "2026 and 2027"
+  },
+  {
+   "label": "Formulaic wording",
+   "value": "42.4%",
+   "note": "Share of 2027 submissions; 1% in 2026"
+  }
+ ],
+ "findings": [
+  {
+   "title": "Agents climb from 8th theme to top two",
+   "body": "Share rose from 6.3% to 11.6%. New work concentrates on agent components: harnesses, skill libraries, long-term memory, context management and credit assignment each became objects of study. Application directions such as RAG, planning and social simulation fell to about one-seventh of agent work.",
+   "fig": "Share 6.3% → 11.6% (9.4% excluding formulaic papers, second only to generative models)",
+   "ref": "p-domains",
+   "refText": "Six domains · Agents"
+  },
+  {
+   "title": "Post-training gains a second pillar: on-policy distillation",
+   "body": "In 2026 the default recipe was an SFT cold start plus GRPO/RLVR. In 2027, on-policy distillation (OPD) went from almost zero to the second most-mentioned post-training method, often used together with RLVR. GRPO's share did not fall; DPO and RLHF declined.",
+   "fig": "OPD mentions 0.0% → 2.1% · GRPO 2.6% → 3.0% · DPO 1.1% → 0.7% · RLHF 1.0% → 0.3%",
+   "ref": "p-domains",
+   "refText": "Six domains · LLMs"
+  },
+  {
+   "title": "Embodied AI doubles; world models split four ways",
+   "body": "The embodied theme rose from 2.6% to 6.3%, the fastest-growing theme. Growth comes from world-action models for robotics and JEPA latent-space planning. VLA was not replaced; it converged on a “VLM + flow-matching action expert” recipe. LIBERO is close to saturation.",
+   "fig": "Embodied share 2.6% → 6.3% · JEPA per 10k submissions 8.6 → 89.5 · LIBERO per 10k submissions 21 → 131",
+   "ref": "p-domains",
+   "refText": "Six domains · Embodied AI and RL"
+  },
+  {
+   "title": "Qwen becomes the default base model",
+   "body": "Submissions mentioning Qwen rose from 3.6% to 8.7%, while Llama and GPT models declined. In LLM papers Qwen outnumbers Llama about 3:1; in RL and OPD papers, about 10:1. The default multimodal backbone also switched to Qwen3-VL.",
+   "fig": "Qwen 3.6% → 8.7% · in LLM papers Qwen 21.1%, Llama 6.6%",
+   "ref": "r-eco",
+   "refText": "Techniques and tools · Models and benchmarks"
+  },
+  {
+   "title": "Several 2026 mainstays shrink",
+   "body": "RAG, general math reasoning, RLHF/preference optimization and general multimodal evaluation each lost more than seventy percent of their share; GNN mentions fell by about forty percent. Most of these problems were absorbed into more specific directions: RAG became a retrieval tool for agents, and math reasoning became a training ground for RLVR.",
+   "fig": "Per 10k submissions: RAG 90 → 25 · math reasoning 95 → 27 · RLHF/preference optimization 43 → 11 · multimodal evaluation 71 → 20",
+   "ref": "l-movers",
+   "refText": "Research landscape · Risers and fallers"
+  },
+  {
+   "title": "Default generative methods are turning over",
+   "body": "Flow matching mentions rose and diffusion fell, but diffusion is still about 2× as common. Few-step generation moved to MeanFlow and DMD. Autoregressive streaming video generation grew about 3×, and feed-forward 3D reconstruction doubled.",
+   "fig": "flow matching 1.8% → 2.7% · diffusion 8.1% → 5.2% · feed-forward 3D 0.16% → 0.33%",
+   "ref": "p-domains",
+   "refText": "Six domains · Multimodal and generative"
+  },
+  {
+   "title": "42% of 2027 abstracts changed their wording",
+   "body": "Wording that stresses controls, such as “evidence”, “held fixed” and “matched”, suddenly became common, while “novel” and “significantly” nearly disappeared. The change is unrelated to 2026 acceptance outcomes, but it inflates the growth of some directions. Every trend claim here therefore also reports the result excluding these papers.",
+   "fig": "Share above threshold 1.0% → 42.4% · “novel” per thousand papers 287 → 48",
+   "ref": "p-style",
+   "refText": "Writing style"
+  },
+  {
+   "title": "Safety research shifts from models to agents",
+   "body": "The share of safety-related papers fell from 15.0% to 13.9%. The share that studies agents rose sharply, and this happens across alignment, oversight, governance and trustworthiness. Chat-style jailbreaks halved in share, and so did RLHF/DPO-style alignment training.",
+   "fig": "Agents as target 6.3% → 16.4% (13.8% excluding formulaic papers) · agent safety 3.2× · jailbreak attacks 0.45×",
+   "ref": "p-safety",
+   "refText": "AI Safety"
+  },
+  {
+   "title": "New failure points: persistent state, optimization pressure, deployment",
+   "body": "Memory and skill libraries turn single-turn vulnerabilities into cross-session risks. Optimization pressure from RLVR, rubrics and LLM judges has become the main source of misalignment. Quantization, distillation, merging and routing can undo existing safety. All three hold after excluding formulaic papers.",
+   "fig": "Persistent state 0.5% → 3.4% · deployment steps 1.4% → 3.1% (share of safety papers)",
+   "ref": "sf-thesis",
+   "refText": "AI Safety · Seven trends"
+  },
+  {
+   "title": "Where authors flock is not what reviewers rewarded",
+   "body": "The safety subfields with the highest 2026 acceptance rates were harmful fine-tuning resistance (55%) and value alignment (38%). The first barely grew, and the second's share halved. Agent safety had an acceptance rate of only 21.5% yet grew fastest. Bio/chem risk and loss-of-control evaluations still make up only about 0.2% of safety papers.",
+   "fig": "Correlation between acceptance rate and growth 0.16 · conference-wide acceptance rate 27%",
+   "ref": "sf-subs",
+   "refText": "AI Safety · 26 subfields"
+  }
+ ],
+ "landIntro": "The three largest themes in 2027 are agents, LLM post-training and generative models. Agents and embodied AI grew fastest. Classical RL, theory, and graph and time-series methods kept losing share.",
+ "mapIntro": "Topic clusters come from text clustering of all submissions across three years; a language model then named each one after reading its top terms and sample papers.{{fn:TF-IDF (1–2 grams) over titles (weight 2), author keywords (weight 2) and abstracts, truncated SVD to 300 dimensions, then KMeans into 300 clusters. 6 analysis agents each read the top terms, keywords and representative titles of 50 clusters, gave each a name, a theme and an explanation of its change, and scored each cluster's coherence. A few clusters form around shared wording rather than a shared topic; these are marked as spurious clusters and excluded from trend claims.}} Points higher up are heating up; points lower down are cooling.",
+ "signalIntro": "A high acceptance rate last year does not mean more submissions this year. The lower right holds fast-growing directions with low 2026 acceptance rates; the upper left holds shrinking directions with high acceptance rates.",
+ "radarIntro": "Topic clusters answer “what problem”; this section answers “what method”: the share of submissions in each of the three years that mention 114 specific techniques, models and benchmarks.{{fn:Mention rate = share of submissions whose title, keywords, abstract or TL;DR mentions the technique, matched by regex. The median 2027 abstract is about 9% longer than in 2026, so rises within 1.1× are not treated as signals.}}",
+ "ecoIntro": "Qwen is now the default base model in academic papers, and mentions of Llama and GPT models are falling. Among benchmarks, LIBERO and SWE-bench grew about 6× and 3×; AIME fell and GSM8K held flat.",
+ "domainsIntro": "Each of the six domains was written by an analyst after reading the relevant papers. Every number was recomputed from the data, and every cited paper links to the original.{{fn:Each chapter was written by an analysis agent: it read the titles and abstracts of papers in the relevant topic clusters, recomputed numbers with pandas, and checked each cited ID. Scripts checked the ID, year and title of all 1,385 citations against the data.}}",
+ "safetyIntro": [
+  "We labelled 10,381 candidate papers from 2026 and 2027 one by one, judging whether each is safety-related and recording its subfield, target, contribution type and specific problem.{{fn:The candidate pool is every paper whose primary area is “alignment, fairness, safety, privacy, and societal considerations”, plus papers whose title or keywords hit the safety lexicon or whose abstract hits two or more safety terms. Papers from both years were shuffled and split into 60 batches. 60 agents labelled them paper by paper under the same labelling guide, and scripts checked completeness.}}",
+  "The share of safety-related papers fell from 15.0% to 13.9%. The structural change is much larger than the change in total. The conclusions below hold after excluding formulaic papers; exceptions are noted.{{fn:In 2027, 46% of safety papers use formulaic wording (42% conference-wide). The robustness check recomputes shares after excluding these papers.}}"
+ ],
+ "safetyKpis": [
+  {
+   "label": "Safety-related papers",
+   "value": "5,974",
+   "unit": "papers",
+   "note": "2,975 in 2026"
+  },
+  {
+   "label": "Agent safety",
+   "value": "3.2×",
+   "note": "Per 10k submissions 32.8 → 104.4"
+  },
+  {
+   "label": "Jailbreak attacks",
+   "value": "0.45×",
+   "note": "Per 10k submissions 59.6 → 27.0"
+  },
+  {
+   "label": "Agents as target",
+   "value": "16.4%",
+   "note": "6.3% in 2026"
+  },
+  {
+   "label": "Deployment-stage threats",
+   "value": "3.1%",
+   "note": "1.4% in 2026"
+  }
+ ],
+ "papersIntro": "Safety papers carry per-paper labels and can be filtered by subfield, target and contribution type. A second table lists all 2027 submissions and can be browsed by topic cluster.",
+ "robustNote": "By default we count only papers without formulaic wording, so similar wording does not inflate the growth of some directions.{{fn:See the “Writing style” section and the appendix for how formulaic wording is detected. Under the recommended measure, share = non-formulaic papers in the category / all non-formulaic papers that year. 2025 and 2026 are almost unaffected.}}",
+ "method": [
+  {
+   "title": "Data",
+   "paras": [
+    "All ICLR 2027 submissions come from the GitHub repository <a href=\"https://github.com/yzc-666/iclr2027-explorer\" target=\"_blank\" rel=\"noopener\">yzc-666/iclr2027-explorer</a>, whose author pulled titles, keywords, abstracts, TL;DRs and primary areas through the OpenReview API v2 on 2026-10-07. All 133 submissions that another repository verified one by one on OpenReview appear in this data, with identical titles. An independent count from October 9 gives 42,368 valid submissions, 10 fewer than the 42,378 in this data. ICLR 2025 and 2026 come from <a href=\"https://github.com/papercopilot/paperlists\" target=\"_blank\" rel=\"noopener\">papercopilot/paperlists</a>, which includes final acceptance decisions and mean ratings."
+   ]
+  },
+  {
+   "title": "Topic clusters and technique radar",
+   "paras": [
+    "Topic clusters: TF-IDF + SVD + KMeans (K = 300), with agents naming each cluster. Technique radar: 114 regular expressions, counting mention rates over both the full text and “title + keywords”. Keyword risers and fallers: log-odds of author keywords (Monroe et al., 2008)."
+   ]
+  },
+  {
+   "title": "Safety paper labels",
+   "paras": [
+    "Relevance has three levels: 2 for core safety papers, 1 for adjacent directions (such as general interpretability or OOD), 0 for unrelated. There are 26 subfields, 9 target types and 7 contribution types. Definition disagreements found during labelling (such as where deepfake detection belongs) were settled with one ruling and corrected retroactively."
+   ]
+  },
+  {
+   "title": "Formulaic wording",
+   "paras": [
+    "We compute 2026 → 2027 log-odds over abstract unigrams and bigrams, filter out topic-related words, and keep the 40 style words that rose most. Each paper's style score is a weighted count of these words. The threshold is the 2026 99th percentile. Selecting words on one half of the data and evaluating on the other gives 44.2%; setting thresholds by abstract-length strata gives 41.2%."
+   ]
+  },
+  {
+   "title": "Verification",
+   "paras": [
+    "Scripts checked all 1,385 paper citations against the data. An independent agent recomputed the 92 numbers on the front page from raw data, and every error it found was corrected."
+   ]
+  },
+  {
+   "title": "Limitations",
+   "paras": [
+    "2027 data are a snapshot from the submission period, with no review outcomes and no later withdrawals. Topic clusters come from unsupervised clustering, so their boundaries are somewhat arbitrary. Safety labels were produced by a language model, so individual papers may be mislabelled; but both years used the same guide in mixed batches, so cross-year bias is small. The technique radar uses regex matching, and a few entries will have false matches."
+   ]
+  }
+ ]
+}

@@ -147,7 +147,7 @@
    "title_zh": "言行不一成为跨子领域的共同失效",
    "tag": "watch",
    "body_zh": "以陈述与行为不一致为核心问题的安全论文，2026 年仅 1 篇，2027 年约 15 篇，分布在多个子领域。在 864,000 次决策中，agent 几乎从不承认使用种族，种族效应却依然存在。依赖 CoT 或自我报告的监督假设，正在被多个领域分别证伪。",
-   "note_zh": "按标题和 topic 检索并人工筛选。2026 年唯一一篇为 5d1M87NQDq，被拒。子领域包括 HALLU、FAIR、OVERSIGHT、SAFE_RL、AGENT_SAFE、SOCIETAL。公平指令改变的主要是 agent 的说法而非决策，种族效应有时反转。其他例子：驾驶 VLA（Alpamayo）的推理文本在复杂路口常被表面捷径取代；agent 完成声明不能当作过程证明；人类模拟 LLM 同样存在 say-do gap。标准化的 say-do 一致性度量可能成为跨领域的 benchmark 维度。",
+   "note_zh": "按标题和 topic 检索后逐篇阅读筛选。2026 年唯一一篇为 5d1M87NQDq，被拒。子领域包括 HALLU、FAIR、OVERSIGHT、SAFE_RL、AGENT_SAFE、SOCIETAL。公平指令改变的主要是 agent 的说法而非决策，种族效应有时反转。其他例子：驾驶 VLA（Alpamayo）的推理文本在复杂路口常被表面捷径取代；agent 完成声明不能当作过程证明；人类模拟 LLM 同样存在 say-do gap。标准化的 say-do 一致性度量可能成为跨领域的 benchmark 维度。",
    "evidence": [
     {
      "id": "b31BOiYdQi",

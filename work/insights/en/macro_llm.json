@@ -1,0 +1,443 @@
+{
+ "key": "llm",
+ "title_zh": "LLM post-training and architecture efficiency",
+ "subtitle_zh": "On-policy distillation becomes the second pillar of post-training",
+ "headline_zh": "In 2027, LLM post-training moved from a single GRPO recipe to a hybrid of RLVR and on-policy distillation (OPD). OPD papers grew from 1 to 907, while the GRPO family's share held flat. Qwen3/Qwen3.5 became the default base models. On the architecture side, looped recurrence, Gated DeltaNet hybrid attention, Muon and FP4 training are rising.",
+ "stats": [
+  {
+   "label_zh": "OPD mention rate",
+   "value": "0.5 → 210.9 per 10k",
+   "note_zh": "1 paper → 907 papers; the fastest growth in this area"
+  },
+  {
+   "label_zh": "OPD share of post-training methods",
+   "value": "0.1% → 20.5%",
+   "note_zh": "DPO 17.3% → 9.8% over the same period"
+  },
+  {
+   "label_zh": "GRPO/RLVR family mention rate",
+   "value": "366.9 → 393.8 per 10k",
+   "note_zh": "Only +7%; now default infrastructure"
+  },
+  {
+   "label_zh": "Qwen/Llama mention rate",
+   "value": "Qwen 2.2%→9.7%→21.1%; Llama 14.5%→8.7%→6.6%",
+   "note_zh": "For 2025, 2026 and 2027, respectively"
+  },
+  {
+   "label_zh": "Looped model mention rate",
+   "value": "10.1 → 50.9 per 10k",
+   "note_zh": "2026 acceptance rate 0.50"
+  }
+ ],
+ "insights": [
+  {
+   "title_zh": "Post-training recipes add on-policy distillation",
+   "tag": "shift",
+   "body_zh": "On-policy distillation (OPD) went from 0.1% → 20.5% of post-training methods, while the GRPO family went 39.3% → 38.2%. In OPD, a teacher scores the student token by token on the student's own sampled trajectories. This replaces RLVR's sparse outcome reward with a dense signal. OPD has not replaced RL: 36.5% of the 907 OPD papers also use GRPO/RLVR. What it pushed out was DPO and classic RLHF.",
+   "note_zh": "Post-training method pool = papers mentioning any of GRPO/RLVR/OPD/DPO/RLHF/rubric/SFT. OPD scores with per-token (reverse) KL and needs no reward model. OPD/OPSD mention rate: 210.9 per 10k. Of the 907 papers, 34.8% still evaluate on math/AIME. DPO 95.9 → 57.2 per 10k; RLHF plus reward models 94.4 → 27.4 per 10k. The standard 2026 recipe was an SFT/distillation cold start plus GRPO/DAPO outcome rewards.",
+   "evidence": [
+    {
+     "id": "Gd6XqCG7DC",
+     "year": 2027,
+     "title": "Gains and Collapse in On-Policy Distillation: A Reinforcement Learning Perspective"
+    },
+    {
+     "id": "bU0KqhOsHJ",
+     "year": 2027,
+     "title": "When Teachers Conflict with Verifiers: Support-Preserving On-Policy Distillation"
+    },
+    {
+     "id": "hoQmkt2Ajc",
+     "year": 2027,
+     "title": "From Imitation to Reward Discovery: On-Policy Warmup for Agentic RL"
+    },
+    {
+     "id": "FMjeC9Msws",
+     "year": 2026,
+     "title": "The Art of Scaling Reinforcement Learning Compute for LLMs"
+    }
+   ]
+  },
+  {
+   "title_zh": "Self-distillation is 42% of OPD papers",
+   "tag": "rising",
+   "body_zh": "42% of OPD papers use on-policy self-distillation (OPSD). The teacher is the student itself, given a reference solution or execution feedback in the prompt. Within a year this line turned to patching: 24.1% of papers address collapse and instability, 9.3% use multiple teachers, and 2.1% do cross-tokenizer distillation. The trend holds excluding formulaic papers, but acceptance prospects for incremental work are uncertain.",
+   "note_zh": "Privileged information mentions 6.1 → 60.2 per 10k. OPSD gives per-token correction directions for failed trajectories in RLVR groups where every sample is wrong. Spillover: multimodal work is 24.6%, agentic OPD went 0 → 37.2 per 10k, and OPD also reaches block diffusion language models. OPD had no accepted precedent in 2026. About 52–53% of submissions in the OPD and OPSD clusters are flagged as formulaic writing; excluding them, the OPD mention rate is still 181.9 per 10k.",
+   "evidence": [
+    {
+     "id": "lxGrzU1x9c",
+     "year": 2027,
+     "title": "ImmuneCoT: Learning Reasoning Immunity via Privileged On-Policy Self-Distillation"
+    },
+    {
+     "id": "QwvfMvZwNi",
+     "year": 2027,
+     "title": "On-Policy Self-Distillation without Any Supervision"
+    },
+    {
+     "id": "Mm5OLOPLT0",
+     "year": 2027,
+     "title": "Cross-Tokenizer On-Policy Distillation via Byte-Prefix Marginalization"
+    },
+    {
+     "id": "ZnAAI3cg7p",
+     "year": 2027,
+     "title": "Towards Unbiased On-Policy Distillation for Block Diffusion Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "GRPO research turns to training–inference consistency",
+   "tag": "shift",
+   "body_zh": "Among GRPO/RLVR papers, entropy and exploration fell 24.5% → 14.5%, multi-turn/agent rose 19.1% → 31.1%, and credit assignment rose 3.7% → 14.7%. No named successor algorithm became the new standard; DAPO went 18.2 → 17.2 per 10k. New growth comes from engineering problems. Training–inference mismatch rose 4.5 → 12.8 per 10k, and RL stability under native NVFP4 precision has started to appear.",
+   "note_zh": "Sample: papers mentioning GRPO/RLVR, 727 in 2026 and 1,694 in 2027. Other topic shares: length/efficiency 39.1% → 27.5%, theoretical analysis 14.0% → 7.6%, using failures/negative samples 8.5% → 14.8%, hints/privileged guidance 6.1% → 12.8%. Mention rates (per 10k): GSPO 5.6 → 6.5, Dr.GRPO 2.5 → 2.1, entropy collapse 13.1 → 7.0. Training–inference mismatch covers mismatch between the rollout engine and the training engine, and trust regions that break after quantization.",
+   "evidence": [
+    {
+     "id": "EDblkIcpw6",
+     "year": 2027,
+     "title": "Quantization Breaks Trust Region: Repairing Clipped RL Objective under Training--Inference Mismatch"
+    },
+    {
+     "id": "3TkUHSFp3e",
+     "year": 2027,
+     "title": "TRIAGE: Direction-Aware Mismatch Stabilization for Native NVFP4 Reinforcement Learning"
+    },
+    {
+     "id": "wk9FnLEEV0",
+     "year": 2027,
+     "title": "Bounding Token Divergence to Unlock Stable Reinforcement Learning for Large Language Models"
+    },
+    {
+     "id": "X9D5MVpPJ9",
+     "year": 2026,
+     "title": "TROLL: Trust Regions Improve Reinforcement Learning for Large Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "Credit assignment becomes the hottest RL subproblem",
+   "tag": "rising",
+   "body_zh": "The main RL setting moved from single-turn math to long-horizon agents. Papers with credit assignment in the title or keywords went 9.1 → 102.8 per 10k. Benchmarks moved with it, from AIME (1.30% → 0.56%) to SWE-bench (0.19% → 0.63%). In 2026, GRPO papers on credit assignment had an acceptance rate of 0.59, against about 0.33 for GRPO overall.",
+   "note_zh": "Credit assignment matches turn-level/step-level credit or credit assignment in the title/keywords. Cluster 111 (Credit assignment for agentic RL) 12.1 → 86.5 per 10k. Agentic/multi-turn RL 29.3 → 75.6 per 10k; environment synthesis/scaling 6.1 → 19.8; RL in SWE/terminal settings 28.8 → 43.2. AIME and SWE-bench figures are shares of all submissions. The credit assignment acceptance-rate sample is n=27.",
+   "evidence": [
+    {
+     "id": "9rM1Jg3VUu",
+     "year": 2027,
+     "title": "DCGPO: Dual-Conditioned Group Policy Optimization for Long-Horizon LLM Agents"
+    },
+    {
+     "id": "ZiPDKgumJx",
+     "year": 2027,
+     "title": "TACO: Reinforcing Multi-Turn Table Agents with Hierarchical Credit Assignment"
+    },
+    {
+     "id": "8t0YqlsEgB",
+     "year": 2027,
+     "title": "Recursive Environment Scaling for General Long-Horizon Agents"
+    },
+    {
+     "id": "k5nIOvYGCL",
+     "year": 2026,
+     "title": "MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent"
+    }
+   ]
+  },
+  {
+   "title_zh": "Rubric rewards begin to replace preference reward models",
+   "tag": "rising",
+   "body_zh": "Rubric mentions went 38.9 → 118.1 per 10k, and the rubric share of post-training methods 4.2% → 11.5%. Classic RLHF fell 94.4 → 27.4 over the same period. The 2027 focus is automatic rubric generation, co-evolution with the policy, and defenses against reward hacking. Reviewers accept rubric-based evaluation but remain cautious about rubric-RL methods: in 2026, rubric papers had an acceptance rate of 0.364, the rubric-reward cluster only 0.235.",
+   "note_zh": "Title/keyword basis: 11.6 → 41.8 per 10k. Generative reward models (GenRM) 11.1 → 2.3 per 10k; the RLHF and reward modeling cluster 44.4 → 13.3. The rubric-reward cluster's full name is Rubric rewards and reward hacking. Accepted rubric work in 2026 was mostly evaluation benchmarks (ProfBench, ExpertLongBench and others); few method papers used rubrics as RL rewards. 2027 also brings rubric-level credit assignment; defenses include precision objectives and reliability triage.",
+   "evidence": [
+    {
+     "id": "QbUjIKUlaV",
+     "year": 2027,
+     "title": "Co-Evolving Policy and Rubric via Capability Awareness for Open-Ended Generation"
+    },
+    {
+     "id": "sMy13QhmQd",
+     "year": 2027,
+     "title": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL"
+    },
+    {
+     "id": "O0MnDF6uMA",
+     "year": 2027,
+     "title": "Dr.Credit: Rubric-Grounded Process Credit Assignment for Deep Research Agents"
+    },
+    {
+     "id": "pBjy4ek2QV",
+     "year": 2026,
+     "title": "Chasing the Tail: Effective Rubric-based Reward Modeling for Large Language Model Post-Training"
+    }
+   ]
+  },
+  {
+   "title_zh": "R1-era reasoning and overthinking topics cool",
+   "tag": "fading",
+   "body_zh": "DeepSeek-R1 mentions fell 83.8 → 17.2 per 10k, overthinking 43.4 → 9.8, and math reasoning 95.4 → 26.7. Efficient reasoning held its share, but the question moved from compressing CoT length to when to stop and per-token adaptive compute. Latent reasoning rose 45.9 → 75.1 per 10k and is starting to merge with looped architectures.",
+   "note_zh": "Math reasoning is the LLM mathematical reasoning cluster. Efficient-reasoning concept share 1.20% → 1.18%. Chain-of-thought and latent reasoning cluster 87.3 → 40.5 per 10k; test-time scaling 165.5 → 130.0. The 2026 overthinking cluster had an acceptance rate of 0.252. The winners were a few papers with clear mechanisms, such as the oral on decoupled rewards plus curriculum scheduling. Representative adaptive-compute work: PonderLM-3.",
+   "evidence": [
+    {
+     "id": "kdeiRledV6",
+     "year": 2026,
+     "title": "Overthinking Reduction with Decoupled Rewards and Curriculum Data Scheduling"
+    },
+    {
+     "id": "bGhIOYs9hE",
+     "year": 2027,
+     "title": "Settle: Learning When to Stop Reasoning"
+    },
+    {
+     "id": "eGVeq4Cvyk",
+     "year": 2027,
+     "title": "PonderLM-3: Token-Adaptive Pondering with Differentiable Masking"
+    },
+    {
+     "id": "d09ROpuTpH",
+     "year": 2027,
+     "title": "Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers"
+    }
+   ]
+  },
+  {
+   "title_zh": "Qwen3 becomes the default base for post-training research",
+   "tag": "shift",
+   "body_zh": "From 2025 → 2027, the share of LLM papers mentioning Qwen went 2.2% → 9.7% → 21.1%, and Llama 14.5% → 8.7% → 6.6%. The two crossed in 2026. Among 2027 RL/OPD papers, Qwen appears in 31.4% and Llama in 3.0%. Llama-3.1-8B mentions are still rising, but mostly as a generic baseline in safety and interpretability work.",
+   "note_zh": "Shares are within the two LLM themes. Model mention rates (per 10k): Qwen3-8B 21.2 → 108.6, Qwen3-4B 14.6 → 76.5, Qwen3-30B-A3B (MoE testbed) 6.6 → 17.9, Qwen3.5 0 → 122.3; Qwen3-VL 0.5 → 75.1, overtaking Qwen2.5-VL (56.5 → 48.8). Llama-3.1-8B: 69.0 per 10k across all submissions. DeepSeek-R1-Distill 21.7 → 14.6, OLMo 41.9 → 63.7 (fully open data helps contamination and attribution studies), Kimi 8.6 → 23.7, GLM-4.5+ 5.0 → 26.3, gpt-oss flat at 17.2. In 2026, within the LLM themes, papers using Qwen3 had an acceptance rate of 0.352, those using Llama 0.275.",
+   "evidence": [
+    {
+     "id": "sBvEgtiF5l",
+     "year": 2027,
+     "title": "Counterfactual Visual On-Policy Distillation"
+    },
+    {
+     "id": "NOH2A7lGJk",
+     "year": 2027,
+     "title": "Protect What Is at Risk, Distill Where It Responds: On-Policy Distillation for Continual Learning in MLLMs"
+    },
+    {
+     "id": "t8Pg5VElI5",
+     "year": 2027,
+     "title": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments"
+    }
+   ]
+  },
+  {
+   "title_zh": "Looped recurrence and hybrid linear attention rise",
+   "tag": "rising",
+   "body_zh": "Looped Transformers (looped / recurrent-depth) are the fastest-growing architecture direction, 10.1 → 50.9 per 10k, with a 2026 acceptance rate of 0.50. Gated DeltaNet (GDN) went 2.0 → 18.8 per 10k and Mamba 70.7 → 53.5. Pure SSMs are giving way to hybrids of GDN plus a few full-attention layers. Supporting work followed, including KV eviction for hybrid models, recurrent-state compression and DSA-style sparse attention.",
+   "note_zh": "Papers naming Ouro/Huginn: 1.0 → 7.9 per 10k. 2027 looped topics include training recipes, stabilization, FlashLoop-style acceleration and length extrapolation; 2026 mean rating 4.82. DeltaNet 2.5 → 23.2 per 10k; Linear attention & DeltaNet hybrids cluster 17.7 → 26.7; SSM cluster 25.2 → 15.3. The hybrid design follows the Qwen3-Next/Qwen3.5 line. DSA-style indexer plus top-k sparse attention 0 → 7.0 per 10k. Other work covers transferring recurrent states across models and MTP parallel verification on hybrid models.",
+   "evidence": [
+    {
+     "id": "zsC1D9PH9q",
+     "year": 2027,
+     "title": "Closing the Loop: Practical Training Recipes for Looped Language Models"
+    },
+    {
+     "id": "tL5CbAtSCh",
+     "year": 2027,
+     "title": "Simply Stabilizing the Loop via Fully Looped Transformer"
+    },
+    {
+     "id": "jYHHPWZOhr",
+     "year": 2027,
+     "title": "Rotary-state Gated DeltaNet: Enhancing State Tracking through Rotation"
+    },
+    {
+     "id": "Z3M8L4BifD",
+     "year": 2027,
+     "title": "HybriKV: KV Cache Eviction for Hybrid Linear-Attention Language Models"
+    }
+   ]
+  },
+  {
+   "title_zh": "Efficiency research follows reasoning and agent workloads",
+   "tag": "shift",
+   "body_zh": "KV cache research went 1.03% → 1.83%, driven by long-reasoning decoding and multi-turn agent settings. On the training side, Muon went 24.2 → 51.4 per 10k and is starting to be used for RL and fine-tuning; FP4 training went 6.6 → 16.5. Structured pruning and LoRA are receding, with 2026 acceptance rates of only 0.198 and 0.192, the lowest in the area.",
+   "note_zh": "KV breakdown (per 10k): long-reasoning decoding 16.7 → 29.3, multi-turn/agent 7.6 → 21.9, prefix/KV reuse 5.0 → 25.3, KV quantization 3.5 → 12.6. Muon in 2026: acceptance rate 0.354, mean rating 4.76; Polar Express got an oral. FP4 means NVFP4/MXFP4, 2026 acceptance rate 0.538. Pruning and LoRA are counted by cluster: structured pruning 63.6 → 28.1 per 10k, LoRA 63.1 → 47.2. Scaling law mentions 87.3 → 60.9. Speculative decoding cluster 35.8 → 53.2, EAGLE 12.6 → 8.4; novelty comes from action-level speculation for agents and verification on hybrid models.",
+   "evidence": [
+    {
+     "id": "yRtgZ1K8hO",
+     "year": 2026,
+     "title": "The Polar Express: Optimal Matrix Sign Methods and their Application to the Muon Algorithm"
+    },
+    {
+     "id": "rQwleoekAD",
+     "year": 2027,
+     "title": "When Does Muon Help Agentic Reinforcement Learning?"
+    },
+    {
+     "id": "WVEhEexg1S",
+     "year": 2027,
+     "title": "Full-Stack NVFP4: Stable, Role-Aware 4-Bit LLM Pretraining Beyond Linear Projections"
+    },
+    {
+     "id": "rQmjDK6lsw",
+     "year": 2027,
+     "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "On-policy distillation",
+   "from": 0.5,
+   "to": 210.9,
+   "unit": "per10k",
+   "note_zh": "Teacher scores each token, adding a dense signal to RL"
+  },
+  {
+   "name_zh": "Agent credit assignment",
+   "from": 9.1,
+   "to": 102.8,
+   "unit": "per10k",
+   "note_zh": "The core problem for long-horizon agents under sparse rewards"
+  },
+  {
+   "name_zh": "Rubric rewards",
+   "from": 38.9,
+   "to": 118.1,
+   "unit": "per10k",
+   "note_zh": "Rewards for unverifiable tasks"
+  },
+  {
+   "name_zh": "Privileged-information teachers",
+   "from": 6.1,
+   "to": 60.2,
+   "unit": "per10k",
+   "note_zh": "Core OPSD mechanism: the teacher sees the reference solution"
+  },
+  {
+   "name_zh": "Qwen3-family mentions",
+   "from": 100.4,
+   "to": 552.9,
+   "unit": "per10k",
+   "note_zh": "Default base for post-training research"
+  },
+  {
+   "name_zh": "Looped models",
+   "from": 10.1,
+   "to": 50.9,
+   "unit": "per10k",
+   "note_zh": "Reuse layers for multi-step compute; merging with latent reasoning"
+  },
+  {
+   "name_zh": "Muon optimizer",
+   "from": 24.2,
+   "to": 51.4,
+   "unit": "per10k",
+   "note_zh": "Extends from pretraining to RL and fine-tuning"
+  },
+  {
+   "name_zh": "Gated DeltaNet",
+   "from": 2.0,
+   "to": 18.8,
+   "unit": "per10k",
+   "note_zh": "The main unit of hybrid linear attention"
+  },
+  {
+   "name_zh": "KV/prefix reuse",
+   "from": 5.0,
+   "to": 25.3,
+   "unit": "per10k",
+   "note_zh": "Serves agent and multi-turn settings"
+  },
+  {
+   "name_zh": "FP4 training and quantization",
+   "from": 6.6,
+   "to": 16.5,
+   "unit": "per10k",
+   "note_zh": "Includes native FP4 pretraining and FP4 RL"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "RLHF",
+   "from": 94.4,
+   "to": 27.4,
+   "unit": "per10k",
+   "note_zh": "Replaced by OPD and rubric rewards"
+  },
+  {
+   "name_zh": "DPO",
+   "from": 95.9,
+   "to": 57.2,
+   "unit": "per10k",
+   "note_zh": "Pushed out by on-policy distillation"
+  },
+  {
+   "name_zh": "Overthinking",
+   "from": 43.4,
+   "to": 9.8,
+   "unit": "per10k",
+   "note_zh": "Shifting to when to stop and adaptive compute"
+  },
+  {
+   "name_zh": "DeepSeek-R1 mentions",
+   "from": 83.8,
+   "to": 17.2,
+   "unit": "per10k",
+   "note_zh": "The R1 replication wave is over"
+  },
+  {
+   "name_zh": "LLM math reasoning",
+   "from": 95.4,
+   "to": 26.7,
+   "unit": "per10k",
+   "note_zh": "Evaluation is moving to agent tasks"
+  },
+  {
+   "name_zh": "LLM structured pruning",
+   "from": 63.6,
+   "to": 28.1,
+   "unit": "per10k",
+   "note_zh": "Incremental compression; low review payoff"
+  },
+  {
+   "name_zh": "Mamba mentions",
+   "from": 70.7,
+   "to": 53.5,
+   "unit": "per10k",
+   "note_zh": "Giving way to GDN hybrid architectures"
+  },
+  {
+   "name_zh": "Entropy collapse",
+   "from": 13.1,
+   "to": 7.0,
+   "unit": "per10k",
+   "note_zh": "A GRPO hotspot in 2026"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026 the two LLM themes had 3,749 submissions and an acceptance rate of 0.286, slightly above the 0.27 baseline for all submissions. Work with clear, scalable mechanisms was rewarded: long-context training and evaluation 0.479, diffusion language models 0.472, pretraining data 0.387. Incremental compression and formulaic methods did poorly: LoRA/PEFT cluster 0.192, structured pruning 0.198, joint compression and quantization 0.171.",
+ "frontline_zh": [
+  "The standard OPSD form: after seeing a reference solution or execution feedback, the model acts as its own teacher. This fixes the missing gradient in all-wrong RLVR groups.",
+  "Division of labor between OPD and RL: OPD first as an on-policy warmup, then agentic RL.",
+  "Cross-tokenizer OPD lets Qwen3 students learn from teachers of other model families; multi-teacher setups are 9.3% of OPD papers.",
+  "OPD extends to block diffusion LMs, video generation and full-duplex spoken dialogue.",
+  "RL infrastructure becomes a paper topic, e.g. training–inference mismatch from quantized rollouts and NVFP4 RL stabilization.",
+  "Inference systems adapt to hybrid architectures: fused kernels for DSA indexers, KV eviction and state compression for hybrid models."
+ ],
+ "watchlist_zh": [
+  "Whether OPD gets through review. It had no accepted precedent in 2026; work that analyzes collapse and distillability is more likely to win.",
+  "Whether RLVR and OPD unify into one objective, and whether OPD works for continual learning and against forgetting.",
+  "Whether looped models reach real pretraining and merge with latent reasoning and test-time scaling.",
+  "As GDN hybrids spread, KV, speculative decoding and quantization research shifts its target to recurrent states and indexers.",
+  "Low-precision RL and training–inference mismatch may replace entropy collapse as the main RL stability thread in 2027."
+ ],
+ "notes_zh": [
+  "\"Per 10k\" is the number of papers per 10k submissions that match the term or cluster; a share is the proportion within the relevant paper pool or theme.",
+  "OPD counts: the OPD cluster went 0.5 → 108.3 per 10k and the OPSD cluster 0 → 52.3, the two fastest-growing clusters in this area. OPD/OPSD combined is about 211 per 10k.",
+  "The post-training method pool has 1,851 papers in 2026 and 4,432 in 2027. RLHF/reward-model share 27.9% → 14.2%; GRPO family 39.3% → 38.2%.",
+  "GRPO/RLVR family 366.9 → 393.8 per 10k, i.e. +7%. Among RL/OPD papers, Qwen:Llama≈10:1.",
+  "Looped cluster 7.1 → 34.9 per 10k. The direction's 2026 acceptance rate was 0.50 (n=20, mean rating 4.82), against a 0.27 baseline.",
+  "Qwen3-family mentions are counted across all submissions; Qwen3.5 separately went 0 → 122.3 per 10k. In the rising/falling lists, OPD is 1 paper in 2026 → 907 papers in 2027.",
+  "2026 acceptance-rate details: llm_post 0.292, llm_core 0.279. High payoff: the two RLVR reasoning clusters 0.415 and 0.382, SFT↔RL relationship 0.385, Lean theorem proving 0.422, long-context training and evaluation mean rating 4.71, pretraining data mean rating 4.81 (highest in the area), scaling laws 0.388, sparse attention 0.391, SSM 0.38. At the concept level: diffusion language models mean rating 4.67, looped 0.385 (mean rating 4.92), Muon 0.377 (mean rating 4.74).",
+  "Acceptance rates within GRPO papers: credit assignment 0.59 (n=27), off-policy/replay 0.47, pass@k 0.46, Qwen2.5-based papers only 0.26. Other low-payoff directions: multi-hop RAG 0.196, prompt optimization 0.216, MoE architectures 0.22, KV compression 0.232, rubric/reward hacking 0.235, overthinking 0.252.",
+  "The 51 orals in 2026 include The Art of Scaling RL Compute, Coverage Principle, Mamba-3, Polar Express (Muon), TROLL, OpenThoughts, ThinKV, MemAgent, LoongRL and others.",
+  "Representative frontier work. OPSD: ImmuneCoT, SE-OPSD, Posterior Teachers. OPD–RL division of labor: On-Policy Warmup, VALVE (critic-guided OPD), PivotOPD (multi-turn agents recovering from critical errors), plus work on preserving support when teacher and verifier conflict. Cross-tokenizer: byte-prefix marginalization, Breaking the Tokenizer Barrier. Non-text OPD: unbiased OPD for block diffusion, StepX-OPD. RL infrastructure: Quantization Breaks Trust Region, TRIAGE, miniTE.",
+  "More frontier work: train-inference mismatch 4.5 → 12.8 per 10k. Environment supply for agent RL includes recursive environment evolution, replayable environments and terminal environment families (SCOPE, Terminal-Universe); environment synthesis 6.1 → 19.8, SWE/terminal RL 28.8 → 43.2. DSA implementations include LiteTopK, LISA and DoSA; indexer papers went from 0 to 30. Inference systems for hybrid architectures include HybriKV, DASC, Xtra-MTP and LatentPort. Muon moves beyond pretraining: When Does Muon Help Agentic RL, and optimizer mismatch in Muon fine-tuning. The quantizability of MLA caches depends on the training recipe (When Cleaner Caches Break).",
+  "Testbeds: Qwen3-8B/Qwen3-4B are the default post-training scales, Qwen3-30B-A3B is the MoE testbed, and Qwen3.5 reached 122.3 per 10k on first appearance. Evaluation is moving from AIME (1.30% → 0.56%)/MATH-500 to SWE-bench (0.19% → 0.63%), τ-bench and OSWorld.",
+  "Watch-list additions: about half of the 907 OPD submissions in 2027 use formulaic writing. A representative continual-learning paper is On-Policy Distillation for Continual Learning in MLLMs. For looped models in real pretraining, see Ouro. Low-precision RL means NVFP4."
+ ]
+}

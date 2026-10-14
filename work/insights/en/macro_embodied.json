@@ -1,0 +1,446 @@
+{
+ "key": "embodied",
+ "title_zh": "Embodied AI and reinforcement learning",
+ "subtitle_zh": "Growth from world-action models and JEPA; classic RL shrinks",
+ "headline_zh": "The embodied AI theme grew from 262 → 629 per 10k submissions, the fastest growth of any theme. Most of the gain comes from world-action models (WAMs) and latent-space planning with joint-embedding predictive architectures (JEPA). Classic RL, with no LLM or embodied component, fell from 471 → 359 per 10k submissions, and its share of RL papers fell 30.1% → 26.2%.",
+ "stats": [
+  {
+   "label_zh": "Embodied AI theme share",
+   "value": "262 → 629 per 10k",
+   "note_zh": "191 in 2025"
+  },
+  {
+   "label_zh": "World model mentions",
+   "value": "111.5 → 351.1 per 10k",
+   "note_zh": "WAM and JEPA grew fastest"
+  },
+  {
+   "label_zh": "World-action models (WAM)",
+   "value": "0.5 → 86.5 per 10k",
+   "note_zh": "1 → 372 papers"
+  },
+  {
+   "label_zh": "Classic RL share",
+   "value": "548 → 471 → 359 per 10k",
+   "note_zh": "Share of RL papers down to 26.2%"
+  },
+  {
+   "label_zh": "LIBERO mentions",
+   "value": "20.7 → 130.9 per 10k",
+   "note_zh": "About 26% of papers report ≥95%"
+  }
+ ],
+ "insights": [
+  {
+   "tag": "shift",
+   "title_zh": "World model growth comes mainly from robotics",
+   "body_zh": "In 2027, world model growth comes mainly from robotics, not playable video. WAM and JEPA latent-space planning each rose to 87.9 per 10k submissions, from 6.6 and 8.1 respectively. Interactive video and games went 28.8 → 82.1, and LLM agent world models 38.4 → 78.6. The share of world model papers that also mention LLMs fell 27.4% → 14.9%.",
+   "note_zh": "Method: the 1,510 papers in 2027 whose full text mentions world model are assigned to four mutually exclusive categories by priority. Additional data: growth was 13× for WAM, 11× for JEPA, 2.9× for interactive video and 2.0× for LLM world models; Dreamer/RSSM-style classic MBRL 9.1 → 14.2, driving world models 9.6 → 15.3. The new shared problem is action fidelity, meaning whether the predicted future changes with the action, along with using world models as planners or evaluators. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "LwOs9PyFgD",
+     "year": 2027,
+     "title": "Does the Future Follow the Action? \\\\Measuring Action Fidelity in World Models"
+    },
+    {
+     "id": "N2GAuIods8",
+     "year": 2027,
+     "title": "World Action Planner: Generalizable Robot Decision-Making with Action-Conditioned World Models"
+    },
+    {
+     "id": "cZBccyTdoK",
+     "year": 2027,
+     "title": "What Visual Representations Do World Action Models Need?"
+    },
+    {
+     "id": "yDmb7xAfeb",
+     "year": 2026,
+     "title": "WoW!: World Models in a Closed-Loop World"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "WAMs turn video generation models into policies",
+   "body_zh": "WAMs use a pretrained video diffusion model as the backbone and jointly denoise future frames and action chunks. The term went from 1 paper in 2026 to 372 in 2027, or 86.5 per 10k submissions. Reference systems settled quickly: Fast-WAM is mentioned by 50 papers, and evaluation concentrates on LIBERO and RoboTwin 2.0.",
+   "note_zh": "Method: WAM papers concentrate in cluster 30 (4.5 → 73.7) and cluster 73. Additional data: Fast-WAM appears in 12% of WAM papers and LingBot-VA is mentioned by 35; other reference systems include Cosmos Policy/Cosmos3, Motus and DreamZero. In evaluation, LIBERO accounts for 37% and RoboTwin 2.0 for 31%. Typical backbones are Wan2.x/Cosmos, using future visual dynamics as denser supervision than action labels. 35% of WAM papers address the inference cost of the video backbone (single-step decoding, future-token pruning, asynchronous execution). Many papers adopt X-WAM names (OpenWAM, CausalWAM, RealtimeWAM).",
+   "evidence": [
+    {
+     "id": "UXo6DDVa5e",
+     "year": 2027,
+     "title": "Vid2WAM: Distilling Video Diffusion Priors into World Action Models"
+    },
+    {
+     "id": "HhRC3hBEgh",
+     "year": 2027,
+     "title": "InstantWAM: Instant World Action Model via Asymmetric One-Step Decoding"
+    },
+    {
+     "id": "LQXJ6aMT5P",
+     "year": 2027,
+     "title": "Coordinating Imagination and Action: A Coupled Noise Prior for World Action Models"
+    },
+    {
+     "id": "wPEIStHxYH",
+     "year": 2026,
+     "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "VLAs converge on a π0.5-style baseline",
+   "body_zh": "WAMs have not replaced vision-language-action models (VLAs). The default VLA recipe has converged on a π0.5-style VLM plus a flow matching action expert. Among VLA papers, π0.5 mentions rose 0.6% → 13.4% and diffusion action heads fell 17.0% → 7.8%. A separate line uses future prediction only during training; it has 36 papers in 2027, up from 0.",
+   "note_zh": "Additional data: VLA full-text mentions 88.8 → 227.4 (per 10k submissions); in training-time future prediction, the prediction head is dropped at deployment. Shares within VLA papers: OpenVLA 8.0% → 5.8%, flow matching 6.2% → 13.3%, action chunk 5.1% → 14.4%; world models/foresight 12.5% → 21.3%; reasoning/CoT 27.8% → 17.5%. In 2026, VLAs with reasoning had an acceptance rate of 0.33, those without 0.39. The core 2027 debate is whether the policy prior should come from a VLM or a video generator.",
+   "evidence": [
+    {
+     "id": "prEWwIzNXl",
+     "year": 2027,
+     "title": "Vision-Language-Action or World-Action? Just Action Models"
+    },
+    {
+     "id": "tEwr6dq6X9",
+     "year": 2027,
+     "title": "World Tokens: Enhancing Embodied Policies with Training-Time World Modeling"
+    },
+    {
+     "id": "TSmJv3g9IV",
+     "year": 2027,
+     "title": "Vision-Language Models Are Joint Denoisers in Robotic Action Generation"
+    },
+    {
+     "id": "tc2UsBeODW",
+     "year": 2026,
+     "title": "VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "JEPA becomes the new baseline for latent planning",
+   "body_zh": "The JEPA line, with LeWorldModel plus SIGReg regularization, is the new baseline for latent-space planning. JEPA mentions went from 8.6 → 89.5 per 10k submissions, and LeWorldModel is mentioned by 80 papers. In 2026, TD-JEPA received an oral (rating 7.5), and JEPA-related papers had an acceptance rate of 0.41.",
+   "note_zh": "Method: cluster 228 grew from 2 to 204 papers; papers mentioning both JEPA and world model went 2 → 216. Additional data: the main use is control and planning without pixel reconstruction (38.4), followed by embedding into VLAs/WAMs (24.9), for example as action verifiers or predictive latents; LeWorldModel 18.6; V-JEPA 1.5 → 16.5; SIGReg/LeJEPA regularization in 43 papers (0 in 2026); world model papers using CEM/MPPI/MPC planning 2.5 → 17.0. In 2027 the question shifts to the planning interface: long-horizon goal mismatch, reachability geometry, test-time adaptation and anti-collapse training. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "RIpEtbedmF",
+     "year": 2027,
+     "title": "LeWM++: Repairing the Planning Interface of Latent World Models"
+    },
+    {
+     "id": "MrNqktueaq",
+     "year": 2027,
+     "title": "JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts"
+    },
+    {
+     "id": "u8OFXbfqS1",
+     "year": 2027,
+     "title": "How Far Can Latent World Models Imagine Ahead? Probing the Capabilities and Limits of Latent Planning"
+    },
+    {
+     "id": "SzXDuBN8M1",
+     "year": 2026,
+     "title": "TD-JEPA: Latent-predictive Representations for Zero-Shot Reinforcement Learning"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "Interactive world models turn to memory and 3D state",
+   "body_zh": "Interactive video world models moved their focus from playable demos to long-term memory and explicit 3D state. These papers went from 30.8 → 78.3 per 10k submissions. Within them, the share addressing long-term memory rose 19.7% → 43.9%, and pure game settings fell 34.4% → 20.2%. 2026 orals went to closed-loop evaluation and object-centric dynamics.",
+   "note_zh": "Method: counts only video/interactive world models with no robotics component; cluster 8 went 15.6 → 52.8. Additional data: explicit 3D/4D/geometric state 27.9% → 43.9%, camera control 3.3% → 17.5%, distillation/few-step real-time generation 6.6% → 16.0%; Wan2.x mentions across the full dataset 20.7 → 33.0. The 2026 orals were WoW! and Latent Particle World Models. The main 2027 problem is maintaining long-term world state under a fixed GPU memory budget. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "LLBK9eAXmM",
+     "year": 2027,
+     "title": "WorldState: Scalable Implicit Memory for Interactive Video World Models"
+    },
+    {
+     "id": "vFWz9z4Dw4",
+     "year": 2027,
+     "title": "ReWorld: An Interactive World Model with Long-Horizon Memory"
+    },
+    {
+     "id": "BdZMUh50Wo",
+     "year": 2027,
+     "title": "OpenWorld: Scaling World Model Pretraining"
+    },
+    {
+     "id": "lTaPtGiUUc",
+     "year": 2026,
+     "title": "Latent Particle World Models: Self-supervised Object-centric Stochastic Dynamics Modeling"
+    }
+   ]
+  },
+  {
+   "tag": "shift",
+   "title_zh": "LIBERO saturates; new benchmarks take over",
+   "body_zh": "LIBERO no longer separates methods. About 26% of 2027 papers that mention LIBERO report ≥95%, and LIBERO papers had a 2026 acceptance rate of only 0.34. Taking over are LIBERO-Plus/Pro (0 → 47.9 per 10k submissions), RoboTwin 2.0 (3.5 → 60.2) and RoboCasa (4.0 → 25.1).",
+   "note_zh": "Additional data: LIBERO 20.7 → 130.9, coverage of robotics papers 3.2% → 14.9%; SimplerEnv 9.6 → 9.5; Open X-Embodiment as an evaluation 2.5 → 0.5; papers using RoboCasa had a 2026 acceptance rate of 0.50 and mean rating of 5.06. 2027 brings work that audits evaluation itself, such as bugs in VLA acceleration benchmarks and standardized real-robot comparisons. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "1ivlJ9lC5d",
+     "year": 2027,
+     "title": "Faster and Better? Benchmark Bugs and Design Limitations Distort the Evaluation of Vision-Language-Action Acceleration"
+    },
+    {
+     "id": "YL8wxvjCYf",
+     "year": 2027,
+     "title": "ManipArena: Comprehensive Real-world Evaluation of Reasoning-Oriented Generalist Robot Manipulation"
+    },
+    {
+     "id": "VP9fp5LFLI",
+     "year": 2027,
+     "title": "LADDER: A Long-horizon Robot Manipulation Benchmark"
+    },
+    {
+     "id": "tQJYKwc3n4",
+     "year": 2026,
+     "title": "RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots"
+    }
+   ]
+  },
+  {
+   "tag": "rising",
+   "title_zh": "Robot RL moves to VLAs and world models",
+   "body_zh": "The main setting for robot RL moved from MuJoCo benchmarks to VLA post-training and training inside world models. Papers combining VLA and RL went from 14.6 → 37.4 per 10k submissions; robot RL trained in world models went 8.1 → 20.9. Reviewers were cool on this work: the 2026 VLA×RL acceptance rate was 0.276, below 0.375 for VLAs overall.",
+   "note_zh": "Additional data: 161 VLA×RL papers in 2027, with a 2026 mean rating of 4.10; GRPO/PPO in robotics papers 20.2 → 31.4; SimpleVLA-RL (rating 7.0) is one of the few accepted exceptions. New technical points: structured exploration for flow-based VLAs, Q-guided action editing, and task collapse in real-robot online RL. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "WYipNA7jVk",
+     "year": 2027,
+     "title": "Q-Guided Action-Transport Editing for Real-World Reinforcement Learning of Vision-Language-Action Models"
+    },
+    {
+     "id": "GrFWHYE1PL",
+     "year": 2027,
+     "title": "StructRL: Structured Action-Space Exploration for Flow-Based VLAs"
+    },
+    {
+     "id": "ySrDh3XkIp",
+     "year": 2027,
+     "title": "Uncertainty-Gated Exploration Noise Suppresses Task Collapse in Online RL Fine-Tuning of a Flow-Matching Vision-Language-Action Policy"
+    },
+    {
+     "id": "TQhSodCM4r",
+     "year": 2026,
+     "title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning"
+    }
+   ]
+  },
+  {
+   "tag": "fading",
+   "title_zh": "Classic RL shrinks; only flow policies grow",
+   "body_zh": "Classic RL is shrinking overall; flow-based generative policies are the only branch with clear growth. The RL theme share went 600.6 → 478.0 → 354.1 per 10k submissions, generic deep RL algorithms 65.1 → 17.7, and D4RL 21.7 → 10.0. Flow/one-step policies went 7.6 → 20.2, with a 2026 acceptance rate of 0.60.",
+   "note_zh": "Additional data: offline RL cluster 60.1 → 33.0 (full-text offline RL 81.8 → 46.0), MCTS/SMC cluster 36.8 → 17.9, imitation/inverse RL cluster 19.2 → 8.4, MARL social dilemma cluster 27.3 → 14.4; OGBench 8.6 → 21.6; goal-conditioned RL 27.3 → 41.4; flow policies had a 2026 mean rating of 5.22, with Mean Flow Policy and DiffusionNFT as orals. LLM/VLM-RL accounts for 62.2% of RL papers in 2026 and 63.8% in 2027 (share 975 → 876), reaching a plateau. Units are papers per 10k submissions.",
+   "evidence": [
+    {
+     "id": "oJMhr52Aht",
+     "year": 2027,
+     "title": "Drift, Then Spread: Learning One-Step Generative Policies for Online Reinforcement Learning"
+    },
+    {
+     "id": "v3HyxmWSFJ",
+     "year": 2027,
+     "title": "Q-Learning with Scalar Adjoint Matching"
+    },
+    {
+     "id": "mIeKe74W43",
+     "year": 2026,
+     "title": "Mean Flow Policy with Instantaneous Velocity Constraint for One-step Action Generation"
+    },
+    {
+     "id": "VJZ477R89F",
+     "year": 2026,
+     "title": "DiffusionNFT: Online Diffusion Reinforcement with Forward Process"
+    }
+   ]
+  },
+  {
+   "tag": "stable",
+   "title_zh": "Autonomous driving flat; evaluation moves to NAVSIM",
+   "body_zh": "Autonomous driving is the only embodied segment that did not accelerate. Driving papers went from 110.0 → 112.1 per 10k submissions. Within the segment, work moved from BEV perception to closed-loop evaluation such as NAVSIM, whose mention rate rose 6.4% → 21.8%. The 2026 driving cluster had an acceptance rate of 0.26; papers adding reasoning or CoT had only 0.15.",
+   "note_zh": "Method: cluster 76 went 62.1 → 75.6; mention rates are shares within driving papers. Additional data: closed-loop evaluation 13.3% → 23.7%, driving VLAs 6.9% → 15.1%, driving world models 9.6% → 18.9%, diffusion/flow planners 12.8% → 18.7%, 3D detection/BEV 10.6% → 7.1%; of 48 papers adding reasoning/CoT, 7 were accepted. 2027 brings GRPO-style driving policy optimization and driving-specific unified tokenizers/WAMs.",
+   "evidence": [
+    {
+     "id": "TwZI1k8xKz",
+     "year": 2027,
+     "title": "DriveUniTok: A Unified Multimodal Tokenizer for Driving World-Action Models"
+    },
+    {
+     "id": "HYFEY67gp2",
+     "year": 2027,
+     "title": "MomWorld: Momentum-Aware Latent World Model for Long-Horizon Autonomous Driving"
+    },
+    {
+     "id": "cbEkVPsGSJ",
+     "year": 2027,
+     "title": "DriveBeyond: Rethinking Group Advantage for Driving Policy Optimization"
+    },
+    {
+     "id": "OrgL5DsU0f",
+     "year": 2026,
+     "title": "DrivingGen: A Comprehensive Benchmark for Generative Video World Models in Autonomous Driving"
+    }
+   ]
+  }
+ ],
+ "rising": [
+  {
+   "name_zh": "World-action models (WAM)",
+   "from": 0.5,
+   "to": 86.5,
+   "unit": "per10k",
+   "note_zh": "Video generation backbone plus action expert"
+  },
+  {
+   "name_zh": "JEPA",
+   "from": 8.6,
+   "to": 89.5,
+   "unit": "per10k",
+   "note_zh": "New baseline for latent-space planning"
+  },
+  {
+   "name_zh": "VLA",
+   "from": 88.8,
+   "to": 227.4,
+   "unit": "per10k",
+   "note_zh": "Still growing; shifting to deployment, memory, safety and RL"
+  },
+  {
+   "name_zh": "π0 / π0.5 as baseline",
+   "from": 8.6,
+   "to": 46.0,
+   "unit": "per10k",
+   "note_zh": "π0.5 appears in 13.4% of VLA papers"
+  },
+  {
+   "name_zh": "LIBERO",
+   "from": 20.7,
+   "to": 130.9,
+   "unit": "per10k",
+   "note_zh": "Saturated; LIBERO-Plus/Pro take over"
+  },
+  {
+   "name_zh": "RoboTwin 2.0",
+   "from": 3.5,
+   "to": 60.2,
+   "unit": "per10k",
+   "note_zh": "Bimanual generalization benchmark, used by 31% of WAM papers"
+  },
+  {
+   "name_zh": "Action chunks",
+   "from": 7.1,
+   "to": 50.4,
+   "unit": "per10k",
+   "note_zh": "action expert 5.0 → 30.0"
+  },
+  {
+   "name_zh": "Egocentric human video",
+   "from": 31.3,
+   "to": 66.5,
+   "unit": "per10k",
+   "note_zh": "Human data to scale WAMs and dexterous manipulation"
+  },
+  {
+   "name_zh": "Bimanual manipulation",
+   "from": 7.6,
+   "to": 26.7,
+   "unit": "per10k",
+   "note_zh": "2026 acceptance rate 0.47, mean rating 5.31"
+  },
+  {
+   "name_zh": "Flow-based generative policies",
+   "from": 7.6,
+   "to": 20.2,
+   "unit": "per10k",
+   "note_zh": "Acceptance rate 0.60; OGBench rising alongside"
+  }
+ ],
+ "fading": [
+  {
+   "name_zh": "Generic deep RL algorithms",
+   "from": 65.1,
+   "to": 17.7,
+   "unit": "per10k",
+   "note_zh": "92.5 in 2025; acceptance rate 0.233"
+  },
+  {
+   "name_zh": "Offline RL",
+   "from": 81.8,
+   "to": 46.0,
+   "unit": "per10k",
+   "note_zh": "115.7 in 2025"
+  },
+  {
+   "name_zh": "D4RL benchmark",
+   "from": 21.7,
+   "to": 10.0,
+   "unit": "per10k",
+   "note_zh": "Replaced by OGBench"
+  },
+  {
+   "name_zh": "MCTS / SMC",
+   "from": 36.8,
+   "to": 17.9,
+   "unit": "per10k",
+   "note_zh": "Interest in LLM reasoning search is cooling; acceptance rate 0.205"
+  },
+  {
+   "name_zh": "Imitation learning and inverse RL",
+   "from": 19.2,
+   "to": 8.4,
+   "unit": "per10k",
+   "note_zh": "Folded into imitation learning for VLAs/WAMs"
+  },
+  {
+   "name_zh": "MARL social dilemmas",
+   "from": 27.3,
+   "to": 14.4,
+   "unit": "per10k",
+   "note_zh": "Both MARL categories have acceptance rates of only 0.17–0.19"
+  },
+  {
+   "name_zh": "Atari",
+   "from": 21.2,
+   "to": 13.7,
+   "unit": "per10k",
+   "note_zh": "MuJoCo 39.4 → 29.8 over the same period"
+  },
+  {
+   "name_zh": "Share of VLAs with diffusion action heads",
+   "from": 17.0,
+   "to": 7.8,
+   "unit": "%",
+   "note_zh": "Replaced by flow matching"
+  }
+ ],
+ "rewarded_2026_zh": "In 2026, embodied clusters had an acceptance rate of 32.9% and mean rating of 4.47, above the overall baseline of 27.0% / 4.21; RL clusters were at 28.1% / 4.22. Reviewers favored robot world-action policies (0.567) and flow-matching policies in RL (0.60), and orals concentrated on world models plus control. They marked down cooperative MARL (0.185), MCTS/SMC (0.205), safe RL (0.214), and VLAs that add RL (0.276) or reasoning (0.33).",
+ "frontline_zh": [
+  "The default WAM recipe is a video DiT plus a flow-matching action expert; inference can skip video generation.",
+  "Future prediction serves only as a training-time auxiliary loss and is dropped at deployment; 2027 has 36 such papers.",
+  "LeWorldModel plus SIGReg is the latent-planning baseline; LeWM++ and a companion evaluation suite have appeared.",
+  "VLA research is turning to deployment; the share of papers on memory and history rose 8.5% → 17.8%.",
+  "Humanoid share went 27.8 → 42.8 per 10k submissions, and whole-body control rose 12.7% → 32.6% of humanoid papers.",
+  "Data sources are expanding to egocentric human video and touch; tactile work went 7.6 → 19.5 per 10k submissions."
+ ],
+ "watchlist_zh": [
+  "Whether the 372 WAM papers of 2027 get through review; 2026 had only 13 of this kind.",
+  "If backbone-agnostic foresight losses hold up, the inference-cost argument for WAMs falls apart.",
+  "Whether evaluation moves to RoboTwin-hard, LIBERO-Plus and real-robot arenas.",
+  "Whether reviewers start rejecting papers that only run LIBERO.",
+  "Whether LeJEPA/SIGReg becomes a general self-supervised recipe beyond control.",
+  "Whether RL theory and algorithms regain attention through VLA/WAM post-training."
+ ],
+ "notes_zh": [
+  "Units: unless noted, shares are papers per 10k submissions; acceptance rates and mean ratings come from 2026 review outcomes.",
+  "The embodied AI theme comprises 11 clusters and accounts for 6.3% of all 2027 submissions, a 2.4× increase. Its 2026 acceptance rate was 32.9% (baseline 27.0%) and mean rating 4.47 (baseline 4.21).",
+  "Classic RL means RL papers that involve neither LLMs/VLMs nor embodiment. Its share of all RL papers was 55.6% → 30.1% → 26.2% (2025 → 2026 → 2027). LLM/VLM-RL share fell from 975 to 876 in 2027.",
+  "The four world model categories are mutually exclusive, assigned by priority: WAM/joint video-action 6.6 → 87.9, JEPA/latent-space planning 8.1 → 87.9, interactive video/games 28.8 → 82.1, LLM/agent world models 38.4 → 78.6. The WAM keyword count is 0.5 → 86.5 and the JEPA full-text count is 8.6 → 89.5, so the values differ.",
+  "\"world action model\" is the second-largest new author keyword of 2027; 23% of WAM abstracts explicitly use a pretrained video generation model as the backbone. LIBERO appears in 37.8% of 2027 VLA papers.",
+  "Scope: 11 embodied clusters and 15 RL clusters. Higher 2026 acceptance rates: cluster 73 robot imitation and world-action policies 0.567 / 5.14 (Cosmos Policy, RoboCasa365, DataMIL); cluster 147 flow-matching policies 0.60 / 4.85 (Mean Flow Policy and DiffusionNFT as orals); sim-to-real 0.48 / 4.83, dexterous manipulation 0.51 / 4.80, bimanual 0.47 / 5.31. Orals: TD-JEPA, WoW!, Latent Particle World Models, GPU-differentiable MPC.",
+  "Lower 2026 acceptance rates: cooperative MARL 0.185, social dilemma MARL 0.167, MCTS/SMC 0.205, safe RL 0.214, generic deep RL 0.233, latent world model planning cluster 161 0.238, autonomous driving cluster 0.26. Within VLAs: adding RL 0.276 / 4.10, adding reasoning 0.33, safety/robustness/failure analysis 0.30 (others 0.42), flow matching 0.55, test-time methods 0.53. By RL subtype: embodied RL 0.351, LLM/VLM-RL 0.324, classic RL 0.275.",
+  "WAM review outlook: in 2026 the joint video-action category had 13 papers, with an acceptance rate of 0.38 and mean rating of 4.83.",
+  "Style artifacts: in 2027, 41% of papers in embodied clusters carry formulaic writing markers (42% across the full dataset), reaching 62% in VLA cluster 172. X-WAM-style naming is widespread, and the shares of clusters 172 and 161 may partly come from formulaic submissions.",
+  "Other data: TurboVLA reaches 32 Hz on a consumer GPU; π0.5 mentioned alone 0.5 → 39.1; cooperative MARL cluster 46.4 → 34.9; test-time methods in VLA papers 8.5% → 11.0%, GR00T mention rate 2.3% → 4.3%; future-prediction auxiliary objectives in robotics papers 5.6 → 25.1; loco-manipulation in humanoid papers 3.6% → 15.8%, Unitree/G1 mentions 1.0 → 10.2; real2sim 5.6 → 8.4, robot value/progress models 4.0 → 10.5; JEPA in language 12.1, in scientific modalities 7.2; NAVSIM in driving papers 6.4% → 21.8%."
+ ]
+}
