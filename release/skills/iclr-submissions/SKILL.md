@@ -41,7 +41,7 @@ python3 skills/iclr-submissions/scripts/iclr.py show --population work/pop.parqu
 ```
 
 Prefer existing labels (safety labels, clusters, themes) over ad-hoc regex. Labels were assigned by reading each abstract, so they have far better recall than keywords. Use `--regex` to narrow a labelled set or for subjects with no label. Then check the set from both sides:
-- **precision**: skim 15–20 random titles. Are they on topic?
+- **precision**: skim 15–20 random titles (`show --random`). Are they on topic?
 - **recall**: run a regex for the subject across *all* papers, then look at what falls outside your population. Which clusters or subfields hold the misses?
 
 Adjust and say what you chose. Safety labels cover only 2026 and 2027. For 2025, or for subjects outside safety, use clusters (`topics/clusters.csv`, `--cluster`), themes or regex.
@@ -87,7 +87,7 @@ These are the traps that the people who built the dataset know about and a newco
   - **The papers that state the attribute at all**, e.g. % of RLVR papers that name a base model. Use `count --among-matched` for this. It matters when the stating rate itself changes between years; 2027 abstracts name models more often, partly because of the writing shift.
   - **All submissions** (per 10k) for field size.
   Say which one you used.
-- **Mentioned is not used.** A model or benchmark named in an abstract may be the trained model, a baseline, or just motivation ("inspired by DeepSeek-R1"). For the few names that drive a conclusion, read their contexts (`show --abstract 800`) and drop non-uses.
+- **Mentioned is not used.** A model or benchmark named in an abstract may be the trained model, a baseline, or just motivation ("inspired by DeepSeek-R1"). For the few names that drive a conclusion, read 20–40 random contexts per name (`context --regex '\bllama' --year 2027`). Estimate the share that are real use and drop or discount the rest.
 - **TL;DR exists only in 2027** (56% of papers). The helper leaves it out of search and batches so years stay comparable. Do the same in your own scripts.
 - **Acceptance has two denominators.** All submissions, including withdrawn and desk-rejected papers (27.0% overall in 2026), or decided papers only (38.8%). `rate` uses the first by default and takes `--decided-only` for the second. State which you report. A field with a high withdrawal rate can look weak under the first.
 - **Small numbers.** Avoid ratios when the earlier year has fewer than about 10 papers. Report both counts instead. For rates, compare intervals (`rate` prints them) and do not rank groups whose intervals overlap.

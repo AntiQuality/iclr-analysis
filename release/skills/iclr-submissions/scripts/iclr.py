@@ -9,6 +9,7 @@ Subcommands (run `iclr.py <cmd> -h` for options):
   tally    distribution of a labelled field per year, with shares and ratios
   rate     rate of a yes/no outcome (e.g. accepted) by group, with 95% intervals
   show     print papers (year, title, link) from a population or id list
+  context  print text around regex matches (keyword in context), to check how a term is used
 
 Text search and batches use title, keywords and abstract. TL;DR is left out
 by default because only 2027 has it (56% of papers); add --with-tldr to use it.
@@ -414,10 +415,35 @@ def cmd_show(a):
     df = df[keys].merge(full, on=keys)
     if a.sort:
         df = df.sort_values(a.sort, ascending=False)
+    elif a.random:
+        df = df.sample(frac=1, random_state=a.seed)
     for r in df.head(a.n).itertuples():
         print(f"{r.year}  {r.title}\n      https://openreview.net/forum?id={r.id}  [{r.status}] {r.topic_name_en}")
         if a.abstract:
             print("      " + (r.abstract or "")[: a.abstract].replace("\n", " "))
+
+
+# ---------------------------------------------------------------- context
+
+def cmd_context(a):
+    root = data_root(a.data)
+    pop = read_population(a.population)
+    pop = pop[["year", "id"]].merge(load_papers(root, sorted(int(y) for y in pop.year.unique())), on=["year", "id"])
+    rx = re.compile(a.regex, re.I)
+    pop = pop[pop.text.map(lambda t: bool(rx.search(t)))]
+    if a.year:
+        pop = pop[pop.year == a.year]
+    print(f"{len(pop)} papers match; showing {min(a.n, len(pop))} at random")
+    for r in pop.sample(min(a.n, len(pop)), random_state=a.seed).itertuples():
+        t = r.text.replace("\n", " ")
+        snips = []
+        for m in rx.finditer(t):
+            snips.append("..." + t[max(0, m.start() - a.width): m.end() + a.width] + "...")
+            if len(snips) >= 2:
+                break
+        print(f"{r.year} {r.id}  {r.title[:90]}")
+        for x in snips:
+            print("    " + x)
 
 
 # ---------------------------------------------------------------- cli
@@ -499,7 +525,18 @@ def main():
     w.add_argument("-n", type=int, default=20)
     w.add_argument("--sort", help="column to sort by, descending (e.g. topic_centrality, rating)")
     w.add_argument("--abstract", type=int, default=0, help="also print the first N characters of the abstract")
+    w.add_argument("--random", action="store_true", help="random order instead of file order")
+    w.add_argument("--seed", type=int, default=0)
     w.set_defaults(fn=cmd_show)
+
+    k = sub.add_parser("context", help="keyword-in-context snippets for a regex")
+    k.add_argument("--population", required=True)
+    k.add_argument("--regex", required=True)
+    k.add_argument("--year", type=int)
+    k.add_argument("-n", type=int, default=20)
+    k.add_argument("--width", type=int, default=120, help="characters shown on each side")
+    k.add_argument("--seed", type=int, default=0)
+    k.set_defaults(fn=cmd_context)
 
     a = p.parse_args()
     global WITH_TLDR
